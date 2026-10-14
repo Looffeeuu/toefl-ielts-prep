@@ -21,7 +21,8 @@ window.TOPICS.forEach(t => {
 GROUPS.push(core);
 
 const RICH = {};
-[window.RICH_WORDS, window.RICH_WORDS_2, window.RICH_WORDS_3].join("\n").trim().split(/\r?\n/).forEach(line => {
+// 精编补充分多批（RICH_WORDS、RICH_WORDS_2…），全部合并
+Object.keys(window).filter(k => /^RICH_WORDS(_\d+)?$/.test(k)).map(k => window[k]).join("\n").trim().split(/\r?\n/).forEach(line => {
   const [w,pos,cn,syn,ex] = line.split("|").map(s => (s||"").trim());
   if(w) RICH[w.toLowerCase()] = { pos, cn, syn:splitSyn(syn), ex };
 });
@@ -74,8 +75,21 @@ const speakBtn = w => App.canSpeak ? `<button class="speak" data-speak="${esc(w)
 function ivLabel(i){ if(i<=0) return "1 分钟内"; if(i<30) return i+" 天"; if(i<365) return Math.round(i/30)+" 个月"; return (i/365).toFixed(1)+" 年" }
 
 /* ---------- 进度 ---------- */
-const blank = () => ({ v:1, cards:{}, log:{}, settings:{ daily:20, list:"all", auto:false, skipBasic:"z" }, updatedAt:0 });
-function normalize(d){ const b = blank(); d = d||{}; return { v:1, cards:d.cards||{}, log:d.log||{}, settings:Object.assign(b.settings, d.settings||{}), updatedAt:d.updatedAt||0 } }
+// settings.lists：本轮选中的词表 id（空数组表示全部词库）；order：seq 按词表顺序 / rand 随机；seed：随机顺序的种子
+const blank = () => ({ v:1, cards:{}, log:{}, settings:{ daily:20, lists:[], order:"seq", seed:1, auto:false, skipBasic:"z" }, updatedAt:0 });
+function legacyLists(sel){
+  if(!sel || sel==="all") return [];
+  if(sel.startsWith("g:")) return GROUP[sel.slice(2)] ? GROUP[sel.slice(2)].lists.map(l => l.id) : [];
+  return TOPIC[sel] ? [sel] : [];
+}
+function normalize(d){
+  const b = blank(); d = d||{};
+  const s = Object.assign(b.settings, d.settings||{});
+  if(!Array.isArray(s.lists) || (d.settings && d.settings.list && !d.settings.lists)) s.lists = legacyLists(s.list);
+  s.lists = s.lists.filter(id => TOPIC[id]);
+  delete s.list;
+  return { v:1, cards:d.cards||{}, log:d.log||{}, settings:s, updatedAt:d.updatedAt||0 };
+}
 let store = normalize(App.store.get(App.KEYS.vocab, null));
 App.vocabData = () => store;
 App.loadVocabData = d => { store = normalize(d); persist(); buildQueue(); renderAll() };
@@ -98,9 +112,21 @@ function schedule(c, g){
 
 let queue = [], revealed = false, interacted = false, lastSpoken = "";
 // 新词来源：按设置的词表，并按需跳过中考、高考词
+function selectedWords(){
+  const sel = new Set(store.settings.lists);
+  return sel.size ? TOPICS.filter(l => sel.has(l.id)).flatMap(l => l.words) : WORDS;
+}
+// 带种子的洗牌：同一个种子得到同一个顺序，刷新页面后队列不会变；点「重新打乱」换种子
+function seededShuffle(arr, seed){
+  let a = seed >>> 0 || 1;
+  const rnd = () => { a = (a + 0x6D2B79F5) >>> 0; let t = a; t = Math.imul(t ^ t>>>15, t | 1); t ^= t + Math.imul(t ^ t>>>7, t | 61); return ((t ^ t>>>14) >>> 0) / 4294967296 };
+  for(let i=arr.length-1;i>0;i--){ const j = Math.floor(rnd()*(i+1)); [arr[i],arr[j]] = [arr[j],arr[i]] }
+  return arr;
+}
 function srcWords(){
   const sb = store.settings.skipBasic;
-  return wordsOf(store.settings.list).filter(o => !(sb==="z" && o.basic==="z") && !(sb==="zg" && o.basic));
+  const ws = selectedWords().filter(o => !(sb==="z" && o.basic==="z") && !(sb==="zg" && o.basic));
+  return store.settings.order==="rand" ? seededShuffle(ws.slice(), store.settings.seed) : ws;
 }
 function buildQueue(){
   const T = today();
@@ -202,7 +228,7 @@ function renderStudy(){
     box.innerHTML = `<div class="card done">
       <p class="section-label">今日任务</p>
       <h3>${L.r ? "今天的复习和新词都完成了" : "现在没有要复习的单词"}</h3>
-      <p class="note" style="margin:0">今天共复习 ${L.r} 次，新学 ${L.n} 个词。${left ? `当前词表还剩 ${left} 个新词。` : "当前词表的新词已经全部学过。"}</p>
+      <p class="note" style="margin:0">今天共复习 ${L.r} 次，新学 ${L.n} 个词。${left ? `本轮词库还剩 ${left} 个新词。` : "本轮词库的新词已经全部学过，可以在左边「本轮词库」里换一批。"}</p>
       <div class="row">${left ? '<button class="btn" data-more="10">再学 10 个新词</button>' : ""}<button class="btn alt" data-goto="quiz">去做个测验</button></div>
     </div>`;
     return;
@@ -350,6 +376,7 @@ function renderBank(){
 }
 function openDetail(w){
   const o = BY[w]; if(!o) return; openWord = w;
+  $("#sheet").classList.remove("wide");
   const c = store.cards[w], [s,t] = status(w);
   const due = c ? (c[3]<=today() ? "今天复习" : `${ivLabel(c[3]-today())}后复习`) : "还没学过";
   $("#sheet").innerHTML = `<div class="meta"><span class="chip ${s}">${t}</span><span>${esc(TOPIC[o.t].name)}</span>${o.basic ? `<span class="chip">${BASIC[o.basic]}</span>` : ""}<span>${due}</span><button class="x" id="closeSheet" aria-label="关闭">×</button></div>
@@ -363,13 +390,59 @@ function closeDetail(){ $("#overlay").hidden = true; openWord = null }
 
 /* ---------- 设置 ---------- */
 function renderSettings(){
-  $("#setList").innerHTML = listOptions(`<option value="all">全部，按顺序：核心精编 → 高频 → 低频（${WORDS.length} 词）</option>`);
   $("#setDaily").value = String(store.settings.daily);
-  $("#setList").value = store.settings.list;
-  if($("#setList").value!==store.settings.list) $("#setList").value = "all";
+  $("#setOrder").value = store.settings.order;
+  $("#reshuffle").hidden = store.settings.order!=="rand";
+  $("#pickLabel").textContent = pickSummary();
   $("#setBasic").value = store.settings.skipBasic || "none";
   $("#setAuto").checked = !!store.settings.auto;
   if(!App.canSpeak) $("#setAuto").closest(".check").hidden = true;
+}
+
+/* ---------- 本轮词库（多选） ---------- */
+const fmtN = n => n.toLocaleString("en-US");
+function pickSummary(){
+  const sel = new Set(store.settings.lists);
+  if(!sel.size) return `全部词库（${fmtN(WORDS.length)} 词）`;
+  const parts = [];
+  GROUPS.forEach(g => {
+    const picked = g.lists.filter(l => sel.has(l.id));
+    if(!picked.length) return;
+    if(picked.length===g.lists.length) parts.push(`${g.name}全部`);
+    else parts.push(picked.length<=2 ? picked.map(l => l.name).join("、") : `${g.name} ${picked.length} 组`);
+  });
+  return `${parts.join(" + ")}（${fmtN(selectedWords().length)} 词）`;
+}
+function sourceChanged(){
+  persist(); buildQueue(); renderSettings(); renderStats(); renderStudy();
+}
+function renderPicker(){
+  const sel = new Set(store.settings.lists);
+  const sheet = $("#sheet"), scroll = sheet.scrollTop;
+  const unseen = ws => ws.filter(o => !store.cards[o.w]).length;
+  const total = selectedWords(), left = unseen(srcWords());
+  sheet.innerHTML = `<div class="meta"><b style="color:var(--ink);font-size:17px">本轮词库</b><button class="x" id="closeSheet" aria-label="关闭">×</button></div>
+    <p class="note" style="margin:0">勾选这一轮要背的词表，可以多选，也可以整组勾选。一个都不选时，按全部词库出新词。到期的复习词不受这里的选择影响，会照常出现。</p>
+    ${GROUPS.map(g => {
+      const ids = g.lists.map(l => l.id), n = ids.filter(id => sel.has(id)).length;
+      return `<section class="pick-group">
+        <label class="pick-head"><input type="checkbox" data-pick-group="${g.id}" ${n===ids.length ? "checked" : ""} ${n && n<ids.length ? 'data-mixed="1"' : ""}><b>${g.name}</b><span class="note">${esc(g.note)}</span></label>
+        <div class="pick-lists">${g.lists.map(l => `<label class="pick${sel.has(l.id) ? " on" : ""}"><input type="checkbox" data-pick="${l.id}" ${sel.has(l.id) ? "checked" : ""}><span>${esc(l.name)}</span><small>未学 ${unseen(l.words)}/${l.words.length}</small></label>`).join("")}</div>
+      </section>`;
+    }).join("")}
+    <div class="pick-foot"><span class="note">${sel.size ? `已选 ${sel.size} 个词表，共 ${fmtN(total.length)} 词` : `未勾选，使用全部 ${fmtN(WORDS.length)} 词`}；按当前基础词设置，还有 ${fmtN(left)} 个新词可学</span>
+      <span class="row"><button class="btn alt" id="pickNone">清空选择</button><button class="btn" id="pickDone">完成</button></span></div>`;
+  sheet.querySelectorAll("[data-mixed]").forEach(el => el.indeterminate = true);
+  sheet.scrollTop = scroll;
+}
+function openPicker(){ $("#sheet").classList.add("wide"); renderPicker(); $("#overlay").hidden = false; openWord = null }
+function onPickChange(e){
+  const t = e.target, sel = new Set(store.settings.lists);
+  if(t.dataset.pick){ t.checked ? sel.add(t.dataset.pick) : sel.delete(t.dataset.pick) }
+  else if(t.dataset.pickGroup){ GROUP[t.dataset.pickGroup].lists.forEach(l => t.checked ? sel.add(l.id) : sel.delete(l.id)) }
+  else return;
+  store.settings.lists = TOPICS.filter(l => sel.has(l.id)).map(l => l.id);
+  sourceChanged(); renderPicker();
 }
 
 /* ---------- 标签页与事件 ---------- */
@@ -390,7 +463,12 @@ function init(){
   $("#overlay").addEventListener("click", e => { if(e.target.id==="overlay") closeDetail(); else onClick(e) });
   $("#search").addEventListener("input", renderBank);
   $("#setDaily").addEventListener("change", e => { store.settings.daily = +e.target.value; persist(); buildQueue(); renderStats(); renderStudy() });
-  $("#setList").addEventListener("change", e => { store.settings.list = e.target.value; persist(); buildQueue(); renderStats(); renderStudy() });
+  $("#setOrder").addEventListener("change", e => {
+    store.settings.order = e.target.value;
+    if(e.target.value==="rand") store.settings.seed = Math.floor(Math.random()*1e9);
+    sourceChanged();
+  });
+  $("#overlay").addEventListener("change", onPickChange);
   $("#setAuto").addEventListener("change", e => { store.settings.auto = e.target.checked; persist() });
   $("#setBasic").addEventListener("change", e => { store.settings.skipBasic = e.target.value; persist(); buildQueue(); renderStats(); renderStudy() });
   document.addEventListener("keydown", onKey);
@@ -403,7 +481,7 @@ function init(){
 
 function onClick(e){
   interacted = true;
-  const t = e.target.closest("button,tr[data-detail]"); if(!t) return;
+  const t = e.target.closest("button,tr[data-detail]"); if(!t || !t.closest("#view-vocab,#overlay")) return;
   if(t.dataset.speak){ App.speak(t.dataset.speak); return }
   if(t.dataset.ai){ explain(t); return }
   if(t.dataset.tab){ showTab(t.dataset.tab); return }
@@ -421,7 +499,10 @@ function onClick(e){
   if(t.dataset.topic){ bankTopic = t.dataset.topic; $("#search").value = ""; renderBank(); return }
   if(t.dataset.group){ bankGroup = t.dataset.group; bankTopic = GROUP[bankGroup].lists[0].id; $("#search").value = ""; renderBank(); return }
   if(t.dataset.detail){ openDetail(t.dataset.detail); return }
-  if(t.id==="closeSheet"){ closeDetail(); return }
+  if(t.id==="closeSheet" || t.id==="pickDone"){ closeDetail(); return }
+  if(t.id==="pickLists"){ openPicker(); return }
+  if(t.id==="pickNone"){ store.settings.lists = []; sourceChanged(); renderPicker(); return }
+  if(t.id==="reshuffle"){ store.settings.seed = Math.floor(Math.random()*1e9); sourceChanged(); t.textContent = "已重新打乱"; setTimeout(() => { t.textContent = "重新打乱" }, 1500); return }
   if(t.id==="addQueue"){ queue.splice(Math.min(1, queue.length), 0, openWord); renderStudy(); openDetail(openWord); return }
   if(t.id==="resetBtn"){
     if(t.dataset.armed){ store = Object.assign(blank(), { settings:store.settings }); buildQueue(); persist(); quiz = null; renderAll(); t.textContent = "清空背词记录"; delete t.dataset.armed; return }

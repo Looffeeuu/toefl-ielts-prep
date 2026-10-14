@@ -39,6 +39,16 @@
         <div class="stat"><div class="k">已掌握</div><div class="v" id="sMast">0</div></div>
         <div class="stat"><div class="k">连续打卡</div><div class="v" id="sStreak">0</div></div>
       </div>
+      <section class="panel round">
+        <p class="section-label" style="margin:0">本轮设置</p>
+        <div class="field">本轮词库
+          <button class="pick-btn" id="pickLists"><span id="pickLabel">全部词库</span><small>选择</small></button>
+        </div>
+        <label class="field">新词顺序
+          <select id="setOrder"><option value="seq">按词表顺序</option><option value="rand">随机</option></select>
+        </label>
+        <button class="btn-ghost" id="reshuffle" hidden>重新打乱</button>
+      </section>
       <div>
         <p class="section-label">词库进度 · <span id="sTotal"></span></p>
         <div class="bar" id="totalBar"><i class="m"></i><i class="l"></i></div>
@@ -54,9 +64,6 @@
         <div class="body">
           <label class="field">每日新词数量
             <select id="setDaily"><option>10</option><option>15</option><option>20</option><option>30</option><option>40</option><option>50</option></select>
-          </label>
-          <label class="field">新词来源
-            <select id="setList"></select>
           </label>
           <label class="field">基础词
             <select id="setBasic">
@@ -143,6 +150,8 @@
 <script src="js/words-rich.js"></script>
 <script src="js/words-rich-2.js"></script>
 <script src="js/words-rich-3.js"></script>
+<script src="js/words-rich-4.js"></script>
+<script src="js/words-rich-5.js"></script>
 <script src="js/core.js"></script>
 <script src="js/vocab.js"></script>
 <script src="js/speaking-data.js"></script>

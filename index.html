@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>托福备考工作台</title>
+<meta name="description" content="托福新版（2026）备考：间隔重复背词汇、听后复述与模拟面试口语练习。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600&family=Noto+Sans+SC:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="#vocab">
+      <div class="mark">T</div>
+      <div><b>托福备考工作台</b><small>TOEFL iBT 2026 · prep desk</small></div>
+    </a>
+    <nav class="modules" aria-label="备考模块">
+      <a class="mod" href="#vocab" data-route="vocab">词汇</a>
+      <a class="mod" href="#speaking" data-route="speaking">口语</a>
+      <span class="mod off" title="下一步开发">阅读 <span class="tag">下一步</span></span>
+      <span class="mod off" title="排队中">写作 <span class="tag">排队中</span></span>
+      <a class="mod" href="#settings" data-route="settings">设置</a>
+    </nav>
+  </header>
+
+  <!-- ===================== 词汇 ===================== -->
+  <main id="view-vocab" class="grid" hidden>
+    <aside class="rail">
+      <div>
+        <h2>今天</h2>
+        <div class="date" id="dateLine"></div>
+      </div>
+      <div class="stats">
+        <div class="stat"><div class="k">待复习</div><div class="v" id="sDue">0</div></div>
+        <div class="stat"><div class="k">今日新词</div><div class="v" id="sNew">0</div></div>
+        <div class="stat"><div class="k">已掌握</div><div class="v" id="sMast">0</div></div>
+        <div class="stat"><div class="k">连续打卡</div><div class="v" id="sStreak">0</div></div>
+      </div>
+      <div>
+        <p class="section-label">词库进度 · <span id="sTotal"></span></p>
+        <div class="bar" id="totalBar"><i class="m"></i><i class="l"></i></div>
+        <p class="note" style="margin:6px 0 0">复习间隔达到 21 天算作「已掌握」。</p>
+      </div>
+      <div>
+        <p class="section-label">近 12 周</p>
+        <div class="heat" id="heat"></div>
+        <div class="heat-legend">少 <span class="heat" style="display:inline-grid;grid-template-rows:11px"><i></i><i data-l="1"></i><i data-l="2"></i><i data-l="3"></i><i data-l="4"></i></span> 多</div>
+      </div>
+      <details class="panel">
+        <summary>学习设置</summary>
+        <div class="body">
+          <label class="field">每日新词数量
+            <select id="setDaily"><option>10</option><option>15</option><option>20</option><option>30</option><option>40</option><option>50</option></select>
+          </label>
+          <label class="field">新词来源
+            <select id="setList"></select>
+          </label>
+          <label class="check"><input type="checkbox" id="setAuto"> 出现新卡片时自动发音</label>
+          <button class="btn-ghost btn-danger" id="resetBtn">清空背词记录</button>
+        </div>
+      </details>
+    </aside>
+
+    <section class="desk">
+      <div class="tabs" role="tablist">
+        <button class="tab" role="tab" data-tab="study">背单词<span class="n" id="tabQ"></span></button>
+        <button class="tab" role="tab" data-tab="quiz">测验</button>
+        <button class="tab" role="tab" data-tab="bank">词库</button>
+      </div>
+      <div id="pane-study" role="tabpanel"></div>
+      <div id="pane-quiz" role="tabpanel" hidden></div>
+      <div id="pane-bank" role="tabpanel" hidden>
+        <div class="topics" id="topics"></div>
+        <input class="search" id="search" type="search" placeholder="搜索单词、中文释义或同义词">
+        <div class="tablewrap"><table><thead><tr><th>单词</th><th>词性</th><th>释义</th><th>同义替换</th><th>状态</th></tr></thead><tbody id="wordRows"></tbody></table></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== 口语 ===================== -->
+  <main id="view-speaking" hidden></main>
+
+  <!-- ===================== 设置 ===================== -->
+  <main id="view-settings" hidden>
+    <div class="settings-page">
+      <h2 class="page-title">设置</h2>
+
+      <section class="panel">
+        <h3>发音与语音识别</h3>
+        <label class="field">朗读声音（单词发音、口语题目）
+          <select id="voiceSel"></select>
+        </label>
+        <label class="field">朗读语速
+          <select id="rateSel"><option value="0.8">慢</option><option value="0.9">稍慢</option><option value="1">正常（接近考试）</option></select>
+        </label>
+        <div class="row"><button class="btn alt" id="voiceTest">试听</button></div>
+        <div class="status-list" id="envStatus"></div>
+      </section>
+
+      <section class="panel">
+        <h3>AI 讲解与口语评分（可选）</h3>
+        <p class="note" style="margin:0">填写你自己的 Claude API Key 后，背词页会出现「AI 讲解」，口语练习后可以让 AI 给出估分和修改建议。Key 只保存在这台电脑的浏览器里，请求从浏览器直接发到下面的 API 地址。不填也能正常背词、练口语。</p>
+        <label class="field">Claude API Key
+          <input id="apiKey" type="password" autocomplete="off" placeholder="sk-ant-...">
+        </label>
+        <label class="field">API 地址
+          <input id="apiBase" type="url" placeholder="https://api.anthropic.com">
+        </label>
+        <div class="row"><button class="btn" id="apiSave">保存</button><button class="btn alt" id="apiTest">测试连接</button><span class="note" id="apiMsg"></span></div>
+      </section>
+
+      <section class="panel">
+        <h3>学习数据</h3>
+        <p class="note" style="margin:0">背词进度和口语练习记录都保存在当前浏览器里。换电脑或换浏览器前，先导出一份备份，再到新地方导入。录音不会被保存，关闭页面后就没有了。</p>
+        <div class="row">
+          <button class="btn alt" id="exportBtn">导出备份</button>
+          <label class="btn alt" style="cursor:pointer">导入备份<input type="file" id="importIn" accept="application/json,.json" hidden></label>
+          <span class="note" id="dataMsg"></span>
+        </div>
+      </section>
+    </div>
+  </main>
+</div>
+
+<div class="overlay" id="overlay" hidden><div class="sheet" id="sheet" role="dialog" aria-modal="true"></div></div>
+
+<script src="js/words.js"></script>
+<script src="js/core.js"></script>
+<script src="js/vocab.js"></script>
+<script src="js/speaking-data.js"></script>
+<script src="js/speaking.js"></script>
+<script src="js/settings.js"></script>
+<script>App.start();</script>
+</body>
+</html>

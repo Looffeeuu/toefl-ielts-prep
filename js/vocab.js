@@ -21,7 +21,7 @@ window.TOPICS.forEach(t => {
 GROUPS.push(core);
 
 const RICH = {};
-(window.RICH_WORDS || "").trim().split(/\r?\n/).forEach(line => {
+[window.RICH_WORDS, window.RICH_WORDS_2, window.RICH_WORDS_3].join("\n").trim().split(/\r?\n/).forEach(line => {
   const [w,pos,cn,syn,ex] = line.split("|").map(s => (s||"").trim());
   if(w) RICH[w.toLowerCase()] = { pos, cn, syn:splitSyn(syn), ex };
 });

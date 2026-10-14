@@ -58,6 +58,13 @@
           <label class="field">新词来源
             <select id="setList"></select>
           </label>
+          <label class="field">基础词
+            <select id="setBasic">
+              <option value="z">新词跳过中考词汇</option>
+              <option value="zg">新词跳过中考和高考词汇</option>
+              <option value="none">不跳过</option>
+            </select>
+          </label>
           <label class="check"><input type="checkbox" id="setAuto"> 出现新卡片时自动发音</label>
           <button class="btn-ghost btn-danger" id="resetBtn">清空背词记录</button>
         </div>
@@ -73,6 +80,7 @@
       <div id="pane-study" role="tabpanel"></div>
       <div id="pane-quiz" role="tabpanel" hidden></div>
       <div id="pane-bank" role="tabpanel" hidden>
+        <div class="groups" id="groups"></div>
         <div class="topics" id="topics"></div>
         <input class="search" id="search" type="search" placeholder="搜索单词、中文释义或同义词">
         <div class="tablewrap"><table><thead><tr><th>单词</th><th>词性</th><th>释义</th><th>同义替换</th><th>状态</th></tr></thead><tbody id="wordRows"></tbody></table></div>
@@ -131,6 +139,8 @@
 <div class="overlay" id="overlay" hidden><div class="sheet" id="sheet" role="dialog" aria-modal="true"></div></div>
 
 <script src="js/words.js"></script>
+<script src="js/words-ext.js"></script>
+<script src="js/words-rich.js"></script>
 <script src="js/core.js"></script>
 <script src="js/vocab.js"></script>
 <script src="js/speaking-data.js"></script>

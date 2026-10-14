@@ -141,7 +141,16 @@ kbd{font-family:var(--f-mono);font-size:11px;border:1px solid currentColor;borde
 .fb.no{background:color-mix(in srgb,var(--bad) 12%,transparent)}
 .score{font-family:var(--f-head);font-size:64px;font-weight:600;line-height:1}
 
+.ph{font-family:var(--f-mono);font-size:14px;color:var(--muted);letter-spacing:.02em}
+.head + .ph{margin-top:-8px}
+td .ph{font-size:12px;font-weight:400;margin-top:2px}
+.field select{max-width:100%}
+
 /* bank */
+.groups{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin-bottom:12px}
+.chip.grp{cursor:pointer;padding:4px 12px;font-size:13px;color:var(--ink)}
+.chip.grp[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.groups .note{margin-left:6px}
 .topics{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:10px;margin-bottom:18px}
 .topic{text-align:left;border:1.5px solid var(--line);background:var(--surface);border-radius:10px;padding:10px 12px;display:flex;flex-direction:column;gap:6px}
 .topic[aria-pressed="true"]{border-color:var(--ink)}

@@ -360,9 +360,9 @@ function onClick(e){
 }
 
 function onKey(e){
+  if(!$("#overlay").hidden){ if(e.key==="Escape") closeDetail(); if(App.route==="vocab") return }
   if(App.route!=="vocab") return;
   interacted = true;
-  if(!$("#overlay").hidden){ if(e.key==="Escape") closeDetail(); return }
   if(e.target.matches && e.target.matches("tr[data-detail]") && e.key==="Enter"){ openDetail(e.target.dataset.detail); return }
   const typing = /INPUT|SELECT|TEXTAREA/.test(e.target.tagName||"");
   if(e.ctrlKey || e.metaKey || e.altKey) return;
@@ -383,6 +383,19 @@ function onKey(e){
     }
   }
 }
+
+/* ---------- 给其他模块用：在文章里识别词库单词 ---------- */
+const FORMS = {};
+WORDS.forEach(({ w }) => {
+  if(w.includes(" ")) return;
+  const base = w.replace(/e$/,"");
+  [w, w+"s", w+"es", w+"ed", w+"d", w+"ing", base+"ing", base+"ed",
+   w.replace(/y$/,"ies"), w.replace(/y$/,"ied"), w+"ly"].forEach(f => { if(!FORMS[f]) FORMS[f] = w });
+});
+App.vocab = {
+  lookup: token => FORMS[String(token).toLowerCase()] || null,
+  open: w => openDetail(w)
+};
 
 App.routes.vocab = {
   init,

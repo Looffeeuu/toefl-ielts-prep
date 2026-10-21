@@ -48,6 +48,23 @@ TIERS.forEach(([id,name,note]) => {
   }
   GROUPS.push(g);
 });
+// 例句：一个词可以有多个例句，每句以词性开头（如 "vt. ..."），用 ## 分隔；o.ex 保留第一句给测验用
+const EX_LAB = /^(n|vt|vi|v|adj|adv|prep|conj|pron|int)\.\s+/;
+function setExamples(o, raw){
+  o.exs = (raw || "").split(" ## ").map(s => s.trim()).filter(Boolean).map(s => {
+    const m = s.match(EX_LAB);
+    return m ? { pos:m[1] + ".", text:s.slice(m[0].length) } : { pos:"", text:s };
+  });
+  o.ex = o.exs.length ? o.exs[0].text : "";
+}
+WORDS.forEach(o => setExamples(o, o.ex));
+// 多词性补充：覆盖词性、释义和例句（每个词性一个例句）
+Object.keys(window).filter(k => /^POS_WORDS_\d+$/.test(k)).map(k => window[k]).join("\n").trim().split(/\r?\n/).forEach(line => {
+  const [w,pos,cn,exs] = line.split("|").map(s => (s||"").trim());
+  const o = BY[w] || BY[(w||"").toLowerCase()];
+  if(!o || !exs) return;
+  o.pos = pos; o.cn = cn; setExamples(o, exs);
+});
 const GROUP = {}; GROUPS.forEach(g => GROUP[g.id] = g);
 const TOPICS = GROUPS.flatMap(g => g.lists);
 App.WORDS = WORDS;
@@ -215,10 +232,18 @@ function backHTML(o){
   const extra = !o.ex && !o.syn.length
     ? (App.hasAI() ? "" : `<p class="note" style="margin:0">扩展词库的词条只有释义。在<a href="#settings">设置</a>里填写 API Key 后，可以用 AI 讲解生成例句和搭配。</p>`)
     : "";
-  return `<div class="cn">${esc(o.cn)}</div>
+  return `<div class="cn">${cnHTML(o)}</div>
     ${o.syn.length ? `<div class="syn"><span class="lab">同义替换</span>${o.syn.map(s => `<span class="s">${esc(s)}</span>`).join("")}</div>` : ""}
-    ${o.ex ? `<p class="ex">${exHTML(o)}</p>` : ""}
+    ${examplesHTML(o)}
     ${extra}${aiBlock(o)}`;
+}
+// 多词性释义按词性分行显示（释义里用全角空格分隔各词性）
+const cnHTML = o => o.cn.split("　").map(seg => `<span class="cn-seg">${esc(seg)}</span>`).join("");
+// 每个例句前标出词性；只有一个且没标词性时按原样显示
+function examplesHTML(o){
+  if(!o.exs || !o.exs.length) return "";
+  const re = hlRe(o.w);
+  return `<div class="exs">${o.exs.map(e => `<p class="ex">${e.pos ? `<span class="ex-pos">${esc(e.pos)}</span>` : ""}${esc(e.text).replace(re, "<mark>$1</mark>")}</p>`).join("")}</div>`;
 }
 function renderStudy(){
   const box = $("#pane-study");

@@ -95,6 +95,10 @@ details.panel summary{padding:10px 14px;cursor:pointer;font-weight:500}
 .lab{font-size:12px;color:var(--muted);letter-spacing:.06em;margin-right:4px}
 .syn .s{background:var(--surface-2);border-radius:5px;padding:1px 8px;font-family:var(--f-head);font-size:16px}
 .ex{font-family:var(--f-head);font-size:19px;line-height:1.55;margin:0;max-width:62ch}
+.exs{display:flex;flex-direction:column;gap:10px}
+.ex-pos{display:inline-block;font-family:var(--f-mono);font-size:12px;font-style:normal;color:var(--primary);border:1px solid color-mix(in srgb,var(--primary) 40%,var(--line));border-radius:4px;padding:0 5px;margin-right:8px;vertical-align:3px}
+.cn{display:flex;flex-direction:column;gap:2px}
+.cn-seg{display:block}
 mark{background:linear-gradient(transparent 52%,var(--hl) 52%,var(--hl) 92%,transparent 92%);color:inherit;padding:0 1px;font-weight:600}
 .ai-btn{align-self:flex-start;background:transparent;border:1px dashed var(--primary);color:var(--primary);border-radius:8px;padding:6px 12px;font-size:13px}
 .ai-btn:disabled{opacity:.6;cursor:wait}

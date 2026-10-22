@@ -334,3 +334,19 @@ textarea.transcript{width:100%;min-height:90px;border:1px solid var(--line);bord
 .settings-page h3{margin:0;font-size:16px}
 
 @media (prefers-reduced-motion:no-preference){.card,.sheet,.stage{animation:rise .18s ease-out}@keyframes rise{from{transform:translateY(4px);opacity:.6}to{transform:none;opacity:1}}}
+
+/* ---------- 听力 ---------- */
+.stage.listening{gap:16px}
+.lplay{display:flex;flex-direction:column;align-items:center;gap:12px;padding:36px 0 28px;text-align:center}
+.wave{display:flex;align-items:center;gap:5px;height:44px}
+.wave i{width:6px;height:12px;border-radius:3px;background:var(--primary);animation:wave 1s ease-in-out infinite}
+.wave i:nth-child(2){animation-delay:.15s}.wave i:nth-child(3){animation-delay:.3s}.wave i:nth-child(4){animation-delay:.45s}.wave i:nth-child(5){animation-delay:.6s}
+@keyframes wave{0%,100%{height:12px}50%{height:40px}}
+@media (prefers-reduced-motion:reduce){.wave i{animation:none;height:24px}}
+.lplay .bar i{background:var(--primary)}
+.lnotes textarea{min-height:140px;resize:vertical;font-size:14px;line-height:1.6}
+.lresp{max-width:640px}
+.ltrans p{font-family:var(--f-head);font-size:17px;line-height:1.75;margin:0 0 12px;max-width:68ch}
+.ltrans .who{display:inline-block;min-width:56px;font-family:var(--f-ui);font-size:12px;font-weight:500;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;margin-right:6px}
+.ltrans .seg{cursor:pointer;border-radius:4px;transition:background .15s}
+.ltrans .seg:hover{background:var(--surface-2)}

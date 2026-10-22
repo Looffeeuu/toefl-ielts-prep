@@ -34,11 +34,19 @@ const SECTIONS = [
       traps:["只在某一段成立的选项冒充主旨","词汇题选了单词的常见意思而不是文中的意思","all、never、only 等绝对化表述"],
       practice:"阅读 → 学术文章（6 篇）· 完整模拟", statKey:"read:academic" }
   ]},
-  { id:"listening", name:"听力", route:"", tasks:[
-    { name:"听后选回应 · 对话 · 通知 · 学术讲座", tests:"从一句话到一段讲座，考对日常和学术英语的理解，包括说话人的意图和态度。",
-      points:["说话人的目的和态度","日常对话中的习惯表达","讲座的主旨、例子的作用和概念之间的关系"],
-      traps:["选项里出现听到的原词，但意思不对","忽略语气、转折（but、actually）带来的意思变化"],
-      practice:"本站暂时没有听力模块，建议用 ETS TestReady 的官方材料练习", statKey:"" }
+  { id:"listening", name:"听力", route:"listening", tasks:[
+    { name:"听后选回应 Listen and Choose a Response", tests:"只听一句话（不显示文字），从四个文字选项中选出最自然的回应，考对日常口语意图的理解。",
+      points:["特殊疑问词决定答案类型：Where 答地点、When 答时间、Why 答原因","间接回答：不说 Yes / No，而是给出相关信息","Why don't we…、Would you mind…、Shouldn't we… 等句型的真实意图","选择疑问句（A or B）不能用 Yes / No 回答"],
+      traps:["选项重复问句里的词或发音相近的词（rain / train）","时态和问句不一致","用 Because 回答其实是建议的 Why don't we…"],
+      practice:"听力 → 听后选回应（4 套 40 句）", statKey:"listen:response" },
+    { name:"对话与通知 Conversation · Announcement", tests:"听校园生活中的两人对话或广播通知，考谈话目的、细节、说话人接下来会做什么，以及通知里的变化和要求。",
+      points:["目的题：开头一两句通常说明来意","细节题：时间、地点、数字、条件","推断题：根据建议和结尾判断下一步","通知里的变化（改期、改地点、新规定）和原因"],
+      traps:["听到的第一个时间或数字不一定是答案（6:15 和 6:30）","对话中途被否定或修改的信息","把例子当成主旨"],
+      practice:"听力 → 对话（12 段）· 通知（10 则）", statKey:"listen:short" },
+    { name:"学术讲座 Academic Talk", tests:"听一段 175–250 词的课堂讲解，考主旨、细节、例子的作用、推断、组织结构和讲者态度。",
+      points:["开头的主题句和 Today let's talk about…","结构词：first / second / another、however、so","说话意图题：讲者为什么提到某个例子或常见误解","态度题：承认优点再指出问题（it can…, but…）"],
+      traps:["只在讲座某一部分成立的选项冒充主旨","讲者先说常见误解再纠正，误解出现在选项里","记了细节却没记住它支持的观点"],
+      practice:"听力 → 学术讲座（8 段）· 完整模拟", statKey:"listen:talk" }
   ]},
   { id:"writing", name:"写作", route:"writing", tasks:[
     { name:"组句 Build a Sentence", tests:"用打乱的词块拼出对话中 B 的回答，考句子结构和语法，每题全对才得分。",
@@ -66,6 +74,7 @@ const SECTIONS = [
   ]}
 ];
 
+const LISTEN_TYPES = { response:"选回应", main:"主旨", detail:"细节", purpose:"目的", function:"说话意图", infer:"推断", attitude:"态度", organization:"组织结构" };
 const READ_TYPES = { word:"补全单词", main:"主旨", detail:"细节", vocab:"词汇", infer:"推断", purpose:"目的与修辞", negative:"否定事实", tone:"语气", structure:"文章结构" };
 
 /* ---------- 个人数据 ---------- */
@@ -76,13 +85,17 @@ function bar(c, n){
 }
 function statHTML(key){
   if(!key) return "";
-  const rd = App.readingData ? App.readingData() : null, wd = App.writingData ? App.writingData() : null, sd = App.speakingData ? App.speakingData() : null;
+  const rd = App.readingData ? App.readingData() : null, wd = App.writingData ? App.writingData() : null, sd = App.speakingData ? App.speakingData() : null, ld = App.listeningData ? App.listeningData() : null;
   if(key==="read:word" && rd){ const t = rd.types.word || [0,0]; return `<div class="tstat"><span>正确率</span>${bar(t[0], t[1])}</div>` }
   if(key==="read:daily" && rd){
     return ["purpose","detail","infer","tone"].map(k => { const t = rd.types[k] || [0,0]; return `<div class="tstat"><span>${READ_TYPES[k]}</span>${bar(t[0], t[1])}</div>` }).join("") + `<p class="note" style="margin:0">日常阅读和学术文章的题型统计合在一起计算。</p>`;
   }
   if(key==="read:academic" && rd){
     return ["main","detail","vocab","infer","purpose","negative","structure"].map(k => { const t = rd.types[k] || [0,0]; return `<div class="tstat"><span>${READ_TYPES[k]}</span>${bar(t[0], t[1])}</div>` }).join("");
+  }
+  if(key.startsWith("listen:") && ld){
+    const keys = { "listen:response":["response"], "listen:short":["purpose","detail","infer"], "listen:talk":["main","detail","function","infer","attitude","organization"] }[key];
+    return keys.map(k => { const t = ld.types[k] || [0,0]; return `<div class="tstat"><span>${LISTEN_TYPES[k]}</span>${bar(t[0], t[1])}</div>` }).join("") + (key==="listen:response" ? "" : `<p class="note" style="margin:0">对话、通知和讲座的同类题型合在一起统计。</p>`);
   }
   if(key==="write:tags" && wd){
     const G = window.WRITING.grammarTags;

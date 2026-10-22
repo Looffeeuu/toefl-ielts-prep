@@ -12,7 +12,7 @@ App.store = {
   get(key, fallback){ try{ const s=localStorage.getItem(key); return s?JSON.parse(s):fallback }catch(e){ return fallback } },
   set(key, value){ try{ localStorage.setItem(key, JSON.stringify(value)); return true }catch(e){ return false } }
 };
-App.KEYS = { vocab:"toefl.vocab.v1", speaking:"toefl.speaking.v1", reading:"toefl.reading.v1", writing:"toefl.writing.v1", settings:"toefl.settings.v1" };
+App.KEYS = { vocab:"toefl.vocab.v1", speaking:"toefl.speaking.v1", reading:"toefl.reading.v1", listening:"toefl.listening.v1", writing:"toefl.writing.v1", settings:"toefl.settings.v1" };
 
 const defaults = { voiceURI:"", rate:1, apiKey:"", apiBase:"" };
 App.settings = Object.assign({}, defaults, App.store.get(App.KEYS.settings, {}));
@@ -41,9 +41,10 @@ App.speak = (text, opts={}) => new Promise(resolve => {
   try{
     speechSynthesis.cancel();
     const u = new SpeechSynthesisUtterance(text);
-    const v = pickVoice();
+    const v = opts.voice || pickVoice();
     if(v){ u.voice=v; u.lang=v.lang } else u.lang="en-US";
     u.rate = opts.rate || +App.settings.rate || 1;
+    if(opts.pitch) u.pitch = opts.pitch;
     u.onend = () => finish(true);
     u.onerror = () => finish(false);
     speechSynthesis.speak(u);

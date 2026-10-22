@@ -14,14 +14,18 @@ function parseItem(line){
   const distractors = (dis||"").split(";").map(s => s.trim()).filter(Boolean);
   return { ctx, chunks, punct, distractors, tip, sentence: chunks.map(c => c.text).join(" ") + punct };
 }
-W.sentenceSets.forEach(s => s.list = s.items.trim().split(/\r?\n/).map(parseItem));
+W.sentenceSets.forEach(s => {
+  const tags = (W.sentenceTags[s.id] || "").split(",");
+  s.list = s.items.trim().split(/\r?\n/).map((line,i) => Object.assign(parseItem(line), { tag:tags[i] || "" }));
+});
+const tagChip = it => it.tag && W.grammarTags[it.tag] ? `<span class="chip learn" style="margin-right:6px">考点：${esc(W.grammarTags[it.tag])}</span>` : "";
 const EMAIL = {}, DISC = {};
 W.emails.forEach(e => EMAIL[e.id] = e);
 W.discussions.forEach(d => DISC[d.id] = d);
 
 /* ---------- 记录 ---------- */
-const wblank = () => ({ sets:{}, drafts:{}, settings:{ timed:true } });
-function normalize(d){ const b = wblank(); d = d || {}; return { sets:d.sets||{}, drafts:d.drafts||{}, settings:Object.assign(b.settings, d.settings||{}) } }
+const wblank = () => ({ sets:{}, drafts:{}, tags:{}, settings:{ timed:true } });
+function normalize(d){ const b = wblank(); d = d || {}; return { sets:d.sets||{}, drafts:d.drafts||{}, tags:d.tags||{}, settings:Object.assign(b.settings, d.settings||{}) } }
 let data = normalize(App.store.get(App.KEYS.writing, null));
 const save = () => App.store.set(App.KEYS.writing, data);
 App.writingData = () => data;
@@ -156,7 +160,7 @@ function renderItem(){
       <div class="sb-bank">${bank}</div>
       <p class="note" style="margin:0">点击词块填入下一个空；点已填的空可以撤回。${it.distractors.length ? "有一个词块用不上。" : ""}</p>
     </div>
-    ${done ? `<div class="fb ${done.ok ? "ok" : "no"}">${done.ok ? "正确。" : "不对。正确答案："}<b>${esc(it.sentence)}</b><br><span class="note">${esc(it.tip)}</span></div>` : ""}
+    ${done ? `<div class="fb ${done.ok ? "ok" : "no"}">${done.ok ? "正确。" : "不对。正确答案："}<b>${esc(it.sentence)}</b><br>${tagChip(it)}<span class="note">${esc(it.tip)}</span></div>` : ""}
     <div class="row">${done
       ? `<button class="btn" data-wnext>${S.idx+1<S.set.list.length ? "下一题" : "查看结果"}<kbd>Enter</kbd></button>`
       : `<button class="btn" data-wcheck ${full ? "" : "disabled"}>检查<kbd>Enter</kbd></button><button class="btn alt" data-wclear>清空</button>`}</div>
@@ -168,6 +172,7 @@ function checkItem(){
   const built = S.slots.map(s => s.fixed ? s.text : (S.bank.find(b => b.id===s.chip) || {}).text);
   const ok = built.every((t,i) => t===it.chunks[i].text);
   S.checked = { ok }; S.results[S.idx] = { ok, built: built.join(" ") + it.punct };
+  if(it.tag){ const t = data.tags[it.tag] || (data.tags[it.tag] = [0,0]); t[1]++; if(ok) t[0]++; save() }
   renderItem();
 }
 function finishSet(timeUp){
@@ -182,7 +187,7 @@ function finishSet(timeUp){
     ${timeUp ? `<div class="fb no">时间到，未完成的题按错误计。</div>` : ""}
     <div class="row" style="align-items:baseline;gap:14px"><div class="score">${score}<span style="font-size:24px;color:var(--muted)"> / ${S.set.list.length}</span></div><div class="note">组句每题全对才得分。错题看一下语法提示，常见考点是间接疑问句的语序和助动词后接原形。</div></div>
     <div class="review">${S.set.list.map((it,i) => { const r = S.results[i];
-      return `<div class="ritem"><div class="meta"><span>第 ${i+1} 题</span><span class="chip ${r && r.ok ? "done" : "bad"}">${r ? (r.ok ? "正确" : "错误") : "未作答"}</span></div>
+      return `<div class="ritem"><div class="meta"><span>第 ${i+1} 题</span><span class="chip ${r && r.ok ? "done" : "bad"}">${r ? (r.ok ? "正确" : "错误") : "未作答"}</span>${tagChip(it)}</div>
         <div class="note">A：${esc(it.ctx)}</div>
         <div><b>${esc(it.sentence)}</b></div>
         ${r && !r.ok ? `<div class="said">你的答案：${esc(r.built)}</div>` : ""}

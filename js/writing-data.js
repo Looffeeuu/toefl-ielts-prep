@@ -3,6 +3,21 @@
    写邮件 Write an Email、学术讨论 Academic Discussion：每题附范文和常用句型 */
 window.WRITING = {
 
+/* 组句题的语法考点（按每套 10 题的顺序，逗号分隔） */
+grammarTags: {
+  indirect:"间接疑问句语序", modal:"助动词、情态动词后接原形", tense:"时态", nonfinite:"不定式与动名词",
+  compare:"比较结构", relative:"从句与关系词", passive:"被动语态", agreement:"主谓一致",
+  collocation:"固定搭配", pronoun:"代词"
+},
+sentenceTags: {
+  "s-campus":"indirect,indirect,relative,nonfinite,compare,indirect,tense,modal,modal,modal",
+  "s-class":"indirect,indirect,modal,compare,pronoun,collocation,indirect,agreement,tense,indirect",
+  "s-library":"nonfinite,collocation,indirect,modal,relative,agreement,passive,passive,indirect,tense",
+  "s-work":"tense,nonfinite,compare,collocation,indirect,tense,collocation,nonfinite,tense,relative",
+  "s-travel":"indirect,indirect,agreement,tense,nonfinite,modal,tense,modal,agreement,tense",
+  "s-science":"relative,indirect,modal,collocation,passive,tense,indirect,nonfinite,agreement,modal"
+},
+
 sentenceSets: [
   { id:"s-campus", name:"校园生活", items:`
 I'm looking for the new computer lab.|[Do you know] / which floor / it / is / on?|does|间接疑问句用陈述语序：which floor it is on，不用 which floor is it on。

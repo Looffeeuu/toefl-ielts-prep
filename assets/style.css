@@ -310,6 +310,24 @@ textarea.transcript{width:100%;min-height:90px;border:1px solid var(--line);bord
 .post .who{font-weight:600;font-size:14px;margin-bottom:4px}
 .post p{margin:0;font-family:var(--f-head);font-size:17px;line-height:1.65}
 
+/* guide */
+.guide{display:flex;flex-direction:column;gap:26px}
+.guide-block{display:flex;flex-direction:column;gap:12px}
+.guide td.num{font-family:var(--f-mono)}
+.res-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:10px}
+.res{display:flex;flex-direction:column;gap:4px;border:1px solid var(--line);border-radius:10px;padding:12px 14px;background:var(--surface);text-decoration:none;color:var(--ink);font-size:14px}
+.res:hover{border-color:var(--primary)}
+.res b{color:var(--primary)}
+.g-sec{margin:0;font-family:var(--f-head);font-size:24px;font-weight:600}
+.g-task{border:1px solid var(--line);border-radius:12px;background:var(--surface);padding:16px 18px;display:flex;flex-direction:column;gap:12px}
+.g-head{display:flex;flex-direction:column;gap:2px}
+.g-head b{font-size:16px}
+.g-cols{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+@media (max-width:880px){.g-cols{grid-template-columns:minmax(0,1fr)}}
+.g-cols .lab{margin:0 0 4px;display:block}
+.g-stat{display:flex;flex-direction:column;gap:6px}
+.tstat.wide{grid-template-columns:120px minmax(0,1fr) auto}
+
 /* settings */
 .settings-page{max-width:720px;display:flex;flex-direction:column;gap:18px}
 .settings-page .panel{padding:16px 18px;display:flex;flex-direction:column;gap:12px}

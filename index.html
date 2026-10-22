@@ -21,7 +21,7 @@
       <a class="mod" href="#vocab" data-route="vocab">词汇</a>
       <a class="mod" href="#speaking" data-route="speaking">口语</a>
       <a class="mod" href="#reading" data-route="reading">阅读</a>
-      <span class="mod off" title="下一步开发">写作 <span class="tag">下一步</span></span>
+      <a class="mod" href="#writing" data-route="writing">写作</a>
       <a class="mod" href="#settings" data-route="settings">设置</a>
     </nav>
   </header>
@@ -101,6 +101,9 @@
   <!-- ===================== 阅读 ===================== -->
   <main id="view-reading" hidden></main>
 
+  <!-- ===================== 写作 ===================== -->
+  <main id="view-writing" hidden></main>
+
   <!-- ===================== 设置 ===================== -->
   <main id="view-settings" hidden>
     <div class="settings-page">
@@ -132,7 +135,7 @@
 
       <section class="panel">
         <h3>学习数据</h3>
-        <p class="note" style="margin:0">背词进度、口语和阅读练习记录都保存在当前浏览器里。换电脑或换浏览器前，先导出一份备份，再到新地方导入。录音不会被保存，关闭页面后就没有了。</p>
+        <p class="note" style="margin:0">背词进度、口语、阅读和写作记录都保存在当前浏览器里。换电脑或换浏览器前，先导出一份备份，再到新地方导入。录音不会被保存，关闭页面后就没有了。</p>
         <div class="row">
           <button class="btn alt" id="exportBtn">导出备份</button>
           <label class="btn alt" style="cursor:pointer">导入备份<input type="file" id="importIn" accept="application/json,.json" hidden></label>
@@ -165,6 +168,8 @@
 <script src="js/speaking.js"></script>
 <script src="js/reading-data.js"></script>
 <script src="js/reading.js"></script>
+<script src="js/writing-data.js"></script>
+<script src="js/writing.js"></script>
 <script src="js/settings.js"></script>
 <script>App.start();</script>
 </body>

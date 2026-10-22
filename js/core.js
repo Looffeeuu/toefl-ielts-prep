@@ -12,7 +12,7 @@ App.store = {
   get(key, fallback){ try{ const s=localStorage.getItem(key); return s?JSON.parse(s):fallback }catch(e){ return fallback } },
   set(key, value){ try{ localStorage.setItem(key, JSON.stringify(value)); return true }catch(e){ return false } }
 };
-App.KEYS = { vocab:"toefl.vocab.v1", speaking:"toefl.speaking.v1", reading:"toefl.reading.v1", settings:"toefl.settings.v1" };
+App.KEYS = { vocab:"toefl.vocab.v1", speaking:"toefl.speaking.v1", reading:"toefl.reading.v1", writing:"toefl.writing.v1", settings:"toefl.settings.v1" };
 
 const defaults = { voiceURI:"", rate:1, apiKey:"", apiBase:"" };
 App.settings = Object.assign({}, defaults, App.store.get(App.KEYS.settings, {}));

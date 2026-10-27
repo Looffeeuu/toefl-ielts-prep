@@ -108,15 +108,15 @@ const IELTS_SECTIONS = [
       traps:["用常识而不是原文判断 True / False","被和原文相同的词吸引，忽略了意思变化","填空超出字数或改动了原文词形","在一道难题上花太多时间"],
       practice:"阅读 → 6 篇文章（80 题）· 三篇 60 分钟完整模拟", statKey:"iread" }
   ]},
-  { id:"writing", name:"写作", route:"", tasks:[
+  { id:"writing", name:"写作", route:"iwriting", tasks:[
     { name:"Task 1 图表描述", tests:"描述图表、表格、流程图或地图中的信息，至少 150 词，建议用 20 分钟。评分看任务完成度、连贯与衔接、词汇、语法四项。",
       points:["写一段概述（overview），点出最主要的趋势或特征","挑选关键数据进行比较，不用罗列每个数字","准确表达变化和比较：rise sharply、remain stable、twice as high as"],
       traps:["没有概述段","加入个人观点或猜测原因","数据写错，或时态和图表时间不一致"],
-      practice:"本站暂未提供", statKey:"" },
+      practice:"写作 → Task 1（6 道：折线、柱状、饼图、表格、流程图）", statKey:"iwrite:1" },
     { name:"Task 2 议论文", tests:"就一个观点或问题写议论文，至少 250 词，建议用 40 分钟。分值是 Task 1 的两倍。",
       points:["先判断题目类型：是否同意、讨论双方观点、问题与解决、利弊分析","立场明确并贯穿全文","每个主体段一个中心论点，配解释和例子"],
       traps:["只回答了题目的一部分","堆砌背好的模板句，和题目关系不大","少于 250 词"],
-      practice:"本站暂未提供", statKey:"" }
+      practice:"写作 → Task 2（8 道，五种题型）· 60 分钟完整模拟", statKey:"iwrite:2" }
   ]},
   { id:"speaking", name:"口语", route:"ispeaking", tasks:[
     { name:"口语 Speaking", tests:"与考官面对面交流，全程录音。Part 1 约 4–5 分钟，回答家乡、学习、爱好等日常问题；Part 2 拿到话题卡，准备 1 分钟后讲 1–2 分钟；Part 3 约 4–5 分钟，围绕 Part 2 的话题深入讨论。评分看流利与连贯、词汇、语法、发音四项。",
@@ -130,7 +130,7 @@ const EXAM_GUIDE = {
     structTitle:"新版考试结构（2026 年 1 月 21 日起）", structure:STRUCTURE,
     scoreNote:"全程约 2 小时。阅读和听力是自适应的，实际题量和时长会有变化。每部分按 1–6 分计分，以半分为单位；总分是四部分的平均，四舍五入到半分。过渡期内成绩单还会给出对应的 0–120 分（例如 5 分对应 95 分以上）。数据来自 ETS 官网。",
     resources:RESOURCES, sections:SECTIONS },
-  ielts:{ intro:"本页按雅思学术类整理。想做真题，可以用剑桥大学出版社出版的官方真题集《剑桥雅思》（需要购买），以及下方官网的免费样题；本站不收录真题和网传「机经」。本站的雅思部分目前有词汇、口语、阅读和听力，写作正在制作。",
+  ielts:{ intro:"本页按雅思学术类整理。想做真题，可以用剑桥大学出版社出版的官方真题集《剑桥雅思》（需要购买），以及下方官网的免费样题；本站不收录真题和网传「机经」。本站的雅思部分已有词汇、口语、阅读、听力和写作。",
     structTitle:"考试结构（学术类）", structure:IELTS_STRUCTURE,
     scoreNote:"听力、阅读、写作在同一天连续进行，口语可能安排在同一天或前后几天。每部分 0–9 分，以半分为单位；总分是四部分的平均分，取到最近的半分，平均分尾数为 .25 时进到半分、为 .75 时进到整分（例如 6.25 记 6.5，6.75 记 7.0）。学术类和培训类的听力、口语相同，阅读和写作不同。数据来自 IELTS 官网。",
     resources:IELTS_RESOURCES, sections:IELTS_SECTIONS }
@@ -151,6 +151,10 @@ function statHTML(key){
     const d = key==="iread" ? App.ieltsReadingData() : App.ieltsListeningData(), ks = key==="iread" ? ["tfng","ynng","headings","match","gap","mcq"] : ["gap","mcq","match"];
     const IT = App.iq.TYPE;
     return ks.map(k => { const t = d.types[k] || [0,0]; return `<div class="tstat wide"><span>${IT[k]}</span>${bar(t[0], t[1])}</div>` }).join("");
+  }
+  if(key.startsWith("iwrite:") && App.ieltsWritingData){
+    const list = key==="iwrite:1" ? window.IELTS_WRITING.task1 : window.IELTS_WRITING.task2, d = App.ieltsWritingData().done;
+    return `<p class="note" style="margin:0">已写 ${list.filter(x => d[x.id]).length} / ${list.length} 题</p>`;
   }
   if(key==="ispeak" && App.ieltsSpeakingData){
     const h = App.ieltsSpeakingData().history, n = m => h.filter(x => x.mode===m).length;

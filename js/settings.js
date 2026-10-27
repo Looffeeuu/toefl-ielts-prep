@@ -20,7 +20,7 @@ function renderEnv(){
 
 function exportData(){
   const settings = Object.assign({}, App.settings); delete settings.apiKey;
-  const payload = { app:"toefl-prep", version:1, exportedAt:new Date().toISOString(), vocab:App.vocabData(), speaking:App.speakingData(), reading:App.readingData(), listening:App.listeningData(), ieltsSpeaking:App.ieltsSpeakingData(), ieltsReading:App.ieltsReadingData(), ieltsListening:App.ieltsListeningData(), writing:App.writingData(), settings };
+  const payload = { app:"toefl-prep", version:1, exportedAt:new Date().toISOString(), vocab:App.vocabData(), speaking:App.speakingData(), reading:App.readingData(), listening:App.listeningData(), ieltsSpeaking:App.ieltsSpeakingData(), ieltsReading:App.ieltsReadingData(), ieltsListening:App.ieltsListeningData(), ieltsWriting:App.ieltsWritingData(), writing:App.writingData(), settings };
   const blob = new Blob([JSON.stringify(payload, null, 1)], { type:"application/json" });
   const a = document.createElement("a");
   a.href = URL.createObjectURL(blob);
@@ -42,6 +42,7 @@ function importData(file){
       if(d.ieltsSpeaking) App.loadIeltsSpeakingData(d.ieltsSpeaking);
       if(d.ieltsReading) App.loadIeltsReadingData(d.ieltsReading);
       if(d.ieltsListening) App.loadIeltsListeningData(d.ieltsListening);
+      if(d.ieltsWriting) App.loadIeltsWritingData(d.ieltsWriting);
       if(d.writing) App.loadWritingData(d.writing);
       if(d.settings){ Object.assign(App.settings, d.settings, { apiKey:App.settings.apiKey }); App.saveSettings(); renderVoices() }
       $("#dataMsg").textContent = "导入完成，进度已恢复。";

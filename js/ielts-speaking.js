@@ -77,7 +77,7 @@ async function begin(){
   try{ await ensureMic() }catch(e){ $("#isErr").textContent = MIC_ERR[e.name] || ("打开麦克风失败：" + (e.message||e.name)); return }
   App.audioCtx();
   const tok = ++token;
-  for(let i=0;i<S.steps.length;i++){
+  for(let i=0; S && tok===token && i<S.steps.length; i++){
     if(tok!==token) return;
     S.idx = i;
     const st = S.steps[i];

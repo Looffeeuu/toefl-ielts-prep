@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600&family=Noto+Sans+SC:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap">
-<link rel="stylesheet" href="assets/style.css?v=20261028">
+<link rel="stylesheet" href="assets/style.css?v=20261029b">
 </head>
 <body>
 <div class="wrap">
@@ -24,6 +24,8 @@
       <a class="mod" href="#vocab" data-route="vocab">词汇</a>
       <a class="mod" href="#speaking" data-route="speaking">口语</a>
       <a class="mod" href="#ispeaking" data-route="ispeaking">口语</a>
+      <a class="mod" href="#ireading" data-route="ireading">阅读</a>
+      <a class="mod" href="#ilistening" data-route="ilistening">听力</a>
       <a class="mod" href="#reading" data-route="reading">阅读</a>
       <a class="mod" href="#listening" data-route="listening">听力</a>
       <a class="mod" href="#writing" data-route="writing">写作</a>
@@ -39,7 +41,7 @@
       <p class="note">选好后，页面上的词汇、练习和考点都会按这个考试显示。之后随时可以在右上角切换，背词进度两边通用。</p>
       <div class="welcome-cards">
         <a class="welcome-card" href="#toefl/vocab"><b>托福</b><span class="en">TOEFL iBT 2026 新版</span><span class="note">词汇 6,973 词 · 口语 · 阅读 · 听力 · 写作 · 考点地图</span></a>
-        <a class="welcome-card" href="#ielts/vocab"><b>雅思</b><span class="en">IELTS Academic</span><span class="note">词汇 5,026 词 · 口语 Part 1–3 · 考点地图（阅读、听力、写作正在制作）</span></a>
+        <a class="welcome-card" href="#ielts/vocab"><b>雅思</b><span class="en">IELTS Academic</span><span class="note">词汇 5,026 词 · 口语 · 阅读 · 听力 · 考点地图（写作正在制作）</span></a>
       </div>
     </div>
   </main>
@@ -120,6 +122,10 @@
   <!-- ===================== 雅思口语 ===================== -->
   <main id="view-ispeaking" hidden></main>
 
+  <!-- ===================== 雅思阅读、听力 ===================== -->
+  <main id="view-ireading" hidden></main>
+  <main id="view-ilistening" hidden></main>
+
   <!-- ===================== 阅读 ===================== -->
   <main id="view-reading" hidden></main>
 
@@ -191,22 +197,28 @@
 <script src="js/words-pos-1.js?v=20261027"></script>
 <script src="js/words-pos-2.js?v=20261027"></script>
 <script src="js/words-ielts.js?v=20261027"></script>
-<script src="js/core.js?v=20261028"></script>
+<script src="js/core.js?v=20261029"></script>
 <script src="js/wordlist-io.js?v=20261027"></script>
 <script src="js/vocab.js?v=20261027"></script>
 <script src="js/recorder.js?v=20261028"></script>
+<script src="js/tts.js?v=20261029"></script>
+<script src="js/ielts-qs.js?v=20261029"></script>
 <script src="js/speaking-data.js?v=20261027"></script>
 <script src="js/speaking.js?v=20261028"></script>
 <script src="js/ielts-speaking-data.js?v=20261028"></script>
-<script src="js/ielts-speaking.js?v=20261028b"></script>
+<script src="js/ielts-speaking.js?v=20261029"></script>
+<script src="js/ielts-reading-data.js?v=20261029"></script>
+<script src="js/ielts-reading.js?v=20261029"></script>
+<script src="js/ielts-listening-data.js?v=20261029"></script>
+<script src="js/ielts-listening.js?v=20261029"></script>
 <script src="js/reading-data.js?v=20261027"></script>
 <script src="js/reading.js?v=20261027"></script>
 <script src="js/listening-data.js?v=20261027"></script>
-<script src="js/listening.js?v=20261027"></script>
+<script src="js/listening.js?v=20261029"></script>
 <script src="js/writing-data.js?v=20261027"></script>
 <script src="js/writing.js?v=20261027"></script>
-<script src="js/guide.js?v=20261028"></script>
-<script src="js/settings.js?v=20261028"></script>
+<script src="js/guide.js?v=20261029"></script>
+<script src="js/settings.js?v=20261029"></script>
 <script>App.start();</script>
 </body>
 </html>

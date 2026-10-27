@@ -96,17 +96,17 @@ const IELTS_SECTIONS = [
       traps:["只认识单词的一个意思","会认不会拼，听力和阅读填空因拼写丢分","背了很多难词但用错搭配"],
       practice:"词汇 → 雅思词库 5,026 词，也可以导入老师布置的词表", statKey:"vocab:ielts" }
   ]},
-  { id:"listening", name:"听力", route:"", tasks:[
+  { id:"listening", name:"听力", route:"ilistening", tasks:[
     { name:"听力 Listening", tests:"四个部分由易到难：日常对话（如预订、咨询）、日常独白（如场所介绍）、学术场景的多人讨论、学术讲座。题型有填空（表格、笔记、流程图、句子）、选择、配对、地图或平面图标注、简答。",
       points:["每部分开始前先读题，预测答案是数字、日期、人名还是名词","注意字数要求，例如 NO MORE THAN TWO WORDS AND/OR A NUMBER","题目顺序一般和录音顺序一致","抓住 but、actually、in fact 后面的修正信息"],
       traps:["说话人先说一个答案又改口","拼写或单复数错误直接不得分","超出字数限制","题目和录音用词不同（同义替换），等原词出现时答案已经过去了"],
-      practice:"本站暂未提供，建议用官方样题和《剑桥雅思》真题集练习", statKey:"" }
+      practice:"听力 → 两套练习（8 个部分，80 题）· 整套模拟", statKey:"ilisten" }
   ]},
-  { id:"reading", name:"阅读", route:"", tasks:[
+  { id:"reading", name:"阅读", route:"ireading", tasks:[
     { name:"阅读 Reading（学术类）", tests:"3 篇来自书籍、期刊、报纸的长文，60 分钟 40 题。题型包括判断题（True / False / Not Given，Yes / No / Not Given）、段落标题配对、信息配对、特征配对、句子结尾配对、各类填空、选择和简答。",
       points:["判断题：False 是与原文相反，Not Given 是原文没有提到","标题配对看段落主旨，不被段落中的细节词吸引","多数题型按原文顺序出题，配对题通常不按顺序","每篇大约 20 分钟，答案要在 60 分钟内写完，没有额外的誊写时间"],
       traps:["用常识而不是原文判断 True / False","被和原文相同的词吸引，忽略了意思变化","填空超出字数或改动了原文词形","在一道难题上花太多时间"],
-      practice:"本站暂未提供，建议用官方样题和《剑桥雅思》真题集练习", statKey:"" }
+      practice:"阅读 → 6 篇文章（80 题）· 三篇 60 分钟完整模拟", statKey:"iread" }
   ]},
   { id:"writing", name:"写作", route:"", tasks:[
     { name:"Task 1 图表描述", tests:"描述图表、表格、流程图或地图中的信息，至少 150 词，建议用 20 分钟。评分看任务完成度、连贯与衔接、词汇、语法四项。",
@@ -130,7 +130,7 @@ const EXAM_GUIDE = {
     structTitle:"新版考试结构（2026 年 1 月 21 日起）", structure:STRUCTURE,
     scoreNote:"全程约 2 小时。阅读和听力是自适应的，实际题量和时长会有变化。每部分按 1–6 分计分，以半分为单位；总分是四部分的平均，四舍五入到半分。过渡期内成绩单还会给出对应的 0–120 分（例如 5 分对应 95 分以上）。数据来自 ETS 官网。",
     resources:RESOURCES, sections:SECTIONS },
-  ielts:{ intro:"本页按雅思学术类整理。想做真题，可以用剑桥大学出版社出版的官方真题集《剑桥雅思》（需要购买），以及下方官网的免费样题；本站不收录真题和网传「机经」。本站的雅思部分目前有词汇和口语，阅读、听力和写作正在制作。",
+  ielts:{ intro:"本页按雅思学术类整理。想做真题，可以用剑桥大学出版社出版的官方真题集《剑桥雅思》（需要购买），以及下方官网的免费样题；本站不收录真题和网传「机经」。本站的雅思部分目前有词汇、口语、阅读和听力，写作正在制作。",
     structTitle:"考试结构（学术类）", structure:IELTS_STRUCTURE,
     scoreNote:"听力、阅读、写作在同一天连续进行，口语可能安排在同一天或前后几天。每部分 0–9 分，以半分为单位；总分是四部分的平均分，取到最近的半分，平均分尾数为 .25 时进到半分、为 .75 时进到整分（例如 6.25 记 6.5，6.75 记 7.0）。学术类和培训类的听力、口语相同，阅读和写作不同。数据来自 IELTS 官网。",
     resources:IELTS_RESOURCES, sections:IELTS_SECTIONS }
@@ -147,6 +147,11 @@ function bar(c, n){
 }
 function statHTML(key){
   if(!key) return "";
+  if((key==="iread" && App.ieltsReadingData) || (key==="ilisten" && App.ieltsListeningData)){
+    const d = key==="iread" ? App.ieltsReadingData() : App.ieltsListeningData(), ks = key==="iread" ? ["tfng","ynng","headings","match","gap","mcq"] : ["gap","mcq","match"];
+    const IT = App.iq.TYPE;
+    return ks.map(k => { const t = d.types[k] || [0,0]; return `<div class="tstat wide"><span>${IT[k]}</span>${bar(t[0], t[1])}</div>` }).join("");
+  }
   if(key==="ispeak" && App.ieltsSpeakingData){
     const h = App.ieltsSpeakingData().history, n = m => h.filter(x => x.mode===m).length;
     return h.length ? `<p class="note" style="margin:0">Part 1 练了 ${n("p1")} 次，Part 2 ${n("p2")} 次，Part 3 ${n("p3")} 次，完整模拟 ${n("full")} 次</p>` : `<p class="note" style="margin:0">还没有练习记录</p>`;

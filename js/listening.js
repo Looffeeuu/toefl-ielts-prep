@@ -33,17 +33,8 @@ App.listeningData = () => data;
 App.loadListeningData = d => { data = normalize(d); save(); if(App.route==="listening" && !S) renderHome() };
 
 /* ---------- 朗读：按句播放，男女声区分 ---------- */
-const FEMALE = /\b(aria|jenny|michelle|ana|emma|ava|sonia|libby|maisie|natasha|clara|zira|hazel|susan|samantha|karen|moira|tessa|victoria|allison|fiona|serena|joanna|salli|kimberly|ivy|kendra|female|woman)\b/i;
-const MALE = /\b(guy|christopher|eric|roger|steffan|andrew|brian|davis|tony|jason|ryan|thomas|william|liam|david|mark|george|james|alex|daniel|fred|oliver|male|man)\b/i;
-const genderOf = v => FEMALE.test(v.name) ? "W" : MALE.test(v.name) ? "M" : "";
-function voiceFor(g){
-  const vs = App.voices(); if(!vs.length) return {};
-  const score = v => (genderOf(v)===g ? 100 : 0) + (v.voiceURI===App.settings.voiceURI ? 20 : 0) + (/natural|online/i.test(v.name) ? 10 : 0) + (/en[-_]US/i.test(v.lang) ? 5 : 0);
-  const best = vs.slice().sort((a,b) => score(b)-score(a))[0];
-  // 找不到对应性别的声音时，用音高区分说话人
-  return genderOf(best)===g ? { voice:best } : { voice:best, pitch: g==="W" ? 1.25 : 0.8 };
-}
-const sentences = t => t.trim().split(/(?<=[.!?])\s+(?=[A-Z"])/);
+const { voiceFor, sentences, play, canPlay } = App.tts;
+const stopAudio = App.tts.stop;
 function segments(it){
   if(it._segs) return it._segs;
   const out = [];
@@ -58,21 +49,6 @@ function segments(it){
   }
   return it._segs = out;
 }
-let token = 0;
-function stopAudio(){ token++; if(App.canSpeak) speechSynthesis.cancel() }
-const wait = ms => new Promise(r => setTimeout(r, ms));
-async function play(segs, onStep){
-  const tok = ++token;
-  for(let i=0;i<segs.length;i++){
-    if(tok!==token) return false;
-    if(onStep) onStep(i, segs.length);
-    await App.speak(segs[i].text, voiceFor(segs[i].who));
-    if(tok!==token) return false;
-    if(segs[i].gap) await wait(segs[i].gap);
-  }
-  return tok===token;
-}
-const canPlay = () => App.canSpeak && App.voices().length>0;
 
 /* ---------- 题目与评分 ---------- */
 function makeUnit(it){ return { item:it, ans:{}, order: it.qs.map(q => shuffle(q.opts.map((_,i) => i))), notes:"", textMode:false } }

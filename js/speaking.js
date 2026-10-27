@@ -1,6 +1,7 @@
 /* 口语模块：听后复述（Listen and Repeat）与模拟面试（Take an Interview） */
 (function(){
 const { $, esc } = App;
+const { tokens, FILLER, SR, MIC_ERR, RECOG_ERR, ensureMic, record } = App.rec;
 const REPEAT = window.REPEAT_SETS, INTERVIEW = window.INTERVIEW_SETS;
 const INTERVIEW_SECONDS = 45;
 const sleep = ms => new Promise(r => setTimeout(r, ms));
@@ -14,22 +15,6 @@ App.speakingData = () => data;
 App.loadSpeakingData = d => { data = Object.assign(sblank(), d || {}); data.settings = Object.assign(sblank().settings, data.settings || {}); save(); if(App.route==="speaking") renderHome() };
 
 /* ---------- 文本比对 ---------- */
-const ONES = "zero one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen seventeen eighteen nineteen".split(" ");
-const TENS = ",,twenty,thirty,forty,fifty,sixty,seventy,eighty,ninety".split(",");
-function numWords(n){
-  if(n<20) return ONES[n];
-  if(n<100) return TENS[Math.floor(n/10)] + (n%10 ? " "+ONES[n%10] : "");
-  if(n<1000) return ONES[Math.floor(n/100)] + " hundred" + (n%100 ? " "+numWords(n%100) : "");
-  if(n<1e6) return numWords(Math.floor(n/1000)) + " thousand" + (n%1000 ? " "+numWords(n%1000) : "");
-  return String(n);
-}
-function tokens(s){
-  return String(s||"").toLowerCase().replace(/[’‘]/g,"'")
-    .replace(/(\d+):00/g, "$1 o'clock")
-    .replace(/(\d[\d,]*)(st|nd|rd|th)?/g, (m,d) => " " + numWords(+d.replace(/,/g,"")) + " ")
-    .replace(/-/g," ").replace(/[^a-z' ]+/g," ")
-    .split(/\s+/).map(w => w.replace(/^'+|'+$/g,"")).filter(Boolean);
-}
 const norm = w => w.replace(/'/g,"");
 // 最长公共子序列：标记原句中被说出的词
 function align(target, said){
@@ -53,107 +38,12 @@ function scoreRepeat(sentence, transcript){
 }
 const repeatSeconds = s => { const n = s.split(/\s+/).length; return n<=7 ? 8 : n<=12 ? 10 : 12 };
 const levelOf = p => p>=95 ? ["done","完整复述"] : p>=70 ? ["learn","基本复述"] : p>=40 ? ["new","部分复述"] : ["bad","没跟上"];
-const FILLER = /\b(um+|uh+|erm*|ah+|hmm+)\b/gi;
-
-/* ---------- 麦克风、录音、语音识别 ---------- */
-let stream = null, meterRAF = 0;
-const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
-let recogBroken = "";
-const MIC_ERR = {
-  NotAllowedError:"麦克风权限被拒绝了。点地址栏左侧的锁形图标，把麦克风改成「允许」，然后刷新页面。",
-  NotFoundError:"没有检测到麦克风。插上耳机麦克风或检查系统声音设置后再试。",
-  NotReadableError:"麦克风正被其他程序占用（比如会议软件），关掉它再试。",
-  insecure:"浏览器只允许在 https 网页里使用麦克风。请用 GitHub Pages 的网址打开，或用本地服务器打开（见 README）。"
-};
-const RECOG_ERR = {
-  unsupported:"这个浏览器不支持语音识别，建议用 Edge 或 Chrome。录音和回放照常可用，复述题可以自己对照原句打分。",
-  network:"语音识别服务连不上。Chrome 的识别服务要访问 Google，在国内通常用不了，可以换 Edge 浏览器试试。录音不受影响。",
-  "not-allowed":"浏览器拒绝了语音识别。检查麦克风权限后刷新页面。",
-  "service-not-allowed":"浏览器拒绝了语音识别服务。换 Edge 或 Chrome 试试。",
-  "audio-capture":"语音识别拿不到麦克风声音。"
-};
-async function ensureMic(){
-  if(stream && stream.active) return stream;
-  if(!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) throw { name:"insecure" };
-  stream = await navigator.mediaDevices.getUserMedia({ audio:{ echoCancellation:true, noiseSuppression:true } });
-  startMeter();
-  return stream;
-}
-function startMeter(){
-  const ctx = App.audioCtx(); if(!ctx || !stream) return;
-  const an = ctx.createAnalyser(); an.fftSize = 512;
-  ctx.createMediaStreamSource(stream).connect(an);
-  const buf = new Uint8Array(an.fftSize);
-  cancelAnimationFrame(meterRAF);
-  const loop = () => {
-    an.getByteTimeDomainData(buf);
-    let peak = 0; for(const v of buf) peak = Math.max(peak, Math.abs(v-128));
-    const el = document.querySelector(".level i"); if(el) el.style.width = Math.min(100, peak/64*100) + "%";
-    meterRAF = requestAnimationFrame(loop);
-  };
-  loop();
-}
-function startRecognition(onText){
-  if(!SR) return { finish:() => Promise.resolve({ text:"", error:"unsupported" }) };
-  let finals = [], interim = "", error = null, active = true, rec = null, endWait = null;
-  const make = () => {
-    rec = new SR(); rec.lang = "en-US"; rec.continuous = true; rec.interimResults = true;
-    rec.onresult = e => {
-      interim = "";
-      for(let i=e.resultIndex;i<e.results.length;i++){ const r = e.results[i]; if(r.isFinal) finals.push(r[0].transcript.trim()); else interim += r[0].transcript }
-      onText && onText((finals.join(" ") + " " + interim).trim());
-    };
-    rec.onerror = e => { if(e.error!=="no-speech" && e.error!=="aborted") error = e.error };
-    rec.onend = () => {
-      if(active && !error){ try{ make(); rec.start() }catch(_){ } }
-      else if(endWait) endWait();
-    };
-    try{ rec.start() }catch(_){ }
-  };
-  make();
-  return {
-    finish(){
-      active = false;
-      return new Promise(resolve => {
-        const done = () => { resolve({ text:(finals.join(" ") + " " + interim).trim(), error }); if(error) recogBroken = error };
-        endWait = done;
-        try{ rec.stop() }catch(_){ done() }
-        setTimeout(done, 1500);
-      });
-    }
-  };
-}
-let current = null; // 正在进行的录音，可提前结束
-function record(maxSec, ui){
-  return new Promise(resolve => {
-    const chunks = [];
-    const types = ["audio/webm;codecs=opus","audio/webm","audio/mp4","audio/ogg"];
-    const mime = window.MediaRecorder && MediaRecorder.isTypeSupported ? types.find(t => MediaRecorder.isTypeSupported(t)) : "";
-    let mr = null;
-    try{ mr = new MediaRecorder(stream, mime ? { mimeType:mime } : undefined) }catch(e){ try{ mr = new MediaRecorder(stream) }catch(_){ mr = null } }
-    const recog = startRecognition(ui.onText);
-    const t0 = performance.now(); let stopped = false;
-    const tick = setInterval(() => { const el = (performance.now()-t0)/1000; ui.onTick(el); if(el>=maxSec) stop() }, 100);
-    function stop(){
-      if(stopped) return; stopped = true; clearInterval(tick); current = null;
-      const duration = Math.min(maxSec, (performance.now()-t0)/1000);
-      const finish = async () => {
-        const tr = await recog.finish();
-        const blob = chunks.length ? new Blob(chunks, { type:(mr && mr.mimeType) || "audio/webm" }) : null;
-        resolve({ url: blob ? URL.createObjectURL(blob) : "", duration, transcript:tr.text, recogError:tr.error });
-      };
-      if(mr && mr.state!=="inactive"){ mr.onstop = finish; try{ mr.stop() }catch(_){ finish() } } else finish();
-    }
-    if(mr){ mr.ondataavailable = e => { if(e.data && e.data.size) chunks.push(e.data) }; try{ mr.start(250) }catch(_){ } }
-    current = { stop };
-  });
-}
 
 /* ---------- 会话 ---------- */
 let S = null, token = 0;
 function abortSession(){
   token++;
-  if(current) current.stop();
+  App.rec.stop();
   if(App.canSpeak) speechSynthesis.cancel();
   S = null;
 }
@@ -175,8 +65,8 @@ function renderHome(){
       <section class="panel" style="padding:14px">
         <p class="section-label">设备检查</p>
         <div class="status-list">
-          <div><span class="dot ${navigator.mediaDevices ? (stream ? "ok" : "unk") : "no"}"></span><span>麦克风：${navigator.mediaDevices ? (stream ? "已连接" : "还没测试") : "当前打开方式用不了麦克风"}</span></div>
-          <div><span class="dot ${!SR || recogBroken ? "no" : "unk"}"></span><span>语音识别：${!SR ? "浏览器不支持" : recogBroken ? "上次出错（" + esc(recogBroken) + "）" : "浏览器支持，测一下才知道能否连上"}</span></div>
+          <div><span class="dot ${navigator.mediaDevices ? (App.rec.hasStream() ? "ok" : "unk") : "no"}"></span><span>麦克风：${navigator.mediaDevices ? (App.rec.hasStream() ? "已连接" : "还没测试") : "当前打开方式用不了麦克风"}</span></div>
+          <div><span class="dot ${!SR || App.rec.recogBroken() ? "no" : "unk"}"></span><span>语音识别：${!SR ? "浏览器不支持" : App.rec.recogBroken() ? "上次出错（" + esc(App.rec.recogBroken()) + "）" : "浏览器支持，测一下才知道能否连上"}</span></div>
           <div><span class="dot ${voices ? "ok" : "no"}"></span><span>朗读声音：${voices ? voices + " 个英文声音" : "没有找到英文声音"}</span></div>
         </div>
         <div class="row" style="margin-top:10px"><button class="btn alt" id="micTest">录 4 秒试试</button></div>
@@ -227,8 +117,9 @@ async function micTest(btn){
 }
 function renderStatusOnly(){ /* 轻量刷新：只更新状态点，保留测试结果 */
   const dots = document.querySelectorAll("#view-speaking .status-list .dot");
-  if(dots[0]){ dots[0].className = "dot " + (stream ? "ok" : "unk"); dots[0].nextElementSibling.textContent = "麦克风：" + (stream ? "已连接" : "还没测试") }
-  if(dots[1]){ dots[1].className = "dot " + (!SR || recogBroken ? "no" : "ok"); dots[1].nextElementSibling.textContent = "语音识别：" + (!SR ? "浏览器不支持" : recogBroken ? "出错（" + recogBroken + "）" : "可用") }
+  const rb = App.rec.recogBroken(), on = App.rec.hasStream();
+  if(dots[0]){ dots[0].className = "dot " + (on ? "ok" : "unk"); dots[0].nextElementSibling.textContent = "麦克风：" + (on ? "已连接" : "还没测试") }
+  if(dots[1]){ dots[1].className = "dot " + (!SR || rb ? "no" : "ok"); dots[1].nextElementSibling.textContent = "语音识别：" + (!SR ? "浏览器不支持" : rb ? "出错（" + rb + "）" : "可用") }
 }
 
 /* ---------- 练习开始前 ---------- */
@@ -428,7 +319,7 @@ function onClick(e){
   if(t.id==="micTest"){ micTest(t); return }
   if(t.dataset.start){ renderIntro(t.dataset.start, t.dataset.set); return }
   if(t.id==="go"){ t.disabled = true; begin(); return }
-  if(t.dataset.stop!==undefined){ if(current) current.stop(); return }
+  if(t.dataset.stop!==undefined){ App.rec.stop(); return }
   if(t.dataset.quit!==undefined){ abortSession(); renderHome(); return }
   if(t.dataset.home!==undefined){ abortSession(); renderHome(); return }
   if(t.dataset.again!==undefined){ const { task, set } = S; abortSession(); renderIntro(task, set.id); return }
@@ -447,8 +338,8 @@ function onInput(e){
   if(t.id==="optLive"){ data.settings.showLive = t.checked; save() }
 }
 function onKey(e){
-  if(App.route!=="speaking" || !current) return;
-  if(e.code==="Space" && !/INPUT|TEXTAREA|SELECT/.test(e.target.tagName||"")){ e.preventDefault(); current.stop() }
+  if(App.route!=="speaking" || !App.rec.busy()) return;
+  if(e.code==="Space" && !/INPUT|TEXTAREA|SELECT/.test(e.target.tagName||"")){ e.preventDefault(); App.rec.stop() }
 }
 
 App.routes.speaking = {

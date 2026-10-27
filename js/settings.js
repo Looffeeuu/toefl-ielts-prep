@@ -20,7 +20,7 @@ function renderEnv(){
 
 function exportData(){
   const settings = Object.assign({}, App.settings); delete settings.apiKey;
-  const payload = { app:"toefl-prep", version:1, exportedAt:new Date().toISOString(), vocab:App.vocabData(), speaking:App.speakingData(), reading:App.readingData(), listening:App.listeningData(), writing:App.writingData(), settings };
+  const payload = { app:"toefl-prep", version:1, exportedAt:new Date().toISOString(), vocab:App.vocabData(), speaking:App.speakingData(), reading:App.readingData(), listening:App.listeningData(), ieltsSpeaking:App.ieltsSpeakingData(), writing:App.writingData(), settings };
   const blob = new Blob([JSON.stringify(payload, null, 1)], { type:"application/json" });
   const a = document.createElement("a");
   a.href = URL.createObjectURL(blob);
@@ -39,6 +39,7 @@ function importData(file){
       if(d.speaking) App.loadSpeakingData(d.speaking);
       if(d.reading) App.loadReadingData(d.reading);
       if(d.listening) App.loadListeningData(d.listening);
+      if(d.ieltsSpeaking) App.loadIeltsSpeakingData(d.ieltsSpeaking);
       if(d.writing) App.loadWritingData(d.writing);
       if(d.settings){ Object.assign(App.settings, d.settings, { apiKey:App.settings.apiKey }); App.saveSettings(); renderVoices() }
       $("#dataMsg").textContent = "导入完成，进度已恢复。";

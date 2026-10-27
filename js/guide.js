@@ -118,11 +118,11 @@ const IELTS_SECTIONS = [
       traps:["只回答了题目的一部分","堆砌背好的模板句，和题目关系不大","少于 250 词"],
       practice:"本站暂未提供", statKey:"" }
   ]},
-  { id:"speaking", name:"口语", route:"", tasks:[
+  { id:"speaking", name:"口语", route:"ispeaking", tasks:[
     { name:"口语 Speaking", tests:"与考官面对面交流，全程录音。Part 1 约 4–5 分钟，回答家乡、学习、爱好等日常问题；Part 2 拿到话题卡，准备 1 分钟后讲 1–2 分钟；Part 3 约 4–5 分钟，围绕 Part 2 的话题深入讨论。评分看流利与连贯、词汇、语法、发音四项。",
       points:["Part 1 每题展开两三句，不只回答 yes / no","Part 2 用准备时间记关键词，按卡片上的提示讲满两分钟","Part 3 给出观点、理由和例子，可以比较过去和现在、推测未来"],
       traps:["Part 2 讲一分钟就没话了","明显背诵的答案，考官会换问题","为了用难词而影响流利度"],
-      practice:"本站暂未提供", statKey:"" }
+      practice:"口语 → Part 1（12 个话题）· Part 2 话题卡（10 张）· Part 3 讨论（10 组）· 完整模拟", statKey:"ispeak" }
   ]}
 ];
 const EXAM_GUIDE = {
@@ -130,7 +130,7 @@ const EXAM_GUIDE = {
     structTitle:"新版考试结构（2026 年 1 月 21 日起）", structure:STRUCTURE,
     scoreNote:"全程约 2 小时。阅读和听力是自适应的，实际题量和时长会有变化。每部分按 1–6 分计分，以半分为单位；总分是四部分的平均，四舍五入到半分。过渡期内成绩单还会给出对应的 0–120 分（例如 5 分对应 95 分以上）。数据来自 ETS 官网。",
     resources:RESOURCES, sections:SECTIONS },
-  ielts:{ intro:"本页按雅思学术类整理。想做真题，可以用剑桥大学出版社出版的官方真题集《剑桥雅思》（需要购买），以及下方官网的免费样题；本站不收录真题和网传「机经」。本站的雅思部分目前只有词汇，口语、阅读、听力和写作正在制作。",
+  ielts:{ intro:"本页按雅思学术类整理。想做真题，可以用剑桥大学出版社出版的官方真题集《剑桥雅思》（需要购买），以及下方官网的免费样题；本站不收录真题和网传「机经」。本站的雅思部分目前有词汇和口语，阅读、听力和写作正在制作。",
     structTitle:"考试结构（学术类）", structure:IELTS_STRUCTURE,
     scoreNote:"听力、阅读、写作在同一天连续进行，口语可能安排在同一天或前后几天。每部分 0–9 分，以半分为单位；总分是四部分的平均分，取到最近的半分，平均分尾数为 .25 时进到半分、为 .75 时进到整分（例如 6.25 记 6.5，6.75 记 7.0）。学术类和培训类的听力、口语相同，阅读和写作不同。数据来自 IELTS 官网。",
     resources:IELTS_RESOURCES, sections:IELTS_SECTIONS }
@@ -147,6 +147,10 @@ function bar(c, n){
 }
 function statHTML(key){
   if(!key) return "";
+  if(key==="ispeak" && App.ieltsSpeakingData){
+    const h = App.ieltsSpeakingData().history, n = m => h.filter(x => x.mode===m).length;
+    return h.length ? `<p class="note" style="margin:0">Part 1 练了 ${n("p1")} 次，Part 2 ${n("p2")} 次，Part 3 ${n("p3")} 次，完整模拟 ${n("full")} 次</p>` : `<p class="note" style="margin:0">还没有练习记录</p>`;
+  }
   if(key==="vocab:ielts" && App.vocab){
     const p = App.vocab.progress("ielts");
     return `<div class="tstat wide"><span>已学</span>${bar(p.learned, p.total)}</div><div class="tstat wide"><span>已掌握</span>${bar(p.mastered, p.total)}</div>`;

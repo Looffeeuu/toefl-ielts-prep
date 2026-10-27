@@ -368,3 +368,16 @@ textarea.transcript{width:100%;min-height:90px;border:1px solid var(--line);bord
 .wl-table td{vertical-align:top}
 .wl-fix{width:100%;min-width:120px;border:1px solid var(--line);border-radius:6px;background:var(--bg);padding:4px 8px;color:var(--ink)}
 .wl-bad{margin:0;white-space:pre-wrap;font-size:12px;font-family:var(--f-mono);color:var(--muted)}
+
+/* ---------- 考试切换与首次选择 ---------- */
+.exam-switch{display:inline-flex;border:1px solid var(--line);border-radius:999px;padding:3px;gap:2px;background:var(--surface)}
+.exam-switch a{padding:4px 14px;border-radius:999px;font-size:14px;text-decoration:none;color:var(--muted)}
+.exam-switch a:hover{color:var(--ink)}
+.exam-switch a[aria-current="true"]{background:var(--primary);color:var(--primary-ink)}
+.welcome{max-width:760px;margin:24px auto;display:flex;flex-direction:column;gap:14px;text-align:center}
+.welcome-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:8px;text-align:left}
+@media (max-width:620px){.welcome-cards{grid-template-columns:minmax(0,1fr)}}
+.welcome-card{display:flex;flex-direction:column;gap:6px;border:1px solid var(--line);border-radius:14px;background:var(--surface);padding:22px 22px 20px;text-decoration:none;color:var(--ink)}
+.welcome-card:hover{border-color:var(--primary)}
+.welcome-card b{font-family:var(--f-head);font-size:30px;font-weight:600}
+.welcome-card .en{font-family:var(--f-mono);font-size:12px;color:var(--primary)}

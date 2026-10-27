@@ -8,15 +8,18 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600&family=Noto+Sans+SC:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap">
-<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/style.css?v=20261027">
 </head>
 <body>
 <div class="wrap">
   <header class="top">
     <a class="brand" href="#vocab">
       <div class="mark">T</div>
-      <div><b>托福雅思备考工作台</b><small>TOEFL iBT 2026 · IELTS · prep desk</small></div>
+      <div><b>托福雅思备考工作台</b><small id="brandSub">TOEFL · IELTS · prep desk</small></div>
     </a>
+    <div class="exam-switch" role="group" aria-label="选择考试">
+      <a data-exam="toefl" href="#toefl/vocab">托福</a><a data-exam="ielts" href="#ielts/vocab">雅思</a>
+    </div>
     <nav class="modules" aria-label="备考模块">
       <a class="mod" href="#vocab" data-route="vocab">词汇</a>
       <a class="mod" href="#speaking" data-route="speaking">口语</a>
@@ -27,6 +30,18 @@
       <a class="mod" href="#settings" data-route="settings">设置</a>
     </nav>
   </header>
+
+  <!-- ===================== 首次打开：选择考试 ===================== -->
+  <main id="view-welcome" hidden>
+    <div class="welcome">
+      <h2 class="page-title">你在准备哪个考试？</h2>
+      <p class="note">选好后，页面上的词汇、练习和考点都会按这个考试显示。之后随时可以在右上角切换，背词进度两边通用。</p>
+      <div class="welcome-cards">
+        <a class="welcome-card" href="#toefl/vocab"><b>托福</b><span class="en">TOEFL iBT 2026 新版</span><span class="note">词汇 6,973 词 · 口语 · 阅读 · 听力 · 写作 · 考点地图</span></a>
+        <a class="welcome-card" href="#ielts/vocab"><b>雅思</b><span class="en">IELTS Academic</span><span class="note">词汇 5,026 词 · 考点地图（口语、阅读、听力、写作正在制作）</span></a>
+      </div>
+    </div>
+  </main>
 
   <!-- ===================== 词汇 ===================== -->
   <main id="view-vocab" class="grid" hidden>
@@ -43,9 +58,6 @@
       </div>
       <section class="panel round">
         <p class="section-label" style="margin:0">本轮设置</p>
-        <label class="field">考试
-          <select id="setExam"><option value="toefl">托福 TOEFL（6,973 词）</option><option value="ielts">雅思 IELTS（5,026 词）</option></select>
-        </label>
         <div class="field">本轮词库
           <button class="pick-btn" id="pickLists"><span id="pickLabel">全部词库</span><small>选择</small></button>
         </div>
@@ -160,34 +172,34 @@
 
 <div class="overlay" id="overlay" hidden><div class="sheet" id="sheet" role="dialog" aria-modal="true"></div></div>
 
-<script src="js/words.js"></script>
-<script src="js/words-ext.js"></script>
-<script src="js/words-rich.js"></script>
-<script src="js/words-rich-2.js"></script>
-<script src="js/words-rich-3.js"></script>
-<script src="js/words-rich-4.js"></script>
-<script src="js/words-rich-5.js"></script>
-<script src="js/words-rich-6.js"></script>
-<script src="js/words-rich-7.js"></script>
-<script src="js/words-rich-8.js"></script>
-<script src="js/words-rich-9.js"></script>
-<script src="js/words-rich-10.js"></script>
-<script src="js/words-pos-1.js"></script>
-<script src="js/words-pos-2.js"></script>
-<script src="js/words-ielts.js"></script>
-<script src="js/core.js"></script>
-<script src="js/wordlist-io.js"></script>
-<script src="js/vocab.js"></script>
-<script src="js/speaking-data.js"></script>
-<script src="js/speaking.js"></script>
-<script src="js/reading-data.js"></script>
-<script src="js/reading.js"></script>
-<script src="js/listening-data.js"></script>
-<script src="js/listening.js"></script>
-<script src="js/writing-data.js"></script>
-<script src="js/writing.js"></script>
-<script src="js/guide.js"></script>
-<script src="js/settings.js"></script>
+<script src="js/words.js?v=20261027"></script>
+<script src="js/words-ext.js?v=20261027"></script>
+<script src="js/words-rich.js?v=20261027"></script>
+<script src="js/words-rich-2.js?v=20261027"></script>
+<script src="js/words-rich-3.js?v=20261027"></script>
+<script src="js/words-rich-4.js?v=20261027"></script>
+<script src="js/words-rich-5.js?v=20261027"></script>
+<script src="js/words-rich-6.js?v=20261027"></script>
+<script src="js/words-rich-7.js?v=20261027"></script>
+<script src="js/words-rich-8.js?v=20261027"></script>
+<script src="js/words-rich-9.js?v=20261027"></script>
+<script src="js/words-rich-10.js?v=20261027"></script>
+<script src="js/words-pos-1.js?v=20261027"></script>
+<script src="js/words-pos-2.js?v=20261027"></script>
+<script src="js/words-ielts.js?v=20261027"></script>
+<script src="js/core.js?v=20261027"></script>
+<script src="js/wordlist-io.js?v=20261027"></script>
+<script src="js/vocab.js?v=20261027"></script>
+<script src="js/speaking-data.js?v=20261027"></script>
+<script src="js/speaking.js?v=20261027"></script>
+<script src="js/reading-data.js?v=20261027"></script>
+<script src="js/reading.js?v=20261027"></script>
+<script src="js/listening-data.js?v=20261027"></script>
+<script src="js/listening.js?v=20261027"></script>
+<script src="js/writing-data.js?v=20261027"></script>
+<script src="js/writing.js?v=20261027"></script>
+<script src="js/guide.js?v=20261027"></script>
+<script src="js/settings.js?v=20261027"></script>
 <script>App.start();</script>
 </body>
 </html>

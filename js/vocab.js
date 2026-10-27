@@ -121,7 +121,7 @@ function rebuildCustom(defs){
   });
   TOPICS = GROUPS.flatMap(g => g.lists);
 }
-const exam = () => store && store.settings.exam==="ielts" ? "ielts" : "toefl";
+const exam = () => App.exam==="ielts" ? "ielts" : "toefl";
 const EXAM_NAME = { toefl:"托福", ielts:"雅思" };
 const examWords = () => exam()==="ielts" ? IELTS_WORDS : TOEFL_WORDS;
 const customWords = () => [...new Set(custom.lists.flatMap(l => l.words))];
@@ -158,7 +158,7 @@ function ivLabel(i){ if(i<=0) return "1 分钟内"; if(i<30) return i+" 天"; if
 
 /* ---------- 进度 ---------- */
 // settings.lists：本轮选中的词表 id（空数组表示全部词库）；order：seq 按词表顺序 / rand 随机；seed：随机顺序的种子
-const blank = () => ({ v:1, cards:{}, log:{}, settings:{ daily:20, lists:[], order:"seq", seed:1, auto:false, skipBasic:"z", exam:"toefl" }, custom:[], updatedAt:0 });
+const blank = () => ({ v:1, cards:{}, log:{}, settings:{ daily:20, lists:[], order:"seq", seed:1, auto:false, skipBasic:"z" }, custom:[], updatedAt:0 });
 function legacyLists(sel){
   if(!sel || sel==="all") return [];
   if(sel.startsWith("g:")) return GROUP[sel.slice(2)] ? GROUP[sel.slice(2)].lists.map(l => l.id) : [];
@@ -171,7 +171,7 @@ function normalize(d){
   const cl = Array.isArray(d.custom) ? d.custom.filter(x => x && x.id && Array.isArray(x.items)) : [];
   rebuildCustom(cl);
   s.lists = s.lists.filter(id => TOPIC[id]);
-  if(s.exam!=="ielts") s.exam = "toefl";
+  delete s.exam;   // 考试改为页面级设置（App.exam），旧数据里的这一项在 core.js 里迁移
   delete s.list;
   return { v:1, cards:d.cards||{}, log:d.log||{}, settings:s, custom:cl, updatedAt:d.updatedAt||0 };
 }
@@ -495,7 +495,6 @@ function closeDetail(){ $("#overlay").hidden = true; openWord = null }
 /* ---------- 设置 ---------- */
 function renderSettings(){
   $("#setDaily").value = String(store.settings.daily);
-  $("#setExam").value = exam();
   $("#setOrder").value = store.settings.order;
   $("#reshuffle").hidden = store.settings.order!=="rand";
   $("#pickLabel").textContent = pickSummary();
@@ -765,7 +764,8 @@ function init(){
   });
   $("#overlay").addEventListener("change", onPickChange);
   $("#overlay").addEventListener("input", e => { if(e.target.id==="wlName" || e.target.id==="wlText" || e.target.dataset.wlFix!==undefined) onListsInput(e) });
-  $("#setExam").addEventListener("change", e => { store.settings.exam = e.target.value; sourceChanged(); if(curTab==="bank") renderBank(); if(curTab==="quiz" && !quiz) renderQuizSetup() });
+  // 顶部切换托福 / 雅思后，换成对应的词库
+  document.addEventListener("exam-change", () => { buildQueue(); renderSettings(); renderStats(); renderStudy(); if(curTab==="bank") renderBank(); if(curTab==="quiz" && !quiz) renderQuizSetup() });
   $("#setAuto").addEventListener("change", e => { store.settings.auto = e.target.checked; persist() });
   $("#setBasic").addEventListener("change", e => { store.settings.skipBasic = e.target.value; persist(); buildQueue(); renderStats(); renderStudy() });
   document.addEventListener("keydown", onKey);
@@ -867,6 +867,8 @@ TOEFL_WORDS.forEach(o => {
    w.replace(/y$/,"ies"), w.replace(/y$/,"ied"), w+"ly"].forEach(f => { if(!FORMS[f]) FORMS[f] = o.w });
 });
 App.vocab = {
+  // 考点页用：某个考试词库的学习进度
+  progress: ex => { const ws = ex==="ielts" ? IELTS_WORDS : TOEFL_WORDS; let l = 0, m = 0; ws.forEach(o => { const c = store.cards[o.w]; if(c){ l++; if(c[1]>=21) m++ } }); return { learned:l, mastered:m, total:ws.length } },
   lookup: token => FORMS[String(token).toLowerCase()] || null,
   open: w => openDetail(w)
 };

@@ -336,6 +336,7 @@ function onKey(e){
 }
 
 App.routes.writing = {
+  exams:["toefl"],
   init(){
     const root = $("#view-writing");
     root.addEventListener("click", onClick);

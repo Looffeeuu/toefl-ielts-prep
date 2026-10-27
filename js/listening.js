@@ -456,6 +456,7 @@ function onKey(e){
 }
 
 App.routes.listening = {
+  exams:["toefl"],
   init(){
     const root = $("#view-listening");
     root.addEventListener("click", onClick);

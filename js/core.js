@@ -107,17 +107,73 @@ App.askClaude = async (prompt, { maxTokens=8000, effort="low" } = {}) => {
   return text + (data.stop_reason==="max_tokens" ? "\n\n（回答过长，已截断）" : "");
 };
 
+/* ---------- 考试 ---------- */
+// 页面级切换：网址形如 #toefl/reading、#ielts/vocab；导航只显示当前考试已有的部分
+App.EXAMS = { toefl:{ name:"托福", sub:"TOEFL iBT 2026 · prep desk" }, ielts:{ name:"雅思", sub:"IELTS Academic · prep desk" } };
+// 老用户（本机已有学习记录）默认托福，或沿用之前在词汇页选的考试；新用户先看选择页
+if(!App.EXAMS[App.settings.exam]){
+  const had = Object.entries(App.KEYS).some(([k,key]) => k!=="settings" && localStorage.getItem(key));
+  const v = App.store.get(App.KEYS.vocab, null);
+  App.settings.exam = had ? (v && v.settings && v.settings.exam==="ielts" ? "ielts" : "toefl") : "";
+  if(had) App.saveSettings();
+}
+App.exam = App.settings.exam;
+App.href = name => `#${App.exam || "toefl"}/${name}`;
+
 /* ---------- 路由 ---------- */
+// 每个页面用 exams 声明属于哪些考试，不写表示两门都有
 App.routes = {};
 App.route = "";
-function go(){
-  const name = (location.hash||"").replace("#","") || "vocab";
-  const route = App.routes[name] ? name : "vocab";
-  if(App.route && App.route!==route && App.routes[App.route].leave) App.routes[App.route].leave();
+const examsOf = name => App.routes[name].exams || Object.keys(App.EXAMS);
+const available = (name, exam) => !!App.routes[name] && examsOf(name).includes(exam);
+function parseHash(){
+  const h = (location.hash || "").replace(/^#\/?/, "");
+  const m = h.match(/^(toefl|ielts)(?:\/(.*))?$/);
+  return m ? { exam:m[1], name:m[2] || "" } : { exam:"", name:h };
+}
+function setExam(exam){
+  if(exam===App.exam) return;
+  App.exam = exam; App.settings.exam = exam; App.saveSettings();
+  document.dispatchEvent(new Event("exam-change"));
+}
+function renderNav(){
+  const e = App.exam;
+  document.documentElement.dataset.exam = e || "";
+  App.$$(".mod[data-route]").forEach(a => {
+    const r = a.dataset.route;
+    a.hidden = !e || !available(r, e);
+    a.href = `#${e}/${r}`;
+    if(r===App.route) a.setAttribute("aria-current","page"); else a.removeAttribute("aria-current");
+  });
+  App.$$(".exam-switch [data-exam]").forEach(a => {
+    const x = a.dataset.exam;
+    a.href = `#${x}/${App.route && available(App.route, x) ? App.route : "vocab"}`;
+    if(x===e) a.setAttribute("aria-current","true"); else a.removeAttribute("aria-current");
+  });
+  const brand = App.$(".brand"); if(brand) brand.href = App.href("vocab");
+  const sub = App.$("#brandSub"); if(sub) sub.textContent = e ? App.EXAMS[e].sub : "TOEFL · IELTS · prep desk";
+}
+function show(route){
+  if(App.route && App.route!==route && App.routes[App.route] && App.routes[App.route].leave) App.routes[App.route].leave();
   App.route = route;
   Object.keys(App.routes).forEach(k => App.$("#view-"+k).hidden = k!==route);
-  App.$$(".mod[data-route]").forEach(a => { if(a.dataset.route===route) a.setAttribute("aria-current","page"); else a.removeAttribute("aria-current") });
-  App.routes[route].enter();
+  App.$("#view-welcome").hidden = route!=="";
+  renderNav();
+  if(route) App.routes[route].enter();
+}
+function go(){
+  let { exam, name } = parseHash();
+  if(!exam){
+    // 旧网址和站内链接（#reading、#settings）：沿用当前考试；当前考试没有这个页面时换到有它的考试
+    exam = name && App.routes[name] && App.exam && !available(name, App.exam) ? examsOf(name)[0]
+         : App.exam || (name && App.routes[name] && examsOf(name).length===1 ? examsOf(name)[0] : "");
+  }
+  if(!exam){ show(""); return }
+  if(!available(name, exam)) name = "vocab";
+  const canon = `#${exam}/${name}`;
+  if(location.hash!==canon) history.replaceState(null, "", location.pathname + location.search + canon);
+  setExam(exam);
+  show(name);
 }
 App.start = () => {
   Object.values(App.routes).forEach(r => r.init && r.init());

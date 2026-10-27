@@ -5,6 +5,8 @@ https://github.com/skywind3000/ECDICT
 
 整理方式：筛选标注为 `toefl` 的词条，精简中文释义，按词频排序分组。生成脚本见 `tools/build_ext.py`。
 
+`js/words-ielts.js`（雅思词库，标注为 `ielts` 的词条）和 `js/dict-lookup.js`（导入自定义词表时补全释义用的查词表，收录带考试标签、牛津 3000 标记或柯林斯星级的词条）同样整理自 ECDICT，生成脚本见 `tools/build_ielts.py`。
+
 ECDICT 的许可协议如下：
 
 ```

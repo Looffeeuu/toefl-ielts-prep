@@ -350,3 +350,21 @@ textarea.transcript{width:100%;min-height:90px;border:1px solid var(--line);bord
 .ltrans .who{display:inline-block;min-width:56px;font-family:var(--f-ui);font-size:12px;font-weight:500;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;margin-right:6px}
 .ltrans .seg{cursor:pointer;border-radius:4px;transition:background .15s}
 .ltrans .seg:hover{background:var(--surface-2)}
+
+/* ---------- 我的词表 ---------- */
+.wl-list{display:flex;flex-direction:column;border-top:1px solid var(--line)}
+.wl-row{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;padding:10px 0;border-bottom:1px solid var(--line)}
+.wl-main{display:flex;align-items:baseline;gap:10px;flex:1 1 220px;min-width:0}
+.wl-name{flex:1;min-width:0;border:1px solid transparent;border-radius:6px;background:transparent;padding:4px 6px;font-weight:500;color:var(--ink)}
+.wl-name:hover,.wl-name:focus{border-color:var(--line);background:var(--bg)}
+.wl-main small{font-family:var(--f-mono);font-size:12px;color:var(--muted);white-space:nowrap}
+.wl-acts{display:flex;flex-wrap:wrap;gap:6px}
+.wl-share{flex-basis:100%;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px 8px}
+.wl-share input{min-width:0;border:1px solid var(--line);border-radius:6px;background:var(--bg);padding:7px 9px;font-family:var(--f-mono);font-size:12px;color:var(--ink)}
+.wl-share .note{grid-column:1/-1}
+.wl-import{display:flex;flex-direction:column;gap:12px;border-top:1px solid var(--line);padding-top:14px}
+.wl-import textarea{font-family:var(--f-mono);font-size:13px;line-height:1.6;resize:vertical}
+.wl-table{max-height:360px;overflow:auto}
+.wl-table td{vertical-align:top}
+.wl-fix{width:100%;min-width:120px;border:1px solid var(--line);border-radius:6px;background:var(--bg);padding:4px 8px;color:var(--ink)}
+.wl-bad{margin:0;white-space:pre-wrap;font-size:12px;font-family:var(--f-mono);color:var(--muted)}

@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>托福备考工作台</title>
-<meta name="description" content="托福新版（2026）备考：间隔重复背词汇、听后复述与模拟面试口语练习、三种新题型阅读与自适应模拟、四种听力题型、写作练习。">
+<title>托福雅思备考工作台</title>
+<meta name="description" content="托福新版（2026）与雅思备考：雅思词库、导入自定义词表、间隔重复背词汇、听后复述与模拟面试口语练习、三种新题型阅读与自适应模拟、四种听力题型、写作练习。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600&family=Noto+Sans+SC:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap">
@@ -15,7 +15,7 @@
   <header class="top">
     <a class="brand" href="#vocab">
       <div class="mark">T</div>
-      <div><b>托福备考工作台</b><small>TOEFL iBT 2026 · prep desk</small></div>
+      <div><b>托福雅思备考工作台</b><small>TOEFL iBT 2026 · IELTS · prep desk</small></div>
     </a>
     <nav class="modules" aria-label="备考模块">
       <a class="mod" href="#vocab" data-route="vocab">词汇</a>
@@ -43,6 +43,9 @@
       </div>
       <section class="panel round">
         <p class="section-label" style="margin:0">本轮设置</p>
+        <label class="field">考试
+          <select id="setExam"><option value="toefl">托福 TOEFL（6,973 词）</option><option value="ielts">雅思 IELTS（5,026 词）</option></select>
+        </label>
         <div class="field">本轮词库
           <button class="pick-btn" id="pickLists"><span id="pickLabel">全部词库</span><small>选择</small></button>
         </div>
@@ -50,6 +53,7 @@
           <select id="setOrder"><option value="seq">按词表顺序</option><option value="rand">随机</option></select>
         </label>
         <button class="btn-ghost" id="reshuffle" hidden>重新打乱</button>
+        <button class="btn-ghost" id="openLists">我的词表 · 导入老师布置的单词</button>
       </section>
       <div>
         <p class="section-label">词库进度 · <span id="sTotal"></span></p>
@@ -170,7 +174,9 @@
 <script src="js/words-rich-10.js"></script>
 <script src="js/words-pos-1.js"></script>
 <script src="js/words-pos-2.js"></script>
+<script src="js/words-ielts.js"></script>
 <script src="js/core.js"></script>
+<script src="js/wordlist-io.js"></script>
 <script src="js/vocab.js"></script>
 <script src="js/speaking-data.js"></script>
 <script src="js/speaking.js"></script>

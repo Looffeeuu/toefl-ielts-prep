@@ -109,6 +109,7 @@ Q.review = (built, ans, res) => built.groups.map(b => {
           ${p.ok ? "" : `<span>你的答案：<b>${esc(givenText(it, g, v, ctx))}</b></span>`}<span>正确答案：<b>${esc(correctText(it, g, ctx))}</b>${g.type==="gap" && it.a.length>1 ? `<span class="note">（也可以写 ${it.a.slice(1).map(esc).join(" / ")}）</span>` : ""}</span></div>
         ${p.note ? `<div class="note" style="color:var(--bad)">${esc(p.note)}</div>` : ""}
         <div class="exp"><b>解析</b>　${esc(it.why)}</div>
+        ${App.reportBtn ? `<div class="rep-row">${App.reportBtn(`${ctx.label || "雅思"} 第 ${r.n} 题：${it.q}｜你的答案：${givenText(it, g, v, ctx)}｜正确答案：${correctText(it, g, ctx)}`)}</div>` : ""}
       </div></div>`;
     }).join("")}
   </section>`;

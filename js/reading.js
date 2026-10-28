@@ -100,7 +100,7 @@ function questionsHTML(task, review, res){
     const head = review ? `<span class="chip ${res.per[qi] ? "done" : "bad"}">${res.per[qi] ? "正确" : chosen==null ? "未作答" : "错误"}</span><span class="chip">${TYPE[q.type]||q.type}</span>` : "";
     return `<div class="qb"><div class="meta"><b style="color:var(--ink)">Question ${qi+1}</b>${head}</div>
       <div class="qt">${esc(q.q)}</div><div class="opts">${opts}</div>
-      ${review ? `<div class="exp"><b>解析</b>　${esc(q.why)}</div>` : ""}</div>`;
+      ${review ? `<div class="exp"><b>解析</b>　${esc(q.why)}</div>${App.reportBtn ? `<div class="rep-row">${App.reportBtn(`托福阅读 ${task.item.id} 第 ${qi+1} 题：${q.q}｜你的答案：${chosen==null ? "未作答" : q.opts[chosen]}｜正确答案：${q.opts[0]}`)}</div>` : ""}` : ""}</div>`;
   }).join("");
 }
 function ctwHTML(task, review){

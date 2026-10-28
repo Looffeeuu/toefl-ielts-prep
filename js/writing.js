@@ -269,7 +269,7 @@ function renderReview(){
         </div>
       </section>
     </div>
-    <div class="row"><button class="btn" data-${isEmail ? "email" : "disc"}="${it.id}">重写这一题</button><button class="btn alt" data-whome>返回写作首页</button></div>
+    <div class="row"><button class="btn" data-${isEmail ? "email" : "disc"}="${it.id}">重写这一题</button><button class="btn alt" data-whome>返回写作首页</button>${App.reportBtn ? App.reportBtn(`托福写作 ${it.id}（${it.title}）：题目、范文或自动检查有问题`, "题目或范文有问题") : ""}</div>
   </div>`);
   window.scrollTo(0,0);
 }

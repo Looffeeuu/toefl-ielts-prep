@@ -175,9 +175,13 @@ function go(){
   setExam(exam);
   show(name);
 }
+App.onStart = App.onStart || [];
 App.start = () => {
   Object.values(App.routes).forEach(r => r.init && r.init());
   window.addEventListener("hashchange", go);
   go();
+  App.started = true;
+  const boot = document.getElementById("boot"); if(boot) boot.remove();
+  App.onStart.forEach(f => { try{ f() }catch(e){ console.error(e) } });
 };
 })();

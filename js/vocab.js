@@ -535,6 +535,7 @@ function openDetail(w){
     ${phHTML(o)}
     ${backHTML(o)}
     ${wordStatsHTML(w)}
+    ${App.reportBtn ? `<div class="rep-row">${App.reportBtn(`词条 ${o.w}（${listName(o)}）｜词性：${o.pos}｜释义：${o.cn}${o.ex ? "｜例句：" + o.ex : ""}`, "词条有误")}</div>` : ""}
     <div class="row">${queue.includes(w) ? '<span class="note">已在今天的学习队列里</span>' : '<button class="btn alt" id="addQueue">加入今天的学习</button>'}
       ${s==="done" ? '<button class="btn-ghost" id="unmaster">还没掌握，重新学习</button>' : '<button class="btn-ghost" id="masterDetail">标为已掌握</button>'}</div>`;
   $("#overlay").hidden = false; $("#closeSheet").focus();

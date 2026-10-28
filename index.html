@@ -8,9 +8,27 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600&family=Noto+Sans+SC:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap">
-<link rel="stylesheet" href="assets/style.css?v=20261031">
+<link rel="stylesheet" href="assets/style.css?v=20261101">
 </head>
 <body>
+<div class="boot" id="boot" role="status">
+  <div class="boot-card">
+    <div class="mark">T</div>
+    <b>托福雅思备考工作台</b>
+    <p id="bootMsg">正在加载词库和题库（约 0.8 MB）…</p>
+    <p class="note" id="bootSlow" hidden>加载得比平常慢。本站放在 GitHub Pages 上，国内部分网络访问较慢，可以再等一会儿、刷新，或者换个网络（比如手机热点）试试。</p>
+  </div>
+</div>
+<script>
+  // 8 秒还没加载完给出提示；脚本加载失败时直接说明原因
+  setTimeout(function(){ var s = document.getElementById("bootSlow"); if(s && !(window.App && App.started)) s.hidden = false; }, 8000);
+  window.addEventListener("error", function(e){
+    var t = e.target; if(!t || t.tagName !== "SCRIPT") return;
+    var m = document.getElementById("bootMsg"), s = document.getElementById("bootSlow");
+    if(m) m.textContent = "有文件没有加载成功，页面无法正常使用。";
+    if(s){ s.hidden = false; s.textContent = "通常是网络无法访问 GitHub Pages。请刷新重试，或换个网络（比如手机热点）再打开。"; }
+  }, true);
+</script>
 <div class="wrap">
   <header class="top">
     <a class="brand" href="#vocab">
@@ -35,11 +53,24 @@
     </nav>
   </header>
 
+  <div class="notices" id="notices" hidden></div>
+
   <!-- ===================== 首次打开：选择考试 ===================== -->
   <main id="view-welcome" hidden>
     <div class="welcome">
       <h2 class="page-title">你在准备哪个考试？</h2>
       <p class="note">选好后，页面上的词汇、练习和考点都会按这个考试显示。之后随时可以在右上角切换，背词进度两边通用。</p>
+      <section class="welcome-tips">
+        <p class="section-label" style="margin:0">使用前请先看一下</p>
+        <ul class="wbul" id="welcomeTips">
+          <li>不需要注册。<b>学习记录只保存在你这台设备的这个浏览器里</b>，清理浏览器数据、用无痕模式或换设备都会丢失。请定期在「设置 → 学习数据」导出备份。</li>
+          <li>推荐用<b>电脑上的 Edge 浏览器</b>：朗读声音最自然，语音识别在国内一般可以用。不要在微信、QQ 里直接打开，内置浏览器不支持朗读和录音。</li>
+          <li>听力和口语需要浏览器朗读声音，口语还需要麦克风。手机浏览器对这些功能的支持差异很大，可能用不了。</li>
+          <li>AI 讲解、AI 估分是可选功能，需要在「设置」里填写你自己的 Claude API Key；不填也能使用其他所有功能。</li>
+          <li>题目、解析和范文都是原创练习题，不是考试真题。发现错误时，在解析页点「这题有问题」，把复制的内容发给邀请你内测的人。</li>
+        </ul>
+        <p class="note" id="welcomeMobile" hidden style="margin:0">你现在是用手机打开的：背单词、阅读、写作可以正常使用；听力和口语建议用电脑。</p>
+      </section>
       <div class="welcome-cards">
         <a class="welcome-card" href="#toefl/vocab"><b>托福</b><span class="en">TOEFL iBT 2026 新版</span><span class="note">词汇 6,973 词 · 口语 · 阅读 · 听力 · 写作 · 考点地图</span></a>
         <a class="welcome-card" href="#ielts/vocab"><b>雅思</b><span class="en">IELTS Academic</span><span class="note">词汇 5,026 词 · 口语 · 阅读 · 听力 · 写作 · 考点地图</span></a>
@@ -171,6 +202,8 @@
         <div class="row"><button class="btn" id="apiSave">保存</button><button class="btn alt" id="apiTest">测试连接</button><span class="note" id="apiMsg"></span></div>
       </section>
 
+      <section class="panel" id="betaPanel"></section>
+
       <section class="panel">
         <h3>学习数据</h3>
         <p class="note" style="margin:0">背词进度、口语、阅读、听力和写作记录都保存在当前浏览器里。换电脑或换浏览器前，先导出一份备份，再到新地方导入。录音不会被保存，关闭页面后就没有了。</p>
@@ -201,30 +234,31 @@
 <script src="js/words-pos-1.js?v=20261027"></script>
 <script src="js/words-pos-2.js?v=20261027"></script>
 <script src="js/words-ielts.js?v=20261027"></script>
-<script src="js/core.js?v=20261030"></script>
+<script src="js/core.js?v=20261101"></script>
 <script src="js/wordlist-io.js?v=20261027"></script>
-<script src="js/vocab.js?v=20261031"></script>
+<script src="js/vocab.js?v=20261101"></script>
 <script src="js/recorder.js?v=20261028"></script>
 <script src="js/tts.js?v=20261029"></script>
-<script src="js/ielts-qs.js?v=20261029"></script>
+<script src="js/ielts-qs.js?v=20261101"></script>
 <script src="js/speaking-data.js?v=20261027"></script>
 <script src="js/speaking.js?v=20261028"></script>
 <script src="js/ielts-speaking-data.js?v=20261028"></script>
 <script src="js/ielts-speaking.js?v=20261029"></script>
 <script src="js/ielts-reading-data.js?v=20261029"></script>
-<script src="js/ielts-reading.js?v=20261031"></script>
+<script src="js/ielts-reading.js?v=20261101"></script>
 <script src="js/ielts-listening-data.js?v=20261029"></script>
-<script src="js/ielts-listening.js?v=20261031"></script>
+<script src="js/ielts-listening.js?v=20261101"></script>
 <script src="js/ielts-writing-data.js?v=20261030d"></script>
-<script src="js/ielts-writing.js?v=20261031"></script>
+<script src="js/ielts-writing.js?v=20261101"></script>
 <script src="js/reading-data.js?v=20261027"></script>
-<script src="js/reading.js?v=20261031"></script>
+<script src="js/reading.js?v=20261101"></script>
 <script src="js/listening-data.js?v=20261027"></script>
-<script src="js/listening.js?v=20261031"></script>
+<script src="js/listening.js?v=20261101"></script>
 <script src="js/writing-data.js?v=20261027"></script>
-<script src="js/writing.js?v=20261031"></script>
+<script src="js/writing.js?v=20261101"></script>
 <script src="js/guide.js?v=20261030"></script>
-<script src="js/settings.js?v=20261030"></script>
+<script src="js/settings.js?v=20261101"></script>
+<script src="js/beta.js?v=20261101"></script>
 <script>App.start();</script>
 </body>
 </html>

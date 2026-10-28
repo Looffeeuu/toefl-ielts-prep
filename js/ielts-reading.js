@@ -36,7 +36,7 @@ function tick(){
 }
 function makeUnits(list){
   let n = 1;
-  return list.map(p => { const built = Q.build(p.groups, n, { paras:p.paras.map(([k]) => k) }); n += built.list.length; return { p, built } });
+  return list.map(p => { const built = Q.build(p.groups, n, { paras:p.paras.map(([k]) => k), label:`雅思阅读 ${p.id}（${p.title}）` }); n += built.list.length; return { p, built } });
 }
 function startPractice(id){
   S = { mode:"practice", units:makeUnits([BYID[id]]), cur:0, ans:{}, started:Date.now(), deadline:Date.now() + PRACTICE_MIN*60000, phase:"do" };

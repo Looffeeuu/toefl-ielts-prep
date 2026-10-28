@@ -98,7 +98,7 @@ function questionsHTML(u, review, res){
     const title = qs.length>1 ? `<b style="color:var(--ink)">Question ${qi+1}</b>` : "";
     return `<div class="qb">${title || head ? `<div class="meta">${title}${head}</div>` : ""}
       <div class="qt">${esc(q.q)}</div><div class="opts">${opts}</div>
-      ${review ? `<div class="exp"><b>解析</b>　${esc(q.why)}</div>` : ""}</div>`;
+      ${review ? `<div class="exp"><b>解析</b>　${esc(q.why)}</div>${App.reportBtn ? `<div class="rep-row">${App.reportBtn(`托福听力 ${u.item.id} 第 ${qi+1} 题：${q.q}｜你的答案：${chosen==null ? "未作答" : q.opts[chosen]}｜正确答案：${q.opts[0]}`)}</div>` : ""}` : ""}</div>`;
   }).join("");
 }
 const notesHTML = u => `<label class="field lnotes">笔记（考试中允许记笔记）<textarea id="lnotes" placeholder="边听边记关键词：人物、原因、例子、转折……">${esc(u.notes)}</textarea></label>`;

@@ -490,3 +490,25 @@ textarea.transcript{width:100%;min-height:90px;border:1px solid var(--line);bord
 .an-w b{font-family:var(--f-head);font-size:16px;font-weight:600}
 .an-w small{font-size:12px;color:var(--muted)}
 .an .empty{margin:0}
+
+/* ---------- 内测：加载提示、顶部提醒、反馈 ---------- */
+.boot{position:fixed;inset:0;z-index:50;display:grid;place-items:center;background:var(--bg);padding:16px}
+.boot-card{max-width:420px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:8px}
+.boot-card .mark{width:44px;height:44px;border-radius:10px;background:var(--primary);color:var(--primary-ink);display:grid;place-items:center;font-family:var(--f-head);font-size:24px;font-weight:600}
+.boot-card b{font-size:18px}
+.boot-card p{margin:0;font-size:14px;line-height:1.6}
+.notices{display:flex;flex-direction:column;gap:8px;margin:-8px 0 18px}
+.notice{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;padding:10px 14px;border-radius:10px;border:1px solid var(--line);font-size:14px;line-height:1.6}
+.notice.warn{background:color-mix(in srgb,var(--warn) 14%,var(--surface));border-color:color-mix(in srgb,var(--warn) 40%,var(--line))}
+.notice.info{background:color-mix(in srgb,var(--primary) 10%,var(--surface))}
+.notice-text{flex:1 1 320px}
+.notice-acts{display:flex;align-items:center;gap:8px;margin-left:auto}
+.notice-x{background:none;border:0;font-size:20px;line-height:1;color:var(--muted);padding:0 4px}
+.toast{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);z-index:60;max-width:min(560px,calc(100% - 32px));background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:10px;font-size:14px;line-height:1.6;box-shadow:0 6px 24px rgba(0,0,0,.18)}
+.toast a{color:inherit;text-decoration:underline}
+.rep{background:none;border:0;padding:2px 0;font-size:12px;color:var(--muted);text-decoration:underline dotted;text-underline-offset:3px;cursor:pointer}
+.rep:hover{color:var(--bad)}
+.rep-row{display:flex;justify-content:flex-end}
+.welcome-tips{text-align:left;border:1px solid var(--line);border-radius:12px;background:var(--surface);padding:14px 18px;display:flex;flex-direction:column;gap:8px}
+.welcome-tips .wbul{font-size:14px;line-height:1.65;margin:0}
+.guide-list{font-size:14px;line-height:1.65}

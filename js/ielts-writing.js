@@ -299,7 +299,7 @@ function renderReview(){
         </div>
       </section>
     </div>
-    <div class="row">${S.mode==="full" ? `<button class="btn" data-start="full">再模拟一次</button>` : `<button class="btn" data-start="${S.mode}" data-id="${it.id}">重写这一题</button>`}<button class="btn alt" data-home>返回</button></div>
+    <div class="row">${S.mode==="full" ? `<button class="btn" data-start="full">再模拟一次</button>` : `<button class="btn" data-start="${S.mode}" data-id="${it.id}">重写这一题</button>`}<button class="btn alt" data-home>返回</button>${App.reportBtn ? App.reportBtn(`雅思写作 ${it.id}（${it.name}）：题目、图表、范文或自动检查有问题`, "题目或范文有问题") : ""}</div>
   </div>`);
 }
 async function aiFeedback(btn){

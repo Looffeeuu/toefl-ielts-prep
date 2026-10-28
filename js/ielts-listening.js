@@ -37,7 +37,7 @@ let S = null, timer = 0;
 const view = html => { $("#view-ilistening").innerHTML = html };
 function stopTimer(){ clearInterval(timer); timer = 0 }
 // 题号和真实考试一致：Part 1 是 1–10，Part 2 是 11–20……单独练某一部分时也一样
-function makeParts(list){ return list.map(p => ({ p, built:Q.build(p.groups, (p.part-1)*10 + 1) })) }
+function makeParts(list){ return list.map(p => ({ p, built:Q.build(p.groups, (p.part-1)*10 + 1, { label:`雅思听力 ${p.test.id} Part ${p.part}` }) })) }
 function startPart(key){ S = { mode:"practice", parts:makeParts([BYID[key]]), cur:0, ans:{} }; beginRead() }
 function startMock(testId){ const t = TESTS.find(x => x.id===testId); S = { mode:"mock", test:t, parts:makeParts(t.parts), cur:0, ans:{} }; beginRead() }
 

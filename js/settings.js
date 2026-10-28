@@ -28,7 +28,10 @@ function exportData(){
   document.body.appendChild(a); a.click(); a.remove();
   setTimeout(() => URL.revokeObjectURL(a.href), 2000);
   $("#dataMsg").textContent = "已导出。";
+  App.settings.lastBackup = Date.now(); App.saveSettings();
+  if(App.renderNotices) App.renderNotices();
 }
+App.exportData = exportData;
 function importData(file){
   const fr = new FileReader();
   fr.onload = () => {

@@ -175,8 +175,24 @@ function go(){
   setExam(exam);
   show(name);
 }
+/* ---------- 外观：跟随系统 / 浅色 / 深色 ---------- */
+const THEMES = { auto:["跟随系统",'<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 4a8 8 0 0 1 0 16z" fill="currentColor"/></svg>'],
+  light:["浅色",'<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>'],
+  dark:["深色",'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>'] };
+App.setTheme = t => {
+  if(!THEMES[t]) t = "auto";
+  App.settings.theme = t; App.saveSettings();
+  if(t==="auto") delete document.documentElement.dataset.theme; else document.documentElement.dataset.theme = t;
+  const b = App.$("#themeBtn");
+  if(b){ b.innerHTML = THEMES[t][1] + `<span>${THEMES[t][0]}</span>`; b.title = `外观：${THEMES[t][0]}（点击切换）` }
+  const sel = App.$("#themeSel"); if(sel) sel.value = t;
+};
+
 App.onStart = App.onStart || [];
 App.start = () => {
+  App.setTheme(App.settings.theme || "auto");
+  App.$("#themeBtn").addEventListener("click", () => { const order = ["auto","light","dark"]; App.setTheme(order[(order.indexOf(App.settings.theme || "auto") + 1) % 3]) });
+  App.$("#themeSel").addEventListener("change", e => App.setTheme(e.target.value));
   Object.values(App.routes).forEach(r => r.init && r.init());
   window.addEventListener("hashchange", go);
   go();

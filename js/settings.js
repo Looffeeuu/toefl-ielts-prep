@@ -47,7 +47,7 @@ function importData(file){
       if(d.ieltsListening) App.loadIeltsListeningData(d.ieltsListening);
       if(d.ieltsWriting) App.loadIeltsWritingData(d.ieltsWriting);
       if(d.writing) App.loadWritingData(d.writing);
-      if(d.settings){ Object.assign(App.settings, d.settings, { apiKey:App.settings.apiKey }); App.saveSettings(); renderVoices() }
+      if(d.settings){ Object.assign(App.settings, d.settings, { apiKey:App.settings.apiKey }); App.saveSettings(); renderVoices(); App.setTheme(App.settings.theme) }
       $("#dataMsg").textContent = "导入完成，进度已恢复。";
     }catch(e){ $("#dataMsg").textContent = "导入失败：" + (e.message || "文件格式不对"); }
   };

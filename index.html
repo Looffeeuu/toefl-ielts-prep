@@ -8,7 +8,12 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600&family=Noto+Sans+SC:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap">
-<link rel="stylesheet" href="assets/style.css?v=20261101">
+<meta name="color-scheme" content="light dark">
+<script>
+  // 在样式生效前套用保存的外观，避免深色模式下打开时先闪一下浅色
+  try{ var t = (JSON.parse(localStorage.getItem("toefl.settings.v1")) || {}).theme; if(t === "light" || t === "dark") document.documentElement.dataset.theme = t; }catch(e){}
+</script>
+<link rel="stylesheet" href="assets/style.css?v=20261102">
 </head>
 <body>
 <div class="boot" id="boot" role="status">
@@ -38,6 +43,7 @@
     <div class="exam-switch" role="group" aria-label="选择考试">
       <a data-exam="toefl" href="#toefl/vocab">托福</a><a data-exam="ielts" href="#ielts/vocab">雅思</a>
     </div>
+    <button type="button" class="theme-btn" id="themeBtn" aria-label="切换外观"></button>
     <nav class="modules" aria-label="备考模块">
       <a class="mod" href="#vocab" data-route="vocab">词汇</a>
       <a class="mod" href="#speaking" data-route="speaking">口语</a>
@@ -179,6 +185,13 @@
       <h2 class="page-title">设置</h2>
 
       <section class="panel">
+        <h3>外观</h3>
+        <label class="field">界面颜色
+          <select id="themeSel"><option value="auto">跟随系统</option><option value="light">浅色</option><option value="dark">深色</option></select>
+        </label>
+      </section>
+
+      <section class="panel">
         <h3>发音与语音识别</h3>
         <label class="field">朗读声音（单词发音、口语和听力题目；听力对话会自动配另一种性别的声音）
           <select id="voiceSel"></select>
@@ -234,7 +247,7 @@
 <script src="js/words-pos-1.js?v=20261027"></script>
 <script src="js/words-pos-2.js?v=20261027"></script>
 <script src="js/words-ielts.js?v=20261027"></script>
-<script src="js/core.js?v=20261101"></script>
+<script src="js/core.js?v=20261102"></script>
 <script src="js/wordlist-io.js?v=20261027"></script>
 <script src="js/vocab.js?v=20261101"></script>
 <script src="js/recorder.js?v=20261028"></script>
@@ -257,8 +270,8 @@
 <script src="js/writing-data.js?v=20261027"></script>
 <script src="js/writing.js?v=20261101"></script>
 <script src="js/guide.js?v=20261030"></script>
-<script src="js/settings.js?v=20261101"></script>
-<script src="js/beta.js?v=20261101"></script>
+<script src="js/settings.js?v=20261102"></script>
+<script src="js/beta.js?v=20261102"></script>
 <script>App.start();</script>
 </body>
 </html>

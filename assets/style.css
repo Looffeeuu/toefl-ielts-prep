@@ -8,9 +8,13 @@
   --r:10px;
   color-scheme:light;
 }
-@media (prefers-color-scheme: dark){:root{
+/* 深色：跟随系统时由媒体查询决定；手动选择时由 <html data-theme> 决定（设置页或右上角按钮） */
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
   --bg:#0d1518; --surface:#142026; --surface-2:#1b2a30; --ink:#e1eaec; --muted:#91a5ab; --line:#26383e;
   --primary:#78bdd0; --primary-ink:#08262f; --hl:#7a6a1a; --good:#69c08c; --warn:#e3a54a; --bad:#ee7d73; --rec:#ff6b5e; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0d1518; --surface:#142026; --surface-2:#1b2a30; --ink:#e1eaec; --muted:#91a5ab; --line:#26383e;
+  --primary:#78bdd0; --primary-ink:#08262f; --hl:#7a6a1a; --good:#69c08c; --warn:#e3a54a; --bad:#ee7d73; --rec:#ff6b5e; color-scheme:dark}
 
 *{box-sizing:border-box}
 html,body{margin:0}
@@ -439,7 +443,8 @@ textarea.transcript{width:100%;min-height:90px;border:1px solid var(--line);bord
 
 /* ---------- 雅思写作：图表（分类色经过色盲安全校验；浅色模式下低对比的颜色都配了文字标签和数据表） ---------- */
 :root{--s1:#2a78d6;--s2:#eb6834;--s3:#1baf7a;--s4:#eda100;--s5:#e87ba4}
-@media (prefers-color-scheme: dark){:root{--s1:#3987e5;--s2:#d95926;--s3:#199e70;--s4:#c98500;--s5:#d55181}}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--s1:#3987e5;--s2:#d95926;--s3:#199e70;--s4:#c98500;--s5:#d55181}}
+:root[data-theme="dark"]{--s1:#3987e5;--s2:#d95926;--s3:#199e70;--s4:#c98500;--s5:#d55181}
 .s1{--c:var(--s1)} .s2{--c:var(--s2)} .s3{--c:var(--s3)} .s4{--c:var(--s4)} .s5{--c:var(--s5)}
 .ch-fig{margin:12px 0 0;display:flex;flex-direction:column;gap:6px}
 .chart{width:100%;height:auto;display:block;background:var(--surface);border:1px solid var(--line);border-radius:10px}
@@ -512,3 +517,8 @@ textarea.transcript{width:100%;min-height:90px;border:1px solid var(--line);bord
 .welcome-tips{text-align:left;border:1px solid var(--line);border-radius:12px;background:var(--surface);padding:14px 18px;display:flex;flex-direction:column;gap:8px}
 .welcome-tips .wbul{font-size:14px;line-height:1.65;margin:0}
 .guide-list{font-size:14px;line-height:1.65}
+
+/* ---------- 外观切换按钮 ---------- */
+.theme-btn{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:5px 12px;font-size:13px}
+.theme-btn:hover{border-color:var(--primary)}
+.theme-btn svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}

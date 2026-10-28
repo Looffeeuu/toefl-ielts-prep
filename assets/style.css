@@ -580,3 +580,51 @@ textarea.transcript{width:100%;min-height:90px;border:1px solid var(--line);bord
 .xm-blank.ok b{color:var(--good)}
 .xm-blank.no b{color:var(--bad)}
 .xm-blank small{font-family:var(--f-ui);color:var(--muted)}
+
+/* ---------- 雅思模考：机考风格界面 ---------- */
+.ix{--ix-font:0px}
+.ix-bar{display:flex;flex-wrap:wrap;align-items:center;gap:8px 18px;padding:9px 18px;background:var(--surface);border-bottom:2px solid var(--primary)}
+.ix-brand{display:flex;align-items:baseline;gap:10px;margin-right:auto}
+.ix-brand b{font-size:15px}
+.ix-brand span{font-family:var(--f-mono);font-size:13px;color:var(--primary)}
+.ix-time{display:flex;align-items:center;gap:8px;font-family:var(--f-mono)}
+.ix-time #ixTime{font-size:18px;font-weight:600}
+.ix-time .ix-left{font-family:var(--f-ui);font-size:12px;color:var(--muted)}
+.ix-time.warn #ixTime{color:var(--bad)}
+.ix-time.hidden #ixTime,.ix-time.hidden .ix-left{visibility:hidden}
+.ix-bar button,.ix-mini{border:1px solid var(--line);background:var(--surface-2);color:var(--ink);border-radius:6px;padding:5px 12px;font-size:13px}
+.ix-bar button.pri{background:var(--primary);color:var(--primary-ink);border-color:var(--primary);font-weight:600}
+.ix-bar button.quit{border-style:dashed}
+.ix-tools{display:flex;flex-wrap:wrap;gap:6px}
+.ix-body{flex:1;min-height:0;display:flex;flex-direction:column}
+.ix-scroll{flex:1;overflow:auto;padding:20px 22px}
+.ix-single{max-width:900px;margin:0 auto;display:flex;flex-direction:column;gap:12px}
+.ix-status{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;padding:8px 22px;background:var(--surface-2);border-bottom:1px solid var(--line);font-size:14px}
+.ix-prog{flex:1;min-width:160px;max-width:420px}
+.ix-prog i{background:var(--primary);transition:width .3s}
+.ix-split{flex:1;min-height:0;display:grid;grid-template-columns:var(--ix-left,50%) 8px minmax(0,1fr)}
+.ix-pane{overflow:auto;padding:20px 22px;display:flex;flex-direction:column;gap:12px;background:var(--surface)}
+.ix-divider{cursor:col-resize;background:var(--line);position:relative;touch-action:none}
+.ix-divider::after{content:"";position:absolute;left:2px;top:50%;width:4px;height:40px;margin-top:-20px;border-radius:2px;background:var(--muted)}
+.ix-divider:hover{background:var(--primary)}
+@media (max-width:820px){.ix-split{grid-template-columns:minmax(0,1fr);grid-template-rows:auto auto;overflow:auto}.ix-divider{display:none}}
+.ix .ptext p{font-size:calc(17px + var(--ix-font))}
+.ix .iq-body,.ix .iq-flow,.ix .iq-line,.ix .instr,.ix .iw-q{font-size:calc(15px + var(--ix-font))}
+.ix-editor{flex:1;min-height:320px;font-size:calc(17px + var(--ix-font))}
+mark.ix-hl{background:var(--hl);color:inherit;border-radius:2px}
+.ix-hlmenu{position:fixed;z-index:70;display:flex;gap:4px;background:var(--ink);padding:4px;border-radius:8px;box-shadow:0 4px 16px rgba(0,0,0,.2)}
+.ix-hlmenu button{border:0;background:transparent;color:var(--bg);font-size:13px;padding:4px 10px;border-radius:6px}
+.ix-hlmenu button:hover{background:color-mix(in srgb,var(--bg) 20%,transparent)}
+.ix-nav{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;padding:8px 14px;background:var(--surface);border-top:2px solid var(--line)}
+.ix-part{display:flex;align-items:center;gap:8px;border:1px solid var(--line);background:var(--surface-2);color:var(--ink);border-radius:8px;padding:5px 10px;font-size:13px}
+.ix-part span{font-family:var(--f-mono);font-size:12px;color:var(--muted)}
+.ix-part.on{background:var(--surface);border-color:var(--primary);flex-wrap:wrap}
+.ix-nums{display:flex;flex-wrap:wrap;gap:3px}
+.ix-num{width:28px;height:28px;border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:5px;font-family:var(--f-mono);font-size:12px;padding:0;position:relative}
+.ix-num.done{background:var(--primary);color:var(--primary-ink);border-color:var(--primary)}
+.ix-num.cur{outline:2px solid var(--ink);outline-offset:1px}
+.ix-num.flag::after{content:"";position:absolute;top:-4px;right:-4px;width:9px;height:9px;border-radius:50%;background:var(--warn);border:1.5px solid var(--surface)}
+.ix-navbtns{display:flex;align-items:center;gap:6px;margin-left:auto}
+.ix-navbtns button{border:1px solid var(--line);background:var(--surface-2);color:var(--ink);border-radius:6px;width:36px;height:30px}
+.ix-flag{display:flex;align-items:center;gap:4px;font-size:13px}
+.ix-navnote{font-size:12px;color:var(--muted);margin-left:auto}

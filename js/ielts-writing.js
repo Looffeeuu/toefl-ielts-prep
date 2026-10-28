@@ -149,6 +149,11 @@ function analyze(text, it){
   return { n, min, paras:paras.length, checks };
 }
 
+// 给「雅思模考」用
+App.iwritingKit = { D, MIN_WORDS, promptHTML, analyze, wordsOf,
+  record: (it, text, a) => { const prev = data.done[it.id] || { cnt:0 }; data.done[it.id] = { t:Date.now(), words:a.n, cnt:prev.cnt+1, text } },
+  addHistory: h => { data.history.push(h); if(data.history.length>100) data.history = data.history.slice(-100); save() } };
+
 /* ---------- 会话 ---------- */
 // S：{ mode:"t1"|"t2"|"full", tasks:[{ it, text }], cur, started, deadline, phase:"write"|"review" }
 let S = null, timer = 0;

@@ -21,6 +21,9 @@ function record(p, res){
   Object.entries(res.types).forEach(([k,[c,n]]) => { const t = data.types[k] || (data.types[k] = [0,0]); t[0]+=c; t[1]+=n });
 }
 
+// 给「雅思模考」用
+App.ireadingKit = { P, BYID, record: (p, res) => { record(p, res); save() }, addMock: m => { data.mocks.push(m); if(data.mocks.length>50) data.mocks = data.mocks.slice(-50); save() } };
+
 /* ---------- 会话 ---------- */
 // S：{ mode, units:[{ p, built }], cur, ans, started, deadline, phase:"do"|"review", res }
 let S = null, timer = 0;

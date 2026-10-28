@@ -31,6 +31,9 @@ function segments(p){
   return p._segs = out;
 }
 
+// 给「雅思模考」用
+App.ilisteningKit = { TESTS, segments, record: (key, res) => { record(key, res); save() }, addMock: m => { data.mocks.push(m); if(data.mocks.length>50) data.mocks = data.mocks.slice(-50); save() } };
+
 /* ---------- 会话 ---------- */
 // S：{ mode, parts:[{ p, built }], cur, ans, phase:"read"|"play"|"check"|"interrupted"|"review", until, res }
 let S = null, timer = 0;

@@ -13,7 +13,7 @@
   // 在样式生效前套用保存的外观，避免深色模式下打开时先闪一下浅色
   try{ var t = (JSON.parse(localStorage.getItem("toefl.settings.v1")) || {}).theme; if(t === "light" || t === "dark") document.documentElement.dataset.theme = t; }catch(e){}
 </script>
-<link rel="stylesheet" href="assets/style.css?v=20261103">
+<link rel="stylesheet" href="assets/style.css?v=20261104">
 </head>
 <body>
 <div class="boot" id="boot" role="status">
@@ -55,6 +55,7 @@
       <a class="mod" href="#listening" data-route="listening">听力</a>
       <a class="mod" href="#writing" data-route="writing">写作</a>
       <a class="mod" href="#exam" data-route="exam">模考</a>
+      <a class="mod" href="#iexam" data-route="iexam">模考</a>
       <a class="mod" href="#guide" data-route="guide">考点</a>
       <a class="mod" href="#settings" data-route="settings">设置</a>
     </nav>
@@ -179,6 +180,7 @@
 
   <!-- ===================== 托福模考（考场模式） ===================== -->
   <main id="view-exam" hidden></main>
+  <main id="view-iexam" hidden></main>
 
   <!-- ===================== 考点 ===================== -->
   <main id="view-guide" hidden></main>
@@ -251,7 +253,7 @@
 <script src="js/words-pos-1.js?v=20261027"></script>
 <script src="js/words-pos-2.js?v=20261027"></script>
 <script src="js/words-ielts.js?v=20261027"></script>
-<script src="js/core.js?v=20261103"></script>
+<script src="js/core.js?v=20261104"></script>
 <script src="js/wordlist-io.js?v=20261027"></script>
 <script src="js/vocab.js?v=20261101"></script>
 <script src="js/recorder.js?v=20261028"></script>
@@ -262,11 +264,12 @@
 <script src="js/ielts-speaking-data.js?v=20261028"></script>
 <script src="js/ielts-speaking.js?v=20261029"></script>
 <script src="js/ielts-reading-data.js?v=20261029"></script>
-<script src="js/ielts-reading.js?v=20261101"></script>
+<script src="js/ielts-reading.js?v=20261104"></script>
 <script src="js/ielts-listening-data.js?v=20261029"></script>
-<script src="js/ielts-listening.js?v=20261101"></script>
+<script src="js/ielts-listening.js?v=20261104"></script>
 <script src="js/ielts-writing-data.js?v=20261030d"></script>
-<script src="js/ielts-writing.js?v=20261101"></script>
+<script src="js/ielts-writing.js?v=20261104"></script>
+<script src="js/ielts-exam.js?v=20261104"></script>
 <script src="js/reading-data.js?v=20261027"></script>
 <script src="js/reading.js?v=20261103"></script>
 <script src="js/listening-data.js?v=20261027"></script>
@@ -275,7 +278,7 @@
 <script src="js/writing.js?v=20261103"></script>
 <script src="js/toefl-exam.js?v=20261103b"></script>
 <script src="js/guide.js?v=20261030"></script>
-<script src="js/settings.js?v=20261103"></script>
+<script src="js/settings.js?v=20261104"></script>
 <script src="js/beta.js?v=20261103"></script>
 <script>App.start();</script>
 </body>

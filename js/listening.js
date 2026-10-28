@@ -67,6 +67,9 @@ function record(u, res){
   save();
 }
 
+// 给「模考」用：题库、录音、判分和记录与这里的练习共用
+App.listeningKit = { POOL, TYPE, KIND, ANSWER_SEC, segments, makeUnit, grade, record };
+
 /* ---------- 文本渲染 ---------- */
 function wrapWords(str){
   return str.split(/([A-Za-z]+)/).map((p,i) => {

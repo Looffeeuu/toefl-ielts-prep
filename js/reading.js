@@ -64,6 +64,9 @@ function record(task, res){
   save();
 }
 
+// 给「模考」用：出题、判分和记录与这里的练习共用
+App.readingKit = { R, TYPE, buildCtw, makeTask, grade, record };
+
 /* ---------- 文本渲染 ---------- */
 function wrapWords(str, ctx){
   return str.split(/([A-Za-z]+)/).map((p,i) => {

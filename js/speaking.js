@@ -39,6 +39,10 @@ function scoreRepeat(sentence, transcript){
 const repeatSeconds = s => { const n = s.split(/\s+/).length; return n<=7 ? 8 : n<=12 ? 10 : 12 };
 const levelOf = p => p>=95 ? ["done","完整复述"] : p>=70 ? ["learn","基本复述"] : p>=40 ? ["new","部分复述"] : ["bad","没跟上"];
 
+// 给「模考」用：复述评分与练习记录
+App.speakingKit = { scoreRepeat, repeatSeconds, INTERVIEW_SECONDS, FILLER,
+  addHistory: entry => { data.history.push(entry); if(data.history.length>200) data.history = data.history.slice(-200); save() } };
+
 /* ---------- 会话 ---------- */
 let S = null, token = 0;
 function abortSession(){

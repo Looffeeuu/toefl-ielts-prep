@@ -65,6 +65,11 @@ function analyze(text, kind, item){
   return { n, sentences:sentences.length, avg, checks };
 }
 
+// 给「模考」用：自动检查、语法考点统计和写作记录
+App.writingKit = { W, SET_SECONDS, EMAIL_SECONDS, DISC_SECONDS, analyze, wordsOf,
+  tag: (tag, ok) => { if(!tag) return; const t = data.tags[tag] || (data.tags[tag] = [0,0]); t[1]++; if(ok) t[0]++; save() },
+  draft: (id, text, secs) => { const prev = data.drafts[id] || { cnt:0 }; data.drafts[id] = { text, words:wordsOf(text).length, t:Date.now(), cnt:prev.cnt+1, secs }; save() } };
+
 /* ---------- 会话 ---------- */
 let S = null, timer = 0;
 function stopTimer(){ clearInterval(timer); timer = 0 }

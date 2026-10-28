@@ -389,8 +389,8 @@ function reviewItem(){
 /* ---------- 事件 ---------- */
 function onClick(e){
   const v = e.target.closest("[data-vw]");
-  if(v){ App.vocab.open(v.dataset.vw); return }
-  const sg = e.target.closest("[data-seg]");
+  if(v) return;   // 词库单词的点击由 vocab.js 统一处理
+  const sg = !e.target.closest("[data-vw]") && e.target.closest("[data-seg]");
   if(sg){ const it = reviewItem(); if(it){ const s = segments(it)[+sg.dataset.seg]; stopAudio(); App.speak(s.text, voiceFor(s.who)) } return }
   const t = e.target.closest("button"); if(!t) return;
   const d = t.dataset;

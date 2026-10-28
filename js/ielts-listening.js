@@ -144,7 +144,7 @@ function setBar(){
 }
 function transcriptHTML(p){
   const segs = segments(p), lines = [];
-  segs.forEach((s,i) => { if(s.line<0) return; const l = lines[s.line] || (lines[s.line] = { name:s.name, parts:[] }); l.parts.push(`<span class="seg" data-seg="${i}" title="点击重听这一句">${esc(s.text)}</span>`) });
+  segs.forEach((s,i) => { if(s.line<0) return; const l = lines[s.line] || (lines[s.line] = { name:s.name, parts:[] }); l.parts.push(`<span class="seg" data-seg="${i}" title="点击重听这一句">${S && S.phase==="review" && App.vocab ? App.vocab.linkify(s.text) : esc(s.text)}</span>`) });
   const many = new Set(Object.keys(p.speakers)).size>1;
   return `<div class="ltrans">${lines.filter(Boolean).map(l => `<p>${many ? `<b class="who">${esc(l.name)}</b>` : ""}${l.parts.join(" ")}</p>`).join("")}</div>`;
 }
@@ -179,6 +179,7 @@ function renderStage(){
 /* ---------- 事件 ---------- */
 function onClick(e){
   const sg = e.target.closest("[data-seg]");
+  if(e.target.closest("[data-vw]")) return;   // 点词库单词是查词，不是重听这一句
   if(sg && S && S.phase==="review"){ const s = segments(S.parts[S.cur].p)[+sg.dataset.seg]; T.stop(); App.speak(s.text, T.voiceFor(s.who)); return }
   const t = e.target.closest("button"); if(!t || t.dataset.iqv!==undefined) return;
   const d = t.dataset;

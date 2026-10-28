@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600&family=Noto+Sans+SC:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap">
-<link rel="stylesheet" href="assets/style.css?v=20261030">
+<link rel="stylesheet" href="assets/style.css?v=20261031">
 </head>
 <body>
 <div class="wrap">
@@ -74,7 +74,7 @@
       <div>
         <p class="section-label">词库进度 · <span id="sTotal"></span></p>
         <div class="bar" id="totalBar"><i class="m"></i><i class="l"></i></div>
-        <p class="note" style="margin:6px 0 0">复习间隔达到 21 天算作「已掌握」。</p>
+        <p class="note" style="margin:6px 0 0">复习间隔达到 21 天，或在卡片上点「已经掌握」，算作「已掌握」。</p>
       </div>
       <div>
         <p class="section-label">近 12 周</p>
@@ -105,9 +105,11 @@
         <button class="tab" role="tab" data-tab="study">背单词<span class="n" id="tabQ"></span></button>
         <button class="tab" role="tab" data-tab="quiz">测验</button>
         <button class="tab" role="tab" data-tab="bank">词库</button>
+        <button class="tab" role="tab" data-tab="stats">分析</button>
       </div>
       <div id="pane-study" role="tabpanel"></div>
       <div id="pane-quiz" role="tabpanel" hidden></div>
+      <div id="pane-stats" role="tabpanel" hidden></div>
       <div id="pane-bank" role="tabpanel" hidden>
         <div class="groups" id="groups"></div>
         <div class="topics" id="topics"></div>
@@ -201,7 +203,7 @@
 <script src="js/words-ielts.js?v=20261027"></script>
 <script src="js/core.js?v=20261030"></script>
 <script src="js/wordlist-io.js?v=20261027"></script>
-<script src="js/vocab.js?v=20261027"></script>
+<script src="js/vocab.js?v=20261031"></script>
 <script src="js/recorder.js?v=20261028"></script>
 <script src="js/tts.js?v=20261029"></script>
 <script src="js/ielts-qs.js?v=20261029"></script>
@@ -210,17 +212,17 @@
 <script src="js/ielts-speaking-data.js?v=20261028"></script>
 <script src="js/ielts-speaking.js?v=20261029"></script>
 <script src="js/ielts-reading-data.js?v=20261029"></script>
-<script src="js/ielts-reading.js?v=20261029"></script>
+<script src="js/ielts-reading.js?v=20261031"></script>
 <script src="js/ielts-listening-data.js?v=20261029"></script>
-<script src="js/ielts-listening.js?v=20261029"></script>
+<script src="js/ielts-listening.js?v=20261031"></script>
 <script src="js/ielts-writing-data.js?v=20261030d"></script>
-<script src="js/ielts-writing.js?v=20261030d"></script>
+<script src="js/ielts-writing.js?v=20261031"></script>
 <script src="js/reading-data.js?v=20261027"></script>
-<script src="js/reading.js?v=20261027"></script>
+<script src="js/reading.js?v=20261031"></script>
 <script src="js/listening-data.js?v=20261027"></script>
-<script src="js/listening.js?v=20261029"></script>
+<script src="js/listening.js?v=20261031"></script>
 <script src="js/writing-data.js?v=20261027"></script>
-<script src="js/writing.js?v=20261027"></script>
+<script src="js/writing.js?v=20261031"></script>
 <script src="js/guide.js?v=20261030"></script>
 <script src="js/settings.js?v=20261030"></script>
 <script>App.start();</script>

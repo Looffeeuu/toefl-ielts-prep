@@ -304,7 +304,7 @@ function renderCurrent(){
 /* ---------- 事件 ---------- */
 function onClick(e){
   const v = e.target.closest("[data-vw]");
-  if(v){ App.vocab.open(v.dataset.vw); return }
+  if(v) return;   // 词库单词的点击由 vocab.js 统一处理
   const t = e.target.closest("button"); if(!t) return;
   const d = t.dataset;
   if(d.practice){ startPractice(d.practice); return }
@@ -352,7 +352,6 @@ function onKey(e){
     const all = Array.from(document.querySelectorAll(".ctw-in")), i = all.indexOf(t);
     if(all[i-1]){ e.preventDefault(); all[i-1].focus() }
   }
-  if(t.dataset && t.dataset.vw && e.key==="Enter") App.vocab.open(t.dataset.vw);
 }
 
 App.routes.reading = {

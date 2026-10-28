@@ -290,7 +290,7 @@ function renderReview(){
       </article>
       <section class="pane-q">
         <div class="tip"><b>${it.task===1 ? "写作要点" : "题型：" + TYPE2[it.type]}</b><br>${esc(it.hint)}</div>
-        <details open><summary class="section-label" style="cursor:pointer">范文（${wordsOf(it.model).length} 词）</summary><div class="w-answer model">${esc(it.model)}</div></details>
+        <details open><summary class="section-label" style="cursor:pointer">范文（${wordsOf(it.model).length} 词）</summary><div class="w-answer model">${App.vocab ? App.vocab.linkify(it.model) : esc(it.model)}</div></details>
         <div><p class="section-label">常用句型</p><ul class="wbul">${it.phrases.map(p => `<li>${esc(p)}</li>`).join("")}</ul></div>
         <div class="ritem"><b>AI 估分与修改建议</b>
           ${App.hasAI() ? `<p class="note" style="margin:0">把题目和你的作文发给 Claude，按雅思写作的四项评分标准粗略估分，指出语法和用词问题，并给出修改版。${S.tasks.length>1 ? "两篇会一起点评。" : ""}</p>

@@ -101,6 +101,7 @@ GROUPS.push(custom);
 const GROUP = {}; GROUPS.forEach(g => GROUP[g.id] = g);
 let TOPICS = GROUPS.flatMap(g => g.lists);
 let noted = [];
+let customForms = null;   // 「我的词表」的词形索引，词表变化时清空，用到时再建
 const itemParts = it => Array.isArray(it) ? it : [it];
 function rebuildCustom(defs){
   WORDS.slice(BASE_N).forEach(o => { if(BY[o.w]===o) delete BY[o.w] });
@@ -120,6 +121,7 @@ function rebuildCustom(defs){
     TOPIC[L.id] = L; return L;
   });
   TOPICS = GROUPS.flatMap(g => g.lists);
+  customForms = null;
 }
 const exam = () => App.exam==="ielts" ? "ielts" : "toefl";
 const EXAM_NAME = { toefl:"托福", ielts:"雅思" };
@@ -158,7 +160,10 @@ function ivLabel(i){ if(i<=0) return "1 分钟内"; if(i<30) return i+" 天"; if
 
 /* ---------- 进度 ---------- */
 // settings.lists：本轮选中的词表 id（空数组表示全部词库）；order：seq 按词表顺序 / rand 随机；seed：随机顺序的种子
-const blank = () => ({ v:1, cards:{}, log:{}, settings:{ daily:20, lists:[], order:"seq", seed:1, auto:false, skipBasic:"z" }, custom:[], updatedAt:0 });
+// stats：个人词汇分析用的记录。forgot 选「不认识」的次数；spell 拼写测验拼错（含最近的错误拼法）；
+// confuse 测验中把 A 选成 B 的次数（键为 "A|B"）；look 做题时点开查看的次数；quiz 测验总题数与答对数
+const sblank = () => ({ forgot:{}, spell:{}, confuse:{}, look:{}, quiz:[0,0] });
+const blank = () => ({ v:1, cards:{}, log:{}, settings:{ daily:20, lists:[], order:"seq", seed:1, auto:false, skipBasic:"z" }, custom:[], stats:sblank(), updatedAt:0 });
 function legacyLists(sel){
   if(!sel || sel==="all") return [];
   if(sel.startsWith("g:")) return GROUP[sel.slice(2)] ? GROUP[sel.slice(2)].lists.map(l => l.id) : [];
@@ -173,7 +178,7 @@ function normalize(d){
   s.lists = s.lists.filter(id => TOPIC[id]);
   delete s.exam;   // 考试改为页面级设置（App.exam），旧数据里的这一项在 core.js 里迁移
   delete s.list;
-  return { v:1, cards:d.cards||{}, log:d.log||{}, settings:s, custom:cl, updatedAt:d.updatedAt||0 };
+  return { v:1, cards:d.cards||{}, log:d.log||{}, settings:s, custom:cl, stats:Object.assign(sblank(), d.stats||{}), updatedAt:d.updatedAt||0 };
 }
 let store = null;
 store = normalize(App.store.get(App.KEYS.vocab, null));
@@ -183,11 +188,12 @@ function persist(){ store.updatedAt = Date.now(); App.store.set(App.KEYS.vocab, 
 function ensureLog(){ const k = keyOf(today()); return store.log[k] || (store.log[k] = { n:0, r:0 }) }
 const todayLog = () => store.log[keyOf(today())] || { n:0, r:0 };
 function status(w){ const c = store.cards[w]; if(!c) return ["new","新词"]; if(c[1]>=21) return ["done","已掌握"]; return ["learn","学习中"] }
+const bump = (map, k, n=1) => { map[k] = (map[k]||0) + n };
 
 /* ---------- 间隔重复 ---------- */
-// card = [复习次数, 间隔天数, 难度系数%, 到期日, 遗忘次数]
+// card = [复习次数, 间隔天数, 难度系数%, 到期日, 遗忘次数, 手动标为已掌握(1)]
 function schedule(c, g){
-  let [r,i,e,d,l] = c ? c.slice() : [0,0,250,0,0];
+  let [r,i,e,d,l] = c ? c.slice(0,5) : [0,0,250,0,0];
   const T = today();
   if(g===0){ if(r>0) l++; r=0; i=0; e=Math.max(130,e-20); d=T }
   else if(g===1){ i = r===0 ? 1 : Math.max(i+1, Math.round(i*1.2)); e=Math.max(130,e-15); r++; d=T+i }
@@ -231,9 +237,42 @@ function rate(g){
   const was = store.cards[w];
   store.cards[w] = schedule(was, g);
   const L = ensureLog(); if(!was) L.n++; L.r++;
+  // 复习记住率：只算已经学过的词（新词第一次见不算）
+  if(was){ L.rv = (L.rv||0) + 1; if(g>0) L.rk = (L.rk||0) + 1 }
+  if(g===0) bump(store.stats.forgot, w);
   queue.shift();
   if(g===0) queue.splice(Math.min(3, queue.length), 0, w);
-  revealed = false; persist(); renderStats(); renderStudy();
+  revealed = false; undo = null; persist(); renderStats(); renderStudy();
+}
+// 手动标为已掌握：间隔直接设为 60 天，到期时再抽查一次；新词这样跳过不占用当天的新词名额，并补进一个新词
+const MASTER_DAYS = 60;
+let undo = null;
+function markMastered(w, fromQueue){
+  const was = store.cards[w], T = today();
+  const [r,,e,,l] = was ? was : [0,0,250,0,0];
+  undo = { w, was: was ? was.slice() : null, fromQueue, queue: queue.slice() };
+  store.cards[w] = [Math.max(r,1), MASTER_DAYS, e, T+MASTER_DAYS, l, 1];
+  const L = ensureLog(); L.r++;
+  queue = queue.filter(x => x!==w);
+  if(fromQueue && !was){
+    const have = new Set(queue), next = srcWords().find(o => !store.cards[o.w] && !have.has(o.w));
+    if(next) queue.push(next.w);
+  }
+  revealed = false; persist(); renderStats();
+}
+function undoMastered(){
+  if(!undo) return;
+  if(undo.was) store.cards[undo.w] = undo.was; else delete store.cards[undo.w];
+  const L = ensureLog(); L.r = Math.max(0, L.r-1);
+  queue = undo.queue; undo = null; revealed = false;
+  persist(); renderStats(); renderStudy();
+}
+// 取消已掌握：放回今天的复习
+function unmaster(w){
+  const c = store.cards[w]; if(!c) return;
+  store.cards[w] = [0, 0, Math.max(130, c[2]-20), today(), c[4]];
+  if(!queue.includes(w)) queue.splice(Math.min(1, queue.length), 0, w);
+  persist(); renderStats();
 }
 function addMore(n){
   const have = new Set(queue);
@@ -326,7 +365,7 @@ function renderStudy(){
   $("#tabQ").textContent = queue.length ? queue.length : "";
   if(!queue.length){
     const L = todayLog(), left = srcWords().filter(o => !store.cards[o.w]).length;
-    box.innerHTML = `<div class="card done">
+    box.innerHTML = `${undo ? `<div class="undo-bar">已把 <b>${esc(undo.w)}</b> 标为已掌握。<button class="btn-ghost" id="undoMaster">撤销</button></div>` : ""}<div class="card done">
       <p class="section-label">今日任务</p>
       <h3>${L.r ? "今天的复习和新词都完成了" : "现在没有要复习的单词"}</h3>
       <p class="note" style="margin:0">今天共复习 ${L.r} 次，新学 ${L.n} 个词。${left ? `本轮词库还剩 ${left} 个新词。` : "本轮词库的新词已经全部学过，可以在左边「本轮词库」里换一批。"}</p>
@@ -336,8 +375,9 @@ function renderStudy(){
   }
   const o = BY[queue[0]], c = store.cards[o.w];
   const kind = !c ? ["new","新词"] : c[0]===0 ? ["learn","重学"] : ["learn","复习"];
+  const undoBar = undo ? `<div class="undo-bar">已把 <b>${esc(undo.w)}</b> 标为已掌握，${MASTER_DAYS} 天后抽查一次。<button class="btn-ghost" id="undoMaster">撤销</button></div>` : "";
   const prev = [0,1,2,3].map(g => g===0 ? "1 分钟内" : ivLabel(schedule(c,g)[1]));
-  box.innerHTML = `<div class="card">
+  box.innerHTML = `${undoBar}<div class="card">
     <div class="meta"><span class="chip ${kind[0]}">${kind[1]}</span><span>${esc(listName(o))}</span>${o.basic ? `<span class="chip">${BASIC[o.basic]}</span>` : ""}<span class="left">剩余 ${queue.length}</span></div>
     <div class="head"><span class="headword">${esc(o.w)}</span><span class="pos">${esc(o.pos)}</span>${speakBtn(o.w)}</div>
     ${phHTML(o)}
@@ -346,6 +386,7 @@ function renderStudy(){
       ${revealed ? `<div class="rates">${["不认识","模糊","认识","太简单"].map((t,g) => `<button class="rate" data-g="${g}"><b>${t}<kbd>${g+1}</kbd></b><span>${prev[g]}后再见</span></button>`).join("")}</div>`
       : `<button class="reveal" id="revealBtn">先回想意思，再看答案<kbd>空格</kbd></button>`}
       <div class="hint">${revealed ? "按 1–4 打分，按 P 发音" : "想不起来也没关系，翻开后选「不认识」，它会很快再出现"}</div>
+      <button class="master" id="masterBtn" title="确定已经掌握的词不用再按间隔重复去背，${MASTER_DAYS} 天后抽查一次">这个词我已经掌握了，不用再背<kbd>M</kbd></button>
     </div>
   </div>`;
   if(store.settings.auto && interacted && !revealed && lastSpoken!==o.w){ lastSpoken = o.w; App.speak(o.w) }
@@ -363,17 +404,19 @@ function makeQ(o, mode){
   if(mode==="syn" && others.length<12) others.push(...shuffle(WORDS.filter(x => x!==o && x.syn.length)));
   others.sort((a,b) => (fam(b.pos)===fam(o.pos)) - (fam(a.pos)===fam(o.pos)));
   let correct, opts;
-  if(mode==="cn"){ correct = o.cn; opts = [correct]; for(const x of others){ if(opts.length>=4) break; if(!opts.includes(x.cn)) opts.push(x.cn) } }
+  // src 记下每个干扰项来自哪个词，答错时用来统计「混淆」
+  const src = {};
+  if(mode==="cn"){ correct = o.cn; opts = [correct]; for(const x of others){ if(opts.length>=4) break; if(!opts.includes(x.cn)){ opts.push(x.cn); src[x.cn] = x.w } } }
   else{
     correct = o.syn[0]; opts = [correct];
     for(const x of others){
       if(opts.length>=4) break;
       const s = x.syn[0];
       if(opts.includes(s) || o.syn.includes(s) || s===o.w || o.syn.includes(x.w) || x.syn.includes(o.w) || x.syn.some(z => o.syn.includes(z))) continue;
-      opts.push(s);
+      opts.push(s); src[s] = x.w;
     }
   }
-  return { o, opts:shuffle(opts), correct };
+  return { o, opts:shuffle(opts), correct, src };
 }
 function renderQuizSetup(msg){
   const seen = Object.keys(store.cards).length;
@@ -409,7 +452,11 @@ function answer(i){
   if(quiz.mode==="spell"){ const v = ($("#spellIn").value||"").trim().toLowerCase(); if(!v) return; q.given = v; ok = v===q.o.w.toLowerCase() }
   else{ q.given = i; ok = q.opts[i]===q.correct }
   q.ok = ok; quiz.answered = true;
+  const st = store.stats; st.quiz[1]++; if(ok) st.quiz[0]++;
+  if(!ok && quiz.mode==="spell"){ const e = st.spell[q.o.w] || (st.spell[q.o.w] = { n:0, wrong:[] }); e.n++; e.wrong = [q.given, ...e.wrong.filter(x => x!==q.given)].slice(0,3) }
+  if(!ok && quiz.mode!=="spell"){ const other = q.src[q.opts[i]]; if(other) bump(st.confuse, `${q.o.w}|${other}`) }
   if(ok) quiz.score++; else { quiz.wrong.push(q.o.w); penalize(q.o.w) }
+  if(ok) persist();
   renderQuiz();
 }
 function nextQ(){ if(!quiz || !quiz.answered) return; quiz.idx++; quiz.answered = false; renderQuiz() }
@@ -487,10 +534,24 @@ function openDetail(w){
     <div class="head" style="padding-top:0"><span class="headword" style="font-size:44px">${esc(o.w)}</span><span class="pos">${esc(o.pos)}</span>${speakBtn(o.w)}</div>
     ${phHTML(o)}
     ${backHTML(o)}
-    <div class="row">${queue.includes(w) ? '<span class="note">已在今天的学习队列里</span>' : '<button class="btn alt" id="addQueue">加入今天的学习</button>'}</div>`;
+    ${wordStatsHTML(w)}
+    <div class="row">${queue.includes(w) ? '<span class="note">已在今天的学习队列里</span>' : '<button class="btn alt" id="addQueue">加入今天的学习</button>'}
+      ${s==="done" ? '<button class="btn-ghost" id="unmaster">还没掌握，重新学习</button>' : '<button class="btn-ghost" id="masterDetail">标为已掌握</button>'}</div>`;
   $("#overlay").hidden = false; $("#closeSheet").focus();
 }
 function closeDetail(){ $("#overlay").hidden = true; openWord = null }
+// 这个词的个人记录，显示在详情里
+function wordStatsHTML(w){
+  const st = store.stats, c = store.cards[w], parts = [];
+  if(c) parts.push(`复习 ${c[0]} 次`);
+  if(c && c[5]) parts.push("手动标为已掌握");
+  if(st.forgot[w]) parts.push(`选过「不认识」${st.forgot[w]} 次`);
+  if(st.spell[w]) parts.push(`拼错 ${st.spell[w].n} 次（写成 ${st.spell[w].wrong.map(esc).join("、")}）`);
+  const conf = Object.entries(st.confuse).filter(([k]) => k.split("|")[0]===w).map(([k,n]) => `${esc(k.split("|")[1])}×${n}`);
+  if(conf.length) parts.push(`测验中错选成 ${conf.join("、")} 的释义`);
+  if(st.look[w]) parts.push(`做题时查过 ${st.look[w]} 次`);
+  return parts.length ? `<p class="note word-stat">${parts.join(" · ")}</p>` : "";
+}
 
 /* ---------- 设置 ---------- */
 function renderSettings(){
@@ -739,18 +800,67 @@ function onListsInput(e){
   return false;
 }
 
+/* ---------- 分析：个人薄弱词 ---------- */
+const topN = (map, n=12) => Object.entries(map).filter(([w]) => BY[w.split("|")[0]]).sort((a,b) => b[1]-a[1]).slice(0,n);
+function reviewWords(ws){
+  ws = ws.filter(w => BY[w]);
+  queue = [...ws, ...queue.filter(w => !ws.includes(w))];
+  revealed = false; undo = null; showTab("study");
+}
+function wordChips(list){ return `<div class="an-words">${list.map(([w,extra]) => `<button class="an-w" data-detail="${esc(w)}"><b>${esc(w)}</b>${extra ? `<small>${extra}</small>` : ""}</button>`).join("")}</div>` }
+function anBlock(title, desc, list, words){
+  return `<section class="an-block"><div class="an-head"><div><h4>${title}</h4><p class="note">${desc}</p></div>
+    ${words.length ? `<button class="btn alt" data-review="${esc(words.join("\n"))}">集中复习这 ${words.length} 个词</button>` : ""}</div>
+    ${list.length ? wordChips(list) : `<p class="note empty">暂时还没有记录。</p>`}</section>`;
+}
+function renderAnalysis(){
+  const T = today(), st = store.stats, cards = Object.entries(store.cards).filter(([w]) => BY[w]);
+  const mast = cards.filter(([,c]) => c[1]>=21), manual = mast.filter(([,c]) => c[5]).length;
+  const learning = cards.length - mast.length;
+  let rv = 0, rk = 0, n7 = 0, r7 = 0;
+  for(let d=T-6; d<=T; d++){ const L = store.log[keyOf(d)]; if(L){ rv += L.rv||0; rk += L.rk||0; n7 += L.n||0; r7 += L.r||0 } }
+  const retention = rv ? Math.round(rk/rv*100) + "%" : "—";
+  const qa = st.quiz[1] ? Math.round(st.quiz[0]/st.quiz[1]*100) + "%" : "—";
+  // 经常忘记：「不认识」次数加上卡片记录的遗忘次数，取较大值
+  const forgotMap = {}; Object.entries(st.forgot).forEach(([w,n]) => forgotMap[w] = n);
+  cards.forEach(([w,c]) => { if(c[4]) forgotMap[w] = Math.max(forgotMap[w]||0, c[4]) });
+  const forgot = topN(forgotMap).filter(([,n]) => n>=2);
+  const spell = Object.entries(st.spell).filter(([w]) => BY[w]).sort((a,b) => b[1].n-a[1].n).slice(0,12);
+  const conf = topN(st.confuse);
+  const look = topN(st.look);
+  // 难词：难度系数低的在学词
+  const hard = cards.filter(([,c]) => c[1]<21 && c[2]<=190 && c[0]>0).sort((a,b) => a[1][2]-b[1][2]).slice(0,12);
+  $("#pane-stats").innerHTML = `<div class="an">
+    <div class="an-tiles">
+      <div class="stat"><div class="k">已学</div><div class="v">${cards.length}</div></div>
+      <div class="stat"><div class="k">已掌握</div><div class="v">${mast.length}<small>${manual ? ` 其中手动 ${manual}` : ""}</small></div></div>
+      <div class="stat"><div class="k">学习中</div><div class="v">${learning}</div></div>
+      <div class="stat"><div class="k">近 7 天复习记住率</div><div class="v">${retention}<small>${rv ? ` ${rk}/${rv}` : ""}</small></div></div>
+      <div class="stat"><div class="k">近 7 天</div><div class="v">${n7}<small> 新词 · ${r7} 次复习</small></div></div>
+      <div class="stat"><div class="k">测验正确率</div><div class="v">${qa}<small>${st.quiz[1] ? ` ${st.quiz[0]}/${st.quiz[1]}` : ""}</small></div></div>
+    </div>
+    <p class="note" style="margin:0">「复习记住率」是复习已学过的词时选「模糊」及以上的比例。数据只在这台电脑上统计，点任意一个词可以查看释义和它的个人记录。</p>
+    ${anBlock("经常忘记的词", "背词时多次选「不认识」或复习时忘记的词。", forgot.map(([w,n]) => [w, `忘了 ${n} 次`]), forgot.map(([w]) => w))}
+    ${anBlock("经常拼错的词", "听写拼写测验中拼错的词，后面是你最近写错的拼法。", spell.map(([w,e]) => [w, `${e.n} 次 · ${e.wrong.map(esc).join(" / ")}`]), spell.map(([w]) => w))}
+    ${anBlock("容易混淆的词", "测验中把左边的词错选成右边那个词的释义或同义词。", conf.map(([k,n]) => [k.split("|")[0], `↔ ${esc(k.split("|")[1])} · ${n} 次`]), [...new Set(conf.flatMap(([k]) => k.split("|")))])}
+    ${anBlock("还不稳的词", "正在学、但多次评为「不认识」或「模糊」的词（难度系数偏低）。", hard.map(([w,c]) => [w, `间隔 ${c[1]} 天`]), hard.map(([w]) => w))}
+    ${anBlock("做题时查过的词", "在阅读、听力原文和范文里点开查看过的词，适合做完题后集中复盘。", look.map(([w,n]) => [w, `${n} 次`]), look.map(([w]) => w))}
+  </div>`;
+}
+
 /* ---------- 标签页与事件 ---------- */
 let curTab = "study";
 function showTab(t){
   curTab = t;
   $$("#view-vocab .tab").forEach(b => b.setAttribute("aria-selected", b.dataset.tab===t));
-  ["study","quiz","bank"].forEach(k => $("#pane-"+k).hidden = k!==t);
+  ["study","quiz","bank","stats"].forEach(k => $("#pane-"+k).hidden = k!==t);
   if(t==="bank") renderBank();
+  if(t==="stats") renderAnalysis();
   if(t==="quiz" && !quiz) renderQuizSetup();
   if(t==="study") renderStudy();
   App.store.set("toefl.vocab.tab", t);
 }
-function renderAll(){ renderSettings(); renderStats(); renderStudy(); if(curTab==="bank") renderBank(); if(curTab==="quiz" && !quiz) renderQuizSetup() }
+function renderAll(){ renderSettings(); renderStats(); renderStudy(); if(curTab==="bank") renderBank(); if(curTab==="quiz" && !quiz) renderQuizSetup(); if(curTab==="stats") renderAnalysis() }
 
 function init(){
   $("#view-vocab").addEventListener("click", onClick);
@@ -773,7 +883,7 @@ function init(){
   renderSettings();
   renderStats();
   const t = App.store.get("toefl.vocab.tab", "study");
-  showTab(["study","quiz","bank"].includes(t) ? t : "study");
+  showTab(["study","quiz","bank","stats"].includes(t) ? t : "study");
   // 打开同学的分享链接：?wl=…；读完后把参数从地址栏去掉，刷新不会重复弹出
   const code = new URLSearchParams(location.search).get("wl");
   if(code){ history.replaceState(null, "", location.pathname + (location.hash || "#vocab")); openShared(code) }
@@ -824,6 +934,11 @@ function onClick(e){
   if(t.id==="pickNone"){ store.settings.lists = []; sourceChanged(); renderPicker(); return }
   if(t.id==="reshuffle"){ store.settings.seed = Math.floor(Math.random()*1e9); sourceChanged(); t.textContent = "已重新打乱"; setTimeout(() => { t.textContent = "重新打乱" }, 1500); return }
   if(t.id==="addQueue"){ queue.splice(Math.min(1, queue.length), 0, openWord); renderStudy(); openDetail(openWord); return }
+  if(t.id==="masterBtn"){ markMastered(queue[0], true); renderStudy(); return }
+  if(t.id==="undoMaster"){ undoMastered(); return }
+  if(t.id==="masterDetail"){ markMastered(openWord, false); undo = null; renderStudy(); openDetail(openWord); if(curTab==="bank") renderBank(); if(curTab==="stats") renderAnalysis(); return }
+  if(t.id==="unmaster"){ unmaster(openWord); renderStudy(); openDetail(openWord); if(curTab==="bank") renderBank(); if(curTab==="stats") renderAnalysis(); return }
+  if(t.dataset.review){ reviewWords(t.dataset.review.split("\n")); return }
   if(t.id==="resetBtn"){
     if(t.dataset.armed){ store = Object.assign(blank(), { settings:store.settings, custom:store.custom }); buildQueue(); persist(); quiz = null; renderAll(); t.textContent = "清空背词记录"; delete t.dataset.armed; return }
     t.dataset.armed = "1"; t.textContent = "再点一次，确认清空全部背词进度";
@@ -841,6 +956,7 @@ function onKey(e){
   if(curTab==="study" && !typing && queue.length){
     if(e.code==="Space" && !revealed){ e.preventDefault(); revealed = true; renderStudy(); return }
     if(revealed && /^[1-4]$/.test(e.key)){ rate(+e.key-1); return }
+    if(e.key==="m" || e.key==="M"){ markMastered(queue[0], true); renderStudy(); return }
     if(e.key==="p" || e.key==="P"){ App.speak(queue[0]); return }
   }
   if(curTab==="quiz" && quiz && quiz.idx<quiz.items.length){
@@ -857,21 +973,42 @@ function onKey(e){
 }
 
 /* ---------- 给其他模块用：在文章里识别词库单词 ---------- */
-// 只标出值得查的词：核心精编、精编补充，以及高频段以外的非基础词，避免满篇下划线
-const FORMS = {};
-TOEFL_WORDS.forEach(o => {
+// 只标出值得查的词：核心精编、精编补充、高频段以外的非基础词，以及「我的词表」里的词，避免满篇下划线
+function addForms(map, o){
   if(o.w.includes(" ")) return;
-  if(!(o.g==="core" || o.rich || (!o.basic && o.g!=="f1"))) return;
   const w = o.w.toLowerCase(), base = w.replace(/e$/,"");
   [w, w+"s", w+"es", w+"ed", w+"d", w+"ing", base+"ing", base+"ed",
-   w.replace(/y$/,"ies"), w.replace(/y$/,"ied"), w+"ly"].forEach(f => { if(!FORMS[f]) FORMS[f] = o.w });
-});
+   w.replace(/y$/,"ies"), w.replace(/y$/,"ied"), w+"ly"].forEach(f => { if(!map[f]) map[f] = o.w });
+}
+const worthy = o => o.g==="core" || o.rich || (!o.basic && o.g!=="f1" && o.g!=="i1");
+const FORMS = { toefl:{}, ielts:{} };
+TOEFL_WORDS.forEach(o => { if(worthy(o)) addForms(FORMS.toefl, o) });
+IELTS_WORDS.forEach(o => { if(worthy(o)) addForms(FORMS.ielts, o) });
+const lookup = token => {
+  const k = String(token).toLowerCase();
+  if(!customForms){ customForms = {}; customWords().forEach(o => addForms(customForms, o)) }
+  return FORMS[exam()][k] || customForms[k] || null;
+};
+// 把一段英文变成可点击的 HTML：词库单词加虚线下划线，正在学的词用实线强调
+function linkify(text){
+  return String(text).split(/([A-Za-z]+(?:'[a-z]+)?)/).map((p,i) => {
+    if(i%2===0) return esc(p);
+    const w = lookup(p.replace(/'[a-z]+$/, ""));
+    if(!w) return esc(p);
+    const c = store.cards[w], cls = c && c[1]<21 ? "vw lrn" : "vw";
+    return `<span class="${cls}" data-vw="${esc(w)}" role="button" tabindex="0" title="${c && c[1]<21 ? "正在学的词" : "词库单词"}，点击查看">${esc(p)}</span>`;
+  }).join("");
+}
 App.vocab = {
   // 考点页用：某个考试词库的学习进度
   progress: ex => { const ws = ex==="ielts" ? IELTS_WORDS : TOEFL_WORDS; let l = 0, m = 0; ws.forEach(o => { const c = store.cards[o.w]; if(c){ l++; if(c[1]>=21) m++ } }); return { learned:l, mastered:m, total:ws.length } },
-  lookup: token => FORMS[String(token).toLowerCase()] || null,
-  open: w => openDetail(w)
+  lookup, linkify,
+  // 从做题页面打开：记一次「做题时查过」
+  open: w => { if(!BY[w]) return; bump(store.stats.look, w); persist(); openDetail(w) }
 };
+// 页面上任何带 data-vw 的词都可以点开（阅读、听力原文、范文等）
+document.addEventListener("click", e => { const v = e.target.closest("[data-vw]"); if(v && !v.closest("#overlay")) App.vocab.open(v.dataset.vw) });
+document.addEventListener("keydown", e => { const v = e.target.closest && e.target.closest("[data-vw]"); if(v && e.key==="Enter") App.vocab.open(v.dataset.vw) });
 
 App.routes.vocab = {
   init,

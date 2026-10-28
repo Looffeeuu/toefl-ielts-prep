@@ -260,7 +260,7 @@ function renderReview(){
         <div class="selfcheck" style="flex-direction:column;align-items:flex-start">${self.map(s => `<label><input type="checkbox"> ${esc(s)}</label>`).join("")}</div>
       </article>
       <section class="pane-q">
-        <details open><summary class="section-label" style="cursor:pointer">范文（${wordsOf(it.model).length} 词）</summary><div class="w-answer model">${esc(it.model)}</div></details>
+        <details open><summary class="section-label" style="cursor:pointer">范文（${wordsOf(it.model).length} 词）</summary><div class="w-answer model">${App.vocab ? App.vocab.linkify(it.model) : esc(it.model)}</div></details>
         <div><p class="section-label">常用句型</p><ul class="wbul">${it.phrases.map(p => `<li>${esc(p)}</li>`).join("")}</ul></div>
         <div class="ritem"><b>AI 估分与修改建议</b>
           ${App.hasAI() ? `<p class="note" style="margin:0">把题目和你的${isEmail ? "邮件" : "回复"}发给 Claude，参照 ETS 0–5 分的任务评分标准粗略估分，指出语法和用词问题，并给出修改版。</p>

@@ -105,8 +105,10 @@ function renderHome(){
 }
 
 /* ---------- 作答与解析 ---------- */
-function passageHTML(p){
-  return `<div class="ptext ir-text"><h3 class="ptitle">${esc(p.title)}</h3>${p.paras.map(([k,t]) => `<p><b class="ir-par">${k}</b>${esc(t)}</p>`).join("")}</div>`;
+// 交卷后的原文里，词库单词可以点开查看（作答时不标出）
+function passageHTML(p, review){
+  const txt = t => review && App.vocab ? App.vocab.linkify(t) : esc(t);
+  return `<div class="ptext ir-text"><h3 class="ptitle">${esc(p.title)}</h3>${review ? `<p class="note" style="font-family:var(--f-ui);font-size:13px">虚线标出的是词库单词，点击可以查看释义、加入背词；实线是你正在学的词。</p>` : ""}${p.paras.map(([k,t]) => `<p><b class="ir-par">${k}</b>${txt(t)}</p>`).join("")}</div>`;
 }
 function render(){
   if(!S) return renderHome();
@@ -130,7 +132,7 @@ function render(){
       <span class="left">${review ? "解析" : mock ? `${MOCK_MIN} 分钟` : `建议 ${PRACTICE_MIN} 分钟`}</span>${review ? "" : `<span class="timer" id="irTimer"></span>`}
       ${review ? "" : `<button class="btn alt" data-quit style="margin-left:8px">${mock ? "放弃模拟" : "退出"}</button>`}</div>
     ${banner}${tabs}
-    <div class="rgrid"><article class="pane-text">${passageHTML(u.p)}</article>
+    <div class="rgrid"><article class="pane-text">${passageHTML(u.p, review)}</article>
       <section class="pane-q iq">${review ? Q.review(u.built, S.ans, S.res[S.cur]) : Q.render(u.built, S.ans)}</section></div>
     <div class="row">${foot}</div>
   </div>`);

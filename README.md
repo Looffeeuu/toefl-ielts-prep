@@ -2,14 +2,14 @@
 
 面向 2026 新版托福（TOEFL iBT）的备考网页，同时提供雅思词汇，并可以导入课程老师布置的单词。纯静态页面，不需要安装任何东西，也不需要注册账号，用浏览器打开即可。
 
-**在线使用**：https://looffeeuu.github.io/toefl-prep/
+**在线使用**：https://looffeeuu.github.io/toefl-ielts-prep/
 
 **产品介绍**：[托福雅思备考工作台 · 产品介绍](https://claude.ai/artifact/X1xbT1wKjELevyxXd6xuqM)（第一次用建议先看这篇：功能一览、快速开始、常见问题和反馈方式）
 
 ## 给同学的使用说明
 
 - 完整的使用介绍见上面的[产品介绍](https://claude.ai/artifact/X1xbT1wKjELevyxXd6xuqM)，下面是要点
-- 直接打开上面的网址就能用。第一次打开时选择托福或雅思，页面上只显示这个考试的内容，之后可以在右上角随时切换。也可以直接打开 https://looffeeuu.github.io/toefl-prep/#ielts/vocab 或 `#toefl/vocab` 进入对应考试
+- 直接打开上面的网址就能用。第一次打开时选择托福或雅思，页面上只显示这个考试的内容，之后可以在右上角随时切换。也可以直接打开 https://looffeeuu.github.io/toefl-ielts-prep/#ielts/vocab 或 `#toefl/vocab` 进入对应考试
 - 每个人的背词进度和练习记录只保存在自己的浏览器里，互不影响，也不会上传到任何服务器
 - 换电脑或换浏览器前，在「设置 → 学习数据」导出备份，到新地方再导入
 - 背老师布置的单词：词汇页左栏「我的词表 · 导入老师布置的单词」，粘贴单词或选择 txt / csv 文件。导入后点「只背这个」就会按随机顺序背

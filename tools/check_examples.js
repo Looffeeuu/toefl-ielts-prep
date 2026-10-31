@@ -17,6 +17,17 @@ window.IELTS_WORDS.split("\n").forEach(l => { const [w,ph,pos,cn,tier,flag] = l.
 // 和 vocab.js 的 hlRe 一致
 function hlRe(w){ const stem = (w.length>5 || /[a-z]y$/.test(w)) ? w.slice(0,-1) : w; return new RegExp("\\b(" + stem.replace(/[.*+?^${}()|[\]\\]/g,"\\$&") + "\\w*)","i") }
 const EX_LAB = /^(n|vt|vi|v|adj|adv|prep|conj|pron|int)\.\s+/;
+// 短词：第一个匹配必须是这个词本身或它的规则变化形式（may 不能先匹配到 many）
+function isForm(t, w){
+  if(t===w) return true;
+  const ends = ["s","es","ed","d","ing","er","est","ly","r","st"];
+  if(ends.some(e => t===w+e)) return true;
+  const b = w.replace(/[ey]$/, "");
+  if(b!==w && ["ing","ies","ied","ier","iest","ily","ed","er","ity"].some(e => t===b+e)) return true;
+  const last = w[w.length-1];
+  if(/[bdgklmnprt]/.test(last) && ["ed","ing","er","est"].some(e => t===w+last+e)) return true;
+  return false;
+}
 
 let bad = 0, n = 0;
 const seen = new Set(), err = m => { bad++; console.log("✗ " + m) };
@@ -35,7 +46,7 @@ Object.keys(window).filter(k => /^EX_WORDS_\d+$/.test(k)).sort((a,b) => +a.split
       if(!m) err(`${k} 例句里找不到 ${w}：${text}`);
       // 卡片只高亮第一个匹配：第一个匹配必须就是这个词（避免 way 先匹配到 was）
       // 超过 5 个字母的词本身就按去掉最后一个字母匹配，不容易撞上别的词（rebuild → rebuilt 也算对）
-      else if(o.w.length<=5 && !m[1].toLowerCase().startsWith(o.w.toLowerCase().replace(/[ey]$/, ""))) err(`${k} 第一个高亮的是 ${m[1]} 而不是 ${w}：${text}`);
+      else if(o.w.length<=5 && !isForm(m[1].toLowerCase(), o.w.toLowerCase())) err(`${k} 第一个高亮的是 ${m[1]} 而不是 ${w}：${text}`);
       if(!/[.!?]["”’)]?$/.test(text)) err(`${k} 例句没有句末标点：${w}`);
       if(text.length > 180) err(`${k} 例句太长（${text.length}）：${w}`);
       if(/[一-龥]/.test(text)) err(`${k} 例句里有中文：${w}`);

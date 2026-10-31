@@ -13,7 +13,7 @@
   // 在样式生效前套用保存的外观，避免深色模式下打开时先闪一下浅色
   try{ var t = (JSON.parse(localStorage.getItem("toefl.settings.v1")) || {}).theme; if(t === "light" || t === "dark") document.documentElement.dataset.theme = t; }catch(e){}
 </script>
-<link rel="stylesheet" href="assets/style.css?v=20261105">
+<link rel="stylesheet" href="assets/style.css?v=20261106">
 </head>
 <body>
 <div class="boot" id="boot" role="status">
@@ -257,7 +257,8 @@
 <script src="js/words-ielts.js?v=20261027"></script>
 <script src="js/core.js?v=20261105"></script>
 <script src="js/wordlist-io.js?v=20261027"></script>
-<script src="js/vocab.js?v=20261101"></script>
+<script src="js/word-parts.js?v=20261106"></script>
+<script src="js/vocab.js?v=20261106"></script>
 <script src="js/recorder.js?v=20261028"></script>
 <script src="js/tts.js?v=20261029"></script>
 <script src="js/ielts-qs.js?v=20261101"></script>

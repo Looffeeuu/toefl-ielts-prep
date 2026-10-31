@@ -91,6 +91,12 @@ ITIERS.forEach(([id,name,note]) => {
   GROUPS.push(g);
 });
 const IELTS_WORDS = [...IELTS_SET];
+// 补充例句（EX_WORDS_1、EX_WORDS_2…）：每行「单词 | 例句」，多词性时例句以词性开头、用 ## 分隔。只补原来没有例句的词，不改释义
+Object.keys(window).filter(k => /^EX_WORDS_\d+$/.test(k)).map(k => window[k]).join("\n").trim().split(/\r?\n/).forEach(line => {
+  const i = line.indexOf("|"); if(i<0) return;
+  const w = line.slice(0,i).trim(), o = BY[w] || BY[w.toLowerCase()];
+  if(o && !(o.exs && o.exs.length)) setExamples(o, line.slice(i+1).trim());
+});
 const BASE_N = WORDS.length;
 
 /* ---------- 我的词表（自己导入的词表） ---------- */
@@ -141,6 +147,15 @@ function hlRe(w){ const stem = (w.length>5 || /[a-z]y$/.test(w)) ? w.slice(0,-1)
 const exHTML = o => o.ex ? esc(o.ex).replace(hlRe(o.w), "<mark>$1</mark>") : "";
 const exBlank = o => o.ex ? esc(o.ex).replace(hlRe(o.w), '<span class="blank">' + o.w[0] + " _ _ _</span>") : "";
 const phHTML = o => o.ph ? `<span class="ph">/${esc(o.ph)}/</span>` : "";
+// 构词：前缀 / 词根 / 后缀（js/word-parts.js）。翻开答案前只显示怎么拆，翻开后再显示每一部分的意思
+function partsHTML(o, withGloss){
+  const ps = App.wordParts && App.wordParts(o.w, w => BY[w] || null);
+  if(!ps) return "";
+  const shown = [];
+  ps.forEach(p => { if(p.k==="x"){ if(shown.length) shown[shown.length-1].t += "(e)"; return } shown.push(Object.assign({}, p)) });
+  const label = p => p.k==="p" ? p.t + "-" : p.k==="s" ? "-" + p.t : p.t;
+  return `<span class="parts" title="构词：前缀、词根、后缀，帮助记忆">${shown.map(p => `<span class="pt pt-${p.k}"><b>${esc(label(p))}</b>${withGloss && p.g ? `<i>${esc(p.g)}</i>` : ""}</span>`).join('<span class="pt-plus">+</span>')}</span>`;
+}
 const BASIC = { z:"中考词", g:"高考词" };
 // 词表下拉选项：全部 / 整个分组 / 单个词表
 function listOptions(extraTop){
@@ -163,7 +178,8 @@ function ivLabel(i){ if(i<=0) return "1 分钟内"; if(i<30) return i+" 天"; if
 // stats：个人词汇分析用的记录。forgot 选「不认识」的次数；spell 拼写测验拼错（含最近的错误拼法）；
 // confuse 测验中把 A 选成 B 的次数（键为 "A|B"）；look 做题时点开查看的次数；quiz 测验总题数与答对数
 const sblank = () => ({ forgot:{}, spell:{}, confuse:{}, look:{}, quiz:[0,0] });
-const blank = () => ({ v:1, cards:{}, log:{}, settings:{ daily:20, lists:[], order:"seq", seed:1, auto:false, skipBasic:"z" }, custom:[], stats:sblank(), updatedAt:0 });
+// quickAnswer：测验选中选项后直接判对错（默认先选中、再按 Enter 确认）
+const blank = () => ({ v:1, cards:{}, log:{}, settings:{ daily:20, lists:[], order:"seq", seed:1, auto:false, skipBasic:"z", quickAnswer:false }, custom:[], stats:sblank(), updatedAt:0 });
 function legacyLists(sel){
   if(!sel || sel==="all") return [];
   if(sel.startsWith("g:")) return GROUP[sel.slice(2)] ? GROUP[sel.slice(2)].lists.map(l => l.id) : [];
@@ -379,7 +395,7 @@ function renderStudy(){
   const prev = [0,1,2,3].map(g => g===0 ? "1 分钟内" : ivLabel(schedule(c,g)[1]));
   box.innerHTML = `${undoBar}<div class="card">
     <div class="meta"><span class="chip ${kind[0]}">${kind[1]}</span><span>${esc(listName(o))}</span>${o.basic ? `<span class="chip">${BASIC[o.basic]}</span>` : ""}<span class="left">剩余 ${queue.length}</span></div>
-    <div class="head"><span class="headword">${esc(o.w)}</span><span class="pos">${esc(o.pos)}</span>${speakBtn(o.w)}</div>
+    <div class="head"><span class="headword">${esc(o.w)}</span><span class="pos">${esc(o.pos)}</span>${speakBtn(o.w)}${partsHTML(o, revealed)}</div>
     ${phHTML(o)}
     ${revealed ? `<div class="back">${backHTML(o)}</div>` : ""}
     <div class="actions">
@@ -428,7 +444,8 @@ function renderQuizSetup(msg){
         <option value="all" ${seen<8 ? "selected" : ""}>${EXAM_NAME[exam()]}全部词库（${fmtN(examWords().length)} 个）</option>`)}
       </select>
     </label>
-    <p class="note" style="margin:0">每次 10 题。答错的词会自动放回今天的复习队列。</p>
+    <label class="check"><input type="checkbox" id="qQuick" ${store.settings.quickAnswer ? "checked" : ""}> 选中选项后直接判对错（不用按 Enter 确认）</label>
+    <p class="note" style="margin:0">每次 10 题。默认先选中选项，再按 Enter 或点「确认」才判对错，避免手滑。答错的词会自动放回今天的复习队列。</p>
     ${msg ? `<div class="fb no">${msg}</div>` : ""}
     <div class="row"><button class="btn" id="qStart">开始测验</button></div>
   </div>`;
@@ -437,7 +454,7 @@ function startQuiz(){
   let p = pool($("#qScope").value);
   p = quizMode==="syn" ? p.filter(o => o.syn.length) : p.filter(o => o.cn);
   if(p.length<4){ renderQuizSetup("这个范围里的单词还不够出题。先多学几个，或者把范围换成「全部词库」。"); return }
-  quiz = { mode:quizMode, items:shuffle(p.slice()).slice(0,10).map(o => makeQ(o,quizMode)), idx:0, score:0, answered:false, wrong:[] };
+  quiz = { mode:quizMode, items:shuffle(p.slice()).slice(0,10).map(o => makeQ(o,quizMode)), idx:0, score:0, answered:false, wrong:[], hinted:[] };
   renderQuiz();
 }
 function penalize(w){
@@ -446,16 +463,37 @@ function penalize(w){
   if(!queue.includes(w)) queue.push(w);
   persist(); renderStats();
 }
-function answer(i){
+// 选择题：第一次点选项只是选中，再点一次同一项、按 Enter 或点「确认」才判对错（设置里可以改成选中即判）
+function pick(i){
+  if(!quiz || quiz.answered) return;
+  const q = quiz.items[quiz.idx];
+  if(store.settings.quickAnswer || q.sel===i){ answer(i); return }
+  q.sel = i; renderQuiz();
+}
+// 拼写：「提示」每次多显示一个字母（最多留一个不显示）；「忘记了」直接看答案，按答错处理
+function spellHint(){
+  const q = quiz && quiz.items[quiz.idx]; if(!q || quiz.answered) return;
+  const v = $("#spellIn") ? $("#spellIn").value : "";
+  q.hints = (q.hints||0) + 1;
+  renderQuiz();
+  const si = $("#spellIn"); if(si){ si.value = v; si.focus() }
+}
+function answer(i, forgot){
   if(!quiz || quiz.answered) return;
   const q = quiz.items[quiz.idx]; let ok;
-  if(quiz.mode==="spell"){ const v = ($("#spellIn").value||"").trim().toLowerCase(); if(!v) return; q.given = v; ok = v===q.o.w.toLowerCase() }
+  if(quiz.mode==="spell"){
+    const v = forgot ? "" : ($("#spellIn").value||"").trim().toLowerCase();
+    if(!v && !forgot) return;
+    q.given = v; q.forgot = !!forgot; ok = !forgot && v===q.o.w.toLowerCase();
+  }
   else{ q.given = i; ok = q.opts[i]===q.correct }
   q.ok = ok; quiz.answered = true;
   const st = store.stats; st.quiz[1]++; if(ok) st.quiz[0]++;
-  if(!ok && quiz.mode==="spell"){ const e = st.spell[q.o.w] || (st.spell[q.o.w] = { n:0, wrong:[] }); e.n++; e.wrong = [q.given, ...e.wrong.filter(x => x!==q.given)].slice(0,3) }
+  if(!ok && quiz.mode==="spell"){ const e = st.spell[q.o.w] || (st.spell[q.o.w] = { n:0, wrong:[] }); e.n++; if(q.given) e.wrong = [q.given, ...e.wrong.filter(x => x!==q.given)].slice(0,3) }
   if(!ok && quiz.mode!=="spell"){ const other = q.src[q.opts[i]]; if(other) bump(st.confuse, `${q.o.w}|${other}`) }
   if(ok) quiz.score++; else { quiz.wrong.push(q.o.w); penalize(q.o.w) }
+  // 看了提示才拼对：算答对，但放回今天的复习队列再巩固一次（不重置复习间隔）
+  if(ok && q.hints){ quiz.hinted.push(q.o.w); if(!queue.includes(q.o.w)) queue.push(q.o.w); renderStats() }
   if(ok) persist();
   renderQuiz();
 }
@@ -466,8 +504,9 @@ function renderQuiz(){
     box.innerHTML = `<div class="card done">
       <p class="section-label">${MODES[quiz.mode][0]} · 结果</p>
       <div class="score">${quiz.score}<span style="font-size:28px;color:var(--muted)"> / ${quiz.items.length}</span></div>
-      ${quiz.wrong.length ? `<div class="syn"><span class="lab">已加入复习</span>${quiz.wrong.map(w => `<button class="chip" data-detail="${esc(w)}">${esc(w)}</button>`).join("")}</div>` : `<p class="note" style="margin:0">全部答对。</p>`}
-      <div class="row"><button class="btn" id="qAgain">再来 10 题</button><button class="btn alt" id="qBack">换个题型</button>${quiz.wrong.length ? '<button class="btn alt" data-goto="study">去复习错词</button>' : ""}</div>
+      ${quiz.wrong.length ? `<div class="syn"><span class="lab">已加入复习</span>${quiz.wrong.map(w => `<button class="chip" data-detail="${esc(w)}">${esc(w)}</button>`).join("")}</div>` : quiz.hinted.length ? "" : `<p class="note" style="margin:0">全部答对。</p>`}
+      ${quiz.hinted.length ? `<div class="syn"><span class="lab">看了提示</span>${quiz.hinted.map(w => `<button class="chip" data-detail="${esc(w)}">${esc(w)}</button>`).join("")}<span class="note">算答对，也放进了今天的复习</span></div>` : ""}
+      <div class="row"><button class="btn" id="qAgain">再来 10 题</button><button class="btn alt" id="qBack">换个题型</button>${quiz.wrong.length || quiz.hinted.length ? '<button class="btn alt" data-goto="study">去复习这些词</button>' : ""}</div>
     </div>`;
     return;
   }
@@ -480,25 +519,32 @@ function renderQuiz(){
     body = `<div class="passage">${exHTML(o)}</div>
       <div class="qprompt">The word <b>${esc(o.w)}</b> in the passage is closest in meaning to</div>`;
   }else{
+    // 提示：显示前几个字母，其余用下划线占位；没有例句时至少给出首字母
+    const shown = Math.min((o.ex ? 0 : 1) + (q.hints||0), Math.max(1, o.w.length - 1));
+    const mask = shown ? `<p class="note spell-mask" style="margin:0">${esc(o.w.slice(0, shown))}${" _".repeat(o.w.length - shown)}<span>（共 ${o.w.length} 个字母）</span></p>` : "";
     body = `<div class="cn">${esc(o.cn)} <span class="pos">${esc(o.pos)}</span></div>
-      ${o.ex ? `<div class="passage">${exBlank(o)}</div>` : `<p class="note" style="margin:0">首字母：${esc(o.w[0])}，共 ${o.w.length} 个字母</p>`}
+      ${o.ex ? `<div class="passage">${exBlank(o)}</div>` : ""}${mask}
       <input class="spell-in" id="spellIn" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="输入单词，按回车提交" ${quiz.answered ? "disabled" : ""} value="${quiz.answered ? esc(q.given) : ""}">
-      <div class="row">${App.canSpeak ? `<button class="btn alt" data-speak="${esc(o.w)}">听发音提示</button>` : ""}${quiz.answered ? "" : '<button class="btn" id="spellGo">提交</button>'}</div>`;
+      <div class="row">${quiz.answered ? "" : `<button class="btn" id="spellGo">提交</button><button class="btn alt" id="spellHint" ${shown >= Math.max(1, o.w.length-1) ? "disabled" : ""}>提示一个字母</button>`}${App.canSpeak ? `<button class="btn alt" data-speak="${esc(o.w)}">听发音</button>` : ""}${quiz.answered ? "" : '<button class="btn-ghost" id="spellForgot">忘记了，看答案</button>'}</div>`;
   }
   let opts = "";
   if(q.opts){
     opts = `<div class="opts">${q.opts.map((t,i) => {
-      let cls = ""; if(quiz.answered){ if(t===q.correct) cls = " right"; else if(i===q.given) cls = " wrong" }
-      return `<button class="opt${quiz.mode==="syn" ? " syn-o" : ""}${cls}" data-opt="${i}" ${quiz.answered ? "disabled" : ""}><span class="l">${A[i]}</span><span>${esc(t)}</span></button>` }).join("")}</div>`;
+      let cls = ""; if(quiz.answered){ if(t===q.correct) cls = " right"; else if(i===q.given) cls = " wrong" } else if(i===q.sel) cls = " sel";
+      return `<button class="opt${quiz.mode==="syn" ? " syn-o" : ""}${cls}" data-opt="${i}" ${quiz.answered ? "disabled" : ""} aria-pressed="${!quiz.answered && i===q.sel}"><span class="l">${A[i]}</span><span>${esc(t)}</span></button>` }).join("")}</div>`;
+    if(!quiz.answered && !store.settings.quickAnswer) opts += `<div class="row"><button class="btn" id="qConfirm" ${q.sel==null ? "disabled" : ""}>确认<kbd>Enter</kbd></button><span class="note">${q.sel==null ? "按 1–4 或 A–D 选择，再按 Enter 确认" : "再点一次同一项也可以确认；想改就点别的选项"}</span></div>`;
   }
-  const fb = quiz.answered ? `<div class="fb ${q.ok ? "ok" : "no"}">${q.ok ? "正确。" : "答错了，正确答案：" + esc(quiz.mode==="cn" ? o.cn : quiz.mode==="syn" ? q.correct : o.w) + "。"} <b>${esc(o.w)}</b> ${esc(o.pos)} ${esc(o.cn)}${o.syn.length ? "｜"+esc(o.syn.join(", ")) : ""}</div>
+  const verdict = q.ok ? (q.hints ? "正确（看了提示）。" : "正确。")
+    : q.forgot ? "没关系，记一下：" + esc(o.w) + "。"
+    : "答错了，正确答案：" + esc(quiz.mode==="cn" ? o.cn : quiz.mode==="syn" ? q.correct : o.w) + "。";
+  const fb = quiz.answered ? `<div class="fb ${q.ok ? "ok" : "no"}">${verdict} <b>${esc(o.w)}</b> ${esc(o.pos)} ${esc(o.cn)}${o.syn.length ? "｜"+esc(o.syn.join(", ")) : ""}</div>
     <div class="row"><button class="btn" id="qNext">${quiz.idx+1<quiz.items.length ? "下一题" : "查看结果"}<kbd>Enter</kbd></button></div>` : "";
   box.innerHTML = `<div class="card">
     <div class="meta"><span class="chip learn">${MODES[quiz.mode][0]}</span><span class="left">${quiz.idx+1} / ${quiz.items.length} · 答对 ${quiz.score}</span></div>
     ${body}${opts}${fb}
   </div>`;
   const si = $("#spellIn"); if(si && !quiz.answered) si.focus();
-  const nb = $("#qNext"); if(nb && quiz.mode==="spell") nb.focus();
+  const nb = $("#qNext"); if(nb) nb.focus();
 }
 
 /* ---------- 词库 ---------- */
@@ -531,7 +577,7 @@ function openDetail(w){
   const c = store.cards[w], [s,t] = status(w);
   const due = c ? (c[3]<=today() ? "今天复习" : `${ivLabel(c[3]-today())}后复习`) : "还没学过";
   $("#sheet").innerHTML = `<div class="meta"><span class="chip ${s}">${t}</span><span>${esc(listName(o))}</span>${o.basic ? `<span class="chip">${BASIC[o.basic]}</span>` : ""}<span>${due}</span><button class="x" id="closeSheet" aria-label="关闭">×</button></div>
-    <div class="head" style="padding-top:0"><span class="headword" style="font-size:44px">${esc(o.w)}</span><span class="pos">${esc(o.pos)}</span>${speakBtn(o.w)}</div>
+    <div class="head" style="padding-top:0"><span class="headword" style="font-size:44px">${esc(o.w)}</span><span class="pos">${esc(o.pos)}</span>${speakBtn(o.w)}${partsHTML(o, true)}</div>
     ${phHTML(o)}
     ${backHTML(o)}
     ${wordStatsHTML(w)}
@@ -878,6 +924,7 @@ function init(){
   // 顶部切换托福 / 雅思后，换成对应的词库
   document.addEventListener("exam-change", () => { buildQueue(); renderSettings(); renderStats(); renderStudy(); if(curTab==="bank") renderBank(); if(curTab==="quiz" && !quiz) renderQuizSetup() });
   $("#setAuto").addEventListener("change", e => { store.settings.auto = e.target.checked; persist() });
+  $("#pane-quiz").addEventListener("change", e => { if(e.target.id==="qQuick"){ store.settings.quickAnswer = e.target.checked; persist() } });
   $("#setBasic").addEventListener("change", e => { store.settings.skipBasic = e.target.value; persist(); buildQueue(); renderStats(); renderStudy() });
   document.addEventListener("keydown", onKey);
   buildQueue();
@@ -902,8 +949,11 @@ function onClick(e){
   if(t.dataset.goto){ closeDetail(); showTab(t.dataset.goto); return }
   if(t.dataset.mode){ quizMode = t.dataset.mode; $$(".mode").forEach(b => b.setAttribute("aria-pressed", b===t)); return }
   if(t.id==="qStart"){ startQuiz(); return }
-  if(t.dataset.opt!==undefined){ answer(+t.dataset.opt); return }
+  if(t.dataset.opt!==undefined){ pick(+t.dataset.opt); return }
+  if(t.id==="qConfirm"){ const q = quiz && quiz.items[quiz.idx]; if(q && q.sel!=null) answer(q.sel); return }
   if(t.id==="spellGo"){ answer(); return }
+  if(t.id==="spellHint"){ spellHint(); return }
+  if(t.id==="spellForgot"){ answer(null, true); return }
   if(t.id==="qNext"){ nextQ(); return }
   if(t.id==="qAgain"){ quizMode = quiz.mode; quiz = null; renderQuizSetup(); startQuiz(); return }
   if(t.id==="qBack"){ quiz = null; renderQuizSetup(); return }
@@ -962,13 +1012,15 @@ function onKey(e){
   }
   if(curTab==="quiz" && quiz && quiz.idx<quiz.items.length){
     if(e.key==="Enter"){
+      const q = quiz.items[quiz.idx];
       if(quiz.answered){ e.preventDefault(); nextQ() }
       else if(quiz.mode==="spell" && e.target.id==="spellIn"){ e.preventDefault(); answer() }
+      else if(quiz.mode!=="spell" && q.sel!=null){ e.preventDefault(); answer(q.sel) }
       return;
     }
     if(!typing && !quiz.answered && quiz.mode!=="spell"){
       const k = e.key.toUpperCase(), i = "1234".indexOf(k)>=0 ? "1234".indexOf(k) : "ABCD".indexOf(k);
-      if(i>=0) answer(i);
+      if(i>=0) pick(i);
     }
   }
 }

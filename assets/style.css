@@ -151,6 +151,13 @@ kbd{font-family:var(--f-mono);font-size:11px;border:1px solid currentColor;borde
 
 .ph{font-family:var(--f-mono);font-size:14px;color:var(--muted);letter-spacing:.02em}
 .head + .ph{margin-top:-8px}
+.parts{display:inline-flex;flex-wrap:wrap;align-items:baseline;gap:2px 6px;font-size:13px;color:var(--muted);line-height:1.5}
+.parts .pt b{font-family:var(--f-mono);font-weight:500;font-size:13px;color:var(--muted)}
+.parts .pt i{font-style:normal;margin-left:4px;font-size:12px}
+.parts .pt-r b,.parts .pt-w b{color:color-mix(in srgb,var(--ink) 60%,var(--muted))}
+.parts .pt-plus{opacity:.55}
+.spell-mask{font-family:var(--f-mono);font-size:18px;letter-spacing:.08em;color:var(--ink)}
+.spell-mask span{font-family:var(--f-ui);font-size:13px;letter-spacing:0;color:var(--muted);margin-left:6px}
 td .ph{font-size:12px;font-weight:400;margin-top:2px}
 .field select{max-width:100%}
 

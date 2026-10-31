@@ -31,7 +31,11 @@ Object.keys(window).filter(k => /^EX_WORDS_\d+$/.test(k)).sort((a,b) => +a.split
     if(o.ex){ err(`${k} 原来已有例句：${w}`); return }
     raw.split(" ## ").forEach(s => {
       const text = s.trim().replace(EX_LAB, "");
-      if(!hlRe(o.w).test(text)) err(`${k} 例句里找不到 ${w}：${text}`);
+      const m = text.match(hlRe(o.w));
+      if(!m) err(`${k} 例句里找不到 ${w}：${text}`);
+      // 卡片只高亮第一个匹配：第一个匹配必须就是这个词（避免 way 先匹配到 was）
+      // 超过 5 个字母的词本身就按去掉最后一个字母匹配，不容易撞上别的词（rebuild → rebuilt 也算对）
+      else if(o.w.length<=5 && !m[1].toLowerCase().startsWith(o.w.toLowerCase().replace(/[ey]$/, ""))) err(`${k} 第一个高亮的是 ${m[1]} 而不是 ${w}：${text}`);
       if(!/[.!?]["”’)]?$/.test(text)) err(`${k} 例句没有句末标点：${w}`);
       if(text.length > 180) err(`${k} 例句太长（${text.length}）：${w}`);
       if(/[一-龥]/.test(text)) err(`${k} 例句里有中文：${w}`);

@@ -14,8 +14,9 @@ const ITEMS = [];
 const BYID = {}; ITEMS.forEach(it => BYID[it.id] = it);
 
 /* ---------- 记录 ---------- */
-const rblank = () => ({ done:{}, types:{}, mocks:[], settings:{ underline:true } });
-function normalize(d){ const b = rblank(); d = d || {}; return { done:d.done||{}, types:d.types||{}, mocks:d.mocks||[], settings:Object.assign(b.settings, d.settings||{}) } }
+// gen：例句补全（自动出题）的累计空数和答对数，和题库里的补全单词分开统计
+const rblank = () => ({ done:{}, types:{}, mocks:[], gen:{ n:0, ok:0 }, settings:{ underline:true } });
+function normalize(d){ const b = rblank(); d = d || {}; return { done:d.done||{}, types:d.types||{}, mocks:d.mocks||[], gen:Object.assign(b.gen, d.gen||{}), settings:Object.assign(b.settings, d.settings||{}) } }
 let data = normalize(App.store.get(App.KEYS.reading, null));
 const save = () => App.store.set(App.KEYS.reading, data);
 App.readingData = () => data;
@@ -109,14 +110,17 @@ function questionsHTML(task, review, res){
 function ctwHTML(task, review){
   const { parts, blanks } = buildCtw(task.item);
   const body = parts.map(p => {
+    if(p.br) return "<br>";
     if(p.blank===undefined) return esc(p.text);
     const b = blanks[p.blank], v = task.ans[p.blank] || "";
     if(!review) return `${esc(b.shown)}<input class="ctw-in" data-b="${p.blank}" maxlength="${b.missing.length}" style="width:calc(${b.missing.length}ch + 14px)" value="${esc(v)}" placeholder="${"_".repeat(b.missing.length)}" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="第 ${p.blank+1} 空，缺 ${b.missing.length} 个字母">${esc(p.rest)}`;
     const ok = v.trim().toLowerCase()===b.missing.toLowerCase();
     return `<span class="ctw-r">${esc(b.shown)}${ok ? `<b class="ok">${esc(b.missing)}</b>` : `<b class="no">${esc(v||"＿")}</b><b class="fix">${esc(b.missing)}</b>`}</span>${esc(p.rest)}`;
   }).join("");
-  return `<p class="instr">Fill in the missing letters in the paragraph. 每个下划线代表一个字母。</p><p class="ctw">${body}</p>
-    ${review ? `<p class="note" style="margin:0">绿色为答对，红色为你的答案，蓝色为正确拼写。这类题考拼写、语法和上下文，常见的空是连接词、介词和词形变化。</p>` : ""}`;
+  const it = task.item;
+  return `<p class="instr">Fill in the missing letters in the paragraph. 每个下划线代表一个字母。${it.gen ? "这几句来自词库例句，彼此无关，每句里都有一个要复习的词。" : ""}</p><p class="ctw">${body}</p>
+    ${review ? `<p class="note" style="margin:0">绿色为答对，红色为你的答案，蓝色为正确拼写。这类题考拼写、语法和上下文，常见的空是连接词、介词和词形变化。</p>` : ""}
+    ${review && it.gen ? `<div class="syn"><span class="lab">本题的词</span>${it.words.map(w => `<button class="chip" data-rword="${esc(w)}">${esc(w)}</button>`).join("")}</div>` : ""}`;
 }
 
 /* ---------- 会话 ---------- */
@@ -147,6 +151,36 @@ function moduleTasks(level, avoid){
 function startPractice(id){
   S = { mode:"practice", tasks:[makeTask(BYID[id])], idx:0, screen:"task", started:Date.now() };
   startTimer(); renderTask();
+}
+
+/* ---------- 例句补全（用词库例句自动出题） ---------- */
+const canGen = () => App.vocab && App.vocab.examplePool && App.sentenceGen && App.sentenceGen.ctw;
+const genPool = scope => App.vocab.examplePool(scope).filter(x => App.sentenceGen.ctwUsable(x.ex));
+function startGenCtw(scope){
+  const pool = shuffle(genPool(scope));
+  // 每次取 8 句（不同的词）试着拼出 10 个空，拼不出就换一批
+  let built = null;
+  for(let tries = 0; tries < 30 && !built; tries++){
+    const seen = new Set(), picks = [];
+    for(const x of pool.slice(tries*8, tries*8 + 40)){ if(!seen.has(x.w)){ seen.add(x.w); picks.push(x) } if(picks.length >= 8) break }
+    if(picks.length < 4) break;
+    built = App.sentenceGen.ctw(picks);
+  }
+  if(!built){ const msg = "这个范围里能出题的例句太少了，换成「全部托福词库」试试。"; App.toast ? App.toast(msg) : alert(msg); return }
+  const it = { id:"gen-ctw", kind:"ctw", level:2, gen:true, scope, topic:"词库例句",
+    title: scope==="learned" ? "例句补全 · 我背过的词" : "例句补全 · 全部词库", words:built.words, _built:{ parts:built.parts, blanks:built.blanks } };
+  S = { mode:"practice", tasks:[makeTask(it)], idx:0, screen:"task", started:Date.now() };
+  startTimer(); renderTask();
+}
+function genCard(){
+  if(!canGen()) return "";
+  const words = new Set(genPool("learned").map(x => x.w)).size, g = data.gen;
+  return `<p class="section-label" style="margin:8px 0 0">加练 · 例句补全${g.n ? `<span class="note" style="margin-left:8px">已做 ${g.n} 空 · 正确率 ${Math.round(g.ok/g.n*100)}%</span>` : ""}</p>
+    <p class="note" style="margin:0">用词库例句自动出题：第一句完整，后面每句里要复习的词一定是空。</p>
+    <div class="setlist">
+      ${words >= 10 ? `<button class="setrow" data-genctw="learned"><b>用我背过的词</b><span class="note">${words} 个词的例句</span><small></small></button>` : `<div class="note" style="padding:6px 2px">背过 10 个以上的词后，可以只用你背过的词出题（现在 ${words} 个）。</div>`}
+      <button class="setrow" data-genctw="all"><b>从全部托福词库随机</b><span class="note">每次换一组句子</span><small></small></button>
+    </div>`;
 }
 function startMock(){
   const avoid = new Set();
@@ -222,6 +256,7 @@ function renderHome(){
           <div class="spec"><span>一段学术短文</span><span>10 个空</span></div>
           <p class="note" style="margin:0">第一句完整，之后每隔一个词缺后半部分字母，根据上下文补全拼写。</p>
           <div class="setlist">${list("ctw")}</div>
+          ${genCard()}
         </article>
         <article class="task">
           <div class="en">${KIND_EN.daily}</div><h3>${KIND.daily}</h3>
@@ -251,7 +286,7 @@ function renderTask(review){
   const body = it.kind==="ctw" ? `<div class="ctw-wrap">${ctwHTML(task, !!review)}</div>`
     : `<div class="rgrid"><article class="pane-text">${passageHTML(task, !!review)}</article><section class="pane-q">${questionsHTML(task, !!review, res)}</section></div>`;
   let foot = "";
-  if(review && S.mode==="practice") foot = `<button class="btn" data-redo>再做一遍</button><button class="btn alt" data-home>返回题库</button>`;
+  if(review && S.mode==="practice") foot = `<button class="btn" data-redo>${it.gen ? "换一组" : "再做一遍"}</button><button class="btn alt" data-home>返回题库</button>`;
   else if(review) foot = `<button class="btn" data-back-result>返回成绩单</button>`;
   else if(isMock){
     const last = S.idx===S.tasks.length-1;
@@ -311,6 +346,8 @@ function onClick(e){
   const t = e.target.closest("button"); if(!t) return;
   const d = t.dataset;
   if(d.practice){ startPractice(d.practice); return }
+  if(d.genctw){ startGenCtw(d.genctw); return }
+  if(d.rword){ App.vocab.open(d.rword); return }
   if(d.mock!==undefined){ startMock(); return }
   if(d.o!==undefined){
     const task = S.tasks[S.idx]; task.ans[+d.q] = +d.o;
@@ -319,10 +356,11 @@ function onClick(e){
   }
   if(d.submit!==undefined){
     const task = S.tasks[0], res = grade(task);
-    record(task, res); S.screen = "review"; S.review = { task, res }; stopTimer();
+    if(task.item.gen){ data.gen.n += res.n; data.gen.ok += res.c; save() } else record(task, res);
+    S.screen = "review"; S.review = { task, res }; stopTimer();
     renderTask(S.review); window.scrollTo(0,0); return;
   }
-  if(d.redo!==undefined){ startPractice(S.tasks[0].item.id); return }
+  if(d.redo!==undefined){ const it = S.tasks[0].item; it.gen ? startGenCtw(it.scope) : startPractice(it.id); return }
   if(d.home!==undefined){ exitSession(); return }
   if(d.next!==undefined){ S.idx++; renderTask(); window.scrollTo(0,0); return }
   if(d.prev!==undefined){ S.idx--; renderTask(); window.scrollTo(0,0); return }

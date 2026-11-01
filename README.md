@@ -119,6 +119,7 @@
 
 ### 阅读（新版题型）
 - **补全单词 Complete the Words**：10 篇学术短文，第一句完整，之后每隔一个词缺后半部分字母，共 10 空
+- **例句补全**（加练）：用词库例句自动出题，每题 4–5 句互不相关的例句分行显示，规则和正式考试一样（第一句完整，之后每隔一个词去掉后半部分，共 10 个空），起点选在让每句要复习的词正好是空；可以只用自己背过的词出题，交卷后列出本题的词，可以点开加入复习（`js/sentence-gen.js`）
 - **日常阅读 Read in Daily Life**：10 篇邮件、通知、告示，每篇 2–3 题，考目的、细节、语气和推断
 - **学术文章 Read an Academic Passage**：6 篇，每篇 5 题，覆盖主旨、细节、词汇、推断、作者意图、否定事实和文章结构
 - 每道选择题都有中文解析；首页按题型统计正确率，帮你找出薄弱题型
@@ -220,7 +221,7 @@ js/listening-data.js 听力题库（选回应、对话、通知、学术讲座�
 js/listening.js       听力模块
 tools/check_listening.js  检查听力题库格式和选项长度
 js/writing-data.js    写作题库（组句、邮件、学术讨论及范文）
-js/sentence-gen.js    例句组句：把词库例句切成词块、生成干扰块
+js/sentence-gen.js    例句组句、例句补全：用词库例句自动出 Build a Sentence 和 Complete the Words 题
 js/writing.js         写作模块
 js/toefl-exam.js      托福模考（考场模式），复用各模块的题库、判分和记录
 js/ielts-exam.js      雅思模考（机考风格界面），复用雅思阅读、听力、写作模块

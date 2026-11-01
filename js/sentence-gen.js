@@ -99,5 +99,60 @@ function build(sentence, keyword, lex, rnd){
   return { chunks, punct, distractors: distractor ? [distractor] : [], sentence: sentence.trim() };
 }
 
-App.sentenceGen = { usable, build };
+/* ---------- 补全单词（Complete the Words）：几句例句拼成一题 ---------- */
+// 规则和正式考试一样：第一句完整；之后每隔一个词，保留前一半字母、去掉后一半；共 10 个空。
+// 例句彼此无关，所以分行显示；起点挑在让每句的关键词正好落在空上，顺便复习这个词。
+const CTW_BLANKS = 10;
+function ctwUsable(s){
+  if(!s || /["“”()\[\];:]/.test(s)) return false;
+  const m = s.trim().match(/^(.*?)([.?!])$/); if(!m) return false;
+  const n = m[1].split(/\s+/).length;
+  return n >= 7 && n <= 20;
+}
+// 句子里关键词所在的位置（只看纯字母的词），找不到返回 -1
+function keyPos(words, kw){
+  if(/\s/.test(kw)) return -1;
+  const k = kw.toLowerCase(), stem = k.length > 5 ? k.slice(0, -1) : k;
+  return words.findIndex(x => { const l = x.letters.toLowerCase(); return l.startsWith(stem) && l.length - stem.length <= 4 });
+}
+function ctwSentence(text){
+  return text.trim().split(/(\s+)/).map(tok => {
+    const m = tok.match(/^([A-Za-z]+)([^A-Za-z]*)$/);
+    return m ? { tok, letters:m[1], rest:m[2] } : { tok };
+  });
+}
+// picks：[{ w, ex }]，按顺序用；返回 { parts, blanks, words } 或 null
+function ctw(picks){
+  const usableP = picks.filter(p => ctwUsable(p.ex));
+  if(usableP.length < 3) return null;
+  const parts = [], blanks = [], words = [];
+  const pushSentence = (toks, chosen) => toks.forEach(t => {
+    if(t.letters && chosen.has(t)){
+      const w = t.letters, keep = Math.max(1, Math.floor(w.length/2));
+      blanks.push({ full:w, shown:w.slice(0, keep), missing:w.slice(keep) });
+      parts.push({ blank:blanks.length-1, rest:t.rest });
+    }else parts.push({ text:t.tok });
+  });
+  // 第一句完整
+  const first = usableP[0];
+  pushSentence(ctwSentence(first.ex), new Set()); words.push(first.w);
+  for(let i = 1; i < usableP.length && blanks.length < CTW_BLANKS; i++){
+    const p = usableP[i], toks = ctwSentence(p.ex), ws = toks.filter(t => t.letters);
+    const ki = keyPos(ws, p.w);
+    if(ki < 0) continue;
+    // 和关键词同奇偶的位置都是空（每隔一个词），去掉单字母词
+    const cand = ws.map((t, j) => [t, j]).filter(([t, j]) => j % 2 === ki % 2 && t.letters.length >= 2).map(([t]) => t);
+    const left = CTW_BLANKS - blanks.length, sentencesLeft = Math.max(1, Math.min(3, usableP.length - i));
+    const quota = Math.min(left, Math.max(2, Math.ceil(left / sentencesLeft)));
+    // 空太多时取包含关键词的一段连续位置
+    const at = cand.indexOf(ws[ki]);
+    const start = Math.max(0, Math.min(at - Math.floor((quota-1)/2), cand.length - quota));
+    const chosen = new Set(cand.slice(start, start + quota));
+    parts.push({ br:true });
+    pushSentence(toks, chosen); words.push(p.w);
+  }
+  return blanks.length === CTW_BLANKS ? { parts, blanks, words } : null;
+}
+
+App.sentenceGen = { usable, build, ctwUsable, ctw };
 })();

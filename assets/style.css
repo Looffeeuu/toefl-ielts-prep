@@ -156,6 +156,11 @@ kbd{font-family:var(--f-mono);font-size:11px;border:1px solid currentColor;borde
 .parts .pt i{font-style:normal;margin-left:4px;font-size:12px}
 .parts .pt-r b,.parts .pt-w b{color:color-mix(in srgb,var(--ink) 60%,var(--muted))}
 .parts .pt-plus{opacity:.55}
+.memo{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 8px;font-size:14px;line-height:1.7;background:var(--surface-2);border-radius:8px;padding:8px 12px}
+.memo .memo-t{flex:1 1 260px}
+.memo-rel{flex-basis:100%;display:flex;flex-wrap:wrap;align-items:baseline;gap:6px}
+.memo-w{font-size:13px;color:var(--muted)}
+.memo-w b{font-family:var(--f-head);font-size:15px;font-weight:600;color:var(--ink)}
 .spell-mask{font-family:var(--f-mono);font-size:18px;letter-spacing:.08em;color:var(--ink)}
 .spell-mask span{font-family:var(--f-ui);font-size:13px;letter-spacing:0;color:var(--muted);margin-left:6px}
 td .ph{font-size:12px;font-weight:400;margin-top:2px}

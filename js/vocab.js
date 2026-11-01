@@ -97,6 +97,13 @@ Object.keys(window).filter(k => /^EX_WORDS_\d+$/.test(k)).map(k => window[k]).jo
   const w = line.slice(0,i).trim(), o = BY[w] || BY[w.toLowerCase()];
   if(o && !(o.exs && o.exs.length)) setExamples(o, line.slice(i+1).trim());
 });
+// 记忆线索（MEMO_WORDS_1、MEMO_WORDS_2…）：人工编写，只给词根真正能帮助理解的词。
+// 每行：单词 | 拆分（用 · 分隔，可以留空）| 线索（各部分的意思 → 串起来 → 词义）| 同根词（逗号分隔，「单词 释义」）
+Object.keys(window).filter(k => /^MEMO_WORDS_\d+$/.test(k)).map(k => window[k]).join("\n").trim().split(/\r?\n/).forEach(line => {
+  const [w, split, note, rel] = line.split("|").map(x => (x||"").trim());
+  const o = BY[w] || BY[(w||"").toLowerCase()];
+  if(o && note) o.memo = { split, note, rel:rel ? rel.split(/\s*,\s*/).filter(Boolean) : [] };
+});
 const BASE_N = WORDS.length;
 
 /* ---------- 我的词表（自己导入的词表） ---------- */
@@ -149,6 +156,8 @@ const exBlank = o => o.ex ? esc(o.ex).replace(hlRe(o.w), '<span class="blank">' 
 const phHTML = o => o.ph ? `<span class="ph">/${esc(o.ph)}/</span>` : "";
 // 构词：前缀 / 词根 / 后缀（js/word-parts.js）。翻开答案前只显示怎么拆，翻开后再显示每一部分的意思
 function partsHTML(o, withGloss){
+  // 有人工记忆线索的词只显示拆分，意思放在答案里的「记忆」一栏
+  if(o.memo) return o.memo.split ? `<span class="parts" title="构词拆分，翻开答案看记忆线索">${o.memo.split.split("·").map(p => `<span class="pt pt-r"><b>${esc(p.trim())}</b></span>`).join('<span class="pt-plus">·</span>')}</span>` : "";
   const ps = App.wordParts && App.wordParts(o.w, w => BY[w] || null);
   if(!ps) return "";
   const shown = [];
@@ -364,9 +373,17 @@ function backHTML(o){
     : "";
   return `<div class="cn">${o.cn ? cnHTML(o) : '<span class="note">这个词没有释义</span>'}</div>
     ${o.myCn ? `<div class="syn"><span class="lab">词表释义</span>${esc(o.myCn)}</div>` : ""}
+    ${memoHTML(o)}
     ${o.syn.length ? `<div class="syn"><span class="lab">同义替换</span>${o.syn.map(s => `<span class="s">${esc(s)}</span>`).join("")}</div>` : ""}
     ${examplesHTML(o)}
     ${extra}${aiBlock(o)}`;
+}
+// 记忆线索：拆分的意思串成词义，再列出已经认识的同根词（词库里有的可以点开）
+function memoHTML(o){
+  if(!o.memo) return "";
+  const rel = o.memo.rel.map(r => { const i = r.indexOf(" "), w = i>0 ? r.slice(0,i) : r, cn = i>0 ? r.slice(i+1) : "";
+    return BY[w] ? `<button class="chip memo-w" data-detail="${esc(w)}"><b>${esc(w)}</b> ${esc(cn)}</button>` : `<span class="memo-w"><b>${esc(w)}</b> ${esc(cn)}</span>` }).join("");
+  return `<div class="memo"><span class="lab">记忆</span><span class="memo-t">${esc(o.memo.note)}</span>${rel ? `<div class="memo-rel"><span class="lab">同根</span>${rel}</div>` : ""}</div>`;
 }
 // 多词性释义按词性分行显示（释义里用全角空格分隔各词性）
 const cnHTML = o => o.cn.split("　").map(seg => `<span class="cn-seg">${esc(seg)}</span>`).join("");

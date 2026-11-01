@@ -24,8 +24,9 @@ W.emails.forEach(e => EMAIL[e.id] = e);
 W.discussions.forEach(d => DISC[d.id] = d);
 
 /* ---------- 记录 ---------- */
-const wblank = () => ({ sets:{}, drafts:{}, tags:{}, settings:{ timed:true } });
-function normalize(d){ const b = wblank(); d = d || {}; return { sets:d.sets||{}, drafts:d.drafts||{}, tags:d.tags||{}, settings:Object.assign(b.settings, d.settings||{}) } }
+// gen：例句组句（自动出题）的累计题数和答对数，和题库里的组句套题分开统计
+const wblank = () => ({ sets:{}, drafts:{}, tags:{}, gen:{ n:0, ok:0 }, settings:{ timed:true } });
+function normalize(d){ const b = wblank(); d = d || {}; return { sets:d.sets||{}, drafts:d.drafts||{}, tags:d.tags||{}, gen:Object.assign(b.gen, d.gen||{}), settings:Object.assign(b.settings, d.settings||{}) } }
 let data = normalize(App.store.get(App.KEYS.writing, null));
 const save = () => App.store.set(App.KEYS.writing, data);
 App.writingData = () => data;
@@ -117,6 +118,7 @@ function renderHome(){
           <p class="note" style="margin:0">先读 A 说的话，再用下面的词块拼出 B 的回答。词块里可能混有干扰项，灰色的是已固定的部分。</p>
           <div class="setlist">${W.sentenceSets.map(s => { const r = data.sets[s.id]; return row("data-sset", s.id, s.name, "10 题", r ? `最好 ${r.best}/10` : "") }).join("")}</div>
         </article>
+        ${genCard(row)}
         <article class="task">
           <div class="en">Task 2 · Write an Email</div><h3>写邮件</h3>
           <div class="spec"><span>7 分钟</span><span>建议 100–150 词</span><span>3 个要点</span></div>
@@ -132,6 +134,41 @@ function renderHome(){
       </div>
     </section>
   </div>`);
+}
+
+/* ---------- 例句组句（用词库例句自动出题） ---------- */
+const canGen = () => App.vocab && App.vocab.examplePool && App.sentenceGen;
+// 某个范围里能出题的例句（每个词只取能切块的句子）
+function genPool(scope){
+  return App.vocab.examplePool(scope).filter(x => App.sentenceGen.usable(x.ex));
+}
+function genCard(row){
+  if(!canGen()) return "";
+  const mine = genPool("learned"), words = new Set(mine.map(x => x.w)).size, g = data.gen;
+  return `<article class="task">
+    <div class="en">Task 1 · 加练</div><h3>例句组句</h3>
+    <div class="spec"><span>每次 10 题</span><span>由词库例句自动生成</span>${g.n ? `<span>已做 ${g.n} 题 · 正确率 ${Math.round(g.ok/g.n*100)}%</span>` : ""}</div>
+    <p class="note" style="margin:0">把词库里的例句切成词块来排，顺便复习单词。提示栏给出句子里的关键词和释义。自动切块偶尔会有别的合理顺序：判错时如果你的句子同样通顺，可以点「我的也通顺」。</p>
+    <div class="setlist">
+      ${words >= 10 ? row("data-sgen", "learned", "用我背过的词", `${words} 个词的例句`, "") : `<div class="note" style="padding:8px 2px">背过 10 个以上的词后，可以只用你背过的词出题（现在 ${words} 个）。</div>`}
+      ${row("data-sgen", "all", "从全部托福词库随机", "约 4,800 句可用", "")}
+    </div>
+  </article>`;
+}
+function startGen(scope){
+  const used = new Set(), list = [];
+  shuffle(genPool(scope)).some(x => {
+    if(used.has(x.w)) return false;
+    const q = App.sentenceGen.build(x.ex, x.w, App.vocab.posOf);
+    if(!q) return false;
+    used.add(x.w);
+    list.push(Object.assign(q, { gen:true, w:x.w, cn:x.cn, ctx:"", tip:"", tag:"" }));
+    return list.length >= 10;
+  });
+  if(list.length < 5){ const msg = "这个范围里能出题的例句太少了，换成「全部托福词库」试试。"; App.toast ? App.toast(msg) : alert(msg); return }
+  const set = { id:"gen-" + scope, gen:true, scope, name: scope==="learned" ? "例句组句 · 我背过的词" : "例句组句 · 全部词库", list };
+  S = { kind:"sentence", set, idx:0, results:[], started:Date.now(), deadline: data.settings.timed ? Date.now()+SET_SECONDS*1000 : 0 };
+  loadItem(); startTimer();
 }
 
 /* ---------- 组句 ---------- */
@@ -160,14 +197,16 @@ function renderItem(){
     <div class="meta"><span class="chip learn">组句</span><span>${esc(S.set.name)}</span><span class="left">${S.idx+1} / ${S.set.list.length}</span><span class="timer" id="wtimer"></span><button class="btn alt" data-wquit style="margin-left:8px">退出</button></div>
     <div class="steps">${S.set.list.map((_,i) => `<i class="${i<S.idx ? "on" : i===S.idx ? "cur" : ""}"></i>`).join("")}</div>
     <div class="sb">
-      <div class="sb-turn"><span class="sb-who">A</span><p class="sb-ctx">${esc(it.ctx)}</p></div>
+      ${it.gen
+        ? `<div class="sb-turn"><span class="sb-who">词</span><p class="sb-ctx"><b>${esc(it.w)}</b>　<span class="note">${esc(it.cn)}</span></p></div>`
+        : `<div class="sb-turn"><span class="sb-who">A</span><p class="sb-ctx">${esc(it.ctx)}</p></div>`}
       <div class="sb-turn"><span class="sb-who b">B</span><div class="sb-line">${slots}<span class="sb-punct">${esc(it.punct)}</span></div></div>
       <div class="sb-bank">${bank}</div>
       <p class="note" style="margin:0">点击词块填入下一个空；点已填的空可以撤回。${it.distractors.length ? "有一个词块用不上。" : ""}</p>
     </div>
-    ${done ? `<div class="fb ${done.ok ? "ok" : "no"}">${done.ok ? "正确。" : "不对。正确答案："}<b>${esc(it.sentence)}</b><br>${tagChip(it)}<span class="note">${esc(it.tip)}</span></div>` : ""}
+    ${done ? `<div class="fb ${done.ok ? "ok" : "no"}">${done.ok ? (done.self ? "按你的判断算对。原句：" : "正确。") : "不对。正确答案："}<b>${esc(it.sentence)}</b><br>${tagChip(it)}<span class="note">${esc(it.tip)}</span></div>` : ""}
     <div class="row">${done
-      ? `<button class="btn" data-wnext>${S.idx+1<S.set.list.length ? "下一题" : "查看结果"}<kbd>Enter</kbd></button>`
+      ? `<button class="btn" data-wnext>${S.idx+1<S.set.list.length ? "下一题" : "查看结果"}<kbd>Enter</kbd></button>${it.gen && !done.ok ? `<button class="btn alt" data-wsame>我的也通顺，算对</button>` : ""}${it.gen ? `<button class="btn-ghost" data-wword="${esc(it.w)}">查看 ${esc(it.w)}</button>` : ""}`
       : `<button class="btn" data-wcheck ${full ? "" : "disabled"}>检查<kbd>Enter</kbd></button><button class="btn alt" data-wclear>清空</button>`}</div>
   </div>`);
   tick();
@@ -183,21 +222,25 @@ function checkItem(){
 function finishSet(timeUp){
   stopTimer();
   const score = S.results.filter(r => r && r.ok).length;
-  const prev = data.sets[S.set.id] || { best:0, cnt:0 };
-  data.sets[S.set.id] = { best:Math.max(prev.best, score), lastScore:score, cnt:prev.cnt+1, t:Date.now() };
+  const gen = S.set.gen;
+  if(gen){ data.gen.n += S.set.list.length; data.gen.ok += score }
+  else{
+    const prev = data.sets[S.set.id] || { best:0, cnt:0 };
+    data.sets[S.set.id] = { best:Math.max(prev.best, score), lastScore:score, cnt:prev.cnt+1, t:Date.now() };
+  }
   save();
   S.screen = "result";
   view(`<div class="stage">
     <div class="meta"><span class="chip done">组句完成</span><span>${esc(S.set.name)}</span><span class="left">用时 ${fmt(Math.round((Date.now()-S.started)/1000))}</span></div>
     ${timeUp ? `<div class="fb no">时间到，未完成的题按错误计。</div>` : ""}
-    <div class="row" style="align-items:baseline;gap:14px"><div class="score">${score}<span style="font-size:24px;color:var(--muted)"> / ${S.set.list.length}</span></div><div class="note">组句每题全对才得分。错题看一下语法提示，常见考点是间接疑问句的语序和助动词后接原形。</div></div>
+    <div class="row" style="align-items:baseline;gap:14px"><div class="score">${score}<span style="font-size:24px;color:var(--muted)"> / ${S.set.list.length}</span></div><div class="note">${gen ? "例句组句由程序自动切块。错题里的生词可以点「查看」打开词条，加入今天的复习。" : "组句每题全对才得分。错题看一下语法提示，常见考点是间接疑问句的语序和助动词后接原形。"}</div></div>
     <div class="review">${S.set.list.map((it,i) => { const r = S.results[i];
-      return `<div class="ritem"><div class="meta"><span>第 ${i+1} 题</span><span class="chip ${r && r.ok ? "done" : "bad"}">${r ? (r.ok ? "正确" : "错误") : "未作答"}</span>${tagChip(it)}</div>
-        <div class="note">A：${esc(it.ctx)}</div>
+      return `<div class="ritem"><div class="meta"><span>第 ${i+1} 题</span><span class="chip ${r && r.ok ? "done" : "bad"}">${r ? (r.ok ? (r.self ? "算对" : "正确") : "错误") : "未作答"}</span>${tagChip(it)}${it.gen ? `<button class="btn-ghost" data-wword="${esc(it.w)}">查看 ${esc(it.w)}</button>` : ""}</div>
+        ${it.gen ? "" : `<div class="note">A：${esc(it.ctx)}</div>`}
         <div><b>${esc(it.sentence)}</b></div>
-        ${r && !r.ok ? `<div class="said">你的答案：${esc(r.built)}</div>` : ""}
-        <div class="exp">${esc(it.tip)}</div></div>` }).join("")}</div>
-    <div class="row"><button class="btn" data-sset="${S.set.id}">再做一遍</button><button class="btn alt" data-whome>返回写作首页</button></div>
+        ${r && (!r.ok || r.self) ? `<div class="said">你的答案：${esc(r.built)}</div>` : ""}
+        ${it.tip ? `<div class="exp">${esc(it.tip)}</div>` : ""}</div>` }).join("")}</div>
+    <div class="row">${gen ? `<button class="btn" data-sgen="${S.set.scope}">再来 10 题</button>` : `<button class="btn" data-sset="${S.set.id}">再做一遍</button>`}<button class="btn alt" data-whome>返回写作首页</button></div>
   </div>`);
 }
 
@@ -307,6 +350,9 @@ function onClick(e){
   const t = e.target.closest("button"); if(!t) return;
   const d = t.dataset;
   if(d.sset){ startSet(d.sset); return }
+  if(d.sgen){ startGen(d.sgen); return }
+  if(d.wword){ App.vocab.open(d.wword); return }
+  if(d.wsame!==undefined){ S.checked.ok = true; S.checked.self = true; Object.assign(S.results[S.idx], { ok:true, self:true }); renderItem(); return }
   if(d.email){ startWriting("email", d.email); return }
   if(d.disc){ startWriting("discussion", d.disc); return }
   if(d.chip!==undefined){ const i = S.slots.findIndex(s => !s.fixed && s.chip==null); if(i>=0){ S.slots[i].chip = +d.chip; renderItem() } return }

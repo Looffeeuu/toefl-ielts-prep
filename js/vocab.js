@@ -1073,6 +1073,10 @@ App.vocab = {
   // 考点页用：某个考试词库的学习进度
   progress: ex => { const ws = ex==="ielts" ? IELTS_WORDS : TOEFL_WORDS; let l = 0, m = 0; ws.forEach(o => { const c = store.cards[o.w]; if(c){ l++; if(c[1]>=21) m++ } }); return { learned:l, mastered:m, total:ws.length } },
   lookup, linkify,
+  // 写作「例句组句」用：当前考试词库的例句（learned = 只要背过的词），以及小写词条的词性
+  examplePool: scope => examWords().filter(o => o.exs && o.exs.length && (scope!=="learned" || store.cards[o.w]))
+    .flatMap(o => o.exs.map(e => ({ w:o.w, cn:o.cn, ex:e.text }))),
+  posOf: w => { const o = BY[w]; return o && o.w===w ? (o.pos || "") : null },
   // 从做题页面打开：记一次「做题时查过」
   open: w => { if(!BY[w]) return; bump(store.stats.look, w); persist(); openDetail(w) }
 };

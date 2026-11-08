@@ -132,7 +132,7 @@ disallow|disallow a goal=判进球无效
 lethargy|feeling of lethargy=倦怠感
 overcharge|overcharge … for …=在…上多收…钱
 dejected|look dejected=看起来很沮丧
-frost|frost damage=霜冻损害; frost bite=冻伤; hard frost=严霜
+frost|frost damage=霜冻损害; early frost=早霜; hard frost=严霜
 walkout|stage a walkout=举行罢工
 downcast|downcast eyes=低垂的眼睛
 suited|suited to …=适合…的; well suited=很合适的

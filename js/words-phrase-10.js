@@ -409,7 +409,7 @@ surface|on the surface=表面上; come to the surface=暴露出来; surface area
 agent|travel agent=旅行社代理人; real estate agent=房地产经纪人; secret agent=特工
 coach|head coach=主教练; business coach=商业教练
 means|by means of …=通过…; means of transportation=交通工具; by all means=当然可以; live beyond one's means=入不敷出
-beat|beat around the bush=拐弯抹角; beat the odds=战胜困难; heart beat=心跳
+beat|beat around the bush=拐弯抹角; beat the odds=战胜困难; beat the clock=抢在时限前完成
 violence|domestic violence=家庭暴力; acts of violence=暴力行为; gun violence=枪支暴力
 notice|notice board=布告栏; at short notice=临时通知; take notice of …=注意…; until further notice=在另行通知之前
 civil|civil war=内战; civil rights=公民权利; civil engineering=土木工程; civil servant=公务员

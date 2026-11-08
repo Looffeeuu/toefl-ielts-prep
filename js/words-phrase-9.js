@@ -433,7 +433,7 @@ authenticate|authenticate a painting=鉴定画作
 salutary|salutary lesson=有益的教训
 issue|take issue with …=对…持异议; at issue=争论中的; address an issue=处理问题; back issue=过刊
 economic|economic growth=经济增长; economic crisis=经济危机; economic development=经济发展
-site|building site=建筑工地; on site=在现场; historic site=历史遗址; web site=网站
+site|building site=建筑工地; on site=在现场; historic site=历史遗址; site visit=实地考察
 image|in the image of …=按…的形象; public image=公众形象; mirror image=镜像
 opportunity|take the opportunity to …=借此机会…; equal opportunity=机会均等; seize an opportunity=抓住机会
 current|current affairs=时事; current trend=当前趋势; ocean current=洋流

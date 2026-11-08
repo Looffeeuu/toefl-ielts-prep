@@ -12,7 +12,7 @@ artificial|artificial intelligence=人工智能; artificial flowers=假花; arti
 dawn|at dawn=黎明时; dawn on …=…开始明白; the dawn of …=…的开端; from dawn to dusk=从早到晚
 silly|silly mistake=愚蠢的错误; silly question=傻问题
 romance|summer romance=夏日恋情; romance novel=言情小说
-pillow|pillow talk=枕边话; pillow case=枕套
+pillow|pillow talk=枕边话; pillow fight=枕头大战
 hardware|computer hardware=计算机硬件; hardware store=五金店
 seal|seal off …=封锁…; seal one's fate=决定某人的命运; seal of approval=认可; seal a deal=达成交易
 continent|the African continent=非洲大陆; continent of Asia=亚洲大陆
@@ -76,7 +76,7 @@ commissioner|police commissioner=警察局长
 appreciation|in appreciation of …=感谢…; appreciation for …=对…的感激; art appreciation=艺术欣赏
 decorate|decorate … with …=用…装饰…
 pulse|take one's pulse=给某人把脉; on the pulse=了解动态
-spoon|spoon-feed=填鸭式灌输; silver spoon=富贵出身
+spoon|wooden spoon=木勺; silver spoon=富贵出身
 soap|soap opera=肥皂剧; bar of soap=一块肥皂
 punch|punch line=笑点; pack a punch=效果强烈; beat … to the punch=抢在…之前
 liquid|liquid assets=流动资产; liquid nitrogen=液氮
@@ -435,7 +435,7 @@ pattern|behavior pattern=行为模式; weather pattern=天气模式; follow a pa
 skin|skin care=护肤; by the skin of one's teeth=侥幸地; thick-skinned=脸皮厚的
 machine|washing machine=洗衣机; vending machine=自动售货机; machine learning=机器学习
 item|item on the agenda=议程上的一项; news item=一条新闻; luxury item=奢侈品
-yard|back yard=后院; school yard=校园; yard sale=庭院旧物出售
+yard|front yard=前院; yard work=庭院劳动; yard sale=庭院旧物出售
 total|in total=总共; total amount=总额; total up to …=总计达…
 investment|foreign investment=外国投资; return on investment=投资回报; investment in …=对…的投资
 discussion|under discussion=在讨论中; discussion about …=关于…的讨论; have a discussion=进行讨论
@@ -450,9 +450,9 @@ dinner|at dinner=在吃晚饭; have dinner=吃晚饭; dinner party=晚宴
 western|Western culture=西方文化; Western Europe=西欧; Western medicine=西医
 senior|senior citizen=老年人; senior manager=高级经理; senior to …=比…年长的
 wind|wind up …=结束…; wind power=风能; trade wind=信风
-key|key to …=…的关键; key point=要点; key word=关键词; low-key=低调的
+key|key to …=…的关键; key point=要点; key player=关键人物; low-key=低调的
 speech|give a speech=发表演讲; freedom of speech=言论自由; part of speech=词性; speech recognition=语音识别
-forest|rain forest=雨林; forest fire=森林火灾; national forest=国家森林
+forest|tropical forest=热带森林; forest fire=森林火灾; national forest=国家森林
 video|video game=电子游戏; video call=视频通话; music video=音乐视频
 restaurant|fast-food restaurant=快餐店; eat at a restaurant=在餐馆吃饭
 safety|safety measures=安全措施; for safety=为了安全; road safety=道路安全; safety net=保障体系
@@ -477,7 +477,7 @@ village|global village=地球村; village life=乡村生活; fishing village=渔
 sales|sales representative=销售代表; sales figures=销售数字; sales tax=销售税
 gold|gold medal=金牌; gold mine=金矿; gold rush=淘金热; a heart of gold=善良的心
 club|join a club=加入俱乐部; golf club=高尔夫球俱乐部
-farm|on a farm=在农场; fish farm=养鱼场; farm land=农田; farm animals=农场动物
+farm|on a farm=在农场; fish farm=养鱼场; farm subsidies=农业补贴; farm animals=农场动物
 apartment|apartment building=公寓楼
 horse|straight from the horse's mouth=来自可靠消息来源; dark horse=黑马; horse racing=赛马
 terms|in terms of …=就…而言; come to terms with …=接受…; on good terms=关系好

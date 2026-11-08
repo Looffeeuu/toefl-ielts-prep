@@ -207,8 +207,8 @@ farming|organic farming=有机农业; dairy farming=奶牛养殖; subsistence fa
 organizer|event organizer=活动组织者
 morality|public morality=公共道德; question the morality of …=质疑…的道德性
 disagreement|disagreement over …=关于…的分歧; in disagreement with …=与…意见相左
-junk|junk food=垃圾食品; junk mail=垃圾邮件; junk yard=废品场
-warming|global warming=全球变暖; house warming=乔迁喜庆
+junk|junk food=垃圾食品; junk mail=垃圾邮件; junk bond=垃圾债券
+warming|global warming=全球变暖; warming trend=变暖趋势
 curl|curl up=蜷缩; curl one's lip=撇嘴
 kidney|kidney stone=肾结石; kidney failure=肾衰竭; kidney transplant=肾移植
 taxi|take a taxi=乘出租车; taxi driver=出租车司机
@@ -268,7 +268,7 @@ justification|justification for …=…的正当理由; without justification=�
 sleeping|sleeping bag=睡袋; sleeping pill=安眠药; sleeping car=卧铺车
 dividend|pay dividends=带来好处; peace dividend=和平红利
 propaganda|war propaganda=战争宣传; propaganda machine=宣传机器
-castle|build castles in the air=建空中楼阁; sand castle=沙堡
+castle|build castles in the air=建空中楼阁; medieval castle=中世纪城堡
 fulfil|fulfil a promise=履行诺言; fulfil one's potential=充分发挥潜能
 corrupt|corrupt officials=腐败官员; absolute power corrupts absolutely=绝对权力导致绝对腐败
 breeding|breeding ground=滋生地; breeding season=繁殖季节; selective breeding=选择性育种
@@ -279,7 +279,7 @@ refusal|flat refusal=断然拒绝; refusal to do …=拒绝做…
 subjective|subjective opinion=主观看法; subjective judgment=主观判断
 advertisement|television advertisement=电视广告; place an advertisement=刊登广告
 mist|morning mist=晨雾; in the mists of time=在久远的过去
-audio|audio recording=录音; audio book=有声读物
+audio|audio recording=录音; audio guide=语音导览
 dressing|salad dressing=色拉调味料; dressing room=更衣室; dressing table=梳妆台
 credible|credible evidence=可信的证据; credible witness=可靠的证人
 recorder|tape recorder=录音机; flight recorder=飞行记录仪

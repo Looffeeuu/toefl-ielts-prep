@@ -133,7 +133,7 @@ pink|in the pink=非常健康; tickled pink=非常高兴
 historic|historic site=历史遗址; historic building=历史建筑; historic moment=历史性时刻
 buck|pass the buck=推卸责任; the buck stops here=责任到此为止
 suggestion|make a suggestion=提建议; at the suggestion of …=在…的建议下; open to suggestions=乐于听取建议
-mail|by mail=通过邮寄; junk mail=垃圾邮件; air mail=航空邮件
+mail|by mail=通过邮寄; junk mail=垃圾邮件; mail order=邮购
 reasonable|reasonable price=公道的价格; reasonable doubt=合理的怀疑; it is reasonable to …=…是合理的
 extreme|in the extreme=极其; extreme weather=极端天气; extreme poverty=极端贫困; go to extremes=走极端
 jail|in jail=坐牢; go to jail=入狱; jail sentence=监禁
@@ -148,7 +148,7 @@ award|award … to …=把…授予…; win an award=获奖; award ceremony=颁�
 refugee|refugee camp=难民营; political refugee=政治难民; refugee crisis=难民危机
 corporation|multinational corporation=跨国公司; public corporation=公共事业公司
 council|city council=市议会; student council=学生会; security council=安理会
-killer|serial killer=连环杀手; pain killer=止痛药; silent killer=无声的杀手
+killer|serial killer=连环杀手; contract killer=职业杀手; silent killer=无声的杀手
 clock|around the clock=昼夜不停地; clock in=上班打卡; biological clock=生物钟; against the clock=争分夺秒
 chocolate|hot chocolate=热巧克力; dark chocolate=黑巧克力
 advertising|advertising campaign=广告宣传活动; advertising agency=广告公司
@@ -235,7 +235,7 @@ classical|classical music=古典音乐; classical conditioning=经典条件反�
 unemployment|unemployment rate=失业率; unemployment benefit=失业救济金; high unemployment=高失业率
 dose|a dose of one's own medicine=以其人之道还治其人之身; daily dose=每日剂量; high dose=高剂量
 sandwich|sandwich generation=夹心一代; sandwich course=工读交替课程
-cloth|table cloth=桌布; cut from the same cloth=如出一辙
+cloth|cloth bag=布袋; cut from the same cloth=如出一辙
 enforce|enforce the law=执法; enforce a rule=实施规定; strictly enforced=严格执行的
 ownership|home ownership=住房所有权; private ownership=私有制; ownership of …=…的所有权
 nightmare|have a nightmare=做噩梦; a logistical nightmare=后勤噩梦; worst nightmare=最可怕的噩梦

@@ -134,7 +134,7 @@ voluntary|voluntary work=义工; voluntary organization=志愿组织; on a volun
 valid|valid reason=正当理由; valid for …=有效期为…的; valid passport=有效护照
 thread|hang by a thread=岌岌可危; lose the thread=失去头绪
 suite|hotel suite=酒店套房; software suite=软件套件
-fragile|fragile ecosystem=脆弱的生态系统; handle with care, fragile=易碎品，小心轻放
+fragile|fragile ecosystem=脆弱的生态系统; fragile peace=脆弱的和平
 fantastic|fantastic opportunity=极好的机会
 screw|screw up …=搞砸…; screw … on=拧上…
 suitable|suitable for …=适合…的; suitable to …=适于…的

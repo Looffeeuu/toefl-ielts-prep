@@ -156,6 +156,9 @@ kbd{font-family:var(--f-mono);font-size:11px;border:1px solid currentColor;borde
 .parts .pt i{font-style:normal;margin-left:4px;font-size:12px}
 .parts .pt-r b,.parts .pt-w b{color:color-mix(in srgb,var(--ink) 60%,var(--muted))}
 .parts .pt-plus{opacity:.55}
+.irr{display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 6px;font-size:12px;color:var(--muted);margin-top:4px}
+.irr b{font-family:var(--f-head);font-size:16px;font-weight:600;color:var(--ink);margin-right:8px}
+.irr small{flex-basis:100%;font-size:12px}
 .memo{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 8px;font-size:14px;line-height:1.7;background:var(--surface-2);border-radius:8px;padding:8px 12px}
 .memo .memo-t{flex:1 1 260px}
 .memo-rel{flex-basis:100%;display:flex;flex-wrap:wrap;align-items:baseline;gap:6px}

@@ -104,6 +104,12 @@ Object.keys(window).filter(k => /^MEMO_WORDS_\d+$/.test(k)).map(k => window[k]).
   const o = BY[w] || BY[(w||"").toLowerCase()];
   if(o && note) o.memo = { split, note, rel:rel ? rel.split(/\s*,\s*/).filter(Boolean) : [] };
 });
+// 不规则动词（IRREGULAR_VERBS）：每行「原形 | 过去式 | 过去分词 | 说明」，只挂到词库里有的词上
+(window.IRREGULAR_VERBS || "").trim().split(/\r?\n/).forEach(line => {
+  const [w, past, pp, note] = line.split("|").map(x => (x||"").trim());
+  const o = BY[w];
+  if(o && past && pp) o.irr = { past, pp, note };
+});
 const BASE_N = WORDS.length;
 
 /* ---------- 我的词表（自己导入的词表） ---------- */
@@ -366,6 +372,8 @@ function renderHeat(){
 }
 
 /* ---------- 背单词 ---------- */
+// 不规则动词的过去式、过去分词，显示在音标下面（翻开答案前也显示，不泄露词义）
+const irrHTML = o => o.irr ? `<div class="irr"><span>过去式</span><b>${esc(o.irr.past)}</b><span>过去分词</span><b>${esc(o.irr.pp)}</b>${o.irr.note ? `<small>${esc(o.irr.note)}</small>` : ""}</div>` : "";
 // 卡片背面：释义、同义替换、例句；扩展词库的词只有释义时给出提示
 function backHTML(o){
   const extra = !o.ex && !o.syn.length
@@ -413,7 +421,7 @@ function renderStudy(){
   box.innerHTML = `${undoBar}<div class="card">
     <div class="meta"><span class="chip ${kind[0]}">${kind[1]}</span><span>${esc(listName(o))}</span>${o.basic ? `<span class="chip">${BASIC[o.basic]}</span>` : ""}<span class="left">剩余 ${queue.length}</span></div>
     <div class="head"><span class="headword">${esc(o.w)}</span><span class="pos">${esc(o.pos)}</span>${speakBtn(o.w)}${partsHTML(o, revealed)}</div>
-    ${phHTML(o)}
+    ${phHTML(o)}${irrHTML(o)}
     ${revealed ? `<div class="back">${backHTML(o)}</div>` : ""}
     <div class="actions">
       ${revealed ? `<div class="rates">${["不认识","模糊","认识","太简单"].map((t,g) => `<button class="rate" data-g="${g}"><b>${t}<kbd>${g+1}</kbd></b><span>${prev[g]}后再见</span></button>`).join("")}</div>`
@@ -595,7 +603,7 @@ function openDetail(w){
   const due = c ? (c[3]<=today() ? "今天复习" : `${ivLabel(c[3]-today())}后复习`) : "还没学过";
   $("#sheet").innerHTML = `<div class="meta"><span class="chip ${s}">${t}</span><span>${esc(listName(o))}</span>${o.basic ? `<span class="chip">${BASIC[o.basic]}</span>` : ""}<span>${due}</span><button class="x" id="closeSheet" aria-label="关闭">×</button></div>
     <div class="head" style="padding-top:0"><span class="headword" style="font-size:44px">${esc(o.w)}</span><span class="pos">${esc(o.pos)}</span>${speakBtn(o.w)}${partsHTML(o, true)}</div>
-    ${phHTML(o)}
+    ${phHTML(o)}${irrHTML(o)}
     ${backHTML(o)}
     ${wordStatsHTML(w)}
     ${App.reportBtn ? `<div class="rep-row">${App.reportBtn(`词条 ${o.w}（${listName(o)}）｜词性：${o.pos}｜释义：${o.cn}${o.ex ? "｜例句：" + o.ex : ""}`, "词条有误")}</div>` : ""}
@@ -1049,6 +1057,8 @@ function addForms(map, o){
   const w = o.w.toLowerCase(), base = w.replace(/e$/,"");
   [w, w+"s", w+"es", w+"ed", w+"d", w+"ing", base+"ing", base+"ed",
    w.replace(/y$/,"ies"), w.replace(/y$/,"ied"), w+"ly"].forEach(f => { if(!map[f]) map[f] = o.w });
+  // 不规则变形（went、gone…）也指向原形；变形本身是词库词条的（felt 毛毡、ground 地面）不指过去
+  if(o.irr) [o.irr.past, o.irr.pp].join(" / ").split(" / ").forEach(f => { f = f.trim().toLowerCase(); if(f && !BY[f] && !map[f]) map[f] = o.w });
 }
 const worthy = o => o.g==="core" || o.rich || (!o.basic && o.g!=="f1" && o.g!=="i1");
 const FORMS = { toefl:{}, ielts:{} };

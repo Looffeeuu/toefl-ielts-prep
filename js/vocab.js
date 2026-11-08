@@ -409,17 +409,28 @@ function memoHTML(o){
 }
 // 多词性释义按词性分行显示（释义里用全角空格分隔各词性）
 const cnHTML = o => o.cn.split("　").map(seg => `<span class="cn-seg">${esc(seg)}</span>`).join("");
-// 一词多义：每个意思一句例句，前面标出是哪个意思
+// 义项标签里的 v. 尽量落实成 vt. / vi.：词只有其中一种就用它；两种都有时看这个意思和哪一段释义重合，分不出来就保留 v.
+function senseLabel(o, s){
+  if(!/^v\.\s/.test(s)) return s;
+  const hasT = /\bvt\./.test(o.pos), hasI = /\bvi\./.test(o.pos), rest = s.replace(/^v\.\s*/, "");
+  if(hasT !== hasI) return (hasT ? "vt. " : "vi. ") + rest;
+  if(!hasT) return s;
+  const chars = t => new Set(t.replace(/（.*?）|\(.*?\)/g, "").replace(/[^一-龥]/g, "").replace(/[的地得之使者人一了着于和与及或等其被所以为在是有不个种些物事作用可能做性化上下中对把将]/g, ""));
+  const mine = chars(rest), score = {vt:0, vi:0};
+  (o.cn.match(/v[ti]\.[^a-z]*/g) || []).forEach(seg => { const k = seg.slice(0, 2); score[k] += [...chars(seg)].filter(c => mine.has(c)).length });
+  return score.vt === score.vi ? s : (score.vt > score.vi ? "vt. " : "vi. ") + rest;
+}
+// 一词多义：每个意思一句例句，前面标出是哪个意思（有这部分时不再列按词性的例句）
 function sensesHTML(o){
   if(!o.senses || !o.senses.length) return "";
   const re = hlRe(o.w), irr = o.irr ? [o.irr.past, o.irr.pp].join(" / ").split(" / ").map(s => s.trim()) : [];
   const mark = t => { const h = esc(t); if(re.test(t)) return h.replace(re, "<mark>$1</mark>");
     const f = irr.find(x => new RegExp("\\b" + x + "\\b", "i").test(t)); return f ? h.replace(new RegExp("\\b(" + f + ")\\b", "i"), "<mark>$1</mark>") : h };
-  return `<div class="exs senses"><p class="section-label" style="margin:0">不同意思的例句</p>${o.senses.map(([s, t]) => `<p class="ex"><span class="ex-pos sense">${esc(s)}</span>${mark(t)}</p>`).join("")}</div>`;
+  return `<div class="exs">${o.senses.map(([s, t]) => `<p class="ex"><span class="ex-pos sense">${esc(senseLabel(o, s))}</span>${mark(t)}</p>`).join("")}</div>`;
 }
 // 每个例句前标出词性；只有一个且没标词性时按原样显示
 function examplesHTML(o){
-  if(!o.exs || !o.exs.length) return "";
+  if(!o.exs || !o.exs.length || (o.senses && o.senses.length)) return "";
   const re = hlRe(o.w);
   return `<div class="exs">${o.exs.map(e => `<p class="ex">${e.pos ? `<span class="ex-pos">${esc(e.pos)}</span>` : ""}${esc(e.text).replace(re, "<mark>$1</mark>")}</p>`).join("")}</div>`;
 }

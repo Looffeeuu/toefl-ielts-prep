@@ -46,7 +46,7 @@
 - **记忆线索**：1,816 个词（核心精编 314 个、精编补充 1,068 个、扩展词库和雅思词库里的学术词 434 个）有人工编写的记忆线索，只给词根真正有助于记忆的词——拆分（如 re · tain）、各部分的意思怎样串成词义、以及常见的同根词（词库里有的可以点开）。背词时翻开答案前只显示拆分，翻开后显示完整线索（`js/words-memo-*.js`，`tools/check_memo.js` 检查）
 - 其他派生词和合成词（如 un + happy、class + room）自动拆成词库里已有的词，只在两者释义对得上时显示（`js/word-parts.js`）
 - **不规则动词**：词库里约 140 个不规则动词（go、undergo、withdraw…）在音标下面标出过去式和过去分词，两种写法都常见的都列出（learned / learnt），用法不同时加说明（hang 表示「绞死」时用 hanged）；做题查词时 underwent 这类变形也能找到原形（`js/irregular-verbs.js`）
-- **常用搭配**：493 个不及物动词（vi.）列出常用的介词、副词搭配和中文释义，如 live in / live on / live for / live up to；没有常用搭配的词不写（`js/words-phrase-*.js`）
+- **常用搭配**：785 个词列出常用搭配和中文释义。不及物动词给介词、副词搭配（live in / live on / live up to），名词、形容词、及物动词给固定搭配（provide evidence / vulnerable to … / reach a consensus）；没有常用搭配的词不写（`js/words-phrase-*.js`）
 - **一词多义例句**：1484 个同一词性下意思差别很大的词（bank 银行 / 河岸、shed 流泪 / 蜕皮 / 裁员），每个意思配一句例句并标出是哪个意思，近义的义项不算（`js/words-sense-*.js`）。`tools/check_phrases.js` 检查搭配以这个词开头、每句例句都包含这个词
 - 「本轮设置」里可以多选本轮要背的词表（整组或单个 200 词词表），新词可按词表顺序或随机出现（随机顺序固定，点「重新打乱」才会变）
 - 新词默认跳过中考词汇（可以在学习设置里改成同时跳过高考词汇，或不跳过）
@@ -199,7 +199,7 @@ js/words-ex-*.js      补充例句：原来没有例句的词（分十二批，t
 js/words-memo-*.js    记忆线索：人工编写的词根拆分、联想和同根词
 js/word-parts.js      派生词 / 合成词的自动拆分
 js/irregular-verbs.js 不规则动词的过去式和过去分词
-js/words-phrase-*.js  不及物动词的常用搭配
+js/words-phrase-*.js  各词性的常用搭配
 js/words-sense-*.js   一词多义：按意思分开的例句
 js/words-ielts.js     雅思词库（整理自 ECDICT）
 js/dict-lookup.js     导入词表时补全释义用的离线查词表（整理自 ECDICT，按需加载）

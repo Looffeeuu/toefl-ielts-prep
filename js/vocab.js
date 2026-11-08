@@ -110,6 +110,18 @@ Object.keys(window).filter(k => /^MEMO_WORDS_\d+$/.test(k)).map(k => window[k]).
   const o = BY[w];
   if(o && past && pp) o.irr = { past, pp, note };
 });
+// 常用搭配（PHRASE_WORDS_1…）：每行「单词 | 短语=释义; 短语=释义」
+Object.keys(window).filter(k => /^PHRASE_WORDS_\d+$/.test(k)).map(k => window[k]).join("\n").trim().split(/\r?\n/).forEach(line => {
+  const i = line.indexOf("|"); if(i < 0) return;
+  const o = BY[line.slice(0, i).trim()]; if(!o) return;
+  o.phrases = line.slice(i+1).split(/;\s+/).map(x => x.split("=").map(s => s.trim())).filter(x => x[0] && x[1]);
+});
+// 一词多义的例句（SENSE_WORDS_1…）：每行「单词 | 义项=例句 ## 义项=例句」，同一词性下意思差别大的才写
+Object.keys(window).filter(k => /^SENSE_WORDS_\d+$/.test(k)).map(k => window[k]).join("\n").trim().split(/\r?\n/).forEach(line => {
+  const i = line.indexOf("|"); if(i < 0) return;
+  const o = BY[line.slice(0, i).trim()]; if(!o) return;
+  o.senses = line.slice(i+1).split(" ## ").map(x => { const j = x.indexOf("="); return [x.slice(0, j).trim(), x.slice(j+1).trim()] }).filter(x => x[0] && x[1]);
+});
 const BASE_N = WORDS.length;
 
 /* ---------- 我的词表（自己导入的词表） ---------- */
@@ -381,9 +393,11 @@ function backHTML(o){
     : "";
   return `<div class="cn">${o.cn ? cnHTML(o) : '<span class="note">这个词没有释义</span>'}</div>
     ${o.myCn ? `<div class="syn"><span class="lab">词表释义</span>${esc(o.myCn)}</div>` : ""}
+    ${o.phrases ? `<div class="phr"><span class="lab">常用搭配</span>${o.phrases.map(([p, cn]) => `<span class="phr-i"><b>${esc(p)}</b>${esc(cn)}</span>`).join("")}</div>` : ""}
     ${memoHTML(o)}
     ${o.syn.length ? `<div class="syn"><span class="lab">同义替换</span>${o.syn.map(s => `<span class="s">${esc(s)}</span>`).join("")}</div>` : ""}
     ${examplesHTML(o)}
+    ${sensesHTML(o)}
     ${extra}${aiBlock(o)}`;
 }
 // 记忆线索：拆分的意思串成词义，再列出已经认识的同根词（词库里有的可以点开）
@@ -395,6 +409,14 @@ function memoHTML(o){
 }
 // 多词性释义按词性分行显示（释义里用全角空格分隔各词性）
 const cnHTML = o => o.cn.split("　").map(seg => `<span class="cn-seg">${esc(seg)}</span>`).join("");
+// 一词多义：每个意思一句例句，前面标出是哪个意思
+function sensesHTML(o){
+  if(!o.senses || !o.senses.length) return "";
+  const re = hlRe(o.w), irr = o.irr ? [o.irr.past, o.irr.pp].join(" / ").split(" / ").map(s => s.trim()) : [];
+  const mark = t => { const h = esc(t); if(re.test(t)) return h.replace(re, "<mark>$1</mark>");
+    const f = irr.find(x => new RegExp("\\b" + x + "\\b", "i").test(t)); return f ? h.replace(new RegExp("\\b(" + f + ")\\b", "i"), "<mark>$1</mark>") : h };
+  return `<div class="exs senses"><p class="section-label" style="margin:0">不同意思的例句</p>${o.senses.map(([s, t]) => `<p class="ex"><span class="ex-pos sense">${esc(s)}</span>${mark(t)}</p>`).join("")}</div>`;
+}
 // 每个例句前标出词性；只有一个且没标词性时按原样显示
 function examplesHTML(o){
   if(!o.exs || !o.exs.length) return "";

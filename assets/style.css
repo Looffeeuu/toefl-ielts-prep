@@ -159,6 +159,10 @@ kbd{font-family:var(--f-mono);font-size:11px;border:1px solid currentColor;borde
 .irr{display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 6px;font-size:12px;color:var(--muted);margin-top:4px}
 .irr b{font-family:var(--f-head);font-size:16px;font-weight:600;color:var(--ink);margin-right:8px}
 .irr small{flex-basis:100%;font-size:12px}
+.phr{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 14px;font-size:13px;color:var(--muted)}
+.phr-i b{font-family:var(--f-head);font-size:15px;font-weight:600;color:var(--ink);margin-right:5px}
+.ex-pos.sense{font-family:var(--f-ui);font-size:12px;letter-spacing:0}
+.senses{border-top:1px dashed var(--line);padding-top:10px}
 .memo{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 8px;font-size:14px;line-height:1.7;background:var(--surface-2);border-radius:8px;padding:8px 12px}
 .memo .memo-t{flex:1 1 260px}
 .memo-rel{flex-basis:100%;display:flex;flex-wrap:wrap;align-items:baseline;gap:6px}

@@ -204,7 +204,7 @@ flesh|flesh and blood=血肉之躯；亲骨肉; in the flesh=本人; flesh out �
 mortgage|take out a mortgage=办理抵押贷款; mortgage payment=按揭还款; mortgage rate=按揭利率
 weekly|weekly magazine=周刊; weekly meeting=周会
 measurement|take measurements=进行测量; accurate measurement=精确的测量
-wise|it is wise to …=…是明智的; wise decision=明智的决定; older and wiser=更成熟明智
+wise|it is wise to …=…是明智的; wise decision=明智的决定; wise choice=明智的选择
 artistic|artistic talent=艺术才能; artistic expression=艺术表现
 ugly|ugly duckling=丑小鸭; ugly truth=丑恶的真相
 cooking|Chinese cooking=中国烹饪; cooking oil=食用油; home cooking=家常菜

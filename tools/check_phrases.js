@@ -17,7 +17,7 @@ const PLURAL = { criterion:"criteria", medium:"media", phenomenon:"phenomena", s
 // 这个词在文本里可能出现的写法：原形、规则变化、不规则变化
 function forms(w){
   const b = w.replace(/e$/, ""), y = w.replace(/y$/, "i"), last = w[w.length-1];
-  return [w, w+"s", w+"es", w+"ed", w+"d", w+"ing", b+"ing", b+"ed", y+"es", y+"ed", w+last+"ed", w+last+"ing", w+"ly", w+"er", w+"est", y+"er", y+"est", w+last+"er", w+last+"est", w.replace(/fe?$/, "ves"), ...(IRR[w] || []), ...(PLURAL[w] ? [PLURAL[w]] : [])];
+  return [w, w+"s", w+"es", w+"ed", w+"d", w+"ing", b+"ing", b+"ed", y+"es", y+"ed", w+last+"ed", w+last+"ing", w+"ly", w+"er", w+"est", y+"er", y+"est", w+last+"er", w+last+"est", w.replace(/fe?$/, "ves"), w.replace(/ie$/, "ying"), ...(IRR[w] || []), ...(PLURAL[w] ? [PLURAL[w]] : [])];
 }
 const has = (text, w) => forms(w).some(f => new RegExp("\\b" + f + "\\b", "i").test(text));
 

@@ -96,6 +96,21 @@ if(reviews.some(r=>r.w==='avouch')){
   assert(ctx.words.bank.cn.includes('bank on'));
   assert(ctx.words.backward.cn.includes('冒犯'));
 }
+if(reviews.some(r=>r.w==='beloved')){
+  const beloved=reading('beloved');
+  assert.equal(beloved.length,3);
+  assert.equal(beloved.find(r=>r.label==='n.').us,'bɪˈlʌv.ɪd');
+  assert.equal(beloved.find(r=>r.label==='adj.').us,'bɪˈlʌvd');
+  assert(ctx.App.pronunciationHTML(ctx.words.beloved).includes('bɪˈlʌv.ɪd'));
+  assert.equal(reading('bear')[0].uk,'beəʳ');
+  assert.equal(reading('beard')[0].uk,'bɪəd');
+  assert.equal(reading('bedroom').length,2);
+  assert(ctx.words.battery.cn.includes('法律'));
+  assert(ctx.words.bearing.senses.some(s=>s[0].includes('轴承')));
+  assert(ctx.words.becoming.cn.includes('旧式'));
+  assert(ctx.words.bellows.cn.includes('复数'));
+  assert(ctx.words.bill.senses.some(s=>s[0].includes('鸟喙')));
+}
 assert(ctx.App.pronunciationHTML({w:'<test>',ph:'<bad>',custom:true}).includes('&lt;bad&gt;'));
 assert(!ctx.App.pronunciationHTML({w:'<test>',ph:'<bad>'}).includes('<bad>'));
 assert(!vocab.includes('esc(o.ph)'), 'a vocab surface still renders legacy IPA directly');

@@ -4,9 +4,9 @@
 
 | 项目 | 已核对 | 尚待核对 |
 | --- | ---: | ---: |
-| 释义与词性 | 735 | 8340 |
-| 英美音与主要分读 | 748 | 8327 |
-| 两项均完成 | 726 | 8349 |
+| 释义与词性 | 835 | 8240 |
+| 英美音与主要分读 | 848 | 8227 |
+| 两项均完成 | 826 | 8249 |
 
 每词分别保存来源和日期，不能用核对音标代替核对释义。完整状态和接续队列见 [lexicon-progress.json](lexicon-progress.json)。优先处理缺失、截断、词性矛盾和用法标记，再按字母顺序推进。未找到可靠来源的条目保持待核对，不推测填充。
 
@@ -68,6 +68,12 @@ node tools/lexicon_progress.js
 
 
 
+## 批次 009
+
+完成 100 词：bathe、bathroom、batter、battery、battle、bay、beach、beacon、bead、beaded、beak、beam、bean、bear、beard、bearing、beast、beat、beautiful、beauty、beaver、become、becoming、bedeck、bedrock、bedroom、bedsit、beforehand、befuddle、beg、beget、beginning、begrudge、beguile、behalf、behave、behavior、behaviour、belie、belief、believer、belittle、belligerent、bellows、belly、belong、beloved、below、belt、beneath、benefactor、beneficial、beneficiary、benefit、benevolent、benign、bent、bequest、berate、bereave、Berlin、berth、beset、besides、besiege、bespeak、best、bestow、bet、betoken、betray、better、beverage、bewilder、bias、bible、bibliography、bicameral、bicker、bicycle、bid、bidding、bigoted、bigotry、bilateral、bilingual、bill、billion、bind、biochemistry、biographer、biography、biological、biologist、biology、Birmingham、birth、bison、bite、bitter。
+
+
+
 ## 发布节奏
 
-每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 700 词，距下次发布还差 300 词。发布基线为 ee4d6d1d0c2bb6f95b372ddad7d7a5e6166699ee，当时两项均核对 26 词；当前页面显示本地核对进度，不表示已上线。
+每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 800 词，距下次发布还差 200 词。发布基线为 ee4d6d1d0c2bb6f95b372ddad7d7a5e6166699ee，当时两项均核对 26 词；当前页面显示本地核对进度，不表示已上线。

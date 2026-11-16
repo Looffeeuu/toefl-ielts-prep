@@ -142,7 +142,7 @@ const senses = {
   accessory:[["n. 配饰", "A scarf is a useful winter accessory."],["n. 从犯", "He was charged as an accessory to the robbery."]],
   accidental:[["adj. 意外的", "The fire was caused by accidental damage to a cable."],["n. 临时变音记号", "The accidental changes the pitch of the note."],["n. 迷鸟", "The bird is an accidental in this region."]],
   accommodate:[["vt. 容纳；提供住宿", "The hostel can accommodate forty guests."],["vt. 满足（需要）；迁就", "We can accommodate your request for a later appointment."]],
-  accommodation:[["n. 住宿", "The course fee does not include accommodation."],["n. 和解；调解", "Both sides hope to reach an accommodation."]],
+  accommodation:[["n. 住宿", "The course fee does not include accommodation."],["n. 和解；调和", "Both sides hope to reach an accommodation."]],
   accompaniment:[["n. 伴奏", "The singer performed with piano accompaniment."],["n. 佐餐物", "Rice is a useful accompaniment to this dish."]],
   accompany:[["vt. 陪同", "A teacher will accompany the group."],["vt. 为…伴奏", "She will accompany the violinist on the piano."]],
   account:[["n. 账户", "She opened a savings account."],["n. 记述", "His account of the journey filled three pages."],["v. 占（account for）", "Exports account for half of the firm's revenue."]],

@@ -3,9 +3,9 @@
   "scope": "全部内置词条的来源和结构一致性；仅 dictionary-reviewed 条目经过本轮外部词典核对。其他候选不能据此判定为虚假或正确。",
   "total": 9075,
   "sources": {
-    "editorial-unverified": 4153,
-    "dictionary-reviewed": 135,
-    "ecdict-derived": 4787
+    "editorial-unverified": 4105,
+    "dictionary-reviewed": 235,
+    "ecdict-derived": 4735
   },
   "flagCounts": {
     "missing-pos": 29,
@@ -1502,38 +1502,38 @@
     },
     {
       "word": "activate",
-      "pos": "v.",
-      "definition": "激活；使活动",
-      "origin": "editorial-unverified",
+      "pos": "vt.",
+      "definition": "启动；激活；使起作用；活化（化学）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-4.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/activate",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "active",
       "pos": "adj./n.",
-      "definition": "adj. 活跃的，起作用的，积极的，有效的　n. 主动语态，积极分子",
-      "origin": "ecdict-derived",
+      "definition": "adj. 活跃的；积极参与的；起作用的；（火山）活的；主动语态的　n. 主动语态（the active）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/active",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "actively",
       "pos": "adv.",
-      "definition": "积极地；活跃地",
-      "origin": "editorial-unverified",
+      "definition": "积极地；主动地；活跃地",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-2.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/actively",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
@@ -1551,182 +1551,185 @@
     {
       "word": "activity",
       "pos": "n.",
-      "definition": "活动，行动，活跃，活力",
-      "origin": "ecdict-derived",
+      "definition": "活动；活跃；活动状况；工作；娱乐活动",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/activity",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "actor",
       "pos": "n.",
-      "definition": "男演员，行动者",
-      "origin": "ecdict-derived",
+      "definition": "演员（不限定性别）；行动者；参与者",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/actor",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "actual",
       "pos": "adj.",
-      "definition": "真实的，实际的，现行的",
-      "origin": "ecdict-derived",
+      "definition": "实际的；真实的；确实存在的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/actual",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "actually",
       "pos": "adv.",
-      "definition": "实际上；事实上",
-      "origin": "editorial-unverified",
+      "definition": "实际上；事实上；其实（用于纠正、补充或缓和语气）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-6.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/actually",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "actuate",
       "pos": "vt.",
-      "definition": "驱动；激励",
-      "origin": "editorial-unverified",
+      "definition": "使（机器）运转；驱动；促使（人）行动（正式或专业用语）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-10.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/actuate",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "acumen",
       "pos": "n.",
-      "definition": "敏锐；聪明",
-      "origin": "editorial-unverified",
+      "definition": "敏锐的判断力；精明（正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-9.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/acumen",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "acupuncture",
-      "pos": "n./vt.",
-      "definition": "n. 针刺，针刺疗法　vt. 施以针灸",
-      "origin": "ecdict-derived",
+      "pos": "n.",
+      "definition": "针刺疗法；针灸",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/acupuncture",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "acute",
-      "pos": "adj.",
-      "definition": "尖锐的，敏锐的，激烈的，严重的",
-      "origin": "ecdict-derived",
+      "pos": "adj./n.",
+      "definition": "adj. 严重的；急性的；敏锐的；锐角的　n. 尖音符；锐音符（如 é 上的符号）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/acute",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "adage",
       "pos": "n.",
-      "definition": "格言，谚语",
-      "origin": "ecdict-derived",
+      "definition": "格言；谚语",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/adage",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "adamant",
       "pos": "adj.",
-      "definition": "坚决的；坚定不移的",
-      "origin": "editorial-unverified",
+      "definition": "坚决的；不肯改变主意的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-8.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/adamant",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "adapt",
-      "pos": "vt./vi.",
-      "definition": "vt. 使适应；改编　vi. 适应",
-      "origin": "editorial-unverified",
+      "pos": "v.",
+      "definition": "（使）适应；调整；改编",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-1.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/adapt",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "adaptable",
       "pos": "adj.",
-      "definition": "适应性强的",
-      "origin": "editorial-unverified",
+      "definition": "适应性强的；能或愿意调整的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-9.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/adaptable",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "adaptation",
       "pos": "n.",
-      "definition": "适应，改编，改编本",
-      "origin": "ecdict-derived",
+      "definition": "适应；适应性变化（生物）；改编作品",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/adaptation",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "adaptive",
       "pos": "adj.",
-      "definition": "适应的",
-      "origin": "editorial-unverified",
+      "definition": "适应性强的；适应性的；适应环境变化的（生物）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-3.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/adaptive",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "addict",
-      "pos": "n./v.",
-      "definition": "成瘾者；使上瘾",
-      "origin": "editorial-unverified",
+      "pos": "n./vt.",
+      "definition": "n. 成瘾者；沉迷某事的人　vt. 使成瘾；使沉迷（常用被动或反身形式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-4.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/addict",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/addict",
+        "https://www.collinsdictionary.com/dictionary/english/addict"
+      ],
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
@@ -1744,61 +1747,61 @@
     {
       "word": "addictive",
       "pos": "adj.",
-      "definition": "使人上瘾的",
-      "origin": "editorial-unverified",
+      "definition": "使人成瘾的；令人着迷难以停止的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-8.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/addictive",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "addition",
       "pos": "n.",
-      "definition": "加法，增加的人(或物)",
-      "origin": "ecdict-derived",
+      "definition": "加法；增加；添加；新增的人或物；扩建部分（美）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/addition",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "additional",
       "pos": "adj.",
       "definition": "额外的；附加的",
-      "origin": "editorial-unverified",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-2.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/additional",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "additive",
-      "pos": "n.",
-      "definition": "添加剂",
-      "origin": "editorial-unverified",
+      "pos": "n./adj.",
+      "definition": "n. 添加剂（尤指食品添加剂）　adj. 加法的（数学）；相加的；累加的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-9.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/additive",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "addle",
-      "pos": "vt./vi.",
-      "definition": "vt. 使昏乱，使腐坏　vi. 变质",
-      "origin": "ecdict-derived",
+      "pos": "vt.",
+      "definition": "使困惑；使头脑不清（多带幽默意味）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/addle",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
@@ -1816,88 +1819,90 @@
     },
     {
       "word": "adept",
-      "pos": "adj.",
-      "definition": "熟练的；擅长的",
-      "origin": "editorial-unverified",
+      "pos": "adj./n.",
+      "definition": "adj. 熟练的；擅长的　n. 行家；能手",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-7.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/adept",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/adept",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/adept_2"
+      ],
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "adequate",
       "pos": "adj.",
-      "definition": "适当的，足够的",
-      "origin": "ecdict-derived",
+      "definition": "足够的；足以满足需要的；尚可的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/adequate",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "adhere",
-      "pos": "v.",
-      "definition": "黏附；坚持",
-      "origin": "editorial-unverified",
+      "pos": "vi.",
+      "definition": "黏附；附着；遵守；坚持（adhere to）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-3.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/adhere",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "adherence",
       "pos": "n.",
-      "definition": "坚持；遵守",
-      "origin": "editorial-unverified",
+      "definition": "遵守；坚持（规则、信念等，正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-5.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/adherence",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "adhesive",
       "pos": "n./adj.",
-      "definition": "n. 黏合剂　adj. 黏性的",
-      "origin": "editorial-unverified",
+      "definition": "n. 黏合剂　adj. 有黏性的；能黏附的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-9.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/adhesive",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "adjacent",
       "pos": "adj.",
-      "definition": "邻近的；毗连的",
-      "origin": "editorial-unverified",
+      "definition": "邻近的；紧挨着的；相接的（正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/adjacent",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "adjoin",
       "pos": "v.",
-      "definition": "邻接，毗连",
-      "origin": "ecdict-derived",
+      "definition": "邻接；毗连；与…相接（正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/adjoin",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
@@ -1914,332 +1919,326 @@
     },
     {
       "word": "adjourn",
-      "pos": "vi./vt.",
-      "definition": "vi. 休会，换地方　vt. 使中止，推迟",
-      "origin": "ecdict-derived",
+      "pos": "v.",
+      "definition": "（使会议、审判等）暂停；休会；移至别处（adjourn to，正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/adjourn",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "adjunct",
       "pos": "n.",
-      "definition": "附属物；兼职人员",
-      "origin": "editorial-unverified",
+      "definition": "附加物；附属物；状语（语法）；临时或兼职大学教师（美）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-8.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/adjunct",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "adjust",
-      "pos": "vt./vi.",
-      "definition": "vt. 调整，使适应于，校准　vi. 适应于，被调节，相互熟悉而适应",
-      "origin": "ecdict-derived",
+      "pos": "v.",
+      "definition": "调整；调节；整理（衣物）；适应",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/adjust",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "adjustment",
       "pos": "n.",
-      "definition": "调整，调节，校正",
-      "origin": "ecdict-derived",
+      "definition": "调整；调节；小幅改变；适应",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/adjustment",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "administer",
-      "pos": "v.",
-      "definition": "管理；施用（药物）",
-      "origin": "editorial-unverified",
+      "pos": "vt.",
+      "definition": "管理；治理；给予；施用（药物）；实施（测试等）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-2.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/administer",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "administrate",
       "pos": "vt.",
-      "definition": "管理，支配",
-      "origin": "ecdict-derived",
+      "definition": "管理；行政管理（同 administer）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/administrate",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "administration",
       "pos": "n.",
-      "definition": "行政，管理，政府机关",
-      "origin": "ecdict-derived",
+      "definition": "行政管理；管理层；政府；任期；施用（药物等）；破产管理（英）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/administration",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "administrative",
       "pos": "adj.",
-      "definition": "行政的；管理的",
-      "origin": "editorial-unverified",
+      "definition": "行政的；管理的；行政事务的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-2.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/administrative",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "administrator",
       "pos": "n.",
-      "definition": "管理人，行政官",
-      "origin": "ecdict-derived",
+      "definition": "管理人员；行政人员；（计算机系统、网站等的）管理员",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/administrator",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "admirable",
       "pos": "adj.",
-      "definition": "可钦佩的，极好的，令人惊奇的",
-      "origin": "ecdict-derived",
+      "definition": "令人钦佩的；值得赞赏的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/admirable",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "admiration",
       "pos": "n.",
-      "definition": "钦佩；赞赏",
-      "origin": "editorial-unverified",
+      "definition": "钦佩；赞赏；欣赏",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-4.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/admiration",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "admire",
-      "pos": "vt./vi.",
-      "definition": "vt. 赞美，钦佩，爱慕　vi. 称赞，惊奇",
-      "origin": "ecdict-derived",
+      "pos": "vt.",
+      "definition": "欣赏；钦佩；赞赏",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/admire",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "admission",
       "pos": "n.",
-      "definition": "准许进入，入场费，录用，承认",
-      "origin": "ecdict-derived",
+      "definition": "承认；入场许可；入场费；入学；收治入院",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/admission",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "admit",
-      "pos": "vt./vi.",
-      "definition": "vt. 承认，接受，允许进入，容许　vi. 开向，容许，承认",
-      "origin": "ecdict-derived",
+      "pos": "v.",
+      "definition": "承认；准许进入；收治入院；接收（入学等）；容许（admit of，正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/admit",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "admittedly",
       "pos": "adv.",
-      "definition": "无可否认地",
-      "origin": "editorial-unverified",
+      "definition": "诚然；不可否认地（用于让步承认）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-5.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/admittedly",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "admonish",
       "pos": "vt.",
-      "definition": "告诫；责备",
-      "origin": "editorial-unverified",
+      "definition": "责备；告诫；劝诫（正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-8.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/admonish",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "adobe",
       "pos": "n.",
-      "definition": "土坯；土坯建筑",
-      "origin": "editorial-unverified",
+      "definition": "土坯；制土坯用的泥土和稻草混合物",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-9.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/adobe",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "adolescence",
       "pos": "n.",
-      "definition": "青春期",
-      "origin": "ecdict-derived",
+      "definition": "青春期；从儿童成长为成人的阶段",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/adolescence",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "adolescent",
       "pos": "n./adj.",
-      "definition": "n. 青少年　adj. 青春期的",
-      "origin": "editorial-unverified",
+      "definition": "n. 青少年　adj. 青春期的；幼稚的（指成人的行为）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-1.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/adolescent",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "adopt",
-      "pos": "vt.",
-      "definition": "采用，正式通过，收养，接受",
-      "origin": "ecdict-derived",
+      "pos": "v.",
+      "definition": "收养；领养；采用；采取；选定；正式通过",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/adopt",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "adoption",
       "pos": "n.",
-      "definition": "采用；收养",
-      "origin": "editorial-unverified",
+      "definition": "收养；采用；采纳；选定",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-2.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/adoption",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "adore",
-      "pos": "vt./vi.",
-      "definition": "vt. 崇拜，爱慕，喜爱　vi. 崇拜，爱慕",
-      "origin": "ecdict-derived",
+      "pos": "vt.",
+      "definition": "深爱；非常喜欢；崇拜（宗教，正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/adore",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "adorn",
-      "pos": "v.",
-      "definition": "装饰",
-      "origin": "editorial-unverified",
+      "pos": "vt.",
+      "definition": "装饰；使生色（文学）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-5.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/adorn",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "adornment",
       "pos": "n.",
-      "definition": "装饰，装饰品",
-      "origin": "ecdict-derived",
+      "definition": "装饰；装饰品",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/adornment",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "adroit",
       "pos": "adj.",
-      "definition": "熟练的；机敏的",
-      "origin": "editorial-unverified",
+      "definition": "熟练灵巧的；机敏的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-10.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/adroit",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "adult",
       "pos": "n./adj.",
-      "definition": "n. 成人，成虫　adj. 成年的，成熟的",
-      "origin": "ecdict-derived",
+      "definition": "n. 成年人；成年动物　adj. 成年的；成熟的；成人的；仅适合成人的（涉及性内容）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/adult",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "adulteration",
       "pos": "n.",
-      "definition": "掺杂，掺假的东西",
-      "origin": "ecdict-derived",
+      "definition": "掺假；掺杂使质量降低（尤指食品、药品）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/adulteration",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
@@ -2256,14 +2255,14 @@
     },
     {
       "word": "advance",
-      "pos": "n./vi.",
-      "definition": "n. 前进，进展，行过的路程　vi. 前进，进展，提高，上涨",
-      "origin": "ecdict-derived",
+      "pos": "v./n./adj.",
+      "definition": "v. 前进；推进；进展；提出（观点等）；预付　n. 前进；进步；预付款；追求示好（常用复数）　adj. 预先的；事先的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/advance",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
@@ -2281,13 +2280,13 @@
     {
       "word": "advancement",
       "pos": "n.",
-      "definition": "进步；提升",
-      "origin": "editorial-unverified",
+      "definition": "进步；发展；晋升；提升",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-3.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/advancement",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
@@ -2305,13 +2304,13 @@
     {
       "word": "advent",
       "pos": "n.",
-      "definition": "出现；到来",
-      "origin": "editorial-unverified",
+      "definition": "出现；到来；（Advent）基督教降临期",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/advent",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
@@ -2328,26 +2327,26 @@
     },
     {
       "word": "adventure",
-      "pos": "n./v.",
-      "definition": "n. 冒险，冒险经历　v. 冒险",
-      "origin": "ecdict-derived",
+      "pos": "n.",
+      "definition": "冒险；冒险经历；刺激的体验",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/adventure",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "adventurer",
       "pos": "n.",
-      "definition": "冒险家",
-      "origin": "editorial-unverified",
+      "definition": "冒险者；冒险家；投机钻营者（贬义）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-9.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/adventurer",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
@@ -2365,61 +2364,61 @@
     {
       "word": "adverse",
       "pos": "adj.",
-      "definition": "不利的；有害的",
-      "origin": "editorial-unverified",
+      "definition": "不利的；有害的；造成问题的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-3.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/adverse",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "adversely",
       "pos": "adv.",
-      "definition": "不利地",
-      "origin": "editorial-unverified",
+      "definition": "不利地；有害地",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-7.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/adversely",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "adversity",
       "pos": "n.",
-      "definition": "逆境；不幸",
-      "origin": "editorial-unverified",
+      "definition": "逆境；不幸；困境；不幸事件",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-7.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/adversity",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "advertise",
-      "pos": "vt./vi.",
-      "definition": "vt. 做广告，通知，公布　vi. 做广告",
-      "origin": "ecdict-derived",
+      "pos": "v.",
+      "definition": "做广告；登广告；公布；使广为人知",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/advertise",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "advertisement",
       "pos": "n.",
-      "definition": "广告，启事，广告宣传",
-      "origin": "ecdict-derived",
+      "definition": "广告；招聘等启事；体现某事物优点的例子",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/advertisement",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
@@ -2449,63 +2448,61 @@
     {
       "word": "advice",
       "pos": "n.",
-      "definition": "忠告，劝告，意见，报道",
-      "origin": "ecdict-derived",
+      "definition": "建议；劝告；忠告（通常不可数）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/advice",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "advisable",
       "pos": "adj.",
-      "definition": "适当的，明智的",
-      "origin": "ecdict-derived",
+      "definition": "明智的；可取的；值得采用的（通常作表语）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/advisable",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "advise",
-      "pos": "vt./vi.",
-      "definition": "vt. 劝告，给...出主意，通知，建议　vi. 提意见，商量",
-      "origin": "ecdict-derived",
+      "pos": "v.",
+      "definition": "建议；劝告；提供咨询；通知；告知（正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/advise",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "advocate",
-      "pos": "n./vt.",
-      "definition": "n. 提倡者，拥护者　vt. 主张，提倡",
-      "origin": "ecdict-derived",
+      "pos": "v./n.",
+      "definition": "v. 提倡；主张；支持；为…辩护　n. 提倡者；支持者；权益维护者；辩护律师",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/advocate",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "aerial",
       "pos": "adj./n.",
-      "definition": "adj. 空中的，航空的，空气的，空想的　n. 天线",
-      "origin": "ecdict-derived",
+      "definition": "adj. 空中的；从空中进行的　n. 天线；空中特技动作（体育）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/aerial",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
@@ -2524,49 +2521,49 @@
     {
       "word": "aesthetic",
       "pos": "adj./n.",
-      "definition": "adj. 美学的；审美的　n. 美感；审美观",
-      "origin": "editorial-unverified",
+      "definition": "adj. 审美的；美学的；美观的；美容的　n. 审美风格；美学原则；（aesthetics）美学",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-1.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/aesthetic",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "aesthetical",
       "pos": "adj.",
-      "definition": "美学的，艺术的，美的，审美的",
-      "origin": "ecdict-derived",
+      "definition": "美学的；审美的；艺术的（aesthetic 的变体）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.collinsdictionary.com/dictionary/english/aesthetical",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "affable",
       "pos": "adj.",
-      "definition": "和蔼可亲的，友善的，亲切的，慈祥的",
-      "origin": "ecdict-derived",
+      "definition": "友善的；和蔼可亲的；易于交谈的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/affable",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "affair",
       "pos": "n.",
-      "definition": "事件，事务，恋爱事件",
-      "origin": "ecdict-derived",
+      "definition": "事情；事务；事件；私情；婚外情；活动或场合",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/affair",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
@@ -2584,14 +2581,13 @@
     {
       "word": "affect",
       "pos": "vt./n.",
-      "definition": "vt. 影响，感动，假装，模仿　n. 自觉感情",
-      "origin": "ecdict-derived",
+      "definition": "vt. 影响；使感动；假装；故作　n. 情感；情绪及其外在表现（心理学）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/affect",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
@@ -2609,147 +2605,145 @@
     {
       "word": "affection",
       "pos": "n.",
-      "definition": "影响，病，喜爱，情感",
-      "origin": "ecdict-derived",
+      "definition": "喜爱；感情；爱意",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/affection",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "affectionate",
       "pos": "adj.",
-      "definition": "充满深情的",
-      "origin": "editorial-unverified",
+      "definition": "深情的；表示喜爱的；亲切的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-8.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/affectionate",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "affective",
       "pos": "adj.",
-      "definition": "情感的",
-      "origin": "editorial-unverified",
+      "definition": "情感的；与情绪有关的（心理学）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-5.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/affective",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "affiliate",
-      "pos": "vt./n.",
-      "definition": "vt. 使隶属　n. 附属机构",
-      "origin": "editorial-unverified",
+      "pos": "v./n.",
+      "definition": "v. （使）隶属；（使）加入；（使）建立联系　n. 附属机构；分支机构；成员组织",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-2.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/affiliate",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "affinity",
       "pos": "n.",
-      "definition": "密切关系；喜爱",
-      "origin": "editorial-unverified",
+      "definition": "亲近感；喜爱；密切关系；相似之处",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-5.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/affinity",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "affirm",
-      "pos": "v.",
-      "definition": "断言；肯定",
-      "origin": "editorial-unverified",
+      "pos": "vt.",
+      "definition": "肯定；断言；公开表示支持（正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-4.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/affirm",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "affix",
       "pos": "vt./n.",
-      "definition": "vt. 使附于，署名，粘贴，盖印于　n. 附加物，词缀",
-      "origin": "ecdict-derived",
+      "definition": "vt. 附上；粘贴；固定；加词缀　n. 词缀（语言学）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/affix",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "afflict",
-      "pos": "v.",
-      "definition": "使苦恼；折磨",
-      "origin": "editorial-unverified",
+      "pos": "vt.",
+      "definition": "使遭受痛苦；折磨；困扰",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-5.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/afflict",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "affliction",
       "pos": "n.",
-      "definition": "痛苦；苦恼",
-      "origin": "editorial-unverified",
+      "definition": "苦难；痛苦；造成痛苦的疾病或问题（正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-9.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/affliction",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "affluence",
       "pos": "n.",
-      "definition": "富裕",
-      "origin": "editorial-unverified",
+      "definition": "富裕；富足",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-9.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/affluence",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "affluent",
       "pos": "adj.",
-      "definition": "富裕的",
-      "origin": "editorial-unverified",
+      "definition": "富裕的；富足的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-4.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/affluent",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "afford",
-      "pos": "vt.",
-      "definition": "买得起，足以，给予",
-      "origin": "ecdict-derived",
+      "pos": "v.",
+      "definition": "买得起；有时间做；承担得起（后果）；提供；给予（正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/afford",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
@@ -2779,14 +2773,13 @@
     {
       "word": "age",
       "pos": "n./v.",
-      "definition": "n. 年龄，老年，成年，寿命　v. 变老，成熟",
-      "origin": "ecdict-derived",
+      "definition": "n. 年龄；年代；时期；老年；很长时间（ages）　v. （使）变老；（使）成熟或陈化",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/age",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
@@ -2816,50 +2809,49 @@
     {
       "word": "agency",
       "pos": "n.",
-      "definition": "代理机构，经销商，中介",
-      "origin": "ecdict-derived",
+      "definition": "代理机构；中介；政府机构；自主行动能力；作用（through the agency of）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/agency",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "agenda",
-      "pos": "pl.",
-      "definition": "议程，日常工作事项",
-      "origin": "ecdict-derived",
+      "pos": "n.",
+      "definition": "议程；待办事项；目标或计划；隐秘目的（可数，复数 agendas）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/agenda",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "agent",
       "pos": "n.",
-      "definition": "代理商，政府代表，动原，媒介",
-      "origin": "ecdict-derived",
+      "definition": "代理人；经纪人；特工；起作用的人或物；制剂；智能体（计算机）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/agent",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "aggravate",
-      "pos": "v.",
-      "definition": "加重；激怒",
-      "origin": "editorial-unverified",
+      "pos": "vt.",
+      "definition": "使恶化；加重；激怒；使烦恼（非正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-5.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/aggravate",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
@@ -2877,50 +2869,49 @@
     {
       "word": "aggregate",
       "pos": "n./adj./vt.",
-      "definition": "n. 总数；骨料　adj. 总的　vt. 合计；聚集",
-      "origin": "editorial-unverified",
+      "definition": "n. 总数；集合体；骨料（建筑）　adj. 总计的　vt. 合计；聚集；汇总",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-7.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/aggregate",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "aggregation",
       "pos": "n.",
-      "definition": "集合，聚合，集合体",
-      "origin": "ecdict-derived",
+      "definition": "聚集；聚合；汇总；聚合体；汇总结果",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/aggregation",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "aggression",
       "pos": "n.",
-      "definition": "侵犯，侵略",
-      "origin": "ecdict-derived",
+      "definition": "攻击性；侵略；侵犯；（体育）强势进攻",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/aggression",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "aggressive",
       "pos": "adj.",
-      "definition": "侵略的，挑畔的，进取的",
-      "origin": "ecdict-derived",
+      "definition": "好斗的；有攻击性的；强势的；积极进取的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/aggressive",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
@@ -2938,25 +2929,25 @@
     {
       "word": "aghast",
       "pos": "adj.",
-      "definition": "惊骇的，吓呆的",
-      "origin": "ecdict-derived",
+      "definition": "惊骇的；大为震惊的（通常作表语）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/aghast",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "agile",
       "pos": "adj.",
-      "definition": "敏捷的",
-      "origin": "editorial-unverified",
+      "definition": "（动作）敏捷的；（思维）敏锐的；能灵活应变的；敏捷式的（管理）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-9.js"
+        "js/lexicon-review-003.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/agile",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {

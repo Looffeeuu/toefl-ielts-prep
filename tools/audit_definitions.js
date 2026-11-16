@@ -30,11 +30,11 @@ const entries = Object.values(ctx.auditWords).map(o=>{
   const flags=[];
   if(!o.pos)flags.push('missing-pos');
   if(!o.cn)flags.push('missing-definition');
-  if(/[，；、：]$|(?:，使|；使)$/.test(o.cn)||o.cn.length===40)flags.push('possible-truncation');
+  if(/[，；、：]$|(?:，使|；使)$/.test(o.cn)||(!review&&o.cn.length===40))flags.push('possible-truncation');
   if(/白痴|笨蛋|懒胖|变态|性欲反常/.test(o.cn))flags.push('usage-label-review');
   const expected=new Set([...o.pos.matchAll(/(vt|vi|v|n|adj|adv|prep|conj|pron|num)\./g)].map(m=>m[1]));
   const missing=new Set();
-  for(const [s] of o.senses||[]){const p=s.match(/^(vt|vi|v|n|adj|adv|prep|conj)\./)?.[1];if(p&&!expected.has(p)&&!(p==='v'&&(expected.has('vt')||expected.has('vi'))))missing.add(p);}
+  for(const [s] of o.senses||[]){const p=s.match(/^(vt|vi|v|n|adj|adv|prep|conj)\./)?.[1];if(p&&!expected.has(p)&&!(['vt','vi'].includes(p)&&expected.has('v'))&&!(p==='v'&&(expected.has('vt')||expected.has('vi'))))missing.add(p);}
   if(missing.size)flags.push('sense-pos-mismatch:'+Array.from(missing).join('/'));
   return {word:o.w,pos:o.pos,definition:o.cn,origin,sourceFiles:review?[review.file||'js/definition-reviews.js']:exact.map(r=>r.file),dictionary:review?.source||null,...(review?.sources ? {dictionaries:review.sources} : {}),checkedOn:review?.checkedOn||null,flags};
 }).sort((a,b)=>a.word.localeCompare(b.word));

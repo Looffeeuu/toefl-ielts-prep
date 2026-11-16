@@ -1,5 +1,7 @@
 # 第三方数据声明
 
+批次 003 另参照 Oxford Advanced Learner's Dictionary 的 adept 名词条目，以及 Collins English Dictionary 的 addict 动词和 aesthetical 条目。各条保留具体来源链接；不同词典的音标写法按来源保留，未擅自互换 e/ɛ 等符号。
+
 `js/lexicon-review-*.js` 为后续批次的逐词核对记录：中文学习释义依据链接词典概括，音标依据词典标注，配套英文例句由本项目原创。每批保留来源及日期，参见 [全库进度](docs/lexicon-progress.md)。
 
 `js/pronunciation-reviews.js` 的音标依据逐条链接的 Cambridge Dictionary 发音页核对，来源为 Cambridge Advanced Learner's Dictionary & Thesaurus / Cambridge Academic Content Dictionary，© Cambridge University Press。中文读音适用范围由本项目概括；不包含剑桥音频。核对范围及未核对项见 [音标记录](docs/pronunciation-audit.md)。

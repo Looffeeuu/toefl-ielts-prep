@@ -16,7 +16,8 @@ const reviews = ctx.window.PRONUNCIATION_REVIEWS, seen = new Set();
 for(const r of reviews){
   assert(!seen.has(r.w), `duplicate ${r.w}`); seen.add(r.w);
   if(ctx.words[r.w]) assert.equal(ctx.words[r.w].pronunciationReview, r, `not applied: ${r.w}`);
-  assert.match(r.source, new RegExp('^https://dictionary\\.cambridge\\.org/(us/)?(?:pronunciation|dictionary)/english/'+r.w.toLowerCase()+'$'));
+  if(r.source.startsWith('https://www.collinsdictionary.com/')) assert.equal(r.source,'https://www.collinsdictionary.com/dictionary/english/'+r.w);
+  else assert.match(r.source, new RegExp('^https://dictionary\\.cambridge\\.org/(us/)?(?:pronunciation|dictionary)/english/'+r.w.toLowerCase()+'$'));
   assert.match(r.checkedOn, /^\d{4}-\d{2}-\d{2}$/);
   for(const p of r.readings){
     assert(p.label && p.uk && p.us);
@@ -25,6 +26,7 @@ for(const r of reviews){
   const rendered = ctx.App.pronunciationHTML({w:r.w, pronunciationReview:r});
   for(const p of r.readings) for(const ph of [p.uk,p.us]) assert(rendered.includes('/'+esc(ph)+'/'));
   assert(rendered.includes(r.source));
+  for(const source of r.sources||[]) assert(rendered.includes(source),`missing pronunciation source: ${r.w}`);
   assert(!rendered.includes('尚未核对'));
 }
 const reading = w => reviews.find(r => r.w===w).readings;
@@ -32,6 +34,12 @@ assert.equal(reading('read')[1].uk, 'red');
 assert.equal(reading('lead')[1].uk, 'led');
 assert.notEqual(reading('record')[0].uk, reading('record')[1].uk);
 assert.equal(reading('exploit')[0].uk, 'ɪkˈsplɔɪt');
+assert.equal(reading('advocate')[1].uk,'ˈæd.və.kət');
+assert.equal(reading('affect')[1].uk,'ˈæf.ekt');
+assert.equal(reading('affix')[1].uk,'ˈæf.ɪks');
+assert.equal(reading('adept')[1].uk,'ˈædept');
+assert.equal(ctx.words.agenda.pos,'n.');
+assert(!ctx.words.affection.cn.includes('影响'));
 assert(!ctx.App.pronunciationHTML(ctx.words.lead, false).includes('铅'), 'study front leaks definition');
 assert(ctx.App.pronunciationHTML({w:'unreviewed',ph:'old'}).includes('尚未核对'));
 assert(ctx.App.pronunciationHTML({w:'<test>',ph:'<bad>',custom:true}).includes('&lt;bad&gt;'));

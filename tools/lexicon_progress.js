@@ -13,7 +13,7 @@ const batches=ctx.window.LEXICON_REVIEW_BATCHES||[];
 const ph = new Map(pronunciations.entries.map(e=>[e.word,e]));
 const entries = definitions.entries.map(d=>{
   const p = ph.get(d.word); assert(p, `missing pronunciation inventory: ${d.word}`);
-  return {word:d.word,definitionChecked:d.origin==='dictionary-reviewed',pronunciationChecked:p.status==='dictionary-reviewed',definitionSource:d.dictionary,...(d.dictionaries?{definitionSources:d.dictionaries}:{}),pronunciationSource:p.review?.source||null,definitionCheckedOn:d.checkedOn,pronunciationCheckedOn:p.review?.checkedOn||null,flags:d.flags.concat(p.flags)};
+  return {word:d.word,definitionChecked:d.origin==='dictionary-reviewed',pronunciationChecked:p.status==='dictionary-reviewed',definitionSource:d.dictionary,...(d.dictionaries?{definitionSources:d.dictionaries}:{}),pronunciationSource:p.review?.source||null,...(p.review?.sources?{pronunciationSources:p.review.sources}:{}),definitionCheckedOn:d.checkedOn,pronunciationCheckedOn:p.review?.checkedOn||null,flags:d.flags.concat(p.flags)};
 });
 const count = predicate => entries.filter(predicate).length;
 const summary = {total:entries.length,definitionsChecked:count(e=>e.definitionChecked),pronunciationsChecked:count(e=>e.pronunciationChecked),bothChecked:count(e=>e.definitionChecked&&e.pronunciationChecked)};

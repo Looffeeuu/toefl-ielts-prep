@@ -17,10 +17,10 @@ for(const r of reviews){
   assert(!seen.has(r.w), `duplicate ${r.w}`); seen.add(r.w);
   if(ctx.words[r.w]) assert.equal(ctx.words[r.w].pronunciationReview, r, `not applied: ${r.w}`);
   // A spelling variant may cite a dictionary's explicitly documented headword.
-  if(r.sourceHeadword) assert.equal({'baby-sitter':'babysitter'}[r.w],r.sourceHeadword,`undocumented spelling alias: ${r.w}`);
+  if(r.sourceHeadword) assert.equal({'baby-sitter':'babysitter','bowlegged':'bow-legged'}[r.w],r.sourceHeadword,`undocumented spelling alias: ${r.w}`);
   if(r.source.startsWith('https://www.collinsdictionary.com/')) assert.equal(r.source,'https://www.collinsdictionary.com/dictionary/english/'+(r.sourceHeadword||r.w));
   else if(r.source.startsWith('https://www.oxfordlearnersdictionaries.com/')) assert.equal(r.source,'https://www.oxfordlearnersdictionaries.com/definition/english/'+r.w.toLowerCase());
-  else assert.match(r.source, new RegExp('^https://dictionary\\.cambridge\\.org/(us/)?(?:pronunciation|dictionary)/english/'+r.w.toLowerCase()+'$'));
+  else assert.match(r.source, new RegExp('^https://dictionary\\.cambridge\\.org/(us/)?(?:pronunciation|dictionary)/english/'+(r.sourceHeadword||r.w.toLowerCase())+'$'));
   assert.match(r.checkedOn, /^\d{4}-\d{2}-\d{2}$/);
   for(const p of r.readings){
     assert(p.label && p.uk && p.us);
@@ -110,6 +110,23 @@ if(reviews.some(r=>r.w==='beloved')){
   assert(ctx.words.becoming.cn.includes('旧式'));
   assert(ctx.words.bellows.cn.includes('复数'));
   assert(ctx.words.bill.senses.some(s=>s[0].includes('鸟喙')));
+}
+if(reviews.some(r=>r.w==='bitumen')){
+  assert.equal(reading('bitumen')[0].uk,'ˈbɪtʃ.ə.mən');
+  assert.equal(reading('bitumen')[0].us,'baɪˈtuː.mən');
+  assert.equal(reading('booth')[0].uk,'buːð');
+  assert.equal(reading('booth')[0].us,'buːθ');
+  assert.equal(reading('blouse')[0].uk,'blaʊz');
+  assert.equal(reading('blouse')[0].us,'blaʊs');
+  assert.equal(reading('bow')[0].uk,'baʊ');
+  assert.equal(reading('bow')[1].uk,'bəʊ');
+  assert(ctx.words.bore.senses.some(s=>s[0].includes('涌潮')));
+  assert(ctx.words.botanical.pos.includes('n.'));
+  assert(ctx.words.bowls.cn.includes('作单数'));
+  const leg=reviews.find(r=>r.w==='bowlegged');
+  assert.equal(leg.sourceHeadword,'bow-legged');
+  assert(ctx.words.bowlegged.definitionReview.sources.includes(leg.source));
+  assert.equal(reading('bowlegged').length,2);
 }
 assert(ctx.App.pronunciationHTML({w:'<test>',ph:'<bad>',custom:true}).includes('&lt;bad&gt;'));
 assert(!ctx.App.pronunciationHTML({w:'<test>',ph:'<bad>'}).includes('<bad>'));

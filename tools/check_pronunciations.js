@@ -51,6 +51,18 @@ if(reviews.some(r=>r.w==='annex')){
   assert(ctx.words.anesthetic.definitionReview.sources.some(s=>s.includes('collinsdictionary.com')));
 }
 assert(!ctx.words.affection.cn.includes('影响'));
+if(reviews.some(r=>r.w==='approximate')){
+  assert.equal(reading('approximate')[0].uk,'əˈprɒk.sɪ.mət');
+  assert.equal(reading('approximate')[1].uk,'əˈprɒk.sɪ.meɪt');
+  assert.equal(reading('articulate')[1].us,'ɑːrˈtɪk.jə.leɪt');
+  assert.equal(reading('arithmetic')[1].us,'ˌærɪθˈmetɪk');
+  assert(reviews.find(r=>r.w==='arithmetic').sources.some(s=>s.includes('arithmetic_2')));
+  assert.equal(reading('as')[1].uk,'əz');
+  assert(ctx.App.pronunciationHTML(ctx.words.as,false).includes('weak'));
+  assert(ctx.words.array.cn.includes('数组'));
+  assert(ctx.words.assist.senses.some(s=>s[0].includes('助攻')));
+  assert(ctx.words.as.pos.includes('conj.'));
+}
 assert(!ctx.App.pronunciationHTML(ctx.words.lead, false).includes('铅'), 'study front leaks definition');
 assert(ctx.App.pronunciationHTML({w:'unreviewed',ph:'old'}).includes('尚未核对'));
 assert(ctx.App.pronunciationHTML({w:'<test>',ph:'<bad>',custom:true}).includes('&lt;bad&gt;'));

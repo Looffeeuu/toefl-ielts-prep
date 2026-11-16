@@ -4,9 +4,9 @@
 
 | 项目 | 已核对 | 尚待核对 |
 | --- | ---: | ---: |
-| 释义与词性 | 1035 | 8040 |
-| 英美音与主要分读 | 1047 | 8028 |
-| 两项均完成 | 1026 | 8049 |
+| 释义与词性 | 1135 | 7940 |
+| 英美音与主要分读 | 1147 | 7928 |
+| 两项均完成 | 1126 | 7949 |
 
 每词分别保存来源和日期，不能用核对音标代替核对释义。完整状态和接续队列见 [lexicon-progress.json](lexicon-progress.json)。优先处理缺失、截断、词性矛盾和用法标记，再按字母顺序推进。未找到可靠来源的条目保持待核对，不推测填充。
 
@@ -86,6 +86,12 @@ node tools/lexicon_progress.js
 
 
 
+## 批次 012
+
+完成 100 词：cabinet、cabinetmaker、cable、cadence、cafe、cafeteria、calamity、calcium、calculate、calculation、calculator、calendar、caliber、calibration、calibre、call、callous、calm、calorie、Cambridge、camel、camera、camouflage、camp、campaign、campus、can、Canadian、canal、cancel、cancellation、candid、candidate、candle、cane、cannibalism、cannon、canny、canoe、canopy、canteen、canter、canvas、canyon、cap、capability、capable、capacious、capacity、cape、capillary、capital、capricious、capsize、capsule、caption、captious、captivate、captive、captivity、capture、carapace、carat、carbohydrate、carbon、carcase、carcass、card、cardiac、cardinal、care、career、cash、careful、careless、carelessly、caress、cargo、caricature、carnage、carnal、carnival、carnivore、carnivorous、carpenter、carpet、carping、carriage、carrier、carrion、carrot、carry、cart、carton、cartoon、carve、carver、carving、cascade、case。
+
+待复核：careerism。已查到 Collins 释义和美音，但尚未找到可照录的完整英美 IPA；保留待核对，不计入完成。 [已查资料](https://www.collinsdictionary.com/dictionary/english/careerism)。不计入完成数。
+
 ## 发布节奏
 
-每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 0 词，距下次发布还差 1000 词。发布基线为 622b7ffac50f5c24b3ab3424a6faa53e3ba406d4，当时两项均核对 1026 词；当前页面显示本地核对进度，不表示已上线。
+每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 100 词，距下次发布还差 900 词。发布基线为 622b7ffac50f5c24b3ab3424a6faa53e3ba406d4，当时两项均核对 1026 词；当前页面显示本地核对进度，不表示已上线。

@@ -143,6 +143,22 @@ if(reviews.some(r=>r.w==='buffet')){
   assert(ctx.words.Britain.cn.includes('并非严格同义'));
   assert(ctx.words.budget.pos.includes('adj.'));
 }
+if(reviews.some(r=>r.w==='capillary')){
+  const can=reading('can');
+  assert.equal(can.find(r=>r.label==='modal strong').uk,'kæn');
+  assert.equal(can.find(r=>r.label==='modal weak').uk,'kən');
+  assert.equal(can.find(r=>r.label==='n./vt.').us,'kæn');
+  assert(ctx.App.pronunciationHTML(ctx.words.can,{hideMeaning:true}).includes('weak'));
+  assert.equal(reading('capillary')[0].uk,'kəˈpɪl.ər.i');
+  assert.equal(reading('capillary')[0].us,'ˈkæp.ə.ler.i');
+  assert.equal(reading('candidate').length,2);
+  assert.equal(reading('candidate')[1].us,'ˈkæn.dɪ.deɪt');
+  assert(ctx.words.caption.cn.includes('字幕'));
+  assert(ctx.words.candid.cn.includes('非摆拍'));
+  assert(ctx.words.cardinal.senses.some(s=>s[0].includes('基数')));
+  assert(ctx.words.case.senses.some(s=>s[0].includes('病例')));
+  assert(ctx.words.carcase.definitionReview.sources.includes('https://dictionary.cambridge.org/dictionary/english/carcass'));
+}
 assert(ctx.App.pronunciationHTML({w:'<test>',ph:'<bad>',custom:true}).includes('&lt;bad&gt;'));
 assert(!ctx.App.pronunciationHTML({w:'<test>',ph:'<bad>'}).includes('<bad>'));
 assert(!vocab.includes('esc(o.ph)'), 'a vocab surface still renders legacy IPA directly');

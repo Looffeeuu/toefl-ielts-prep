@@ -20,7 +20,7 @@ for(const batch of ctx.window.LEXICON_REVIEW_BATCHES){
     assert(progress.entries.find(e=>e.word===w)?.definitionChecked);
     assert(!progress.queue.includes(w));
     for(const [label,example] of d.senses){
-      assert.match(label,/^(n|v|vt|vi|adj|adv|prep|conj|pron)\./);
+      assert.match(label,/^(n|v|vt|vi|adj|adv|prep|conj|pron|det)\./);
       assert.match(example,/[.!?]$/);
       assert(!/[\u3400-\u9fff]/.test(example));
       const stem=w.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');

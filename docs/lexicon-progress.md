@@ -4,9 +4,9 @@
 
 | 项目 | 已核对 | 尚待核对 |
 | --- | ---: | ---: |
-| 释义与词性 | 935 | 8140 |
-| 英美音与主要分读 | 947 | 8128 |
-| 两项均完成 | 926 | 8149 |
+| 释义与词性 | 1035 | 8040 |
+| 英美音与主要分读 | 1047 | 8028 |
+| 两项均完成 | 1026 | 8049 |
 
 每词分别保存来源和日期，不能用核对音标代替核对释义。完整状态和接续队列见 [lexicon-progress.json](lexicon-progress.json)。优先处理缺失、截断、词性矛盾和用法标记，再按字母顺序推进。未找到可靠来源的条目保持待核对，不推测填充。
 
@@ -80,6 +80,12 @@ node tools/lexicon_progress.js
 
 待复核：booklist。已找到 Collins 的 book list 释义，但尚未找到可照录的完整英美 IPA，暂不计入完成。 [已查资料](https://www.collinsdictionary.com/us/dictionary/english/book-list)。不计入完成数。
 
+## 批次 011
+
+完成 100 词：break、breakdown、breakfast、breakthrough、breakup、breath、breathe、breathing、breathless、breathtaking、breed、breeding、breeze、brew、bribe、brick、bridge、briefcase、brighten、brilliance、brilliant、brilliantly、brim、bring、brink、briny、brisk、briskness、Bristol、Britain、British、brittle、broad-brimmed、broadcast、broaden、brochure、bronze、brood、brook、brown、brownish、browse、bruise、brutal、bubble、buck、bucket、buckle、bud、buddy、budge、budget、buffet、bug、buggy、bugle、building、bulb、bulge、bulk、bulky、bull、bulletin、bully、bumblebee、bump、bumper、bunch、bundle、bungalow、bunk、buoyant、burden、burdensome、bureaucracy、burgeon、burger、burglar、burial、burning、burnish、burrow、burst、bus、bush、business、bust、bustle、butcher、butt、butter、butterfly、buzz、buzzer、by-product、bypass、byword、cab、cabal、cabin。
+
+
+
 ## 发布节奏
 
-每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 900 词，距下次发布还差 100 词。发布基线为 ee4d6d1d0c2bb6f95b372ddad7d7a5e6166699ee，当时两项均核对 26 词；当前页面显示本地核对进度，不表示已上线。
+每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 1000 词，距下次发布还差 0 词。发布基线为 ee4d6d1d0c2bb6f95b372ddad7d7a5e6166699ee，当时两项均核对 26 词；当前页面显示本地核对进度，不表示已上线。

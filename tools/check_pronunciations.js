@@ -128,6 +128,21 @@ if(reviews.some(r=>r.w==='bitumen')){
   assert(ctx.words.bowlegged.definitionReview.sources.includes(leg.source));
   assert.equal(reading('bowlegged').length,2);
 }
+if(reviews.some(r=>r.w==='buffet')){
+  assert.equal(reading('breath')[0].uk,'breθ');
+  assert.equal(reading('breathe')[0].uk,'briːð');
+  assert.equal(reading('buffet').length,2);
+  assert.equal(reading('buffet')[0].uk,'ˈbʊf.eɪ');
+  assert.equal(reading('buffet')[0].us,'bəˈfeɪ');
+  assert.equal(reading('buffet')[1].uk,'ˈbʌf.ɪt');
+  assert(ctx.App.pronunciationHTML(ctx.words.buffet).includes('反复猛击'));
+  assert.equal(reading('brochure')[0].uk,'ˈbrəʊ.ʃəʳ');
+  assert.equal(reading('brochure')[0].us,'broʊˈʃʊr');
+  assert(ctx.words.brook.senses.some(s=>s[0].includes('容忍')));
+  assert(ctx.words.bulb.cn.includes('鳞茎'));
+  assert(ctx.words.Britain.cn.includes('并非严格同义'));
+  assert(ctx.words.budget.pos.includes('adj.'));
+}
 assert(ctx.App.pronunciationHTML({w:'<test>',ph:'<bad>',custom:true}).includes('&lt;bad&gt;'));
 assert(!ctx.App.pronunciationHTML({w:'<test>',ph:'<bad>'}).includes('<bad>'));
 assert(!vocab.includes('esc(o.ph)'), 'a vocab surface still renders legacy IPA directly');

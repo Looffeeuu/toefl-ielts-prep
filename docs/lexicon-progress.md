@@ -4,9 +4,9 @@
 
 | 项目 | 已核对 | 尚待核对 |
 | --- | ---: | ---: |
-| 释义与词性 | 1135 | 7940 |
-| 英美音与主要分读 | 1147 | 7928 |
-| 两项均完成 | 1126 | 7949 |
+| 释义与词性 | 1235 | 7840 |
+| 英美音与主要分读 | 1247 | 7828 |
+| 两项均完成 | 1226 | 7849 |
 
 每词分别保存来源和日期，不能用核对音标代替核对释义。完整状态和接续队列见 [lexicon-progress.json](lexicon-progress.json)。优先处理缺失、截断、词性矛盾和用法标记，再按字母顺序推进。未找到可靠来源的条目保持待核对，不推测填充。
 
@@ -92,6 +92,12 @@ node tools/lexicon_progress.js
 
 待复核：careerism。已查到 Collins 释义和美音，但尚未找到可照录的完整英美 IPA；保留待核对，不计入完成。 [已查资料](https://www.collinsdictionary.com/dictionary/english/careerism)。不计入完成数。
 
+## 批次 013
+
+完成 100 词：cashier、cassette、cast、cast-iron、caste、castigate、casting、castle、casual、casualty、cataclysm、catalog、catalogue、catalyst、catalyze、catastrophe、catch、catching、categorical、categorize、category、cater、catering、caterpillar、cathedral、catholic、cattle、cause、caustic、caution、cautious、cautiously、cave、cavern、cavity、CD、CD-ROM、cease、ceaseless、cedar、ceiling、celebrate、celebrated、celebrity、celestial、cell、cellar、cellist、cello、cellular、cellulose、celsius、cement、cemetery、censor、censure、census、centenary、centennial、center、centigrade、central、centre、century、ceramic、ceramics、cereal、ceremonial、ceremonious、ceremony、certainty、certificate、certify、cession、chafe、chagrin、chair、chalk、challenge、challenging、chamber、champagne、champion、championship、chance、chancellor、channel、chant、chaos、chaotic、chapel、chapter、character、characteristic、characterize、charcoal、charge、charisma、charitable、charity。
+
+
+
 ## 发布节奏
 
-每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 100 词，距下次发布还差 900 词。发布基线为 622b7ffac50f5c24b3ab3424a6faa53e3ba406d4，当时两项均核对 1026 词；当前页面显示本地核对进度，不表示已上线。
+每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 200 词，距下次发布还差 800 词。发布基线为 622b7ffac50f5c24b3ab3424a6faa53e3ba406d4，当时两项均核对 1026 词；当前页面显示本地核对进度，不表示已上线。

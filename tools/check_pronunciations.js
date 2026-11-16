@@ -159,6 +159,17 @@ if(reviews.some(r=>r.w==='capillary')){
   assert(ctx.words.case.senses.some(s=>s[0].includes('病例')));
   assert(ctx.words.carcase.definitionReview.sources.includes('https://dictionary.cambridge.org/dictionary/english/carcass'));
 }
+if(reviews.some(r=>r.w==='certificate')){
+  assert.equal(reading('certificate').length,2);
+  assert.equal(reading('certificate')[0].uk,'səˈtɪf.ɪ.kət');
+  assert.equal(reading('certificate')[1].us,'sɚˈtɪf.ɪ.keɪt');
+  assert.equal(reading('centenary').length,2);
+  assert.equal(reading('category')[0].uk,'ˈkæt.ə.ɡri');
+  assert(ctx.words.censor.cn.includes('审查'));
+  assert(ctx.words.censure.cn.includes('谴责'));
+  assert(ctx.words.catholic.cn.includes('大写 Catholic'));
+  assert(ctx.words.cast.senses.some(s=>s[0].includes('石膏')));
+}
 assert(ctx.App.pronunciationHTML({w:'<test>',ph:'<bad>',custom:true}).includes('&lt;bad&gt;'));
 assert(!ctx.App.pronunciationHTML({w:'<test>',ph:'<bad>'}).includes('<bad>'));
 assert(!vocab.includes('esc(o.ph)'), 'a vocab surface still renders legacy IPA directly');

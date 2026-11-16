@@ -128,6 +128,11 @@ Object.keys(window).filter(k => /^SENSE_WORDS_\d+$/.test(k)).map(k => window[k])
   o.pos = r.pos; o.cn = r.cn; o.definitionReview = r;
   if(r.senses) o.senses = r.senses;
 });
+const PRON_REVIEWS = Object.fromEntries((window.PRONUNCIATION_REVIEWS || []).map(r => [r.w, r]));
+Object.values(PRON_REVIEWS).forEach(r => {
+  const o = BY[r.w]; if(!o) return;
+  o.pronunciationReview = r;
+});
 const BASE_N = WORDS.length;
 
 /* ---------- 我的词表（自己导入的词表） ---------- */
@@ -153,6 +158,7 @@ function rebuildCustom(defs){
       let o = BY[w] || BY[w.toLowerCase()];
       if(!o){ o = { w, ph:ph||"", pos:pos||"", cn:cn||"", syn:[], ex:"", exs:[], basic:"", g:"custom", t:L.id, custom:true }; BY[w] = o; WORDS.push(o) }
       else if(cn && !o.custom && !o.cn.includes(cn) && !o.myCn){ o.myCn = cn; noted.push(o) }
+      if(PRON_REVIEWS[o.w.toLowerCase()]) o.pronunciationReview = PRON_REVIEWS[o.w.toLowerCase()];
       if(!seen.has(o)){ seen.add(o); L.words.push(o) }
     });
     TOPIC[L.id] = L; return L;
@@ -177,7 +183,7 @@ const fam = p => (p||"").split(/[./]/)[0];
 function hlRe(w){ const stem = (w.length>5 || /[a-z]y$/.test(w)) ? w.slice(0,-1) : w; return new RegExp("\\b(" + stem.replace(/[.*+?^${}()|[\]\\]/g,"\\$&") + "\\w*)","i") }
 const exHTML = o => o.ex ? esc(o.ex).replace(hlRe(o.w), "<mark>$1</mark>") : "";
 const exBlank = o => o.ex ? esc(o.ex).replace(hlRe(o.w), '<span class="blank">' + o.w[0] + " _ _ _</span>") : "";
-const phHTML = o => o.ph ? `<span class="ph">/${esc(o.ph)}/</span>` : "";
+const phHTML = (o, withMeaning = true) => App.pronunciationHTML(o, withMeaning);
 // 构词：前缀 / 词根 / 后缀（js/word-parts.js）。翻开答案前只显示怎么拆，翻开后再显示每一部分的意思
 function partsHTML(o, withGloss){
   // 有人工记忆线索的词只显示拆分，意思放在答案里的「记忆」一栏
@@ -460,7 +466,7 @@ function renderStudy(){
   box.innerHTML = `${undoBar}<div class="card">
     <div class="meta"><span class="chip ${kind[0]}">${kind[1]}</span><span>${esc(listName(o))}</span>${o.basic ? `<span class="chip">${BASIC[o.basic]}</span>` : ""}<span class="left">剩余 ${queue.length}</span></div>
     <div class="head"><span class="headword">${esc(o.w)}</span><span class="pos">${esc(o.pos)}</span>${speakBtn(o.w)}${partsHTML(o, revealed)}</div>
-    ${phHTML(o)}${irrHTML(o)}
+    ${phHTML(o, revealed)}${irrHTML(o)}
     ${revealed ? `<div class="back">${backHTML(o)}</div>` : ""}
     <div class="actions">
       ${revealed ? `<div class="rates">${["不认识","模糊","认识","太简单"].map((t,g) => `<button class="rate" data-g="${g}"><b>${t}<kbd>${g+1}</kbd></b><span>${prev[g]}后再见</span></button>`).join("")}</div>`
@@ -631,7 +637,7 @@ function renderBank(){
   if(q) all.sort((a,b) => (b.w.toLowerCase()===q) - (a.w.toLowerCase()===q) || (b.w.toLowerCase().startsWith(q)) - (a.w.toLowerCase().startsWith(q)));
   const list = all.slice(0, SEARCH_MAX);
   $("#wordRows").innerHTML = list.length ? list.map(o => { const [s,t] = status(o.w);
-    return `<tr data-detail="${esc(o.w)}" tabindex="0"><td class="w">${esc(o.w)}${o.ph ? `<div class="ph">/${esc(o.ph)}/</div>` : ""}</td><td class="p">${esc(o.pos)}</td><td>${esc(o.cn)}</td><td>${esc(o.syn.join(", "))}</td><td><span class="chip ${s}">${t}</span></td></tr>` }).join("")
+    return `<tr data-detail="${esc(o.w)}" tabindex="0"><td class="w">${esc(o.w)}${phHTML(o)}</td><td class="p">${esc(o.pos)}</td><td>${esc(o.cn)}</td><td>${esc(o.syn.join(", "))}</td><td><span class="chip ${s}">${t}</span></td></tr>` }).join("")
       + (all.length>SEARCH_MAX ? `<tr><td colspan="5" class="note">共找到 ${all.length} 个，只显示前 ${SEARCH_MAX} 个，输入更多字母可以缩小范围。</td></tr>` : "")
     : `<tr><td colspan="5" class="note">没有找到「${esc(q)}」。</td></tr>`;
 }

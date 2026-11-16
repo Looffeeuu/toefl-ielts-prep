@@ -668,3 +668,9 @@ tr.cb-wrong td{background:color-mix(in srgb,var(--bad) 8%,transparent)}
 .cb-score{font-family:var(--f-mono);font-size:12px;padding:1px 6px;border-radius:999px;background:var(--surface-2)}
 .cb-score.L{background:color-mix(in srgb,var(--s1) 18%,transparent)}
 .cb-score.R,.cb-score.G{background:color-mix(in srgb,var(--s3) 18%,transparent)}
+.pronunciations{display:flex;flex-direction:column;gap:5px;margin:12px 0;font-size:17px;line-height:1.55;font-weight:400}
+.pron-row{display:flex;flex-wrap:wrap;column-gap:16px;row-gap:2px;align-items:baseline}
+.pron-label{font-family:var(--f-body, sans-serif);font-size:13px;opacity:.8}
+.pron-source{font-family:var(--f-body, sans-serif);font-size:12px;font-weight:400;opacity:.75}
+.pronunciations .ph{margin:0}
+#wordRows .pronunciations{font-size:14px;margin:5px 0;max-width:32rem}

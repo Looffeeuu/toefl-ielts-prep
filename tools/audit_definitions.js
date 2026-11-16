@@ -7,7 +7,7 @@ const ctx = { window:{}, App:{} }; vm.createContext(ctx);
 const scripts = [...html.matchAll(/src="js\/([^"?]+)(?:\?[^" ]*)?"/g)].map(m=>m[1]);
 for(const f of scripts){
   if(f==='vocab.js') break;
-  if(/^words.*\.js$/.test(f)||f==='definition-reviews.js') vm.runInContext(fs.readFileSync(path.join(dir,f),'utf8'),ctx,{filename:f});
+  if(/^words.*\.js$/.test(f)||f==='definition-reviews.js'||f==='pronunciation-reviews.js') vm.runInContext(fs.readFileSync(path.join(dir,f),'utf8'),ctx,{filename:f});
 }
 const vocab = fs.readFileSync(path.join(dir,'vocab.js'),'utf8');
 vm.runInContext(vocab.slice(0,vocab.indexOf('const BASE_N = WORDS.length;'))+'globalThis.auditWords = BY;})();',ctx);

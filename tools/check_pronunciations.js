@@ -39,6 +39,17 @@ assert.equal(reading('affect')[1].uk,'ˈæf.ekt');
 assert.equal(reading('affix')[1].uk,'ˈæf.ɪks');
 assert.equal(reading('adept')[1].uk,'ˈædept');
 assert.equal(ctx.words.agenda.pos,'n.');
+if(reviews.some(r=>r.w==='annex')){
+  assert.equal(reading('annex')[0].uk,'ˈæn.ɪks');
+  assert.equal(reading('annex')[1].uk,'ænˈeks');
+  assert.equal(reading('appropriate')[0].uk,'əˈprəʊ.pri.ət');
+  assert.equal(reading('appropriate')[1].uk,'əˈprəʊ.pri.eɪt');
+  assert.equal(reading('antedate')[0].uk,'ˌæn.tiˈdeɪt');
+  assert.equal(reading('antedate')[0].us,'ˈæn.t̬i.deɪt');
+  assert(ctx.words.apparent.senses.some(s=>s[0].includes('表面')));
+  assert(ctx.words.apprehension.senses.some(s=>s[0].includes('理解')));
+  assert(ctx.words.anesthetic.definitionReview.sources.some(s=>s.includes('collinsdictionary.com')));
+}
 assert(!ctx.words.affection.cn.includes('影响'));
 assert(!ctx.App.pronunciationHTML(ctx.words.lead, false).includes('铅'), 'study front leaks definition');
 assert(ctx.App.pronunciationHTML({w:'unreviewed',ph:'old'}).includes('尚未核对'));

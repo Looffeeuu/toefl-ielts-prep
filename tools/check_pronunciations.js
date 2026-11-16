@@ -17,6 +17,7 @@ for(const r of reviews){
   assert(!seen.has(r.w), `duplicate ${r.w}`); seen.add(r.w);
   if(ctx.words[r.w]) assert.equal(ctx.words[r.w].pronunciationReview, r, `not applied: ${r.w}`);
   if(r.source.startsWith('https://www.collinsdictionary.com/')) assert.equal(r.source,'https://www.collinsdictionary.com/dictionary/english/'+r.w);
+  else if(r.source.startsWith('https://www.oxfordlearnersdictionaries.com/')) assert.equal(r.source,'https://www.oxfordlearnersdictionaries.com/definition/english/'+r.w.toLowerCase());
   else assert.match(r.source, new RegExp('^https://dictionary\\.cambridge\\.org/(us/)?(?:pronunciation|dictionary)/english/'+r.w.toLowerCase()+'$'));
   assert.match(r.checkedOn, /^\d{4}-\d{2}-\d{2}$/);
   for(const p of r.readings){
@@ -64,6 +65,19 @@ if(reviews.some(r=>r.w==='approximate')){
   assert(ctx.words.as.pos.includes('conj.'));
 }
 assert(!ctx.App.pronunciationHTML(ctx.words.lead, false).includes('铅'), 'study front leaks definition');
+if(reviews.some(r=>r.w==='august')){
+  assert.equal(reading('august')[0].uk,'ˈɔː.ɡəst');
+  assert.equal(reading('august')[1].uk,'ɔːˈɡʌst');
+  assert.equal(reading('associate')[0].uk,'əˈsəʊ.si.eɪt');
+  assert.equal(reading('associate')[1].uk,'əˈsəʊ.ʃi.ət');
+  assert.equal(reading('attribute')[1].uk,'əˈtrɪb.juːt');
+  assert.equal(reading('austerity')[0].us,'ɔːˈsterəti');
+  assert(ctx.App.pronunciationHTML(ctx.words.austerity).includes('牛津词典'));
+  assert(ctx.words.assumption.cn.includes('承担'));
+  assert(ctx.words.attendant.pos.includes('adj.'));
+  assert(ctx.words.auditor.cn.includes('旁听生'));
+  assert.equal(reviews.find(r=>r.w==='atomization').source,'https://dictionary.cambridge.org/pronunciation/english/atomization');
+}
 assert(ctx.App.pronunciationHTML({w:'unreviewed',ph:'old'}).includes('尚未核对'));
 assert(ctx.App.pronunciationHTML({w:'<test>',ph:'<bad>',custom:true}).includes('&lt;bad&gt;'));
 assert(!ctx.App.pronunciationHTML({w:'<test>',ph:'<bad>'}).includes('<bad>'));

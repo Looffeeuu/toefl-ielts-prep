@@ -4,9 +4,9 @@
 
 | 项目 | 已核对 | 尚待核对 |
 | --- | ---: | ---: |
-| 释义与词性 | 535 | 8540 |
-| 英美音与主要分读 | 550 | 8525 |
-| 两项均完成 | 526 | 8549 |
+| 释义与词性 | 635 | 8440 |
+| 英美音与主要分读 | 648 | 8427 |
+| 两项均完成 | 626 | 8449 |
 
 每词分别保存来源和日期，不能用核对音标代替核对释义。完整状态和接续队列见 [lexicon-progress.json](lexicon-progress.json)。优先处理缺失、截断、词性矛盾和用法标记，再按字母顺序推进。未找到可靠来源的条目保持待核对，不推测填充。
 
@@ -24,7 +24,7 @@ node tools/check_pronunciations.js --write
 node tools/lexicon_progress.js
 ```
 
-下一批队列前 30 词：accidents、accommodations、accompanying、account for、accountants、actions、activities、adults、advantages、advertisements、affairs、agencies、aggressiveness、animals、antibiotics、approaches、approaching、areas、articles、assignments、astonished、asymmetrical、attacks、attempts、automated、avocational、awkwardly、axe、baby-sitter、barrenness。
+下一批队列前 30 词：accidents、accommodations、accompanying、account for、accountants、actions、activities、adults、advantages、advertisements、affairs、agencies、aggressiveness、animals、antibiotics、approaches、approaching、areas、articles、assignments、attacks、attempts、automated、avocational、awkwardly、axe、baby-sitter、barrenness、beds、beginners。
 
 ## 批次 002
 
@@ -56,6 +56,12 @@ node tools/lexicon_progress.js
 
 
 
+## 批次 007
+
+完成 100 词：assistance、assistant、assistantship、associate、association、assorted、assortment、assuage、assume、assumption、assurance、assure、assuredly、asteroid、astonish、astonished、astonishing、astound、astounding、astronomer、astronomical、astronomy、astute、asylum、asymmetrical、atheism、atheist、Athens、athlete、atlas、atmosphere、atmospheric、atom、atomic、atomization、atrophy、attach、attached、attachment、attack、attain、attainment、attempt、attend、attendance、attendant、attention、attentive、attire、attorney、attract、attraction、attractive、attribute、attrition、auction、audacious、audible、audience、audio、audit、audition、auditor、auditorium、auditory、auger、augment、august、aura、aurora、auspices、auspicious、austerity、Australia、Australian、authentic、authenticate、author、authoritative、authority、authorize、autobiographical、autobiography、autocrat、automatic、automation、automobile、automotive、autonomous、autonomy、autopsy、auxiliary、avail、available、avalanche、avant-garde、avarice、avaricious、avenue、average。
+
+
+
 ## 发布节奏
 
-每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 500 词，距下次发布还差 500 词。发布基线为 ee4d6d1d0c2bb6f95b372ddad7d7a5e6166699ee，当时两项均核对 26 词；当前页面显示本地核对进度，不表示已上线。
+每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 600 词，距下次发布还差 400 词。发布基线为 ee4d6d1d0c2bb6f95b372ddad7d7a5e6166699ee，当时两项均核对 26 词；当前页面显示本地核对进度，不表示已上线。

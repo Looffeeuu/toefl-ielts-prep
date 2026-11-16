@@ -3,12 +3,12 @@
   "scope": "全部内置词条的来源和结构一致性；仅 dictionary-reviewed 条目经过本轮外部词典核对。其他候选不能据此判定为虚假或正确。",
   "total": 9075,
   "sources": {
-    "editorial-unverified": 3902,
-    "dictionary-reviewed": 635,
-    "ecdict-derived": 4538
+    "editorial-unverified": 3866,
+    "dictionary-reviewed": 735,
+    "ecdict-derived": 4474
   },
   "flagCounts": {
-    "missing-pos": 29,
+    "missing-pos": 28,
     "sense-pos-mismatch": 38,
     "possible-truncation": 32,
     "usage-label-review": 7
@@ -8174,761 +8174,770 @@
     {
       "word": "averse",
       "pos": "adj.",
-      "definition": "反对的；不愿意的",
-      "origin": "editorial-unverified",
+      "definition": "强烈反对的；不愿意的；厌恶的（常接 to，通常作表语）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-10.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/averse",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "aversion",
       "pos": "n.",
-      "definition": "厌恶",
-      "origin": "editorial-unverified",
+      "definition": "强烈反感；厌恶；令人厌恶的事物（常接 to）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-8.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/aversion",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "avert",
-      "pos": "v.",
-      "definition": "避免；转移（目光）",
-      "origin": "editorial-unverified",
+      "pos": "vt.",
+      "definition": "避免；防止（坏事）；移开（目光或思绪）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-4.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/avert",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "aviation",
       "pos": "n.",
-      "definition": "航空",
-      "origin": "editorial-unverified",
+      "definition": "航空；飞行；飞机设计、制造、维护及航空运输业",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-5.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/aviation",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "aviator",
       "pos": "n.",
-      "definition": "飞行员",
-      "origin": "ecdict-derived",
+      "definition": "飞行员（旧式用语）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/aviator",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "avid",
       "pos": "adj.",
-      "definition": "热衷的",
-      "origin": "editorial-unverified",
+      "definition": "热切的；热衷的；兴趣浓厚的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-5.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/avid",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "avocation",
       "pos": "n.",
-      "definition": "副业；业余爱好",
-      "origin": "editorial-unverified",
+      "definition": "业余爱好；主业之外出于兴趣从事的活动",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-10.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/avocation",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "avocational",
-      "pos": "",
-      "definition": "业余爱好的；副业的",
-      "origin": "ecdict-derived",
+      "pos": "adj.",
+      "definition": "业余爱好的；主业之外出于兴趣从事的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
-      "flags": [
-        "missing-pos"
-      ]
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/avocational",
+      "checkedOn": "2026-11-16",
+      "flags": []
     },
     {
       "word": "avoid",
       "pos": "vt.",
-      "definition": "避免，防止，撤消",
-      "origin": "ecdict-derived",
+      "definition": "避开；回避；避免；防止（接动词时用 -ing）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/avoid",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "avoidable",
       "pos": "adj.",
-      "definition": "可避免的",
-      "origin": "ecdict-derived",
+      "definition": "可以避免的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/avoidable",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "avoidance",
       "pos": "n.",
-      "definition": "回避",
-      "origin": "editorial-unverified",
+      "definition": "避免；回避；因恐惧而躲避（心理学）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-5.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/avoidance",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "avouch",
-      "pos": "v.",
-      "definition": "断言，主张，保证，承认",
-      "origin": "ecdict-derived",
+      "pos": "vt.",
+      "definition": "保证；担保；承认；断言（古旧用语）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.collinsdictionary.com/dictionary/english/avouch",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "avow",
       "pos": "vt.",
-      "definition": "公开宣称",
-      "origin": "editorial-unverified",
+      "definition": "公开承认；公开声明（正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-10.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/avow",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "award",
       "pos": "n./vt.",
-      "definition": "n. 奖品，裁定，判决　vt. 授予，给予",
-      "origin": "ecdict-derived",
+      "definition": "n. 奖；奖金；判定的赔偿金　vt. 授予；颁发；判给",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/award",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "aware",
       "pos": "adj.",
-      "definition": "知道的，有觉悟的",
-      "origin": "ecdict-derived",
+      "definition": "意识到的；知道的；了解的（作表语）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/aware",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "awareness",
       "pos": "n.",
-      "definition": "意识；认识",
-      "origin": "editorial-unverified",
+      "definition": "意识；认识；知晓；了解",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-2.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/awareness",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "awe",
       "pos": "n./vt.",
-      "definition": "n. 敬畏　vt. 使敬畏",
-      "origin": "editorial-unverified",
+      "definition": "n. 敬畏；惊叹　vt. 使敬畏；使惊叹",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-2.js",
-        "js/words-ext.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/awe",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "awful",
       "pos": "adj.",
-      "definition": "可怕的，庄严的，虔敬的",
-      "origin": "ecdict-derived",
+      "definition": "糟糕的；极坏的；令人不快的；极大的（如 an awful lot）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/awful",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "awkward",
       "pos": "adj.",
-      "definition": "笨拙的，棘手的",
-      "origin": "ecdict-derived",
+      "definition": "难处理的；不便的；令人尴尬的；局促的；故意不合作的（尤英）；动作笨拙的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/awkward",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "awkwardly",
       "pos": "adv.",
-      "definition": "笨拙地；尴尬地",
-      "origin": "editorial-unverified",
+      "definition": "尴尬地；笨拙地；造成不便地；难处理地；故意不合作地",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-8.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/awkwardly",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "axe",
-      "pos": "n.",
-      "definition": "斧头",
-      "origin": "editorial-unverified",
+      "pos": "n./vt.",
+      "definition": "n. 斧；解雇或取消（the axe）；吉他等乐器（俚语）　vt. 裁撤；取消；大幅削减（美式亦拼 ax）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-8.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/axe",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "axis",
       "pos": "n.",
-      "definition": "轴；轴线",
-      "origin": "editorial-unverified",
+      "definition": "轴；轴线；坐标轴；枢椎（医学）；政治联盟；复数 axes",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/axis",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "azure",
-      "pos": "n./adj.",
-      "definition": "n. 天蓝色，碧空　adj. 蔚蓝的",
-      "origin": "ecdict-derived",
+      "pos": "adj./n.",
+      "definition": "adj. 天蓝色的；蔚蓝的　n. 天蓝色；蔚蓝色",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/azure",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/azure",
+        "https://www.collinsdictionary.com/dictionary/english/azure"
+      ],
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "baboon",
       "pos": "n.",
       "definition": "狒狒",
-      "origin": "ecdict-derived",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/baboon",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "baby-sitter",
       "pos": "n.",
-      "definition": "看顾小孩的人",
-      "origin": "ecdict-derived",
+      "definition": "临时照看孩子的人（父母外出时；亦拼 babysitter）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.collinsdictionary.com/dictionary/english/baby-sitter",
+      "dictionaries": [
+        "https://www.collinsdictionary.com/dictionary/english/baby-sitter",
+        "https://www.collinsdictionary.com/dictionary/english/babysitter"
+      ],
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "bachelor",
       "pos": "n.",
-      "definition": "单身汉，学士",
-      "origin": "ecdict-derived",
+      "definition": "未婚男子；学士；学士学位获得者；学士学位；单身公寓（加拿大）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/bachelor",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/bachelor",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/bachelor",
+        "https://www.collinsdictionary.com/dictionary/english/bachelor"
+      ],
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "back",
-      "pos": "adj./vt.",
-      "definition": "adj. 后面的　vt. 使后退，支持",
-      "origin": "ecdict-derived",
+      "pos": "adv./n./adj./v.",
+      "definition": "adv. 回去；回来；向后；作为回应；追溯到过去　n. 背部；后面；背面；靠背　adj. 后面的；背面的　v. 支持；资助；（使）后退",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/back",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "backbone",
       "pos": "n.",
-      "definition": "脊柱；支柱",
-      "origin": "editorial-unverified",
+      "definition": "脊柱；骨干；支柱；勇气；骨气",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-5.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/backbone",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "backdrop",
       "pos": "n.",
-      "definition": "背景",
-      "origin": "editorial-unverified",
+      "definition": "舞台背景幕；背景景物；事件的背景形势",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-4.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/backdrop",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "background",
       "pos": "n.",
-      "definition": "背景，背景资料",
-      "origin": "ecdict-derived",
+      "definition": "背景；底色；背景声；事情的来龙去脉；家庭或教育背景；经历",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/background",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "backpack",
-      "pos": "n.",
-      "definition": "背包",
-      "origin": "editorial-unverified",
+      "pos": "n./v.",
+      "definition": "n. 背包　v. 背包旅行；背包徒步露营（美）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-4.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/backpack",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "backward",
-      "pos": "adv./adj.",
-      "definition": "adv. 向后地，相反地　adj. 向后的，相反的",
-      "origin": "ecdict-derived",
+      "pos": "adj./adv.",
+      "definition": "adj. 向后的；落后的（有时含冒犯意味）；迟疑不前的（英）；学习困难的（旧式冒犯用语）　adv. 向后；倒着；向过去",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/backward",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/backward",
+        "https://dictionary.cambridge.org/dictionary/english/backwards"
+      ],
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "bacon",
       "pos": "n.",
-      "definition": "熏猪肉",
-      "origin": "ecdict-derived",
+      "definition": "培根；咸猪肉",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/bacon",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "bacteria",
       "pos": "n.",
-      "definition": "细菌（复数）",
-      "origin": "editorial-unverified",
+      "definition": "细菌（bacterium 的复数）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/bacteria",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "bacterium",
       "pos": "n.",
-      "definition": "细菌",
-      "origin": "ecdict-derived",
+      "definition": "细菌（单数；复数 bacteria）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/bacterium",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "badge",
-      "pos": "n.",
-      "definition": "徽章，标记",
-      "origin": "ecdict-derived",
+      "pos": "n./vt.",
+      "definition": "n. 徽章；标志；身份牌；警徽；臂章　vt. 给…加标记或徽章",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/badge",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "badger",
       "pos": "n./vt.",
-      "definition": "n. 獾，獾皮毛　vt. 纠缠",
-      "origin": "ecdict-derived",
+      "definition": "n. 獾　vt. 纠缠；反复催问或要求",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/badger",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "badminton",
       "pos": "n.",
       "definition": "羽毛球运动",
-      "origin": "ecdict-derived",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/badminton",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "baffle",
-      "pos": "vt./vi.",
-      "definition": "vt. 困惑，为难，使挫折　vi. 徒作挣扎",
-      "origin": "ecdict-derived",
+      "pos": "vt./n.",
+      "definition": "vt. 使困惑；使受挫；阻挡或调节流体、声音、光线　n. 挡板；导流板；障音板（工程）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/baffle",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/baffle",
+        "https://www.collinsdictionary.com/dictionary/english/baffle"
+      ],
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "baggage",
       "pos": "n.",
-      "definition": "行李",
-      "origin": "ecdict-derived",
+      "definition": "行李；影响思想或行为的经历、观念及情绪包袱",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/baggage",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "bait",
       "pos": "n./vt.",
-      "definition": "n. 诱饵　vt. 在…放诱饵",
-      "origin": "editorial-unverified",
+      "definition": "n. 饵；诱饵；诱惑物　vt. 故意激怒；放饵于；纵犬攻击动物以取乐",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-1.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/bait",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "bake",
-      "pos": "vt./vi.",
-      "definition": "vt. 烘焙，烤　vi. 烤面包",
-      "origin": "ecdict-derived",
+      "pos": "v./n.",
+      "definition": "v. 烘烤；焙；烧硬（陶土等）；热得难受（非正式）　n. 烤制的菜肴；烘焙食品",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/bake",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "balance",
-      "pos": "n./vi.",
-      "definition": "n. 平衡，差额　vi. 平衡，相等",
-      "origin": "ecdict-derived",
+      "pos": "n./v.",
+      "definition": "n. 平衡；均衡；余额；余款；剩余部分；天平　v. （使）平衡；权衡；使收支相抵",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/balance",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/balance",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/balance_1"
+      ],
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "balanced",
       "pos": "adj.",
-      "definition": "平衡的；均衡的",
-      "origin": "editorial-unverified",
+      "definition": "公正全面的；平衡的；比例适当的；收支平衡的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-2.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/balanced",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "balcony",
       "pos": "n.",
-      "definition": "阳台，戏院楼厅",
-      "origin": "ecdict-derived",
+      "definition": "阳台；剧院楼座",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/balcony",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "bald",
       "pos": "adj.",
-      "definition": "秃的；光秃秃的",
-      "origin": "editorial-unverified",
+      "definition": "秃顶的；无毛发的；不加修饰的；磨光的（轮胎）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-4.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/bald",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "baldness",
       "pos": "n.",
-      "definition": "光秃，率直，枯燥",
-      "origin": "ecdict-derived",
+      "definition": "秃顶；脱发；不加修饰的直率",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/baldness",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "balk",
-      "pos": "vi.",
-      "definition": "畏缩；拒绝（at）",
-      "origin": "editorial-unverified",
+      "pos": "vi./n.",
+      "definition": "vi. 不愿意；拒绝；投球犯规（棒球）　n. 粗木梁；投球犯规（棒球；英式亦拼 baulk）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-8.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/balk",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "ballet",
       "pos": "n.",
-      "definition": "芭蕾舞",
-      "origin": "ecdict-derived",
+      "definition": "芭蕾舞；芭蕾舞剧；芭蕾舞曲",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/ballet",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "balloon",
-      "pos": "n./vt.",
-      "definition": "n. 气球　vt. 使成气球状",
-      "origin": "ecdict-derived",
+      "pos": "n./vi.",
+      "definition": "n. 气球；热气球；漫画中的对话或思想框　vi. 迅速膨胀或增长；乘热气球旅行",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/balloon",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "balloonist",
       "pos": "n.",
-      "definition": "驾驶/操纵气球的人",
-      "origin": "ecdict-derived",
+      "definition": "热气球运动者；乘气球旅行的人",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/balloonist",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "ballot",
-      "pos": "n./vi.",
-      "definition": "n. 投票，投票用纸，抽签　vi. 投票，抽签",
-      "origin": "ecdict-derived",
+      "pos": "n./vt.",
+      "definition": "n. 无记名投票；选票　vt. 组织…进行无记名投票",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/ballot",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "ballroom",
       "pos": "n.",
-      "definition": "舞厅，跳舞场",
-      "origin": "ecdict-derived",
+      "definition": "舞厅；交谊舞",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/ballroom",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "balmy",
       "pos": "adj.",
-      "definition": "芳香的，温和的，止痛的",
-      "origin": "ecdict-derived",
+      "definition": "（天气）温暖宜人的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/balmy",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "bamboo",
       "pos": "n.",
-      "definition": "竹子",
-      "origin": "ecdict-derived",
+      "definition": "竹；竹子；竹竿；竹材；竹纤维织物",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/bamboo",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "ban",
-      "pos": "n./vt.",
-      "definition": "n. 禁令　vt. 禁止，取缔",
-      "origin": "ecdict-derived",
+      "pos": "vt./n.",
+      "definition": "vt. 禁止；取缔　n. 禁令；禁止",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/ban",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "band",
       "pos": "n./v.",
-      "definition": "n. 带子，队，乐队　v. 联合，结合",
-      "origin": "ecdict-derived",
+      "definition": "n. 乐队；带；条纹；范围；群体　vt. 给动物套识别环（美）　vi. 联合（band together）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/band",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "bandage",
-      "pos": "n.",
-      "definition": "绷带",
-      "origin": "ecdict-derived",
+      "pos": "n./vt.",
+      "definition": "n. 绷带；创可贴（美）　vt. 用绷带包扎",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/bandage",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "bandanna",
       "pos": "n.",
-      "definition": "一各印花大手帕",
-      "origin": "ecdict-derived",
+      "definition": "扎在头上或颈部的彩色方巾（尤美；英式通常拼 bandana）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/bandanna",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "bandit",
       "pos": "n.",
-      "definition": "强盗",
-      "origin": "ecdict-derived",
+      "definition": "持械劫匪；强盗；匪徒",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/bandit",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "bandleader",
       "pos": "n.",
-      "definition": "伴舞乐队的指挥",
-      "origin": "ecdict-derived",
+      "definition": "乐队领队；常兼演奏的乐队指挥（旧式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/bandleader",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "bandmaster",
       "pos": "n.",
-      "definition": "管乐队指挥",
-      "origin": "ecdict-derived",
+      "definition": "军乐队或铜管乐队指挥",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/bandmaster",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
@@ -8945,470 +8954,466 @@
     },
     {
       "word": "bang",
-      "pos": "n./v.",
-      "definition": "n. 重击，突然巨响，刘海　v. 发巨响，重击",
-      "origin": "ecdict-derived",
+      "pos": "v./n./adv.",
+      "definition": "v. 砰地撞击；猛敲；使发出巨响　n. 砰的一声；撞击　adv. 正好；直接；完全（非正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/bang",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "banish",
-      "pos": "v.",
-      "definition": "驱逐；消除",
-      "origin": "editorial-unverified",
+      "pos": "vt.",
+      "definition": "放逐；驱逐；消除；摒除",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-5.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/banish",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "bank",
-      "pos": "n.",
-      "definition": "银行，堤，岸",
-      "origin": "ecdict-derived",
+      "pos": "n./v.",
+      "definition": "n. 银行；河岸；土堆或云团；一排设备；储存库　v. 存款；在银行开户；倾斜转弯（飞机）；堆积；打板投篮；指望或依靠（bank on）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/bank",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/bank",
+        "https://dictionary.cambridge.org/dictionary/english/bank-on"
+      ],
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "banker",
       "pos": "n.",
-      "definition": "银行家，庄家",
-      "origin": "ecdict-derived",
+      "definition": "银行家；银行高级职员；游戏中管理钱款的人",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/banker",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "banking",
       "pos": "n.",
-      "definition": "银行业务",
-      "origin": "ecdict-derived",
+      "definition": "银行业；银行业务；办理个人账户事务；亦为 bank 的现在分词",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/banking",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "bankrupt",
-      "pos": "adj./vt.",
-      "definition": "adj. 破产的　vt. 使破产",
-      "origin": "editorial-unverified",
+      "pos": "adj./n./vt.",
+      "definition": "adj. 破产的；没钱的（非正式）；丧失良好品质的（贬义）　n. 破产者　vt. 使破产",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-2.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/bankrupt",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "bankruptcy",
       "pos": "n.",
-      "definition": "破产者",
-      "origin": "ecdict-derived",
+      "definition": "破产；良好品质的完全缺失（如 moral bankruptcy）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/bankruptcy",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "banner",
       "pos": "n.",
-      "definition": "横幅；旗帜",
-      "origin": "editorial-unverified",
+      "definition": "横幅；旗帜；横幅广告；鲜明主张或口号",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-4.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/banner",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "banquet",
       "pos": "n.",
-      "definition": "宴会",
-      "origin": "editorial-unverified",
+      "definition": "正式宴会；盛宴；使人获得丰富享受的事物",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-5.js",
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/banquet",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "bar",
-      "pos": "n./vt.",
-      "definition": "n. 条，棒，酒吧，栅　vt. 禁止，阻挡，妨碍",
-      "origin": "ecdict-derived",
+      "pos": "n./vt./prep.",
+      "definition": "n. 酒吧；吧台；长条；块；门闩；障碍；标准；小节（音乐）；律师界；巴（压强单位）　vt. 阻止；禁止；用横木封住　prep. 除…之外",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/bar",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "barb",
-      "pos": "n./vt.",
-      "definition": "n. 倒钩　vt. 装倒钩于",
-      "origin": "ecdict-derived",
+      "pos": "n.",
+      "definition": "倒钩；倒刺；带刺的讥讽话",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/barb",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "barbarian",
-      "pos": "n./adj.",
-      "definition": "n. 野蛮人　adj. 野蛮的",
-      "origin": "ecdict-derived",
+      "pos": "n.",
+      "definition": "被称作蛮族的人（历史或带偏见的称呼）；粗野或无教养的人（贬义）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/barbarian",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "barbecue",
-      "pos": "n./vt.",
-      "definition": "n. 烤肉　vt. 烤肉，烧烤",
-      "origin": "ecdict-derived",
+      "pos": "n./v.",
+      "definition": "n. 烧烤架；户外烧烤餐会；烧烤食物　v. 烧烤",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/barbecue",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "barber",
-      "pos": "n.",
-      "definition": "理发师",
-      "origin": "ecdict-derived",
+      "pos": "n./v.",
+      "definition": "n. 理发师（主要理男发及修面）　v. 从事理发；给…理发或修面",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/barber",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "bare",
-      "pos": "adj./vt.",
-      "definition": "adj. 赤裸的，缺少的，无遮蔽的，坦率的　vt. 使赤裸，露出",
-      "origin": "ecdict-derived",
+      "pos": "adj./vt./adv./det.",
+      "definition": "adj. 赤裸的；无遮盖的；最基本的；空的　vt. 露出　adv. 很；完全（英俚语）　det. 大量的（英俚语）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/bare",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "barely",
       "pos": "adv.",
-      "definition": "几乎不；仅仅",
-      "origin": "editorial-unverified",
+      "definition": "勉强；仅仅；几乎不",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/barely",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "bargain",
-      "pos": "n./v.",
-      "definition": "n. 交易，买卖协定，特价商品　v. 讲价，交易",
-      "origin": "ecdict-derived",
+      "pos": "n./v./adj.",
+      "definition": "n. 便宜货；划算的买卖；协议　v. 讨价还价；洽谈条件　adj. 廉价的；低于通常价格的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/bargain",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "barge",
-      "pos": "n.",
-      "definition": "驳船",
-      "origin": "editorial-unverified",
+      "pos": "n./vi.",
+      "definition": "n. 驳船；平底货船　vi. 莽撞地冲入；挤撞；冒失地闯行",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-5.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/barge",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "bark",
-      "pos": "n./vi.",
-      "definition": "n. 树皮，吠声　vi. 吠，叫骂",
-      "origin": "ecdict-derived",
+      "pos": "n./v.",
+      "definition": "n. 树皮；犬吠声；薄片巧克力甜食　vi. 吠叫　vt. 厉声说出",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/bark",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "barn",
       "pos": "n.",
-      "definition": "谷仓；牲口棚",
-      "origin": "editorial-unverified",
+      "definition": "谷仓；农场存放干草、谷物或饲养牲畜的大建筑",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-6.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/barn",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "barometer",
       "pos": "n.",
-      "definition": "气压计",
-      "origin": "ecdict-derived",
+      "definition": "气压计；反映变化或趋势的指标",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/barometer",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "baroque",
-      "pos": "adj.",
-      "definition": "巴洛克风格的；华丽的",
-      "origin": "editorial-unverified",
+      "pos": "adj./n.",
+      "definition": "adj. 巴洛克风格的；过分繁复的　n. 巴洛克风格；巴洛克时期",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-9.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/baroque",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "barrel",
-      "pos": "n.",
-      "definition": "桶；一桶的量",
-      "origin": "editorial-unverified",
+      "pos": "n./vi.",
+      "definition": "n. 大桶；桶（容量单位，石油桶约159升）；枪管　vi. 飞快行进（非正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-6.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/barrel",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "barren",
       "pos": "adj.",
-      "definition": "贫瘠的；荒芜的",
-      "origin": "editorial-unverified",
+      "definition": "不毛的；贫瘠的；不能生育的（正式）；无成果或无创意的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-3.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/barren",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "barrenness",
       "pos": "n.",
-      "definition": "贫瘠；荒芜",
-      "origin": "editorial-unverified",
+      "definition": "贫瘠；不毛；不育；空乏；缺乏创意或成果",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-10.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/barrenness",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "barricade",
       "pos": "n./vt.",
-      "definition": "n. 路障　vt. 设路障阻挡",
-      "origin": "editorial-unverified",
+      "definition": "n. 路障；临时障碍物　vt. 设置路障封住；把…封堵起来",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-8.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/barricade",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "barrier",
       "pos": "n.",
-      "definition": "障碍，栅栏",
-      "origin": "ecdict-derived",
+      "definition": "屏障；栅栏；阻碍；隔阂；车站检票闸口（英）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/barrier",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "barter",
-      "pos": "n./vt./vi.",
-      "definition": "n. 以物易物　vt. 用…交换　vi. 进行物物交换",
-      "origin": "editorial-unverified",
+      "pos": "v./n.",
+      "definition": "v. 以物易物；交换；议价　n. 以物易物；实物交换制",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-9.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/barter",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "baseball",
       "pos": "n.",
-      "definition": "棒球",
-      "origin": "ecdict-derived",
+      "definition": "棒球运动；棒球",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/baseball",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "basement",
       "pos": "n.",
-      "definition": "地下室，墙脚",
-      "origin": "ecdict-derived",
+      "definition": "地下室；半地下层",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/basement",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "bashful",
       "pos": "adj.",
-      "definition": "害羞的",
-      "origin": "ecdict-derived",
+      "definition": "害羞的；腼腆的；容易难为情的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/bashful",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "basic",
-      "pos": "n./adj.",
-      "definition": "n. 基本原理，要素，基本规律　adj. 基本的，碱性的",
-      "origin": "ecdict-derived",
+      "pos": "adj.",
+      "definition": "基本的；基础的；最必要的；简单的；碱性的（化学）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/basic",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "basin",
       "pos": "n.",
-      "definition": "盆地；流域",
-      "origin": "editorial-unverified",
+      "definition": "盆；洗脸盆；一盆的量；流域；盆地；港池",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/basin",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/basin",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/basin"
+      ],
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "basis",
       "pos": "n.",
-      "definition": "基础，主要成分",
-      "origin": "ecdict-derived",
+      "definition": "基础；根据；基准；方式；复数 bases",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/basis",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "bask",
       "pos": "vi.",
-      "definition": "晒太阳；沐浴在（in）",
-      "origin": "editorial-unverified",
+      "definition": "晒太阳；取暖；享受赞美等（bask in）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-8.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/bask",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "baste",
       "pos": "vt.",
-      "definition": "用长针脚粗缝，润以油脂，狠揍",
-      "origin": "ecdict-derived",
+      "definition": "烤制时往肉上浇油汁；用长针脚暂缝（尤美）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/baste",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "batch",
-      "pos": "n./v.",
-      "definition": "n. 一次所烘的面包，一次所制之量，一组，批　v. 成批，分批处理",
-      "origin": "ecdict-derived",
+      "pos": "n.",
+      "definition": "一批；一组；同批生产的东西；同届学生（印度英语）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/batch",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {
       "word": "bath",
-      "pos": "n.",
-      "definition": "沐浴，浴室",
-      "origin": "ecdict-derived",
+      "pos": "n./v.",
+      "definition": "n. 浴缸（英）；洗澡；浴室（美，房屋描述）；浴疗；盛液体的容器；公共浴场或泳池（复数 baths）　v. 洗澡；给…洗澡（英）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-008.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/bath",
+      "checkedOn": "2026-11-16",
       "flags": []
     },
     {

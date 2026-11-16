@@ -16,7 +16,9 @@ const reviews = ctx.window.PRONUNCIATION_REVIEWS, seen = new Set();
 for(const r of reviews){
   assert(!seen.has(r.w), `duplicate ${r.w}`); seen.add(r.w);
   if(ctx.words[r.w]) assert.equal(ctx.words[r.w].pronunciationReview, r, `not applied: ${r.w}`);
-  if(r.source.startsWith('https://www.collinsdictionary.com/')) assert.equal(r.source,'https://www.collinsdictionary.com/dictionary/english/'+r.w);
+  // A spelling variant may cite a dictionary's explicitly documented headword.
+  if(r.sourceHeadword) assert.equal({'baby-sitter':'babysitter'}[r.w],r.sourceHeadword,`undocumented spelling alias: ${r.w}`);
+  if(r.source.startsWith('https://www.collinsdictionary.com/')) assert.equal(r.source,'https://www.collinsdictionary.com/dictionary/english/'+(r.sourceHeadword||r.w));
   else if(r.source.startsWith('https://www.oxfordlearnersdictionaries.com/')) assert.equal(r.source,'https://www.oxfordlearnersdictionaries.com/definition/english/'+r.w.toLowerCase());
   else assert.match(r.source, new RegExp('^https://dictionary\\.cambridge\\.org/(us/)?(?:pronunciation|dictionary)/english/'+r.w.toLowerCase()+'$'));
   assert.match(r.checkedOn, /^\d{4}-\d{2}-\d{2}$/);
@@ -79,6 +81,21 @@ if(reviews.some(r=>r.w==='august')){
   assert.equal(reviews.find(r=>r.w==='atomization').source,'https://dictionary.cambridge.org/pronunciation/english/atomization');
 }
 assert(ctx.App.pronunciationHTML({w:'unreviewed',ph:'old'}).includes('尚未核对'));
+if(reviews.some(r=>r.w==='avouch')){
+  assert.equal(reading('avouch')[0].uk,'əˈvaʊtʃ');
+  assert.equal(reading('ballet')[0].uk,'ˈbæl.eɪ');
+  assert.equal(reading('ballet')[0].us,'bælˈeɪ');
+  assert.equal(reading('balk')[0].uk,'bɔːk');
+  assert.equal(reading('balk')[0].us,'bɑːlk');
+  const sitter=reviews.find(r=>r.w==='baby-sitter');
+  assert.equal(sitter.sourceHeadword,'babysitter');
+  assert.equal(sitter.source,'https://www.collinsdictionary.com/dictionary/english/babysitter');
+  assert(ctx.words['baby-sitter'].definitionReview.sources.includes(sitter.source));
+  assert(ctx.words.bachelor.cn.includes('学士'));
+  assert(ctx.words.baffle.pos.includes('n.'));
+  assert(ctx.words.bank.cn.includes('bank on'));
+  assert(ctx.words.backward.cn.includes('冒犯'));
+}
 assert(ctx.App.pronunciationHTML({w:'<test>',ph:'<bad>',custom:true}).includes('&lt;bad&gt;'));
 assert(!ctx.App.pronunciationHTML({w:'<test>',ph:'<bad>'}).includes('<bad>'));
 assert(!vocab.includes('esc(o.ph)'), 'a vocab surface still renders legacy IPA directly');

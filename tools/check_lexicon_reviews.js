@@ -9,6 +9,7 @@ const phon=JSON.parse(fs.readFileSync(path.join(root,'docs/pronunciation-audit.j
 const progress=JSON.parse(fs.readFileSync(path.join(root,'docs/lexicon-progress.json'),'utf8'));
 const checked=new Set();
 for(const batch of ctx.window.LEXICON_REVIEW_BATCHES){
+  if(batch.id!=='001') assert.equal(batch.words.length,100,`batch ${batch.id} must have 100 completed words`);
   for(const w of batch.words){
     assert(!checked.has(w),`duplicate batch word: ${w}`);checked.add(w);
     const d=ctx.window.DEFINITION_REVIEWS.find(r=>r.w===w);
@@ -19,7 +20,7 @@ for(const batch of ctx.window.LEXICON_REVIEW_BATCHES){
     assert(progress.entries.find(e=>e.word===w)?.definitionChecked);
     assert(!progress.queue.includes(w));
     for(const [label,example] of d.senses){
-      assert.match(label,/^(n|v|vt|vi|adj|adv)\./);
+      assert.match(label,/^(n|v|vt|vi|adj|adv|prep|conj|pron)\./);
       assert.match(example,/[.!?]$/);
       assert(!/[\u3400-\u9fff]/.test(example));
       const stem=w.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
@@ -31,4 +32,10 @@ for(const batch of ctx.window.LEXICON_REVIEW_BATCHES){
 assert.equal(new Set(progress.entries.map(e=>e.word)).size,9075);
 assert.equal(progress.summary.bothChecked+progress.summary.remainingBoth,9075);
 assert.equal(progress.queue.length,progress.summary.remainingBoth);
+for(const batch of ctx.window.LEXICON_REVIEW_BATCHES) for(const d of batch.deferred||[]){
+  assert(!batch.words.includes(d.w));
+  assert(progress.queue.includes(d.w),`deferred word disappeared: ${d.w}`);
+}
+assert.equal(progress.publication.completedSinceLastPublish,progress.summary.bothChecked-progress.publication.bothCheckedAtLastPublish);
+assert.equal(progress.publication.readyToPublish,progress.publication.completedSinceLastPublish>=1000);
 console.log(`Batch definitions, pronunciation integration and complete queue passed: ${checked.size} words.`);

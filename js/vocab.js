@@ -410,7 +410,7 @@ function backHTML(o){
     ${o.syn.length ? `<div class="syn"><span class="lab">同义替换</span>${o.syn.map(s => `<span class="s">${esc(s)}</span>`).join("")}</div>` : ""}
     ${examplesHTML(o)}
     ${sensesHTML(o)}
-    ${o.definitionReview ? `<div class="note"><a href="${esc(o.definitionReview.source)}" target="_blank" rel="noopener noreferrer">释义依据：剑桥词典</a></div>` : ""}
+    ${o.definitionReview ? `<div class="note">释义依据：${(o.definitionReview.sources || [o.definitionReview.source]).map(url => `<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${url.includes('oxfordlearnersdictionaries.com') ? '牛津词典' : '剑桥词典'}</a>`).join(' · ')}</div>` : ""}
     ${extra}${aiBlock(o)}`;
 }
 // 记忆线索：拆分的意思串成词义，再列出已经认识的同根词（词库里有的可以点开）

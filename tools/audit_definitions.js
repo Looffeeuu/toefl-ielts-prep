@@ -36,7 +36,7 @@ const entries = Object.values(ctx.auditWords).map(o=>{
   const missing=new Set();
   for(const [s] of o.senses||[]){const p=s.match(/^(vt|vi|v|n|adj|adv|prep|conj)\./)?.[1];if(p&&!expected.has(p)&&!(p==='v'&&(expected.has('vt')||expected.has('vi'))))missing.add(p);}
   if(missing.size)flags.push('sense-pos-mismatch:'+Array.from(missing).join('/'));
-  return {word:o.w,pos:o.pos,definition:o.cn,origin,sourceFiles:review?[review.file||'js/definition-reviews.js']:exact.map(r=>r.file),dictionary:review?.source||null,checkedOn:review?.checkedOn||null,flags};
+  return {word:o.w,pos:o.pos,definition:o.cn,origin,sourceFiles:review?[review.file||'js/definition-reviews.js']:exact.map(r=>r.file),dictionary:review?.source||null,...(review?.sources ? {dictionaries:review.sources} : {}),checkedOn:review?.checkedOn||null,flags};
 }).sort((a,b)=>a.word.localeCompare(b.word));
 const flagCounts={}; for(const e of entries)for(const f of e.flags)flagCounts[f.split(':')[0]]=(flagCounts[f.split(':')[0]]||0)+1;
 const report={date:'2026-11-16',scope:'全部内置词条的来源和结构一致性；仅 dictionary-reviewed 条目经过本轮外部词典核对。其他候选不能据此判定为虚假或正确。',total:entries.length,sources,flagCounts,entries};

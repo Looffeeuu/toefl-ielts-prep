@@ -4,9 +4,9 @@
 
 | 项目 | 已核对 | 尚待核对 |
 | --- | ---: | ---: |
-| 释义与词性 | 35 | 9040 |
-| 英美音与主要分读 | 52 | 9023 |
-| 两项均完成 | 26 | 9049 |
+| 释义与词性 | 135 | 8940 |
+| 英美音与主要分读 | 151 | 8924 |
+| 两项均完成 | 126 | 8949 |
 
 每词分别保存来源和日期，不能用核对音标代替核对释义。完整状态和接续队列见 [lexicon-progress.json](lexicon-progress.json)。优先处理缺失、截断、词性矛盾和用法标记，再按字母顺序推进。未找到可靠来源的条目保持待核对，不推测填充。
 
@@ -25,3 +25,13 @@ node tools/lexicon_progress.js
 ```
 
 下一批队列前 30 词：accidents、accommodations、accompanying、account for、accountants、actions、activities、adults、advantages、adversely、advertisements、affairs、agencies、aggressiveness、animals、antibiotics、approaches、approaching、areas、articles、assignments、astonished、asymmetrical、attacks、attempts、automated、avocational、awkwardly、axe、baby-sitter。
+
+## 批次 002
+
+完成 100 词：abandon、abandonment、abate、abbreviate、abbreviation、abdicate、abduct、abhor、abhorrent、abide、ability、abject、ablaze、ablution、aboard、abolish、abolition、abolitionist、aboriginal、abort、abortion、abortive、abound、abrasion、abrasive、abridge、abroad、abrupt、absence、absent、absentee、absenteeism、absolute、absolutely、absolve、absorb、absorption、abstain、abstinence、abstract、abstraction、abstruse、absurd、abundance、abundant、abundantly、abuse、abut、academic、academician、academy、accelerate、acceleration、accentuate、accessibility、accessible、accessory、accident、accidental、accidentally、acclaim、accommodate、accommodation、accompaniment、accompany、accomplice、accomplish、accomplishment、accord、accordion、accost、account、accountant、accredit、accumulate、accumulation、accuracy、accurate、accusation、accuse、accuser、accustom、achieve、achievement、acid、acidic、acidity、acknowledge、acme、acquaint、acquaintance、acquire、acquisition、acquisitive、acquit、acre、acrid、acrimony、acronym、action。
+
+待复核：acoustical。查到 Collins 释义与美音，但未找到可同时照录的英美 IPA；保留待复核。 [已查资料](https://www.collinsdictionary.com/dictionary/english/acoustical)。不计入完成数。
+
+## 发布节奏
+
+每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 100 词，距下次发布还差 900 词。发布基线为 ee4d6d1d0c2bb6f95b372ddad7d7a5e6166699ee，当时两项均核对 26 词；当前页面显示本地核对进度，不表示已上线。

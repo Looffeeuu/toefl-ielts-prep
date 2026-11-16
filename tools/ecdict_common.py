@@ -16,22 +16,20 @@ def clean_cn(tr):
             pos = POS_MAP.get(m.group(1).lower(), m.group(1).lower())
             l = l[m.end():]
         senses = [re.sub(r"\s+", " ", s.strip()) for s in re.split(r"[；;,，]", l) if s.strip()]
-        senses = [s for s in senses if len(s) <= 12][:4] or senses[:1]
+        # 不按字数删除义项，避免常用义消失；展示层可折叠，导入层保留原义项。
         if not senses:
             continue
         if pos and pos not in poss:
             poss.append(pos)
         parts.append((pos, "，".join(senses)))
-        if len(parts) >= 2:
-            break
     if not parts:
         return "", ""
     if len(parts) == 1 or len({p for p, _ in parts}) == 1:
         cn = "；".join(s for _, s in parts)
     else:
         cn = "　".join((p + ". " if p else "") + s for p, s in parts)
-    pos = "/".join(p + "." for p in poss[:2])
-    return pos, cn[:40]
+    pos = "/".join(p + "." for p in poss)
+    return pos, cn
 
 def rank(r):
     for k in ("frq", "bnc"):

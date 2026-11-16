@@ -1,5 +1,7 @@
 # 第三方数据声明
 
+词库还含此前由 AI 编写、改写的精编释义、例句、搭配与记忆线索；这些内容不应被视作出自 ECDICT 或权威词典。逐条外部核对的修订记录见 `js/definition-reviews.js`，来源检查范围与结果见 `docs/definition-audit.md`。
+
 `js/words-ext.js` 中的扩展词库（单词、音标、中文释义、词频分层、中考/高考标记）整理自开源英汉词典 **ECDICT**：
 https://github.com/skywind3000/ECDICT
 

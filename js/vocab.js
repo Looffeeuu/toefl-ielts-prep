@@ -122,6 +122,12 @@ Object.keys(window).filter(k => /^SENSE_WORDS_\d+$/.test(k)).map(k => window[k])
   const o = BY[line.slice(0, i).trim()]; if(!o) return;
   o.senses = line.slice(i+1).split(" ## ").map(x => { const j = x.indexOf("="); return [x.slice(0, j).trim(), x.slice(j+1).trim()] }).filter(x => x[0] && x[1]);
 });
+// 经词典核对的修订最后应用，防止早先的精编数据再次覆盖。
+(window.DEFINITION_REVIEWS || []).forEach(r => {
+  const o = BY[r.w]; if(!o) return;
+  o.pos = r.pos; o.cn = r.cn; o.definitionReview = r;
+  if(r.senses) o.senses = r.senses;
+});
 const BASE_N = WORDS.length;
 
 /* ---------- 我的词表（自己导入的词表） ---------- */

@@ -1,5 +1,7 @@
 # 托福雅思备考工作台
 
+词库来源与核查记录见 [释义来源检查](docs/definition-audit.md)。ECDICT 导入释义和 AI 精编释义均存在尚未逐词核实的内容；已核对的修订及词典链接保存在 `js/definition-reviews.js`。运行 `node tools/audit_definitions.js --write` 可重新扫描全部内置词条，生成来源和待核查项报告。
+
 面向 2026 新版托福（TOEFL iBT）的备考网页，同时提供雅思词汇，并可以导入课程老师布置的单词。纯静态页面，不需要安装任何东西，也不需要注册账号，用浏览器打开即可。
 
 **在线使用**：https://looffeeuu.github.io/toefl-ielts-prep/

@@ -1,5 +1,7 @@
 # 词库释义来源检查（2026-11-16）
 
+本文保留首次来源审计的分析与修订案例；后续分批核对的最新数量和完整队列见 [全库进度](lexicon-progress.md)。`definition-audit.json` 已随最新批次重新生成。
+
 本轮扫描全部 9,075 个内置词条的实际加载结果，包括精编覆盖、词性补充和雅思共用词条。机器可读记录在 `definition-audit.json`，运行 `node tools/audit_definitions.js --write` 可重新生成。
 
 ## 来源结论

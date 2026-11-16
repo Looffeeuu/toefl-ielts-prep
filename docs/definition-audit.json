@@ -4,14 +4,14 @@
   "total": 9075,
   "sources": {
     "editorial-unverified": 4199,
-    "ecdict-derived": 4865,
-    "dictionary-reviewed": 11
+    "ecdict-derived": 4841,
+    "dictionary-reviewed": 35
   },
   "flagCounts": {
-    "usage-label-review": 8,
     "missing-pos": 29,
-    "possible-truncation": 37,
-    "sense-pos-mismatch": 56
+    "sense-pos-mismatch": 38,
+    "possible-truncation": 32,
+    "usage-label-review": 7
   },
   "entries": [
     {
@@ -221,18 +221,15 @@
     },
     {
       "word": "abnormal",
-      "pos": "adj./n.",
-      "definition": "adj. 反常的，不规则的，变态的，畸形的　n. 畸形的人",
-      "origin": "ecdict-derived",
+      "pos": "adj.",
+      "definition": "异常的；反常的（通常指不好的情况）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-001.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
-      "flags": [
-        "usage-label-review"
-      ]
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/abnormal",
+      "checkedOn": "2026-11-16",
+      "flags": []
     },
     {
       "word": "aboard",
@@ -3102,16 +3099,14 @@
     {
       "word": "AIDS",
       "pos": "n.",
-      "definition": "n. 爱滋病(获得性免疫缺陷综合征)　美国决策学学会，信息自动显示系统，自动综合",
-      "origin": "ecdict-derived",
+      "definition": "艾滋病；获得性免疫缺陷综合征",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-001.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
-      "flags": [
-        "possible-truncation"
-      ]
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/aids",
+      "checkedOn": "2026-11-16",
+      "flags": []
     },
     {
       "word": "ailment",
@@ -10077,18 +10072,15 @@
     },
     {
       "word": "bend",
-      "pos": "vi./vt.",
-      "definition": "vi. 变弯曲，屈服　vt. 使弯曲，使屈服",
-      "origin": "ecdict-derived",
+      "pos": "v./n.",
+      "definition": "v. （使）弯曲；弯腰；变通（规则）　n. 弯道；弯曲处",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-001.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
-      "flags": [
-        "sense-pos-mismatch:n"
-      ]
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/bend",
+      "checkedOn": "2026-11-16",
+      "flags": []
     },
     {
       "word": "beneath",
@@ -11108,16 +11100,14 @@
     {
       "word": "blonde",
       "pos": "adj./n.",
-      "definition": "adj. (头发)亚麻色的，淡色的，白肤金发碧眼的，白里透红的　n. 肤色白皙的",
-      "origin": "ecdict-derived",
+      "definition": "adj. 浅黄色的；金发的　n. 金发的人（尤指女子）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-001.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
-      "flags": [
-        "possible-truncation"
-      ]
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/blonde",
+      "checkedOn": "2026-11-16",
+      "flags": []
     },
     {
       "word": "blood",
@@ -11241,17 +11231,15 @@
     },
     {
       "word": "blur",
-      "pos": "vt./vi.",
-      "definition": "vt. 使模糊，弄脏　vi. 弄脏，模糊",
-      "origin": "ecdict-derived",
+      "pos": "n./v.",
+      "definition": "n. 模糊的影像；模糊的记忆　v. （使）变模糊；使界限不清",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-001.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
-      "flags": [
-        "sense-pos-mismatch:n"
-      ]
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/blur",
+      "checkedOn": "2026-11-16",
+      "flags": []
     },
     {
       "word": "blush",
@@ -11767,18 +11755,15 @@
     },
     {
       "word": "bound",
-      "pos": "n./adj.",
-      "definition": "n. 跃，回跳，范围，边界　adj. 受约束的，装有封面的，有义务的，关联的",
-      "origin": "ecdict-derived",
+      "pos": "adj./v./n.",
+      "definition": "adj. 必定的；有义务的；被捆绑的；装订的；前往…的　v. 跳跃；形成边界；bind 的过去式和过去分词　n. 跳跃；界限（常用复数 bounds）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-001.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
-      "flags": [
-        "sense-pos-mismatch:v"
-      ]
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/bound",
+      "checkedOn": "2026-11-16",
+      "flags": []
     },
     {
       "word": "boundary",
@@ -12278,17 +12263,15 @@
     },
     {
       "word": "brief",
-      "pos": "n./adj.",
-      "definition": "n. 摘要，简报　adj. 简短的，短暂的",
-      "origin": "ecdict-derived",
+      "pos": "adj./v./n.",
+      "definition": "adj. 简短的；短暂的　v. 向…介绍情况；布置任务　n. 任务说明；案情摘要；三角内裤（briefs）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-001.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
-      "flags": [
-        "sense-pos-mismatch:v"
-      ]
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/brief",
+      "checkedOn": "2026-11-16",
+      "flags": []
     },
     {
       "word": "briefcase",
@@ -17359,17 +17342,15 @@
     },
     {
       "word": "clear",
-      "pos": "adj./adv.",
-      "definition": "adj. 清楚的，明确的，澄清的　adv. 清晰地",
-      "origin": "ecdict-derived",
+      "pos": "adj./adv./v.",
+      "definition": "adj. 清楚的；明显的；透明的；无障碍的；晴朗的　adv. 不接触地；避开地　v. 清除；证明无罪；批准；越过；（支票）兑现",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-001.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
-      "flags": [
-        "sense-pos-mismatch:v"
-      ]
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/clear",
+      "checkedOn": "2026-11-16",
+      "flags": []
     },
     {
       "word": "clearance",
@@ -17650,17 +17631,15 @@
     },
     {
       "word": "close",
-      "pos": "n./adj.",
-      "definition": "n. 结束，完结　adj. 靠近的，亲近的，亲密的，严密的",
-      "origin": "ecdict-derived",
+      "pos": "v./n./adj./adv.",
+      "definition": "v. 关闭；结束；完成（交易）　n. 结束；住宅区道路（英）　adj. 近的；亲密的；相似的；闷热的　adv. 靠近地",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-001.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
-      "flags": [
-        "sense-pos-mismatch:v"
-      ]
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/close",
+      "checkedOn": "2026-11-16",
+      "flags": []
     },
     {
       "word": "close-up",
@@ -23364,17 +23343,15 @@
     },
     {
       "word": "counter",
-      "pos": "n./adj.",
-      "definition": "n. 计算器，计算者，柜台，筹码　adj. 反方向的，相反的",
-      "origin": "ecdict-derived",
+      "pos": "n./v./adv.",
+      "definition": "n. 柜台；操作台；棋子　v. 反驳；抵制；抵消　adv. 相反地（常用于 run counter to）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-001.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
-      "flags": [
-        "sense-pos-mismatch:v"
-      ]
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/counter",
+      "checkedOn": "2026-11-16",
+      "flags": []
     },
     {
       "word": "counteract",
@@ -24338,17 +24315,15 @@
     },
     {
       "word": "cross",
-      "pos": "n./adj.",
-      "definition": "n. 十字架，十字架形物件，交叉，十字标　adj. 生气的，交叉的，相反的",
-      "origin": "ecdict-derived",
+      "pos": "v./n./adj.",
+      "definition": "v. 穿过；交叉；杂交　n. 十字形；十字架；杂交品种；（体育）横传　adj. 生气的（主要用于英式英语）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-001.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
-      "flags": [
-        "sense-pos-mismatch:v"
-      ]
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/cross",
+      "checkedOn": "2026-11-16",
+      "flags": []
     },
     {
       "word": "crossbones",
@@ -25225,17 +25200,15 @@
     },
     {
       "word": "cut",
-      "pos": "n./adj.",
-      "definition": "n. 切口，割伤，降低，切　adj. 经切割的，缩减的",
-      "origin": "ecdict-derived",
+      "pos": "v./n./adj.",
+      "definition": "v. 切；割伤；剪；削减；删去　n. 切口；伤口；削减；份额；剪裁　adj. 剪下的（如鲜切花）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-001.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
-      "flags": [
-        "sense-pos-mismatch:v"
-      ]
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/cut",
+      "checkedOn": "2026-11-16",
+      "flags": []
     },
     {
       "word": "cute",
@@ -25263,17 +25236,15 @@
     },
     {
       "word": "cutting",
-      "pos": "n.",
-      "definition": "切断，切下，路堑",
-      "origin": "ecdict-derived",
+      "pos": "n./adj.",
+      "definition": "n. 剪报；插条；路堑　adj. 尖刻的；伤人感情的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-001.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
-      "flags": [
-        "sense-pos-mismatch:adj"
-      ]
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/cutting",
+      "checkedOn": "2026-11-16",
+      "flags": []
     },
     {
       "word": "cycle",
@@ -27889,18 +27860,15 @@
     },
     {
       "word": "desert",
-      "pos": "n./adj.",
-      "definition": "n. 沙漠，应得的赏罚，功劳　adj. 沙漠的，不毛的",
-      "origin": "ecdict-derived",
+      "pos": "n./v.",
+      "definition": "n. 沙漠；荒漠　v. 抛弃；离弃；擅离军队",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-001.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
-      "flags": [
-        "sense-pos-mismatch:v"
-      ]
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/desert",
+      "checkedOn": "2026-11-16",
+      "flags": []
     },
     {
       "word": "deserted",
@@ -31765,17 +31733,15 @@
     },
     {
       "word": "double",
-      "pos": "n./adj.",
-      "definition": "n. 两倍　adj. 两倍的，双重的",
-      "origin": "ecdict-derived",
+      "pos": "adj./adv./n./v.",
+      "definition": "adj. 两倍的；双的　adv. 成双地；折成两层地　n. 两倍；酷似的人；双份酒　v. （使）加倍；兼作",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-001.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
-      "flags": [
-        "sense-pos-mismatch:v"
-      ]
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/double",
+      "checkedOn": "2026-11-16",
+      "flags": []
     },
     {
       "word": "doubt",
@@ -31997,17 +31963,15 @@
     },
     {
       "word": "draw",
-      "pos": "vi./vt.",
-      "definition": "vi. 拉，拖，拔剑　vt. 拖拉，挨近，领取，打成平局",
-      "origin": "ecdict-derived",
+      "pos": "v./n.",
+      "definition": "v. 画；拉；吸引；抽取；提取；得出（结论）；打成平局　n. 平局；抽签；有吸引力的人或事物",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-001.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
-      "flags": [
-        "sense-pos-mismatch:n"
-      ]
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/draw",
+      "checkedOn": "2026-11-16",
+      "flags": []
     },
     {
       "word": "drawback",
@@ -35932,18 +35896,15 @@
     },
     {
       "word": "equal",
-      "pos": "n./adj.",
-      "definition": "n. 对手，匹敌，同辈　adj. 相等的，平等的，胜任的，合适的",
-      "origin": "ecdict-derived",
+      "pos": "adj./n./v.",
+      "definition": "adj. 相等的；平等的；能胜任的　n. 同等的人或事物；匹敌者　v. 等于；比得上；导致",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-001.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
-      "flags": [
-        "sense-pos-mismatch:v"
-      ]
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/equal",
+      "checkedOn": "2026-11-16",
+      "flags": []
     },
     {
       "word": "equality",
@@ -36684,18 +36645,15 @@
     },
     {
       "word": "even",
-      "pos": "adj./vt.",
-      "definition": "adj. 平坦的，相等的，连贯的，均等的　vt. 使平坦，使相等",
-      "origin": "ecdict-derived",
+      "pos": "adv./adj./v.",
+      "definition": "adv. 甚至；连…都；更加　adj. 平坦的；均匀的；相等的；偶数的　v. 使相等；使均衡",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-001.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
-      "flags": [
-        "sense-pos-mismatch:adv"
-      ]
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/even",
+      "checkedOn": "2026-11-16",
+      "flags": []
     },
     {
       "word": "evening",
@@ -37402,17 +37360,14 @@
     {
       "word": "executive",
       "pos": "n./adj.",
-      "definition": "n. 执行部门，执行委员会，执行者，经理主管人员　adj. 执行的，善于执行的，",
-      "origin": "ecdict-derived",
+      "definition": "n. 高级管理人员；执行委员会；政府行政部门　adj. 决策的；管理的；供高级管理人员使用的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-001.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
-      "flags": [
-        "possible-truncation"
-      ]
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/executive",
+      "checkedOn": "2026-11-16",
+      "flags": []
     },
     {
       "word": "exemplary",
@@ -39000,17 +38955,15 @@
     },
     {
       "word": "fair",
-      "pos": "n./adj.",
-      "definition": "n. 展览会，市集，美好的事物　adj. 公平的，按规则进行的，不好不坏的，晴朗",
-      "origin": "ecdict-derived",
+      "pos": "adj./n./adv.",
+      "definition": "adj. 公平的；合理的；尚可的；相当多的；晴朗的；浅色的　n. 集市；展销会；游乐会　adv. 公平地（如 play fair）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-001.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
-      "flags": [
-        "possible-truncation"
-      ]
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/fair",
+      "checkedOn": "2026-11-16",
+      "flags": []
     },
     {
       "word": "fairly",
@@ -39327,18 +39280,15 @@
     },
     {
       "word": "fancy",
-      "pos": "n./adj.",
-      "definition": "n. 想象力，幻想，喜好　adj. 想象的，精美的，新奇的，奇特的",
-      "origin": "ecdict-derived",
+      "pos": "v./adj./n.",
+      "definition": "v. 想要（英）；爱慕（英，非正式）；想象；认为　adj. 花哨的；精致昂贵的　n. 喜好；一时的念头；想象力（文学）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-001.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
-      "flags": [
-        "sense-pos-mismatch:v"
-      ]
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/fancy",
+      "checkedOn": "2026-11-16",
+      "flags": []
     },
     {
       "word": "fantastic",
@@ -40861,18 +40811,15 @@
     },
     {
       "word": "fit",
-      "pos": "n./adj.",
-      "definition": "n. 适宜，合身，发作，痉挛　adj. 适宜的，对的，准备好的",
-      "origin": "ecdict-derived",
+      "pos": "v./adj./n.",
+      "definition": "v. 合身；适合；容纳；安装　adj. 健康强壮的；适合的　n. 合身程度；（疾病）发作；一阵（情绪或活动）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-001.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
-      "flags": [
-        "sense-pos-mismatch:v"
-      ]
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/fit",
+      "checkedOn": "2026-11-16",
+      "flags": []
     },
     {
       "word": "fitful",
@@ -41122,18 +41069,15 @@
     },
     {
       "word": "flat",
-      "pos": "adj./adv.",
-      "definition": "adj. 平坦的，单调的，无力的，浅的　adv. 平直地，断然地",
-      "origin": "ecdict-derived",
+      "pos": "adj./adv./n.",
+      "definition": "adj. 平坦的；乏味的；没气的；没电的（英）；固定的；断然的；（饮料）走气的　adv. 平躺地；完全；整整　n. 公寓（英）；低平地；瘪胎；降音符",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-001.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
-      "flags": [
-        "sense-pos-mismatch:n"
-      ]
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/flat",
+      "checkedOn": "2026-11-16",
+      "flags": []
     },
     {
       "word": "flats",
@@ -43176,17 +43120,14 @@
     {
       "word": "frequent",
       "pos": "adj./vt.",
-      "definition": "adj. 时常发生的，频繁的，快速的　vt. 时常来访，常常聚集，常与...交往",
-      "origin": "ecdict-derived",
+      "definition": "adj. 频繁的；经常发生的　vt. 常去；常到（正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-001.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
-      "flags": [
-        "possible-truncation"
-      ]
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/frequent",
+      "checkedOn": "2026-11-16",
+      "flags": []
     },
     {
       "word": "fresco",

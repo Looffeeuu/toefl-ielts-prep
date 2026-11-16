@@ -7,7 +7,7 @@ const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>'
 const ctx = {window:{}, App:{esc}}; vm.createContext(ctx);
 for(const m of html.matchAll(/src="js\/([^"?]+)(?:\?[^" ]*)?"/g)){
   const f = m[1]; if(f === 'vocab.js') break;
-  if(/^words.*\.js$/.test(f) || /^(definition-reviews|pronunciation-reviews|pronunciation)\.js$/.test(f))
+  if(/^words.*\.js$/.test(f) || /^lexicon-review-\d+\.js$/.test(f) || /^(definition-reviews|pronunciation-reviews|pronunciation)\.js$/.test(f))
     vm.runInContext(fs.readFileSync(path.join(root, 'js', f), 'utf8'), ctx, {filename:f});
 }
 const vocab = fs.readFileSync(path.join(root,'js/vocab.js'),'utf8');
@@ -16,8 +16,8 @@ const reviews = ctx.window.PRONUNCIATION_REVIEWS, seen = new Set();
 for(const r of reviews){
   assert(!seen.has(r.w), `duplicate ${r.w}`); seen.add(r.w);
   if(ctx.words[r.w]) assert.equal(ctx.words[r.w].pronunciationReview, r, `not applied: ${r.w}`);
-  assert.match(r.source, new RegExp('^https://dictionary\\.cambridge\\.org/(us/)?pronunciation/english/'+r.w+'$'));
-  assert.equal(r.checkedOn, '2026-11-16');
+  assert.match(r.source, new RegExp('^https://dictionary\\.cambridge\\.org/(us/)?(?:pronunciation|dictionary)/english/'+r.w.toLowerCase()+'$'));
+  assert.match(r.checkedOn, /^\d{4}-\d{2}-\d{2}$/);
   for(const p of r.readings){
     assert(p.label && p.uk && p.us);
     for(const ph of [p.uk,p.us]) assert(!/[\u3400-\u9fff\u0400-\u04ff/'":]/.test(ph), `legacy symbol in ${r.w}: ${ph}`);

@@ -1,5 +1,7 @@
 # 音标核对记录（2026-11-16）
 
+下述数量为首次核对快照。后续批次的最新覆盖率和完整队列见 [全库进度](lexicon-progress.md)，JSON 清单已重新生成。
+
 本轮扫描全部 9,075 个内置词条，清单见 [pronunciation-audit.json](pronunciation-audit.json)。30 个已对照剑桥词典核对，9,045 个尚未逐词核对，不能宣称全库音标准确。
 
 `js/pronunciation-reviews.js` 保存 34 词的核对日期、剑桥发音页链接、适用词性或含义、英音和美音。separate、read、bass、use 不在内置词库，导入自定义词表时也可使用其核对音标。

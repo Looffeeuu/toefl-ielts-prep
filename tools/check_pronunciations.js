@@ -33,6 +33,24 @@ for(const r of reviews){
   assert(!rendered.includes('尚未核对'));
 }
 const reading = w => reviews.find(r => r.w===w).readings;
+if(reviews.some(r=>r.w==='mate')){
+  assert.equal(reading('mate')[0].uk,'meɪt');
+  assert.equal(reading('mate')[1].uk,'ˈmæt.eɪ');
+  assert.equal(reading('mate')[1].us,'ˈmɑː.teɪ');
+  assert.equal(reading('process')[1].uk,'prəˈses');
+  assert.equal(reading('suspect')[0].uk,'səˈspekt');
+  assert.equal(reading('suspect')[1].uk,'ˈsʌs.pekt');
+  assert.equal(reading('upset')[1].us,'ˈʌp.set');
+  assert.equal(reading('address')[0].us,'ˈæd.res');
+  assert.equal(reading('address')[1].us,'əˈdres');
+  assert.equal(reading('combine')[1].uk,'ˈkɒm.baɪn');
+  assert.equal(reading('chef')[0].uk,'ʃef');
+  assert.equal(reading('clerk')[0].uk,'klɑːk');
+  assert.equal(reading('clerk')[0].us,'klɝːk');
+  assert(ctx.words.chip.cn.includes('薯条（英国）'));
+  assert(ctx.words.chip.cn.includes('薯片（美国）'));
+  assert(ctx.words.clothing.cn.includes('不可数'));
+}
 if(reviews.some(r=>r.w==='ruins')){
   assert.equal(reading('ruins')[0].uk,'ˈruːɪnz');
   assert.equal(reading('ruins')[0].us,'ɹu.ɪnz');

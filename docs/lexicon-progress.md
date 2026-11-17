@@ -4,9 +4,9 @@
 
 | 项目 | 已核对 | 尚待核对 |
 | --- | ---: | ---: |
-| 释义与词性 | 1544 | 7531 |
-| 英美音与主要分读 | 1554 | 7521 |
-| 两项均完成 | 1535 | 7540 |
+| 释义与词性 | 1644 | 7431 |
+| 英美音与主要分读 | 1654 | 7421 |
+| 两项均完成 | 1635 | 7440 |
 
 每词分别保存来源和日期，不能用核对音标代替核对释义。完整状态和接续队列见 [lexicon-progress.json](lexicon-progress.json)。优先处理缺失、截断、词性矛盾和用法标记，再按字母顺序推进。未找到可靠来源的条目保持待核对，不推测填充。
 
@@ -24,7 +24,7 @@ node tools/check_pronunciations.js --write
 node tools/lexicon_progress.js
 ```
 
-下一批队列前 30 词：consistently、flame、flavour、innocent、lean、major、mate、mean、narrator、pet、pilot、plain、plate、poll、preserve、process、pull、rank、rough、routinely、schedule、smart、snap、spare、split、spot、steep、still、surface、suspect。
+下一批队列前 30 词：community、companion、company、comparable、compare、compassion、compel、compensation、compete、competition、complain、complaint、complete、complex、complexity、complicated、complication、comply、compose、compound、compromise、concede、conceive、concept、conception、concerned、concerning、concert、conclude、concrete。
 
 ## 批次 002
 
@@ -116,6 +116,12 @@ node tools/lexicon_progress.js
 
 
 
+## 批次 017
+
+完成 100 词：consistently、flame、flavour、innocent、lean、major、mate、mean、narrator、pet、pilot、plain、plate、poll、preserve、process、pull、rank、rough、routinely、schedule、smart、snap、spare、split、spot、steep、still、surface、suspect、swell、tail、till、traditionally、upset、weather、well、access、accounting、address、advanced、amazing、ambitious、analysis、chart、charter、check、chef、chest、chief、chill、chip、choice、choose、chop、Christian、chronic、chunk、circle、circuit、circumstance、cite、citizenship、civic、civil、civilian、claim、clay、clean、clerk、cliff、climate、cling、clinic、clinical、clip、clothing、clue、cluster、coach、coalition、coat、coin、collaboration、collapse、colleague、collective、colonial、combination、combine、comedy、commander、comment、commercial、commissioner、commit、commitment、committee、communicate、communication。核心精编完成后，转入托福高频；优先核对结构标记异常及多词性条目。
+
+
+
 ## 发布节奏
 
-每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 509 词，距下次发布还差 491 词。发布基线为 622b7ffac50f5c24b3ab3424a6faa53e3ba406d4，当时两项均核对 1026 词；当前页面显示本地核对进度，不表示已上线。
+每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 609 词，距下次发布还差 391 词。发布基线为 622b7ffac50f5c24b3ab3424a6faa53e3ba406d4，当时两项均核对 1026 词；当前页面显示本地核对进度，不表示已上线。

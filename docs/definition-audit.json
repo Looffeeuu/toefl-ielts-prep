@@ -3,15 +3,15 @@
   "scope": "全部内置词条的来源和结构一致性；仅 dictionary-reviewed 条目经过本轮外部词典核对。其他候选不能据此判定为虚假或正确。",
   "total": 9075,
   "sources": {
-    "dictionary-reviewed": 1544,
-    "ecdict-derived": 4150,
-    "editorial-unverified": 3381
+    "dictionary-reviewed": 1644,
+    "ecdict-derived": 4078,
+    "editorial-unverified": 3353
   },
   "flagCounts": {
     "missing-pos": 27,
-    "sense-pos-mismatch": 38,
-    "possible-truncation": 32,
-    "usage-label-review": 7
+    "sense-pos-mismatch": 16,
+    "possible-truncation": 21,
+    "usage-label-review": 6
   },
   "entries": [
     {
@@ -753,14 +753,13 @@
     {
       "word": "access",
       "pos": "n./vt.",
-      "definition": "n. 通路，入口，接近，进入　vt. 访问，存取，接近，使用",
-      "origin": "ecdict-derived",
+      "definition": "n. 通道；进入的途径、机会或权利；使用权；接触机会；探视权；vt. 进入；获取、使用资料或服务",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/access",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -1095,13 +1094,13 @@
     {
       "word": "accounting",
       "pos": "n.",
-      "definition": "会计；记账",
-      "origin": "editorial-unverified",
+      "definition": "会计；会计工作；记账；财务核算",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-2.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/accounting",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -1807,14 +1806,13 @@
     {
       "word": "address",
       "pos": "n./vt.",
-      "definition": "n. 住址，演说，举止，灵巧　vt. 发表(演说或讲话)，对付，写地址",
-      "origin": "ecdict-derived",
+      "definition": "n. 地址；电子邮件或网址；正式演说；内存地址；vt. 在信件等上写地址；向…讲话；称呼；处理问题或需求",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/address",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -2268,13 +2266,13 @@
     {
       "word": "advanced",
       "pos": "adj.",
-      "definition": "先进的；高级的",
-      "origin": "editorial-unverified",
+      "definition": "先进的；高级的；高深的；进展到后期的；晚期的；年迈的（advanced age）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/advanced",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -3890,14 +3888,13 @@
     {
       "word": "amazing",
       "pos": "adj.",
-      "definition": "令人惊异的",
-      "origin": "ecdict-derived",
+      "definition": "令人惊讶的；极好的（非正式，褒义）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/amazing",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -3963,13 +3960,13 @@
     {
       "word": "ambitious",
       "pos": "adj.",
-      "definition": "有雄心的；宏大的",
-      "origin": "editorial-unverified",
+      "definition": "有抱负的；渴望成功的；（计划）宏大的，需付出巨大努力的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/ambitious",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -4303,14 +4300,13 @@
     {
       "word": "analysis",
       "pos": "n.",
-      "definition": "分析",
-      "origin": "ecdict-derived",
+      "definition": "分析；分析结果或意见；精神分析（psychoanalysis 的简称）；复数 analyses",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/analysis",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -15868,27 +15864,26 @@
     },
     {
       "word": "chart",
-      "pos": "n./vt.",
-      "definition": "n. 图表，海图　vt. 制成图表",
-      "origin": "ecdict-derived",
+      "pos": "n./v.",
+      "definition": "n. 图表；海图；唱片排行榜（the charts）；vt. 用图表表示；详细记录；规划；vi. 进入唱片排行榜（非正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/chart",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "charter",
       "pos": "n./vt.",
-      "definition": "n. 章程；特许状　vt. 特许；包租",
-      "origin": "editorial-unverified",
+      "definition": "n. 宪章；权利宣言；组织章程；特许状；包租；vt. 包租飞机、船等；特许成立组织",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-1.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/charter",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -15979,15 +15974,14 @@
     },
     {
       "word": "check",
-      "pos": "n./vt.",
-      "definition": "n. 检查，支票，阻止物，寄物牌　vt. 检查，阻止，核对，寄存",
-      "origin": "ecdict-derived",
+      "pos": "v./n.",
+      "definition": "v. 检查；核实；制止；抑制；寄存；托运行李；打勾（美国）；n. 检查；制约；支票（美国，英国拼 cheque）；餐馆账单（美国）；勾号；格纹；将军（国际象棋）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/check",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -16066,13 +16060,13 @@
     {
       "word": "chef",
       "pos": "n.",
-      "definition": "厨师",
-      "origin": "ecdict-derived",
+      "definition": "厨师；主厨；厨师长（尤指餐馆或酒店中受过专业训练的厨师）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/chef",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -16114,14 +16108,13 @@
     {
       "word": "chest",
       "pos": "n.",
-      "definition": "胸，胸部，衣柜，箱子",
-      "origin": "ecdict-derived",
+      "definition": "胸部；胸腔；大箱子",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/chest",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -16174,15 +16167,14 @@
     },
     {
       "word": "chief",
-      "pos": "n./adj.",
-      "definition": "n. 领袖，酋长，长官，主要部分　adj. 主要的，首位的",
-      "origin": "ecdict-derived",
+      "pos": "adj./n.",
+      "definition": "adj. 主要的；最重要的；最高级别的；n. 首领；主管；酋长",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/chief",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -16236,14 +16228,14 @@
     },
     {
       "word": "chill",
-      "pos": "n./vt.",
-      "definition": "n. 寒冷　vt. 使变冷",
-      "origin": "editorial-unverified",
+      "pos": "v./n./adj.",
+      "definition": "v.（使）冷却；冷藏；放松或冷静下来（非正式）；n. 寒意；受凉；寒战；恐惧感；adj. 寒冷的（文学）；轻松随和的（非正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-6.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/chill",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -16309,14 +16301,14 @@
     },
     {
       "word": "chip",
-      "pos": "n./vt./vi.",
-      "definition": "n. 碎片；芯片　vt. 削下　vi. 剥落",
-      "origin": "editorial-unverified",
+      "pos": "n./v.",
+      "definition": "n. 碎片；缺口；芯片；筹码；薯条（英国）；薯片（美国）；挑球；v.（使）掉小块或产生缺口；挑球",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-6.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/chip",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -16383,14 +16375,13 @@
     {
       "word": "choice",
       "pos": "n./adj.",
-      "definition": "n. 选择，精选品，选择权　adj. 精选的，挑三拣四的，上等的",
-      "origin": "ecdict-derived",
+      "definition": "n. 选择；选择权；可选择的范围；被选中的人或物；adj. 优质的；精选的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/choice",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -16432,27 +16423,26 @@
     },
     {
       "word": "choose",
-      "pos": "vt./vi.",
-      "definition": "vt. 选择，宁愿，欲　vi. 作出选择，愿意",
-      "origin": "ecdict-derived",
+      "pos": "v.",
+      "definition": "选择；挑选；决定，愿意做（choose to do）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/choose",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "chop",
-      "pos": "n./vt.",
-      "definition": "n. 肋条肉，排骨，砍，戳记　vt. 剁碎，砍，切击，割断",
-      "origin": "ecdict-derived",
+      "pos": "vt./n.",
+      "definition": "vt. 砍；切碎；削减或停止；向下击球；n. 带骨肉块；砍、切的动作；解雇或取消（the chop，主要为英国）；嘴部（chops，非正式）；技巧、本领（chops，非正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/chop",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -16554,15 +16544,14 @@
     },
     {
       "word": "Christian",
-      "pos": "n./adj.",
-      "definition": "n. 基督徒，正派人　adj. 基督的，基督教的",
-      "origin": "ecdict-derived",
+      "pos": "adj./n.",
+      "definition": "adj. 基督教的；基督徒的；仁慈友善的；n. 基督徒",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/christian",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -16580,13 +16569,13 @@
     {
       "word": "chronic",
       "pos": "adj.",
-      "definition": "慢性的；长期的",
-      "origin": "editorial-unverified",
+      "definition": "（疾病）慢性的；长期存在的；极差的（英国，非正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/chronic",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -16651,14 +16640,18 @@
     },
     {
       "word": "chunk",
-      "pos": "n.",
-      "definition": "大块；相当大的部分",
-      "origin": "editorial-unverified",
+      "pos": "n./vt.",
+      "definition": "n. 厚块；大块；相当大的部分（非正式）；语块；vt. 切成大块；编组成组；打球时先击中球后方地面（高尔夫）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-2.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/chunk",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/chunk",
+        "https://www.collinsdictionary.com/dictionary/english/chunk"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -16711,28 +16704,26 @@
     },
     {
       "word": "circle",
-      "pos": "n./vt.",
-      "definition": "n. 圆周，社交圈，循环，范围　vt. 围着，环绕",
-      "origin": "ecdict-derived",
+      "pos": "n./v.",
+      "definition": "n. 圆；圆圈；圈子；集团；剧场楼座（英国）；v. 盘旋；绕行；圈出；摆成圈",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/circle",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "circuit",
-      "pos": "n.",
-      "definition": "电路，环(行)道，巡回",
-      "origin": "ecdict-derived",
+      "pos": "n./v.",
+      "definition": "n. 环行路线；赛道；一圈；电路或回路；巡回活动；巡回审判区；v. 环行；绕行",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/circuit",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -16823,14 +16814,13 @@
     {
       "word": "circumstance",
       "pos": "n.",
-      "definition": "环境，状况，事件",
-      "origin": "ecdict-derived",
+      "definition": "情况；环境；境况（通常用复数）；无法控制的客观情势；经济状况（circumstances）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/circumstance",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -16871,14 +16861,14 @@
     },
     {
       "word": "cite",
-      "pos": "v.",
-      "definition": "引用；举出",
-      "origin": "editorial-unverified",
+      "pos": "vt.",
+      "definition": "引用；引证；列举作为依据；传唤；在法律程序中提及；公开表彰",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-2.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/cite",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -16896,13 +16886,13 @@
     {
       "word": "citizenship",
       "pos": "n.",
-      "definition": "公民身份",
-      "origin": "editorial-unverified",
+      "definition": "公民身份；国籍；公民义务与责任；作为群体成员的责任表现",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-2.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/citizenship",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -16920,38 +16910,37 @@
     {
       "word": "civic",
       "pos": "adj.",
-      "definition": "城市的；公民的",
-      "origin": "editorial-unverified",
+      "definition": "城市的；市民的；公民责任或行为的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/civic",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "civil",
       "pos": "adj.",
-      "definition": "市民的，公民的，有礼貌的",
-      "origin": "ecdict-derived",
+      "definition": "平民的；非军事或非宗教的；公民的；民事的；有礼貌的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/civil",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "civilian",
       "pos": "n./adj.",
-      "definition": "n. 平民，民法专家　adj. 平民的，百姓的，民用的",
-      "origin": "ecdict-derived",
+      "definition": "n. 平民；非军警人员；圈外普通人（常为幽默用法）；adj. 平民的；非军警的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/civilian",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -16980,14 +16969,14 @@
     },
     {
       "word": "claim",
-      "pos": "vt./n.",
-      "definition": "vt. 声称；索取；夺去（生命）　n. 主张；索赔",
-      "origin": "editorial-unverified",
+      "pos": "v./n.",
+      "definition": "v. 声称（真实性未证实或有争议）；断言；要求或认领；索赔；夺去生命；n. 声称；主张；索赔要求；应得权利",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-2.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/claim",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -17258,26 +17247,25 @@
     {
       "word": "clay",
       "pos": "n.",
-      "definition": "泥土，肉体，黏土",
-      "origin": "ecdict-derived",
+      "definition": "黏土；陶土；网球红土场地面",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/clay",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "clean",
-      "pos": "adj./adv.",
-      "definition": "adj. 干净的，清白的，简洁的　adv. 清洁地，完全地",
-      "origin": "ecdict-derived",
+      "pos": "adj./v./n./adv.",
+      "definition": "adj. 干净的；无污染的；清白、公正的；健康文明的；无色情内容的；已戒毒的；整齐利落的；未用过的；彻底的；v. 清洁；打扫；除去鱼或动物内脏；n. 清洁，打扫；adv. 完全地（非正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/clean",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -17391,13 +17379,13 @@
     {
       "word": "clerk",
       "pos": "n./vi.",
-      "definition": "n. 办事员，职员，文书　vi. 当店员",
-      "origin": "ecdict-derived",
+      "definition": "n. 办事员；文书；店员、酒店前台或法官助理（美国）；vi. 做文书、店员等工作",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/clerk",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -17463,25 +17451,25 @@
     {
       "word": "cliff",
       "pos": "n.",
-      "definition": "悬崖",
-      "origin": "editorial-unverified",
+      "definition": "悬崖；峭壁",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-2.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/cliff",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "climate",
       "pos": "n.",
-      "definition": "气候，社会趋势，气候区",
-      "origin": "ecdict-derived",
+      "definition": "气候；气候区；（社会、政治等）环境或氛围",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/climate",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -17522,51 +17510,50 @@
     },
     {
       "word": "cling",
-      "pos": "v.",
-      "definition": "紧贴；依附",
-      "origin": "editorial-unverified",
+      "pos": "vi.",
+      "definition": "紧紧抓住；依附；黏附；紧贴；不愿放弃（cling to）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-2.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/cling",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "clinic",
       "pos": "n.",
-      "definition": "诊所，临床教学",
-      "origin": "ecdict-derived",
+      "definition": "诊所；门诊部；专题指导班或训练班（尤指体育）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/clinic",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "clinical",
       "pos": "adj.",
-      "definition": "临床的",
-      "origin": "editorial-unverified",
+      "definition": "临床的；冷静客观的；冷漠的；缺少温暖或个性的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-2.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/clinical",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "clip",
-      "pos": "n./vt.",
-      "definition": "n. 夹子；片段　vt. 剪；修剪",
-      "origin": "editorial-unverified",
+      "pos": "n./v.",
+      "definition": "n. 夹子；电影或视频片段；修剪；弹夹；速度（at a good clip，美国，非正式）；拍击；vt. 修剪；剪下；削减；碰撞；挑球；v. 用夹子夹住",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-6.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/clip",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -17680,14 +17667,13 @@
     {
       "word": "clothing",
       "pos": "n.",
-      "definition": "衣服",
-      "origin": "ecdict-derived",
+      "definition": "衣服；服装（不可数总称）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/clothing",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -17716,14 +17702,14 @@
     },
     {
       "word": "clue",
-      "pos": "n.",
-      "definition": "线索",
-      "origin": "editorial-unverified",
+      "pos": "n./v.",
+      "definition": "n. 线索；提示；v. 为谜题编写提示；给人提供信息（美国，非正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/clue",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -17741,14 +17727,14 @@
     },
     {
       "word": "cluster",
-      "pos": "n./vi.",
-      "definition": "n. 群；簇　vi. 聚集",
-      "origin": "editorial-unverified",
+      "pos": "n./v.",
+      "definition": "n. 簇；群；聚集；辅音群；计算机集群；v. 聚集；成群集中",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-2.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/cluster",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -17801,15 +17787,14 @@
     },
     {
       "word": "coach",
-      "pos": "n./vt.",
-      "definition": "n. 四轮大马车，教练　vt. 训练，指导",
-      "origin": "ecdict-derived",
+      "pos": "n./v./adv.",
+      "definition": "n. 教练；辅导员；长途客车（主要为英国）；马车；火车客车厢；经济舱（美国）；v. 训练；辅导；adv. 乘经济舱（美国）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/coach",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -17839,14 +17824,13 @@
     {
       "word": "coalition",
       "pos": "n.",
-      "definition": "结合体，结合，联合",
-      "origin": "ecdict-derived",
+      "definition": "联盟；联合；联合政府",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/coalition",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -17876,13 +17860,13 @@
     {
       "word": "coat",
       "pos": "n./vt.",
-      "definition": "n. 外套　vt. 外面覆盖，给...穿外套",
-      "origin": "ecdict-derived",
+      "definition": "n. 外套；上衣；动物皮毛；一层覆盖物或涂层；vt. 给…涂一层；覆盖",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/coat",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -18140,14 +18124,13 @@
     {
       "word": "coin",
       "pos": "n./vt.",
-      "definition": "n. 硬币，金钱，货币　vt. 铸币，创造，杜撰",
-      "origin": "ecdict-derived",
+      "definition": "n. 硬币；硬币货币；vt. 创造新词或表达；铸币",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/coin",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -18226,25 +18209,25 @@
     {
       "word": "collaboration",
       "pos": "n.",
-      "definition": "合作",
-      "origin": "editorial-unverified",
+      "definition": "合作；协作；合作成果；与占领者勾结、通敌（贬义）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/collaboration",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "collapse",
-      "pos": "vi./n.",
-      "definition": "vi. 倒塌；崩溃　n. 倒塌；崩溃",
-      "origin": "editorial-unverified",
+      "pos": "v./n.",
+      "definition": "v. 倒塌；昏倒；崩溃；失败；价格暴跌；（使）折叠；n. 倒塌；突然衰弱或昏倒；崩溃；垮台",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-2.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/collapse",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -18274,13 +18257,13 @@
     {
       "word": "colleague",
       "pos": "n.",
-      "definition": "同事，同僚",
-      "origin": "ecdict-derived",
+      "definition": "同事；同僚",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/colleague",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -18309,14 +18292,14 @@
     },
     {
       "word": "collective",
-      "pos": "adj.",
-      "definition": "集体的；共同的",
-      "origin": "editorial-unverified",
+      "pos": "adj./n.",
+      "definition": "adj. 集体的；共同的；n. 由成员共同拥有和管理的组织或企业",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/collective",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -18419,13 +18402,13 @@
     {
       "word": "colonial",
       "pos": "adj.",
-      "definition": "殖民的；殖民地的",
-      "origin": "editorial-unverified",
+      "definition": "殖民地的；殖民主义的；殖民时期风格的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/colonial",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -18515,26 +18498,25 @@
     {
       "word": "combination",
       "pos": "n.",
-      "definition": "结合；组合",
-      "origin": "editorial-unverified",
+      "definition": "结合；组合；混合体；排列组合；密码锁的号码组合",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/combination",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "combine",
       "pos": "v./n.",
-      "definition": "v. (使)联合，(使)结合　n. (企业的)联合，联合收割机",
-      "origin": "ecdict-derived",
+      "definition": "v.（使）结合；兼有；兼顾；n. 联合企业或集团；联合收割机",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/combine",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -18576,14 +18558,13 @@
     {
       "word": "comedy",
       "pos": "n.",
-      "definition": "喜剧，有趣的事情",
-      "origin": "ecdict-derived",
+      "definition": "喜剧；喜剧作品；滑稽或令人发笑之处",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/comedy",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -18661,13 +18642,13 @@
     {
       "word": "commander",
       "pos": "n.",
-      "definition": "司令官，指挥官",
-      "origin": "ecdict-derived",
+      "definition": "指挥官；司令官；海军军衔之一（具体级别因国家而异）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/commander",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -18708,15 +18689,14 @@
     },
     {
       "word": "comment",
-      "pos": "n./vi.",
-      "definition": "n. 注解，批评，评论，备注　vi. 评论，注解",
-      "origin": "ecdict-derived",
+      "pos": "n./v.",
+      "definition": "n. 评论；意见；评语；v. 发表评论；表达意见（常接 on）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/comment",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -18758,13 +18738,13 @@
     {
       "word": "commercial",
       "pos": "adj./n.",
-      "definition": "adj. 商业的　n. 商业广告",
-      "origin": "editorial-unverified",
+      "definition": "adj. 商业的；营利的；商用的；面向公众销售或服务的；靠广告收入运营的；以牟利为主、缺少艺术价值的（贬义）；n. 广播或电视广告",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-2.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/commercial",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -18830,39 +18810,37 @@
     {
       "word": "commissioner",
       "pos": "n.",
-      "definition": "委员，理事，行政长官",
-      "origin": "ecdict-derived",
+      "definition": "政府部门或组织的主管官员；委员会委员；体育联盟总裁（美国）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/commissioner",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "commit",
-      "pos": "vt.",
-      "definition": "委托(托付)，犯罪，指派...作战，使承担义务",
-      "origin": "ecdict-derived",
+      "pos": "v.",
+      "definition": "犯下罪行或错误；承诺；投入时间、金钱等；表态；把人送入监狱或精神病院（正式）；交付审判；记住或写下（commit to memory/paper）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/commit",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "commitment",
       "pos": "n.",
-      "definition": "委托，交押，承担义务，赞助",
-      "origin": "ecdict-derived",
+      "definition": "承诺；投入；奉献；必须履行的责任或约定；承诺支付的款项",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/commitment",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -18881,13 +18859,12 @@
       "word": "committee",
       "pos": "n.",
       "definition": "委员会",
-      "origin": "ecdict-derived",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/committee",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -18988,27 +18965,26 @@
     },
     {
       "word": "communicate",
-      "pos": "vt./vi.",
-      "definition": "vt. 显露，传达，感染　vi. 通讯",
-      "origin": "ecdict-derived",
+      "pos": "v.",
+      "definition": "交流；沟通；传达；传播疾病；房间相通（正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/communicate",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "communication",
       "pos": "n.",
-      "definition": "交流，交通，通讯",
-      "origin": "ecdict-derived",
+      "definition": "交流；沟通；传达；消息、信件或通告（正式）；通信系统（communications）；交通联系（communications）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/communication",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -21327,13 +21303,13 @@
     {
       "word": "consistently",
       "pos": "adv.",
-      "definition": "一贯地；始终如一地",
-      "origin": "editorial-unverified",
+      "definition": "始终如一地；一贯地",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-2.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/consistently",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -40942,18 +40918,15 @@
     },
     {
       "word": "flame",
-      "pos": "n./vt.",
-      "definition": "n. 火焰，火舌，热情，光辉　vt. 焚烧，用火焰给...灭菌，用火焰传送(信号",
-      "origin": "ecdict-derived",
+      "pos": "n./v.",
+      "definition": "n. 火焰；强烈的感情（文学）；愤怒或侮辱性的网络信息；vi. 燃烧；气得脸红；v. 发送侮辱性网络信息（俚语）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
-      "flags": [
-        "possible-truncation"
-      ]
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/flame",
+      "checkedOn": "2026-11-17",
+      "flags": []
     },
     {
       "word": "flank",
@@ -41127,17 +41100,14 @@
     {
       "word": "flavour",
       "pos": "n./vt.",
-      "definition": "n. 味，调味香料，滋味，香味　vt. 给...调味，给...增添风趣，加香料，",
-      "origin": "ecdict-derived",
+      "definition": "n. 味道；风味；特色；某事的初步体验；vt. 给…调味；美式拼写 flavor",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
-      "flags": [
-        "possible-truncation"
-      ]
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/flavour",
+      "checkedOn": "2026-11-17",
+      "flags": []
     },
     {
       "word": "flaw",
@@ -53456,17 +53426,14 @@
     {
       "word": "innocent",
       "pos": "adj./n.",
-      "definition": "adj. 无罪的，不懂事的，无知的　n. 天真的人，笨蛋",
-      "origin": "ecdict-derived",
+      "definition": "adj. 无罪的；无辜的；天真的；无恶意的；n. 天真、缺乏世故的人",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
-      "flags": [
-        "usage-label-review"
-      ]
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/innocent",
+      "checkedOn": "2026-11-17",
+      "flags": []
     },
     {
       "word": "innovation",
@@ -58076,17 +58043,15 @@
     },
     {
       "word": "lean",
-      "pos": "n./adj.",
-      "definition": "n. 瘦肉，倾斜，倾斜度　adj. 瘦的，贫乏的，歉收的",
-      "origin": "ecdict-derived",
+      "pos": "v./adj.",
+      "definition": "v.（使）倾斜；倚靠；adj. 瘦而健康的；（肉）脂肪少的；（时期）收入或食物不足的；精简高效的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
-      "flags": [
-        "sense-pos-mismatch:v"
-      ]
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/lean",
+      "checkedOn": "2026-11-17",
+      "flags": []
     },
     {
       "word": "leap",
@@ -60691,18 +60656,19 @@
     },
     {
       "word": "major",
-      "pos": "n./adj.",
-      "definition": "n. 主修课，成年人，陆军少校　adj. 主要的，较多的，大部分的，成年的",
-      "origin": "ecdict-derived",
+      "pos": "adj./n./vi.",
+      "definition": "adj. 主要的；重大的；大调的（音乐）；n. 少校；主修科目或主修学生（美国）；重大体育赛事；vi. 主修（major in，美国）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
-      "flags": [
-        "sense-pos-mismatch:v"
-      ]
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/major",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/major",
+        "https://dictionary.cambridge.org/dictionary/english/major-in"
+      ],
+      "checkedOn": "2026-11-17",
+      "flags": []
     },
     {
       "word": "majority",
@@ -61730,17 +61696,15 @@
     },
     {
       "word": "mate",
-      "pos": "n./vt.",
-      "definition": "n. 配偶，对手，助手，(象棋)将死　vt. 使配对，使一致，结伴，(象棋)将死",
-      "origin": "ecdict-derived",
+      "pos": "n./v.",
+      "definition": "n. 伙伴；朋友（英国，非正式）；动物的交配伴侣；配偶；一对物品中的另一个；技工助手；商船船副；马黛茶（另读）；v. 交配；使动物交配",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
-      "flags": [
-        "possible-truncation"
-      ]
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/mate",
+      "checkedOn": "2026-11-17",
+      "flags": []
     },
     {
       "word": "material",
@@ -61941,18 +61905,15 @@
     },
     {
       "word": "mean",
-      "pos": "adj./vt.",
-      "definition": "adj. 低劣的，卑贱的，简陋的，吝啬的　vt. 意谓，想要，意欲，预定",
-      "origin": "ecdict-derived",
+      "pos": "v./adj./n.",
+      "definition": "v. 意思是；意味着；打算；对某人很重要；adj. 不友善的；吝啬的（主要为英国）；凶恶的（主要为美国）；破旧的；出色的（非正式）；平均的；n. 平均数；折中办法",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
-      "flags": [
-        "sense-pos-mismatch:n"
-      ]
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/mean",
+      "checkedOn": "2026-11-17",
+      "flags": []
     },
     {
       "word": "meander",
@@ -65611,13 +65572,13 @@
     {
       "word": "narrator",
       "pos": "n.",
-      "definition": "叙述者",
-      "origin": "editorial-unverified",
+      "definition": "叙述者；讲述故事的人；解说员",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-2.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/narrator",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -72988,18 +72949,15 @@
     },
     {
       "word": "pet",
-      "pos": "n./adj.",
-      "definition": "n. 宠物，受宠爱的人，宠坏的孩子，不悦　adj. 宠爱的，表示亲昵的，养着观赏",
-      "origin": "ecdict-derived",
+      "pos": "n./v./adj.",
+      "definition": "n. 宠物；宠儿；讨人喜欢的人（非正式）；vt. 抚摸；vi. 亲吻爱抚（非正式）；adj. 特别喜爱的或在意的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
-      "flags": [
-        "possible-truncation"
-      ]
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/pet",
+      "checkedOn": "2026-11-17",
+      "flags": []
     },
     {
       "word": "petal",
@@ -73781,18 +73739,15 @@
     },
     {
       "word": "pilot",
-      "pos": "n./vt.",
-      "definition": "n. 飞行员，领航员，航船者，导向器　vt. 领航，驾驶，引导，试用",
-      "origin": "ecdict-derived",
+      "pos": "n./adj./vt.",
+      "definition": "n. 飞行员；领航员；引火小火苗；试播节目；试点；adj. 试验性的；vt. 驾驶飞机；领航；试行；引导法案等通过",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
-      "flags": [
-        "sense-pos-mismatch:adj"
-      ]
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/pilot",
+      "checkedOn": "2026-11-17",
+      "flags": []
     },
     {
       "word": "pimple",
@@ -74173,17 +74128,15 @@
     },
     {
       "word": "plain",
-      "pos": "n./adj.",
-      "definition": "n. 平原，草原，朴实无华的东西，无格式　adj. 简单的，明白的，平常的，不好",
-      "origin": "ecdict-derived",
+      "pos": "adj./n./adv.",
+      "definition": "adj. 朴素无装饰的；不加配料的；清楚易懂的；明显的；十足的；相貌平常的；n. 平原；平针（编织）；adv. 完全地（非正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
-      "flags": [
-        "possible-truncation"
-      ]
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/plain",
+      "checkedOn": "2026-11-17",
+      "flags": []
     },
     {
       "word": "plainly",
@@ -74441,16 +74394,14 @@
     {
       "word": "plate",
       "pos": "n./vt.",
-      "definition": "n. 碟，盘子，盆中物，金属板　vt. 镀金，电镀，用金属板固定，给...装钢板",
-      "origin": "ecdict-derived",
+      "definition": "n. 盘子；一盘食物；板；印版；书中插图；地壳板块；假牙托板；金银器皿；镀层金属；本垒板（美国棒球）；vt. 给金属物体镀层",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
-      "flags": [
-        "possible-truncation"
-      ]
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/plate",
+      "checkedOn": "2026-11-17",
+      "flags": []
     },
     {
       "word": "plateau",
@@ -75113,16 +75064,14 @@
     {
       "word": "poll",
       "pos": "n./vt.",
-      "definition": "n. 投票，民意测验，选举投票，投票数　vt. 对...进行民意测验，获得...",
-      "origin": "ecdict-derived",
+      "definition": "n. 民意调查；投票；投票站（the polls）；vt. 对…进行民意调查；在选举中获得票数",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
-      "flags": [
-        "possible-truncation"
-      ]
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/poll",
+      "checkedOn": "2026-11-17",
+      "flags": []
     },
     {
       "word": "pollen",
@@ -76842,18 +76791,15 @@
     },
     {
       "word": "preserve",
-      "pos": "vt./vi.",
-      "definition": "vt. 保护，保持，保存，维持　vi. 加工食品，禁猎",
-      "origin": "ecdict-derived",
+      "pos": "vt./n.",
+      "definition": "vt. 保护；保存；保持；对食物进行防腐处理；n. 果酱或蜜饯；某类人专属的活动或领域；自然保护区（美国）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
-      "flags": [
-        "sense-pos-mismatch:n"
-      ]
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/preserve",
+      "checkedOn": "2026-11-17",
+      "flags": []
     },
     {
       "word": "presidency",
@@ -77455,18 +77401,15 @@
     },
     {
       "word": "process",
-      "pos": "n./vt.",
-      "definition": "n. 程序，进行，过程　vt. 加工，使...接受处理，对...处置，对...起",
-      "origin": "ecdict-derived",
+      "pos": "n./v.",
+      "definition": "n. 过程；步骤；工序；（身体部位的）突起；vt. 办理；处理数据；加工；逐渐理解、接受经历；冲洗胶片；vi. 缓慢列队行进（主要为英国，正式，另读）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
-      "flags": [
-        "possible-truncation"
-      ]
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/process",
+      "checkedOn": "2026-11-17",
+      "flags": []
     },
     {
       "word": "proclaim",
@@ -79090,18 +79033,15 @@
     },
     {
       "word": "pull",
-      "pos": "vt./vi.",
-      "definition": "vt. 拉，拖，拔，牵　vi. 拉，拖，拔，有吸引力",
-      "origin": "ecdict-derived",
+      "pos": "v./n.",
+      "definition": "v. 拉；拖；拔出；撤下；驶向某方向；吸引；拉伤肌肉；n. 拉；拉力；吸引力；影响力（非正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
-      "flags": [
-        "sense-pos-mismatch:n"
-      ]
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/pull",
+      "checkedOn": "2026-11-17",
+      "flags": []
     },
     {
       "word": "pulp",
@@ -80237,18 +80177,15 @@
     },
     {
       "word": "rank",
-      "pos": "n./adj.",
-      "definition": "n. 等级，排，横列，队伍　adj. 茂密丛生的，恶臭的，十足的，粗俗的",
-      "origin": "ecdict-derived",
+      "pos": "n./v./adj.",
+      "definition": "n. 等级；军衔；地位；名次；横排；出租车候客处；v. 排名；给…评级；adj. 十足的（尤指坏事）；恶臭的；（植物）丛生过密的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
-      "flags": [
-        "sense-pos-mismatch:v"
-      ]
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/rank",
+      "checkedOn": "2026-11-17",
+      "flags": []
     },
     {
       "word": "ransom",
@@ -85661,18 +85598,15 @@
     },
     {
       "word": "rough",
-      "pos": "n./adj.",
-      "definition": "n. 粗糙的东西，毛坯，未加工品，梗概　adj. 粗糙的，粗暴的，蓬乱的，草率的",
-      "origin": "ecdict-derived",
+      "pos": "adj./adv./n./v.",
+      "definition": "adj. 粗糙的；崎岖的；粗略的；未完成的；粗暴的；风浪大的；艰难的；身体不适的（英国）；adv. 粗暴地；n. 草图；粗野的人；高尔夫长草区；v. 过简陋生活（rough it）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
-      "flags": [
-        "possible-truncation"
-      ]
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/rough",
+      "checkedOn": "2026-11-17",
+      "flags": []
     },
     {
       "word": "roughly",
@@ -85738,13 +85672,13 @@
     {
       "word": "routinely",
       "pos": "adv.",
-      "definition": "常规地；例行地",
-      "origin": "editorial-unverified",
+      "definition": "例行地；常规地；经常，通常",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-2.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/routinely",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -87177,17 +87111,14 @@
     {
       "word": "schedule",
       "pos": "n./vt.",
-      "definition": "n. 时间表，一览表，计划表，议事日程　vt. 预定，编制目录，制...表，安排",
-      "origin": "ecdict-derived",
+      "definition": "n. 日程表；时间表（美国）；清单；法律或保险文件中的附表；vt. 安排；预定时间",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
-      "flags": [
-        "possible-truncation"
-      ]
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/schedule",
+      "checkedOn": "2026-11-17",
+      "flags": []
     },
     {
       "word": "scheme",
@@ -91428,18 +91359,15 @@
     },
     {
       "word": "smart",
-      "pos": "adj./n.",
-      "definition": "adj. 聪明的，漂亮的，刺痛的，剧烈的　n. 刺痛，痛苦",
-      "origin": "ecdict-derived",
+      "pos": "adj./adv./vi.",
+      "definition": "adj. 聪明的；机敏的；整洁时髦的；高档的；智能的；自作聪明或出言不敬的；adv. 聪明有效地；vi. 刺痛；因失败或批评而难过恼怒",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
-      "flags": [
-        "sense-pos-mismatch:v"
-      ]
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/smart",
+      "checkedOn": "2026-11-17",
+      "flags": []
     },
     {
       "word": "smash",
@@ -91649,17 +91577,15 @@
     },
     {
       "word": "snap",
-      "pos": "vt./vi.",
-      "definition": "vt. 使突然中断，猛咬，争夺，拉断　vi. 咬，扑，抓，折断",
-      "origin": "ecdict-derived",
+      "pos": "v./n./adj./interj.",
+      "definition": "v.（使）啪地折断；突然失控；厉声说；猛咬；快速拍照；用摁扣扣上（美国）；n. 啪嗒声；摁扣；快照（英国）；简单的事（美国）；一种纸牌游戏；美式橄榄球开球传球；adj. 仓促的；interj. 一样！（游戏或口语）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
-      "flags": [
-        "sense-pos-mismatch:n"
-      ]
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/snap",
+      "checkedOn": "2026-11-17",
+      "flags": []
     },
     {
       "word": "snarl",
@@ -92553,18 +92479,15 @@
     },
     {
       "word": "spare",
-      "pos": "n./adj.",
-      "definition": "n. 剩余，备用品，备件，备用零件　adj. 多余的，备用的，空闲的，节约的",
-      "origin": "ecdict-derived",
+      "pos": "adj./vt./n.",
+      "definition": "adj. 备用的；空闲的；多余的；瘦长的（文学）；简朴的（文学）；vt. 饶恕；使免于不愉快；抽出时间、金钱等；n. 备用物；零备件",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
-      "flags": [
-        "sense-pos-mismatch:v"
-      ]
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/spare",
+      "checkedOn": "2026-11-17",
+      "flags": []
     },
     {
       "word": "sparingly",
@@ -93270,18 +93193,15 @@
     },
     {
       "word": "split",
-      "pos": "n./adj.",
-      "definition": "n. 劈开，裂片，裂缝，分裂　adj. 劈开的",
-      "origin": "ecdict-derived",
+      "pos": "v./n.",
+      "definition": "v.（使）分裂；分开；分担；裂开；告密（英国，旧式）；离开（旧式）；n. 裂缝；分歧；分配比例；劈叉（the splits）；比赛分段时间",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
-      "flags": [
-        "sense-pos-mismatch:v"
-      ]
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/split",
+      "checkedOn": "2026-11-17",
+      "flags": []
     },
     {
       "word": "spoil",
@@ -93478,18 +93398,15 @@
     },
     {
       "word": "spot",
-      "pos": "n./adj.",
-      "definition": "n. 污点，地点，斑点，点　adj. 当场的，现场的，现货买卖的，现金交易的",
-      "origin": "ecdict-derived",
+      "pos": "n./vt.",
+      "definition": "n. 斑点；污点；粉刺（英国）；少量（主要为英国）；地点；职位；节目或广播时段；广告短片；vt. 看见；发现；注意到",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
-      "flags": [
-        "sense-pos-mismatch:v"
-      ]
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/spot",
+      "checkedOn": "2026-11-17",
+      "flags": []
     },
     {
       "word": "spotless",
@@ -94604,18 +94521,15 @@
     },
     {
       "word": "steep",
-      "pos": "n./adj.",
-      "definition": "n. 浸渍，悬崖　adj. 险峻的，陡峭的，急剧升降的，夸大的",
-      "origin": "ecdict-derived",
+      "pos": "adj./v.",
+      "definition": "adj. 陡峭的；急剧升降的；（费用）过高的；v. 浸泡；使浸透；be steeped in 指深受影响或充满某种传统等",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
-      "flags": [
-        "sense-pos-mismatch:v"
-      ]
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/steep",
+      "checkedOn": "2026-11-17",
+      "flags": []
     },
     {
       "word": "steer",
@@ -94862,17 +94776,15 @@
     },
     {
       "word": "still",
-      "pos": "n./v.",
-      "definition": "n. 蒸馏室，寂静，剧照　v. 蒸馏，(使)平静，(使)静止",
-      "origin": "ecdict-derived",
+      "pos": "adv./adj./vt./n.",
+      "definition": "adv. 仍然；尽管如此；还要，更（与比较级连用）；adj. 静止的；平静的；不含气的（饮料）；vt. 使静止；使安静；n. 电影剧照；寂静（文学）；蒸馏器",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
-      "flags": [
-        "sense-pos-mismatch:adv/adj"
-      ]
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/still",
+      "checkedOn": "2026-11-17",
+      "flags": []
     },
     {
       "word": "stilt",
@@ -97446,18 +97358,15 @@
     },
     {
       "word": "surface",
-      "pos": "n./adj.",
-      "definition": "n. 面，表面，水面，外表　adj. 表面的，外观的，肤浅的，水面上的",
-      "origin": "ecdict-derived",
+      "pos": "n./v./adj.",
+      "definition": "n. 表面；外层；台面；表面现象；vi. 浮出水面；显露、出现；起床（非正式）；vt. 给路面等铺硬面；adj. 地面或水面的；表面上的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
-      "flags": [
-        "sense-pos-mismatch:v"
-      ]
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/surface",
+      "checkedOn": "2026-11-17",
+      "flags": []
     },
     {
       "word": "surge",
@@ -97694,18 +97603,15 @@
     },
     {
       "word": "suspect",
-      "pos": "n./adj.",
-      "definition": "n. 被怀疑者，嫌疑犯　adj. 令人怀疑的，不可信的，可疑的",
-      "origin": "ecdict-derived",
+      "pos": "vt./n./adj.",
+      "definition": "vt. 怀疑某事属实；怀疑某人有罪；不信任；n. 嫌疑人；adj. 可疑的；不可靠的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
-      "flags": [
-        "sense-pos-mismatch:v"
-      ]
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/suspect",
+      "checkedOn": "2026-11-17",
+      "flags": []
     },
     {
       "word": "suspend",
@@ -97939,18 +97845,15 @@
     },
     {
       "word": "swell",
-      "pos": "n./adj.",
-      "definition": "n. 增大，隆起的部分，巨浪，肿胀　adj. 优秀的，一流的",
-      "origin": "ecdict-derived",
+      "pos": "v./n./adj./adv.",
+      "definition": "v. 肿胀；（使）增大；增强；声音变响；n. 涌浪；渐强的声音；有钱的时髦人物（旧式）；adj. 极好的（美国，旧式）；adv. 很好地（美国，旧式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
-      "flags": [
-        "sense-pos-mismatch:v"
-      ]
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/swell",
+      "checkedOn": "2026-11-17",
+      "flags": []
     },
     {
       "word": "swelling",
@@ -98637,18 +98540,15 @@
     },
     {
       "word": "tail",
-      "pos": "n./adj.",
-      "definition": "n. 尾部，后部，辫子，随员　adj. 在后面的，从后面而来的，限定继承的，尾部",
-      "origin": "ecdict-derived",
+      "pos": "n./vt.",
+      "definition": "n. 尾巴；尾状部分；跟踪者（非正式）；硬币反面（tails）；燕尾服（tails）；臀部（美国）；句末补充语（语法）；vt. 秘密跟踪",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
-      "flags": [
-        "possible-truncation",
-        "sense-pos-mismatch:v"
-      ]
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/tail",
+      "checkedOn": "2026-11-17",
+      "flags": []
     },
     {
       "word": "tailor",
@@ -101024,17 +100924,15 @@
     },
     {
       "word": "till",
-      "pos": "prep./conj.",
-      "definition": "prep. 直到，在...以前，迄　conj. 直到...为止",
-      "origin": "ecdict-derived",
+      "pos": "prep./conj./n./vt.",
+      "definition": "prep./conj. 直到；到…为止；n. 收银机；钱柜；收银处（主要为英国）；vt. 耕作，耕种土地",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
-      "flags": [
-        "sense-pos-mismatch:n/v"
-      ]
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/till",
+      "checkedOn": "2026-11-17",
+      "flags": []
     },
     {
       "word": "tilt",
@@ -102087,13 +101985,13 @@
     {
       "word": "traditionally",
       "pos": "adv.",
-      "definition": "传统上",
-      "origin": "editorial-unverified",
+      "definition": "传统上；按照传统方式",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-2.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/traditionally",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -105550,18 +105448,15 @@
     },
     {
       "word": "upset",
-      "pos": "adj./vt.",
-      "definition": "adj. 弄翻的，混乱的，心烦的　vt. 弄翻，颠覆，推翻，打乱",
-      "origin": "ecdict-derived",
+      "pos": "vt./adj./n.",
+      "definition": "vt. 使难过或恼怒；打乱；打翻；使肠胃不适；adj. 难过的；不安的；（肠胃）不舒服的；n. 混乱；爆冷门的胜利；轻微肠胃不适",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
-      "flags": [
-        "sense-pos-mismatch:n"
-      ]
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/upset",
+      "checkedOn": "2026-11-17",
+      "flags": []
     },
     {
       "word": "upside-down",
@@ -108540,18 +108435,15 @@
     },
     {
       "word": "weather",
-      "pos": "n./adj.",
-      "definition": "n. 天气，气象，处境　adj. 迎风的",
-      "origin": "ecdict-derived",
+      "pos": "n./v.",
+      "definition": "n. 天气；气象状况；vt. 安然渡过困难；v.（使）风化；因风吹日晒而改变",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
-      "flags": [
-        "sense-pos-mismatch:v"
-      ]
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/weather",
+      "checkedOn": "2026-11-17",
+      "flags": []
     },
     {
       "word": "weathering",
@@ -108822,17 +108714,15 @@
     },
     {
       "word": "well",
-      "pos": "n./v.",
-      "definition": "n. 井，泉水，源泉，好　v. 涌出",
-      "origin": "ecdict-derived",
+      "pos": "adv./adj./interj./n./vi.",
+      "definition": "adv. 好地；充分地；相当；远远地；有充分理由地；as well 表示也；adj. 健康的；interj. 嗯；那么；好吧；n. 井；油井；气井；vi. 涌出，涌上（常接 up）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-017.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
-      "flags": [
-        "sense-pos-mismatch:adv"
-      ]
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/well",
+      "checkedOn": "2026-11-17",
+      "flags": []
     },
     {
       "word": "well-being",

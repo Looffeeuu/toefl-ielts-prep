@@ -15,12 +15,24 @@ const entries = definitions.entries.map(d=>{
   const p = ph.get(d.word); assert(p, `missing pronunciation inventory: ${d.word}`);
   return {word:d.word,definitionChecked:d.origin==='dictionary-reviewed',pronunciationChecked:p.status==='dictionary-reviewed',definitionSource:d.dictionary,...(d.dictionaries?{definitionSources:d.dictionaries}:{}),pronunciationSource:p.review?.source||null,...(p.review?.sources?{pronunciationSources:p.review.sources}:{}),definitionCheckedOn:d.checkedOn,pronunciationCheckedOn:p.review?.checkedOn||null,flags:d.flags.concat(p.flags)};
 });
+// User priority: finish core, then TOEFL high-frequency only.
+const lists={window:{}};vm.createContext(lists);
+for(const f of ['words.js','words-ext.js','words-ielts.js']) vm.runInContext(fs.readFileSync(path.join(root,'js',f),'utf8'),lists);
+const coreWords=new Set(lists.window.TOPICS.flatMap(t=>t.raw.trim().split(/\r?\n/).map(l=>l.split('|')[0].trim())));
+const highWords=new Set();
+for(const [key,tier] of [['EXT_WORDS','f1']])
+ for(const line of lists.window[key].split('\n')){const cols=line.split('\t');if(cols[4]===tier)highWords.add(cols[0]);}
+const priorityRank=w=>coreWords.has(w)?0:highWords.has(w)?1:2;
+const scopeStats=(name,set)=>{const selected=entries.filter(e=>set.has(e.word));return {name,total:selected.length,completed:selected.filter(e=>e.definitionChecked&&e.pronunciationChecked).length,remaining:selected.filter(e=>!e.definitionChecked||!e.pronunciationChecked).length};};
+const priorityScopes=[scopeStats('核心精编',coreWords),scopeStats('托福高频',highWords)];
+fs.writeFileSync(path.join(docs,'review-priority.json'),JSON.stringify({instructionDate:'2026-11-17',order:['核心精编全部','托福高频全部'],note:'本轮只核对核心精编和托福高频；重叠词只计一次。雅思独有词及其他词库不属于本轮目标。',scopes:priorityScopes},null,2)+'\n');
+console.log(JSON.stringify(priorityScopes));
 const count = predicate => entries.filter(predicate).length;
 const summary = {total:entries.length,definitionsChecked:count(e=>e.definitionChecked),pronunciationsChecked:count(e=>e.pronunciationChecked),bothChecked:count(e=>e.definitionChecked&&e.pronunciationChecked)};
 summary.remainingBoth = summary.total-summary.bothChecked;
 const queue = entries.filter(e=>!e.definitionChecked||!e.pronunciationChecked).sort((a,b)=>{
   const priority = e => e.flags.some(f=>!['legacy-notation','cyrillic-symbol'].includes(f)) ? 0 : 1;
-  return priority(a)-priority(b)||a.word.localeCompare(b.word,'en');
+  return priorityRank(a.word)-priorityRank(b.word)||priority(a)-priority(b)||a.word.localeCompare(b.word,'en');
 });
 const publication={...policy,completedSinceLastPublish:summary.bothChecked-policy.bothCheckedAtLastPublish};
 publication.remainingUntilPublish=Math.max(0,policy.publishEveryCompletedWords-publication.completedSinceLastPublish);

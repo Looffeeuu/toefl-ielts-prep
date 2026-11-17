@@ -39,7 +39,7 @@ const entries = Object.values(ctx.auditWords).map(o=>{
   return {word:o.w,pos:o.pos,definition:o.cn,origin,sourceFiles:review?[review.file||'js/definition-reviews.js']:exact.map(r=>r.file),dictionary:review?.source||null,...(review?.sources ? {dictionaries:review.sources} : {}),checkedOn:review?.checkedOn||null,flags};
 }).sort((a,b)=>a.word.localeCompare(b.word));
 const flagCounts={}; for(const e of entries)for(const f of e.flags)flagCounts[f.split(':')[0]]=(flagCounts[f.split(':')[0]]||0)+1;
-const report={date:'2026-11-16',scope:'全部内置词条的来源和结构一致性；仅 dictionary-reviewed 条目经过本轮外部词典核对。其他候选不能据此判定为虚假或正确。',total:entries.length,sources,flagCounts,entries};
+const report={date:'2026-11-17',scope:'全部内置词条的来源和结构一致性；仅 dictionary-reviewed 条目经过本轮外部词典核对。其他候选不能据此判定为虚假或正确。',total:entries.length,sources,flagCounts,entries};
 if(process.argv.includes('--write')){fs.mkdirSync(path.join(root,'docs'),{recursive:true});fs.writeFileSync(path.join(root,'docs/definition-audit.json'),JSON.stringify(report,null,2)+'\n');}
 console.log(JSON.stringify({total:report.total,sources,flagCounts},null,2));
 if(sources.unresolved)process.exitCode=1;

@@ -170,6 +170,19 @@ if(reviews.some(r=>r.w==='certificate')){
   assert(ctx.words.catholic.cn.includes('大写 Catholic'));
   assert(ctx.words.cast.senses.some(s=>s[0].includes('石膏')));
 }
+if(reviews.some(r=>r.w==='cognitive')){
+ assert.equal(reading('compress')[0].uk,'kəmˈpres');
+ assert.equal(reading('compress')[1].uk,'ˈkɒm.pres');
+ assert.equal(reading('document')[1].us,'ˈdɑː.kjə.ment');
+ assert.equal(reading('estimate')[1].us,'ˈes.tə.mət');
+ assert.equal(reading('elaborate')[1].us,'iˈlæb.ə.reɪt');
+ assert.equal(reading('dynasty')[0].uk,'ˈdɪn.ə.sti');
+ assert.equal(reading('fertile')[0].us,'ˈfɝː.t̬əl');
+ assert.equal(reading('contribute').length,2);
+ assert.equal(reading('controversy').length,2);
+ assert(ctx.words.commission.senses.some(s=>s[0].includes('佣金')));
+ assert(ctx.words.currency.senses.some(s=>s[0].includes('普遍接受')));
+}
 assert(ctx.App.pronunciationHTML({w:'<test>',ph:'<bad>',custom:true}).includes('&lt;bad&gt;'));
 assert(!ctx.App.pronunciationHTML({w:'<test>',ph:'<bad>'}).includes('<bad>'));
 assert(!vocab.includes('esc(o.ph)'), 'a vocab surface still renders legacy IPA directly');
@@ -183,6 +196,6 @@ const entries = Object.values(ctx.words).map(o => ({
 const reviewed = entries.filter(e=>e.status==='dictionary-reviewed').length;
 const summary = {total:entries.length, reviewed, unverified:entries.length-reviewed, referenceWords:seen.size, flags:{}};
 for(const e of entries) for(const f of e.flags) summary.flags[f] = (summary.flags[f]||0)+1;
-if(process.argv.includes('--write')) fs.writeFileSync(path.join(root,'docs/pronunciation-audit.json'),JSON.stringify({checkedOn:'2026-11-16',summary,entries},null,2)+'\n');
+if(process.argv.includes('--write')) fs.writeFileSync(path.join(root,'docs/pronunciation-audit.json'),JSON.stringify({checkedOn:'2026-11-17',summary,entries},null,2)+'\n');
 console.log(JSON.stringify(summary));
 console.log('Pronunciation source, merge, heteronym and renderer checks passed.');

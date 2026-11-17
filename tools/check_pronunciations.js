@@ -33,6 +33,15 @@ for(const r of reviews){
   assert(!rendered.includes('尚未核对'));
 }
 const reading = w => reviews.find(r => r.w===w).readings;
+if(reviews.some(r=>r.w==='graduate')){
+  assert.equal(reading('graduate')[0].uk,'ˈɡrædʒ.u.ət');
+  assert.equal(reading('graduate')[1].us,'ˈɡrædʒ.u.eɪt');
+  assert.equal(reading('fragment')[1].uk,'fræɡˈment');
+  assert.equal(reading('herb')[0].uk,'hɜːb');
+  assert.equal(reading('herb')[0].us,'ɝːb');
+  assert(ctx.words.founder.senses.some(s=>s[0].includes('沉没')));
+  assert(ctx.words.hang.cn.includes('绞死'));
+}
 if(reviews.some(r=>r.w==='coordinate')){
   assert.equal(reading('conduct')[0].uk,'kənˈdʌkt');
   assert.equal(reading('conduct')[1].uk,'ˈkɒn.dʌkt');

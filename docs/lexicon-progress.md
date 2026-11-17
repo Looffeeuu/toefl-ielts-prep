@@ -4,9 +4,9 @@
 
 | 项目 | 已核对 | 尚待核对 |
 | --- | ---: | ---: |
-| 释义与词性 | 2044 | 7031 |
-| 英美音与主要分读 | 2051 | 7024 |
-| 两项均完成 | 2035 | 7040 |
+| 释义与词性 | 2144 | 6931 |
+| 英美音与主要分读 | 2151 | 6924 |
+| 两项均完成 | 2135 | 6940 |
 
 每词分别保存来源和日期，不能用核对音标代替核对释义。完整状态和接续队列见 [lexicon-progress.json](lexicon-progress.json)。优先处理缺失、截断、词性矛盾和用法标记，再按字母顺序推进。未找到可靠来源的条目保持待核对，不推测填充。
 
@@ -24,7 +24,7 @@ node tools/check_pronunciations.js --write
 node tools/lexicon_progress.js
 ```
 
-下一批队列前 30 词：flag、flash、flavor、flee、flexibility、flip、float、flood、flour、fluid、focus、fog、fold、folk、forbid、formal、format、formation、former、formerly、formula、forth、fortune、foster、founder、fraction、fragile、fragment、frame、fraud。
+下一批队列前 30 词：horror、hostile、house、household、human、humanity、hunger、hurricane、icon、ideal、identical、identification、identify、identity、ideological、ideology、ignore、illusion、illustration、image、imagine、immediate、immediately、immigration、immune、impact、implement、implication、imply、import。
 
 ## 批次 002
 
@@ -146,6 +146,12 @@ node tools/lexicon_progress.js
 
 
 
+## 批次 022
+
+完成 100 词：flag、flash、flavor、flee、flexibility、flip、float、flood、flour、fluid、focus、fog、fold、folk、forbid、formal、format、formation、former、formerly、formula、forth、fortune、foster、founder、fraction、fragile、fragment、frame、fraud、frontier、frown、frustration、fuel、functional、fund、fur、furniture、gallery、gap、garbage、gasoline、gaze、gear、general、generally、generate、generous、genetic、genius、gentle、genuine、giant、gifted、glimpse、global、goal、govern、governor、grab、graduate、grain、grand、graphics、grasp、grateful、grip、guarantee、hall、hallway、handful、handle、hang、hardly、hardware、harm、harmony、harsh、harvest、haul、hazard、head、headquarters、heal、heaven、heel、height、helpful、herb、hesitate、hide、highlight、hike、hint、Hispanic、honor、hook、horizon、hormone、horn。托福高频接续批次；核对多义、多词性、同形异音及地区用法，保留逐词来源与原创例句。
+
+
+
 ## 发布节奏
 
-每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 0 词，距下次发布还差 1000 词。发布基线为 fc694f71b9d99bf227f0f0001b6b199e5de0bf50，当时两项均核对 2035 词；当前页面显示本地核对进度，不表示已上线。
+每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 100 词，距下次发布还差 900 词。发布基线为 fc694f71b9d99bf227f0f0001b6b199e5de0bf50，当时两项均核对 2035 词；当前页面显示本地核对进度，不表示已上线。

@@ -4,9 +4,9 @@
 
 | 项目 | 已核对 | 尚待核对 |
 | --- | ---: | ---: |
-| 释义与词性 | 1335 | 7740 |
-| 英美音与主要分读 | 1345 | 7730 |
-| 两项均完成 | 1326 | 7749 |
+| 释义与词性 | 1435 | 7640 |
+| 英美音与主要分读 | 1445 | 7630 |
+| 两项均完成 | 1426 | 7649 |
 
 每词分别保存来源和日期，不能用核对音标代替核对释义。完整状态和接续队列见 [lexicon-progress.json](lexicon-progress.json)。优先处理缺失、截断、词性矛盾和用法标记，再按字母顺序推进。未找到可靠来源的条目保持待核对，不推测填充。
 
@@ -24,7 +24,7 @@ node tools/check_pronunciations.js --write
 node tools/lexicon_progress.js
 ```
 
-下一批队列前 30 词：ruins、fossil、fracture、framework、fresco、friction、frustrate、fundamental、fusion、galaxy、genre、glacier、gradual、gravity、habitat、habituation、hence、heritage、hibernate、hierarchy、hinder、humid、hypothesis、illustrate、immigrant、impede、implicit、improvise、incentive、indicate。
+下一批队列前 30 词：ruins、phenomenon、photosynthesis、pigment、plateau、plausible、pollinate、porous、portrait、portray、potential、pottery、precede、precipitation、predator、predominant、prehistoric、prey、primitive、profound、prolific、prominent、proportion、prosperity、radiation、rapid、recall、recession、reflect、regulate。
 
 ## 批次 002
 
@@ -104,6 +104,12 @@ node tools/lexicon_progress.js
 
 待复核：ruins。已找到 ruin 的释义与原形音标，尚未取得 ruins 自身完整英美 IPA，保留待核对。 [已查资料](https://dictionary.cambridge.org/dictionary/english/ruin)。不计入完成数。
 
+## 批次 015
+
+完成 100 词：fossil、fracture、framework、fresco、friction、frustrate、fundamental、fusion、galaxy、genre、glacier、gradual、gravity、habitat、habituation、hence、heritage、hibernate、hierarchy、hinder、humid、hypothesis、illustrate、immigrant、impede、implicit、improvise、incentive、indicate、indigenous、industrialization、inevitable、infer、inflation、infrastructure、inhabit、inhibit、innate、innovative、inscription、instinct、intense、intricate、intuition、irrigation、labor、landform、larva、layer、legislation、literacy、luminous、magnitude、maintain、manuscript、masterpiece、meander、mechanism、mechanize、medieval、medium、memorize、merchant、merely、meteorite、migrate、mimic、mineral、modify、molten、momentum、monopoly、monument、moreover、motif、motivation、mural、mutation、narrative、nebula、nevertheless、nocturnal、nomadic、notably、nurture、nutrient、obstacle、offspring、orbit、organism、origin、ornament、paradox、parasite、particle、patron、peasant、peer、perceive、perception。
+
+待复核：ruins。已找到 ruin 的释义与原形音标，尚未取得 ruins 自身完整英美 IPA，保留待核对。 [已查资料](https://dictionary.cambridge.org/dictionary/english/ruin)。不计入完成数。
+
 ## 发布节奏
 
-每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 300 词，距下次发布还差 700 词。发布基线为 622b7ffac50f5c24b3ab3424a6faa53e3ba406d4，当时两项均核对 1026 词；当前页面显示本地核对进度，不表示已上线。
+每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 400 词，距下次发布还差 600 词。发布基线为 622b7ffac50f5c24b3ab3424a6faa53e3ba406d4，当时两项均核对 1026 词；当前页面显示本地核对进度，不表示已上线。

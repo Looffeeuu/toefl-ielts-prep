@@ -183,6 +183,19 @@ if(reviews.some(r=>r.w==='cognitive')){
  assert(ctx.words.commission.senses.some(s=>s[0].includes('佣金')));
  assert(ctx.words.currency.senses.some(s=>s[0].includes('普遍接受')));
 }
+if(reviews.some(r=>r.w==='habituation')){
+ assert.equal(reading('ornament')[0].uk,'ˈɔː.nə.mənt');
+ assert.equal(reading('ornament')[1].uk,'ˈɔː.nə.ment');
+ assert.equal(reading('hinder')[1].us,'ˈhaɪndər');
+ assert.equal(reading('instinct')[1].uk,'ɪnˈstɪŋkt');
+ assert.equal(reading('glacier').length,2);
+ assert.equal(reading('genre')[0].uk,'ˈʒɑ̃ː.rə');
+ assert.equal(reading('migrate')[0].us,'ˈmaɪ.ɡreɪt');
+ assert.equal(reading('perception')[0].us,'pərˈsepʃn');
+ assert(ctx.words.offspring.cn.includes('单复数同形'));
+ assert(ctx.words.implicit.senses.some(s=>s[0].includes('毫无保留')));
+ assert(ctx.words.maintain.senses.some(s=>s[0].includes('供养')));
+}
 assert(ctx.App.pronunciationHTML({w:'<test>',ph:'<bad>',custom:true}).includes('&lt;bad&gt;'));
 assert(!ctx.App.pronunciationHTML({w:'<test>',ph:'<bad>'}).includes('<bad>'));
 assert(!vocab.includes('esc(o.ph)'), 'a vocab surface still renders legacy IPA directly');

@@ -33,6 +33,24 @@ for(const r of reviews){
   assert(!rendered.includes('尚未核对'));
 }
 const reading = w => reviews.find(r => r.w===w).readings;
+if(reviews.some(r=>r.w==='coordinate')){
+  assert.equal(reading('conduct')[0].uk,'kənˈdʌkt');
+  assert.equal(reading('conduct')[1].uk,'ˈkɒn.dʌkt');
+  assert.equal(reading('content')[0].uk,'kənˈtent');
+  assert.equal(reading('content')[1].uk,'ˈkɒn.tent');
+  assert.equal(reading('contract')[1].us,'kənˈtrækt');
+  assert.equal(reading('contractor')[0].uk,'kənˈtræk.təʳ');
+  assert.equal(reading('contractor')[0].us,'ˈkɑːn.træk.tɚ');
+  assert.equal(reading('coordinate')[0].uk,'kəʊˈɔː.dɪ.neɪt');
+  assert.equal(reading('coordinate')[1].uk,'kəʊˈɔː.dɪ.nət');
+  assert.equal(reading('convict')[1].us,'ˈkɑːn.vɪkt');
+  assert.equal(reading('comparable').length,2);
+  assert.equal(reading('complex').length,3);
+  assert.equal(reading('conversion').length,2);
+  assert(ctx.words.consistency.senses.some(s=>s[0].includes('稠度')));
+  assert(ctx.words.concerning.pos.includes('adj.'));
+  assert(ctx.words.consumer.definitionReview.sources.some(s=>s.includes('collinsdictionary.com')));
+}
 if(reviews.some(r=>r.w==='mate')){
   assert.equal(reading('mate')[0].uk,'meɪt');
   assert.equal(reading('mate')[1].uk,'ˈmæt.eɪ');

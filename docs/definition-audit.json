@@ -3,9 +3,9 @@
   "scope": "全部内置词条的来源和结构一致性；仅 dictionary-reviewed 条目经过本轮外部词典核对。其他候选不能据此判定为虚假或正确。",
   "total": 9075,
   "sources": {
-    "dictionary-reviewed": 1844,
-    "ecdict-derived": 3963,
-    "editorial-unverified": 3268
+    "dictionary-reviewed": 1944,
+    "ecdict-derived": 3917,
+    "editorial-unverified": 3214
   },
   "flagCounts": {
     "missing-pos": 27,
@@ -28599,14 +28599,13 @@
     {
       "word": "diagnosis",
       "pos": "n.",
-      "definition": "诊断",
-      "origin": "editorial-unverified",
+      "definition": "诊断；对疾病或问题性质的判断；复数 diagnoses",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js",
-        "js/words-ext.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/diagnosis",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -28672,15 +28671,14 @@
     },
     {
       "word": "dialogue",
-      "pos": "n./vi.",
-      "definition": "n. 对话　vi. 对话",
-      "origin": "ecdict-derived",
+      "pos": "n.",
+      "definition": "对话；戏剧、电影或小说中的对白；双方的正式对话、意见交流（美式也拼作 dialog）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/dialogue",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -28709,14 +28707,14 @@
     },
     {
       "word": "dictate",
-      "pos": "vt./vi.",
-      "definition": "vt. 决定；规定；口述　vi. 发号施令",
-      "origin": "editorial-unverified",
+      "pos": "v./n.",
+      "definition": "v. 口述让人记录；命令、规定；决定、支配；n. 命令、准则（正式，常用 dictates）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-2.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/dictate",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -28757,15 +28755,14 @@
     },
     {
       "word": "diet",
-      "pos": "n./vt.",
-      "definition": "n. 日常饮食，议会　vt. 照规定饮食",
-      "origin": "ecdict-derived",
+      "pos": "n./vi./adj.",
+      "definition": "n. 日常饮食；为减重或医疗目的制定的饮食方案；经常接触的一类内容；vi. 节食；adj. 低糖或低脂的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/diet",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -29000,14 +28997,13 @@
     {
       "word": "dignity",
       "pos": "n.",
-      "definition": "尊严，高贵",
-      "origin": "ecdict-derived",
+      "definition": "尊严；自尊；庄重、端庄",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/dignity",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -29144,15 +29140,14 @@
     },
     {
       "word": "dimension",
-      "pos": "n./vt.",
-      "definition": "n. 尺寸，次元，面积，维数　vt. 标出尺寸",
-      "origin": "ecdict-derived",
+      "pos": "n.",
+      "definition": "尺寸；维度；规模（常用 dimensions）；方面、特点",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/dimension",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -29352,26 +29347,25 @@
     {
       "word": "diplomatic",
       "pos": "adj.",
-      "definition": "外交的；圆滑的",
-      "origin": "editorial-unverified",
+      "definition": "外交的；处理人际关系圆融得体的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-2.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/diplomatic",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "direct",
-      "pos": "adj./vt.",
-      "definition": "adj. 直接的，坦白的　vt. 指示，指挥，命令，导演",
-      "origin": "ecdict-derived",
+      "pos": "adj./adv./v.",
+      "definition": "adj. 直接的；直达的；直系的；直率的；完全的；adv. 直接地、径直；v. 指挥；管理；导演；指路；把…对准；正式命令",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/direct",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -29473,13 +29467,13 @@
     {
       "word": "disappointment",
       "pos": "n.",
-      "definition": "失望",
-      "origin": "ecdict-derived",
+      "definition": "失望；令人失望的人或事物",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/disappointment",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -29534,14 +29528,13 @@
     {
       "word": "disaster",
       "pos": "n.",
-      "definition": "灾祸，不幸，彻底失败",
-      "origin": "ecdict-derived",
+      "definition": "灾难；灾祸；彻底的失败",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/disaster",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -29667,13 +29660,13 @@
     {
       "word": "discipline",
       "pos": "n./vt.",
-      "definition": "n. 学科；纪律　vt. 惩罚；训练",
-      "origin": "editorial-unverified",
+      "definition": "n. 纪律；训练；自制力；学科；vt. 惩戒；训练、管教；约束自己",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-2.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/discipline",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -29823,27 +29816,26 @@
     },
     {
       "word": "discount",
-      "pos": "n./vt.",
-      "definition": "n. 折扣，贴现率　vt. 打折扣",
-      "origin": "ecdict-derived",
+      "pos": "n./vt./adj.",
+      "definition": "n. 折扣；贴现额；vt. 打折；不予重视、不相信；贴现票据（金融）；adj. 折价的、廉价的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/discount",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "discourage",
       "pos": "vt.",
-      "definition": "使气馁，阻碍",
-      "origin": "ecdict-derived",
+      "definition": "使泄气、使失去信心；劝阻；阻碍或减少某事发生的可能",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/discourage",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -29860,14 +29852,14 @@
     },
     {
       "word": "discourse",
-      "pos": "n.",
-      "definition": "话语；论述",
-      "origin": "editorial-unverified",
+      "pos": "n./vi.",
+      "definition": "n. 话语、语篇（语言学）；讨论、辩论；正式演说或论述；vi. 谈论、论述；交谈（正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/discourse",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -29945,13 +29937,13 @@
     {
       "word": "discrimination",
       "pos": "n.",
-      "definition": "差别，岐视，辨别力",
-      "origin": "ecdict-derived",
+      "definition": "歧视；差别对待；辨别能力（正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/discrimination",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -30160,15 +30152,14 @@
     },
     {
       "word": "dismiss",
-      "pos": "vt./vi.",
-      "definition": "vt. 解散，开除，解职　vi. 解散",
-      "origin": "ecdict-derived",
+      "pos": "vt.",
+      "definition": "不予考虑；不把…当回事；解雇；让…离开、解散；驳回案件或指控",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/dismiss",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -30318,13 +30309,13 @@
     {
       "word": "display",
       "pos": "vt./n.",
-      "definition": "vt. 展示；表现　n. 陈列；展示",
-      "origin": "editorial-unverified",
+      "definition": "vt. 展示、陈列；表露感情；显示文字或图像；n. 展览；表演；感情的流露；电子显示",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-2.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/display",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -30402,14 +30393,14 @@
     },
     {
       "word": "dispute",
-      "pos": "n./vt.",
-      "definition": "n. 争论；争端　vt. 对…提出质疑",
-      "origin": "editorial-unverified",
+      "pos": "n./v.",
+      "definition": "n. 争论；争端；争执；v. 对…提出异议；质疑；争论",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-2.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/dispute",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -30618,14 +30609,14 @@
     },
     {
       "word": "dissolve",
-      "pos": "vi./vt.",
-      "definition": "vi. 溶解；消失　vt. 解散；使溶解",
-      "origin": "editorial-unverified",
+      "pos": "v.",
+      "definition": "溶解、使溶解；解散组织；解除法律关系；消失、消散",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-2.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/dissolve",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -30642,28 +30633,26 @@
     },
     {
       "word": "distance",
-      "pos": "n.",
-      "definition": "距离，远方，遥远",
-      "origin": "ecdict-derived",
+      "pos": "n./vt.",
+      "definition": "n. 距离；远处；疏远、冷淡；vt. 使疏远、撇清关系（distance oneself from）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/distance",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "distant",
       "pos": "adj.",
-      "definition": "远的，疏远的",
-      "origin": "ecdict-derived",
+      "definition": "遥远的；久远的；远亲的；疏远冷淡的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/distant",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -30753,26 +30742,25 @@
     {
       "word": "distinction",
       "pos": "n.",
-      "definition": "区别",
-      "origin": "ecdict-derived",
+      "definition": "区别；差异；卓越、优秀；荣誉；优秀等级（英式）；独特之处",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/distinction",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "distinctive",
       "pos": "adj.",
-      "definition": "独特的",
-      "origin": "editorial-unverified",
+      "definition": "独特的；有鲜明特征、易于辨认的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/distinctive",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -30849,14 +30837,14 @@
     },
     {
       "word": "distract",
-      "pos": "v.",
-      "definition": "分散注意力",
-      "origin": "editorial-unverified",
+      "pos": "vt.",
+      "definition": "分散注意力；使分心；转移注意力",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-2.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/distract",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -30898,38 +30886,37 @@
     {
       "word": "distribution",
       "pos": "n.",
-      "definition": "分布；分配",
-      "origin": "editorial-unverified",
+      "definition": "分发；配送；分配；分布；统计分布；股息或股份分派（金融）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/distribution",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "district",
       "pos": "n.",
-      "definition": "区域，地方",
-      "origin": "ecdict-derived",
+      "definition": "行政区；地区；有某种特点的城区",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/district",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "disturb",
       "pos": "vt.",
-      "definition": "扰乱，妨碍，使不安",
-      "origin": "ecdict-derived",
+      "definition": "打扰；使不安；弄乱；改变原有状态",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/disturb",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -31114,14 +31101,14 @@
     },
     {
       "word": "divide",
-      "pos": "vi./vt.",
-      "definition": "vi. 分开，分配，分裂　vt. 分，分开，分裂，除",
-      "origin": "ecdict-derived",
+      "pos": "v./n.",
+      "definition": "v. 分开；分配；分隔；分摊；使产生分歧；除以、除得尽；分组表决（英国议会）；n. 差异；分歧；隔阂",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/divide",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -31151,26 +31138,25 @@
     {
       "word": "division",
       "pos": "n.",
-      "definition": "分，分开，除法，部门(如部、处、系等)",
-      "origin": "ecdict-derived",
+      "definition": "划分；分配；部门；师（军队编制）；比赛级别或分区；除法；分歧、分裂",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/division",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "divorce",
-      "pos": "n./vt.",
-      "definition": "n. 离婚　vt. 与...离婚",
-      "origin": "ecdict-derived",
+      "pos": "n./v.",
+      "definition": "n. 离婚；分离、脱节（正式）；v. 离婚；使分离",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/divorce",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -31273,13 +31259,13 @@
     {
       "word": "doctrine",
       "pos": "n.",
-      "definition": "学说；教义",
-      "origin": "editorial-unverified",
+      "definition": "教义；学说；信条；一套原则，尤指政治、宗教或军事原则",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/doctrine",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -31297,13 +31283,13 @@
     {
       "word": "documentary",
       "pos": "n./adj.",
-      "definition": "n. 纪录片　adj. 文献的；记录的",
-      "origin": "editorial-unverified",
+      "definition": "n. 纪录片；纪实广播或电视节目；adj. 文件的、书面材料的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-1.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/documentary",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -31405,13 +31391,13 @@
     {
       "word": "doll",
       "pos": "n.",
-      "definition": "洋娃娃，无头脑的美丽女人",
-      "origin": "ecdict-derived",
+      "definition": "玩偶；洋娃娃；可爱或讨人喜欢的人（非正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/doll",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -31442,13 +31428,13 @@
     {
       "word": "domain",
       "pos": "n.",
-      "definition": "领域；范围",
-      "origin": "editorial-unverified",
+      "definition": "领域；管辖范围；互联网域；定义域（数学）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/domain",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -31465,14 +31451,18 @@
     },
     {
       "word": "domestic",
-      "pos": "adj.",
-      "definition": "驯养的；家庭的；国内的",
-      "origin": "editorial-unverified",
+      "pos": "adj./n.",
+      "definition": "adj. 家庭的；家务的；国内的；家养的；n. 家佣（旧式）；家庭纠纷或家庭内的暴力事件（主要英式非正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/domestic",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/domestic",
+        "https://www.collinsdictionary.com/dictionary/english/domestic"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -31503,14 +31493,14 @@
     },
     {
       "word": "dominant",
-      "pos": "adj.",
-      "definition": "占优势的；主要的",
-      "origin": "editorial-unverified",
+      "pos": "adj./n.",
+      "definition": "adj. 占主导地位的；最显著的；显性的（遗传学）；n. 属音、音阶第五音（音乐）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/dominant",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -31540,27 +31530,25 @@
     {
       "word": "donate",
       "pos": "v.",
-      "definition": "捐赠",
-      "origin": "editorial-unverified",
+      "definition": "捐赠；捐款；献血；捐献器官",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-2.js",
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/donate",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "donation",
       "pos": "n.",
-      "definition": "捐赠；捐款",
-      "origin": "editorial-unverified",
+      "definition": "捐赠；捐款、捐赠物",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-2.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/donation",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -31578,13 +31566,13 @@
     {
       "word": "donor",
       "pos": "n.",
-      "definition": "捐赠者；供者",
-      "origin": "editorial-unverified",
+      "definition": "捐赠者；捐赠机构；献血者；器官捐献者",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-2.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/donor",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -31662,14 +31650,13 @@
     {
       "word": "dot",
       "pos": "n./vt.",
-      "definition": "n. 点，圆点，小数点，小东西　vt. 作小点记号，加小点于",
-      "origin": "ecdict-derived",
+      "definition": "n. 小圆点；网址或文件名中点号的读法；摩尔斯电码的短音或短闪光；附点（音乐）；vt. 加点；散布、点缀",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/dot",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -31686,14 +31673,14 @@
     },
     {
       "word": "doubt",
-      "pos": "n./v.",
-      "definition": "n. 怀疑，疑惑　v. 怀疑，不信",
-      "origin": "ecdict-derived",
+      "pos": "n./vt.",
+      "definition": "n. 怀疑；疑问；不确定；vt. 怀疑；不相信；认为不太可能（b 不发音）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/doubt",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -31722,14 +31709,18 @@
     },
     {
       "word": "down",
-      "pos": "adj./adv.",
-      "definition": "adj. 向下的　adv. 下，下去，降下",
-      "origin": "ecdict-derived",
+      "pos": "adv./prep./adj./n./vt.",
+      "definition": "adv. 向下；降低；写下来；首付；prep. 沿着、向下；adj. 沮丧的；失灵的；处于较低位置或落后的；n. 绒羽、绒毛；vt. 迅速吃喝；击落",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/down",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/down",
+        "https://www.collinsdictionary.com/dictionary/english/down"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -31758,15 +31749,14 @@
     },
     {
       "word": "downtown",
-      "pos": "n./adj.",
-      "definition": "n. 市中心区　adj. 市中心的",
-      "origin": "ecdict-derived",
+      "pos": "adj./adv./n.",
+      "definition": "adj. 市中心的；adv. 在市中心、往市中心；n. 市中心（主要美式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/downtown",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -31783,27 +31773,26 @@
     },
     {
       "word": "draft",
-      "pos": "n./vt.",
-      "definition": "n. 气流，草稿，汇票，草案　vt. 起草，征兵",
-      "origin": "ecdict-derived",
+      "pos": "n./vt./adj.",
+      "definition": "n. 草稿；草案；汇票；征兵、选秀（主要美式）；穿堂风、船的吃水深度（美式，英式为 draught）；vt. 起草；绘制初步图纸；征召；选秀选中；adj. 草拟的、未定稿的；桶装的（饮料，美式）；拉重物的（牲畜，美式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/draft",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "drag",
-      "pos": "n./v.",
-      "definition": "n. 拖，拖累　v. 拖累，拖拉，沉重缓慢地走，拖动",
-      "origin": "ecdict-derived",
+      "pos": "v./n.",
+      "definition": "v. 拖、拉；强拉硬拽；拖动屏幕对象；拖沓地进行；用网或钩搜索水底；n. 麻烦乏味的事；阻力；吸一口烟；异装表演或其服饰（非正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/drag",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -31820,14 +31809,14 @@
     },
     {
       "word": "drain",
-      "pos": "vt./vi./n.",
-      "definition": "vt. 排水；耗尽　vi. 流走　n. 排水管；消耗",
-      "origin": "editorial-unverified",
+      "pos": "v./n.",
+      "definition": "v. 排出液体；沥干；喝光；使疲惫；耗尽资源；脸色变苍白；n. 排水管、排水沟；排水孔（美式）；消耗精力或钱财的事物",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-2.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/drain",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -31845,37 +31834,37 @@
     {
       "word": "drama",
       "pos": "n.",
-      "definition": "戏剧；戏剧性",
-      "origin": "editorial-unverified",
+      "definition": "戏剧；戏剧创作或表演；剧情片、正剧；戏剧性事件及其紧张刺激",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/drama",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "dramatic",
       "pos": "adj.",
-      "definition": "剧烈的；戏剧性的",
-      "origin": "editorial-unverified",
+      "definition": "戏剧的、表演的；突然而显著的；激动人心的；夸张做作的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/dramatic",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "dramatically",
       "pos": "adv.",
-      "definition": "显著地；戏剧性地",
-      "origin": "editorial-unverified",
+      "definition": "急剧地、显著地；戏剧性地；夸张做作地",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-6.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/dramatically",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -31930,26 +31919,29 @@
     {
       "word": "drawer",
       "pos": "n.",
-      "definition": "抽屉，开票人",
-      "origin": "ecdict-derived",
+      "definition": "抽屉；内裤（旧式，drawers）；支票或汇票的出票人",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/drawer",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "drawing",
       "pos": "n.",
-      "definition": "图画，制图，拉",
-      "origin": "ecdict-derived",
+      "definition": "绘画；素描、图画；图纸；抽签（主要美式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/drawing",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/drawing",
+        "https://www.collinsdictionary.com/dictionary/english/drawing"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -32051,13 +32043,13 @@
     {
       "word": "drift",
       "pos": "vi./n.",
-      "definition": "vi. 漂移；漂流　n. 漂流；趋势",
-      "origin": "editorial-unverified",
+      "definition": "vi. 漂流；缓慢移动；不由自主地逐渐变化；n. 漂移；渐变、趋势；大意；风吹积成的雪堆或沙堆",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-2.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/drift",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -32075,14 +32067,13 @@
     {
       "word": "drill",
       "pos": "n./v.",
-      "definition": "n. 钻孔机，钻子，播种机，粗斜纹布　v. 训练，钻孔",
-      "origin": "ecdict-derived",
+      "definition": "n. 钻头、钻机；反复练习；操练、演习；drill 说唱音乐；v. 钻孔；钻探；操练；反复灌输",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/drill",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -32365,15 +32356,14 @@
     },
     {
       "word": "due",
-      "pos": "n./adj.",
-      "definition": "n. 应得的东西，应付款　adj. 到期的，应得的，应付的，约定的",
-      "origin": "ecdict-derived",
+      "pos": "adj./n./adv.",
+      "definition": "adj. 预定的、预计到来的；到期应付的；应得的；适当的、必要的；due to 表示由于；n. 应得之物（one's due）；会费等定期款项（dues）；adv. 正向、正对某方向",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/due",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -32416,26 +32406,25 @@
     {
       "word": "dumb",
       "pos": "adj.",
-      "definition": "哑的，不说话的，无声音的",
-      "origin": "ecdict-derived",
+      "definition": "愚蠢的（主要美式非正式）；惊呆说不出话的；不能联网或独立运算的（设备）；不能说话的（旧式，冒犯性）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/dumb",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "dump",
-      "pos": "vt./n.",
-      "definition": "vt. 倾倒；丢弃　n. 垃圾场",
-      "origin": "editorial-unverified",
+      "pos": "v./n.",
+      "definition": "v. 倾倒、丢弃；抛弃、停止支持；倾销商品；大量抛售；转储数据；n. 垃圾场；脏乱低劣的地方（非正式）；储藏场；数据转储",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-6.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/dump",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -32621,26 +32610,29 @@
     {
       "word": "dynamic",
       "pos": "adj./n.",
-      "definition": "adj. 动态的，有活力的，有力的，动力的　n. 动力，动态",
-      "origin": "ecdict-derived",
+      "definition": "adj. 有活力、有干劲的；不断变化发展的；动态生成的（网页）；动力的（物理）；力度变化的（音乐）；n. 相互影响的力量或关系模式（常用 dynamics）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/dynamic",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "dynamics",
       "pos": "n.",
-      "definition": "动态；动力学",
-      "origin": "editorial-unverified",
+      "definition": "动力学（学科名通常作单数）；系统或群体中相互影响的力量、关系模式；音乐的力度变化及标记",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-2.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/dynamics",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/dynamics",
+        "https://www.collinsdictionary.com/dictionary/english/dynamics"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -32658,13 +32650,13 @@
     {
       "word": "eager",
       "pos": "adj.",
-      "definition": "热心的，渴望的，热望的",
-      "origin": "ecdict-derived",
+      "definition": "热切的；渴望的；急于做某事的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/eager",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -32708,12 +32700,12 @@
       "word": "earthquake",
       "pos": "n.",
       "definition": "地震",
-      "origin": "ecdict-derived",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/earthquake",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -32791,13 +32783,13 @@
     {
       "word": "echo",
       "pos": "n./vi./vt.",
-      "definition": "n. 回声　vi. 回响　vt. 重复；附和",
-      "origin": "editorial-unverified",
+      "definition": "n. 回声；使人联想到另一事物的相似之处；vi. 回响；vt. 重复、附和；与…相似、呼应",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-1.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/echo",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -32839,13 +32831,13 @@
     {
       "word": "ecological",
       "pos": "adj.",
-      "definition": "生态的",
-      "origin": "editorial-unverified",
+      "definition": "生态的；生态学的；与环境有关的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/ecological",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -32876,13 +32868,13 @@
     {
       "word": "economic",
       "pos": "adj.",
-      "definition": "经济的",
-      "origin": "editorial-unverified",
+      "definition": "经济的；经济活动的；可盈利的、经济上合算的；节约成本或燃料的（商务用法）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/economic",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -32900,15 +32892,13 @@
     {
       "word": "economics",
       "pos": "n.",
-      "definition": "经济学",
-      "origin": "editorial-unverified",
+      "definition": "经济学（学科名作单数）；经济因素或经济可行性（the economics of…，复数用法）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-6.js",
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/economics",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -32985,15 +32975,14 @@
     },
     {
       "word": "edge",
-      "pos": "n./vt.",
-      "definition": "n. 边缘，尖锐，刀刃，优势　vt. 使锐利，挤进，镶边",
-      "origin": "ecdict-derived",
+      "pos": "n./v.",
+      "definition": "n. 边缘；刀刃；临界点；优势；on edge 指紧张不安；v. 缓慢移动；小幅上升或下降",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/edge",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -33107,14 +33096,13 @@
     {
       "word": "education",
       "pos": "n.",
-      "definition": "教育，训练，教育学",
-      "origin": "ecdict-derived",
+      "definition": "教育；所受的教育、获得的知识；教育学",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/education",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -33156,26 +33144,25 @@
     {
       "word": "effect",
       "pos": "n./vt.",
-      "definition": "n. 结果，影响，效果，印象　vt. 实行，引起，完成",
-      "origin": "ecdict-derived",
+      "definition": "n. 影响；结果；效力；效果；特效（effects）；个人财物（personal effects）；vt. 实现、使发生（正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/effect",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "effective",
       "pos": "adj.",
-      "definition": "有效的",
-      "origin": "editorial-unverified",
+      "definition": "有效的；能产生预期效果的；生效的；实际上的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/effective",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -33193,13 +33180,13 @@
     {
       "word": "effectiveness",
       "pos": "n.",
-      "definition": "有效性",
-      "origin": "editorial-unverified",
+      "definition": "有效性；奏效程度；实际使用条件下的治疗效果（医学，与受控试验中的 efficacy 区别）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-2.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/effectiveness",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -33241,25 +33228,25 @@
     {
       "word": "efficiency",
       "pos": "n.",
-      "definition": "效率",
-      "origin": "editorial-unverified",
+      "definition": "效率；效能；能量转换效率；提高资源利用率的办法（常用 efficiencies）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/efficiency",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "efficient",
       "pos": "adj.",
-      "definition": "高效的",
-      "origin": "editorial-unverified",
+      "definition": "高效的；能干的；节约资源的、少浪费的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/efficient",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -33468,15 +33455,14 @@
     },
     {
       "word": "elbow",
-      "pos": "n./v.",
-      "definition": "n. 手肘，弯头，扶手　v. 用手肘推开，推挤",
-      "origin": "ecdict-derived",
+      "pos": "n./vt.",
+      "definition": "n. 肘；衣袖的肘部；vt. 用肘推挤；用肘碰触",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/elbow",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -33506,13 +33492,13 @@
     {
       "word": "election",
       "pos": "n.",
-      "definition": "选举，当选，选择权",
-      "origin": "ecdict-derived",
+      "definition": "选举；当选",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/election",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -33615,38 +33601,41 @@
     {
       "word": "elegant",
       "pos": "adj.",
-      "definition": "优雅的，端庄的，高雅的",
-      "origin": "ecdict-derived",
+      "definition": "优雅的；雅致的；巧妙简洁的（想法、方案等）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/elegant",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "element",
       "pos": "n.",
-      "definition": "元素；要素",
-      "origin": "editorial-unverified",
+      "definition": "要素；组成部分；少量、几分；元素（化学）；基本原理（the elements）；电热元件、炉头",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/element",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "elementary",
       "pos": "adj.",
-      "definition": "基本的；初级的",
-      "origin": "editorial-unverified",
+      "definition": "基本的；初级的；简单的；小学的（美式，elementary school）；元素的、基本粒子的（科学）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-2.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/elementary",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/elementary",
+        "https://dictionary.cambridge.org/dictionary/english/elementary-school"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -33688,14 +33677,13 @@
     {
       "word": "elevator",
       "pos": "n.",
-      "definition": "电梯，升降机",
-      "origin": "ecdict-derived",
+      "definition": "电梯（美式，英式为 lift）；输送机、升运机",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/elevator",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -33713,25 +33701,25 @@
     {
       "word": "eligible",
       "pos": "adj.",
-      "definition": "有资格的",
-      "origin": "editorial-unverified",
+      "definition": "符合条件的；有资格的；适合做结婚对象的、单身且条件优越的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/eligible",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "eliminate",
-      "pos": "v.",
-      "definition": "消除；淘汰",
-      "origin": "editorial-unverified",
+      "pos": "vt.",
+      "definition": "消除；排除；淘汰；杀死（俚语）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/eliminate",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -33749,13 +33737,13 @@
     {
       "word": "elite",
       "pos": "n./adj.",
-      "definition": "n. 精英　adj. 精英的",
-      "origin": "editorial-unverified",
+      "definition": "n. 精英；最有权势、财富、教育或技能的群体；adj. 精英的；最优秀的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-2.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/elite",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -34109,14 +34097,14 @@
     },
     {
       "word": "embrace",
-      "pos": "vt./n.",
-      "definition": "vt. 接受；拥抱；包含　n. 拥抱；接受",
-      "origin": "editorial-unverified",
+      "pos": "v./n.",
+      "definition": "v. 拥抱；热情接受；包含（正式）；n. 拥抱",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-2.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/embrace",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -34181,14 +34169,14 @@
     },
     {
       "word": "emerge",
-      "pos": "v.",
-      "definition": "出现；浮现",
-      "origin": "editorial-unverified",
+      "pos": "vi.",
+      "definition": "出现；显露；为人所知；逐渐形成；从困境中走出",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/emerge",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -34278,13 +34266,13 @@
     {
       "word": "emission",
       "pos": "n.",
-      "definition": "排放；排放物",
-      "origin": "editorial-unverified",
+      "definition": "排放；发出气体、热或光等；排放物（常用 emissions）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/emission",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -34314,25 +34302,25 @@
     {
       "word": "emotion",
       "pos": "n.",
-      "definition": "情感；情绪",
-      "origin": "editorial-unverified",
+      "definition": "情绪；情感；强烈的感情",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-2.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/emotion",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "emotional",
       "pos": "adj.",
-      "definition": "情感的",
-      "origin": "editorial-unverified",
+      "definition": "情绪的；情感的；感情强烈的、情绪激动的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/emotional",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -34362,13 +34350,13 @@
     {
       "word": "emphasis",
       "pos": "n.",
-      "definition": "强调；重点",
-      "origin": "editorial-unverified",
+      "definition": "强调；重视；重读、重音；复数 emphases",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/emphasis",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -34421,27 +34409,26 @@
     },
     {
       "word": "employ",
-      "pos": "n./vt.",
-      "definition": "n. 雇用　vt. 雇用，使用，使从事于",
-      "origin": "ecdict-derived",
+      "pos": "vt./n.",
+      "definition": "vt. 雇用；使用、运用（正式）；使忙于（be employed in）；n. 雇用、受雇（in someone's employ）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/employ",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "employee",
       "pos": "n.",
-      "definition": "职员，员工，受雇人员",
-      "origin": "ecdict-derived",
+      "definition": "雇员；员工",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/employee",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -34459,13 +34446,13 @@
     {
       "word": "employer",
       "pos": "n.",
-      "definition": "雇主",
-      "origin": "editorial-unverified",
+      "definition": "雇主；雇用员工的公司或机构",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-6.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/employer",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -34494,15 +34481,14 @@
     },
     {
       "word": "empty",
-      "pos": "adj./n.",
-      "definition": "adj. 空的，空虚的，空腹的，空洞的　n. 空的东西，空车",
-      "origin": "ecdict-derived",
+      "pos": "adj./v./n.",
+      "definition": "adj. 空的；无人的；空洞无意义的；v. 倒空；喝光；变空；流入（empty into）；n. 空瓶、空容器（常用 empties）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/empty",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -34519,26 +34505,30 @@
     },
     {
       "word": "enable",
-      "pos": "v.",
-      "definition": "使能够",
-      "origin": "editorial-unverified",
+      "pos": "vt.",
+      "definition": "使能够；使成为可能；启用功能；使某人的有害行为得以继续（心理学）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/enable",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/enable",
+        "https://www.collinsdictionary.com/dictionary/english/enable"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "enact",
-      "pos": "v.",
-      "definition": "制定（法律）；上演",
-      "origin": "editorial-unverified",
+      "pos": "vt.",
+      "definition": "制定、通过法律；使实施；表演、演出故事（正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-2.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/enact",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -34616,25 +34606,25 @@
     {
       "word": "encounter",
       "pos": "vt./n.",
-      "definition": "vt. 遇到；遭遇　n. 相遇；遭遇",
-      "origin": "editorial-unverified",
+      "definition": "vt. 偶遇；遇到、遭遇；n. 相遇；偶遇；比赛交锋；性接触",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-2.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/encounter",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "encourage",
       "pos": "vt.",
-      "definition": "鼓励，支持，激励",
-      "origin": "ecdict-derived",
+      "definition": "鼓励；给予信心；促进；使某事更可能发生",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/encourage",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -34751,13 +34741,13 @@
     {
       "word": "endless",
       "pos": "adj.",
-      "definition": "不停的，无穷尽的，无尽的",
-      "origin": "ecdict-derived",
+      "definition": "无尽的；不断的；似乎永无休止的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/endless",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -34774,14 +34764,14 @@
     },
     {
       "word": "endorse",
-      "pos": "v.",
-      "definition": "支持；赞同",
-      "origin": "editorial-unverified",
+      "pos": "vt.",
+      "definition": "公开支持、赞同；为产品代言；背书签字；在驾驶执照上记违章（英式）；在保险合同上批注条件",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-2.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/endorse",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -34859,13 +34849,17 @@
     {
       "word": "endure",
       "pos": "vt./vi.",
-      "definition": "vt. 忍耐；经受　vi. 持续",
-      "origin": "editorial-unverified",
+      "definition": "vt. 忍受、承受；vi. 持续存在、经久不衰",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-2.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/endure",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/endure",
+        "https://www.collinsdictionary.com/dictionary/english/endure"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -34955,14 +34949,14 @@
     },
     {
       "word": "engage",
-      "pos": "vi./vt.",
-      "definition": "vi. 参与（in）　vt. 吸引；雇用",
-      "origin": "editorial-unverified",
+      "pos": "v.",
+      "definition": "吸引、使感兴趣；参与、接触（engage with/in）；雇用（主要英式正式）；使机械部件啮合；交战；授课或使忙碌（印度英语）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-2.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/engage",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -35220,13 +35214,13 @@
     {
       "word": "enormous",
       "pos": "adj.",
-      "definition": "巨大的",
-      "origin": "editorial-unverified",
+      "definition": "巨大的；极大的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/enormous",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -35291,14 +35285,14 @@
     },
     {
       "word": "enroll",
-      "pos": "vi./vt.",
-      "definition": "vi. 注册；入学　vt. 招收",
-      "origin": "editorial-unverified",
+      "pos": "v.",
+      "definition": "登记；注册；报名入学；招收成员（美式拼写，英式为 enrol）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-1.js"
+        "js/lexicon-review-020.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/enroll",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {

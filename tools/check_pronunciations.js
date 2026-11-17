@@ -264,6 +264,24 @@ if(reviews.some(r=>r.w==='diagnose')){
  assert(ctx.words.dependent.cn.includes('dependant'));
  assert(ctx.words.devote.definitionReview.sources.includes('https://dictionary.cambridge.org/dictionary/english/devote-to'));
 }
+if(reviews.some(r=>r.w==='diagnosis')){
+ assert.equal(reading('diagnosis')[1].us,'ˌdaɪ.əɡˈnoʊ.siːz');
+ assert.equal(reading('dictate')[0].uk,'dɪkˈteɪt');
+ assert.equal(reading('dictate')[0].us,'ˈdɪk.teɪt');
+ assert.equal(reading('dictate')[1].uk,'ˈdɪk.teɪt');
+ assert.equal(reading('discount')[0].uk,'ˈdɪs.kaʊnt');
+ assert.equal(reading('discount')[1].uk,'dɪˈskaʊnt');
+ assert.equal(reading('dispute')[1].label,'n. 另一读音');
+ assert.equal(reading('drawer')[0].uk,'drɔːʳ');
+ assert.equal(reading('emission')[0].uk,'iˈmɪʃ.ən');
+ assert.equal(reading('employee')[1].us,'ˌem.plɔɪˈiː');
+ assert.equal(reviews.find(r=>r.w==='dynamics').source,'https://www.collinsdictionary.com/dictionary/english/dynamics');
+ assert(ctx.words.discipline.senses.some(s=>s[0].includes('学科')));
+ assert(ctx.words.discrimination.senses.some(s=>s[0].includes('辨别')));
+ assert(ctx.words.drawing.senses.some(s=>s[0].includes('抽签')));
+ assert(ctx.words.draft.senses.some(s=>s[0].includes('桶装')));
+ assert(ctx.words.endure.senses.some(s=>s[0].startsWith('vi.')));
+}
 assert(ctx.App.pronunciationHTML({w:'<test>',ph:'<bad>',custom:true}).includes('&lt;bad&gt;'));
 assert(!ctx.App.pronunciationHTML({w:'<test>',ph:'<bad>'}).includes('<bad>'));
 assert(!vocab.includes('esc(o.ph)'), 'a vocab surface still renders legacy IPA directly');

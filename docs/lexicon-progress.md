@@ -4,9 +4,9 @@
 
 | 项目 | 已核对 | 尚待核对 |
 | --- | ---: | ---: |
-| 释义与词性 | 1844 | 7231 |
-| 英美音与主要分读 | 1851 | 7224 |
-| 两项均完成 | 1835 | 7240 |
+| 释义与词性 | 1944 | 7131 |
+| 英美音与主要分读 | 1951 | 7124 |
+| 两项均完成 | 1935 | 7140 |
 
 每词分别保存来源和日期，不能用核对音标代替核对释义。完整状态和接续队列见 [lexicon-progress.json](lexicon-progress.json)。优先处理缺失、截断、词性矛盾和用法标记，再按字母顺序推进。未找到可靠来源的条目保持待核对，不推测填充。
 
@@ -24,7 +24,7 @@ node tools/check_pronunciations.js --write
 node tools/lexicon_progress.js
 ```
 
-下一批队列前 30 词：diagnosis、dialogue、dictate、diet、dignity、dimension、diplomatic、direct、disappointment、disaster、discipline、discount、discourage、discourse、discrimination、dismiss、display、dispute、dissolve、distance、distant、distinction、distinctive、distract、distribution、district、disturb、divide、division、divorce。
+下一批队列前 30 词：enterprise、entertain、entertainment、enthusiasm、entitle、entitled、entity、entrance、entry、envision、epidemic、episode、equality、equation、equip、equipment、equivalent、error、escape、essence、estate、ethics、ethnic、evaluate、eventually、evident、evolution、exact、exceed、excellent。
 
 ## 批次 002
 
@@ -134,6 +134,12 @@ node tools/lexicon_progress.js
 
 
 
+## 批次 020
+
+完成 100 词：diagnosis、dialogue、dictate、diet、dignity、dimension、diplomatic、direct、disappointment、disaster、discipline、discount、discourage、discourse、discrimination、dismiss、display、dispute、dissolve、distance、distant、distinction、distinctive、distract、distribution、district、disturb、divide、division、divorce、doctrine、documentary、doll、domain、domestic、dominant、donate、donation、donor、dot、doubt、down、downtown、draft、drag、drain、drama、dramatic、dramatically、drawer、drawing、drift、drill、due、dumb、dump、dynamic、dynamics、eager、earthquake、echo、ecological、economic、economics、edge、education、effect、effective、effectiveness、efficiency、efficient、elbow、election、elegant、element、elementary、elevator、eligible、eliminate、elite、embrace、emerge、emission、emotion、emotional、emphasis、employ、employee、employer、empty、enable、enact、encounter、encourage、endless、endorse、endure、engage、enormous、enroll。托福高频接续批次；核对多词性、多义、主要分读和地区用法，保留逐词来源。
+
+
+
 ## 发布节奏
 
-每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 809 词，距下次发布还差 191 词。发布基线为 622b7ffac50f5c24b3ab3424a6faa53e3ba406d4，当时两项均核对 1026 词；当前页面显示本地核对进度，不表示已上线。
+每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 909 词，距下次发布还差 91 词。发布基线为 622b7ffac50f5c24b3ab3424a6faa53e3ba406d4，当时两项均核对 1026 词；当前页面显示本地核对进度，不表示已上线。

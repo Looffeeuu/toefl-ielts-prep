@@ -63,5 +63,5 @@ if(progress.batches.at(-1).id==='024'){
 }
 assert.equal((html.match(/src="js\/lexicon-review-024\.js/g)||[]).length,1);
 assert(html.indexOf('js/lexicon-review-024.js')<html.indexOf('js/vocab.js'));
-assert(html.includes('vocab.js?v=20261117-b024'));
+if(progress.batches.at(-1).id==='024')assert(html.includes('vocab.js?v=20261117-b024'));
 console.log('Batch024: 100 f1 words, source transcriptions, POS/sense merges, heteronyms and publication counts passed.');

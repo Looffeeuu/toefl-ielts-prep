@@ -4,9 +4,9 @@
 
 | 项目 | 已核对 | 尚待核对 |
 | --- | ---: | ---: |
-| 释义与词性 | 2344 | 6731 |
-| 英美音与主要分读 | 2349 | 6726 |
-| 两项均完成 | 2335 | 6740 |
+| 释义与词性 | 2443 | 6632 |
+| 英美音与主要分读 | 2448 | 6627 |
+| 两项均完成 | 2435 | 6640 |
 
 每词分别保存来源和日期，不能用核对音标代替核对释义。完整状态和接续队列见 [lexicon-progress.json](lexicon-progress.json)。优先处理缺失、截断、词性矛盾和用法标记，再按字母顺序推进。未找到可靠来源的条目保持待核对，不推测填充。
 
@@ -24,7 +24,7 @@ node tools/check_pronunciations.js --write
 node tools/lexicon_progress.js
 ```
 
-下一批队列前 30 词：mentor、menu、mere、merit、metaphor、metropolitan、migration、mild、military、mill、mine、minimal、minimize、minimum、ministry、minority、minute、miracle、mission、mobile、mode、moderate、modest、molecule、moment、monitor、monster、mood、moral、mostly。
+下一批队列前 30 词：opposite、opposition、optimistic、option、oral、organic、orientation、original、originally、outcome、outfit、outlet、outline、output、outstanding、oven、overall、overcome、overlook、oversee、overwhelm、oxygen、pace、pack、package、painting、pale、panel、panic、parade。
 
 ## 批次 002
 
@@ -164,6 +164,12 @@ node tools/lexicon_progress.js
 
 
 
+## 批次 025
+
+完成 100 词：mentor、menu、mere、merit、metaphor、metropolitan、migration、mild、military、mill、mine、minimal、minimize、minimum、ministry、minority、minute、miracle、mission、mobile、mode、moderate、modest、molecule、moment、monitor、monster、mood、moral、mostly、motion、motivate、motive、mouth、mud、multiple、municipal、mushroom、mutual、mysterious、mystery、myth、nail、naked、narrow、nationwide、natural、naval、nearly、neat、necessity、neck、negative、negotiate、negotiation、neighbor、nervous、net、neutral、nod、nominate、nominee、nonetheless、norm、normal、normally、note、notice、notion、novel、nuclear、numerous、nurse、objection、objective、obligation、observation、observe、obtain、obvious、occasion、occasional、occasionally、occupation、occupy、occur、odd、odds、offensive、offer、official、ongoing、opera、operate、operator、opinion、opponent、opportunity、oppose、opposed。托福高频接续100词（mentor 至 opposed）；核对 Cambridge 词典索引和发音页，negative 动词补查 Collins。保留 minute、moderate、mouth 词性分读及主要英美变体；各义项英文例句原创。
+
+
+
 ## 发布节奏
 
-每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 300 词，距下次发布还差 700 词。发布基线为 fc694f71b9d99bf227f0f0001b6b199e5de0bf50，当时两项均核对 2035 词；当前页面显示本地核对进度，不表示已上线。
+每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 400 词，距下次发布还差 600 词。发布基线为 fc694f71b9d99bf227f0f0001b6b199e5de0bf50，当时两项均核对 2035 词；当前页面显示本地核对进度，不表示已上线。

@@ -245,6 +245,25 @@ if(reviews.some(r=>r.w==='habituation')){
  assert(ctx.words.implicit.senses.some(s=>s[0].includes('毫无保留')));
  assert(ctx.words.maintain.senses.some(s=>s[0].includes('供养')));
 }
+if(reviews.some(r=>r.w==='diagnose')){
+ assert.equal(reading('diagnose')[0].uk,'ˌdaɪ.əɡˈnəʊz');
+ assert.equal(reading('diagnose')[0].us,'ˌdaɪ.əɡˈnoʊs');
+ assert.equal(reading('decrease').length,3);
+ assert.equal(reading('decrease')[1].label,'v. 另一读音');
+ assert.equal(reading('decrease')[2].uk,'ˈdiː.kriːs');
+ assert.equal(reading('debris')[0].us,'dəˈbriː');
+ assert.equal(reading('debris')[1].uk,'ˈdeɪ.briː');
+ assert.equal(reading('costume')[0].uk,'ˈkɒs.tʃuːm');
+ assert.equal(reading('costume')[0].us,'ˈkɑː.stuːm');
+ assert.equal(reading('device')[0].us,'dɪˈvaɪs');
+ assert.equal(reading('devise')[0].us,'dɪˈvaɪz');
+ assert(ctx.words.date.senses.some(s=>s[0].includes('椰枣')));
+ assert(ctx.words.counsel.senses.some(s=>s[0].includes('律师')));
+ assert(ctx.words.custom.senses.some(s=>s[0].includes('光顾')));
+ assert(ctx.words.craft.cn.includes('单复数同形'));
+ assert(ctx.words.dependent.cn.includes('dependant'));
+ assert(ctx.words.devote.definitionReview.sources.includes('https://dictionary.cambridge.org/dictionary/english/devote-to'));
+}
 assert(ctx.App.pronunciationHTML({w:'<test>',ph:'<bad>',custom:true}).includes('&lt;bad&gt;'));
 assert(!ctx.App.pronunciationHTML({w:'<test>',ph:'<bad>'}).includes('<bad>'));
 assert(!vocab.includes('esc(o.ph)'), 'a vocab surface still renders legacy IPA directly');

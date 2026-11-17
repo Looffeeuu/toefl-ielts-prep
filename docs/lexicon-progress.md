@@ -4,9 +4,9 @@
 
 | 项目 | 已核对 | 尚待核对 |
 | --- | ---: | ---: |
-| 释义与词性 | 1744 | 7331 |
-| 英美音与主要分读 | 1751 | 7324 |
-| 两项均完成 | 1735 | 7340 |
+| 释义与词性 | 1844 | 7231 |
+| 英美音与主要分读 | 1851 | 7224 |
+| 两项均完成 | 1835 | 7240 |
 
 每词分别保存来源和日期，不能用核对音标代替核对释义。完整状态和接续队列见 [lexicon-progress.json](lexicon-progress.json)。优先处理缺失、截断、词性矛盾和用法标记，再按字母顺序推进。未找到可靠来源的条目保持待核对，不推测填充。
 
@@ -24,7 +24,7 @@ node tools/check_pronunciations.js --write
 node tools/lexicon_progress.js
 ```
 
-下一批队列前 30 词：corn、correct、corridor、corruption、costume、cotton、counsel、counseling、counselor、counterpart、couple、court、cover、coverage、crack、craft、crash、crawl、crazy、credit、creek、crew、critic、critical、critique、crowd、cruel、crush、crystal、Cuban。
+下一批队列前 30 词：diagnosis、dialogue、dictate、diet、dignity、dimension、diplomatic、direct、disappointment、disaster、discipline、discount、discourage、discourse、discrimination、dismiss、display、dispute、dissolve、distance、distant、distinction、distinctive、distract、distribution、district、disturb、divide、division、divorce。
 
 ## 批次 002
 
@@ -128,6 +128,12 @@ node tools/lexicon_progress.js
 
 
 
+## 批次 019
+
+完成 100 词：corn、correct、corridor、corruption、costume、cotton、counsel、counseling、counselor、counterpart、couple、court、cover、coverage、crack、craft、crash、crawl、crazy、credit、creek、crew、critic、critical、critique、crowd、cruel、crush、crystal、Cuban、culture、cure、curiosity、curious、current、currently、curtain、curve、custom、customer、dam、dangerous、date、dawn、dead、deadly、deal、dealer、debate、debris、debt、decent、decide、deck、declare、decorate、decrease、dedicate、deem、defeat、defend、defense、defensive、deficit、definitely、definition、delay、deliberately、delicate、delicious、democracy、democrat、demonstrate、demonstration、deny、depart、departure、dependent、depressed、depression、deputy、descend、deserve、design、desire、desperate、desperately、dessert、destination、destruction、detect、detective、determination、determine、devastating、develop、device、devise、devote、diagnose。托福高频接续批次；核对多词性、多义、地区义及英美主读音，并保留来源与语域说明。
+
+
+
 ## 发布节奏
 
-每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 709 词，距下次发布还差 291 词。发布基线为 622b7ffac50f5c24b3ab3424a6faa53e3ba406d4，当时两项均核对 1026 词；当前页面显示本地核对进度，不表示已上线。
+每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 809 词，距下次发布还差 191 词。发布基线为 622b7ffac50f5c24b3ab3424a6faa53e3ba406d4，当时两项均核对 1026 词；当前页面显示本地核对进度，不表示已上线。

@@ -3,9 +3,9 @@
   "scope": "全部内置词条的来源和结构一致性；仅 dictionary-reviewed 条目经过本轮外部词典核对。其他候选不能据此判定为虚假或正确。",
   "total": 9075,
   "sources": {
-    "dictionary-reviewed": 2144,
-    "ecdict-derived": 3810,
-    "editorial-unverified": 3121
+    "dictionary-reviewed": 2244,
+    "ecdict-derived": 3778,
+    "editorial-unverified": 3053
   },
   "flagCounts": {
     "missing-pos": 27,
@@ -49170,14 +49170,14 @@
     },
     {
       "word": "horror",
-      "pos": "n.",
-      "definition": "恐怖；憎恶",
-      "origin": "editorial-unverified",
+      "pos": "n./adj.",
+      "definition": "n. 恐惧、震惊；可怕的事；恐怖作品；顽童（非正式）；adj. 骇人的（新闻用语）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-6.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/horror",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -49305,13 +49305,13 @@
     {
       "word": "hostile",
       "pos": "adj.",
-      "definition": "敌对的；恶劣的",
-      "origin": "editorial-unverified",
+      "definition": "敌意的；反对的；不利生存的；敌方的；恶意收购的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/hostile",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -49352,27 +49352,26 @@
     },
     {
       "word": "house",
-      "pos": "n./vt.",
-      "definition": "n. 房子，住宅，机构，议院　vt. 给...房子住，收藏",
-      "origin": "ecdict-derived",
+      "pos": "n./v.",
+      "definition": "n. 房屋；住户；专用建筑；公司；议院；王室；观众；浩室舞曲；v. 为…提供住所；容纳",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/house",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "household",
-      "pos": "n.",
-      "definition": "家庭；户",
-      "origin": "editorial-unverified",
+      "pos": "n./adj.",
+      "definition": "n. 同住的一家人、住户；adj. 家庭的、家用的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/household",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -49523,15 +49522,14 @@
     },
     {
       "word": "human",
-      "pos": "n./adj.",
-      "definition": "n. 人，人类　adj. 人类的，似人类的，人性的，有同情心的",
-      "origin": "ecdict-derived",
+      "pos": "adj./n.",
+      "definition": "adj. 人类的；具有人性和人的弱点的；n. 人、人类成员",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/human",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -49585,13 +49583,13 @@
     {
       "word": "humanity",
       "pos": "n.",
-      "definition": "人类；人性",
-      "origin": "editorial-unverified",
+      "definition": "人类；仁慈；人性；人文学科（the humanities）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/humanity",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -49716,14 +49714,14 @@
     },
     {
       "word": "hunger",
-      "pos": "n./vt.",
-      "definition": "n. 饥饿，渴望，饥荒　vt. 使挨饿",
-      "origin": "ecdict-derived",
+      "pos": "n./v.",
+      "definition": "n. 饥饿；饥荒；强烈渴望；v. 渴望（hunger for/after）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/hunger",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -49777,14 +49775,13 @@
     {
       "word": "hurricane",
       "pos": "n.",
-      "definition": "飓风，暴风，暴风雨",
-      "origin": "ecdict-derived",
+      "definition": "飓风（尤指西大西洋的强烈旋转风暴）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/hurricane",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -49972,13 +49969,13 @@
     {
       "word": "icon",
       "pos": "n.",
-      "definition": "图标；偶像；圣像",
-      "origin": "editorial-unverified",
+      "definition": "计算机图标；代表人物、象征；宗教圣像",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-2.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/icon",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -50008,13 +50005,13 @@
     {
       "word": "ideal",
       "pos": "adj./n.",
-      "definition": "adj. 理想的　n. 理想",
-      "origin": "editorial-unverified",
+      "definition": "adj. 理想的、最合适的；n. 理想、崇高准则；完美典范",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-2.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/ideal",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -50032,13 +50029,13 @@
     {
       "word": "identical",
       "pos": "adj.",
-      "definition": "完全相同的",
-      "origin": "editorial-unverified",
+      "definition": "完全相同的；极其相似的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/identical",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -50056,26 +50053,25 @@
     {
       "word": "identification",
       "pos": "n.",
-      "definition": "识别，身份证明，认同",
-      "origin": "ecdict-derived",
+      "definition": "识别、确认；身份证明文件",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/identification",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "identify",
-      "pos": "vt./vi.",
-      "definition": "vt. 识别；确认　vi. 认同（with）",
-      "origin": "editorial-unverified",
+      "pos": "v.",
+      "definition": "认出、确认身份；发现并指出；认同为某群体成员",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-2.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/identify",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -50092,39 +50088,38 @@
     },
     {
       "word": "identity",
-      "pos": "n.",
-      "definition": "身份，相同，一致，特性",
-      "origin": "ecdict-derived",
+      "pos": "n./adj.",
+      "definition": "n. 身份；独特特征、认同感；相同、一致；恒等式（数学）；adj. 身份证明的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/identity",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "ideological",
       "pos": "adj.",
-      "definition": "意识形态的，空想的",
-      "origin": "ecdict-derived",
+      "definition": "意识形态的；与一套思想信念有关的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/ideological",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "ideology",
       "pos": "n.",
-      "definition": "意识形态；思想体系",
-      "origin": "editorial-unverified",
+      "definition": "意识形态；思想体系，尤指政治信念体系",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-2.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/ideology",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -50317,14 +50312,14 @@
     },
     {
       "word": "ignore",
-      "pos": "vt.",
-      "definition": "不理睬，忽视，驳回，忽略",
-      "origin": "ecdict-derived",
+      "pos": "v.",
+      "definition": "故意不理会；忽视",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/ignore",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -50426,13 +50421,13 @@
     {
       "word": "illusion",
       "pos": "n.",
-      "definition": "错觉；幻想",
-      "origin": "editorial-unverified",
+      "definition": "错觉、假象；不切实际的想法",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-2.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/illusion",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -50462,13 +50457,13 @@
     {
       "word": "illustration",
       "pos": "n.",
-      "definition": "插图；例证",
-      "origin": "editorial-unverified",
+      "definition": "插图；插图绘制；说明问题的实例",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-2.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/illustration",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -50486,13 +50481,13 @@
     {
       "word": "image",
       "pos": "n.",
-      "definition": "图像；形象",
-      "origin": "editorial-unverified",
+      "definition": "图像、影像；心中印象；公众形象；文学意象",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/image",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -50533,14 +50528,14 @@
     },
     {
       "word": "imagine",
-      "pos": "vt./vi.",
-      "definition": "vt. 想像，设想，猜测　vi. 想像起来",
-      "origin": "ecdict-derived",
+      "pos": "v.",
+      "definition": "想象；认为、猜想；误以为；用于表示惊讶或强调",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/imagine",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -50606,25 +50601,25 @@
     {
       "word": "immediate",
       "pos": "adj.",
-      "definition": "立即的，直接的，接近的",
-      "origin": "ecdict-derived",
+      "definition": "立即的；当前急需的；紧邻的、直接的；关系最近的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/immediate",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "immediately",
-      "pos": "adv.",
-      "definition": "直接地，立刻，立即",
-      "origin": "ecdict-derived",
+      "pos": "adv./conj.",
+      "definition": "adv. 立即；紧接、紧邻；直接地；conj. 一…就…（英）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/immediately",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -50678,13 +50673,13 @@
     {
       "word": "immigration",
       "pos": "n.",
-      "definition": "移民，移居",
-      "origin": "ecdict-derived",
+      "definition": "移居入境；入境检查及检查处",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/immigration",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -50776,13 +50771,13 @@
     {
       "word": "immune",
       "pos": "adj.",
-      "definition": "免疫的",
-      "origin": "editorial-unverified",
+      "definition": "免疫的；不受影响的；免受处罚或损害的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/immune",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -50799,14 +50794,14 @@
     },
     {
       "word": "impact",
-      "pos": "n./vt.",
-      "definition": "n. 影响；冲击　vt. 影响；冲击",
-      "origin": "editorial-unverified",
+      "pos": "n./v.",
+      "definition": "n. 撞击、冲击力；重大影响；v. 对…产生影响",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-2.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/impact",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -51123,14 +51118,14 @@
     },
     {
       "word": "implement",
-      "pos": "vt./n.",
-      "definition": "vt. 实施；执行　n. 工具；器具",
-      "origin": "editorial-unverified",
+      "pos": "v./n.",
+      "definition": "v. 实施、执行；n. 手工工具、器具",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-2.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/implement",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -51148,13 +51143,13 @@
     {
       "word": "implication",
       "pos": "n.",
-      "definition": "影响；含义；暗示",
-      "origin": "editorial-unverified",
+      "definition": "暗示、言外之意；可能的后果（常用复数）；牵涉犯罪",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/implication",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -51172,25 +51167,25 @@
     {
       "word": "imply",
       "pos": "v.",
-      "definition": "暗示；意味着",
-      "origin": "editorial-unverified",
+      "definition": "暗示；意味着；必然包含、需要",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/imply",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "import",
-      "pos": "n./vt.",
-      "definition": "n. 进口货，进口，输入，含义　vt. 输入，引入，进口，含...的意思",
-      "origin": "ecdict-derived",
+      "pos": "v./n.",
+      "definition": "v. 进口；引进；导入数据；n. 进口商品；进口；重要性、含义（正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/import",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -51232,13 +51227,13 @@
     {
       "word": "impose",
       "pos": "v.",
-      "definition": "强加；征（税）",
-      "origin": "editorial-unverified",
+      "definition": "强制推行、征收、施加；强加观点；给人添麻烦（impose on）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/impose",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -51304,13 +51299,13 @@
     {
       "word": "impressive",
       "pos": "adj.",
-      "definition": "令人印象深刻的",
-      "origin": "editorial-unverified",
+      "definition": "令人钦佩的；给人深刻印象的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/impressive",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -51448,13 +51443,13 @@
     {
       "word": "impulse",
       "pos": "n.",
-      "definition": "脉冲；冲动",
-      "origin": "editorial-unverified",
+      "definition": "冲动；推动力；脉冲、神经冲动；冲量（物理）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/impulse",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -51752,13 +51747,13 @@
     {
       "word": "incident",
       "pos": "n./adj.",
-      "definition": "n. 事件，事变，小事　adj. 附带的，易于发生的，外来的，入射的",
-      "origin": "ecdict-derived",
+      "definition": "n. 事件，尤指不愉快或异常事件；adj. 入射的（物理）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/incident",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -51992,13 +51987,13 @@
     {
       "word": "incorporate",
       "pos": "v.",
-      "definition": "包含；吸收；合并",
-      "origin": "editorial-unverified",
+      "definition": "纳入、合并；依法成立公司、使组成公司",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/incorporate",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -52028,13 +52023,13 @@
     {
       "word": "incredible",
       "pos": "adj.",
-      "definition": "难以置信的；惊人的",
-      "origin": "editorial-unverified",
+      "definition": "难以置信的；极好的、惊人的（非正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/incredible",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -52243,14 +52238,14 @@
     },
     {
       "word": "independent",
-      "pos": "n./adj.",
-      "definition": "n. 独立自主者，无党派者　adj. 独立的，有主见的，不须依赖的，不受约束的",
-      "origin": "ecdict-derived",
+      "pos": "adj./n.",
+      "definition": "adj. 独立的、自立的；无党派的；独立成句的；n. 无党派人士；独立小企业",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/independent",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -52543,14 +52538,14 @@
     },
     {
       "word": "industrial",
-      "pos": "adj.",
-      "definition": "工业的",
-      "origin": "editorial-unverified",
+      "pos": "adj./n.",
+      "definition": "adj. 工业的；工业发达的；规模巨大的；n. 工业公司；工业股（industrials）；工业耳骨穿孔",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-2.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/industrial",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -52679,14 +52674,13 @@
     {
       "word": "inevitably",
       "pos": "adv.",
-      "definition": "不可避免地",
-      "origin": "editorial-unverified",
+      "definition": "不可避免地；必然地",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-2.js",
-        "js/words-ext.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/inevitably",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -52739,14 +52733,14 @@
     },
     {
       "word": "infant",
-      "pos": "n.",
-      "definition": "婴儿",
-      "origin": "editorial-unverified",
+      "pos": "n./adj.",
+      "definition": "n. 婴儿、幼儿；英国幼儿学校学生；adj. 英国四至七岁儿童学校教育的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/infant",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -52764,13 +52758,13 @@
     {
       "word": "infection",
       "pos": "n.",
-      "definition": "感染；传染病",
-      "origin": "editorial-unverified",
+      "definition": "感染、传染；计算机病毒感染",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-6.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/infection",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -52970,12 +52964,12 @@
       "word": "influential",
       "pos": "adj.",
       "definition": "有影响力的",
-      "origin": "editorial-unverified",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/influential",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -53006,13 +53000,13 @@
     {
       "word": "informal",
       "pos": "adj.",
-      "definition": "非正式的",
-      "origin": "editorial-unverified",
+      "definition": "非正式的；不拘礼节的；衣着、语言等随意的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/informal",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -53126,13 +53120,13 @@
     {
       "word": "ingredient",
       "pos": "n.",
-      "definition": "成分；原料",
-      "origin": "editorial-unverified",
+      "definition": "食材、配料；成功所需的要素",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/ingredient",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -53162,25 +53156,25 @@
     {
       "word": "inherent",
       "pos": "adj.",
-      "definition": "固有的",
-      "origin": "editorial-unverified",
+      "definition": "内在的；固有的、本质上存在的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/inherent",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "inherit",
       "pos": "v.",
-      "definition": "遗传；继承",
-      "origin": "editorial-unverified",
+      "definition": "继承财产；遗传获得特征；接手原有问题或责任",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/inherit",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -53209,39 +53203,38 @@
     },
     {
       "word": "initial",
-      "pos": "n./adj.",
-      "definition": "n. 字首，首字母　adj. 开始的，最初的，字首的",
-      "origin": "ecdict-derived",
+      "pos": "adj./n./v.",
+      "definition": "adj. 最初的；n. 姓名首字母；v. 用姓名首字母签署",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/initial",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "initially",
       "pos": "adv.",
-      "definition": "最初",
-      "origin": "editorial-unverified",
+      "definition": "起初、最初",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/initially",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "initiate",
-      "pos": "v.",
-      "definition": "开始；发起",
-      "origin": "editorial-unverified",
+      "pos": "v./n.",
+      "definition": "v. 发起、开始；传授入门知识；以仪式接纳入会；n. 新入会者、初学者",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/initiate",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -53282,14 +53275,14 @@
     },
     {
       "word": "injure",
-      "pos": "vt.",
-      "definition": "伤害，损害，使受冤屈",
-      "origin": "ecdict-derived",
+      "pos": "v.",
+      "definition": "使人或动物受伤",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/injure",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -53307,14 +53300,13 @@
     {
       "word": "injury",
       "pos": "n.",
-      "definition": "伤害，侮辱",
-      "origin": "ecdict-derived",
+      "definition": "身体损伤、伤害",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/injury",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -53369,13 +53361,13 @@
     {
       "word": "inner",
       "pos": "adj.",
-      "definition": "内部的；内心的",
-      "origin": "editorial-unverified",
+      "definition": "内部的；内心的、不外露的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/inner",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -53405,13 +53397,13 @@
     {
       "word": "innovation",
       "pos": "n.",
-      "definition": "创新；新方法",
-      "origin": "editorial-unverified",
+      "definition": "新思想、新方法；创新、革新",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/innovation",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -53501,13 +53493,13 @@
     {
       "word": "inquiry",
       "pos": "n.",
-      "definition": "探究；调查；询问",
-      "origin": "editorial-unverified",
+      "definition": "询问、查询；正式调查",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/inquiry",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -53584,15 +53576,14 @@
     },
     {
       "word": "insert",
-      "pos": "n./vt.",
-      "definition": "n. 插入物　vt. 插入，添写",
-      "origin": "ecdict-derived",
+      "pos": "v./n.",
+      "definition": "v. 插入、放入；增添文字；换上球员；n. 插入物、夹页",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/insert",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -53610,13 +53601,13 @@
     {
       "word": "insight",
       "pos": "n.",
-      "definition": "洞察；深刻见解",
-      "origin": "editorial-unverified",
+      "definition": "洞察力；深刻理解、领悟",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/insight",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -53658,13 +53649,13 @@
     {
       "word": "insist",
       "pos": "v.",
-      "definition": "坚持，坚决主张，强调",
-      "origin": "ecdict-derived",
+      "definition": "坚持说；坚决要求（insist on）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/insist",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -53731,50 +53722,49 @@
     {
       "word": "inspection",
       "pos": "n.",
-      "definition": "检查；视察",
-      "origin": "editorial-unverified",
+      "definition": "仔细检查；官方视察；房屋结构检查",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-2.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/inspection",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "inspector",
       "pos": "n.",
-      "definition": "检查员，巡视员",
-      "origin": "ecdict-derived",
+      "definition": "检查员、督察；警衔中的督察",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/inspector",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "inspiration",
       "pos": "n.",
-      "definition": "灵感；鼓舞",
-      "origin": "editorial-unverified",
+      "definition": "灵感来源；妙计；鼓舞人心的人；吸气（医学）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-2.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/inspiration",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "inspire",
-      "pos": "vt./vi.",
-      "definition": "vt. 使感动，激发，启示，吸入　vi. 吸入，赋予灵感",
-      "origin": "ecdict-derived",
+      "pos": "v.",
+      "definition": "鼓舞；激起情感；启发创作；吸气（医学）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/inspire",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -53794,13 +53784,13 @@
     {
       "word": "install",
       "pos": "v.",
-      "definition": "安装；任命",
-      "origin": "editorial-unverified",
+      "definition": "安装设备或软件；任命就职；安置在舒适位置",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-2.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/install",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -53829,14 +53819,14 @@
     },
     {
       "word": "instant",
-      "pos": "n./adj.",
-      "definition": "n. 立即，瞬间　adj. 紧急的，立即的，即时的",
-      "origin": "ecdict-derived",
+      "pos": "adj./n.",
+      "definition": "adj. 立即的；速溶的、即食的；n. 瞬间、时刻",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/instant",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -53943,14 +53933,13 @@
     {
       "word": "institution",
       "pos": "n.",
-      "definition": "机构，惯例，制度",
-      "origin": "ecdict-derived",
+      "definition": "机构；收容或护理机构；长期形成的制度、习俗；设立、实行",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/institution",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -53979,27 +53968,26 @@
     },
     {
       "word": "instruct",
-      "pos": "vt.",
-      "definition": "教，教育，命令，通知",
-      "origin": "ecdict-derived",
+      "pos": "v.",
+      "definition": "指示、命令；教授技能；委托律师；法官向陪审团说明法律",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/instruct",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "instruction",
       "pos": "n.",
-      "definition": "指令，教导，命令",
-      "origin": "ecdict-derived",
+      "definition": "指令；使用说明（常用复数）；教学、指导",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/instruction",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -54029,14 +54017,13 @@
     {
       "word": "instrument",
       "pos": "n.",
-      "definition": "工具，手段，仪器",
-      "origin": "ecdict-derived",
+      "definition": "乐器；工具、仪器；测量仪表；手段；金融工具",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/instrument",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -54223,13 +54210,13 @@
     {
       "word": "intact",
       "pos": "adj.",
-      "definition": "完好无损的",
-      "origin": "editorial-unverified",
+      "definition": "完整的、未受损的；未绝育的（动物）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/intact",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -54246,38 +54233,38 @@
     },
     {
       "word": "integrate",
-      "pos": "vt./vi.",
-      "definition": "vt. 整合　vi. 融入",
-      "origin": "editorial-unverified",
+      "pos": "v.",
+      "definition": "融入群体；使融合、整合；求积分（数学）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-2.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/integrate",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "integrated",
       "pos": "adj.",
-      "definition": "综合的；一体化的",
-      "origin": "editorial-unverified",
+      "definition": "整合的、一体化的；不同群体融合的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-2.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/integrated",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "integrity",
       "pos": "n.",
-      "definition": "完整；正直",
-      "origin": "editorial-unverified",
+      "definition": "诚实正直；坚持专业标准；完整性",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/integrity",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -54295,38 +54282,37 @@
     {
       "word": "intellectual",
       "pos": "adj./n.",
-      "definition": "adj. 智力的；理智的　n. 知识分子",
-      "origin": "editorial-unverified",
+      "definition": "adj. 智力的、思考的；有学识的；n. 知识分子",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-2.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/intellectual",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "intelligence",
       "pos": "n.",
-      "definition": "智力，情报，信息",
-      "origin": "ecdict-derived",
+      "definition": "智力、理解判断能力；秘密情报；情报机构或人员",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/intelligence",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "intelligent",
       "pos": "adj.",
-      "definition": "聪明的；智能的",
-      "origin": "editorial-unverified",
+      "definition": "聪明的；能学习理解的；智能的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-2.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/intelligent",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -54369,37 +54355,37 @@
     {
       "word": "intensive",
       "pos": "adj.",
-      "definition": "密集的；集约的",
-      "origin": "editorial-unverified",
+      "definition": "密集的、短期集中进行的；大量使用某物的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/intensive",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "intent",
-      "pos": "n./adj.",
-      "definition": "n. 意图　adj. 专心的；决心的",
-      "origin": "editorial-unverified",
+      "pos": "adj./n.",
+      "definition": "adj. 专注的；决意的（intent on）；n. 意图、目的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-2.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/intent",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "intention",
       "pos": "n.",
-      "definition": "意图，目的，含义",
-      "origin": "ecdict-derived",
+      "definition": "打算、意图、目的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/intention",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -54417,37 +54403,37 @@
     {
       "word": "interact",
       "pos": "v.",
-      "definition": "相互作用；互动",
-      "origin": "editorial-unverified",
+      "definition": "交流、互动；相互作用；在网上参与互动",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/interact",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "interaction",
       "pos": "n.",
-      "definition": "相互作用；互动",
-      "origin": "editorial-unverified",
+      "definition": "交流、互动；相互作用",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-2.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/interaction",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "interactive",
       "pos": "adj.",
-      "definition": "互动的；交互式的",
-      "origin": "editorial-unverified",
+      "definition": "交互式的；人与人互动的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-2.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/interactive",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -54512,27 +54498,26 @@
     },
     {
       "word": "interest",
-      "pos": "n./vt.",
-      "definition": "n. 兴趣，嗜好，利息，利益　vt. 使感兴趣，与...有关系",
-      "origin": "ecdict-derived",
+      "pos": "n./v.",
+      "definition": "n. 兴趣；爱好；趣味；利益；利息；权益、股份；v. 使感兴趣",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/interest",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "interfere",
       "pos": "v.",
-      "definition": "干扰；妨碍",
-      "origin": "editorial-unverified",
+      "definition": "干涉、干预；妨碍、干扰（interfere with）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/interfere",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -54562,13 +54547,13 @@
     {
       "word": "interior",
       "pos": "n./adj.",
-      "definition": "n. 内部；内陆　adj. 内部的",
-      "origin": "editorial-unverified",
+      "definition": "n. 内部；内陆；内政部门；adj. 内部的；内政的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-2.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/interior",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -54634,13 +54619,13 @@
     {
       "word": "internal",
       "pos": "adj.",
-      "definition": "内部的",
-      "origin": "editorial-unverified",
+      "definition": "身体、物体或组织内部的；内心的；国内的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/internal",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -54670,25 +54655,25 @@
     {
       "word": "interpret",
       "pos": "v.",
-      "definition": "解释；理解；口译",
-      "origin": "editorial-unverified",
+      "definition": "解释、理解；诠释音乐或角色；口译",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/interpret",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "interpretation",
       "pos": "n.",
-      "definition": "解释；理解",
-      "origin": "editorial-unverified",
+      "definition": "解释、理解；音乐或戏剧的演绎",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/interpretation",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -54705,14 +54690,14 @@
     },
     {
       "word": "interrupt",
-      "pos": "vt./vi.",
-      "definition": "vt. 中断，妨碍，插嘴　vi. 打断",
-      "origin": "ecdict-derived",
+      "pos": "v.",
+      "definition": "打断讲话；使活动暂时中断",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/interrupt",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -54767,14 +54752,13 @@
     {
       "word": "interval",
       "pos": "n.",
-      "definition": "间隔，距离，间歇，间隙",
-      "origin": "ecdict-derived",
+      "definition": "时间间隔；空间间距；幕间休息（英）；音程；区间（数学）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/interval",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -54792,13 +54776,13 @@
     {
       "word": "intervention",
       "pos": "n.",
-      "definition": "干预；介入",
-      "origin": "editorial-unverified",
+      "definition": "为改善情况而干预；军事介入；神的介入；亲友劝说接受治疗等的会谈",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-2.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/intervention",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -54875,14 +54859,14 @@
     },
     {
       "word": "intimate",
-      "pos": "adj.",
-      "definition": "亲密的；详尽的",
-      "origin": "editorial-unverified",
+      "pos": "adj./n./v.",
+      "definition": "adj. 亲密的、私人的；详尽熟悉的；n. 密友；v. 暗示、间接表明（正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-6.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/intimate",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -55116,13 +55100,13 @@
     {
       "word": "invade",
       "pos": "v.",
-      "definition": "入侵；侵入",
-      "origin": "editorial-unverified",
+      "definition": "武装入侵；大量涌入；强行进入某领域；侵犯隐私等",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-2.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/invade",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -55201,25 +55185,25 @@
     {
       "word": "invasion",
       "pos": "n.",
-      "definition": "入侵",
-      "origin": "editorial-unverified",
+      "definition": "武装入侵；不受欢迎的大量涌入；侵犯",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/invasion",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "inventory",
-      "pos": "n.",
-      "definition": "清单；库存",
-      "origin": "editorial-unverified",
+      "pos": "n./v.",
+      "definition": "n. 物品清单；盘点；存货；一套物品；v. 编制清单、盘点",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-2.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/inventory",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -55273,25 +55257,25 @@
     {
       "word": "investigate",
       "pos": "v.",
-      "definition": "调查；研究",
-      "origin": "editorial-unverified",
+      "definition": "调查、查明；仔细研究",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/investigate",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "investigation",
       "pos": "n.",
-      "definition": "调查；研究",
-      "origin": "editorial-unverified",
+      "definition": "调查、审查；为查明事实而进行的研究",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-2.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/investigation",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -55417,25 +55401,25 @@
     {
       "word": "involve",
       "pos": "v.",
-      "definition": "涉及；包含；使参与",
-      "origin": "editorial-unverified",
+      "definition": "包含、涉及；使参与、使投入",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/involve",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "involved",
       "pos": "adj.",
-      "definition": "复杂的；参与的",
-      "origin": "editorial-unverified",
+      "definition": "复杂难懂的；参与的、投入的；有恋爱关系的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-6.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/involved",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -55479,13 +55463,13 @@
     {
       "word": "irony",
       "pos": "n.",
-      "definition": "讽刺；反语",
-      "origin": "editorial-unverified",
+      "definition": "反讽、说反话；与预期相反的讽刺性情形",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/irony",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -55767,26 +55751,26 @@
     },
     {
       "word": "isolate",
-      "pos": "v.",
-      "definition": "分离；隔离",
-      "origin": "editorial-unverified",
+      "pos": "v./n.",
+      "definition": "v. 分离、隔离；孤立；单独锻炼肌肉；n. 分离出的微生物或培养物（生物学）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/isolate",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "isolated",
       "pos": "adj.",
-      "definition": "偏远的；孤立的",
-      "origin": "editorial-unverified",
+      "definition": "偏远的；孤立发生的、个别的；孤独的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-023.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/isolated",
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {

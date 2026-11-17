@@ -310,6 +310,14 @@ if(reviews.some(r=>r.w==='entrance')){
  assert(ctx.words.file.senses.some(s=>s[0].includes('锉刀')));
  assert(ctx.words.fixed.senses.some(s=>s[0].includes('绝育')));
 }
+// Batch 023: preserve part-of-speech pronunciation contrasts through the merge.
+if(reviews.some(r=>r.w==='isolated')){
+ const expected={house:['haʊs','haʊz'],impact:['ˈɪm.pækt','ɪmˈpækt'],implement:['ˈɪm.plɪ.ment','ˈɪm.plɪ.mənt'],import:['ɪmˈpɔːt','ˈɪm.pɔːt'],initiate:['ɪˈnɪʃ.i.eɪt','ɪˈnɪʃ.i.ət'],insert:['ɪnˈsɜːt','ˈɪn.sɜːt'],intimate:['ˈɪn.tɪ.mət','ˈɪn.tɪ.mət','ˈɪn.tɪ.meɪt'],isolate:['ˈaɪ.sə.leɪt','ˈaɪ.sə.lət']};
+ for(const [w,uk] of Object.entries(expected)) assert.deepEqual(Array.from(reading(w),r=>r.uk),uk,`lost POS contrast: ${w}`);
+ assert.equal(reading('hostile')[0].us,'ˈhɑː.stəl');
+ assert.equal(reading('inherent')[0].us,'ɪnˈhɪə.rənt');
+ assert.equal(reading('inquiry')[0].us,'ˈɪn.kwɚ.i');
+}
 assert(ctx.App.pronunciationHTML({w:'<test>',ph:'<bad>',custom:true}).includes('&lt;bad&gt;'));
 assert(!ctx.App.pronunciationHTML({w:'<test>',ph:'<bad>'}).includes('<bad>'));
 assert(!vocab.includes('esc(o.ph)'), 'a vocab surface still renders legacy IPA directly');

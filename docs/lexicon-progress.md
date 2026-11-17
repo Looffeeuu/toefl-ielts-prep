@@ -4,9 +4,9 @@
 
 | 项目 | 已核对 | 尚待核对 |
 | --- | ---: | ---: |
-| 释义与词性 | 2144 | 6931 |
-| 英美音与主要分读 | 2151 | 6924 |
-| 两项均完成 | 2135 | 6940 |
+| 释义与词性 | 2244 | 6831 |
+| 英美音与主要分读 | 2250 | 6825 |
+| 两项均完成 | 2235 | 6840 |
 
 每词分别保存来源和日期，不能用核对音标代替核对释义。完整状态和接续队列见 [lexicon-progress.json](lexicon-progress.json)。优先处理缺失、截断、词性矛盾和用法标记，再按字母顺序推进。未找到可靠来源的条目保持待核对，不推测填充。
 
@@ -24,7 +24,7 @@ node tools/check_pronunciations.js --write
 node tools/lexicon_progress.js
 ```
 
-下一批队列前 30 词：horror、hostile、house、household、human、humanity、hunger、hurricane、icon、ideal、identical、identification、identify、identity、ideological、ideology、ignore、illusion、illustration、image、imagine、immediate、immediately、immigration、immune、impact、implement、implication、imply、import。
+下一批队列前 30 词：isolation、issue、jar、jaw、jewelry、join、journal、journalism、journalist、juice、jungle、jurisdiction、jury、justice、justify、ken、kingdom、kitchen、label、laboratory、lamp、land、landing、landmark、landscape、largely、laser、lately、latter、launch。
 
 ## 批次 002
 
@@ -152,6 +152,12 @@ node tools/lexicon_progress.js
 
 
 
+## 批次 023
+
+完成 100 词：horror、hostile、house、household、human、humanity、hunger、hurricane、icon、ideal、identical、identification、identify、identity、ideological、ideology、ignore、illusion、illustration、image、imagine、immediate、immediately、immigration、immune、impact、implement、implication、imply、import、impose、impressive、impulse、incident、incorporate、incredible、independent、industrial、inevitably、infant、infection、influential、informal、ingredient、inherent、inherit、initial、initially、initiate、injure、injury、inner、innovation、inquiry、insert、insight、insist、inspection、inspector、inspiration、inspire、install、instant、institution、instruct、instruction、instrument、intact、integrate、integrated、integrity、intellectual、intelligence、intelligent、intensive、intent、intention、interact、interaction、interactive、interest、interfere、interior、internal、interpret、interpretation、interrupt、interval、intervention、intimate、invade、invasion、inventory、investigate、investigation、involve、involved、irony、isolate、isolated。托福高频接续100词；逐词核对Cambridge常用义、词性和英美音；区分house、impact、implement、import、initiate、insert、intimate、isolate等分读。中文归纳及英文例句为原创。
+
+
+
 ## 发布节奏
 
-每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 100 词，距下次发布还差 900 词。发布基线为 fc694f71b9d99bf227f0f0001b6b199e5de0bf50，当时两项均核对 2035 词；当前页面显示本地核对进度，不表示已上线。
+每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 200 词，距下次发布还差 800 词。发布基线为 fc694f71b9d99bf227f0f0001b6b199e5de0bf50，当时两项均核对 2035 词；当前页面显示本地核对进度，不表示已上线。

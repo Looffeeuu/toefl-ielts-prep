@@ -4,9 +4,9 @@
 
 | 项目 | 已核对 | 尚待核对 |
 | --- | ---: | ---: |
-| 释义与词性 | 2443 | 6632 |
-| 英美音与主要分读 | 2448 | 6627 |
-| 两项均完成 | 2435 | 6640 |
+| 释义与词性 | 2543 | 6532 |
+| 英美音与主要分读 | 2548 | 6527 |
+| 两项均完成 | 2535 | 6540 |
 
 每词分别保存来源和日期，不能用核对音标代替核对释义。完整状态和接续队列见 [lexicon-progress.json](lexicon-progress.json)。优先处理缺失、截断、词性矛盾和用法标记，再按字母顺序推进。未找到可靠来源的条目保持待核对，不推测填充。
 
@@ -24,7 +24,7 @@ node tools/check_pronunciations.js --write
 node tools/lexicon_progress.js
 ```
 
-下一批队列前 30 词：opposite、opposition、optimistic、option、oral、organic、orientation、original、originally、outcome、outfit、outlet、outline、output、outstanding、oven、overall、overcome、overlook、oversee、overwhelm、oxygen、pace、pack、package、painting、pale、panel、panic、parade。
+下一批队列前 30 词：praise、preach、precious、precise、predict、prediction、preference、pregnant、preliminary、premise、premium、prescription、presence、presidency、pressure、presumably、pretend、prevail、prevent、previous、pride、primary、prime、principal、prior、priority、prison、private、privilege、procedure。
 
 ## 批次 002
 
@@ -170,6 +170,12 @@ node tools/lexicon_progress.js
 
 
 
+## 批次 026
+
+完成 100 词：opposite、opposition、optimistic、option、oral、organic、orientation、original、originally、outcome、outfit、outlet、outline、output、outstanding、oven、overall、overcome、overlook、oversee、overwhelm、oxygen、pace、pack、package、painting、pale、panel、panic、parade、partial、partially、participant、participate、party、passage、passion、patch、patent、path、patience、patrol、payment、peak、penalty、percentage、perfect、perform、performer、period、permanent、permission、permit、persist、personality、personnel、perspective、persuade、phase、philosophy、photograph、phrase、physician、pile、pill、pillow、pine、pioneer、pit、pitch、pitcher、plaintiff、planet、plastic、platform、plea、plead、pleasure、plot、plunge、poet、Pole、politics、pollution、popular、popularity、portion、pose、positive、possess、possession、post、poster、pot、pound、poverty、powder、practical、practically、practitioner。托福高频接续100词（opposite 至 practitioner）；逐词核对 Cambridge 索引词典及发音页，option、overall、pillow、pit 补查 Collins。区分 perfect、permit、overlook、patent、overall 分读；保留 Pole 大小写义项与各义项原创例句。仅本地提交，累计待发布500词，不推送。
+
+
+
 ## 发布节奏
 
-每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 400 词，距下次发布还差 600 词。发布基线为 fc694f71b9d99bf227f0f0001b6b199e5de0bf50，当时两项均核对 2035 词；当前页面显示本地核对进度，不表示已上线。
+每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 500 词，距下次发布还差 500 词。发布基线为 fc694f71b9d99bf227f0f0001b6b199e5de0bf50，当时两项均核对 2035 词；当前页面显示本地核对进度，不表示已上线。

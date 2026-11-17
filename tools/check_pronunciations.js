@@ -282,6 +282,25 @@ if(reviews.some(r=>r.w==='diagnosis')){
  assert(ctx.words.draft.senses.some(s=>s[0].includes('桶装')));
  assert(ctx.words.endure.senses.some(s=>s[0].startsWith('vi.')));
 }
+if(reviews.some(r=>r.w==='entrance')){
+ assert.equal(reading('entrance')[0].uk,'ˈen.trəns');
+ assert.equal(reading('entrance')[1].uk,'ɪnˈtrɑːns');
+ assert.equal(reading('entrance')[1].us,'ɪnˈtræns');
+ assert.equal(reading('excuse')[0].us,'ɪkˈskjuːz');
+ assert.equal(reading('excuse')[1].us,'ɪkˈskjuːs');
+ assert.equal(reading('extract')[0].uk,'ɪkˈstrækt');
+ assert.equal(reading('extract')[1].uk,'ˈek.strækt');
+ assert.equal(reading('expose')[1].us,'ˌekspəʊˈzeɪ');
+ assert.equal(reading('financial')[1].uk,'fɪˈnæn.ʃəl');
+ assert.equal(reading('financial')[1].us,'fəˈnæn.ʃəl');
+ assert.equal(reviews.find(r=>r.w==='ethics').source,'https://www.collinsdictionary.com/dictionary/english/ethics');
+ assert(reviews.find(r=>r.w==='finance').sources.includes('https://www.collinsdictionary.com/dictionary/english/finance'));
+ assert(ctx.words.entertain.senses.some(s=>s[0].includes('考虑')));
+ assert(ctx.words.faculty.senses.some(s=>s[0].includes('全体教师')));
+ assert(ctx.words.facility.senses.some(s=>s[0].includes('信贷')));
+ assert(ctx.words.file.senses.some(s=>s[0].includes('锉刀')));
+ assert(ctx.words.fixed.senses.some(s=>s[0].includes('绝育')));
+}
 assert(ctx.App.pronunciationHTML({w:'<test>',ph:'<bad>',custom:true}).includes('&lt;bad&gt;'));
 assert(!ctx.App.pronunciationHTML({w:'<test>',ph:'<bad>'}).includes('<bad>'));
 assert(!vocab.includes('esc(o.ph)'), 'a vocab surface still renders legacy IPA directly');

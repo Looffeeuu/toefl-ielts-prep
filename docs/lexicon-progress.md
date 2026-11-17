@@ -4,9 +4,9 @@
 
 | 项目 | 已核对 | 尚待核对 |
 | --- | ---: | ---: |
-| 释义与词性 | 1944 | 7131 |
-| 英美音与主要分读 | 1951 | 7124 |
-| 两项均完成 | 1935 | 7140 |
+| 释义与词性 | 2044 | 7031 |
+| 英美音与主要分读 | 2051 | 7024 |
+| 两项均完成 | 2035 | 7040 |
 
 每词分别保存来源和日期，不能用核对音标代替核对释义。完整状态和接续队列见 [lexicon-progress.json](lexicon-progress.json)。优先处理缺失、截断、词性矛盾和用法标记，再按字母顺序推进。未找到可靠来源的条目保持待核对，不推测填充。
 
@@ -24,7 +24,7 @@ node tools/check_pronunciations.js --write
 node tools/lexicon_progress.js
 ```
 
-下一批队列前 30 词：enterprise、entertain、entertainment、enthusiasm、entitle、entitled、entity、entrance、entry、envision、epidemic、episode、equality、equation、equip、equipment、equivalent、error、escape、essence、estate、ethics、ethnic、evaluate、eventually、evident、evolution、exact、exceed、excellent。
+下一批队列前 30 词：flag、flash、flavor、flee、flexibility、flip、float、flood、flour、fluid、focus、fog、fold、folk、forbid、formal、format、formation、former、formerly、formula、forth、fortune、foster、founder、fraction、fragile、fragment、frame、fraud。
 
 ## 批次 002
 
@@ -140,6 +140,12 @@ node tools/lexicon_progress.js
 
 
 
+## 批次 021
+
+完成 100 词：enterprise、entertain、entertainment、enthusiasm、entitle、entitled、entity、entrance、entry、envision、epidemic、episode、equality、equation、equip、equipment、equivalent、error、escape、essence、estate、ethics、ethnic、evaluate、eventually、evident、evolution、exact、exceed、excellent、exception、excessive、exchange、excitement、exciting、exclude、exclusive、exclusively、excuse、execute、execution、exhaust、exhibit、exhibition、exist、exit、exotic、expand、expansion、expedition、experienced、expertise、explode、exploration、explore、expose、exposure、extend、extended、extension、extent、external、extract、extraordinary、fabric、face、facility、faculty、fade、faint、fairly、faith、fame、fantastic、fantasy、fascinating、fashion、fatal、fatigue、fault、favorable、federal、feed、feminist、festival、fiber、fiction、fierce、figure、file、filter、final、finance、financial、fine、finish、firm、fist、fitness、fixed。托福高频接续批次；核对多义、多词性、同形异音和地区用法，保留逐词来源与原创例句。
+
+
+
 ## 发布节奏
 
-每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 909 词，距下次发布还差 91 词。发布基线为 622b7ffac50f5c24b3ab3424a6faa53e3ba406d4，当时两项均核对 1026 词；当前页面显示本地核对进度，不表示已上线。
+每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 1009 词，距下次发布还差 0 词。发布基线为 622b7ffac50f5c24b3ab3424a6faa53e3ba406d4，当时两项均核对 1026 词；当前页面显示本地核对进度，不表示已上线。

@@ -4,9 +4,9 @@
 
 | 项目 | 已核对 | 尚待核对 |
 | --- | ---: | ---: |
-| 释义与词性 | 2244 | 6831 |
-| 英美音与主要分读 | 2250 | 6825 |
-| 两项均完成 | 2235 | 6840 |
+| 释义与词性 | 2344 | 6731 |
+| 英美音与主要分读 | 2349 | 6726 |
+| 两项均完成 | 2335 | 6740 |
 
 每词分别保存来源和日期，不能用核对音标代替核对释义。完整状态和接续队列见 [lexicon-progress.json](lexicon-progress.json)。优先处理缺失、截断、词性矛盾和用法标记，再按字母顺序推进。未找到可靠来源的条目保持待核对，不推测填充。
 
@@ -24,7 +24,7 @@ node tools/check_pronunciations.js --write
 node tools/lexicon_progress.js
 ```
 
-下一批队列前 30 词：isolation、issue、jar、jaw、jewelry、join、journal、journalism、journalist、juice、jungle、jurisdiction、jury、justice、justify、ken、kingdom、kitchen、label、laboratory、lamp、land、landing、landmark、landscape、largely、laser、lately、latter、launch。
+下一批队列前 30 词：mentor、menu、mere、merit、metaphor、metropolitan、migration、mild、military、mill、mine、minimal、minimize、minimum、ministry、minority、minute、miracle、mission、mobile、mode、moderate、modest、molecule、moment、monitor、monster、mood、moral、mostly。
 
 ## 批次 002
 
@@ -158,6 +158,12 @@ node tools/lexicon_progress.js
 
 
 
+## 批次 024
+
+完成 100 词：isolation、issue、jar、jaw、jewelry、join、journal、journalism、journalist、juice、jungle、jurisdiction、jury、justice、justify、ken、kingdom、kitchen、label、laboratory、lamp、land、landing、landmark、landscape、largely、laser、lately、latter、launch、laundry、lawn、lawsuit、lay、lead、leadership、leading、league、leap、leather、legacy、legal、legend、legendary、legislature、lens、liberal、liberty、lift、likewise、limb、limitation、lip、liquid、literally、literary、liver、load、loan、lobby、locate、location、log、logic、logical、long、loop、loose、loyal、lung、magic、magnetic、maintenance、majority、makeup、mall、mandate、manipulate、mansion、manual、map、marble、march、margin、marine、mask、mass、massive、match、mathematics、maximum、meaningful、means、mechanical、media、medicine、memorial、memory、mental、mention。托福高频接续100词；逐词核对Cambridge索引词典条目的常用义、词性及英美IPA，并追查缺失及多义条目。区分lead、leading分读，保留issue、jewelry、lawsuit、mathematics、medicine的主要变体；中文归纳与英文例句原创。
+
+
+
 ## 发布节奏
 
-每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 200 词，距下次发布还差 800 词。发布基线为 fc694f71b9d99bf227f0f0001b6b199e5de0bf50，当时两项均核对 2035 词；当前页面显示本地核对进度，不表示已上线。
+每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 300 词，距下次发布还差 700 词。发布基线为 fc694f71b9d99bf227f0f0001b6b199e5de0bf50，当时两项均核对 2035 词；当前页面显示本地核对进度，不表示已上线。

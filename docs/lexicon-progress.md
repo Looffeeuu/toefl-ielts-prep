@@ -4,9 +4,9 @@
 
 | 项目 | 已核对 | 尚待核对 |
 | --- | ---: | ---: |
-| 释义与词性 | 1435 | 7640 |
-| 英美音与主要分读 | 1445 | 7630 |
-| 两项均完成 | 1426 | 7649 |
+| 释义与词性 | 1544 | 7531 |
+| 英美音与主要分读 | 1554 | 7521 |
+| 两项均完成 | 1535 | 7540 |
 
 每词分别保存来源和日期，不能用核对音标代替核对释义。完整状态和接续队列见 [lexicon-progress.json](lexicon-progress.json)。优先处理缺失、截断、词性矛盾和用法标记，再按字母顺序推进。未找到可靠来源的条目保持待核对，不推测填充。
 
@@ -24,7 +24,7 @@ node tools/check_pronunciations.js --write
 node tools/lexicon_progress.js
 ```
 
-下一批队列前 30 词：ruins、phenomenon、photosynthesis、pigment、plateau、plausible、pollinate、porous、portrait、portray、potential、pottery、precede、precipitation、predator、predominant、prehistoric、prey、primitive、profound、prolific、prominent、proportion、prosperity、radiation、rapid、recall、recession、reflect、regulate。
+下一批队列前 30 词：consistently、flame、flavour、innocent、lean、major、mate、mean、narrator、pet、pilot、plain、plate、poll、preserve、process、pull、rank、rough、routinely、schedule、smart、snap、spare、split、spot、steep、still、surface、suspect。
 
 ## 批次 002
 
@@ -102,14 +102,20 @@ node tools/lexicon_progress.js
 
 完成 100 词：predominantly、ambiguous、chronological、civilization、classify、cognitive、coincide、collide、colony、comet、commerce、commission、commodity、compensate、component、composition、comprehensive、compress、comprise、condense、conformity、conquest、conscious、consensus、consequence、considerable、constitute、constraint、consumption、contour、contribute、controversy、conventional、cooperate、cosmic、criterion、crucial、crude、crust、cue、currency、curriculum、decline、decompose、demographic、dense、density、depict、deposit、deprive、derive、diameter、dilemma、diminish、disperse、distinct、distinguish、distribute、diverse、diversity、document、domesticate、dominate、dormant、drought、dynasty、eclipse、ecosystem、elaborate、emergence、emit、empathy、emphasize、empire、enhance、entrepreneur、equator、era、erosion、eruption、essential、estimate、evidence、evoke、evolve、excavate、explicit、exploit、extensive、extinct、facade、facilitate、factor、feasible、feedback、fertile、flexible、flourish、fluctuate、forage。
 
-待复核：ruins。已找到 ruin 的释义与原形音标，尚未取得 ruins 自身完整英美 IPA，保留待核对。 [已查资料](https://dictionary.cambridge.org/dictionary/english/ruin)。不计入完成数。
+历史待复核：ruins，已在批次 016 完成核对。原记录：已找到 ruin 的释义与原形音标，尚未取得 ruins 自身完整英美 IPA，保留待核对。 [此前资料](https://dictionary.cambridge.org/dictionary/english/ruin)。
 
 ## 批次 015
 
 完成 100 词：fossil、fracture、framework、fresco、friction、frustrate、fundamental、fusion、galaxy、genre、glacier、gradual、gravity、habitat、habituation、hence、heritage、hibernate、hierarchy、hinder、humid、hypothesis、illustrate、immigrant、impede、implicit、improvise、incentive、indicate、indigenous、industrialization、inevitable、infer、inflation、infrastructure、inhabit、inhibit、innate、innovative、inscription、instinct、intense、intricate、intuition、irrigation、labor、landform、larva、layer、legislation、literacy、luminous、magnitude、maintain、manuscript、masterpiece、meander、mechanism、mechanize、medieval、medium、memorize、merchant、merely、meteorite、migrate、mimic、mineral、modify、molten、momentum、monopoly、monument、moreover、motif、motivation、mural、mutation、narrative、nebula、nevertheless、nocturnal、nomadic、notably、nurture、nutrient、obstacle、offspring、orbit、organism、origin、ornament、paradox、parasite、particle、patron、peasant、peer、perceive、perception。
 
-待复核：ruins。已找到 ruin 的释义与原形音标，尚未取得 ruins 自身完整英美 IPA，保留待核对。 [已查资料](https://dictionary.cambridge.org/dictionary/english/ruin)。不计入完成数。
+历史待复核：ruins，已在批次 016 完成核对。原记录：已找到 ruin 的释义与原形音标，尚未取得 ruins 自身完整英美 IPA，保留待核对。 [此前资料](https://dictionary.cambridge.org/dictionary/english/ruin)。
+
+## 批次 016
+
+完成 109 词：ruins、phenomenon、photosynthesis、pigment、plateau、plausible、pollinate、porous、portrait、portray、potential、pottery、precede、precipitation、predator、predominant、prehistoric、prey、primitive、profound、prolific、prominent、proportion、prosperity、radiation、rapid、recall、recession、reflect、regulate、reinforce、relic、remarkable、render、renowned、replicate、resemble、reservoir、retain、reveal、revenue、revolution、rigid、ritual、rotate、rudimentary、rural、satellite、saturate、scarce、sculpture、sediment、sequence、settler、shortage、significant、socialize、sophisticated、sparse、specialize、species、spectrum、speculate、spontaneous、stable、stagnant、stimulus、strata、striking、submerge、subsidy、substantial、subtle、surplus、sustain、symbiosis、symmetry、tariff、tectonic、tendency、terrain、textile、thereby、thrive、topography、trait、transaction、transition、tribe、trigger、undergo、undermine、uniform、urban、utilize、vapor、variation、vegetation、velocity、verify、viable、virtually、vivid、volcanic、vulnerable、wage、welfare、whereas、yield。按用户要求，本批一次完成核心精编剩余109词。
+
+
 
 ## 发布节奏
 
-每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 400 词，距下次发布还差 600 词。发布基线为 622b7ffac50f5c24b3ab3424a6faa53e3ba406d4，当时两项均核对 1026 词；当前页面显示本地核对进度，不表示已上线。
+每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 509 词，距下次发布还差 491 词。发布基线为 622b7ffac50f5c24b3ab3424a6faa53e3ba406d4，当时两项均核对 1026 词；当前页面显示本地核对进度，不表示已上线。

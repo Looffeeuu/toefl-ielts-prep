@@ -9,7 +9,8 @@ const phon=JSON.parse(fs.readFileSync(path.join(root,'docs/pronunciation-audit.j
 const progress=JSON.parse(fs.readFileSync(path.join(root,'docs/lexicon-progress.json'),'utf8'));
 const checked=new Set();
 for(const batch of ctx.window.LEXICON_REVIEW_BATCHES){
-  if(batch.id!=='001') assert.equal(batch.words.length,100,`batch ${batch.id} must have 100 completed words`);
+  // User explicitly requested the final 109 core words together in batch 016.
+  if(batch.id!=='001') assert.equal(batch.words.length,batch.id==='016'?109:100,`unexpected batch size: ${batch.id}`);
   for(const w of batch.words){
     assert(!checked.has(w),`duplicate batch word: ${w}`);checked.add(w);
     const d=ctx.window.DEFINITION_REVIEWS.find(r=>r.w===w);
@@ -34,8 +35,13 @@ assert.equal(progress.summary.bothChecked+progress.summary.remainingBoth,9075);
 assert.equal(progress.queue.length,progress.summary.remainingBoth);
 for(const batch of ctx.window.LEXICON_REVIEW_BATCHES) for(const d of batch.deferred||[]){
   assert(!batch.words.includes(d.w));
-  assert(progress.queue.includes(d.w),`deferred word disappeared: ${d.w}`);
+  const resolved=ctx.window.LEXICON_REVIEW_BATCHES.find(b=>b.id>batch.id&&b.words.includes(d.w));
+  assert(resolved || progress.queue.includes(d.w),`deferred word disappeared without a later review: ${d.w}`);
 }
+const core=JSON.parse(fs.readFileSync(path.join(root,'docs/review-priority.json'),'utf8')).scopes.find(s=>s.name==='核心精编');
+assert.equal(core.total,350);
+assert.equal(core.completed,350);
+assert.equal(core.remaining,0);
 assert.equal(progress.publication.completedSinceLastPublish,progress.summary.bothChecked-progress.publication.bothCheckedAtLastPublish);
 assert.equal(progress.publication.readyToPublish,progress.publication.completedSinceLastPublish>=1000);
 console.log(`Batch definitions, pronunciation integration and complete queue passed: ${checked.size} words.`);

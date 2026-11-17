@@ -9,7 +9,7 @@
         return `<span class="pron-row"><small class="pron-label">${esc(label)}</small><span>英 /${esc(p.uk)}/</span><span>美 /${esc(p.us)}/</span></span>`;
       }).join("");
       const sources=(r.sources||[r.source]).map(url=>{
-        const name=url.includes('oxfordlearnersdictionaries.com')?'牛津词典':url.includes('collinsdictionary.com')?'柯林斯词典':'剑桥词典';
+        const name=url.includes('oxfordlearnersdictionaries.com')?'牛津词典':url.includes('collinsdictionary.com')?'柯林斯词典':url.includes('spanishdict.com')?'SpanishDictionary.com':'剑桥词典';
         return `<a class="pron-source" href="${esc(url)}" target="_blank" rel="noopener noreferrer">${name} · 音标出处</a>`;
       }).join(' · ');
       return `<span class="pronunciations">${rows}<span>${sources}</span></span>`;

@@ -33,6 +33,19 @@ for(const r of reviews){
   assert(!rendered.includes('尚未核对'));
 }
 const reading = w => reviews.find(r => r.w===w).readings;
+if(reviews.some(r=>r.w==='ruins')){
+  assert.equal(reading('ruins')[0].uk,'ˈruːɪnz');
+  assert.equal(reading('ruins')[0].us,'ɹu.ɪnz');
+  const ruins=reviews.find(r=>r.w==='ruins');
+  assert(ruins.sources.includes('https://www.spanishdict.com/pronunciation/ruins'));
+  assert(ctx.App.pronunciationHTML(ctx.words.ruins).includes('SpanishDictionary.com'));
+  assert.equal(reading('recall')[1].uk,'ˈriː.kɔːl');
+  assert.equal(reading('rotate')[0].uk,'rəʊˈteɪt');
+  assert.equal(reading('rotate')[0].us,'ˈroʊ.teɪt');
+  assert.equal(reading('saturate')[1].us,'ˈsætʃ.ə.rət');
+  assert.equal(reading('strata').length,2);
+  assert(ctx.words.wage.senses.some(s=>s[0].includes('发动')));
+}
 assert.equal(reading('read')[1].uk, 'red');
 assert.equal(reading('lead')[1].uk, 'led');
 assert.notEqual(reading('record')[0].uk, reading('record')[1].uk);

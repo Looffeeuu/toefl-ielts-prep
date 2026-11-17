@@ -4,9 +4,9 @@
 
 | 项目 | 已核对 | 尚待核对 |
 | --- | ---: | ---: |
-| 释义与词性 | 2543 | 6532 |
-| 英美音与主要分读 | 2548 | 6527 |
-| 两项均完成 | 2535 | 6540 |
+| 释义与词性 | 2643 | 6432 |
+| 英美音与主要分读 | 2644 | 6431 |
+| 两项均完成 | 2635 | 6440 |
 
 每词分别保存来源和日期，不能用核对音标代替核对释义。完整状态和接续队列见 [lexicon-progress.json](lexicon-progress.json)。优先处理缺失、截断、词性矛盾和用法标记，再按字母顺序推进。未找到可靠来源的条目保持待核对，不推测填充。
 
@@ -24,7 +24,7 @@ node tools/check_pronunciations.js --write
 node tools/lexicon_progress.js
 ```
 
-下一批队列前 30 词：praise、preach、precious、precise、predict、prediction、preference、pregnant、preliminary、premise、premium、prescription、presence、presidency、pressure、presumably、pretend、prevail、prevent、previous、pride、primary、prime、principal、prior、priority、prison、private、privilege、procedure。
+下一批队列前 30 词：realm、rear、reason、rebel、rebuild、receiver、recent、recently、reception、recipe、recipient、recognition、recognize、recommend、recommendation、recording、recover、recruit、reduce、reduction、refer、reflection、reform、refrigerator、refuge、refuse、regard、regardless、regime、regional。
 
 ## 批次 002
 
@@ -176,6 +176,12 @@ node tools/lexicon_progress.js
 
 
 
+## 批次 027
+
+完成 100 词：praise、preach、precious、precise、predict、prediction、preference、pregnant、preliminary、premise、premium、prescription、presence、presidency、pressure、presumably、pretend、prevail、prevent、previous、pride、primary、prime、principal、prior、priority、prison、private、privilege、procedure、proceed、proceeding、proclaim、produce、productive、profession、professional、profile、profit、progress、progressive、prohibit、project、projection、promise、promising、promote、prompt、proof、proper、property、proposal、propose、prospect、protection、protein、protest、provide、province、provision、provoke、psychologist、psychology、publication、publicity、pulse、pump、punch、purchase、pure、purple、pursue、puzzle、qualify、quality、quantity、quarter、quest、questionnaire、race、radar、radical、rage、rail、raise、rally、ranch、random、range、rare、rarely、rat、ratio、rational、raw、ray、react、readily、ready、realize。托福高频接续100词（praise 至 realize）；逐词核对 Cambridge 索引词典与发音页，premium、presence、principal、productive、proceeding、pump、ranch、raw、ready 补查 Collins。348条原创义项例句；区分 premise、produce、progress、project、protest 分读和 premises、proceedings 复数专用义。仅本地提交，累计待发布600词，不推送。
+
+
+
 ## 发布节奏
 
-每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 500 词，距下次发布还差 500 词。发布基线为 fc694f71b9d99bf227f0f0001b6b199e5de0bf50，当时两项均核对 2035 词；当前页面显示本地核对进度，不表示已上线。
+每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 600 词，距下次发布还差 400 词。发布基线为 fc694f71b9d99bf227f0f0001b6b199e5de0bf50，当时两项均核对 2035 词；当前页面显示本地核对进度，不表示已上线。

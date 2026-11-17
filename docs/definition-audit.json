@@ -3,9 +3,9 @@
   "scope": "全部内置词条的来源和结构一致性；仅 dictionary-reviewed 条目经过本轮外部词典核对。其他候选不能据此判定为虚假或正确。",
   "total": 9075,
   "sources": {
-    "dictionary-reviewed": 2543,
-    "ecdict-derived": 3607,
-    "editorial-unverified": 2925
+    "dictionary-reviewed": 2643,
+    "ecdict-derived": 3555,
+    "editorial-unverified": 2877
   },
   "flagCounts": {
     "missing-pos": 27,
@@ -77058,14 +77058,21 @@
     },
     {
       "word": "praise",
-      "pos": "n./vt.",
-      "definition": "n. 赞美，称赞，崇拜　vt. 称赞，赞美",
-      "origin": "ecdict-derived",
+      "pos": "v./n.",
+      "definition": "v. 赞扬、称赞；v. 颂扬、赞美神；n. 赞扬、赞美（不可数）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/praise",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/praise",
+        "https://dictionary.cambridge.org/pronunciation/english/praise",
+        "https://dictionary.cambridge.org/dictionary/english/praise?topic=praising-and-applauding",
+        "https://dictionary.cambridge.org/us/dictionary/english/praise",
+        "https://dictionary.cambridge.org/dictionary/english/praise?q=praised"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -77082,14 +77089,18 @@
     },
     {
       "word": "preach",
-      "pos": "vi./vt.",
-      "definition": "vi. 布道　vt. 宣扬；鼓吹",
-      "origin": "editorial-unverified",
+      "pos": "v.",
+      "definition": "v. 布道、讲道；v. 宣扬、鼓吹；v. 说教、告诫",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-6.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/preach",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/preach",
+        "https://dictionary.cambridge.org/pronunciation/english/preach"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -77178,15 +77189,23 @@
     },
     {
       "word": "precious",
-      "pos": "adj.",
-      "definition": "宝贵的，珍贵的，过于精致的，珍爱的",
-      "origin": "ecdict-derived",
+      "pos": "adj./adv.",
+      "definition": "adj. 珍贵的、宝贵的；adj. 矫揉造作的（贬义）；adj. 宝贝的、可恶的（反讽或表示不满）；adv. 非常、极其（非正式，常用于 precious little 或 few）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/precious",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/precious",
+        "https://dictionary.cambridge.org/us/pronunciation/english/precious",
+        "https://dictionary.cambridge.org/us/dictionary/english/precious",
+        "https://dictionary.cambridge.org/pronunciation/english/precious",
+        "https://dictionary.cambridge.org/us/dictionary/english/precious?topic=affected-and-insincere",
+        "https://dictionary.cambridge.org/us/dictionary/english/precious?q=precious_1",
+        "https://dictionary.cambridge.org/dictionary/english/precious?topic=expressions-of-anger"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -77240,14 +77259,18 @@
     {
       "word": "precise",
       "pos": "adj.",
-      "definition": "精确的，严谨的，明确的",
-      "origin": "ecdict-derived",
+      "definition": "adj. 精确的、准确的；adj. 严谨细致的、讲究准确的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/precise",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/precise",
+        "https://dictionary.cambridge.org/pronunciation/english/precise",
+        "https://dictionary.cambridge.org/us/dictionary/english/precise"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -77325,13 +77348,17 @@
     {
       "word": "predict",
       "pos": "v.",
-      "definition": "预知，预言，预报",
-      "origin": "ecdict-derived",
+      "definition": "v. 预测、预言",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/predict",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/predict",
+        "https://dictionary.cambridge.org/pronunciation/english/predict"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -77361,13 +77388,18 @@
     {
       "word": "prediction",
       "pos": "n.",
-      "definition": "预测",
-      "origin": "editorial-unverified",
+      "definition": "n. 预测、预言；预测结果",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/prediction",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/prediction",
+        "https://dictionary.cambridge.org/pronunciation/english/prediction",
+        "https://dictionary.cambridge.org/us/dictionary/english/prediction"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -77480,28 +77512,37 @@
     },
     {
       "word": "preference",
-      "pos": "n.",
-      "definition": "偏爱，优先，喜爱物",
-      "origin": "ecdict-derived",
+      "pos": "n./adj.",
+      "definition": "n. 偏爱、偏好；优先选择；n. 优先待遇、优先权；adj. 优先股的（金融，置于名词前）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/preference",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/preference",
+        "https://dictionary.cambridge.org/pronunciation/english/preference",
+        "https://dictionary.cambridge.org/us/dictionary/english/preference",
+        "https://dictionary.cambridge.org/dictionary/english/preference?topic=liking-more"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "pregnant",
       "pos": "adj.",
-      "definition": "怀孕的，充满的，思想丰富的，成果丰硕的",
-      "origin": "ecdict-derived",
+      "definition": "adj. 怀孕的、妊娠的；adj. 饱含意义的、意味深长的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/pregnant",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/pregnant",
+        "https://dictionary.cambridge.org/pronunciation/english/pregnant",
+        "https://dictionary.cambridge.org/dictionary/english/pregnant?topic=pregnancy"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -77531,14 +77572,18 @@
     },
     {
       "word": "preliminary",
-      "pos": "adj.",
-      "definition": "初步的",
-      "origin": "editorial-unverified",
+      "pos": "adj./n.",
+      "definition": "adj. 初步的、预备性的；n. 预备步骤、预赛（常用复数）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/preliminary",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/preliminary",
+        "https://dictionary.cambridge.org/pronunciation/english/preliminary"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -77567,26 +77612,39 @@
     },
     {
       "word": "premise",
-      "pos": "n.",
-      "definition": "前提",
-      "origin": "editorial-unverified",
+      "pos": "n./v.",
+      "definition": "n. 前提、假设；v. 以……为前提、以……为基础（正式）；n. 房屋及其附属土地、经营场所（此义只用 premises）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/premise",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/premise",
+        "https://dictionary.cambridge.org/pronunciation/english/premise",
+        "https://dictionary.cambridge.org/dictionary/english/premises",
+        "https://dictionary.cambridge.org/dictionary/english/premises?q=premises",
+        "https://dictionary.cambridge.org/us/dictionary/english/premises?topic=home",
+        "https://dictionary.cambridge.org/us/dictionary/english/premise"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "premium",
       "pos": "n./adj.",
-      "definition": "n. 保险费；溢价　adj. 优质的",
-      "origin": "editorial-unverified",
+      "definition": "n. 保险费；n. 额外费用、溢价；n. 附赠品、奖励（商业）；adj. 优质的、高价的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-1.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/premium",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/premium",
+        "https://dictionary.cambridge.org/pronunciation/english/premium",
+        "https://www.collinsdictionary.com/dictionary/english/premium"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -77700,27 +77758,39 @@
     },
     {
       "word": "prescription",
-      "pos": "n.",
-      "definition": "处方，命令，指定",
-      "origin": "ecdict-derived",
+      "pos": "n./adj.",
+      "definition": "n. 处方、处方药；n. 建议方案、规定（正式）；adj. 凭处方出售的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/prescription",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/prescription",
+        "https://dictionary.cambridge.org/us/dictionary/english/prescription",
+        "https://dictionary.cambridge.org/pronunciation/english/prescription",
+        "https://dictionary.cambridge.org/us/dictionary/english/prescription?q=prescriptions"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "presence",
       "pos": "n.",
-      "definition": "存在；出席",
-      "origin": "editorial-unverified",
+      "definition": "n. 在场、存在；n. 驻扎的人或力量、势力；n. 风度、气场；n. 感觉到的灵体或幽灵",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/presence",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/presence",
+        "https://dictionary.cambridge.org/us/dictionary/english/presence",
+        "https://dictionary.cambridge.org/us/dictionary/english/presence?topic=present",
+        "https://dictionary.cambridge.org/pronunciation/english/presence",
+        "https://www.collinsdictionary.com/dictionary/english/presence"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -77786,26 +77856,34 @@
     {
       "word": "presidency",
       "pos": "n.",
-      "definition": "总统职权，总裁职位",
-      "origin": "ecdict-derived",
+      "definition": "n. 总统或主席的职位、任期",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/presidency",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/presidency",
+        "https://dictionary.cambridge.org/us/dictionary/english/presidency"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "pressure",
-      "pos": "n./vt.",
-      "definition": "n. 压，榨，按，强制　vt. 迫使，使增压，密封",
-      "origin": "ecdict-derived",
+      "pos": "n./v.",
+      "definition": "n. 压力、压强；n. 劝说或迫使他人行动的压力；n. 精神压力、紧迫感；v. 对……施压、迫使",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/pressure",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/pressure",
+        "https://dictionary.cambridge.org/pronunciation/english/pressure",
+        "https://dictionary.cambridge.org/us/dictionary/english/pressure"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -77835,13 +77913,19 @@
     {
       "word": "presumably",
       "pos": "adv.",
-      "definition": "大概；推测起来",
-      "origin": "editorial-unverified",
+      "definition": "adv. 大概、想必、据推测",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-2.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/presumably",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/presumably",
+        "https://dictionary.cambridge.org/pronunciation/english/presumably",
+        "https://dictionary.cambridge.org/dictionary/english/presumably?topic=possible-and-probable",
+        "https://dictionary.cambridge.org/us/dictionary/english/presumably?topic=possible-and-probable"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -77882,14 +77966,19 @@
     },
     {
       "word": "pretend",
-      "pos": "v.",
-      "definition": "假装，伪称，自命，自称",
-      "origin": "ecdict-derived",
+      "pos": "v./adj.",
+      "definition": "v. 假装、佯装；adj. 假想的、假装的（非正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/pretend",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/pretend",
+        "https://dictionary.cambridge.org/pronunciation/english/pretend",
+        "https://dictionary.cambridge.org/us/dictionary/english/pretend?q=pretend%2Bto"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -77944,13 +78033,19 @@
     {
       "word": "prevail",
       "pos": "v.",
-      "definition": "盛行；占优势",
-      "origin": "editorial-unverified",
+      "definition": "v. 盛行、普遍存在；v. 获胜、占上风；v. 劝服（prevail on 或 upon）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/prevail",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/prevail",
+        "https://dictionary.cambridge.org/us/dictionary/english/prevail",
+        "https://dictionary.cambridge.org/pronunciation/english/prevail",
+        "https://dictionary.cambridge.org/dictionary/english/prevail?topic=urging-and-persuading"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -77992,13 +78087,18 @@
     {
       "word": "prevent",
       "pos": "v.",
-      "definition": "预防，防止，阻止，妨碍",
-      "origin": "ecdict-derived",
+      "definition": "v. 阻止、防止",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/prevent",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/prevent",
+        "https://dictionary.cambridge.org/pronunciation/english/prevent",
+        "https://dictionary.cambridge.org/us/dictionary/english/prevent"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -78015,14 +78115,19 @@
     },
     {
       "word": "previous",
-      "pos": "adj.",
-      "definition": "以前的",
-      "origin": "editorial-unverified",
+      "pos": "adj./n.",
+      "definition": "adj. 以前的、先前的；n. 前科（英式俚语，不可数）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/previous",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/previous",
+        "https://dictionary.cambridge.org/pronunciation/english/previous",
+        "https://dictionary.cambridge.org/dictionary/english/previous?topic=before-after-and-already"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -78055,14 +78160,18 @@
     },
     {
       "word": "pride",
-      "pos": "n./vt.",
-      "definition": "n. 骄傲，自尊心，自豪，精华　vt. 以...自豪",
-      "origin": "ecdict-derived",
+      "pos": "n./v.",
+      "definition": "n. 自豪、骄傲；n. 自尊；自负；n. 狮群；v. 以……自豪（pride oneself on）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/pride",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/pride",
+        "https://dictionary.cambridge.org/pronunciation/english/pride"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -78079,15 +78188,18 @@
     },
     {
       "word": "primary",
-      "pos": "n./adj.",
-      "definition": "n. 最主要者，原色　adj. 主要的，初期的，根本的，原始的",
-      "origin": "ecdict-derived",
+      "pos": "adj./n.",
+      "definition": "adj. 主要的、首要的；adj. 小学的、初等教育的；adj. 最初的、原始的；n. 初选（主要美式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/primary",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/primary",
+        "https://dictionary.cambridge.org/pronunciation/english/primary"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -78104,14 +78216,24 @@
     },
     {
       "word": "prime",
-      "pos": "adj./n.",
-      "definition": "adj. 主要的；最好的　n. 全盛时期",
-      "origin": "editorial-unverified",
+      "pos": "adj./n./v.",
+      "definition": "adj. 首要的、主要的；adj. 最优质的、最理想的；adj. 素数的（数学）；n. 鼎盛时期、盛年；n. 撇号符号（′）；n. 最优惠贷款利率（美式金融）；v. 使准备好、事先提供信息；v. 打底漆；为设备启动做准备",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-6.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/prime",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/prime",
+        "https://dictionary.cambridge.org/pronunciation/english/prime",
+        "https://dictionary.cambridge.org/us/dictionary/english/prime",
+        "https://dictionary.cambridge.org/dictionary/english/prime?topic=punctuation",
+        "https://dictionary.cambridge.org/dictionary/english/prime?topic=higher-and-lower-points-of-achievement",
+        "https://dictionary.cambridge.org/dictionary/english/prime?q=prime_3",
+        "https://dictionary.cambridge.org/dictionary/english/prime?q=to%2Bprime",
+        "https://dictionary.cambridge.org/us/dictionary/english/prime?topic=numbers-generally"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -78141,13 +78263,19 @@
     {
       "word": "principal",
       "pos": "adj./n.",
-      "definition": "adj. 主要的　n. 校长；本金",
-      "origin": "editorial-unverified",
+      "definition": "adj. 主要的、首要的；n. 校长、学院院长；n. 主要人物、主角；委托人；n. 本金、资本",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-2.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/principal",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/principal",
+        "https://dictionary.cambridge.org/pronunciation/english/principal",
+        "https://dictionary.cambridge.org/us/dictionary/english/principal",
+        "https://www.collinsdictionary.com/dictionary/english/principal"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -78176,14 +78304,21 @@
     },
     {
       "word": "prior",
-      "pos": "adj.",
-      "definition": "先前的",
-      "origin": "editorial-unverified",
+      "pos": "adj./adv./n.",
+      "definition": "adj. 先前的、预先的；adj. 优先的、更重要的；adv. 在前、事先（常见于 prior to）；n. 修道院院长或副院长",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/prior",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/prior",
+        "https://dictionary.cambridge.org/pronunciation/english/prior",
+        "https://dictionary.cambridge.org/us/dictionary/english/prior",
+        "https://dictionary.cambridge.org/dictionary/english/prior?topic=before-after-and-already",
+        "https://dictionary.cambridge.org/dictionary/english/prior?topic=monks-and-nuns"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -78201,25 +78336,35 @@
     {
       "word": "priority",
       "pos": "n.",
-      "definition": "优先事项",
-      "origin": "editorial-unverified",
+      "definition": "n. 优先事项、重点；n. 优先权、优先次序",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/priority",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/priority",
+        "https://dictionary.cambridge.org/us/dictionary/english/priority",
+        "https://dictionary.cambridge.org/us/pronunciation/english/priority",
+        "https://dictionary.cambridge.org/pronunciation/english/priority"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "prison",
-      "pos": "n./vt.",
-      "definition": "n. 监狱，监禁，拘留所　vt. 监禁",
-      "origin": "ecdict-derived",
+      "pos": "n.",
+      "definition": "n. 监狱；监禁",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/prison",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/prison",
+        "https://dictionary.cambridge.org/pronunciation/english/prison"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -78249,27 +78394,35 @@
     {
       "word": "private",
       "pos": "adj./n.",
-      "definition": "adj. 私人的，秘密的，私立的，隐蔽的　n. 士兵，隐士，阴部",
-      "origin": "ecdict-derived",
+      "definition": "adj. 私人的、个人的；adj. 私密的、不公开的；adj. 私营的、非公立的；adj. 非官方的、以个人身份进行的；adj. 不愿透露私事的；n. 列兵、二等兵",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/private",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/private",
+        "https://dictionary.cambridge.org/pronunciation/english/private",
+        "https://dictionary.cambridge.org/us/dictionary/english/private",
+        "https://dictionary.cambridge.org/dictionary/english/private?q=private_1"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "privilege",
-      "pos": "n./vt.",
-      "definition": "n. 特权，特别恩典，基本权利，特免　vt. 给与...特权，特免",
-      "origin": "ecdict-derived",
+      "pos": "n./v.",
+      "definition": "n. 特权、特殊待遇；n. 荣幸、殊荣；v. 给予特权、特别优待",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/privilege",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/privilege",
+        "https://dictionary.cambridge.org/pronunciation/english/privilege"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -78335,38 +78488,55 @@
     {
       "word": "procedure",
       "pos": "n.",
-      "definition": "程序，过程，手续",
-      "origin": "ecdict-derived",
+      "definition": "n. 程序、手续、操作步骤；n. 医疗处置、手术；n. 过程、子程序（计算机）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/procedure",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/procedure",
+        "https://dictionary.cambridge.org/pronunciation/english/procedure",
+        "https://dictionary.cambridge.org/us/dictionary/english/procedure",
+        "https://dictionary.cambridge.org/dictionary/english/procedure?q=Procedures"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "proceed",
       "pos": "v.",
-      "definition": "继续进行",
-      "origin": "editorial-unverified",
+      "definition": "v. 继续进行、接着做；v. 前往、沿路线行进（正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/proceed",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/proceed",
+        "https://dictionary.cambridge.org/pronunciation/english/proceed",
+        "https://dictionary.cambridge.org/us/dictionary/english/proceed"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "proceeding",
       "pos": "n.",
-      "definition": "程序；（复）会议记录；诉讼",
-      "origin": "editorial-unverified",
+      "definition": "n. 行动、进行过程（正式）；n. 诉讼、法律程序（通常用 proceedings）；n. 一系列活动、议程（通常用 proceedings）；n. 会议记录、会议论文集（只用复数 proceedings）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-6.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.collinsdictionary.com/dictionary/english/proceeding",
+      "dictionaries": [
+        "https://www.collinsdictionary.com/dictionary/english/proceeding",
+        "https://dictionary.cambridge.org/dictionary/english/proceeding",
+        "https://dictionary.cambridge.org/us/dictionary/english/proceeding",
+        "https://dictionary.cambridge.org/dictionary/english/proceedings",
+        "https://dictionary.cambridge.org/us/dictionary/english/proceedings?topic=official-documents"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -78396,13 +78566,20 @@
     {
       "word": "proclaim",
       "pos": "v.",
-      "definition": "宣布；声明",
-      "origin": "editorial-unverified",
+      "definition": "v. 宣布、声明（正式）；v. 明确显示、表明",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-2.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/proclaim",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/proclaim",
+        "https://dictionary.cambridge.org/pronunciation/english/proclaim",
+        "https://dictionary.cambridge.org/dictionary/english/proclaim?topic=showing-and-demonstrating",
+        "https://dictionary.cambridge.org/us/dictionary/english/proclaim?q=proclaim_1",
+        "https://dictionary.cambridge.org/us/dictionary/english/proclaim?topic=showing-and-demonstrating"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -78479,14 +78656,19 @@
     },
     {
       "word": "produce",
-      "pos": "n./vt.",
-      "definition": "n. 生产品，物产，后代　vt. 产生，生产，提出，出示",
-      "origin": "ecdict-derived",
+      "pos": "v./n.",
+      "definition": "v. 生产、制造、培育；v. 引起、造成；v. 出示、拿出；v. 制作、监制演出或节目；n. 农产品、果蔬（不可数）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/produce",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/produce",
+        "https://dictionary.cambridge.org/pronunciation/english/produce",
+        "https://dictionary.cambridge.org/us/dictionary/english/produce"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -78516,13 +78698,19 @@
     {
       "word": "productive",
       "pos": "adj.",
-      "definition": "多产的；有成效的",
-      "origin": "editorial-unverified",
+      "definition": "adj. 多产的、生产效率高的；adj. 富有成效的；adj. 产生……的（productive of，正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/productive",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/productive",
+        "https://dictionary.cambridge.org/pronunciation/english/productive",
+        "https://dictionary.cambridge.org/us/dictionary/english/productive",
+        "https://www.collinsdictionary.com/dictionary/english/productive"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -78577,26 +78765,35 @@
     {
       "word": "profession",
       "pos": "n.",
-      "definition": "职业，表白，声明",
-      "origin": "ecdict-derived",
+      "definition": "n. 职业、需要专门训练的行业；n. 某行业的全体从业者；n. 公开声明、表白（正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/profession",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/profession",
+        "https://dictionary.cambridge.org/pronunciation/english/profession",
+        "https://dictionary.cambridge.org/us/dictionary/english/profession"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "professional",
       "pos": "adj./n.",
-      "definition": "adj. 专业的；职业的　n. 专业人员",
-      "origin": "editorial-unverified",
+      "definition": "adj. 职业的、专业的；adj. 娴熟的、符合职业标准的；adj. 以某活动为职业的；n. 专业人士、职业人员；n. 职业选手",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-6.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/professional",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/professional",
+        "https://dictionary.cambridge.org/pronunciation/english/professional",
+        "https://dictionary.cambridge.org/us/dictionary/english/professional"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -78661,27 +78858,36 @@
     },
     {
       "word": "profile",
-      "pos": "n.",
-      "definition": "概况；轮廓；侧面",
-      "origin": "editorial-unverified",
+      "pos": "n./v.",
+      "definition": "n. 简介、概况；个人资料；n. 侧面轮廓、侧影；n. 公众关注度、知名度；v. 写简介；分析特征",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-2.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/profile",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/profile",
+        "https://dictionary.cambridge.org/pronunciation/english/profile",
+        "https://dictionary.cambridge.org/us/dictionary/english/profile"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "profit",
-      "pos": "n./vi.",
-      "definition": "n. 利润，赢利，利益　vi. 有益，获利，赚钱",
-      "origin": "ecdict-derived",
+      "pos": "n./v.",
+      "definition": "n. 利润、盈利；n. 好处、益处；v. 获利、受益",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/profit",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/profit",
+        "https://dictionary.cambridge.org/pronunciation/english/profit",
+        "https://dictionary.cambridge.org/us/dictionary/english/profit"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -78794,14 +79000,20 @@
     },
     {
       "word": "progress",
-      "pos": "n./vi.",
-      "definition": "n. 进步，发展，前进　vi. 进步，进行",
-      "origin": "ecdict-derived",
+      "pos": "n./v.",
+      "definition": "n. 进步、进展（不可数）；v. 进步、进展；继续发展",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/progress",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/progress",
+        "https://dictionary.cambridge.org/us/dictionary/english/progress",
+        "https://dictionary.cambridge.org/pronunciation/english/progress",
+        "https://dictionary.cambridge.org/dictionary/english/progress?topic=making-progress-and-advancing"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -78818,27 +79030,41 @@
     },
     {
       "word": "progressive",
-      "pos": "adj.",
-      "definition": "渐进的；进步的",
-      "origin": "editorial-unverified",
+      "pos": "adj./n.",
+      "definition": "adj. 逐渐发展的、渐进的；adj. 进行性加重的（疾病）；adj. 进步的、支持改革的；adj. 累进的（税制）；adj. 进行时的（语法）；adj. 渐进多焦点的（眼镜）；n. 进步人士、改革派；n. 渐进多焦点眼镜或镜片（常用复数）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/progressive",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/progressive",
+        "https://dictionary.cambridge.org/pronunciation/english/progressive",
+        "https://dictionary.cambridge.org/dictionary/english/progressive?q=Progressive",
+        "https://dictionary.cambridge.org/us/dictionary/english/progressive",
+        "https://dictionary.cambridge.org/dictionary/english/progressive?topic=disease-and-illness-general-words",
+        "https://dictionary.cambridge.org/dictionary/english/progressive?topic=verb-forms-tenses-and-types-of-verbs"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "prohibit",
-      "pos": "vt.",
-      "definition": "禁止，阻止",
-      "origin": "ecdict-derived",
+      "pos": "v.",
+      "definition": "v. 禁止、明令不准；v. 阻碍、使不可能",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/prohibit",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/prohibit",
+        "https://dictionary.cambridge.org/pronunciation/english/prohibit",
+        "https://dictionary.cambridge.org/us/dictionary/english/prohibit",
+        "https://dictionary.cambridge.org/dictionary/english/prohibit?topic=preventing-and-impeding",
+        "https://dictionary.cambridge.org/us/dictionary/english/prohibit?topic=legislation-and-law-making"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -78867,15 +79093,19 @@
     },
     {
       "word": "project",
-      "pos": "n./vt.",
-      "definition": "n. 计划，设计，事业　vt. 计划，设计，投掷，发射",
-      "origin": "ecdict-derived",
+      "pos": "n./v.",
+      "definition": "n. 项目、计划、课题；n. 住宅区、公共住房工程（美式，常用复数 projects）；v. 预测、估算；v. 投射、放映；v. 突出、伸出；v. 展现形象；把感受投射到别人身上；v. 使声音传远",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/project",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/project",
+        "https://dictionary.cambridge.org/pronunciation/english/project",
+        "https://dictionary.cambridge.org/us/dictionary/english/project"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -78893,13 +79123,18 @@
     {
       "word": "projection",
       "pos": "n.",
-      "definition": "预测；投影",
-      "origin": "editorial-unverified",
+      "definition": "n. 预测、估算；n. 投影、投射的影像；n. 突出部分；n. 心理投射；n. 投影法（地图或几何）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/projection",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/projection",
+        "https://dictionary.cambridge.org/pronunciation/english/projection",
+        "https://dictionary.cambridge.org/dictionary/english/projection?topic=science-of-psychology-and-psychoanalysis"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -79012,40 +79247,54 @@
     },
     {
       "word": "promise",
-      "pos": "n./vt.",
-      "definition": "n. 诺言，约定的事情，有指望　vt. 允诺，约定，预示",
-      "origin": "ecdict-derived",
+      "pos": "v./n.",
+      "definition": "v. 允诺、保证；v. 预示、使有可能；n. 诺言、承诺；n. 前途、成功的可能性（不可数）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/promise",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/promise",
+        "https://dictionary.cambridge.org/pronunciation/english/promise",
+        "https://dictionary.cambridge.org/us/dictionary/english/promise"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "promising",
       "pos": "adj.",
-      "definition": "有前途的",
-      "origin": "editorial-unverified",
+      "definition": "adj. 有希望的、有前途的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/promising",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/promising",
+        "https://dictionary.cambridge.org/us/dictionary/english/promising",
+        "https://dictionary.cambridge.org/us/pronunciation/english/promising"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "promote",
-      "pos": "vt.",
-      "definition": "促进，晋升，创办，推销",
-      "origin": "ecdict-derived",
+      "pos": "v.",
+      "definition": "v. 促进、推动；v. 宣传、推销；v. 晋升、提升",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/promote",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/promote",
+        "https://dictionary.cambridge.org/dictionary/english/promote?topic=encouraging-and-urging-on",
+        "https://dictionary.cambridge.org/us/dictionary/english/promote",
+        "https://dictionary.cambridge.org/pronunciation/english/promote"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -79062,14 +79311,20 @@
     },
     {
       "word": "prompt",
-      "pos": "vt./adj.",
-      "definition": "vt. 促使　adj. 迅速的",
-      "origin": "editorial-unverified",
+      "pos": "v./adj./n./adv.",
+      "definition": "v. 促使、引起；v. 提示、给人提词；adj. 迅速的、及时的；n. 提示、提词；计算机提示符；adv. 准时、恰好（英式，置于时间后）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-2.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/prompt",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/prompt",
+        "https://dictionary.cambridge.org/pronunciation/english/prompt",
+        "https://dictionary.cambridge.org/us/dictionary/english/prompt",
+        "https://dictionary.cambridge.org/us/dictionary/english/prompt?topic=signs-signals-and-symbols"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -79122,14 +79377,20 @@
     },
     {
       "word": "proof",
-      "pos": "n.",
-      "definition": "证据；证明",
-      "origin": "editorial-unverified",
+      "pos": "n./adj./v.",
+      "definition": "n. 证据、证明；n. 证明过程（数学）；n. 校样、试印件（常用复数）；n. 酒精浓度单位 proof；adj. 能防护的、不受影响的（proof against）；adj. ……proof 度的（酒精浓度，置于数字后）；v. 对……作防水等防护处理",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/proof",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/proof",
+        "https://dictionary.cambridge.org/pronunciation/english/proof",
+        "https://dictionary.cambridge.org/us/dictionary/english/proof",
+        "https://dictionary.cambridge.org/dictionary/english/proof?topic=proving-and-disproving"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -79219,25 +79480,37 @@
     {
       "word": "proper",
       "pos": "adj./adv.",
-      "definition": "adj. 适当的，固有的，高尚的，专属的　adv. 完全地，彻底地",
-      "origin": "ecdict-derived",
+      "definition": "adj. 适当的、合适的；adj. 正确的、合乎礼仪的；adj. 真正的、像样的；adj. 严格意义上的、本身的（置于名词后）；adv. 非常；正确地（英式非标准用语）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/proper",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/proper",
+        "https://dictionary.cambridge.org/pronunciation/english/proper",
+        "https://dictionary.cambridge.org/dictionary/english/proper?topic=essential-or-necessary",
+        "https://dictionary.cambridge.org/us/dictionary/english/proper?topic=complete-and-whole",
+        "https://dictionary.cambridge.org/us/dictionary/english/proper?q=proper_1"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "property",
       "pos": "n.",
-      "definition": "性质；属性；财产",
-      "origin": "editorial-unverified",
+      "definition": "n. 财产、所有物（通常不可数）；n. 房地产、建筑物或土地；n. 性质、特性",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/property",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/property",
+        "https://dictionary.cambridge.org/us/dictionary/english/property",
+        "https://dictionary.cambridge.org/pronunciation/english/property"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -79291,25 +79564,36 @@
     {
       "word": "proposal",
       "pos": "n.",
-      "definition": "提议",
-      "origin": "editorial-unverified",
+      "definition": "n. 提议、方案；n. 求婚",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/proposal",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/proposal",
+        "https://dictionary.cambridge.org/us/dictionary/english/proposal",
+        "https://dictionary.cambridge.org/dictionary/english/proposal?topic=suggestions-and-proposals"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "propose",
       "pos": "v.",
-      "definition": "提出；建议",
-      "origin": "editorial-unverified",
+      "definition": "v. 提议、建议；v. 打算、计划（正式）；v. 求婚；v. 提名、推荐",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/propose",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/propose",
+        "https://dictionary.cambridge.org/us/dictionary/english/propose",
+        "https://dictionary.cambridge.org/us/dictionary/english/propose?topic=planning-expecting-and-arranging",
+        "https://dictionary.cambridge.org/us/dictionary/english/propose?topic=making-appeals-and-requests"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -79435,14 +79719,17 @@
     },
     {
       "word": "prospect",
-      "pos": "n.",
-      "definition": "前景；可能性",
-      "origin": "editorial-unverified",
+      "pos": "n./v.",
+      "definition": "n. 可能性、前景；n. 未来机会、成功的希望（常用复数 prospects）；n. 景色、视野（正式）；n. 潜在客户、候选人；v. 勘探、寻找矿藏",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/prospect",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/prospect"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -79544,13 +79831,20 @@
     {
       "word": "protection",
       "pos": "n.",
-      "definition": "保护，防卫，贸易保护制度",
-      "origin": "ecdict-derived",
+      "definition": "n. 保护、防护；n. 保护物、保护措施；n. 贸易保护、保护本国产业；n. 勒索的保护费（非正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/protection",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/protection",
+        "https://dictionary.cambridge.org/pronunciation/english/protection",
+        "https://dictionary.cambridge.org/us/dictionary/english/protection",
+        "https://dictionary.cambridge.org/us/dictionary/english/protection?topic=things-worn-to-cover-the-head-face-or-neck",
+        "https://dictionary.cambridge.org/dictionary/english/protection?topic=payment-methods"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -79568,25 +79862,35 @@
     {
       "word": "protein",
       "pos": "n.",
-      "definition": "蛋白质",
-      "origin": "editorial-unverified",
+      "definition": "n. 蛋白质；一种蛋白质",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-2.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/protein",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/protein",
+        "https://dictionary.cambridge.org/pronunciation/english/protein",
+        "https://dictionary.cambridge.org/us/dictionary/english/protein"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "protest",
-      "pos": "n./vi./vt.",
-      "definition": "n. 抗议　vi. 抗议（against）　vt. 坚决表示",
-      "origin": "editorial-unverified",
+      "pos": "n./v.",
+      "definition": "n. 抗议、反对的表示；n. 抗议活动、示威；v. 抗议、反对；v. 坚决声称、申辩",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-1.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/protest",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/protest",
+        "https://dictionary.cambridge.org/us/dictionary/english/protest",
+        "https://dictionary.cambridge.org/pronunciation/english/protest"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -79651,14 +79955,24 @@
     },
     {
       "word": "provide",
-      "pos": "vt./vi.",
-      "definition": "vt. 提供，供应，规定，预备　vi. 作准备，抚养，规定",
-      "origin": "ecdict-derived",
+      "pos": "v.",
+      "definition": "v. 提供、供应；v. 规定、订明（正式）；v. 供养、为……作准备（provide for）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/provide",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/provide",
+        "https://dictionary.cambridge.org/pronunciation/english/provide",
+        "https://dictionary.cambridge.org/us/dictionary/english/provide",
+        "https://dictionary.cambridge.org/dictionary/english/provide?q=provide_1",
+        "https://dictionary.cambridge.org/us/dictionary/english/provide?topic=court-cases-orders-and-decisions",
+        "https://dictionary.cambridge.org/dictionary/english/provide-for?topic=allowing-and-permitting",
+        "https://dictionary.cambridge.org/dictionary/english/provide-for?topic=planning-expecting-and-arranging",
+        "https://dictionary.cambridge.org/dictionary/english/provide?q=to%2Bprovide"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -79690,13 +80004,16 @@
     {
       "word": "province",
       "pos": "n.",
-      "definition": "省，地方，职权，领域",
-      "origin": "ecdict-derived",
+      "definition": "n. 省、行政区；n. 首都以外的地方、外省（the provinces）；n. 职责或知识范围、领域（正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/province",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/province"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -79713,14 +80030,19 @@
     },
     {
       "word": "provision",
-      "pos": "n.",
-      "definition": "供应；规定；（复）粮食",
-      "origin": "editorial-unverified",
+      "pos": "n./v.",
+      "definition": "n. 提供、供应；准备；n. 规定、条款；n. 食物、补给品（只用复数 provisions）；v. 给……供应食物或装备",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/provision",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/provision",
+        "https://dictionary.cambridge.org/pronunciation/english/provision",
+        "https://dictionary.cambridge.org/us/dictionary/english/provision"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -79762,13 +80084,16 @@
     {
       "word": "provoke",
       "pos": "v.",
-      "definition": "激起；引起",
-      "origin": "editorial-unverified",
+      "definition": "v. 引起、激起反应；v. 挑衅、激怒",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/provoke",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/provoke"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -79918,27 +80243,34 @@
     {
       "word": "psychologist",
       "pos": "n.",
-      "definition": "心理学家",
-      "origin": "editorial-unverified",
+      "definition": "n. 心理学家、心理学专业人员",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-2.js",
-        "js/words-ext.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/psychologist",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/psychologist",
+        "https://dictionary.cambridge.org/us/dictionary/english/psychologist"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "psychology",
       "pos": "n.",
-      "definition": "心理学，心理状态",
-      "origin": "ecdict-derived",
+      "definition": "n. 心理学；n. 心理、心理特征",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/psychology",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/psychology",
+        "https://dictionary.cambridge.org/pronunciation/english/psychology",
+        "https://dictionary.cambridge.org/dictionary/english/psychology?topic=subjects-and-disciplines"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -79956,25 +80288,35 @@
     {
       "word": "publication",
       "pos": "n.",
-      "definition": "出版；出版物",
-      "origin": "editorial-unverified",
+      "definition": "n. 出版、发表（不可数）；n. 出版物",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/publication",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/publication",
+        "https://dictionary.cambridge.org/pronunciation/english/publication",
+        "https://dictionary.cambridge.org/us/dictionary/english/publication"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "publicity",
       "pos": "n.",
-      "definition": "宣传；公众关注",
-      "origin": "editorial-unverified",
+      "definition": "n. 公众关注、媒体报道；n. 宣传、推广活动",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-2.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/publicity",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/publicity",
+        "https://dictionary.cambridge.org/pronunciation/english/publicity",
+        "https://dictionary.cambridge.org/us/dictionary/english/publicity"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -80051,27 +80393,36 @@
     },
     {
       "word": "pulse",
-      "pos": "n./vi.",
-      "definition": "n. 脉冲，脉搏，情绪，意向　vi. 跳动，脉跳",
-      "origin": "ecdict-derived",
+      "pos": "n./v.",
+      "definition": "n. 脉搏、搏动；n. 脉冲、短促信号；n. 豆类作物的种子、干豆（通常复数 pulses）；v. 有节奏地跳动、搏动",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/pulse",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/pulse",
+        "https://dictionary.cambridge.org/us/dictionary/english/pulse"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "pump",
-      "pos": "n./vt.",
-      "definition": "n. 抽水机，打气筒，泵，抽吸　vt. 用唧筒抽水，打气，盘问，倾注",
-      "origin": "ecdict-derived",
+      "pos": "n./v.",
+      "definition": "n. 泵、抽水机；n. 浅口女鞋（美式）；帆布运动鞋（英式，常用复数 pumps）；v. 用泵输送、抽取；v. 连续上下移动、反复按压；v. 大量注入；盘问（pump into 或 pump for）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/pump",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/pump",
+        "https://dictionary.cambridge.org/pronunciation/english/pump",
+        "https://dictionary.cambridge.org/dictionary/english/pump-into",
+        "https://www.collinsdictionary.com/dictionary/english/pump"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -80089,14 +80440,20 @@
     },
     {
       "word": "punch",
-      "pos": "n./vt.",
-      "definition": "n. 打洞器，钻孔机，冲压机，冲床　vt. 以拳重击，开洞，冲压",
-      "origin": "ecdict-derived",
+      "pos": "v./n.",
+      "definition": "v. 用拳猛击；v. 打孔、冲压；n. 拳击、猛击；n. 感染力、冲击力；n. 潘趣酒、混合饮料；n. 打孔器、冲子",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/punch",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/punch",
+        "https://dictionary.cambridge.org/us/dictionary/english/punch",
+        "https://dictionary.cambridge.org/us/pronunciation/english/punch",
+        "https://dictionary.cambridge.org/dictionary/english/punch?topic=hitting-and-beating"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -80151,27 +80508,38 @@
     },
     {
       "word": "purchase",
-      "pos": "n./vt.",
-      "definition": "n. 购买，购买品，紧握，绞辘　vt. 购买，赢得，努力取得，用滑轮起(锚等)",
-      "origin": "ecdict-derived",
+      "pos": "v./n.",
+      "definition": "v. 购买（正式）；n. 购买行为；购得的物品；n. 握力、抓附力、稳固的支点（正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/purchase",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/purchase",
+        "https://dictionary.cambridge.org/pronunciation/english/purchase",
+        "https://dictionary.cambridge.org/us/dictionary/english/purchase",
+        "https://dictionary.cambridge.org/dictionary/english/purchase?topic=buying",
+        "https://dictionary.cambridge.org/us/dictionary/english/purchase?topic=having-in-your-hands"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "pure",
       "pos": "adj.",
-      "definition": "纯的，纯净的，纯洁的，清白的",
-      "origin": "ecdict-derived",
+      "definition": "adj. 纯的、不掺杂的；adj. 洁净的、无污染的；adj. 纯粹的、十足的；adj. 纯理论的、非应用的；adj. 纯洁的、品行端正的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/pure",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/pure",
+        "https://dictionary.cambridge.org/pronunciation/english/pure",
+        "https://dictionary.cambridge.org/dictionary/english/pure?topic=describing-qualities-of-sound"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -80248,14 +80616,18 @@
     },
     {
       "word": "purple",
-      "pos": "n./adj.",
-      "definition": "n. 紫色，帝位　adj. 紫色的，帝王的，华而不实的",
-      "origin": "ecdict-derived",
+      "pos": "adj./n.",
+      "definition": "adj. 紫色的；n. 紫色",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/purple",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/purple",
+        "https://dictionary.cambridge.org/pronunciation/english/purple"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -80297,13 +80669,18 @@
     {
       "word": "pursue",
       "pos": "v.",
-      "definition": "追求；从事；追赶",
-      "origin": "editorial-unverified",
+      "definition": "v. 追赶、追捕；v. 追求、努力获得；v. 继续进行、深入探讨",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/pursue",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/pursue",
+        "https://dictionary.cambridge.org/pronunciation/english/pursue",
+        "https://dictionary.cambridge.org/us/dictionary/english/pursue"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -80332,15 +80709,19 @@
     },
     {
       "word": "puzzle",
-      "pos": "n./vt.",
-      "definition": "n. 难题，迷惑　vt. 使困惑，使为难",
-      "origin": "ecdict-derived",
+      "pos": "n./v.",
+      "definition": "n. 谜题、益智游戏；n. 难解的问题、令人费解的事；v. 使困惑；v. 苦思、努力理解（puzzle over 或 out）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/puzzle",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/puzzle",
+        "https://dictionary.cambridge.org/pronunciation/english/puzzle",
+        "https://dictionary.cambridge.org/dictionary/english/puzzle?topic=thinking-and-contemplating"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -80442,14 +80823,19 @@
     },
     {
       "word": "qualify",
-      "pos": "vi./vt.",
-      "definition": "vi. 有资格　vt. 使合格；限定",
-      "origin": "editorial-unverified",
+      "pos": "v.",
+      "definition": "v. 取得资格、使具备资格；v. 符合条件、取得参赛资格；v. 算作、称得上（qualify as）；v. 限定、使说法更准确",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-2.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/qualify",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/qualify",
+        "https://dictionary.cambridge.org/us/dictionary/english/qualify",
+        "https://dictionary.cambridge.org/dictionary/english/qualify?topic=grammatical-terms"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -80467,14 +80853,19 @@
     {
       "word": "quality",
       "pos": "n./adj.",
-      "definition": "n. 品质，特性，才能，质量　adj. 优质的",
-      "origin": "ecdict-derived",
+      "definition": "n. 质量、品质；n. 特性、素质；adj. 优质的、高质量的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/quality",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/quality",
+        "https://dictionary.cambridge.org/pronunciation/english/quality",
+        "https://dictionary.cambridge.org/dictionary/english/quality?q=quality_1",
+        "https://dictionary.cambridge.org/us/dictionary/english/quality"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -80504,13 +80895,17 @@
     {
       "word": "quantity",
       "pos": "n.",
-      "definition": "量，数量，总量",
-      "origin": "ecdict-derived",
+      "definition": "n. 数量、量；n. 大量（常用 in quantity 或 quantities）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/quantity",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/quantity",
+        "https://dictionary.cambridge.org/us/dictionary/english/quantity"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -80527,15 +80922,19 @@
     },
     {
       "word": "quarter",
-      "pos": "n./vt.",
-      "definition": "n. 四分之一，一刻钟，季度，地区　vt. 四等分，肢解",
-      "origin": "ecdict-derived",
+      "pos": "n./v.",
+      "definition": "n. 四分之一；一刻钟；n. 季度；n. 二十五美分硬币（北美）；n. 城区、街区；n. 某方面的人、群体或来源；n. 住处、营房（通常用 quarters）；n. 宽恕、饶命（正式）；v. 把……分成四份；v. 为……提供住宿、使驻扎",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/quarter",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/quarter",
+        "https://dictionary.cambridge.org/pronunciation/english/quarter",
+        "https://dictionary.cambridge.org/us/dictionary/english/quarter"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -80614,14 +81013,21 @@
     },
     {
       "word": "quest",
-      "pos": "n.",
-      "definition": "探索；追求",
-      "origin": "editorial-unverified",
+      "pos": "n./v.",
+      "definition": "n. 探索、寻求（正式）；v. 探索、寻求（文学用语，quest for）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-6.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/quest",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/quest",
+        "https://dictionary.cambridge.org/us/dictionary/english/quest",
+        "https://dictionary.cambridge.org/dictionary/english/quest?q=quest",
+        "https://dictionary.cambridge.org/pronunciation/english/quest",
+        "https://dictionary.cambridge.org/us/dictionary/english/quest?topic=searching"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -80639,14 +81045,19 @@
     {
       "word": "questionnaire",
       "pos": "n.",
-      "definition": "调查表，问卷",
-      "origin": "ecdict-derived",
+      "definition": "n. 问卷、调查表",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/questionnaire",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/questionnaire",
+        "https://dictionary.cambridge.org/us/dictionary/english/questionnaire",
+        "https://dictionary.cambridge.org/us/pronunciation/english/questionnaire",
+        "https://dictionary.cambridge.org/pronunciation/english/questionnaire"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -80759,14 +81170,20 @@
     },
     {
       "word": "race",
-      "pos": "n./vi.",
-      "definition": "n. 种族，人种，赛跑，比赛　vi. 赛跑，竞赛，疾走",
-      "origin": "ecdict-derived",
+      "pos": "n./v.",
+      "definition": "n. 竞赛、赛跑；竞争；n. 种族、按共同外貌特征划分的人群（社会分类）；n. 人类、族群（如 the human race）；v. 竞赛、与……比赛；v. 快速移动、疾驰；v. 急速跳动、快速运转",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/race",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/race",
+        "https://dictionary.cambridge.org/pronunciation/english/race",
+        "https://dictionary.cambridge.org/us/dictionary/english/race",
+        "https://dictionary.cambridge.org/dictionary/english/race?topic=competing-and-contending-non-sporting"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -80796,13 +81213,20 @@
     {
       "word": "radar",
       "pos": "n.",
-      "definition": "雷达",
-      "origin": "editorial-unverified",
+      "definition": "n. 雷达、雷达系统",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-6.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/radar",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/radar",
+        "https://dictionary.cambridge.org/pronunciation/english/radar",
+        "https://dictionary.cambridge.org/dictionary/english/radar?topic=radio",
+        "https://dictionary.cambridge.org/us/dictionary/english/radar?topic=radio",
+        "https://dictionary.cambridge.org/us/dictionary/english/radar"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -80844,13 +81268,18 @@
     {
       "word": "radical",
       "pos": "adj./n.",
-      "definition": "adj. 根本的；激进的　n. 激进分子",
-      "origin": "editorial-unverified",
+      "definition": "adj. 根本的、彻底的；adj. 激进的、主张重大改革的；adj. 根治性的、大范围切除的（外科）；n. 激进分子、改革派",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-2.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/radical",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/radical",
+        "https://dictionary.cambridge.org/pronunciation/english/radical",
+        "https://dictionary.cambridge.org/us/dictionary/english/radical"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -80903,14 +81332,17 @@
     },
     {
       "word": "rage",
-      "pos": "n./vi.",
-      "definition": "n. 狂怒　vi. 肆虐；激烈进行",
-      "origin": "editorial-unverified",
+      "pos": "n./v.",
+      "definition": "n. 盛怒、狂怒；n. 风靡一时的事物（all the rage）；v. 发怒、怒斥；v. 猛烈持续、肆虐",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-6.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/rage",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/rage"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -80951,15 +81383,19 @@
     },
     {
       "word": "rail",
-      "pos": "n./vt.",
-      "definition": "n. 横杆，围栏，栏杆，铁轨　vt. 以横木围栏，给...铺铁轨",
-      "origin": "ecdict-derived",
+      "pos": "n./v.",
+      "definition": "n. 铁轨；铁路（不可数用法）；n. 栏杆、扶手、横杆；v. 怒斥、严厉抱怨（rail against 或 at）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/rail",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/rail",
+        "https://dictionary.cambridge.org/pronunciation/english/rail",
+        "https://dictionary.cambridge.org/us/dictionary/english/rail"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -81025,26 +81461,35 @@
     },
     {
       "word": "raise",
-      "pos": "n./vt.",
-      "definition": "n. 上升，高地，增高　vt. 升起，举起，唤起，提高",
-      "origin": "ecdict-derived",
+      "pos": "v./n.",
+      "definition": "v. 举起、抬高；v. 增加、提高；v. 筹集（资金）；v. 提出、引起；v. 抚养、饲养、种植；v. 建造、建立；v. 解除（封锁等）；v. 与……取得无线电联系；v. 加注（牌戏）；n. 加薪（美式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/raise",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/raise",
+        "https://dictionary.cambridge.org/pronunciation/english/raise",
+        "https://dictionary.cambridge.org/us/dictionary/english/raise"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "rally",
-      "pos": "vi./vt./n.",
-      "definition": "vi. 恢复；集会　vt. 召集　n. 集会",
-      "origin": "editorial-unverified",
+      "pos": "n./v.",
+      "definition": "n. 集会、群众大会；n. 汽车拉力赛；n. 连续对打（网球等）；n. 回升、复苏；v. 集合、团结；召集支持；v. 恢复、好转、回升",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-1.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/rally",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/rally",
+        "https://dictionary.cambridge.org/pronunciation/english/rally"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -81085,14 +81530,20 @@
     },
     {
       "word": "ranch",
-      "pos": "n.",
-      "definition": "大牧场",
-      "origin": "editorial-unverified",
+      "pos": "n./v.",
+      "definition": "n. 牧场、大农场；v. 经营牧场、在牧场饲养（主要美式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-6.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/ranch",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/ranch",
+        "https://dictionary.cambridge.org/pronunciation/english/ranch",
+        "https://dictionary.cambridge.org/us/dictionary/english/ranch",
+        "https://www.collinsdictionary.com/us/dictionary/english/ranch"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -81133,28 +81584,40 @@
     },
     {
       "word": "random",
-      "pos": "n./adj.",
-      "definition": "n. 随意，随机　adj. 任意的，随便的，胡乱的，随机的",
-      "origin": "ecdict-derived",
+      "pos": "adj./n.",
+      "definition": "adj. 随机的、无规则的；adj. 随意的、出乎意料的（非正式）；n. 不认识或意外出现的人（非正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/random",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/random",
+        "https://dictionary.cambridge.org/us/dictionary/english/random",
+        "https://dictionary.cambridge.org/us/dictionary/english/random?q=random_1",
+        "https://dictionary.cambridge.org/dictionary/english/random?q=random_1",
+        "https://dictionary.cambridge.org/pronunciation/english/random"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
       "word": "range",
-      "pos": "n./vt.",
-      "definition": "n. 排，行，山脉，范围　vt. 排列，归类于，使并列，放牧",
-      "origin": "ecdict-derived",
+      "pos": "n./v.",
+      "definition": "n. 范围、幅度；n. 一系列、一组；系列产品；n. 山脉；n. 射程、射击场；n. 放牧地、牧场；n. 炉灶（主要美式）；v. 在某范围内变化、包括多种情况；v. 漫游、四处活动；v. 排列、使站在某一方（常与 against 连用）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/range",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/range",
+        "https://dictionary.cambridge.org/pronunciation/english/range",
+        "https://dictionary.cambridge.org/us/dictionary/english/range",
+        "https://dictionary.cambridge.org/dictionary/english/range?q=range",
+        "https://dictionary.cambridge.org/dictionary/english/range?topic=groups-and-collections-of-things"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -81244,15 +81707,19 @@
     },
     {
       "word": "rare",
-      "pos": "adj./adv.",
-      "definition": "adj. 稀罕的，罕有的，珍奇的，稀薄的　adv. 非常",
-      "origin": "ecdict-derived",
+      "pos": "adj.",
+      "definition": "adj. 稀有的、少见的；adj. 半生的、略煎的（肉类）；adj. 稀薄的（空气，文学用语）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/rare",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/rare",
+        "https://dictionary.cambridge.org/pronunciation/english/rare",
+        "https://dictionary.cambridge.org/us/dictionary/english/rare"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -81270,13 +81737,20 @@
     {
       "word": "rarely",
       "pos": "adv.",
-      "definition": "很少；难得",
-      "origin": "editorial-unverified",
+      "definition": "adv. 很少、难得",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/rarely",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/rarely",
+        "https://dictionary.cambridge.org/pronunciation/english/rarely",
+        "https://dictionary.cambridge.org/us/dictionary/english/rarely",
+        "https://dictionary.cambridge.org/dictionary/english/rarely?q=Rarely",
+        "https://dictionary.cambridge.org/dictionary/english/rarely?topic=rarely-and-infrequently"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -81305,15 +81779,20 @@
     },
     {
       "word": "rat",
-      "pos": "n./vi.",
-      "definition": "n. 鼠，卑鄙的人，破坏者，变节者　vi. 捕鼠，变节",
-      "origin": "ecdict-derived",
+      "pos": "n./v.",
+      "definition": "n. 大鼠、老鼠；n. 卑鄙的人、背信弃义的人（非正式）；v. 出卖、告密；违约（rat on，俚语，贬义）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/rat",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/rat",
+        "https://dictionary.cambridge.org/pronunciation/english/rat",
+        "https://dictionary.cambridge.org/dictionary/english/rat-on",
+        "https://dictionary.cambridge.org/us/dictionary/english/rat"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -81343,13 +81822,19 @@
     {
       "word": "ratio",
       "pos": "n.",
-      "definition": "比率",
-      "origin": "editorial-unverified",
+      "definition": "n. 比率、比例",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/ratio",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/ratio",
+        "https://dictionary.cambridge.org/pronunciation/english/ratio",
+        "https://dictionary.cambridge.org/us/dictionary/english/ratio",
+        "https://dictionary.cambridge.org/us/dictionary/english/ratio?topic=numerical-relationships"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -81367,13 +81852,17 @@
     {
       "word": "rational",
       "pos": "adj.",
-      "definition": "理性的；合理的",
-      "origin": "editorial-unverified",
+      "definition": "adj. 理性的、合乎情理的；adj. 有理数的（数学）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/rational",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/rational",
+        "https://dictionary.cambridge.org/pronunciation/english/rational"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -81498,15 +81987,21 @@
     },
     {
       "word": "raw",
-      "pos": "n./adj.",
-      "definition": "n. 擦伤处，半成品　adj. 生的，未加工的，生疏的，不成熟的",
-      "origin": "ecdict-derived",
+      "pos": "adj.",
+      "definition": "adj. 生的、未烹煮的；adj. 未加工的、未经处理的；adj. 擦痛的、红肿疼痛的；adj. 阴冷的、寒冷潮湿的；adj. 缺乏经验的、未经训练的；adj. 强烈直接的、未经修饰的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/raw",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/raw",
+        "https://dictionary.cambridge.org/pronunciation/english/raw",
+        "https://dictionary.cambridge.org/us/dictionary/english/raw",
+        "https://dictionary.cambridge.org/dictionary/english/raw?topic=pain-and-painful",
+        "https://www.collinsdictionary.com/dictionary/english/raw"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -81523,14 +82018,18 @@
     },
     {
       "word": "ray",
-      "pos": "n./vi.",
-      "definition": "n. 光线，射线，闪烁，光辉　vi. 射出光线，浮现，放射光线",
-      "origin": "ecdict-derived",
+      "pos": "n.",
+      "definition": "n. 光线、射线；n. 一线、一点（如希望）；n. 鳐鱼；n. 射线（几何）；n. 音阶中的第二音（re 的另一拼写）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/ray",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/ray",
+        "https://dictionary.cambridge.org/pronunciation/english/ray"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -81559,14 +82058,20 @@
     },
     {
       "word": "react",
-      "pos": "vi.",
-      "definition": "起反应，起作用，反攻",
-      "origin": "ecdict-derived",
+      "pos": "v.",
+      "definition": "v. 反应、作出回应；v. 发生化学反应；v. 产生不良反应（react to）；v. 反抗、反对（react against）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/react",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/react",
+        "https://dictionary.cambridge.org/pronunciation/english/react",
+        "https://dictionary.cambridge.org/us/dictionary/english/react",
+        "https://dictionary.cambridge.org/dictionary/english/react?topic=reacting-and-responding"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -81584,13 +82089,17 @@
     {
       "word": "readily",
       "pos": "adv.",
-      "definition": "容易地；乐意地",
-      "origin": "editorial-unverified",
+      "definition": "adv. 乐意地、欣然；adv. 容易地、迅速地",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/readily",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/readily",
+        "https://dictionary.cambridge.org/us/dictionary/english/readily?q=Readily"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -81619,14 +82128,23 @@
     },
     {
       "word": "ready",
-      "pos": "n./adj.",
-      "definition": "n. 预备好的状态，现款　adj. 准备好的，备用的，可以使用的",
-      "origin": "ecdict-derived",
+      "pos": "adj./n./v.",
+      "definition": "adj. 准备好的、可供使用的；adj. 愿意的、乐于的；adj. 迅速的、敏捷的；adj. 随时可得的、现成的；n. 待命状态（at the ready）；v. 准备、使就绪",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/ready",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/ready",
+        "https://dictionary.cambridge.org/pronunciation/english/ready",
+        "https://dictionary.cambridge.org/dictionary/english/ready?q=READY",
+        "https://dictionary.cambridge.org/us/dictionary/english/ready",
+        "https://www.collinsdictionary.com/dictionary/english/ready",
+        "https://dictionary.cambridge.org/dictionary/english/ready?topic=waiting",
+        "https://dictionary.cambridge.org/dictionary/english/ready?topic=departing"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {
@@ -81656,13 +82174,18 @@
     {
       "word": "realize",
       "pos": "v.",
-      "definition": "意识到；实现",
-      "origin": "editorial-unverified",
+      "definition": "v. 意识到、认识到；v. 实现、使成为现实；v. 发挥、实现潜力；v. 变卖、变现；获得某一售价",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-027.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://dictionary.cambridge.org/dictionary/english/realize",
+      "dictionaries": [
+        "https://dictionary.cambridge.org/dictionary/english/realize",
+        "https://dictionary.cambridge.org/pronunciation/english/realize",
+        "https://dictionary.cambridge.org/dictionary/english/realize?q=realise"
+      ],
+      "checkedOn": "2026-11-17",
       "flags": []
     },
     {

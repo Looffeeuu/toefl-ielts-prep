@@ -1,12 +1,12 @@
 # 全库音标与释义核对进度
 
-更新：2026-11-18。总计 9075 词。
+更新：2026-11-22。总计 9075 词。
 
 | 项目 | 已核对 | 尚待核对 |
 | --- | ---: | ---: |
-| 释义与词性 | 2843 | 6232 |
-| 英美音与主要分读 | 2842 | 6233 |
-| 两项均完成 | 2835 | 6240 |
+| 释义与词性 | 3184 | 5891 |
+| 英美音与主要分读 | 3182 | 5893 |
+| 两项均完成 | 3176 | 5899 |
 
 每词分别保存来源和日期，不能用核对音标代替核对释义。完整状态和接续队列见 [lexicon-progress.json](lexicon-progress.json)。优先处理缺失、截断、词性矛盾和用法标记，再按字母顺序推进。未找到可靠来源的条目保持待核对，不推测填充。
 
@@ -24,7 +24,7 @@ node tools/check_pronunciations.js --write
 node tools/lexicon_progress.js
 ```
 
-下一批队列前 30 词：sick、sigh、sight、signature、significance、silence、silly、silver、simultaneously、sin、sink、site、skeptical、skip、skull、slap、slave、slice、slide、slight、slightly、slip、slope、smell、smoke、smooth、snake、sneak、soap、sodium。
+下一批队列前 30 词：accidents、accommodations、accompanying、account for、accountants、actions、activities、adults、advantages、advertisements、affairs、agencies、aggressiveness、animals、antibiotics、approaches、approaching、areas、articles、assignments、attacks、attempts、automated、beds、beginners、belts、benefits、bicycles、birds、booklist。
 
 ## 批次 002
 
@@ -194,6 +194,30 @@ node tools/lexicon_progress.js
 
 
 
+## 批次 030
+
+完成 100 词：sick、sigh、sight、signature、significance、silence、silly、silver、simultaneously、sin、sink、site、skeptical、skip、skull、slap、slave、slice、slide、slight、slightly、slip、slope、smell、smoke、smooth、snake、sneak、soap、sodium、solar、soldier、sole、solely、solution、solve、somewhat、sort、soul、soup、sovereignty、spark、specialty、specific、specify、spectacular、speculation、sphere、spill、spin、spine、spirit、spiritual、sponsor、spoon、spouse、spray、spring、squad、square、squeeze、stability、stack、staff、stake、stand、standard、standing、stare、statistics、statue、status、steady、steak、steal、steam、steer、stem、stereotype、stick、stiff、stimulate、stir、stock、stomach、storage、storm、stove、straight、strain、strategy、streak、strength、strengthen、stress、stretch、strict、strike、string、strip。托福 f1 冻结剩余341词中的首100词（sick 至 strip）；直接核对 Cambridge 定义、词性及英美音，458条原创义项例句。statistics 补核英音；保留 status 美音变体，sovereignty 采用原文完整美音。033 为最后41词完成尾批。待主任务集成；不提交或推送。
+
+
+
+## 批次 031
+
+完成 100 词：stroke、structural、struggle、studio、stumble、submit、subsequent、substantially、suburb、succeed、successful、sue、suffer、sufficient、sugar、suggest、suit、suitable、suite、sum、summit、sunlight、superior、supervisor、suppose、supposedly、suppress、supreme、surgeon、surgery、survey、survival、survive、survivor、suspend、suspicion、suspicious、swallow、sweat、sweep、swing、switch、symbol、sympathy、symptom、system、tackle、tag、tale、talent、talented、tank、tap、tape、target、taste、tax、team、tear、technical、telescope、temperature、temple、temporary、tender、tension、term、terrible、terribly、terrific、territory、terror、testify、testimony、texture、theater、theme、theoretical、therapy、therefore、thigh、thin、thoroughly、thought、thread、threat、threaten、threshold、throw、thumb、ticket、tide、tight、tile、timber、tiny、tip、tire、tissue、title。100词（stroke 至 title）；逐词核对 Cambridge 定义、词性及英美音；中文与例句原创，保留tear和survey分读。
+
+
+
+## 批次 032
+
+完成 100 词：tobacco、toe、tolerance、tolerate、toll、tomato、tongue、topic、touch、touchdown、tough、tournament、towel、tower、toxic、trace、track、traffic、tragedy、trail、transfer、transform、transformation、transit、translation、transmission、transmit、trap、trash、tray、treasure、treat、treatment、tremendous、trend、trial、tribal、tribute、trick、trim、trip、triumph、troop、tropical、trouble、trunk、truth、tube、tune、tunnel、twist、typical、ultimate、uncover、undergraduate、underlying、understand、undertake、unfair、unfold、unfortunately、union、unique、unity、universal、universe、unless、unlikely、unprecedented、urge、utility、vacation、vaccine、vacuum、vague、valid、validity、vanish、variable、variety、various、vary、vast、vegetable、vehicle、venture、verbal、verdict、version、vertical、vessel、veteran、via、victory、violate、violation、violence、violent、virtual、virtue。100 words, tobacco through virtue; direct Cambridge definitions, POS and UK/US IPA. Preserve POS-specific readings and variants. Batch033 is the completion tail: final 41 words, queue.slice(300,341).
+
+
+
+## 批次 033
+
+完成 41 词：virus、vision、visual、vital、vocal、volume、voluntary、volunteer、vote、voter、wagon、waist、wander、warehouse、warn、warrior、watch、way、weapon、wear、weave、wedding、weed、weird、whale、wheat、widespread、widow、wildlife、withdraw、withdrawal、witness、wonder、worldwide、worm、wrap、wright、wrist、yell、youngster、zone。冻结 current341remainingTOEFLf1 queue.slice(300,341) 的最终41词尾批，41词全部完成定义、词性及英美音核对，无待复核项；本尾批完成。warehouse 保留名词 /s/ 与动词 /z/（亦可 /s/）分读；wright 标注旧用，worldwide 保留英美重音差异。
+
+
+
 ## 发布节奏
 
-每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 800 词，距下次发布还差 200 词。发布基线为 fc694f71b9d99bf227f0f0001b6b199e5de0bf50，当时两项均核对 2035 词；当前页面显示本地核对进度，不表示已上线。
+每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 1141 词，距下次发布还差 0 词。发布基线为 fc694f71b9d99bf227f0f0001b6b199e5de0bf50，当时两项均核对 2035 词；当前页面显示本地核对进度，不表示已上线。

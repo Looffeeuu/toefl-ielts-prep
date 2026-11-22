@@ -8,9 +8,12 @@ const defs=JSON.parse(fs.readFileSync(path.join(root,'docs/definition-audit.json
 const phon=JSON.parse(fs.readFileSync(path.join(root,'docs/pronunciation-audit.json'),'utf8'));
 const progress=JSON.parse(fs.readFileSync(path.join(root,'docs/lexicon-progress.json'),'utf8'));
 const checked=new Set();
+vm.runInContext(fs.readFileSync(path.join(root,'js/irregular-verbs.js'),'utf8'),ctx);
+const irregular=new Map(ctx.window.IRREGULAR_VERBS.trim().split(/\r?\n/).map(l=>{const [base,past,pp]=l.split('|');return [base,[past,pp].join(' ').split(/[^a-z-]+/i).filter(Boolean)];}));
 for(const batch of ctx.window.LEXICON_REVIEW_BATCHES){
   // User explicitly requested the final 109 core words together in batch 016.
-  if(batch.id!=='001') assert.equal(batch.words.length,batch.id==='016'?109:100,`unexpected batch size: ${batch.id}`);
+  // Batch033 completes the final 41 TOEFL high-frequency words.
+  if(batch.id!=='001') assert.equal(batch.words.length,batch.id==='016'?109:batch.id==='033'?41:100,`unexpected batch size: ${batch.id}`);
   for(const w of batch.words){
     assert(!checked.has(w),`duplicate batch word: ${w}`);checked.add(w);
     const d=ctx.window.DEFINITION_REVIEWS.find(r=>r.w===w);
@@ -21,13 +24,18 @@ for(const batch of ctx.window.LEXICON_REVIEW_BATCHES){
     assert(progress.entries.find(e=>e.word===w)?.definitionChecked);
     assert(!progress.queue.includes(w));
     for(const [label,example] of d.senses){
-      assert.match(label,/^(n|v|vt|vi|adj|adv|prep|conj|pron|det)\./);
+      assert.match(label,/^(?:(n|v|vt|vi|adj|adv|prep|conj|pron|det|int)\.|短语 [a-z])/);
       assert.match(example,/[.!?]$/);
       assert(!/[\u3400-\u9fff]/.test(example));
       const stem=w.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
       // Sibilant plurals such as rush -> rushes are valid headword examples.
       const forms=stem+'(?:s|ed|ing)?'+(/y$/.test(w)?'|'+stem.slice(0,-1)+'i(?:es|ed)':'')+(/(?:s|sh|ch|x|z)$/.test(w)?'|'+stem+'es':'');
-      assert(new RegExp('\\b(?:'+forms+')\\b','i').test(example),`word absent: ${example}`);
+      const inflected=[...irregular.get(w)||[]];
+      if(/e$/.test(w))inflected.push(w+'d',w.slice(0,-1)+'ing');
+      if(/c$/.test(w))inflected.push(w+'ked',w+'king');
+      if(/[aeiou][bcdfghjklmnpqrstvwxyz]$/.test(w))inflected.push(w+w.at(-1)+'ed',w+w.at(-1)+'ing');
+      const alternatives=[forms,...inflected.map(f=>f.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'))];
+      assert(new RegExp('\\b(?:'+alternatives.join('|')+')\\b','i').test(example),`word absent: ${example}`);
     }
   }
 }

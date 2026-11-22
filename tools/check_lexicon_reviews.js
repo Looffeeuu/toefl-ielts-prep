@@ -25,7 +25,8 @@ for(const batch of ctx.window.LEXICON_REVIEW_BATCHES){
       assert.match(example,/[.!?]$/);
       assert(!/[\u3400-\u9fff]/.test(example));
       const stem=w.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
-      const forms=stem+'(?:s|ed|ing)?'+(/y$/.test(w)?'|'+stem.slice(0,-1)+'i(?:es|ed)':'');
+      // Sibilant plurals such as rush -> rushes are valid headword examples.
+      const forms=stem+'(?:s|ed|ing)?'+(/y$/.test(w)?'|'+stem.slice(0,-1)+'i(?:es|ed)':'')+(/(?:s|sh|ch|x|z)$/.test(w)?'|'+stem+'es':'');
       assert(new RegExp('\\b(?:'+forms+')\\b','i').test(example),`word absent: ${example}`);
     }
   }

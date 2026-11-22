@@ -1,12 +1,12 @@
 # 全库音标与释义核对进度
 
-更新：2026-11-17。总计 9075 词。
+更新：2026-11-18。总计 9075 词。
 
 | 项目 | 已核对 | 尚待核对 |
 | --- | ---: | ---: |
-| 释义与词性 | 2743 | 6332 |
-| 英美音与主要分读 | 2743 | 6332 |
-| 两项均完成 | 2735 | 6340 |
+| 释义与词性 | 2843 | 6232 |
+| 英美音与主要分读 | 2842 | 6233 |
+| 两项均完成 | 2835 | 6240 |
 
 每词分别保存来源和日期，不能用核对音标代替核对释义。完整状态和接续队列见 [lexicon-progress.json](lexicon-progress.json)。优先处理缺失、截断、词性矛盾和用法标记，再按字母顺序推进。未找到可靠来源的条目保持待核对，不推测填充。
 
@@ -24,7 +24,7 @@ node tools/check_pronunciations.js --write
 node tools/lexicon_progress.js
 ```
 
-下一批队列前 30 词：ridge、ridiculous、rifle、rim、ring、riot、rip、risk、risky、rival、rod、role、roll、romance、roof、rope、roughly、routine、row、rub、ruin、rule、rumor、rush、sack、sacred、sail、sake、sale、sample。
+下一批队列前 30 词：sick、sigh、sight、signature、significance、silence、silly、silver、simultaneously、sin、sink、site、skeptical、skip、skull、slap、slave、slice、slide、slight、slightly、slip、slope、smell、smoke、smooth、snake、sneak、soap、sodium。
 
 ## 批次 002
 
@@ -188,6 +188,12 @@ node tools/lexicon_progress.js
 
 
 
+## 批次 029
+
+完成 100 词：ridge、ridiculous、rifle、rim、ring、riot、rip、risk、risky、rival、rod、role、roll、romance、roof、rope、roughly、routine、row、rub、ruin、rule、rumor、rush、sack、sacred、sail、sake、sale、sample、sanction、satisfaction、satisfy、save、scale、scan、scandal、scare、scatter、scene、scent、scheme、scholar、scholarship、scope、score、scramble、scratch、screen、screw、scrutiny、seal、search、season、secondary、secret、section、sector、secular、secure、security、seemingly、segment、seize、seldom、select、selection、senator、sensation、sensitive、sensitivity、sentence、serious、seriously、session、setting、severe、shade、shake、shallow、sharp、sharply、shed、sheer、sheet、shelf、shell、shelter、shift、shine、shock、shore、shot、shove、shower、shrimp、shrink、shut、shuttle、shy。托福高频接续100词（ridge 至 shy）；逐词核对 Cambridge 索引定义与英美音，补查 Collins。444条原创义项例句；区分 row、sake、segment 分读，分别标注 sanction 的批准与制裁义，保留语域及词性标记。仅本地提交，累计待发布800词，不推送。
+
+
+
 ## 发布节奏
 
-每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 700 词，距下次发布还差 300 词。发布基线为 fc694f71b9d99bf227f0f0001b6b199e5de0bf50，当时两项均核对 2035 词；当前页面显示本地核对进度，不表示已上线。
+每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 800 词，距下次发布还差 200 词。发布基线为 fc694f71b9d99bf227f0f0001b6b199e5de0bf50，当时两项均核对 2035 词；当前页面显示本地核对进度，不表示已上线。

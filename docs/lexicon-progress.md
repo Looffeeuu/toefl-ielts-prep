@@ -4,9 +4,9 @@
 
 | 项目 | 已核对 | 尚待核对 |
 | --- | ---: | ---: |
-| 释义与词性 | 6284 | 2791 |
-| 英美音与主要分读 | 6282 | 2793 |
-| 两项均完成 | 6276 | 2799 |
+| 释义与词性 | 6384 | 2691 |
+| 英美音与主要分读 | 6382 | 2693 |
+| 两项均完成 | 6376 | 2699 |
 
 每词分别保存来源和日期，不能用核对音标代替核对释义。完整状态和接续队列见 [lexicon-progress.json](lexicon-progress.json)。优先处理缺失、截断、词性矛盾和用法标记，再按字母顺序推进。未找到可靠来源的条目保持待核对，不推测填充。
 
@@ -90,7 +90,7 @@ node tools/lexicon_progress.js
 
 完成 100 词：cabinet、cabinetmaker、cable、cadence、cafe、cafeteria、calamity、calcium、calculate、calculation、calculator、calendar、caliber、calibration、calibre、call、callous、calm、calorie、Cambridge、camel、camera、camouflage、camp、campaign、campus、can、Canadian、canal、cancel、cancellation、candid、candidate、candle、cane、cannibalism、cannon、canny、canoe、canopy、canteen、canter、canvas、canyon、cap、capability、capable、capacious、capacity、cape、capillary、capital、capricious、capsize、capsule、caption、captious、captivate、captive、captivity、capture、carapace、carat、carbohydrate、carbon、carcase、carcass、card、cardiac、cardinal、care、career、cash、careful、careless、carelessly、caress、cargo、caricature、carnage、carnal、carnival、carnivore、carnivorous、carpenter、carpet、carping、carriage、carrier、carrion、carrot、carry、cart、carton、cartoon、carve、carver、carving、cascade、case。
 
-待复核：careerism。已查到 Collins 释义和美音，但尚未找到可照录的完整英美 IPA；保留待核对，不计入完成。 [已查资料](https://www.collinsdictionary.com/dictionary/english/careerism)。不计入完成数。
+历史待复核：careerism，已在批次 065 完成核对。原记录：已查到 Collins 释义和美音，但尚未找到可照录的完整英美 IPA；保留待核对，不计入完成。 [此前资料](https://www.collinsdictionary.com/dictionary/english/careerism)。
 
 ## 批次 013
 
@@ -454,6 +454,26 @@ node tools/lexicon_progress.js
 待复核：unfavorable。OALD /definition/english/unfavorable 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/unfavorable)。不计入完成数。
 待复核：valor。OALD /definition/english/valor 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/valor)。不计入完成数。
 
+## 批次 065
+
+完成 100 词：willow、windswept、wispy、wistful、wither、woolly、workload、worldly、wring、wristwatch、wrought、wry、yardstick、yarn、yawn、yelp、yen、yolk、zeal、zealot、zealous、zenith、zest、zigzag、zinc、abashed、accommodating、acquainted、acrimonious、addicted、adventitious、aerodynamics、aggravating、airsickness、careerism、chary、chilli、chivalry、chlorophyll、choreographic、cipher、circuitous、circumspect、citadel、clamorous、cleave、cleft、coalescence、cogent、cognizance、cohere、coinage、coincident、collate、colloquial、colloquialism、combustible、comity、commingle、commiserate、commodious、comport、composed、concave、concurrence、condenser、conductivity、confederacy、congratulation、conjectural、connivance、connive、consecrate、constricted、contemptible、continence、contravene、contrite、controvert、conversant、convex、conveyance、convivial、convoke、coop、cornet、corpulent、counterclockwise、covetous、cowhand、cranial、credulous、crevasse、crustacean、crystallization、crystallized、cubism、culpable、dauntless、dawdle。托福中频（f3）收尾及低频（f4）队列 100 词，来源改用 OALD（剑桥网站对自动访问启用安全验证）。英音取 OALD 英式、美音取同页北美 IPA，逐字照录。
+
+待复核：woolen。OALD /definition/english/woolen 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/woolen)。不计入完成数。
+待复核：acoustical。OALD /definition/english/acoustical 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/acoustical)。不计入完成数。
+待复核：cacti。OALD /definition/english/cacti 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/cacti)。不计入完成数。
+待复核：chromosphere。OALD /definition/english/chromosphere 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/chromosphere)。不计入完成数。
+待复核：coffeepot。OALD /definition/english/coffeepot 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/coffeepot)。不计入完成数。
+待复核：commonsense。OALD /definition/english/commonsense 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/commonsense)。不计入完成数。
+待复核：complacence。OALD /definition/english/complacence 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/complacence)。不计入完成数。
+待复核：confining。OALD /definition/english/confining 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/confining)。不计入完成数。
+待复核：congruity。OALD /definition/english/congruity 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/congruity)。不计入完成数。
+待复核：contemn。OALD /definition/english/contemn 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/contemn)。不计入完成数。
+待复核：correlated。OALD /definition/english/correlated 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/correlated)。不计入完成数。
+待复核：craftspeople。OALD /definition/english/craftspeople 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/craftspeople)。不计入完成数。
+待复核：crossbones。OALD /definition/english/crossbones 无可用义项（仅见于短语 skull and crossbones），待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/crossbones)。不计入完成数。
+待复核：crossbreeding。OALD /definition/english/crossbreeding 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/crossbreeding)。不计入完成数。
+待复核：crosscut。OALD /definition/english/crosscut 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/crosscut)。不计入完成数。
+
 ## 发布节奏
 
-每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 100 词，距下次发布还差 900 词。发布基线为 fd10786f774b81443625b14d168f8dd4fb51b80c，当时两项均核对 6176 词；当前页面显示本地核对进度，不表示已上线。
+每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 200 词，距下次发布还差 800 词。发布基线为 fd10786f774b81443625b14d168f8dd4fb51b80c，当时两项均核对 6176 词；当前页面显示本地核对进度，不表示已上线。

@@ -4,9 +4,9 @@
 
 | 项目 | 已核对 | 尚待核对 |
 | --- | ---: | ---: |
-| 释义与词性 | 6084 | 2991 |
-| 英美音与主要分读 | 6082 | 2993 |
-| 两项均完成 | 6076 | 2999 |
+| 释义与词性 | 6184 | 2891 |
+| 英美音与主要分读 | 6182 | 2893 |
+| 两项均完成 | 6176 | 2899 |
 
 每词分别保存来源和日期，不能用核对音标代替核对释义。完整状态和接续队列见 [lexicon-progress.json](lexicon-progress.json)。优先处理缺失、截断、词性矛盾和用法标记，再按字母顺序推进。未找到可靠来源的条目保持待核对，不推测填充。
 
@@ -439,6 +439,13 @@ node tools/lexicon_progress.js
 待复核：splendor。OALD /definition/english/splendor 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/splendor)。不计入完成数。
 待复核：submerged。OALD /definition/english/submerged 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/submerged)。不计入完成数。
 
+## 批次 063
+
+完成 100 词：subsistence、subspecies、substantiate、subterranean、subtract、subversive、subvert、succinct、suffrage、suffuse、sullen、sully、sultry、sumptuous、sunflower、sunlit、superfluous、supersede、superstition、supplant、supple、supplementary、supplementation、supposition、supremacy、surcharge、surmise、surmount、suspense、sustenance、symbiotic、symmetrical、sympathize、synchronize、synonym、synonymous、synopsis、synthesize、synthesizer、tacit、tact、tactile、taint、tally、tame、tamper、tantalize、tapestry、tarnish、tasteless、taunt、teapot、tedious、televise、temperate、tenacious、tenderness、tenement、tentacle、tenuous、tepid、termination、termite、thaw、thorn、thorny、thrift、throng、throttle、thunderstorm、timid、tingle、tint、Titanic、toad、tolerable、topsoil、torment、torque、torrent、totality、touchy、trample、tranquil、transfix、transient、transitory、translucent、transmitter、transpire、trapper、travesty、treacherous、treason、tremor、trepidation、trespass、tribulation、tributary、trilogy。托福中频（f3）队列 100 词，来源改用 OALD（剑桥网站对自动访问启用安全验证）。英音取 OALD 英式、美音取同页北美 IPA，逐字照录。
+
+待复核：surging。OALD /definition/english/surging 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/surging)。不计入完成数。
+待复核：tranquility。OALD /definition/english/tranquility 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/tranquility)。不计入完成数。
+
 ## 发布节奏
 
-每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 900 词，距下次发布还差 100 词。发布基线为 eddc23c56240e203acb9126866be802a05108087，当时两项均核对 5176 词；当前页面显示本地核对进度，不表示已上线。
+每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 1000 词，距下次发布还差 0 词。发布基线为 eddc23c56240e203acb9126866be802a05108087，当时两项均核对 5176 词；当前页面显示本地核对进度，不表示已上线。

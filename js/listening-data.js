@@ -77,6 +77,18 @@ Do you think the café will still be open?|Not at this hour, I'm afraid.|I think
 Why don't we take a short break?|Good idea. I can't focus anymore.|Because it's broken.|We took the bus to the science building after the break.|I don't know why.|Why don't we 是提建议，不是问原因，B 和 E 都误解了意图。
 I'm not sure this data supports our conclusion.|Maybe we should run the experiment again.|The data was collected.|I'm sure it will be a sunny day tomorrow afternoon.|Our conclusion is on page five.|对方表示怀疑，回应提出下一步做法。
 You've been working on that problem for hours.|I know, but I'm almost there.|The problem was solved yesterday.|Hours of the library are posted near the front entrance.|I worked at a bank.|对方暗示该休息了，回答承认并表示快好了。
+`},
+  { id:"r-office", level:2, name:"办公与预约", items:`
+Is Professor Diaz holding office hours today?|Only until two. She has a meeting after that.|I held the door for her.|The office is on the fourth floor of the science building.|Yes, she is a professor.|问今天是否有答疑时间，回答给出具体时间限制，比 Yes 更自然。
+Could I make an appointment with an advisor?|Sure. Is Thursday morning convenient?|I appointed him last year.|The advisor gave me some very good advice about my classes.|No, I didn't make it.|请求预约，接受并提出具体时间。appoint 和 appointment 的形近陷阱。
+How long will it take to process my application?|Usually about ten business days.|I applied to three schools.|It's a long application.|The process was explained at the orientation meeting last fall.|问 How long，回答时间长度。
+Why is there a line outside the registrar's office?|Today is the last day to drop classes.|The line was drawn on the board.|I registered for five classes this semester, which is a lot.|Yes, there is.|解释排队的原因，不能用 Yes 回答 Why。
+Do you know where I can get my transcript?|You can request it online now.|The script was very long.|I know a lot of people who work in the student services office.|Yes, I got an A.|间接问地点，回答获取方式也可以。transcript 与 script 形近。
+I thought the deadline for financial aid was today.|It was extended to next Friday.|Financial news is on page two of the newspaper.|I was aided by a friend.|Today is Tuesday.|对方的理解有误，回应给出更正信息。
+Who should I talk to about changing my major?|The academic advising center handles that.|I talked to her yesterday.|My major is chemistry, but I am thinking about biology now.|It's a major change.|问 Who，回答负责的部门。major 的另一个意思是干扰。
+Should I fill out the form now or later?|Now would be better. The office closes at four.|I filled up the car with gas yesterday.|Yes, you should.|The form has three pages and a section for your signature at the end.|选择疑问句要选一项并说明理由，不能用 Yes 回答。
+The copy machine on this floor is out of paper again.|There's some more in the cabinet by the window.|I copied my notes from a classmate.|The floor was cleaned this morning by the staff.|Paper is made from trees.|对方指出问题，回应提供解决办法。
+Wasn't the meeting supposed to start at ten?|It was moved to ten thirty.|I'm supposed to meet her.|Yes, ten is a good time for a meeting with the whole team.|The meeting room is big.|否定疑问句表示疑惑，回应说明变化。
 `}
 ],
 
@@ -217,6 +229,34 @@ W: Just keep in mind that the written report is still due on the original date. 
     qs:[
       { type:"function", q:"Why does the man mention that he already asked to switch shifts?", opts:["To show that he has tried to solve the problem himself.","To complain that his manager is unfair.","To ask the professor to call his manager.","To explain why he was late for class."], why:"他强调已经尝试换班但被拒绝，说明自己不是不想去，而是确实没有办法。" },
       { type:"infer", q:"What will the man probably find difficult about attending the later trip?", opts:["Writing the report before he has visited the site.","Getting to the site without a car.","Finding someone to lead the Sunday trip.","Taking photos of the rock formations."], why:"报告仍然按原来的日期交，他只能先看网上的照片写，而那时他还没去过现场。" }
+    ]},
+  { id:"c-meal", level:1, title:"更换餐卡计划", script:`W: Hi, I'd like to change my meal plan. I have the plan with three meals a day, but I usually skip breakfast.
+M: You can switch to the plan with fourteen meals a week. It's about two hundred dollars cheaper.
+W: Great. Can I do that now?
+M: Yes, but the change starts next Monday. Until then, your current plan stays the same.`,
+    qs:[
+      { type:"purpose", q:"Why does the woman want to change her meal plan?", opts:["She usually does not eat breakfast.","She wants to eat more meals each week.","She is moving off campus next semester.","She thinks the food in the dining hall is not very good."], why:"I usually skip breakfast，三餐计划浪费了早餐。" },
+      { type:"detail", q:"When will the change take effect?", opts:["Next Monday.","Immediately.","At the end of the semester.","After she pays two hundred dollars to the dining office."], why:"the change starts next Monday。" }
+    ]},
+  { id:"c-tutor", level:2, title:"寻找数学辅导", script:`M: Excuse me, I'm having a lot of trouble in calculus, and I heard the learning center has tutors.
+W: We do. Our math tutors are available Monday through Thursday. Most students book a weekly session so they see the same tutor each time.
+M: That sounds good. Is there a cost?
+W: No, it's free for all students. But I should mention that calculus sessions fill up fast after the first exam. Right now there are only two slots left this week, both on Wednesday.
+M: Then I'd better take one. Three o'clock works for me.
+W: Okay. Please bring your homework and any questions you've written down.`,
+    qs:[
+      { type:"detail", q:"Why do most students book a weekly session?", opts:["So they can work with the same tutor each time.","Because weekly sessions are cheaper than single ones.","Because the center is only open once a week.","So they can prepare for exams in a group."], why:"Most students book a weekly session so they see the same tutor each time。" },
+      { type:"infer", q:"Why does the man decide to book a session right away?", opts:["Few sessions are still available.","He has an exam on Wednesday.","The tutoring will cost money later in the semester.","His professor told him he had to attend tutoring this week."], why:"there are only two slots left this week，名额快没了，所以他马上预约。" }
+    ]},
+  { id:"c-exchange", level:3, title:"交换项目学分", script:`W: Hi, I'm planning to study in Spain next spring, and I wanted to check how my credits will transfer.
+M: Sure. Have you picked your courses there yet?
+W: Mostly. Two are Spanish language courses, and the other two are business classes taught in English.
+M: The language courses should be fine. They'll count toward your minor. The business classes are trickier. Our department has to approve each one individually, and that usually requires the full syllabus, not just the course description.
+W: Oh. The university's website only lists short descriptions.
+M: I'd email the professors there directly. And don't wait too long. Approvals can take a month, and you need them before you register.`,
+    qs:[
+      { type:"function", q:"Why does the man say \"The business classes are trickier\"?", opts:["To indicate that getting credit for them will require extra steps.","To suggest that the business classes are too difficult for her.","To recommend that she take only language courses.","To explain that business classes are not taught in English."], why:"他接着解释商科课要逐门审批、需要完整的大纲，说明比语言课麻烦。" },
+      { type:"infer", q:"What will the woman probably do next?", opts:["Contact professors in Spain to ask for full syllabi.","Choose different language courses.","Register for her classes in Spain immediately.","Ask the department to change its approval rules."], why:"男士建议 email the professors there directly 并尽快办理，她最可能去联系对方教授要大纲。" }
     ]}
 ],
 
@@ -286,6 +326,21 @@ announcements: [
     qs:[
       { type:"detail", q:"Why is the lab schedule changing?", opts:["New equipment has not been installed yet.","Room 310 is being used for an exam.","The professor will be away next week.","Too many students failed last week's experiment."], why:"the installation has been delayed，新设备还没装好。" },
       { type:"infer", q:"What will a student who got accurate titration results most likely do next week?", opts:["Start writing the final lab report.","Do the reaction-rate experiment early.","Help other students in Room 310.","Repeat the titration to check the results."], why:"Those of you who already got accurate results can use the time to begin your final lab report。" }
+    ]},
+  { id:"a-recycle", level:1, title:"宿舍回收新规", speaker:"W", script:`Hello, residents. Starting next week, each floor will have new recycling bins next to the elevator. The blue bins are for paper and cardboard, and the green bins are for plastic bottles and cans. Please rinse bottles and cans before you put them in. Food waste should still go in the regular trash.`,
+    qs:[
+      { type:"detail", q:"Where will the new recycling bins be placed?", opts:["Next to the elevator on each floor.","In every student's room.","Outside the main entrance of the building.","In the kitchen on the first floor."], why:"each floor will have new recycling bins next to the elevator。" },
+      { type:"detail", q:"What should residents do with food waste?", opts:["Put it in the regular trash.","Put it in the green bins.","Rinse it before throwing it away.","Take it to a special collection point on the first floor."], why:"Food waste should still go in the regular trash。" }
+    ]},
+  { id:"a-exam", level:2, title:"期末考试地点变更", speaker:"M", script:`Before we finish, an important change about the final exam. Because the class has grown this semester, we won't have enough seats in this room. So the exam will be held in the Thompson Auditorium instead, at the same time, nine a.m. on December twelfth. Please arrive fifteen minutes early, since you'll need to show your student ID and leave your bags at the front. Calculators are allowed, but phones must be turned off.`,
+    qs:[
+      { type:"purpose", q:"Why has the exam location changed?", opts:["The usual classroom is too small for the class.","The usual classroom is being repaired.","The exam time has been moved.","The auditorium has better equipment for using calculators."], why:"Because the class has grown ... we won't have enough seats in this room。" },
+      { type:"detail", q:"Why should students arrive early?", opts:["They must show their ID and leave their bags.","They need to pick up their calculators.","The auditorium is far from campus.","The professor will review the material before the exam begins."], why:"you'll need to show your student ID and leave your bags at the front。" }
+    ]},
+  { id:"a-survey", level:3, title:"课程反馈问卷", speaker:"W", script:`One more thing before you go. You should have received an email with a link to the course evaluation survey. I know these surveys can feel like a formality, but I do read every comment, and several changes this term, like posting lecture slides before class, came directly from last year's feedback. The survey is anonymous, and I won't see any results until after final grades are submitted. It closes on Friday, so please take ten minutes to fill it out.`,
+    qs:[
+      { type:"function", q:"Why does the professor mention posting lecture slides before class?", opts:["To show that student feedback has led to real changes.","To remind students that the slides are now online.","To explain why the survey is anonymous.","To ask students whether they want the slides posted earlier next term."], why:"她用这个例子说明去年的反馈真的带来了改变，鼓励学生认真填写。" },
+      { type:"infer", q:"Why does the professor say she will not see results until after grades are submitted?", opts:["So students will feel free to give honest opinions.","Because the survey closes after the semester ends.","Because she is too busy to read the results during the term.","So that she can change students' grades based on the results."], why:"强调成绩提交后才看结果、问卷匿名，是为了让学生放心如实评价。" }
     ]}
 ],
 
@@ -421,6 +476,45 @@ More recently, scientists have recorded frigate birds sleeping in flight, mostly
       { type:"detail", q:"What did the study of ducks show?", opts:["Ducks at the ends of a row kept one eye open more often.","Ducks in the middle of a row slept less than the others.","Ducks closed both eyes when predators were near.","Ducks slept only while flying."], why:"the ducks at the ends of the row slept with one eye open more often，而且睁着的眼睛朝外。" },
       { type:"infer", q:"What does the duck study suggest about unihemispheric sleep?", opts:["Animals can control it depending on the level of danger.","It happens only in water birds.","It is caused by being in a group.","It makes animals sleep more deeply."], why:"the birds seemed to adjust how much of their brain was sleeping depending on how risky their position was。" },
       { type:"attitude", q:"What is the professor's view of the evidence about humans?", opts:["It is interesting, but the question is not settled.","It clearly proves that humans have unihemispheric sleep.","It is based on experiments that were done incorrectly.","It shows that hotels should be made quieter."], why:"whether humans have any version of this is still debated ... might explain，用词谨慎，说明尚无定论。" }
+    ]},
+  { id:"t-bridges", level:1, title:"桥梁为什么能承重", topic:"Engineering", speaker:"M", script:`Today we're going to look at bridges, and specifically at the two forces every bridge has to deal with: compression and tension. Compression is a pushing force that squeezes material together. Tension is a pulling force that stretches it.
+
+Let's start with the oldest design, the arch bridge. The Romans built many of these, and some are still standing two thousand years later. An arch works because the weight on top pushes down and outward along the curve, so every stone is under compression. Stone is very strong when it's squeezed, so arches are ideal for it.
+
+Now think about a suspension bridge, like the Golden Gate Bridge. Here the road hangs from long steel cables. The cables are pulled tight, so they're under tension. Stone would snap if you pulled on it like that, but steel handles tension very well. That's why suspension bridges only became possible once engineers had strong steel.
+
+So the shape of a bridge isn't just about looks. It's chosen to match the forces to the materials that can best handle them.`,
+    qs:[
+      { type:"main", q:"What is the talk mainly about?", opts:["How bridge designs match forces to materials.","The history of bridge building in ancient Rome.","Why steel is cheaper than stone for building bridges today.","How the Golden Gate Bridge was built."], why:"讲座最后一句点明主旨：桥的形状是为了让受力和最适合的材料匹配。" },
+      { type:"detail", q:"Why are arches well suited to stone?", opts:["The stones in an arch are under compression.","Stone is light and easy to carry.","Arches use less material than other bridges.","Stone handles pulling forces very well."], why:"every stone is under compression. Stone is very strong when it's squeezed。" },
+      { type:"infer", q:"Why couldn't the Romans build suspension bridges like the Golden Gate Bridge?", opts:["They did not have strong steel for the cables.","Their rivers were too narrow.","They preferred the appearance of arches.","Their engineers did not understand compression."], why:"suspension bridges only became possible once engineers had strong steel。" },
+      { type:"organization", q:"How does the professor organize the talk?", opts:["He defines two forces and then gives an example of a bridge for each.","He describes the history of bridges in order from oldest to newest, year by year.","He compares the costs of two famous bridges.","He explains a problem and then lists several solutions."], why:"先定义压力和拉力，再分别用拱桥和悬索桥举例。" }
+    ]},
+  { id:"t-expect", level:2, title:"价格预期对口味的影响", topic:"Psychology", speaker:"W", script:`Let's continue our discussion of perception with an experiment that surprises many students. Researchers gave people samples of wine and told them the prices, some cheap and some expensive. Participants consistently said the expensive wines tasted better. Here's the catch: in some cases, the "cheap" and "expensive" samples were exactly the same wine.
+
+You might think people were just saying what they thought they should say. But when researchers scanned participants' brains, they found that activity in a region linked to pleasure was actually higher when people believed the wine was expensive. In other words, the price didn't just change what people reported; it seemed to change what they experienced.
+
+This tells us something important about perception. What we taste, see, or hear isn't simply a direct reading of the world. Our brains combine information from our senses with our expectations. Usually, that's useful. It helps us make sense of incomplete or noisy information quickly. But it also means expectations can be manipulated. Marketers know this very well, which is why packaging, brand names, and price tags get so much attention.
+
+Next time, we'll look at how expectations affect the way we hear speech.`,
+    qs:[
+      { type:"main", q:"What is the talk mainly about?", opts:["How expectations can influence what people experience.","Why expensive wine is usually of higher quality.","How the brain processes speech.","The history of wine marketing."], why:"讲座用价格影响口味的实验说明，预期会影响人的感知体验。" },
+      { type:"detail", q:"What did the brain scans show?", opts:["Pleasure-related activity was higher when people thought the wine was expensive.","People's brains could tell when two samples were the same.","Participants were not telling the truth about the taste.","Activity in all areas of the brain was the same for each sample."], why:"activity in a region linked to pleasure was actually higher when people believed the wine was expensive。" },
+      { type:"function", q:"Why does the professor say \"Here's the catch\"?", opts:["To introduce a surprising detail about the experiment.","To show that the experiment had a mistake in it.","To explain how participants were chosen.","To change the topic to a different experiment."], why:"接着说出「便宜」和「昂贵」的样品其实是同一种酒，用 catch 引出出人意料的关键细节。" },
+      { type:"attitude", q:"What is the professor's view of the role of expectations in perception?", opts:["It is usually helpful but can be used to mislead people.","It is a weakness that should be eliminated.","It only affects people who know little about wine.","It has not been supported by scientific evidence."], why:"Usually, that's useful ... But it also means expectations can be manipulated，态度是两面看待。" }
+    ]},
+  { id:"t-dating", level:3, title:"树木年轮测年法", topic:"Archaeology", speaker:"M", script:`I want to introduce a dating method that's remarkable for its precision: dendrochronology, or tree-ring dating. You probably know that many trees add one growth ring each year. What's less obvious is that the rings aren't all the same width. In a wet, warm year a tree grows more, and the ring is wide. In a dry or cold year it's narrow.
+
+Now, here's the key. All the trees of the same species in a region experience the same weather, so they share the same pattern of wide and narrow rings. Scientists can match the pattern in a living tree to the pattern in an older piece of wood, say a beam from a historic house, and then match that to even older wood from archaeological sites. By overlapping these sequences, researchers in some regions have built continuous records going back more than ten thousand years.
+
+The result is that a wooden object can sometimes be dated not just to the century, but to the exact year the tree was cut down. That's far more precise than radiocarbon dating, which usually gives a range of decades.
+
+There are limitations, though. The method only works in regions where a long reference sequence exists, and only for wood with enough rings. And it tells you when the tree died, which isn't necessarily when the wood was used. Builders sometimes reused old timber.`,
+    qs:[
+      { type:"main", q:"What is the talk mainly about?", opts:["How tree rings are used to date wooden objects.","Why trees grow faster in warm, wet years.","The history of radiocarbon dating.","How old buildings were constructed with timber."], why:"讲座介绍树木年轮测年法的原理、精度和局限。" },
+      { type:"detail", q:"Why do trees of the same species in a region have similar ring patterns?", opts:["They experience the same weather.","They are the same age.","They were planted by the same people.","They grow in the same type of soil."], why:"All the trees ... experience the same weather, so they share the same pattern。" },
+      { type:"organization", q:"Why does the professor compare tree-ring dating with radiocarbon dating?", opts:["To emphasize how precise tree-ring dating can be.","To show that radiocarbon dating is no longer used.","To explain how radiocarbon dating works.","To argue that both methods give the same results."], why:"年轮测年可以精确到年份，而放射性碳测年通常只能给出几十年的范围。" },
+      { type:"infer", q:"Why might tree-ring dating give a misleading date for a building?", opts:["The wood may have been reused from an older structure.","Some trees do not grow rings in cold years.","The building may have been painted many times.","Radiocarbon dating must be used first."], why:"it tells you when the tree died ... Builders sometimes reused old timber，所以木材年代可能早于建筑年代。" }
     ]}
 ]
 };

@@ -306,5 +306,104 @@ window.IELTS_READING = [
       { q:"What is the writer's main purpose in paragraph C?", opts:["to criticise the cost of specialist government units","to outline the reasons why nudges became popular","to explain how tax reminder letters are written","to compare nudges with financial incentives"], a:1, why:"C 段列出支持者的理由（便宜、易测试、尊重自由）和成功案例，说明助推为何受欢迎。" },
       { q:"What is the writer's overall conclusion about nudges?", opts:["They should be abandoned in favour of rules.","They are useful in some situations but cannot solve major problems alone.","They are ethically unacceptable in most cases.","They have proved more effective than expected."], a:1, why:"G 段：nudges can only complement, not replace, traditional policies。" }
     ]}
+  ]},
+{ id:"r-tea", level:1, title:"The Journey of Tea", topic:"History",
+  paras:[
+    ["A","Tea is the second most widely consumed drink in the world after water. Yet for most of its history, it was known only in one part of the world. The tea plant is native to the region where southern China, northern Myanmar and north-eastern India meet, and people there are thought to have chewed or boiled its leaves for thousands of years, at first mainly as a medicine rather than as an everyday drink."],
+    ["B","By the time of the Tang dynasty, which began in the seventh century, tea drinking had become popular throughout China. A writer named Lu Yu produced the first known book devoted entirely to tea, describing how it should be grown, prepared and served. At this time, tea leaves were usually pressed into hard cakes, which were easier to transport and could be traded over long distances. Pieces were broken off the cake and boiled, sometimes with salt or spices."],
+    ["C","From China, tea spread to Japan and Korea, often carried by Buddhist monks, who valued it because it helped them stay awake during long periods of meditation. In Japan, the preparation of powdered green tea gradually developed into a formal ceremony, in which every movement of the host follows a set pattern. The ceremony was intended to encourage calm and respect, and it remains an important part of Japanese culture today."],
+    ["D","Tea did not reach Europe until the early seventeenth century, when Dutch traders began shipping it from Asia. At first it was extremely expensive and was sold in pharmacies. In Britain, it became fashionable after the marriage of King Charles II to a Portuguese princess who was already fond of the drink. However, high taxes kept prices so high that a large illegal trade developed, and by some estimates more tea was smuggled into the country than was imported legally."],
+    ["E","In the nineteenth century, Britain wanted to reduce its dependence on China for tea. The British East India Company began growing tea on a large scale in Assam, in north-eastern India, and later in Ceylon, now Sri Lanka. These plantations relied on large numbers of poorly paid workers, and conditions were often very harsh. Nevertheless, by the end of the century India had overtaken China as Britain's main supplier."],
+    ["F","Today, tea is grown in more than sixty countries, and the most recent innovations concern how it is sold rather than how it is grown. The tea bag, reportedly invented by accident when an American merchant sent samples in small silk bags, now accounts for the vast majority of tea sold in Britain. Meanwhile, newer drinks such as bubble tea, which first appeared in Taiwan in the 1980s, have introduced tea to a younger generation of consumers around the world."]
+  ],
+  groups:[
+    { type:"tfng", instr:"Do the following statements agree with the information given in the passage?", items:[
+      { q:"Tea was first used mainly for medical purposes.", a:"TRUE", why:"A 段：at first mainly as a medicine rather than as an everyday drink。" },
+      { q:"Lu Yu was a tea farmer before he became a writer.", a:"NOT GIVEN", why:"B 段只说他写了第一本关于茶的书，没有提到他之前的职业。" },
+      { q:"Tea cakes were made because they were easier to move and trade.", a:"TRUE", why:"B 段：hard cakes, which were easier to transport and could be traded over long distances。" },
+      { q:"Tea was cheap when it first arrived in Europe.", a:"FALSE", why:"D 段：At first it was extremely expensive and was sold in pharmacies。" },
+      { q:"Working conditions on the Assam plantations were generally good.", a:"FALSE", why:"E 段：poorly paid workers, and conditions were often very harsh。" }
+    ]},
+    { type:"gap", instr:"Complete the notes below.", limit:"Choose ONE WORD ONLY from the passage for each answer.", maxWords:1, heading:"The spread of tea", items:[
+      { q:"Japan and Korea: tea was brought by Buddhist ___", a:["monks"], why:"C 段：often carried by Buddhist monks。" },
+      { q:"monks drank it to stay awake during ___", a:["meditation"], why:"C 段：helped them stay awake during long periods of meditation。" },
+      { q:"Europe: first shipped by ___ traders", a:["Dutch"], why:"D 段：when Dutch traders began shipping it from Asia。" },
+      { q:"Britain: high taxes led to a large amount of tea being ___", a:["smuggled"], why:"D 段：more tea was smuggled into the country than was imported legally。" }
+    ]},
+    { type:"match", instr:"Which paragraph contains the following information? You may use any letter more than once.", options:"paras", items:[
+      { q:"a reason why a political event made tea popular", a:"D", why:"D 段：Charles II 与喜爱喝茶的葡萄牙公主结婚后，喝茶在英国流行起来。" },
+      { q:"a description of an accidental invention", a:"F", why:"F 段：the tea bag, reportedly invented by accident。" },
+      { q:"a reference to a country changing its source of supply", a:"E", why:"E 段：Britain wanted to reduce its dependence on China ... India had overtaken China as Britain's main supplier。" },
+      { q:"an explanation of where the tea plant originally grew", a:"A", why:"A 段：The tea plant is native to the region where southern China, northern Myanmar and north-eastern India meet。" }
+    ]}
+  ]},
+
+{ id:"r-lightpollution", level:2, title:"Light Pollution and Wildlife", topic:"Ecology",
+  paras:[
+    ["A","For most of the history of life on Earth, nights were dark, lit only by the moon and stars. In little more than a century, that has changed. Satellite images show that artificial light now brightens the night sky over most of the world's populated land, and some estimates suggest that the area affected is growing by around two per cent each year. While the effects of light pollution on astronomy have long been recognised, biologists are increasingly concerned about its impact on wildlife, since many animals rely on natural cycles of light and darkness."],
+    ["B","Some of the clearest evidence comes from sea turtles. Female turtles come ashore at night to lay their eggs on beaches, and when the young hatch, they find the sea by moving towards the brightest horizon, which on a natural beach is the moonlit water. On beaches near hotels and roads, however, hatchlings are often drawn inland towards artificial lights, where many die from exhaustion or are caught by predators."],
+    ["C","Birds are also affected. Many species migrate at night and use the stars to navigate. Brightly lit buildings and towers can disorient them, causing them to circle until they are exhausted or to collide with windows. In North America alone, collisions with buildings are estimated to kill several hundred million birds every year, although not all of these deaths are linked to lighting. Some cities now dim the lights of tall buildings during the main migration periods."],
+    ["D","The effects on insects may be even more significant. Moths and many other night-flying insects are attracted to lights, where they may die from heat or be eaten. A study in the Netherlands, led by ecologist Kamiel Spoelstra, found that moth populations near illuminated roadsides declined compared with those in dark areas. Because moths pollinate many plants and are an important food source for birds and bats, such losses can affect entire ecosystems."],
+    ["E","Fortunately, light pollution is easier to reverse than many other environmental problems: once a light is switched off, its effect disappears immediately. Several practical measures can reduce the harm. Lights can be shielded so that they point downwards rather than into the sky, and they can be switched off or dimmed when they are not needed. The colour of light also matters. Research suggests that many insects are less attracted to warm, orange-coloured light than to the bright white or blue light produced by many modern LEDs."],
+    ["F","Some places have gone further. A number of towns and national parks have been certified as 'dark sky' areas, where lighting is strictly controlled. In parts of Florida, regulations require beachfront properties to turn off or cover lights visible from the beach during the turtle nesting season. Such rules show that it is possible to balance human needs for safety and convenience with the needs of other species."]
+  ],
+  groups:[
+    { type:"headings", instr:"The passage has six paragraphs, A–F. Choose the correct heading for paragraphs B–F from the list of headings below.", example:"Paragraph A: vi",
+      options:["Simple changes that make a difference","Young animals heading the wrong way","The economic cost of lighting cities","Places with strict rules on lighting","Losses that spread through food chains","A growing problem beyond astronomy","Dangers for travellers in the night sky","Why some animals prefer artificial light"],
+      items:[
+        { q:"Paragraph B", a:"ii", why:"B 段讲刚孵出的小海龟被人造光吸引，往内陆方向爬。" },
+        { q:"Paragraph C", a:"vii", why:"C 段讲夜间迁徙的鸟类被灯光迷惑、撞上建筑。" },
+        { q:"Paragraph D", a:"v", why:"D 段讲飞蛾数量减少会影响授粉，也会影响以飞蛾为食的鸟和蝙蝠。" },
+        { q:"Paragraph E", a:"i", why:"E 段讲给灯加罩、关灯调暗、改用暖色光等简单措施。" },
+        { q:"Paragraph F", a:"iv", why:"F 段讲「暗夜保护区」和佛罗里达海滩的灯光规定。" }
+      ]},
+    { type:"mcq", instr:"Choose the correct letter, A, B, C or D.", items:[
+      { q:"How do newly hatched turtles normally find the sea?", opts:["They follow the sound of the waves.","They move towards the brightest horizon.","They follow their mothers.","They use the position of the stars."], a:1, why:"B 段：they find the sea by moving towards the brightest horizon。" },
+      { q:"What does the writer say about the bird deaths in North America?", opts:["They are all caused by artificial lights.","They have fallen in recent years.","Not all of them are related to lighting.","They mainly affect birds that do not migrate."], a:2, why:"C 段：although not all of these deaths are linked to lighting。" },
+      { q:"According to paragraph E, why is light pollution easier to deal with than some other environmental problems?", opts:["Its effects stop as soon as the light is turned off.","Modern lights use very little energy.","Most animals quickly adapt to it.","It only affects a small area of land."], a:0, why:"E 段：once a light is switched off, its effect disappears immediately。" }
+    ]},
+    { type:"gap", instr:"Complete the sentences below.", limit:"Choose NO MORE THAN TWO WORDS from the passage for each answer.", maxWords:2, items:[
+      { q:"Spoelstra's study found that moth populations fell near ___.", a:["illuminated roadsides","roadsides"], why:"D 段：moth populations near illuminated roadsides declined。" },
+      { q:"Insects appear to be less attracted to light that is warm and ___ in colour.", a:["orange-coloured","orange"], why:"E 段：less attracted to warm, orange-coloured light。" },
+      { q:"Some towns and parks have been officially recognised as ___ areas.", a:["dark sky"], why:"F 段：certified as 'dark sky' areas。" },
+      { q:"In parts of Florida, lights near beaches must be turned off or covered during the turtle ___.", a:["nesting season"], why:"F 段：during the turtle nesting season。" },
+      { q:"Moths are an important food source for birds and ___.", a:["bats"], why:"D 段：an important food source for birds and bats。" }
+    ]}
+  ]},
+
+{ id:"r-cities", level:3, title:"Should Cities Keep Growing?", topic:"Urban Studies",
+  paras:[
+    ["A","More than half of the world's population now lives in cities, and the United Nations expects this proportion to reach around two thirds by 2050. For much of the twentieth century, rapid urban growth was regarded with alarm. Planners spoke of overcrowding, slums and the loss of farmland, and many governments tried to slow migration from the countryside. In recent decades, however, a more positive view of the city has become influential among economists."],
+    ["B","Economist Margaret Holloway is among the most prominent supporters of this view. She argues that cities are humanity's most effective engines of prosperity because they bring people together. 'When workers, firms and ideas are concentrated in one place,' she writes, 'knowledge spreads faster, specialised businesses can find customers and workers can find jobs that match their skills.' Studies have found that workers in large cities tend to earn more, even after differences in education are taken into account, which Holloway interprets as evidence that density itself increases productivity."],
+    ["C","Holloway also challenges the assumption that cities are bad for the environment. Per person, she points out, residents of dense cities typically use less energy than people in suburbs or rural areas, because they live in smaller homes, share walls with neighbours and are more likely to walk or use public transport. From this perspective, the greenest thing a government could do is make it easier for people to live in cities, chiefly by allowing more housing to be built."],
+    ["D","Not all researchers accept this optimistic account. Geographer Samuel Okoye argues that the benefits of urban growth are unevenly distributed. In many rapidly expanding cities, he notes, housing costs have risen far faster than wages, pushing lower-income residents into overcrowded accommodation or long commutes from the edges of the city. 'The productivity gains are real,' Okoye accepts, 'but if they are captured mainly by property owners, growth can increase inequality rather than reduce it.'"],
+    ["E","A different concern is raised by public health researcher Clara Mendes, who studies cities in low-income countries. Much of the most rapid urban growth now takes place not in wealthy cities with established infrastructure but in places where water supply, sanitation and transport have not kept pace. In such settings, she argues, density can spread disease and expose people to dangerous levels of air pollution. Mendes does not oppose urbanisation, which she regards as inevitable, but insists that investment in basic services must come first."],
+    ["F","Despite their differences, these researchers agree on more than might be expected. None believes that urban growth can or should be stopped, and all accept that the way cities are managed matters as much as their size. Holloway's call for more housing would, if successful, address part of Okoye's concern about rents, while Mendes's emphasis on infrastructure reflects the fact that the advantages of density depend on conditions that cannot be taken for granted."],
+    ["G","The debate has practical consequences. Decisions about zoning rules, transport investment and the location of new housing are made by local authorities every day, often with little reference to the wider evidence. Whether the cities of 2050 become engines of shared prosperity or concentrations of poverty may depend less on how large they grow than on the quality of these everyday choices."]
+  ],
+  groups:[
+    { type:"match", instr:"Look at the following statements and the list of people below. Match each statement with the correct person, A, B or C. You may use any letter more than once.",
+      options:[["A","Margaret Holloway"],["B","Samuel Okoye"],["C","Clara Mendes"]], items:[
+      { q:"Basic services should be provided before cities become more crowded.", a:"C", why:"E 段：investment in basic services must come first。" },
+      { q:"People living close together tend to use less energy.", a:"A", why:"C 段：residents of dense cities typically use less energy。" },
+      { q:"The financial benefits of growth may go mostly to those who own property.", a:"B", why:"D 段：if they are captured mainly by property owners, growth can increase inequality。" },
+      { q:"Higher wages in cities show that density makes workers more productive.", a:"A", why:"B 段：Holloway interprets as evidence that density itself increases productivity。" },
+      { q:"The movement of people into cities cannot be avoided.", a:"C", why:"E 段：urbanisation, which she regards as inevitable。" }
+    ]},
+    { type:"ynng", instr:"Do the following statements agree with the claims of the writer?", items:[
+      { q:"Governments in the twentieth century generally welcomed rapid urban growth.", a:"NO", why:"A 段：rapid urban growth was regarded with alarm ... many governments tried to slow migration。" },
+      { q:"The researchers discussed have more in common than their disagreements might suggest.", a:"YES", why:"F 段：these researchers agree on more than might be expected。" },
+      { q:"Local authorities usually consult academic research before making planning decisions.", a:"NO", why:"G 段：often with little reference to the wider evidence。" },
+      { q:"Cities in wealthy countries will stop growing before 2050.", a:"NOT GIVEN", why:"文章只给出全球城市人口比例的预测，没有谈富裕国家城市是否会停止增长。" }
+    ]},
+    { type:"gap", instr:"Complete the summary below.", limit:"Choose ONE WORD ONLY from the passage for each answer.", maxWords:1, flow:true, heading:"Arguments about urban growth", items:[
+      { q:"Holloway believes the most environmentally friendly policy is to allow more ___ to be built in cities.", a:["housing"], why:"C 段：chiefly by allowing more housing to be built。" },
+      { q:"Okoye notes that in many cities housing costs have risen faster than ___,", a:["wages"], why:"D 段：housing costs have risen far faster than wages。" },
+      { q:"forcing poorer residents into overcrowded homes or long ___.", a:["commutes"], why:"D 段：pushing lower-income residents into overcrowded accommodation or long commutes。" }
+    ]},
+    { type:"mcq", instr:"Choose the correct letter, A, B, C or D.", items:[
+      { q:"What is the writer's main point in paragraph G?", opts:["Cities should stop growing before 2050.","Everyday local decisions will strongly influence the future of cities.","Local authorities have too much power over housing.","The size of cities is the most important factor in their success."], a:1, why:"G 段：may depend less on how large they grow than on the quality of these everyday choices。" },
+      { q:"Which of the following best describes the passage as a whole?", opts:["a history of city planning in the twentieth century","a presentation of different views on the effects of urban growth","an argument that cities are harmful to the environment","a comparison of cities in rich and poor countries"], a:1, why:"文章介绍了三位学者对城市增长的不同观点，最后指出共识和实际影响。" }
+    ]}
   ]}
 ];

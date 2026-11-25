@@ -3,9 +3,9 @@
   "scope": "全部内置词条的来源和结构一致性；仅 dictionary-reviewed 条目经过本轮外部词典核对。其他候选不能据此判定为虚假或正确。",
   "total": 9075,
   "sources": {
-    "dictionary-reviewed": 3384,
-    "editorial-unverified": 2520,
-    "ecdict-derived": 3171
+    "dictionary-reviewed": 3484,
+    "editorial-unverified": 2432,
+    "ecdict-derived": 3159
   },
   "flagCounts": {
     "missing-pos": 27,
@@ -27392,14 +27392,17 @@
     },
     {
       "word": "degrade",
-      "pos": "vt./vi.",
-      "definition": "vt. 降低；使退化　vi. 降解",
-      "origin": "editorial-unverified",
+      "pos": "v.",
+      "definition": "v. 贬低、使丢脸；v. 使恶化、使质量下降（专业）；v. （使）降解、分解（专业）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-1.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/degrade",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/degrade"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -27466,13 +27469,16 @@
     {
       "word": "deity",
       "pos": "n.",
-      "definition": "神；神灵",
-      "origin": "editorial-unverified",
+      "definition": "n. 神、女神；n. 上帝（the Deity，正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-5.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/deity",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/deity"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -27514,27 +27520,36 @@
     },
     {
       "word": "delegate",
-      "pos": "n./vt.",
-      "definition": "n. 代表　vt. 委派；授权",
-      "origin": "editorial-unverified",
+      "pos": "n./v.",
+      "definition": "n. 代表、委派的代表；n. 与会者；v. 委托、授权（工作或权力）；v. 委派、选派（某人做某事）（通常用被动）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-1.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/delegate",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/delegate",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/delegate_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/delegate_2"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
       "word": "delete",
-      "pos": "vt.",
-      "definition": "删除",
-      "origin": "ecdict-derived",
+      "pos": "v./n.",
+      "definition": "v. 删除；n. 删除键、删除命令",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/delete",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/delete",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/delete_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/delete_2"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -27551,14 +27566,19 @@
     },
     {
       "word": "deliberate",
-      "pos": "adj./vi.",
-      "definition": "adj. 故意的；深思熟虑的　vi. 仔细考虑，商议",
-      "origin": "editorial-unverified",
+      "pos": "adj./v.",
+      "definition": "adj. 故意的、蓄意的；adj. 从容的、谨慎的；v. 仔细考虑、商议（正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-1.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/deliberate",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/deliberate",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/deliberate_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/deliberate_2"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -27722,13 +27742,16 @@
     {
       "word": "demise",
       "pos": "n.",
-      "definition": "消亡；终止",
-      "origin": "editorial-unverified",
+      "definition": "n. （机构、观念等的）终止、消亡；n. 死亡（正式或幽默）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-3.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/demise",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/demise"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -27782,13 +27805,16 @@
     {
       "word": "demolish",
       "pos": "v.",
-      "definition": "拆毁；推翻",
-      "origin": "editorial-unverified",
+      "definition": "v. 拆毁（建筑）、摧毁；v. 驳倒、推翻（观点或理论）；v. 轻松彻底地击败；v. 狼吞虎咽地吃光（英式，非正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-5.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/demolish",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/demolish"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -27842,13 +27868,16 @@
     {
       "word": "den",
       "pos": "n.",
-      "definition": "兽穴；书房",
-      "origin": "editorial-unverified",
+      "definition": "n. （野兽的）巢穴；n. （秘密活动的）窝点、贼窝（贬义）；n. （家中的）休闲室（北美）；n. 书房、私室（英式，旧式，非正式）；n. （儿童搭建的）秘密小屋；n. 幼童军小组（北美）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-4.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/den",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/den"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -27866,37 +27895,46 @@
     {
       "word": "denomination",
       "pos": "n.",
-      "definition": "面额；宗派",
-      "origin": "editorial-unverified",
+      "definition": "n. （基督教的）教派、宗派（正式）；n. （任何宗教的）派别（正式）；n. （货币的）面额、面值（正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-5.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/denomination",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/denomination"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
       "word": "denote",
       "pos": "v.",
-      "definition": "表示；指示",
-      "origin": "editorial-unverified",
+      "definition": "v. 是……的标志、表示（正式）；v. 意指、意味着（正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-5.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/denote",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/denote"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
       "word": "denounce",
       "pos": "v.",
-      "definition": "谴责；指责",
-      "origin": "editorial-unverified",
+      "definition": "v. 谴责、公开指责；v. 告发、检举",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-4.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/denounce",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/denounce"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -27925,39 +27963,49 @@
     },
     {
       "word": "dent",
-      "pos": "n./vt.",
-      "definition": "n. 凹痕；削减　vt. 使凹陷；削弱",
-      "origin": "editorial-unverified",
+      "pos": "v./n.",
+      "definition": "v. 使凹陷、撞瘪；v. 挫伤（信心、名声等）；n. 凹痕、凹坑",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-2.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/dent",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/dent",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/dent_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/dent_2"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
       "word": "dental",
       "pos": "adj.",
-      "definition": "牙齿的；牙科的",
-      "origin": "editorial-unverified",
+      "definition": "adj. 牙齿的、牙科的（仅用于名词前）；adj. 齿音的（语音学）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-4.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/dental",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/dental"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
       "word": "dentist",
       "pos": "n.",
-      "definition": "牙科医生",
-      "origin": "ecdict-derived",
+      "definition": "n. 牙医（正式亦作 dental surgeon）；n. 牙科诊所（常作 dentist's）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/dentist",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/dentist"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -28059,13 +28107,16 @@
     {
       "word": "dependence",
       "pos": "n.",
-      "definition": "依赖",
-      "origin": "editorial-unverified",
+      "definition": "n. 依赖、依靠；n. （对药物等的）依赖、成瘾（亦作 dependency）；n. 依存关系、受……影响（专业）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-3.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/dependence",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/dependence"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -28167,13 +28218,16 @@
     {
       "word": "deposition",
       "pos": "n.",
-      "definition": "沉积（作用）；证词",
-      "origin": "editorial-unverified",
+      "definition": "n. 沉积（作用）、沉积物（专业）；n. 罢免、废黜；n. （法庭使用的）书面证词（法律）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-4.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/deposition",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/deposition"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -28287,13 +28341,16 @@
     {
       "word": "deprivation",
       "pos": "n.",
-      "definition": "剥夺；匮乏",
-      "origin": "editorial-unverified",
+      "definition": "n. 匮乏、贫困；剥夺",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-3.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/deprivation",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/deprivation"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -28412,25 +28469,31 @@
     {
       "word": "descendant",
       "pos": "n.",
-      "definition": "后裔",
-      "origin": "editorial-unverified",
+      "definition": "n. 后代、后裔；n. （由过去事物发展来的）衍生物",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-3.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/descendant",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/descendant"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
       "word": "descent",
       "pos": "n.",
-      "definition": "下降；血统；斜坡",
-      "origin": "editorial-unverified",
+      "definition": "n. 下降、下来；n. 下坡；n. 血统、出身",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-3.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/descent",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/descent"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -28460,13 +28523,16 @@
     {
       "word": "deserted",
       "pos": "adj.",
-      "definition": "荒废的；无人的",
-      "origin": "editorial-unverified",
+      "definition": "adj. 空无一人的、冷清的；adj. 被遗弃的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-5.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/deserted",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/deserted"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -28495,14 +28561,19 @@
     },
     {
       "word": "designate",
-      "pos": "v.",
-      "definition": "指定；命名",
-      "origin": "editorial-unverified",
+      "pos": "v./adj.",
+      "definition": "v. 将……定为、指定为（正式，常用被动）；v. 选派、任命（正式）；v. 标示、标明（正式，常用被动）；adj. 已任命但尚未就职的（正式，用于名词后）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/designate",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/designate",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/designate_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/designate_2"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -28532,13 +28603,16 @@
     {
       "word": "desirable",
       "pos": "adj.",
-      "definition": "令人向往的",
-      "origin": "editorial-unverified",
+      "definition": "adj. 值得拥有的、可取的（正式）；adj. 性感的、令人有欲望的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/desirable",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/desirable"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -28653,13 +28727,16 @@
     {
       "word": "despise",
       "pos": "v.",
-      "definition": "鄙视",
-      "origin": "editorial-unverified",
+      "definition": "v. 鄙视、看不起",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-5.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/despise",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/despise"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -28727,13 +28804,16 @@
     {
       "word": "destiny",
       "pos": "n.",
-      "definition": "命运",
-      "origin": "editorial-unverified",
+      "definition": "n. 命运、天命；n. 命运的力量、天意",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-3.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/destiny",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/destiny"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -28751,13 +28831,16 @@
     {
       "word": "destructive",
       "pos": "adj.",
-      "definition": "破坏性的",
-      "origin": "editorial-unverified",
+      "definition": "adj. 破坏性的、毁灭性的；adj. 消极的、无益的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-3.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/destructive",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/destructive"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -28823,13 +28906,16 @@
     {
       "word": "detain",
       "pos": "v.",
-      "definition": "拘留；耽搁",
-      "origin": "editorial-unverified",
+      "definition": "v. 拘留、扣押；v. 耽搁、留住（正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-4.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/detain",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/detain"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -28871,13 +28957,16 @@
     {
       "word": "deter",
       "pos": "v.",
-      "definition": "阻止；威慑",
-      "origin": "editorial-unverified",
+      "definition": "v. 威慑、阻止",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-3.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/deter",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/deter"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -28895,13 +28984,16 @@
     {
       "word": "deteriorate",
       "pos": "v.",
-      "definition": "恶化；变坏",
-      "origin": "editorial-unverified",
+      "definition": "v. 恶化、变坏",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-3.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/deteriorate",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/deteriorate"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -28943,13 +29035,18 @@
     {
       "word": "deterrent",
       "pos": "n./adj.",
-      "definition": "n. 威慑；阻止物　adj. 威慑的",
-      "origin": "editorial-unverified",
+      "definition": "n. 威慑物、制止因素；adj. 威慑性的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-2.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/deterrent",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/deterrent",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/deterrent_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/deterrent_2"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -29030,13 +29127,16 @@
     {
       "word": "devastate",
       "pos": "v.",
-      "definition": "摧毁；使极度伤心",
-      "origin": "editorial-unverified",
+      "definition": "v. 彻底破坏、摧毁；v. 使极度震惊和悲伤（常用被动）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-3.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/devastate",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/devastate"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -29054,13 +29154,16 @@
     {
       "word": "devastation",
       "pos": "n.",
-      "definition": "毁坏；荒废",
-      "origin": "editorial-unverified",
+      "definition": "n. 大破坏、浩劫",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-3.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/devastation",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/devastation"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -29138,13 +29241,16 @@
     {
       "word": "devoid",
       "pos": "adj.",
-      "definition": "缺乏的；没有的",
-      "origin": "editorial-unverified",
+      "definition": "adj. 完全没有的、缺乏的（devoid of）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-5.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/devoid",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/devoid"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -29166,37 +29272,46 @@
     {
       "word": "devoted",
       "pos": "adj.",
-      "definition": "专注的；忠诚的",
-      "origin": "editorial-unverified",
+      "definition": "adj. 挚爱的、忠实的、全心全意的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-3.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/devoted",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/devoted"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
       "word": "devotion",
       "pos": "n.",
-      "definition": "热爱，投入",
-      "origin": "ecdict-derived",
+      "definition": "n. 挚爱、忠诚；n. 献身、投入；n. 宗教崇拜、虔诚；n. 祈祷、宗教仪式（devotions，复数）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/devotion",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/devotion"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
       "word": "devour",
       "pos": "v.",
-      "definition": "吞食；如饥似渴地读",
-      "origin": "editorial-unverified",
+      "definition": "v. 狼吞虎咽地吃；v. 如饥似渴地阅读或观看；v. 吞没、毁灭（正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-5.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/devour",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/devour"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -29273,15 +29388,19 @@
     },
     {
       "word": "diagram",
-      "pos": "n.",
-      "definition": "图表，图解",
-      "origin": "ecdict-derived",
+      "pos": "n./v.",
+      "definition": "v. 用图表示；n. 图表、示意图",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/diagram",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/diagram",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/diagram_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/diagram_2"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -29407,13 +29526,16 @@
     {
       "word": "dietary",
       "pos": "adj.",
-      "definition": "饮食的",
-      "origin": "editorial-unverified",
+      "definition": "adj. 饮食的、膳食的（通常用于名词前）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-3.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/dietary",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/dietary"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -29490,14 +29612,17 @@
     },
     {
       "word": "differentiate",
-      "pos": "vt./vi.",
-      "definition": "vt. 区分；使不同　vi. 区别（between）",
-      "origin": "editorial-unverified",
+      "pos": "v.",
+      "definition": "v. 区分、辨别；v. 使有区别、构成差异；v. 区别对待（尤指不公平地）；v. （细胞、组织）分化（生物）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-1.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/differentiate",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/differentiate"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -29562,15 +29687,19 @@
     },
     {
       "word": "digest",
-      "pos": "n./vi.",
-      "definition": "n. 文摘　vi. 消化",
-      "origin": "ecdict-derived",
+      "pos": "v./n.",
+      "definition": "v. 消化（食物）；v. （用热、酶等）分解（化学）；v. 领会、充分理解；n. 摘要、文摘",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/digest",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/digest",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/digest_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/digest_2"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -29731,14 +29860,19 @@
     },
     {
       "word": "dilute",
-      "pos": "vt./adj.",
-      "definition": "vt. 稀释；冲淡　adj. 稀释的",
-      "origin": "editorial-unverified",
+      "pos": "v./adj.",
+      "definition": "v. 稀释、冲淡；v. 削弱、降低效力；adj. 稀释了的（亦作 diluted）；adj. （溶液）稀的（化学）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-2.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/dilute",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/dilute",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/dilute_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/dilute_2"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -29755,26 +29889,34 @@
     },
     {
       "word": "dim",
-      "pos": "adj./vi./vt.",
-      "definition": "adj. 昏暗的　vi. 变暗　vt. 使变暗",
-      "origin": "editorial-unverified",
+      "pos": "adj./v.",
+      "definition": "adj. 暗淡的、不明亮的；adj. 昏暗的（看不清的地方）；adj. 模糊的、看不清的；adj. （视力）模糊的；adj. （记忆）模糊的；adj. 笨的、迟钝的（尤英式，非正式）；adj. （前景）黯淡的、不乐观的；v. （使）变暗；v. （使）减弱、（使）淡化",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-1.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/dim",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/dim",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/dim_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/dim_2"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
       "word": "dime",
       "pos": "n.",
-      "definition": "10分硬币(美、加)",
-      "origin": "ecdict-derived",
+      "definition": "n. （美国、加拿大的）一角硬币",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/dime",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/dime"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -29901,26 +30043,31 @@
     {
       "word": "dinosaur",
       "pos": "n.",
-      "definition": "恐龙",
-      "origin": "ecdict-derived",
+      "definition": "n. 恐龙；n. 老古董、落伍的人或物（贬义）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/dinosaur",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/dinosaur"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
       "word": "dioxide",
       "pos": "n.",
-      "definition": "二氧化物",
-      "origin": "ecdict-derived",
+      "definition": "n. 二氧化物（化学）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/dioxide",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/dioxide"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -29950,13 +30097,16 @@
     {
       "word": "diplomacy",
       "pos": "n.",
-      "definition": "外交；交际手段",
-      "origin": "editorial-unverified",
+      "definition": "n. 外交、外交手腕；n. 交际手腕、圆通",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-3.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/diplomacy",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/diplomacy"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -30057,14 +30207,19 @@
     },
     {
       "word": "disadvantage",
-      "pos": "n.",
-      "definition": "缺点，不利，坏处",
-      "origin": "ecdict-derived",
+      "pos": "n./v.",
+      "definition": "v. 使处于不利地位；n. 不利条件、缺点",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/disadvantage",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/disadvantage",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/disadvantage_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/disadvantage_2"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -30131,13 +30286,16 @@
     {
       "word": "disarm",
       "pos": "v.",
-      "definition": "解除武装；消除敌意",
-      "origin": "editorial-unverified",
+      "definition": "v. 解除（某人）武装；v. 裁军；v. 消除敌意、使息怒",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-5.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/disarm",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/disarm"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -30179,13 +30337,16 @@
     {
       "word": "disastrous",
       "pos": "adj.",
-      "definition": "灾难性的",
-      "origin": "editorial-unverified",
+      "definition": "adj. 灾难性的、极糟的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-3.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/disastrous",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/disastrous"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -30226,26 +30387,34 @@
     },
     {
       "word": "discard",
-      "pos": "v.",
-      "definition": "丢弃；抛弃",
-      "origin": "editorial-unverified",
+      "pos": "v./n.",
+      "definition": "v. 丢弃、抛弃（正式）；v. （牌戏中）垫牌、打出无用的牌；n. 被丢弃的东西；（牌戏中）垫出的牌",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-3.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/discard",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/discard",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/discard_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/discard_2"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
       "word": "discern",
       "pos": "v.",
-      "definition": "辨别；察觉",
-      "origin": "editorial-unverified",
+      "definition": "v. 觉察出、辨别（正式）；v. （勉强）看出、听出（正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-3.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/discern",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/discern"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -30274,26 +30443,34 @@
     },
     {
       "word": "discharge",
-      "pos": "vt./n.",
-      "definition": "vt. 排放；释放　n. 排放；排出物",
-      "origin": "editorial-unverified",
+      "pos": "v./n.",
+      "definition": "v. 准许离开（军队、警队）；开除（通常用被动）；v. 准许出院（常用被动）；v. 释放（出狱或出庭）（常用被动）；v. 排出、流出（液体、气体）；v. 放电、释放能量（专业）；v. 履行（职责）；v. 开（枪）；（枪）走火；n. 排放（物）、流出物；n. 放电；n. 退役、出院、释放；n. 履行（职责）、偿还（债务）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-1.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/discharge",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/discharge",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/discharge_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/discharge_2"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
       "word": "disciple",
       "pos": "n.",
-      "definition": "门徒；追随者",
-      "origin": "editorial-unverified",
+      "definition": "n. 信徒、追随者；n. （耶稣的）门徒",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-5.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/disciple",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/disciple"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -30370,14 +30547,19 @@
     },
     {
       "word": "discomfort",
-      "pos": "n.",
-      "definition": "不适；不安",
-      "origin": "editorial-unverified",
+      "pos": "n./v.",
+      "definition": "n. （身体的）不适、轻微疼痛；n. 不安、尴尬；n. 使人不舒服的事物；v. 使不安、使尴尬（正式，常用被动）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-4.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/discomfort",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/discomfort",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/discomfort_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/discomfort_2"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -30406,27 +30588,34 @@
     },
     {
       "word": "disconnect",
-      "pos": "vt./n.",
-      "definition": "vt. 断开；切断　n. 脱节",
-      "origin": "editorial-unverified",
+      "pos": "v./n.",
+      "definition": "v. 切断（设备的）电源、水源或气源；v. 停止供应（电话、水电、煤气）（通常用被动）；v. 使分离（常用被动）；v. 中断（电话通话）（通常用被动）；v. 断开网络连接；v. 撤除（病人与医疗设备的）连接；n. 脱节、不一致（较非正式）；n. 断线、断网",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-2.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/disconnect",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/disconnect",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/disconnect_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/disconnect_2"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
       "word": "discontent",
       "pos": "n.",
-      "definition": "不满",
-      "origin": "editorial-unverified",
+      "definition": "n. 不满、不满的事（亦作 discontentment）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-5.js",
-        "js/words-ext.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/discontent",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/discontent"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -30540,37 +30729,46 @@
     {
       "word": "discrete",
       "pos": "adj.",
-      "definition": "分离的；不连续的",
-      "origin": "editorial-unverified",
+      "definition": "adj. 分离的、各自独立的（正式或专业）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-5.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/discrete",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/discrete"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
       "word": "discretion",
       "pos": "n.",
-      "definition": "判断力；自行决定",
-      "origin": "editorial-unverified",
+      "definition": "n. 自行决定权、斟酌处理权；n. 谨慎、审慎（言行）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-4.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/discretion",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/discretion"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
       "word": "discriminate",
       "pos": "v.",
-      "definition": "区别；歧视",
-      "origin": "editorial-unverified",
+      "definition": "v. 区分、辨别；v. 歧视、区别对待",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-4.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/discriminate",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/discriminate"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -30599,14 +30797,19 @@
     },
     {
       "word": "disdain",
-      "pos": "n./vt.",
-      "definition": "n. 蔑视　vt. 蔑视；不屑",
-      "origin": "editorial-unverified",
+      "pos": "n./v.",
+      "definition": "n. 鄙视、蔑视；v. 鄙视、看不起（正式）；v. 不屑于（做某事）（正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-2.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/disdain",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/disdain",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/disdain_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/disdain_2"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -30671,14 +30874,19 @@
     },
     {
       "word": "disgust",
-      "pos": "n./vt.",
-      "definition": "n. 厌恶　vt. 使厌恶",
-      "origin": "editorial-unverified",
+      "pos": "n./v.",
+      "definition": "n. 厌恶、反感；v. 使厌恶、使恶心",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-2.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/disgust",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/disgust",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/disgust_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/disgust_2"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -30744,25 +30952,33 @@
     {
       "word": "dismal",
       "pos": "adj.",
-      "definition": "阴沉的；糟糕的",
-      "origin": "editorial-unverified",
+      "definition": "adj. 阴郁的、令人沮丧的；adj. 差劲的、失败的（非正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-5.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/dismal",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/dismal"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
       "word": "dismay",
-      "pos": "n./vt.",
-      "definition": "n. 沮丧；惊愕　vt. 使惊愕",
-      "origin": "editorial-unverified",
+      "pos": "n./v.",
+      "definition": "n. 惊愕、沮丧；v. 使惊愕、使失望",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-2.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/dismay",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/dismay",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/dismay_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/dismay_2"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -30851,14 +31067,19 @@
     },
     {
       "word": "dispatch",
-      "pos": "vt./n.",
-      "definition": "vt. 派遣；发送　n. 快信；派遣",
-      "origin": "editorial-unverified",
+      "pos": "v./n.",
+      "definition": "v. 派遣（正式；英式亦作 despatch）；v. 发送、寄出（正式）；v. 迅速处理、了结（正式）；v. 杀死（旧式）；n. 派遣、发送（正式）；n. （军官或官员间的）急件、公文；n. （驻外记者的）新闻报道",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-2.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/dispatch",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/dispatch",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/dispatch_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/dispatch_2"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -30888,13 +31109,16 @@
     {
       "word": "dispense",
       "pos": "v.",
-      "definition": "分发；施予",
-      "origin": "editorial-unverified",
+      "definition": "v. 分发、发放（正式）；v. 提供（服务）（正式）；v. 配（药）、发（药）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-5.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/dispense",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/dispense"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -30924,25 +31148,31 @@
     {
       "word": "displace",
       "pos": "v.",
-      "definition": "取代；使离开原处",
-      "origin": "editorial-unverified",
+      "definition": "v. 取代、替代（正式，常用被动）；v. 迫使（人）离开家园（常用被动）；v. 使移位；v. 撤换（某人职务）（尤北美）；v. 排开（液体）（物理）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-3.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/displace",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/displace"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
       "word": "displacement",
       "pos": "n.",
-      "definition": "移位；（被迫）迁移",
-      "origin": "editorial-unverified",
+      "definition": "n. 被迫离开家园、移位（正式）；n. 排水量（物理）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-3.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/displacement",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/displacement"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -30960,25 +31190,31 @@
     {
       "word": "disposal",
       "pos": "n.",
-      "definition": "处理；处置",
-      "origin": "editorial-unverified",
+      "definition": "n. 处理、处置、清除；n. （企业、财产的）出售、转让（商业）；n. （水槽下的）垃圾处理机",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-3.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/disposal",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/disposal"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
       "word": "dispose",
       "pos": "v.",
-      "definition": "处理；处置",
-      "origin": "editorial-unverified",
+      "definition": "v. 布置、排列（正式）；v. 使倾向于、使愿意（正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-4.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/dispose",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/dispose"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -30996,13 +31232,16 @@
     {
       "word": "disposition",
       "pos": "n.",
-      "definition": "性情；倾向",
-      "origin": "editorial-unverified",
+      "definition": "n. 性情、性格（正式）；n. 倾向、意向（正式）；n. 布置、排列（正式）；n. （财产的）处置、转让（法律）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-4.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/disposition",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/disposition"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -31056,14 +31295,19 @@
     },
     {
       "word": "disregard",
-      "pos": "vt./n.",
-      "definition": "vt. 忽视　n. 忽视；漠视",
-      "origin": "editorial-unverified",
+      "pos": "v./n.",
+      "definition": "v. 不理会、漠视（正式）；n. 漠视、不顾（正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-2.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/disregard",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/disregard",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/disregard_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/disregard_2"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -31117,13 +31361,16 @@
     {
       "word": "disrupt",
       "pos": "v.",
-      "definition": "扰乱；中断",
-      "origin": "editorial-unverified",
+      "definition": "v. 扰乱、打乱；v. （以创新）颠覆（行业或市场）（商业）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/disrupt",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/disrupt"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -31153,13 +31400,16 @@
     {
       "word": "disseminate",
       "pos": "v.",
-      "definition": "传播；散布",
-      "origin": "editorial-unverified",
+      "definition": "v. 传播、散布（信息、知识等）（正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-5.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/disseminate",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/disseminate"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -31189,13 +31439,16 @@
     {
       "word": "dissertation",
       "pos": "n.",
-      "definition": "学位论文",
-      "origin": "editorial-unverified",
+      "definition": "n. （学位）论文、专题论文",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-5.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/dissertation",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/dissertation"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -31224,14 +31477,17 @@
     },
     {
       "word": "dissipate",
-      "pos": "vi./vt.",
-      "definition": "vi. 消散　vt. 驱散；浪费",
-      "origin": "editorial-unverified",
+      "pos": "v.",
+      "definition": "v. （使）逐渐消失、（使）消散（正式）；v. 浪费、挥霍（时间、金钱）（正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-2.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/dissipate",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/dissipate"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -31417,13 +31673,16 @@
     {
       "word": "distinctly",
       "pos": "adv.",
-      "definition": "明显地；清楚地",
-      "origin": "editorial-unverified",
+      "definition": "adv. 清楚地、明显地；adv. 独特地、具有鲜明特点地；adv. 确实地、非常",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-5.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/distinctly",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/distinctly"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -31441,37 +31700,46 @@
     {
       "word": "distinguished",
       "pos": "adj.",
-      "definition": "杰出的；著名的",
-      "origin": "editorial-unverified",
+      "definition": "adj. 卓越的、杰出的；adj. （外表）高贵的、有威严的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-3.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/distinguished",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/distinguished"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
       "word": "distort",
       "pos": "v.",
-      "definition": "扭曲；歪曲",
-      "origin": "editorial-unverified",
+      "definition": "v. 使变形、使失真；v. 歪曲、曲解（事实、观点等）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-3.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/distort",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/distort"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
       "word": "distortion",
       "pos": "n.",
-      "definition": "扭曲；变形",
-      "origin": "editorial-unverified",
+      "definition": "n. 变形、失真；n. 歪曲、曲解",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-3.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/distortion",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/distortion"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -31500,14 +31768,19 @@
     },
     {
       "word": "distress",
-      "pos": "n./vt.",
-      "definition": "n. 痛苦；危难　vt. 使痛苦",
-      "origin": "editorial-unverified",
+      "pos": "n./v.",
+      "definition": "n. 痛苦、忧虑；n. 困苦、贫困；n. （船只、飞机等）遇险；n. （身体的）痛苦、（尤指）呼吸困难（医学）；v. 使痛苦、使忧虑",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-1.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/distress",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/distress",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/distress_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/distress_2"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -31561,13 +31834,16 @@
     {
       "word": "disturbance",
       "pos": "n.",
-      "definition": "干扰；骚乱",
-      "origin": "editorial-unverified",
+      "definition": "n. 打扰、干扰；n. 骚乱、闹事；n. （身心功能的）失调、紊乱",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-3.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/disturbance",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/disturbance"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -31584,38 +31860,51 @@
     },
     {
       "word": "ditch",
-      "pos": "n./vt.",
-      "definition": "n. 沟渠　vt. 抛弃",
-      "origin": "editorial-unverified",
+      "pos": "n./v.",
+      "definition": "n. 沟渠；v. 抛弃、丢弃（非正式）；v. （飞机）在海上迫降；v. 逃学（北美，非正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-2.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/ditch",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/ditch",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/ditch_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/ditch_2"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
       "word": "dive",
-      "pos": "n./vi.",
-      "definition": "n. 潜水，跳水　vi. 跳水，俯冲，猛冲",
-      "origin": "ecdict-derived",
+      "pos": "v./n.",
+      "definition": "v. 跳水；v. 潜水（常作 go diving）；v. 下潜；v. 俯冲；v. 扑向、猛冲（非正式）；v. （球员）假摔；v. （价格等）暴跌；n. 跳水；n. 潜水；n. 俯冲；n. 低档酒吧、下等娱乐场所（非正式）；n. （比赛中的）假摔",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/dive",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/dive",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/dive_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/dive_2"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
       "word": "diver",
       "pos": "n.",
-      "definition": "潜水员",
-      "origin": "editorial-unverified",
+      "definition": "n. 潜水员；n. 跳水运动员",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-5.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/diver",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/diver"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -31693,25 +31982,31 @@
     {
       "word": "diversify",
       "pos": "v.",
-      "definition": "使多样化",
-      "origin": "editorial-unverified",
+      "definition": "v. （业务、产品）多样化、扩大经营范围；v. （使）多样化",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-5.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/diversify",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/diversify"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
       "word": "diversion",
       "pos": "n.",
-      "definition": "转移；消遣；改道",
-      "origin": "editorial-unverified",
+      "definition": "n. 转向、改道；（资金等的）挪用；n. 转移注意力的事物；n. 临时绕行路线（英式；北美作 detour）；n. 消遣、娱乐（较正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-4.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/diversion",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/diversion"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -31729,13 +32024,16 @@
     {
       "word": "divert",
       "pos": "v.",
-      "definition": "使转向；转移",
-      "origin": "editorial-unverified",
+      "definition": "v. 使转向、使改道（常用被动）；v. 挪用（资金、材料等）（常用被动）；v. 转移（注意力）；v. 使娱乐、使消遣（正式，常用被动）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-3.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/divert",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/divert"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -31824,15 +32122,17 @@
     },
     {
       "word": "dizzy",
-      "pos": "adj./vt.",
-      "definition": "adj. 晕眩的，眼花缭乱的　vt. 使晕眩",
-      "origin": "ecdict-derived",
+      "pos": "adj.",
+      "definition": "adj. 头晕的、眩晕的；adj. 使人眩晕的、变化快得令人头晕的；adj. 愚蠢的、糊涂的（尤北美，非正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/dizzy",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/dizzy"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -31934,13 +32234,16 @@
     {
       "word": "documentation",
       "pos": "n.",
-      "definition": "文件；证明材料",
-      "origin": "editorial-unverified",
+      "definition": "n. 证明文件、证件；n. （产品、软件的）说明文档；n. 记录、文献记载",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-4.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/documentation",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/documentation"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -31957,14 +32260,19 @@
     },
     {
       "word": "dodge",
-      "pos": "v.",
-      "definition": "躲避；回避",
-      "origin": "editorial-unverified",
+      "pos": "v./n.",
+      "definition": "v. 闪开、躲避；v. 逃避、回避（尤指不诚实地）（较非正式）；n. 逃避的妙计、诡计（非正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-4.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/dodge",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/dodge",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/dodge_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/dodge_2"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -32054,14 +32362,16 @@
     {
       "word": "dolphin",
       "pos": "n.",
-      "definition": "海豚",
-      "origin": "editorial-unverified",
+      "definition": "n. 海豚",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-5.js",
-        "js/words-ext.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/dolphin",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/dolphin"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -32216,14 +32526,19 @@
     },
     {
       "word": "doom",
-      "pos": "n./vt.",
-      "definition": "n. 厄运　vt. 注定（失败）",
-      "origin": "editorial-unverified",
+      "pos": "n./v.",
+      "definition": "n. 厄运、劫数、毁灭；v. 使注定（失败、灭亡等）（通常用被动）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-2.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/doom",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/doom",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/doom_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/doom_2"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -32325,13 +32640,16 @@
     {
       "word": "doubtful",
       "pos": "adj.",
-      "definition": "怀疑的；不确定的",
-      "origin": "editorial-unverified",
+      "definition": "adj. 怀疑的、不确定的；adj. 不大可能的；adj. 前景不明的、可能变坏的（通常不用于名词前）；adj. 可疑的、靠不住的（仅用于名词前）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-5.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/doubtful",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/doubtful"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -32461,13 +32779,16 @@
     {
       "word": "drainage",
       "pos": "n.",
-      "definition": "排水；排水系统",
-      "origin": "editorial-unverified",
+      "definition": "n. 排水、排泄；n. 排水系统",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-3.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/drainage",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/drainage"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -32521,13 +32842,16 @@
     {
       "word": "drastic",
       "pos": "adj.",
-      "definition": "激烈的；严厉的",
-      "origin": "editorial-unverified",
+      "definition": "adj. 激烈的、极端的、剧烈的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-3.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/drastic",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/drastic"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -32545,14 +32869,16 @@
     {
       "word": "drawback",
       "pos": "n.",
-      "definition": "缺点，退税",
-      "origin": "ecdict-derived",
+      "definition": "n. 缺点、不利因素",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/drawback",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/drawback"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -32597,26 +32923,35 @@
     },
     {
       "word": "dread",
-      "pos": "n./vt.",
-      "definition": "n. 恐惧　vt. 害怕",
-      "origin": "editorial-unverified",
+      "pos": "v./n./adj.",
+      "definition": "v. 害怕、担心；n. 恐惧、担心；令人畏惧的事物；n. 脏辫（dreads，非正式，复数）；adj. 可怕的、令人畏惧的（正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-2.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/dread",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/dread",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/dread_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/dread_2",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/dread_3"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
       "word": "dreadful",
       "pos": "adj.",
-      "definition": "可怕的；糟糕的",
-      "origin": "editorial-unverified",
+      "definition": "adj. 糟糕的、讨厌的（尤英式）；adj. 极其的、十足的（强调糟糕程度，仅用于名词前）；adj. 可怕的、令人痛苦的（通常用于名词前）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-5.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/dreadful",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/dreadful"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -32741,14 +33076,19 @@
     },
     {
       "word": "drip",
-      "pos": "vi./n.",
-      "definition": "vi. 滴下　n. 滴；水滴声",
-      "origin": "editorial-unverified",
+      "pos": "v./n.",
+      "definition": "v. 滴下；v. 滴水、使滴落；v. 充满、满是；n. 滴水声、滴落；n. 水滴；n. 接连不断（的坏事）；n. 输液器、点滴（尤北美亦作 IV）；n. 乏味无能的人（旧式，非正式，贬义）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-1.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/drip",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/drip",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/drip_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/drip_2"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -32789,14 +33129,19 @@
     },
     {
       "word": "drizzle",
-      "pos": "n./vi.",
-      "definition": "n. 毛毛雨　vi. 下毛毛雨",
-      "origin": "editorial-unverified",
+      "pos": "v./n.",
+      "definition": "v. 下毛毛雨；v. 在（食物）上淋少量液体；n. 毛毛雨、细雨",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-2.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/drizzle",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/drizzle",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/drizzle_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/drizzle_2"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -32946,13 +33291,16 @@
     {
       "word": "dual",
       "pos": "adj.",
-      "definition": "双重的",
-      "origin": "editorial-unverified",
+      "definition": "adj. 双重的、两部分的（仅用于名词前）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-3.js"
+        "js/lexicon-review-036.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/dual",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/dual"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {

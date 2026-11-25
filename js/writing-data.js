@@ -15,7 +15,9 @@ sentenceTags: {
   "s-library":"nonfinite,collocation,indirect,modal,relative,agreement,passive,passive,indirect,tense",
   "s-work":"tense,nonfinite,compare,collocation,indirect,tense,collocation,nonfinite,tense,relative",
   "s-travel":"indirect,indirect,agreement,tense,nonfinite,modal,tense,modal,agreement,tense",
-  "s-science":"relative,indirect,modal,collocation,passive,tense,indirect,nonfinite,agreement,modal"
+  "s-science":"relative,indirect,modal,collocation,passive,tense,indirect,nonfinite,agreement,modal",
+  "s-housing":"nonfinite,indirect,modal,compare,relative,passive,agreement,tense,collocation,modal",
+  "s-research":"modal,indirect,tense,nonfinite,passive,compare,relative,tense,modal,agreement"
 },
 
 sentenceSets: [
@@ -90,6 +92,30 @@ I read that bees are disappearing.|[Has] / anyone / figured out / what / is caus
 The old bridge is going to be replaced.|[The new one] / will be / strong enough / to survive / [an earthquake].|surviving|adj. + enough to do 表示「足够……以做某事」。
 Why is the river so polluted?|[Waste] / from / nearby factories / has been / flowing / [into it].|have been|主语 Waste 是不可数名词，用 has been。
 I'm writing a report on renewable energy.|[You] / could / compare / solar power / with / [wind power].|comparing|could 后接动词原形 compare；compare A with B。
+`},
+  { id:"s-housing", name:"宿舍与住房", items:`
+My roommate plays music late at night.|[Have you] / asked / him / to turn / it / [down]?|turning|ask sb. to do sth.，ask 后接不定式 to turn。
+I'm thinking about moving off campus next year.|[Do you know] / how much / the rent / is / [near campus]?|is the rent|间接疑问句用陈述语序 how much the rent is；干扰块 is the rent 是疑问语序。
+The heater in my room isn't working.|[You should] / report / it / to / [the housing office].|reporting|情态动词 should 后接动词原形 report。
+Is the new dormitory nice?|[It is] / much / bigger / than / [the old one].|biggest|与 than 搭配用比较级 bigger，much 修饰比较级。
+Where did you leave the key?|[I left] / it / with / the student / who / [lives next door].|which|先行词 the student 指人，关系代词用 who。
+Did they fix the elevator yet?|[It] / was / repaired / [this morning].|repairing|电梯是被修的，用被动语态 was repaired。
+Everyone on our floor is complaining about the noise.|[Each of] / the students / has / signed / [the letter].|have|each of 作主语时谓语用单数 has。
+How long have you lived in this building?|[I have] / lived / here / since / [last August].|for|since 接时间点 last August；for 接一段时间。
+I need to buy some furniture for my apartment.|[You could] / look / for / used items / [online].|looking|could 后接动词原形 look；look for 是固定搭配。
+Can I borrow your vacuum cleaner?|[Sure, but] / please / return / it / to me / [by Friday].|returning|祈使句 please return，动词用原形。
+`},
+  { id:"s-research", name:"研究与实验室", items:`
+I can't decide on a topic for my research paper.|[Why don't you] / ask / the professor / for / [some suggestions]?|asking|Why don't you 后接动词原形 ask，用来提建议。
+The lab results don't look right.|[Could you] / tell me / when / the samples / were / [collected]?|were the samples|间接疑问句用陈述语序 when the samples were collected。
+Have you finished the literature review?|[Not yet. I am] / still / reading / the articles / [you sent].|read|am still reading 是现在进行时，be 后接 doing。
+The experiment took longer than we planned.|[We need] / to / leave / more time / [for the next one].|leaving|need 后接不定式 to leave。
+Who is analyzing the survey data?|[The data] / is being / analyzed / by / [two graduate students].|analyzing|数据是被分析的，用现在进行时的被动语态 is being analyzed。
+This article is very hard to understand.|[It is] / more / technical / than / [the one we read last week].|most|与 than 搭配用比较级 more technical。
+Should we include all the charts in our report?|[I think] / we / should / only include / the ones / [that support our argument].|including|should 后接动词原形 include；that 引导的定语从句修饰 the ones。
+Did you hear back from the journal?|[They] / said / they / would / make / [a decision next month].|will|主句是过去时 said，从句中 will 变成 would。
+I'm worried we won't get enough participants.|[We could] / offer / a small payment / to / [anyone who joins].|offering|could 后接动词原形 offer；offer sth. to sb.。
+Where are the safety goggles kept?|[They are] / kept / in / the cabinet / [next to the sink].|keep|goggles 是复数，be 动词用 are；被动语态 are kept。
 `}
 ],
 
@@ -221,7 +247,55 @@ Thank you for considering my views.
 
 Sincerely,
 Laura Kim`,
-    phrases:["I am writing to express my concern about ...","I strongly believe ...","... is one of the few ...","I understand that ... However, ...","perhaps the city could ... instead.","Thank you for considering my views."] }
+    phrases:["I am writing to express my concern about ...","I strongly believe ...","... is one of the few ...","I understand that ... However, ...","perhaps the city could ... instead.","Thank you for considering my views."] },
+  { id:"e-roommate", title:"请宿舍管理员协调室友问题", to:"Mr. Patel, Residence Hall Director",
+    scenario:"You live in a university residence hall. For several weeks, your roommate has had friends visiting late at night, and you have had trouble sleeping before your morning classes. Write an email to Mr. Patel, the residence hall director.",
+    bullets:["Describe the problem and how it is affecting you.","Explain what you have already tried to do about it.","Ask for a specific kind of help."],
+    model:`Dear Mr. Patel,
+
+I am writing to ask for your advice about a problem with my roommate in Room 318. For the past three weeks, she has had friends visiting until after 1 a.m. on most weeknights. Because I have classes at 8 a.m., I have been very tired, and last week I fell asleep during a lab session.
+
+I have already spoken to her twice. She apologized; however, the visits have continued. In addition, I suggested that her friends meet in the study lounge, but that has not worked either.
+
+Would it be possible to arrange a meeting with the three of us to agree on some quiet hours? If that does not help, I would like to know whether I could move to another room next semester.
+
+Thank you for your time.
+
+Best regards,
+Lina Moreno`,
+    phrases:["I am writing to ask for your advice about ...","For the past three weeks, ...","Because ..., I have been ...","I have already spoken to ...","Would it be possible to arrange ...?","If that does not help, I would like to know whether ..."] },
+  { id:"e-internship", title:"向实习主管请假参加考试", to:"Ms. Grant, Internship Supervisor",
+    scenario:"You are doing a part-time internship at a local company. You have just learned that one of your final exams is scheduled on a day when you are supposed to work. Write an email to Ms. Grant, your internship supervisor.",
+    bullets:["Explain the scheduling conflict.","Suggest a way to make up the missed hours.","Ask whether your plan is acceptable."],
+    model:`Dear Ms. Grant,
+
+I hope you are well. I am writing because I have a scheduling conflict next month. The university has just announced that my statistics final exam will be held on Thursday, December 11, from 9 a.m. to noon, which is one of my regular workdays at the office.
+
+I do not want my absence to cause problems for the team. Therefore, I would like to suggest a solution. First, I could work an extra four hours on Monday and Tuesday of that week, Second, I could come in on Saturday morning if the office is open. In addition, I will make sure the weekly sales report is finished before the exam.
+
+Would either of these options work for you? Please let me know if you would prefer a different arrangement.
+
+Thank you for understanding.
+
+Sincerely,
+Kevin Liu`,
+    phrases:["I am writing because I have a scheduling conflict ...","which is one of my regular workdays","I do not want my absence to cause problems for ...","I would like to suggest a solution.","Would either of these options work for you?","Please let me know if you would prefer ..."] },
+  { id:"e-speaker", title:"邀请教授到社团做讲座", to:"Professor Adams, Department of Environmental Science",
+    scenario:"You are the president of a student environmental club. You would like Professor Adams, who teaches a popular course on climate science, to give a talk at one of your club meetings. Write an email to Professor Adams.",
+    bullets:["Introduce yourself and the club.","Explain why you are inviting the professor and what the talk could be about.","Give details about the time and place, and ask about the professor's availability."],
+    model:`Dear Professor Adams,
+
+My name is Sara Kim, and I am a third-year biology student and the president of the Green Campus Club. Our club has about forty members, and we organize projects such as tree planting and recycling campaigns on campus.
+
+I am writing because several of our members took your climate science course last year and found it inspiring. Therefore, we would be honored if you could give a short talk at one of our meetings. A topic that many members are interested in is how individual students can reduce their carbon footprint in practical ways.
+
+Our meetings are held on Wednesdays from 6 to 7 p.m. in Room 120 of the Student Center. The talk could be about thirty minutes; however, we would be happy to adjust the length. Would any Wednesday in February be convenient for you?
+
+Thank you for considering our invitation.
+
+Best regards,
+Sara Kim`,
+    phrases:["My name is ..., and I am ...","Our club has about ... members, and we ...","We would be honored if you could ...","A topic that many members are interested in is ...","Our meetings are held on ...","Would any ... be convenient for you?"] }
 ],
 
 discussions: [
@@ -288,6 +362,30 @@ discussions: [
       { name:"Ava", post:"Cities need to think about the future. Many old buildings are unsafe in earthquakes and use a lot of energy. Modern buildings can house more people, which is important because housing is so expensive in big cities." }
     ],
     model:`Both Noah and Ava make strong arguments, but I believe cities should preserve their most important old buildings while modernizing them on the inside. Noah is right that historic buildings give a city its identity, and that this identity has economic value through tourism. However, Ava's safety concerns cannot be ignored. Fortunately, cities do not have to choose between the two. In Paris, for instance, many nineteenth-century apartment buildings have kept their original walls but received new heating systems, insulation, and earthquake supports. This approach protects the city's history and makes the buildings safe and efficient. Buildings that have little historical value, on the other hand, could be replaced to create more housing.`,
-    phrases:["Both ... and ... make strong arguments, but I believe ...","... is right that ...","However, ...'s ... cannot be ignored.","Fortunately, ... do not have to choose between the two.","..., on the other hand, could ..."] }
+    phrases:["Both ... and ... make strong arguments, but I believe ...","... is right that ...","However, ...'s ... cannot be ignored.","Fortunately, ... do not have to choose between the two.","..., on the other hand, could ..."] },
+  { id:"d-ai", title:"学生是否应该用 AI 工具完成作业", topic:"Education Technology",
+    professor:{ name:"Dr. Hughes", post:"Artificial intelligence tools can now summarize readings, check grammar, and even write entire essays. Some instructors ban these tools completely, while others encourage students to use them as long as they explain how. What is your opinion? Should students be allowed to use AI tools for their coursework? Why or why not?" },
+    students:[
+      { name:"Priya", post:"I think AI tools should be allowed. Professionals in almost every field already use them at work, so students need to learn how to use them well. Banning them is like banning calculators in a math class." },
+      { name:"Marcus", post:"I'm worried that students will stop thinking for themselves. If an AI writes your essay, you never practice organizing your own ideas. Assignments are supposed to help us learn, not just produce a finished product." }
+    ],
+    model:`I understand Marcus's concern, but I agree with Priya that AI tools should be allowed, as long as there are clear rules. The key is to separate tasks where AI supports learning from tasks where it replaces learning. For example, in my economics class last semester, our professor let us use AI to explain difficult terms in the readings, but we had to write our essays ourselves and submit our outlines first. As a result, I understood the material faster without skipping the hard part of developing my own argument. In addition, instructors could require students to describe exactly how they used AI in each assignment. That way, students would learn to use these tools responsibly, which is a skill they will definitely need after graduation.`,
+    phrases:["I understand ...'s concern, but I agree with ... that ...","The key is to separate ... from ...","For example, in my ... class last semester, ...","Instructors could also require ...","That way, ..."] },
+  { id:"d-tourism", title:"热门城市是否应限制游客数量", topic:"Tourism and Society",
+    professor:{ name:"Dr. Reyes", post:"Some popular cities, such as Venice and Barcelona, receive millions of tourists every year. Tourism brings money and jobs, but residents complain about crowds, noise, and rising rents. A few cities have started limiting the number of visitors or charging entry fees. Should popular cities limit the number of tourists? Explain your view." },
+    students:[
+      { name:"Hannah", post:"Yes, I think limits are necessary. When a city becomes too crowded, it stops being a nice place to live. Local people are forced to move out because apartments are rented to tourists instead." },
+      { name:"Omar", post:"I disagree. Many families depend on tourism for their income, especially restaurant and hotel workers. Limiting visitors would hurt these people. Cities should spread tourists out instead of turning them away." }
+    ],
+    model:`I agree with Hannah that some limits are needed, although Omar is right that tourism supports many jobs. In my opinion, the main problem is not the total number of visitors but the fact that they all arrive at the same places at the same time. For example, when I visited a famous old town two summers ago, the main square was so crowded that I could barely walk, while quieter neighborhoods nearby were almost empty. Therefore, a small daily entry fee for the busiest areas could reduce crowds, and the money could fund affordable housing for residents. In addition, cities could follow Omar's suggestion and promote less famous attractions. This combination would protect local communities without destroying the income that tourism provides.`,
+    phrases:["I agree with ... that ..., although ... is right that ...","In my opinion, the main problem is not ... but ...","For example, when I visited ...","Therefore, ...","In addition, cities could follow ...'s suggestion and ..."] },
+  { id:"d-grades", title:"大学是否应取消字母评分", topic:"Education",
+    professor:{ name:"Dr. Kim", post:"Some universities are experimenting with replacing letter grades such as A, B, and C with a simple pass or fail system, especially in the first year. Supporters say this reduces stress and encourages students to take challenging courses. Opponents argue that grades motivate students and help employers compare applicants. Do you think universities should replace letter grades with pass or fail? Why?" },
+    students:[
+      { name:"Elena", post:"A pass or fail system would be great for first-year students. Many of us are adjusting to a new environment, and the pressure of grades makes it hard to explore new subjects. I would have taken a physics class if I hadn't been worried about my GPA." },
+      { name:"Tyler", post:"Without grades, I think a lot of students would just do the minimum. Grades show who worked hard. Also, graduate schools and employers need a way to tell students apart." }
+    ],
+    model:`Although Tyler makes a fair point about motivation, I believe Elena's idea is better, at least for the first year of university. Students arrive from very different high schools, and their first semester is often more about adjusting than about showing their true ability. A pass or fail system would let them focus on learning study skills instead of worrying about every point. For example, my cousin's university uses this system for first-year courses, and she told me it encouraged her to try a computer science class, which later became her major. To address Tyler's concern, universities could return to letter grades from the second year, so graduate schools and employers would still have plenty of information to compare applicants.`,
+    phrases:["Although ... makes a fair point about ..., I believe ...'s idea is better","at least for ...","A pass or fail system would let them ...","For example, my cousin's university ...","To address ...'s concern, universities could ..."] }
 ]
 };

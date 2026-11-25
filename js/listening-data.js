@@ -53,6 +53,30 @@ Why didn't you sign up for the writing workshop?|I didn't know first-year studen
 It looks like it's going to rain.|Then we'd better move the picnic indoors.|It rained a lot last spring.|Look at the train.|I like the way it looks.|对天气的判断作出相应的计划。rain 和 train 发音相近。
 The professor said we can choose our own topic.|That gives us a lot more freedom.|The topic was chosen last week.|The professor is choosing a new car.|I said it too.|对消息作出评价。
 Should I print the handouts or send them by email?|Email is fine. It saves paper.|Yes, you should.|I sent a letter to my professor yesterday.|Hand me the paper, please.|选择疑问句（A or B）不能用 Yes 回答，要选一个。
+`},
+  { id:"r-dorm", level:1, name:"宿舍与生活", items:`
+Where is the laundry room in this building?|It's in the basement, next to the stairs.|I washed my clothes yesterday.|The room is very clean and quiet this week.|Yes, it has a laundry room.|问 Where，回答位置。不能用 Yes 回答特殊疑问句。
+How much does a meal plan cost?|About two thousand dollars a semester.|I usually plan my meals on Sunday nights.|At the dining hall.|Yes, it costs a lot.|问 How much，回答价钱。plan 一词重复出现是干扰。
+Can you help me move this desk?|Sure, which side should I lift?|I moved here last year.|The desk is made of wood.|No, I didn't help him with anything last night.|请求帮忙，用 Sure 接受并问细节最自然。
+What time does the bookstore open on Saturdays?|At ten, I think.|I bought two books there.|The store is across the street from the main library.|It was open yesterday.|问 What time，回答时间。
+Are you going home for the holiday?|No, I'm staying on campus this year.|I went home by train.|Yes, the holiday was great, thank you for asking.|My home is in Ohio.|一般疑问句，用 No 加原因回答；注意时态，C 说的是过去。
+Who's in charge of the room assignments?|You should ask the housing office.|The room is on the second floor.|I charged my phone before class.|Yes, he's in charge of everything in the building.|问 Who，回答负责的人或部门；charge 有发音陷阱。
+My roommate keeps leaving the lights on.|Have you talked to her about it?|The lights are very bright in the hall.|I left early.|She is a very good friend of mine from high school.|对方抱怨，回应给出建议。
+Which bus goes to the shopping center?|The number seven, I believe.|It's a big shopping center with a cinema and a lot of stores.|I went shopping.|Yes, the bus is late.|问 Which，回答具体哪一路。
+Would you rather cook tonight or order pizza?|Let's order. I'm too tired to cook.|I ordered a new phone online.|Yes, I would.|Pizza is popular in many countries around the world.|选择疑问句（A or B）不能用 Yes 回答，要选一个。
+I can't find my room key anywhere.|Did you check your coat pocket?|The key to success is hard work.|My room is on the third floor of the building.|I found a nice restaurant.|对方找不到钥匙，提出建议。key 的另一个意思是干扰。
+`},
+  { id:"r-implied", level:3, name:"言外之意", items:`
+Did you enjoy the guest lecture this afternoon?|Let's just say I've heard better.|I'll enjoy the lecture very much.|The guest arrived at noon.|Yes, the lecture hall was very full this afternoon.|委婉表达不满意：I've heard better 意思是讲得一般。
+Are you coming to the review session tonight?|I wouldn't miss it, with the final on Monday.|The session was reviewed last week.|I came here by bus.|No, the exam on Monday is not going to be reviewed by anyone.|wouldn't miss it 表示一定会去，并给出理由。
+Could you look over my essay before I submit it?|I'm swamped today, but I could do it first thing tomorrow.|The essay was submitted online.|I looked over the hill.|Yes, it is a very long essay about the history of science.|先说明今天太忙，再提出替代时间，是委婉的有条件同意。
+The printer in the lab is broken again.|That's the third time this month.|I printed my paper.|The lab is open late tonight for students who need to finish their projects.|It was broken into pieces.|对消息作出评价，暗示问题反复出现。
+Shouldn't you be at work by now?|My shift was moved to the afternoon.|Yes, I should work harder.|Work is very important to me and to my family.|I worked last week.|对方暗示你迟到了，回答解释原因，属于间接回答。
+I heard the chemistry exam was really difficult.|It wasn't as bad as people said.|I heard it too.|Chemistry is one of the hardest subjects for many students in my year.|The exam room is cold.|对传闻作出部分否定的回应。
+Do you think the café will still be open?|Not at this hour, I'm afraid.|I think it's a nice café with good coffee and comfortable chairs.|It opened last year.|Yes, I think so too.|委婉地否定：Not at this hour。D 没有回答问题本身的判断依据。
+Why don't we take a short break?|Good idea. I can't focus anymore.|Because it's broken.|We took the bus to the science building after the break.|I don't know why.|Why don't we 是提建议，不是问原因，B 和 E 都误解了意图。
+I'm not sure this data supports our conclusion.|Maybe we should run the experiment again.|The data was collected.|I'm sure it will be a sunny day tomorrow afternoon.|Our conclusion is on page five.|对方表示怀疑，回应提出下一步做法。
+You've been working on that problem for hours.|I know, but I'm almost there.|The problem was solved yesterday.|Hours of the library are posted near the front entrance.|I worked at a bank.|对方暗示该休息了，回答承认并表示快好了。
 `}
 ],
 
@@ -166,6 +190,33 @@ M: It happens. On the final, try making a quick outline before you write, so you
     qs:[
       { type:"detail", q:"Why did the woman lose points?", opts:["She did not fully compare the two theories.","Her ideas were not clear.","Her answer was too short.","She misunderstood the main argument of the reading."], why:"题目要求比较两种理论，她只详细讨论了一种。" },
       { type:"detail", q:"What does the man advise her to do?", opts:["Make an outline before writing.","Study more theories.","Write longer answers.","Visit his office hours every week until the final."], why:"try making a quick outline before you write。" }
+    ]},
+  { id:"c-locker", level:1, title:"体育馆储物柜", script:`M: Hi, I'd like to rent a locker for the semester.
+W: Sure. The small ones are twenty dollars, and the large ones are thirty-five.
+M: I just need space for my shoes and a towel.
+W: Then a small one is fine. You'll need to bring your own lock, though. We don't provide them.
+M: Okay. I'll buy one at the bookstore and come back this afternoon.`,
+    qs:[
+      { type:"detail", q:"Why does the man choose a small locker?", opts:["He only needs to store a few things.","The large lockers are all taken.","He will only use it for one month.","The small ones come with a lock."], why:"I just need space for my shoes and a towel，东西不多。" },
+      { type:"infer", q:"What will the man probably do next?", opts:["Buy a lock at the bookstore.","Pay thirty-five dollars for a locker.","Ask the woman for a free lock.","Leave his shoes with the woman."], why:"I'll buy one at the bookstore and come back this afternoon。" }
+    ]},
+  { id:"c-extension", level:2, title:"申请论文延期", script:`W: Professor Lin, do you have a minute? It's about the history paper due Friday.
+M: Of course. Is there a problem?
+W: I've been sick most of this week, and I haven't been able to finish my research. I was wondering if I could have a few extra days.
+M: I'm sorry to hear that. I can give you until Tuesday, but I'll need a note from the health center.
+W: That's no problem. I saw a doctor there on Monday.
+M: Good. Just email it to me, and in the meantime, focus on getting better.`,
+    qs:[
+      { type:"purpose", q:"Why does the woman go to see the professor?", opts:["To ask for more time to finish a paper.","To find out what topic she should write about.","To return a book she borrowed for her research.","To explain why she missed a test on Monday."], why:"I was wondering if I could have a few extra days，来请求延期。" },
+      { type:"detail", q:"What does the professor ask the woman to do?", opts:["Send him a note from the health center.","Finish the paper by Friday.","Change the topic of her paper to something easier.","Meet him again on Tuesday."], why:"I'll need a note from the health center ... Just email it to me。" }
+    ]},
+  { id:"c-fieldtrip", level:3, title:"地质野外考察", script:`M: Professor, I have a question about Saturday's field trip. The syllabus says it's required, but I have a job on Saturdays. I've already asked to switch shifts, and my manager said no.
+W: I see. Well, the trip is required because the rock formations we'll study aren't something I can show you in class. But the graduate assistant is leading a smaller trip to the same site two weeks later, on a Sunday.
+M: Oh, that would work much better.
+W: Just keep in mind that the written report is still due on the original date. You'll have to work from the photos we post online.`,
+    qs:[
+      { type:"function", q:"Why does the man mention that he already asked to switch shifts?", opts:["To show that he has tried to solve the problem himself.","To complain that his manager is unfair.","To ask the professor to call his manager.","To explain why he was late for class."], why:"他强调已经尝试换班但被拒绝，说明自己不是不想去，而是确实没有办法。" },
+      { type:"infer", q:"What will the man probably find difficult about attending the later trip?", opts:["Writing the report before he has visited the site.","Getting to the site without a car.","Finding someone to lead the Sunday trip.","Taking photos of the rock formations."], why:"报告仍然按原来的日期交，他只能先看网上的照片写，而那时他还没去过现场。" }
     ]}
 ],
 
@@ -220,6 +271,21 @@ announcements: [
     qs:[
       { type:"detail", q:"What will happen to late applications?", opts:["They will be placed at the end of the list.","They will not be accepted.","They will be charged a fee.","They will be reviewed first."], why:"students who submit late applications will be placed at the end of the list。" },
       { type:"infer", q:"What must two friends do if they want to live together?", opts:["List each other on their applications.","Apply together on one form.","Visit the housing office together before Friday.","Submit their applications early."], why:"both of you must list each other on your applications，否则随机分配。" }
+    ]},
+  { id:"a-gym-floor", level:1, title:"健身房地板清洁", speaker:"M", script:`Hello, everyone. This is a reminder that the campus gym will be closed this Thursday for floor cleaning. It will reopen on Friday morning at six a.m. During the closure, students can use the fitness room in Baker Hall, which is open from seven a.m. to ten p.m. Please bring your student ID.`,
+    qs:[
+      { type:"detail", q:"Why will the gym be closed on Thursday?", opts:["The floors will be cleaned.","There will be a sports event.","The equipment will be replaced.","It is a national holiday."], why:"closed this Thursday for floor cleaning。" },
+      { type:"detail", q:"Where can students exercise on Thursday?", opts:["In the fitness room in Baker Hall.","In the main gym after six p.m.","At a city sports center.","In the student center."], why:"students can use the fitness room in Baker Hall。" }
+    ]},
+  { id:"a-concert", level:2, title:"音乐会改地点", speaker:"W", script:`Attention, please. Tonight's student orchestra concert has been moved from the outdoor stage to Hartman Hall because of the strong winds expected this evening. The start time has not changed. It will still begin at seven thirty. Since Hartman Hall has fewer seats than the outdoor area, we recommend arriving at least twenty minutes early. Tickets already purchased will be accepted at the door.`,
+    qs:[
+      { type:"purpose", q:"What is the main purpose of the announcement?", opts:["To tell listeners about a change of location for a concert.","To announce that a concert has been canceled because of the weather.","To advertise tickets for a new orchestra.","To explain how to buy tickets online."], why:"通知的核心是音乐会因大风从户外舞台改到 Hartman Hall。" },
+      { type:"infer", q:"Why does the speaker recommend arriving early?", opts:["There may not be enough seats for everyone.","The concert will start earlier than planned.","Tickets must be exchanged before the show.","The doors will close at seven thirty."], why:"Since Hartman Hall has fewer seats than the outdoor area，座位变少，可能坐不下。B 与 start time has not changed 矛盾。" }
+    ]},
+  { id:"a-chem", level:3, title:"化学课实验安排变动", speaker:"M", script:`Before we start today, a quick change to the lab schedule. Next week's experiment on reaction rates was supposed to use the new equipment in Room 310, but the installation has been delayed. So, instead of moving to the next experiment, we'll repeat last week's titration, which several of you found difficult. Those of you who already got accurate results can use the time to begin your final lab report. The reaction-rate experiment will now be held in the last week of the term.`,
+    qs:[
+      { type:"detail", q:"Why is the lab schedule changing?", opts:["New equipment has not been installed yet.","Room 310 is being used for an exam.","The professor will be away next week.","Too many students failed last week's experiment."], why:"the installation has been delayed，新设备还没装好。" },
+      { type:"infer", q:"What will a student who got accurate titration results most likely do next week?", opts:["Start writing the final lab report.","Do the reaction-rate experiment early.","Help other students in Room 310.","Repeat the titration to check the results."], why:"Those of you who already got accurate results can use the time to begin your final lab report。" }
     ]}
 ],
 
@@ -316,6 +382,45 @@ Linguists find creoles especially interesting because they seem to show how chil
       { type:"detail", q:"What is one feature of a pidgin?", opts:["It has no native speakers.","It has a very large vocabulary.","It has complex verb endings.","It is learned by children as a first language."], why:"a pidgin has no native speakers。" },
       { type:"function", q:"Why does the professor mention Haitian Creole?", opts:["To give an example of a creole with many native speakers.","To show that creoles only come from French.","To compare it with a pidgin used in trade.","To explain why creoles disappear."], why:"is a well-known example and today has millions of native speakers，用来举例。" },
       { type:"attitude", q:"What does the professor suggest about the explanation for similarities among creoles?", opts:["Researchers do not fully agree about it.","It has been proven by recent experiments.","It is not important to linguists.","It shows that all creoles come from one language."], why:"Some researchers argue ..., although others think ...，说明学者之间存在争议。" }
+    ]},
+  { id:"t-tea", level:1, title:"茶叶的加工", topic:"Agriculture", speaker:"W", script:`Today I want to talk about tea. Here's something that surprises a lot of people: green tea, black tea, and oolong tea all come from the same plant. The difference is not the plant but what happens to the leaves after they're picked.
+
+The key process is called oxidation. When a fresh tea leaf is cut or crushed, chemicals inside it react with oxygen in the air, and the leaf slowly turns brown. It's similar to what happens when you cut an apple and leave it on the table.
+
+For black tea, producers roll the leaves to break them and then let them oxidize fully, which gives the tea its dark color and strong flavor. For green tea, they do the opposite. They heat the leaves soon after picking, either by steaming or by pan-frying, and the heat stops oxidation. That's why green tea stays green and tastes lighter. Oolong is in between. The leaves are allowed to oxidize only partly before they're heated.
+
+So when you choose a tea, you're really choosing how much the leaves were allowed to oxidize.`,
+    qs:[
+      { type:"main", q:"What is the talk mainly about?", opts:["How processing creates different types of tea.","Where the best tea plants are grown.","Why tea is healthier than coffee.","How tea became popular around the world."], why:"讲座说明三种茶来自同一种植物，区别在于采摘后的加工，尤其是氧化程度。" },
+      { type:"function", q:"Why does the professor mention a cut apple?", opts:["To give a familiar example of oxidation.","To compare the flavor of apples and tea.","To explain how tea leaves are cut.","To suggest a way to store tea."], why:"It's similar to what happens when you cut an apple，用日常现象解释氧化。" },
+      { type:"detail", q:"How do producers stop oxidation in green tea?", opts:["By heating the leaves soon after picking.","By rolling the leaves for a long time.","By keeping the leaves in a cold room.","By picking the leaves at night."], why:"They heat the leaves soon after picking ... and the heat stops oxidation。" },
+      { type:"infer", q:"What can be inferred about oolong tea?", opts:["Its color and flavor are between those of green and black tea.","It is made from a different plant.","It is not heated at any stage.","It oxidizes more than black tea."], why:"Oolong is in between，部分氧化后再加热，所以颜色和味道介于两者之间。" }
+    ]},
+  { id:"t-trust", level:2, title:"陌生人之间的信任", topic:"Economics", speaker:"M", script:`Last time we talked about markets between people who know each other, like neighbors in a village. Today I want to ask a harder question: how do strangers learn to trust each other enough to trade?
+
+Think about buying something online from a seller you've never met. You send money first and hope the item arrives. Why would anyone take that risk? One answer is reputation systems, the ratings and reviews that buyers leave. A seller with hundreds of positive reviews has a strong reason to stay honest, because one bad experience can damage future sales.
+
+Now, this idea isn't new. In the eleventh century, a group of Mediterranean traders, known as the Maghribi traders, faced the same problem. They sent goods to agents in distant ports and couldn't watch what those agents did. So they shared information through letters. If an agent cheated one merchant, word spread, and no one in the group would hire him again.
+
+What's interesting is that both systems depend on the same thing. Not on laws or courts, but on information flowing between people. Of course, reputation systems have weaknesses. Reviews can be faked, and new sellers find it hard to get started. We'll look at some solutions next week.`,
+    qs:[
+      { type:"main", q:"What is the talk mainly about?", opts:["How reputation helps strangers trust each other in trade.","Why online shopping has become more popular than shopping in stores.","The history of trade in the Mediterranean.","How courts settle disputes between traders."], why:"讲座的问题是陌生人如何建立信任，答案是声誉机制，古今两例都在说明这一点。" },
+      { type:"organization", q:"How does the professor develop his point about reputation?", opts:["He connects a modern example with a historical one.","He lists the advantages of several types of laws.","He describes an experiment and its results.","He compares two online companies."], why:"先讲网购评价，再讲十一世纪地中海商人，说明两者依赖同一机制。" },
+      { type:"detail", q:"What happened to an agent who cheated a Maghribi trader?", opts:["Other members of the group refused to hire him.","He was taken to court in a distant port.","He had to pay back twice the value of the goods.","He lost his letters of introduction."], why:"word spread, and no one in the group would hire him again。" },
+      { type:"attitude", q:"What is the professor's attitude toward reputation systems?", opts:["He thinks they are useful but have limitations.","He believes they have replaced the need for laws completely.","He thinks they are too new to evaluate.","He believes they work better online than offline."], why:"Of course, reputation systems have weaknesses，指出伪造评价和新卖家起步难的问题，态度是肯定但有保留。" }
+    ]},
+  { id:"t-sleep", level:3, title:"鸟类的单半球睡眠", topic:"Biology", speaker:"W", script:`We usually think of sleep as an all-or-nothing state. Either your brain is asleep or it's awake. But some animals have found a way around that, through what's called unihemispheric sleep, sleeping with one half of the brain at a time.
+
+This has been well documented in dolphins. A dolphin has to come to the surface to breathe, so it can't simply become unconscious for hours. Instead, one hemisphere of its brain sleeps while the other stays alert, and the eye connected to the waking side stays open.
+
+Birds do this too, and one study of ducks showed something remarkable. Researchers placed ducks in a row and found that the ducks at the ends of the row slept with one eye open more often than the ducks in the middle. And the open eye tended to face outward, away from the group, toward where a predator would come from. So the birds seemed to adjust how much of their brain was sleeping depending on how risky their position was.
+
+More recently, scientists have recorded frigate birds sleeping in flight, mostly one hemisphere at a time, for only about forty minutes a day. Now, whether humans have any version of this is still debated. There's some evidence that on the first night in a new place, one side of our brain sleeps less deeply, which might explain why people often sleep poorly in hotels.`,
+    qs:[
+      { type:"main", q:"What is the talk mainly about?", opts:["Animals that can sleep with one half of the brain at a time.","Why dolphins need to breathe air.","How predators hunt ducks at night.","Why people sleep poorly when they travel."], why:"讲座围绕单半球睡眠展开，举了海豚、鸭子和军舰鸟的例子。" },
+      { type:"detail", q:"What did the study of ducks show?", opts:["Ducks at the ends of a row kept one eye open more often.","Ducks in the middle of a row slept less than the others.","Ducks closed both eyes when predators were near.","Ducks slept only while flying."], why:"the ducks at the ends of the row slept with one eye open more often，而且睁着的眼睛朝外。" },
+      { type:"infer", q:"What does the duck study suggest about unihemispheric sleep?", opts:["Animals can control it depending on the level of danger.","It happens only in water birds.","It is caused by being in a group.","It makes animals sleep more deeply."], why:"the birds seemed to adjust how much of their brain was sleeping depending on how risky their position was。" },
+      { type:"attitude", q:"What is the professor's view of the evidence about humans?", opts:["It is interesting, but the question is not settled.","It clearly proves that humans have unihemispheric sleep.","It is based on experiments that were done incorrectly.","It shows that hotels should be made quieter."], why:"whether humans have any version of this is still debated ... might explain，用词谨慎，说明尚无定论。" }
     ]}
 ]
 };

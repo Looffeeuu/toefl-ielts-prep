@@ -26,7 +26,13 @@ ctw: [
   { id:"c-otter", level:3, topic:"生态", title:"Keystone Species",
     text:"Keystone species exert an influence on their ecosystems that is far greater than their numbers would suggest. When sea otters disappeared from parts of the Pacific coast, the sea urchins they normally consumed multiplied rapidly. The urchins then devoured the kelp forests that provided shelter for countless fish and invertebrates. Once otters were reintroduced, urchin populations declined." },
   { id:"c-lang", level:3, topic:"语言学", title:"Language and Thought",
-    text:"Linguists have long debated whether language shapes the way people think. One influential hypothesis proposed that speakers of different languages perceive the world in fundamentally different ways. Although strong versions of this claim have been largely rejected, more moderate versions continue to receive support from careful experiments conducted in many different cultures." }
+    text:"Linguists have long debated whether language shapes the way people think. One influential hypothesis proposed that speakers of different languages perceive the world in fundamentally different ways. Although strong versions of this claim have been largely rejected, more moderate versions continue to receive support from careful experiments conducted in many different cultures." },
+  { id:"c-volcano", level:1, topic:"地质", title:"Volcanoes",
+    text:"A volcano is an opening in the surface of the Earth. Hot melted rock from deep underground rises through this opening and flows out as lava. When the lava cools, it becomes hard rock again. Over many years, layers of this rock can build up and form a tall mountain with a crater at the top." },
+  { id:"c-coffee", level:2, topic:"历史", title:"The Spread of Coffee",
+    text:"Coffee was first grown in East Africa and southern Arabia. By the fifteenth century, people in Yemen were drinking it to stay awake during long nights of prayer. Traders soon carried the beans to Egypt, Persia, and Turkey, where public coffee houses became popular places for conversation, music, and the exchange of news." },
+  { id:"c-placebo", level:3, topic:"医学", title:"The Placebo Effect",
+    text:"In medical research, a placebo is a treatment that contains no active ingredient. Surprisingly, patients who receive placebos often report genuine improvements in their symptoms, particularly pain. Researchers believe that expectation plays a central role, since patients who anticipate relief may release natural chemicals that reduce discomfort. For this reason, new drugs are usually compared against placebos rather than against no treatment at all." }
 ],
 
 /* ---------- 日常阅读 Read in Daily Life ---------- */
@@ -158,6 +164,86 @@ daily: [
       { type:"vocab", hl:"allowance", q:"The word \"allowance\" in the passage is closest in meaning to",
         opts:["permitted amount","payment","excuse","schedule"],
         why:"unlimited allowance 指「不限量的额度」，allowance 在这里是允许使用的量。payment（零花钱）是它的另一个意思，但放在这里讲不通。" }
+    ]},
+  { id:"d-shuttle", level:1, doc:"告示牌", title:"Campus shuttle schedule",
+    head:[["Notice","Campus Transportation"]],
+    text:"Weekend Shuttle Service\n\nStarting this Saturday, the campus shuttle will run on weekends from 9:00 a.m. to 6:00 p.m. Buses will leave the Student Center every 30 minutes and stop at the Science Park, the Main Library, and Greenway Shopping Center.\n\nRides are free with a valid student ID. Visitors may ride for $1.50.\n\nPlease note: the shuttle will not stop at the Sports Complex on weekends. Students who need to get there can use the city bus, Route 12.",
+    qs:[
+      { type:"detail", q:"How often will the weekend shuttle leave the Student Center?",
+        opts:["Every 30 minutes","Every hour","Every 15 minutes during the morning","Twice a day"],
+        why:"原文 Buses will leave the Student Center every 30 minutes。" },
+      
+      { type:"infer", q:"What can be inferred about the Sports Complex?",
+        opts:["The shuttle stops there on weekdays","It is closed to all students on weekends","It is next to the Science Park","Students cannot reach it by bus"],
+        why:"the shuttle will not stop at the Sports Complex on weekends，特别强调 on weekends，暗示平时是停的。D 与 city bus, Route 12 矛盾。" }
+    ]},
+  { id:"d-lostfound", level:1, doc:"邮件", title:"Lost water bottle",
+    head:[["From","Maya Chen"],["To","Chemistry 101 class list"],["Subject","Did anyone find my water bottle?"]],
+    text:"Hi everyone,\n\nI think I left my water bottle in Room 204 after Tuesday's lab. It's green with a white lid, and there is a sticker of a mountain on the side. My name is written on the bottom.\n\nIt isn't expensive, but it was a gift from my grandmother, so it means a lot to me. If you saw it or picked it up, please reply to this email or leave it with the department secretary in Room 210.\n\nThanks so much,\nMaya",
+    qs:[
+      { type:"purpose", q:"Why did Maya write this email?",
+        opts:["To ask classmates to help her find a lost item","To remind students to clean up the lab room after every class session","To complain about a missing gift","To ask the secretary to open Room 204"],
+        why:"邮件主题和正文都是在问有没有人捡到她的水杯。" },
+      
+      { type:"infer", q:"Why does Maya mention her grandmother?",
+        opts:["To explain why the bottle is important to her","To show that the bottle was expensive and hard to replace","To say where the bottle was bought","To ask her grandmother for a new bottle"],
+        why:"It isn't expensive, but it was a gift from my grandmother, so it means a lot to me，说明它对她有感情上的意义。" }
+    ]},
+  { id:"d-tutoring", level:2, doc:"通知", title:"Writing Center hours",
+    head:[["Notice","University Writing Center"]],
+    text:"Changes to Writing Center Appointments\n\nDue to high demand near the end of the semester, the Writing Center is making two changes beginning November 17.\n\nFirst, each student may book a maximum of two appointments per week. Appointments will remain 45 minutes long. Second, we are adding evening hours on Mondays and Wednesdays from 6:00 to 9:00 p.m. These sessions will be held online only.\n\nDrop-in help will still be available at the front desk, but tutors can only review up to two pages during a drop-in visit. For full papers, please make an appointment.",
+    qs:[
+      { type:"purpose", q:"What is the main purpose of the notice?",
+        opts:["To explain new rules for Writing Center services","To announce that the Writing Center will close early","To advertise a writing contest","To ask students to become tutors"],
+        why:"通知列出两项变化（每周预约上限、新增晚间时段）以及临时来访的规定。" },
+      { type:"detail", q:"What is true about the new evening sessions?",
+        opts:["They will take place online","They are 90 minutes long","They are offered every weekday","They are only for graduate students"],
+        why:"These sessions will be held online only。时长仍是 45 分钟，只在周一和周三。" },
+      { type:"infer", q:"A student wants a tutor to read a ten-page paper. What should the student do?",
+        opts:["Book an appointment in advance","Visit the front desk without an appointment","Send the paper to the front desk by email","Wait until the next semester"],
+        why:"drop-in 只看两页以内，For full papers, please make an appointment。" }
+    ]},
+  { id:"d-volunteer", level:2, doc:"招募启事", title:"Park cleanup volunteers",
+    head:[["Post","Environmental Action Club"]],
+    text:"Volunteers Needed: Riverside Park Cleanup\n\nThe Environmental Action Club is partnering with the city to clean up Riverside Park on Sunday, April 6, from 9:00 a.m. to noon. We will remove litter along the river path and plant 50 young trees donated by a local nursery.\n\nGloves, tools, and snacks will be provided. Please wear clothes that you don't mind getting dirty, and bring a reusable water bottle.\n\nVolunteers who stay for the full three hours can receive a certificate for community service hours. If it rains, the event will move to the following Sunday.",
+    qs:[
+      { type:"detail", q:"What will volunteers do besides picking up litter?",
+        opts:["Plant trees","Build a new path","Sell plants from a nursery","Clean the river water"],
+        why:"plant 50 young trees donated by a local nursery。" },
+      { type:"detail", q:"What are volunteers asked to bring?",
+        opts:["A water bottle they can use again","Their own gloves and gardening tools","Snacks to share","Gardening tools"],
+        why:"bring a reusable water bottle。手套、工具、零食都由主办方提供。" },
+      { type:"infer", q:"What is required to receive a certificate?",
+        opts:["Staying until the event ends","Joining the Environmental Action Club","Planting at least one tree","Attending on both Sundays"],
+        why:"Volunteers who stay for the full three hours can receive a certificate，也就是要从九点待到中午结束。" }
+    ]},
+  { id:"d-housing", level:3, doc:"邮件", title:"Housing application",
+    head:[["From","Office of Residential Life"],["To","First-year students"],["Subject","Housing applications for next year"]],
+    text:"Dear first-year students,\n\nApplications for on-campus housing for next academic year will open on February 1 and close on February 21. Unlike this year, room assignments will not be made on a first-come, first-served basis. Instead, every application received within the three-week window will be given a randomly assigned selection time, so there is no advantage to applying on the first day.\n\nStudents who wish to live together should each list the others as preferred roommates; a group will only be placed together if every member names every other member.\n\nApplications submitted after February 21 will be considered only if rooms remain available.\n\nSincerely,\nOffice of Residential Life",
+    qs:[
+      { type:"detail", q:"How will selection times be determined next year?",
+        opts:["They will be assigned at random","They will depend on when students apply","They will be based on students' grades","Students will choose them in person"],
+        why:"every application ... will be given a randomly assigned selection time。" },
+      { type:"infer", q:"What can be inferred about this year's housing process?",
+        opts:["Students who applied early had an advantage","Selection times were assigned randomly","Applications were open for six weeks instead of three weeks","Roommate requests were not allowed"],
+        why:"Unlike this year, room assignments will not be made on a first-come, first-served basis，说明今年是先到先得，早申请有优势。" },
+      { type:"detail", q:"According to the email, what must happen for three friends to be placed together?",
+        opts:["Each friend must name both of the others","One friend must list the other two people on the application","They must apply on the same day","They must contact the office in advance"],
+        why:"a group will only be placed together if every member names every other member，每个人都要填另外两人。" }
+    ]},
+  { id:"d-grant", level:3, doc:"通知", title:"Undergraduate research grants",
+    head:[["Notice","Office of Undergraduate Research"]],
+    text:"Summer Research Grants\n\nThe Office of Undergraduate Research will award up to 20 grants of $3,000 to support independent summer projects. Applicants must be full-time students who will return to the university in the fall; graduating seniors are therefore not eligible.\n\nEach application must include a two-page project proposal, a budget, and a letter from a faculty member who has agreed to supervise the work. Proposals will be judged on originality and feasibility, not on the size of the budget. Projects in every field, including the arts and humanities, are encouraged.\n\nThe deadline is March 15. Incomplete applications will not be reviewed.",
+    qs:[
+      { type:"negative", q:"Which of the following is NOT required in an application?",
+        opts:["A copy of the student's grades","A project proposal","A budget","A letter from a faculty member who agrees to supervise"],
+        why:"申请材料列了 proposal、budget 和 faculty letter，没有要求成绩单。" },
+      { type:"infer", q:"Why are graduating seniors not eligible?",
+        opts:["They will not return to the university in the fall","They already receive other grants from the Office of Undergraduate Research","Their projects are usually too large","They do not have faculty supervisors"],
+        why:"Applicants must be full-time students who will return to the university in the fall; graduating seniors are therefore not eligible，therefore 表示因果。" },
+      { type:"detail", q:"How will proposals be evaluated?",
+        opts:["By how original and practical they are","By how much money they request in their budget","By which field they belong to","By the student's year of study"],
+        why:"judged on originality and feasibility, not on the size of the budget，feasibility 即可行性。" }
     ]}
 ],
 
@@ -276,6 +362,63 @@ academic: [
       { type:"structure", q:"How is the passage organized?",
         opts:["A theory is presented, rejected, and later supported by new evidence","Two competing theories are compared","A problem is described and several solutions are proposed","A natural process is explained step by step"],
         why:"第一段提出理论和证据，第二段讲被否定的原因，第三段讲新证据让它得到证实，是「提出、否定、证实」的结构。" }
+    ]},
+  { id:"a-migration", level:1, topic:"动物学", title:"How Birds Find Their Way",
+    text:"Every autumn, millions of birds fly thousands of kilometers to warmer regions, and every spring they return, often to the same nest. Scientists have long wondered how they find their way.\n\nOne answer is the Sun. During the day, many birds use its position in the sky as a compass. Birds that travel at night use the stars instead. In experiments, young birds raised in a planetarium learned to use whatever star pattern rotated above them, which suggests that they are not born knowing the stars but learn them.\n\nBirds also appear to sense the Earth's magnetic field. When researchers placed small magnets on pigeons, the birds had more trouble returning home on cloudy days, when the Sun could not help them. Finally, many birds remember landmarks such as rivers, coastlines, and mountains. Most species probably combine several of these methods.",
+    qs:[
+      { type:"main", q:"What is the passage mainly about?",
+        opts:["The different methods birds use to navigate","Why birds leave cold regions every autumn and return in spring","How pigeons are trained to return home","The way scientists build planetariums"],
+        why:"第一段提出问题（鸟怎样找路），后两段依次讲太阳、星星、地磁和地标，所以主旨是导航方法。" },
+      { type:"detail", q:"According to the passage, what do birds that travel at night use?",
+        opts:["The stars","The position of the Sun","The Moon","The wind"],
+        why:"Birds that travel at night use the stars instead。" },
+      { type:"infer", q:"What does the planetarium experiment suggest?",
+        opts:["Birds learn star patterns while they are young","Birds cannot see real stars when they are kept indoors","Birds prefer to travel during the day","All birds know the stars from birth"],
+        why:"which suggests that they are not born knowing the stars but learn them，D 和原文正好相反。" },
+      { type:"purpose", q:"Why does the author mention cloudy days in the pigeon experiment?",
+        opts:["To show that the magnets mattered most when the Sun was not visible","To explain why pigeons refuse to fly in bad weather, especially when it is cloudy","To argue that magnets help birds find food","To show that the experiment failed"],
+        why:"阴天时太阳帮不上忙，这时鸽子带着磁铁就更难回家，说明它们在看不到太阳时依赖地磁。" },
+      { type:"vocab", hl:"landmarks", q:"The word \"landmarks\" in the passage is closest in meaning to",
+        opts:["features that are easy to recognize","dangerous places","safe areas where birds can rest along the way","maps"],
+        why:"landmarks 指河流、海岸线、山脉这类容易辨认的地物，后面的 such as 给出了例子。" }
+    ]},
+  { id:"a-cities", level:2, topic:"考古学", title:"The First Cities",
+    text:"For most of human history, people lived in small groups that moved from place to place. The first true cities did not appear until around 3500 BCE, in Mesopotamia, the region between the Tigris and Euphrates rivers in present-day Iraq.\n\nAgriculture made these cities possible. The river valleys were dry, but farmers learned to dig canals that carried water to their fields. Irrigation allowed them to grow far more grain than they needed, and this surplus could feed people who did not farm at all. Some became potters, weavers, or metalworkers; others became priests or officials.\n\nHowever, a surplus created new problems. Grain had to be stored, protected, and distributed, and canals had to be maintained by large numbers of workers. Many archaeologists believe that these tasks encouraged the rise of a ruling class and of written records, which were first used to track goods. In this view, cities were not simply the result of more food but of new ways of organizing people. Cities such as Uruk eventually held tens of thousands of residents, protected by massive walls.",
+    qs:[
+      { type:"detail", q:"According to the passage, what allowed farmers in Mesopotamia to grow more grain?",
+        opts:["Canals that brought water to the fields","Heavy rainfall in the river valleys during the spring months","New types of grain from other regions","Tools made by metalworkers"],
+        why:"The river valleys were dry, but farmers learned to dig canals ... Irrigation allowed them to grow far more grain。B 与 dry 矛盾。" },
+      { type:"vocab", hl:"surplus", q:"The word \"surplus\" in the passage is closest in meaning to",
+        opts:["extra amount","shortage","market","harvest season"],
+        why:"far more grain than they needed，多出来的那部分就是 surplus，即「剩余、盈余」。" },
+      { type:"negative", q:"Which of the following is NOT mentioned as an occupation of people who did not farm?",
+        opts:["Soldier","Potter","Priest","Metalworker"],
+        why:"第二段列出 potters, weavers, metalworkers, priests, officials，没有士兵。" },
+      { type:"infer", q:"What can be inferred about early writing in Mesopotamia?",
+        opts:["It developed partly to solve practical problems of managing goods","It was invented mainly so that priests could record religious stories and prayers","It was used only by farmers","It appeared before the first cities"],
+        why:"written records, which were first used to track goods，最初用来记账，说明是为了解决管理物资的实际问题。" },
+      { type:"structure", q:"How is the passage organized?",
+        opts:["It describes a development, its cause, and the new challenges that followed","It compares two early cities and explains why one of them became more successful than the other","It presents a theory and then shows that it is wrong","It lists events in a single city year by year"],
+        why:"第一段讲城市出现，第二段讲农业灌溉这个原因，第三段讲剩余粮食带来的新问题和组织方式。" }
+    ]},
+  { id:"a-memory", level:3, topic:"心理学", title:"Reconstructing Memory",
+    text:"It is tempting to think of memory as a recording that can be replayed whenever we wish. Decades of research, however, indicate that remembering is less like playing a video and more like reconstructing an event from fragments. Each time a memory is retrieved, it is assembled anew, and in the process it can be altered.\n\nSome of the most influential evidence comes from studies of eyewitness testimony. In a well-known type of experiment, participants watch a film of a traffic accident and are then asked questions about it. When the question uses a forceful verb, asking how fast the cars were going when they \"smashed\" into each other rather than when they \"hit\" each other, participants give higher estimates of speed. A week later, those who heard \"smashed\" are also more likely to report having seen broken glass, although none appeared in the film.\n\nSuch findings have obvious implications for the legal system, where a single confident witness can be highly persuasive. Yet researchers caution against concluding that memory is generally unreliable. The reconstructive nature of memory may be a consequence of its efficiency: by storing the gist of experiences rather than every detail, the brain can generalize from the past and anticipate the future. Errors, in this sense, are the price of flexibility.",
+    qs:[
+      { type:"main", q:"What is the main idea of the passage?",
+        opts:["Memories are rebuilt each time they are recalled, which can introduce errors","Eyewitnesses in legal cases usually lie on purpose about what they have seen happen","Memory works in the same way as a video recording","Traffic accidents are difficult to remember"],
+        why:"第一段提出核心观点：回忆是重建而不是重播，重建时会被改变；后两段用证据和意义展开。" },
+      { type:"purpose", q:"Why does the author describe the experiment with the words \"smashed\" and \"hit\"?",
+        opts:["To show how the wording of a question can change what people remember","To explain how fast the cars in the film were going","To prove that most participants did not watch the film carefully enough to answer questions","To compare two different kinds of accidents"],
+        why:"用 smashed 的人估计车速更高，还「记得」看到碎玻璃，说明提问措辞能改变记忆。" },
+      { type:"detail", q:"According to the passage, what did some participants report a week later?",
+        opts:["Seeing broken glass that was not in the film","Forgetting the accident completely","Seeing a different number of cars than had actually appeared in the film","Hearing the cars crash loudly"],
+        why:"more likely to report having seen broken glass, although none appeared in the film。" },
+      { type:"vocab", hl:"gist", q:"The word \"gist\" in the passage is closest in meaning to",
+        opts:["general meaning","smallest detail","emotional effect","exact date"],
+        why:"rather than every detail 形成对比，gist 指大意、要点。" },
+      { type:"tone", q:"Which best describes the author's view of the errors in memory?",
+        opts:["They are an acceptable cost of a system that is useful in other ways","They show that human memory cannot be trusted in any situation, including in courts of law","They are rare and not worth studying","They are caused mainly by poor eyesight"],
+        why:"作者提醒不要得出记忆普遍不可靠的结论，最后说 Errors ... are the price of flexibility，态度是辩证地接受。B 正是作者反对的结论。" }
     ]}
 ]
 };

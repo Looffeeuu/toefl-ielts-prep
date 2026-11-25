@@ -207,5 +207,104 @@ window.IELTS_READING = [
       { q:"evaporation cools far less well in ___ climates", a:["humid"], why:"G 段：In very humid climates, cooling by evaporation is far less effective。" },
       { q:"in busy cities, natural ventilation may let in noise and ___", a:["pollution"], why:"G 段：may bring in noise and pollution in busy cities。" }
     ]}
+  ]},
+{ id:"r-libraries", level:1, title:"The Changing Public Library", topic:"Society",
+  paras:[
+    ["A","For more than a century, the public library was a quiet building filled with shelves of books, where visitors were expected to speak in whispers. Its main purpose was simple: to lend books free of charge to anyone who lived in the area. In many countries, the library movement of the nineteenth century was driven by the belief that access to reading would improve the lives of working people, who could not afford to buy books of their own."],
+    ["B","Today, many libraries look very different. In cities such as Helsinki, Aarhus and Singapore, new library buildings include recording studios, sewing machines, 3D printers and kitchens where cooking classes are held. Some lend tools, musical instruments and even fishing rods. Librarians describe these buildings as community spaces rather than simply places to store books. In Helsinki, the central library even has a terrace and a small cinema, and it attracts tourists as well as local residents."],
+    ["C","One reason for the change is the internet. As more information became available online, the number of people visiting libraries to look up facts fell sharply. Book loans also declined in many places, although less than some experts had predicted. Library managers realised that if they wanted to survive, they would need to give people reasons to visit other than borrowing. Many began by offering free internet access and computer courses, since a significant number of people, particularly older residents, still had no computer at home."],
+    ["D","A second reason is social. Libraries are among the few indoor public spaces where people can stay as long as they like without being expected to spend money. For students who have no quiet place to study at home, for older people living alone and for families with young children, this makes the library extremely valuable. In winter, some libraries also serve as warm places for people who cannot afford to heat their homes."],
+    ["E","Not everyone welcomes the new direction. Some long-time users complain that noise from events and classes makes it difficult to read or work. Others worry that money spent on new technology is money taken away from book collections. In response, many modern libraries are designed with separate zones: lively areas near the entrance and silent reading rooms on the upper floors."],
+    ["F","Funding remains the biggest challenge. In some countries, local governments have reduced library budgets, and hundreds of small branches have closed. Where libraries have stayed open, they often rely on volunteers to run activities. Supporters argue that libraries save public money in the long run, because they help people find jobs, learn new skills and stay connected to their communities. Critics reply that such benefits are difficult to measure, and that councils facing urgent demands, such as care for the elderly, cannot always justify keeping every branch open."]
+  ],
+  groups:[
+    { type:"tfng", instr:"Do the following statements agree with the information given in the passage?", items:[
+      { q:"The early library movement aimed to help people who could not afford books.", a:"TRUE", why:"A 段：improve the lives of working people, who could not afford to buy books of their own。" },
+      { q:"The library in Helsinki was the first to offer cooking classes.", a:"NOT GIVEN", why:"B 段只说一些新图书馆有厨房开烹饪课，没有说哪家是第一个。" },
+      { q:"Book loans fell more than experts had expected.", a:"FALSE", why:"C 段：although less than some experts had predicted，下降幅度比预计的小。" },
+      { q:"Library users are not expected to buy anything.", a:"TRUE", why:"D 段：without being expected to spend money。" },
+      { q:"Most modern libraries have banned events in their reading rooms.", a:"NOT GIVEN", why:"E 段只说很多图书馆分区设计，没有说禁止活动。" }
+    ]},
+    { type:"gap", instr:"Complete the notes below.", limit:"Choose ONE WORD ONLY from the passage for each answer.", maxWords:1, heading:"Reasons for and responses to change", items:[
+      { q:"Fewer people now visit libraries to look up ___", a:["facts"], why:"C 段：the number of people visiting libraries to look up facts fell sharply。" },
+      { q:"Libraries offer a quiet place to study for ___ who lack one at home", a:["students"], why:"D 段：For students who have no quiet place to study at home。" },
+      { q:"Some long-time users say that ___ from events makes reading difficult", a:["noise"], why:"E 段：noise from events and classes makes it difficult to read or work。" },
+      { q:"Many libraries now depend on ___ to organise activities", a:["volunteers"], why:"F 段：they often rely on volunteers to run activities。" }
+    ]},
+    { type:"match", instr:"Which paragraph contains the following information? You may use any letter more than once.", options:"paras", items:[
+      { q:"examples of objects other than books that can be borrowed", a:"B", why:"B 段：Some lend tools, musical instruments and even fishing rods。" },
+      { q:"a claim that libraries reduce costs for governments over time", a:"F", why:"F 段：libraries save public money in the long run。" },
+      { q:"a description of how buildings are divided to suit different users", a:"E", why:"E 段：separate zones: lively areas near the entrance and silent reading rooms on the upper floors。" },
+      { q:"a reference to libraries being used to keep warm", a:"D", why:"D 段：some libraries also serve as warm places for people who cannot afford to heat their homes。" }
+    ]}
+  ]},
+
+{ id:"r-glass", level:2, title:"The Science of Glass", topic:"Materials Science",
+  paras:[
+    ["A","Glass is so common in modern life that it is easy to forget how unusual a material it is. Windows, bottles, smartphone screens and the optical fibres that carry internet data across oceans are all made of it. Yet scientists still debate exactly how glass should be classified. It is hard and brittle like a solid, but its atoms are arranged in the disordered way typical of a liquid."],
+    ["B","Most solids, such as metals and salt, are crystalline: their atoms are packed in regular, repeating patterns. When ordinary window glass is made, sand, which is mostly silica, is melted together with soda and lime at temperatures above 1,500°C. If the molten mixture were cooled slowly, its atoms would have time to arrange themselves into crystals. Instead, it is cooled quickly, and the atoms become locked in place before they can form any regular pattern. The result is an amorphous solid, one without a crystal structure."],
+    ["C","A popular story claims that the windows of old European churches are thicker at the bottom because glass flows slowly downwards over the centuries. Physicists have tested this claim and rejected it. Calculations suggest that at room temperature, medieval glass would take far longer than the age of the universe to flow noticeably. The uneven thickness is instead explained by the way glass was produced at the time: panes were made by spinning molten glass into a disc, which was never perfectly even, and builders generally placed the heavier edge at the bottom."],
+    ["D","Humans have made glass for at least 4,000 years. The earliest objects, found in Mesopotamia, were beads rather than containers. Glassblowing, the technique of inflating molten glass with a tube, was developed around the first century BCE, probably on the eastern coast of the Mediterranean, and it made glass vessels cheap enough for everyday use throughout the Roman Empire."],
+    ["E","The flat, clear windows found in modern buildings are a much more recent achievement. In the 1950s, the British engineer Alastair Pilkington introduced the float process, in which molten glass is poured onto a bath of liquid tin. The glass spreads out and floats on the metal, producing a sheet with a perfectly smooth surface on both sides. Before this, flat glass had to be ground and polished, an expensive and slow process. Today, the vast majority of the world's flat glass is still produced in this way."],
+    ["F","Research on glass continues. Engineers have developed chemically strengthened glass, in which small sodium atoms near the surface are exchanged for larger potassium atoms. Squeezed into spaces meant for smaller atoms, these create a layer of compression that makes the surface much harder to crack. This kind of glass is now used for most phone screens. Other researchers are working on glass that can bend without breaking, which could be used in folding devices."]
+  ],
+  groups:[
+    { type:"headings", instr:"The passage has six paragraphs, A–F. Choose the correct heading for paragraphs B–F from the list of headings below.", example:"Paragraph A: v",
+      options:["A method that made smooth windows affordable","Why glass lacks a regular structure","The dangers of producing glass at home","A widely believed myth","A material that is difficult to classify","The early history of glassmaking","Changing the surface to improve strength","Why glass is becoming less popular"],
+      items:[
+        { q:"Paragraph B", a:"ii", why:"B 段解释玻璃快速冷却，原子来不及排列成晶体，所以没有规则结构。" },
+        { q:"Paragraph C", a:"iv", why:"C 段讲「老教堂玻璃向下流动」的说法被物理学家否定。" },
+        { q:"Paragraph D", a:"vi", why:"D 段讲最早的玻璃珠和吹制玻璃的发明。" },
+        { q:"Paragraph E", a:"i", why:"E 段讲浮法工艺让平板玻璃两面光滑，取代昂贵的研磨抛光。" },
+        { q:"Paragraph F", a:"vii", why:"F 段讲用钾原子替换表面的钠原子，形成压缩层，提高强度。" }
+      ]},
+    { type:"tfng", instr:"Do the following statements agree with the information given in the passage?", items:[
+      { q:"Window glass is made mainly from silica.", a:"TRUE", why:"B 段：sand, which is mostly silica, is melted together with soda and lime。" },
+      { q:"Medieval glassmakers deliberately made panes thicker at one edge.", a:"FALSE", why:"C 段：the disc was never perfectly even，厚度不均是工艺造成的，并不是故意做厚。" },
+      { q:"Glassblowing was first developed in Mesopotamia.", a:"FALSE", why:"D 段：吹制技术 probably on the eastern coast of the Mediterranean，美索不达米亚出土的是最早的玻璃珠。" },
+      { q:"Pilkington's float process was quickly adopted in the United States.", a:"NOT GIVEN", why:"E 段只说今天绝大多数平板玻璃仍用这种方法生产，没有提到美国。" }
+    ]},
+    { type:"gap", instr:"Complete the sentences below.", limit:"Choose NO MORE THAN TWO WORDS from the passage for each answer.", maxWords:2, items:[
+      { q:"In the float process, molten glass is poured onto a bath of ___.", a:["liquid tin","tin"], why:"E 段：molten glass is poured onto a bath of liquid tin。" },
+      { q:"In strengthened glass, sodium atoms are replaced by ___ atoms.", a:["potassium","larger potassium"], why:"F 段：small sodium atoms near the surface are exchanged for larger potassium atoms。" },
+      { q:"The replacement atoms create a layer of ___ at the surface.", a:["compression"], why:"F 段：these create a layer of compression。" },
+      { q:"Some researchers are developing glass for use in ___.", a:["folding devices"], why:"F 段：glass that can bend without breaking, which could be used in folding devices。" }
+    ]}
+  ]},
+
+{ id:"r-nudge", level:3, title:"Nudging Behaviour: Promise and Limits", topic:"Behavioural Economics",
+  paras:[
+    ["A","Governments have traditionally relied on two main tools to change behaviour: rules, which forbid or require certain actions, and financial incentives, such as taxes and subsidies. Over the past two decades, a third approach has attracted considerable attention. Known as 'nudging', it involves altering the way choices are presented so that people are more likely to choose options that benefit them, without removing any options or significantly changing their costs."],
+    ["B","The best-known example concerns pension savings. In many workplaces, employees once had to sign up actively for a retirement plan, and a large proportion never did. When some employers made enrolment automatic, so that workers were included unless they chose to leave, participation rose dramatically. Economist Ruth Calder argues that this result demonstrates the remarkable power of default options: 'People rarely object to the plan itself; what stops them is the small effort required to begin.'"],
+    ["C","Supporters claim that nudges are cheap, easy to test and respectful of freedom. Because no option is forbidden, a person who strongly prefers a different choice can still make it. Many governments have set up specialist units to design and evaluate such interventions, from rewording tax reminder letters to placing healthier food at eye level in school canteens. Some reported successes were impressive: in one trial, simply telling late taxpayers that most people in their town had already paid increased the payment rate by several percentage points."],
+    ["D","More recently, however, the evidence has been examined more critically. A large analysis led by statistician Paul Mendes compared the results of nudges published in academic journals with those of trials carried out by government units, which are required to report all their findings. The average effect in the government trials was roughly one-sixth of that in the published studies. Mendes suggests that this gap arises largely because journals are more likely to publish striking results than disappointing ones, so the published literature presents an overly optimistic picture."],
+    ["E","Mendes does not conclude that nudges are worthless. Even a small effect, he points out, can be worthwhile if an intervention costs almost nothing and reaches millions of people. A letter that increases tax payments by one per cent may still return far more than it costs to send. His concern is rather that policymakers who expect large changes may choose nudges in situations where stronger measures are needed."],
+    ["F","Others raise ethical objections. Philosopher Hannah Okafor accepts that defaults can be helpful but warns that nudges often work precisely because people do not notice them. 'An intervention that would fail if it were openly explained,' she writes, 'should make us uncomfortable.' She proposes that any nudge used by a government should be one that officials would be willing to announce publicly. Calder, by contrast, considers this test unnecessary, noting that every way of presenting a choice influences people somehow, so there is no neutral option to return to."],
+    ["G","What seems clear is that nudges are neither the revolutionary solution that early enthusiasts imagined nor a fashionable mistake. They appear to work best for decisions people already wish to make but tend to postpone, and least well where people's habits or interests strongly oppose the desired behaviour. For problems such as climate change or obesity, most researchers now agree that nudges can only complement, not replace, traditional policies."]
+  ],
+  groups:[
+    { type:"ynng", instr:"Do the following statements agree with the claims of the writer?", items:[
+      { q:"Nudges work by making some choices unavailable.", a:"NO", why:"A 段：without removing any options，作者明确说助推不取消任何选项。" },
+      { q:"Early supporters of nudges overestimated what they could achieve.", a:"YES", why:"G 段：neither the revolutionary solution that early enthusiasts imagined，说明早期支持者期望过高。" },
+      { q:"Nudges are more effective in wealthy countries than in poorer ones.", a:"NOT GIVEN", why:"文章没有比较不同国家。" },
+      { q:"Nudges are least effective when they conflict with strong habits.", a:"YES", why:"G 段：least well where people's habits or interests strongly oppose the desired behaviour。" }
+    ]},
+    { type:"match", instr:"Look at the following statements and the list of people below. Match each statement with the correct person, A, B or C. You may use any letter more than once.",
+      options:[["A","Ruth Calder"],["B","Paul Mendes"],["C","Hannah Okafor"]], items:[
+      { q:"It is impossible to present a choice without affecting people's decisions.", a:"A", why:"F 段：Calder ... noting that every way of presenting a choice influences people somehow。" },
+      { q:"An intervention with a small effect may still be good value.", a:"B", why:"E 段：Even a small effect, he points out, can be worthwhile。" },
+      { q:"Governments should only use nudges they would be prepared to make public.", a:"C", why:"F 段：Okafor proposes that any nudge ... should be one that officials would be willing to announce publicly。" },
+      { q:"Effort, rather than disagreement, often prevents people from acting.", a:"A", why:"B 段 Calder 的引语：People rarely object to the plan itself; what stops them is the small effort required to begin。" },
+      { q:"The way research is published has made nudges appear more effective than they are.", a:"B", why:"D 段：journals are more likely to publish striking results ... overly optimistic picture。" }
+    ]},
+    { type:"gap", instr:"Complete the summary below.", limit:"Choose ONE WORD ONLY from the passage for each answer.", maxWords:1, flow:true, heading:"Evidence about nudges", items:[
+      { q:"Government units must ___ all of their findings,", a:["report"], why:"D 段：which are required to report all their findings。" },
+      { q:"and their trials showed an average effect about one-sixth of that found in ___ studies.", a:["published"], why:"D 段：roughly one-sixth of that in the published studies。" },
+      { q:"According to Mendes, the danger is that policymakers will use nudges when ___ measures are needed.", a:["stronger"], why:"E 段：in situations where stronger measures are needed。" }
+    ]},
+    { type:"mcq", instr:"Choose the correct letter, A, B, C or D.", items:[
+      { q:"What is the writer's main purpose in paragraph C?", opts:["to criticise the cost of specialist government units","to outline the reasons why nudges became popular","to explain how tax reminder letters are written","to compare nudges with financial incentives"], a:1, why:"C 段列出支持者的理由（便宜、易测试、尊重自由）和成功案例，说明助推为何受欢迎。" },
+      { q:"What is the writer's overall conclusion about nudges?", opts:["They should be abandoned in favour of rules.","They are useful in some situations but cannot solve major problems alone.","They are ethically unacceptable in most cases.","They have proved more effective than expected."], a:1, why:"G 段：nudges can only complement, not replace, traditional policies。" }
+    ]}
   ]}
 ];

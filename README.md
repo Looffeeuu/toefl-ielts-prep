@@ -229,6 +229,7 @@ js/speaking-data.js   口语题库
 js/speaking.js        口语模块
 js/reading-data.js    阅读题库
 js/reading.js         阅读模块
+tools/check_reading.js  检查阅读题库格式、补全单词空数和选项长度
 js/listening-data.js 听力题库（选回应、对话、通知、学术讲座及解析）
 js/listening.js       听力模块
 tools/check_listening.js  检查听力题库格式和选项长度

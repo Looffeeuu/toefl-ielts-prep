@@ -51,7 +51,23 @@ part1: [
   { id:"p1-mornings", name:"早晨与作息", en:"Mornings and Routines",
     intro:"Let's talk about your daily routine.",
     qs:["Are you a morning person?","What do you usually do in the morning?","Has your routine changed recently?","What would your ideal morning be like?"],
-    hint:"描述日常用一般现在时和顺序词（first、after that）。理想的早晨用 would：I would wake up naturally, then…。" }
+    hint:"描述日常用一般现在时和顺序词（first、after that）。理想的早晨用 would：I would wake up naturally, then…。" },
+  { id:"p1-transport", name:"交通出行", en:"Transport",
+    intro:"Let's talk about how you travel around.",
+    qs:["How do you usually get to work or school?","Is public transport convenient where you live?","Did you travel the same way when you were a child?","Would you like to have your own car in the future? Why?"],
+    hint:"第一题说交通方式加一个细节（多长时间、几点出发）。对比小时候用 used to。最后一题给原因，可以提到花费、停车或环保。" },
+  { id:"p1-photos", name:"拍照", en:"Photographs",
+    intro:"Now let's talk about photographs.",
+    qs:["Do you like taking photos?","What do you usually take photos of?","Do you prefer taking photos with a phone or a camera?","Do you ever print your photos? Why or why not?"],
+    hint:"说一类具体的拍摄对象（风景、食物、朋友聚会）并给一个最近的例子。二选一题先选，再说一两个原因，比如方便、画质。" },
+  { id:"p1-neighbours", name:"邻居", en:"Neighbours",
+    intro:"I'd like to ask you about your neighbours.",
+    qs:["Do you know your neighbours well?","How often do you see them?","Have your neighbours ever helped you?","Do you think it's important to have good relationships with neighbours?"],
+    hint:"不熟也可以如实说，并解释原因（上班时间不同、住高楼）。帮忙题讲一件小事即可，比如代收快递。观点题可以提安全感和互相照应。" },
+  { id:"p1-holidays", name:"假期", en:"Holidays",
+    intro:"Let's talk about holidays.",
+    qs:["What did you do during your last holiday?","Do you prefer relaxing holidays or busy ones?","Who do you usually spend your holidays with?","Is there a place you would like to visit on a future holiday?"],
+    hint:"第一题用过去时讲具体的事，不要只说 I stayed at home。最后一题用 I'd love to … because …，给一个具体理由。" }
 ],
 
 part2: [
@@ -124,6 +140,27 @@ part2: [
     hint:"成就不必很大：考过一门难的考试、完成一次长跑、学会一道菜。重点讲付出的过程和你学到了什么。",
     part3:{ theme:"success and achievement",
       qs:["What does success mean to most people in your country?","Is it more important to be successful at work or to be happy?","Do schools put too much pressure on students to succeed?","Should people be rewarded for effort or for results?"],
-      hint:"定义类问题可以先说传统看法，再说正在发生的变化。最后一题可以说学校看重努力、职场看重结果，各有道理。" } }
+      hint:"定义类问题可以先说传统看法，再说正在发生的变化。最后一题可以说学校看重努力、职场看重结果，各有道理。" } },
+  { id:"p2-teacher", name:"印象深刻的老师", title:"Describe a teacher who has had an important influence on you.",
+    points:["who this teacher was","what subject he or she taught","what was special about this teacher","and explain how this teacher influenced you"],
+    follow:"Would you like to be a teacher yourself?",
+    hint:"选一位具体的老师，讲一两件具体的事（一次谈话、一种上课方式），比泛泛地说「很负责」更有说服力。影响可以落到现在的学习习惯或专业选择上。",
+    part3:{ theme:"teachers and education",
+      qs:["What qualities make a good teacher?","Do you think teachers will be replaced by technology in the future?","Should teachers be paid more than they are now?","How has the role of teachers changed compared with the past?"],
+      hint:"从个人经历上升到社会层面。替代类问题可以分两面：技术能讲知识，但难以替代鼓励和引导。比较过去和现在时说出具体变化，比如从讲授变成引导。" } },
+  { id:"p2-website", name:"常用的网站或 App", title:"Describe a website or app that you use often.",
+    points:["what it is","how you found out about it","what you use it for","and explain why you find it useful"],
+    follow:"Do you think you will still use it in five years?",
+    hint:"说清楚具体功能和一次使用场景，比如用它学单词或规划路线。解释为什么有用时可以和以前的方法对比：Before I used it, I had to…。",
+    part3:{ theme:"the internet and daily life",
+      qs:["What kinds of websites are most popular in your country?","Do people spend too much time online nowadays?","How can parents protect children on the internet?","Will online shopping completely replace shops in the future?"],
+      hint:"观点题给出判断后用原因和例子支持。预测类问题可以用 I doubt that… / It's likely that…，并说明有哪些东西网上替代不了，比如试穿和社交。" } },
+  { id:"p2-noise", name:"让你烦恼的噪音", title:"Describe a time when you were bothered by noise.",
+    points:["when and where it happened","what the noise was","how you felt about it","and explain what you did about it"],
+    follow:"Are you usually sensitive to noise?",
+    hint:"用过去时讲一个完整的故事：时间地点 → 噪音来源 → 当时的感受（烦躁、睡不着、无法集中）→ 你怎么处理、结果如何。可以加一句现在回想起来的看法。",
+    part3:{ theme:"noise and city life",
+      qs:["What are the main sources of noise in cities?","Should there be laws to control noise?","Why do some people like noisy places, such as busy restaurants?","How can buildings be designed to reduce noise?"],
+      hint:"列举来源时分类：交通、施工、娱乐场所。法律类问题可以平衡个人自由和公共利益。设计类问题说一两个具体办法，比如双层玻璃、绿化带。" } }
 ]
 };

@@ -89,7 +89,34 @@ Overall, electricity from wind and solar power grew rapidly over the period, whe
 
 In 2014, hydropower was the leading source, producing 20 TWh, compared with 12 TWh from wind and just 2 TWh from solar. Over the following eight years, hydroelectric generation fluctuated only slightly, between 18 and 21 TWh, and ended the period at 18 TWh.
 
-Wind power, by contrast, rose steadily throughout the period. It passed hydropower between 2016 and 2018 and reached 44 TWh in 2022, more than three and a half times its 2014 level. Solar power started from a very low base but increased at an even faster rate, multiplying fifteen times to 30 TWh by 2022. In that year, solar also generated considerably more electricity than hydropower for the first time.` }
+Wind power, by contrast, rose steadily throughout the period. It passed hydropower between 2016 and 2018 and reached 44 TWh in 2022, more than three and a half times its 2014 level. Solar power started from a very low base but increased at an even faster rate, multiplying fifteen times to 30 TWh by 2022. In that year, solar also generated considerably more electricity than hydropower for the first time.` },
+  { id:"w1-water", name:"四个国家的用水结构", kind:"bar",
+    prompt:"The chart below shows how water was used in four countries in 2020, divided into agriculture, industry and households.",
+    chart:{ x:["Country A","Country B","Country C","Country D"], unit:"% of total water use", yMax:80,
+      series:[{ name:"Agriculture", values:[72,40,15,55] },{ name:"Industry", values:[10,45,60,20] },{ name:"Households", values:[18,15,25,25] }] },
+    hint:"概述：农业在 A、D 两国占主导，工业在 B、C 两国占比最高，家庭用水在四国都是比例最小或接近最小的部分。按「农业为主的国家」和「工业为主的国家」分两段写，比逐个国家复述更清楚。",
+    phrases:["The bar chart compares the proportion of water used for ... in four countries in 2020.","Overall, ... accounted for the largest share in ..., whereas ...","by far the highest figure","a much smaller proportion","the figures for ... were identical, at ..."],
+    model:`The bar chart compares how water was divided between agriculture, industry and households in four countries in 2020.
+
+Overall, agriculture was the main user of water in Country A and Country D, whereas industry consumed the largest share in Country B and Country C. Household use was relatively small in all four countries.
+
+In Country A, almost three quarters of all water (72%) went to farming, by far the highest figure in the chart. Households used 18%, while industry accounted for only 10%. Country D showed a similar pattern, although agriculture's share was lower, at 55%, and households and industry used 25% and 20% respectively.
+
+By contrast, industry dominated water use in Country C, where it consumed 60% of the total. Only 15% was used for farming, the lowest agricultural figure of the four countries, and households took the remaining quarter. In Country B, water use was more balanced: industry used 45% and agriculture 40%, while households accounted for just 15%, the same proportion as farming in Country C.` },
+
+  { id:"w1-cinema", name:"三个年龄组的观影次数", kind:"table",
+    prompt:"The table below shows the average number of times per year that people in three age groups went to the cinema in one country in 2005, 2015 and 2025.",
+    chart:{ cols:["Age group","2005","2015","2025"],
+      rows:[["16–24",9.5,7.0,4.5],["25–44",5.0,4.5,4.0],["45 and over",2.0,3.0,3.5]] },
+    hint:"概述：年轻人去影院最频繁，但下降幅度最大；45 岁以上人群是唯一上升的组。到 2025 年三组的差距明显缩小。先写下降的两组，再写上升的一组，最后指出差距变小。",
+    phrases:["The table shows how often people in three age groups went to the cinema in ...","Overall, ..., although ...","fell sharply from ... to ...","the only group to show an increase","By 2025, the gap between ... had narrowed considerably."],
+    model:`The table gives figures for how frequently members of three age groups in a single nation attended films at the cinema, on average, in 2005, 2015 and 2025.
+
+Overall, 16- to 24-year-olds were the most frequent cinema-goers throughout the period, although their attendance fell sharply. In contrast, people aged 45 and over were the only group to show an increase, and the differences between the groups became much smaller over time.
+
+In 2005, people aged 16 to 24 visited the cinema 9.5 times a year on average, nearly twice as often as those aged 25 to 44, who went 5.0 times. Over the next twenty years, the figure for the youngest group dropped to 7.0 in 2015 and then to only 4.5 in 2025. Attendance among 25- to 44-year-olds also declined, but only slightly, reaching 4.0 visits by the end of the period.
+
+Meanwhile, the oldest group made just 2.0 visits annually in 2005. However, this figure rose steadily to 3.0 in 2015 and 3.5 in 2025. As a result, by 2025 the gap between the most and least frequent cinema-goers had narrowed to just one visit per year.` }
 ],
 
 task2: [
@@ -197,6 +224,49 @@ One important cause is the growing role of screens in young people's lives. Smar
 
 There are several ways to tackle this problem. Schools could make physical activity a regular part of every day, not only in physical education lessons but also through active breaks and after-school clubs that are free to join. Local governments could invest in parks, sports fields and safe cycle routes, making it easier and more attractive for young people to be active. Parents also have an important role to play: they can set limits on screen time and take part in physical activities with their children, for example by walking or cycling together at weekends.
 
-In conclusion, a lack of exercise among young people is mainly the result of screen-based entertainment, academic pressure and unsuitable environments. If schools, local authorities and families work together, it should be possible to encourage young people to lead more active lives.` }
+In conclusion, a lack of exercise among young people is mainly the result of screen-based entertainment, academic pressure and unsuitable environments. If schools, local authorities and families work together, it should be possible to encourage young people to lead more active lives.` },
+  { id:"w2-elderly", name:"老人应由家庭还是政府照顾", type:"discuss",
+    prompt:"Some people think that families should be responsible for looking after elderly relatives. Others believe this is mainly the responsibility of the government. Discuss both views and give your own opinion.",
+    hint:"讨论双方观点题要各用一段公平地写两边，再明确自己的立场。范文立场：家庭提供情感支持，政府负责专业护理和资金，两者分工合作。注意不要只写一边。",
+    phrases:["People have different views about who should ...","Those who believe ... argue that ...","On the other hand, many people feel that ...","In my opinion, the best approach is a partnership between ...","In conclusion, ..."],
+    model:`As people live longer, the question of who should care for elderly people has become increasingly important. Some argue that this is a family duty, while others believe the state should take the main role. In my opinion, both have essential but different responsibilities.
+
+Those who believe families should look after older relatives argue that children owe a debt to the parents who raised them. They also point out that elderly people usually feel happier and less lonely when they are cared for by people who love them. For example, in many Asian countries it is still common for three generations to live in the same home, and grandparents often help to raise grandchildren in return.
+
+On the other hand, many people feel that caring for the elderly should be the responsibility of the government. Modern families are often small, and adult children may live far away or work long hours. Moreover, some older people suffer from serious illnesses, such as dementia, which require professional care that relatives cannot provide. Without public support, carers may be forced to give up their jobs, which can lead to financial hardship.
+
+In my opinion, the best approach is a partnership between families and the state. Relatives are best placed to offer company and emotional support, whereas the government should fund care homes, home nursing services and financial help for family carers.
+
+In conclusion, although families have an important role to play, the growing needs of an ageing population mean that governments must also accept a large share of the responsibility.` },
+  { id:"w2-ads", name:"禁止面向儿童的广告", type:"opinion",
+    prompt:"Advertising aimed at children should be banned. To what extent do you agree or disagree?",
+    hint:"同意与否题全文立场要一致。范文立场：大部分同意，但不主张全面禁止，而是严格限制不健康食品等广告。主体段先写支持限制的两个理由，再写为什么全面禁止不现实。",
+    phrases:["I largely agree that ..., although I do not think a complete ban is necessary.","The main reason for ... is that ...","A second concern is ...","Nevertheless, a total ban would be ...","A more effective solution would be to ..."],
+    model:`Children today are exposed to a huge number of advertisements on television, online videos and mobile games. Some people believe that all advertising directed at children should be prohibited. I largely agree that it should be strictly controlled, although I do not think a complete ban is necessary.
+
+The main reason for restricting such advertising is that young children cannot easily recognise when they are being persuaded. Research suggests that children under the age of about eight often believe what advertisements say and do not understand that their purpose is to sell products. As a result, they may pressure their parents to buy toys or snacks that the family does not need or cannot afford.
+
+A second concern is health. Many of the products marketed to children, such as sugary drinks, sweets and fast food, contribute to obesity and tooth decay. Several countries have already banned junk food adverts during children's television programmes, and some studies have linked these rules to lower sugar consumption.
+
+Nevertheless, a total ban would be difficult to enforce, especially on the internet, where content is produced all over the world. Furthermore, not all advertising is harmful. Adverts can inform families about educational books, sports clubs or road safety campaigns.
+
+A more effective solution would be to ban advertisements for unhealthy food and to set clear rules for other products, such as limits on the use of cartoon characters and online influencers.
+
+In conclusion, I believe children need strong protection from advertising, but targeted restrictions are more practical and beneficial than a complete ban.` },
+  { id:"w2-tourism", name:"国际旅游的利与弊", type:"advantage",
+    prompt:"International tourism has grown rapidly in recent decades. Do the advantages of this trend outweigh the disadvantages?",
+    hint:"利弊比较题要给出明确判断。范文认为利大于弊：好处是收入就业和文化交流，坏处是环境压力和过度拥挤，但坏处可以通过管理减轻。注意结论要回应「outweigh」。",
+    phrases:["Although this growth has created some serious problems, I believe the benefits are greater.","The most obvious advantage is ...","International travel also ...","However, mass tourism can ...","These drawbacks are real, but they can be managed through ..."],
+    model:`Over the past few decades, cheaper flights and the internet have made it far easier for people to travel abroad, and the number of international tourists has risen dramatically. Although this growth has created some serious problems, I believe the benefits are greater.
+
+The most obvious advantage is economic. Tourism brings money into local economies and creates jobs in hotels, restaurants, transport and handicrafts. For many developing countries, such as Thailand or Kenya, it is one of the most important sources of foreign income, and it can provide work for people in rural areas where other employment is scarce.
+
+International travel also encourages understanding between cultures. When visitors experience daily life in another country, they often become more tolerant and curious, and local people gain contact with the wider world. In addition, the income from tourism can help to preserve historic buildings and traditional crafts that might otherwise disappear.
+
+However, mass tourism can cause damage. Aircraft produce large amounts of carbon dioxide, and popular destinations may suffer from overcrowding, pollution and rising house prices, which force residents to leave their neighbourhoods.
+
+These drawbacks are real, but they can be managed through sensible policies. Cities can limit short-term rentals, introduce tourist taxes and encourage visitors to travel outside the busiest seasons, while airlines continue to develop cleaner fuels and more efficient aircraft. Responsible tourists can also play a part by choosing local businesses and respecting the customs of the places they visit.
+
+In conclusion, while international tourism brings environmental and social challenges, I believe its economic and cultural advantages outweigh these disadvantages, provided that governments manage it carefully.` }
 ]
 };

@@ -1,0 +1,5328 @@
+{
+  "checkedOn": "2026-11-25",
+  "method": "在浏览器中逐词请求 OALD 词条页（/definition/english/<词>，及 _1、_2 等同形词条），从页面 DOM 读取 phons_br 与 phons_n_am 的 IPA、词性、语法与语域标签和义项定义。IPA 照录，仅去掉两侧斜线；北美音保留 OALD 现行的 /əʊ/ 记法（用户 2026-11-25 确认）。中文归纳与英文例句原创。OALD 无独立词条的派生词列为待复核。",
+  "counts": {
+    "assigned": 102,
+    "completed": 100,
+    "pending": 2,
+    "senses": 240
+  },
+  "deferred": [
+    {
+      "w": "nontraditional",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/nontraditional",
+      "reason": "OALD /definition/english/nontraditional 无独立词条。保留待复核。"
+    },
+    {
+      "w": "odor",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/odour",
+      "reason": "OALD /definition/english/odor 无词条（以英式拼写 odour 立目）；暂列待复核，需增加拼写别名支持后处理。"
+    }
+  ],
+  "entries": [
+    {
+      "w": "moisture",
+      "uk": "ˈmɔɪstʃə(r)",
+      "us": "ˈmɔɪstʃər",
+      "pos": "n.",
+      "semanticNote": "n. 水分、湿气",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/moisture",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/moisture"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "n.",
+          "uk": "ˈmɔɪstʃə(r)",
+          "us": "ˈmɔɪstʃər",
+          "rawUk": "/ˈmɔɪstʃə(r)/",
+          "rawUs": "/ˈmɔɪstʃər/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/moisture",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/moisture"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/moisture",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "n. 水分、湿气",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/moisture"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "mold",
+      "uk": "məʊld",
+      "us": "məʊld",
+      "pos": "n./v.",
+      "semanticNote": "n. （美式）模具、铸模；n. 类型、性格特点；n. 霉、霉菌；v. （美式）用模具制作、塑造（形状）；v. 影响、塑造（性格、观点等）；v. 紧贴（某物的形状）",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/mold",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/mold",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/mold_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/mold_2"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "n./v.",
+          "uk": "məʊld",
+          "us": "məʊld",
+          "rawUk": "/məʊld/",
+          "rawUs": "/məʊld/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/mold_1",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/mold_1"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/mold",
+          "access": "canonical-entry-link",
+          "checkedOn": "2026-11-25"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/mold_1",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/mold_2",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "n. （美式）模具、铸模",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/mold_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/mold_2"
+          ]
+        },
+        {
+          "sense": "n. 类型、性格特点",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/mold_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/mold_2"
+          ]
+        },
+        {
+          "sense": "n. 霉、霉菌",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/mold_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/mold_2"
+          ]
+        },
+        {
+          "sense": "v. （美式）用模具制作、塑造（形状）",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/mold_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/mold_2"
+          ]
+        },
+        {
+          "sense": "v. 影响、塑造（性格、观点等）",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/mold_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/mold_2"
+          ]
+        },
+        {
+          "sense": "v. 紧贴（某物的形状）",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/mold_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/mold_2"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "molecular",
+      "uk": "məˈlekjələ(r)",
+      "us": "məˈlekjələr",
+      "pos": "adj.",
+      "semanticNote": "adj. （化学）分子的（仅用于名词前）",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/molecular",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/molecular"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "adj.",
+          "uk": "məˈlekjələ(r)",
+          "us": "məˈlekjələr",
+          "rawUk": "/məˈlekjələ(r)/",
+          "rawUs": "/məˈlekjələr/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/molecular",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/molecular"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/molecular",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "adj. （化学）分子的（仅用于名词前）",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/molecular"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "monarch",
+      "uk": "ˈmɒnək",
+      "us": "ˈmɑːnərk",
+      "pos": "n.",
+      "semanticNote": "n. 君主、帝王",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/monarch",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/monarch"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "n.",
+          "uk": "ˈmɒnək",
+          "us": "ˈmɑːnərk",
+          "rawUk": "/ˈmɒnək/",
+          "rawUs": "/ˈmɑːnərk/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/monarch",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/monarch"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/monarch",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "n. 君主、帝王",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/monarch"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "monetary",
+      "uk": "ˈmʌnɪtri",
+      "us": "ˈmɑːnɪteri",
+      "pos": "adj.",
+      "semanticNote": "adj. 货币的、金融的（仅用于名词前）",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/monetary",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/monetary"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "adj.",
+          "uk": "ˈmʌnɪtri",
+          "us": "ˈmɑːnɪteri",
+          "rawUk": "/ˈmʌnɪtri/",
+          "rawUs": "/ˈmɑːnɪteri/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/monetary",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/monetary"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/monetary",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "adj. 货币的、金融的（仅用于名词前）",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/monetary"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "morale",
+      "uk": "məˈrɑːl",
+      "us": "məˈræl",
+      "pos": "n.",
+      "semanticNote": "n. 士气、斗志",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/morale",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/morale"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "n.",
+          "uk": "məˈrɑːl",
+          "us": "məˈræl",
+          "rawUk": "/məˈrɑːl/",
+          "rawUs": "/məˈræl/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/morale",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/morale"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/morale",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "n. 士气、斗志",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/morale"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "mortal",
+      "uk": "ˈmɔːtl",
+      "us": "ˈmɔːrtl",
+      "pos": "adj./n.",
+      "semanticNote": "adj. 终有一死的；adj. 致命的（文学）；adj. 至死不变的（正式，仅用于名词前）；adj. 极度的（正式，仅用于名词前）；n. 凡人、普通人（常幽默）",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/mortal",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/mortal",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/mortal_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/mortal_2"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "adj./n.",
+          "uk": "ˈmɔːtl",
+          "us": "ˈmɔːrtl",
+          "rawUk": "/ˈmɔːtl/",
+          "rawUs": "/ˈmɔːrtl/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/mortal_1",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/mortal_1"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/mortal",
+          "access": "canonical-entry-link",
+          "checkedOn": "2026-11-25"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/mortal_1",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/mortal_2",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "adj. 终有一死的",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/mortal_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/mortal_2"
+          ]
+        },
+        {
+          "sense": "adj. 致命的（文学）",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/mortal_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/mortal_2"
+          ]
+        },
+        {
+          "sense": "adj. 至死不变的（正式，仅用于名词前）",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/mortal_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/mortal_2"
+          ]
+        },
+        {
+          "sense": "adj. 极度的（正式，仅用于名词前）",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/mortal_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/mortal_2"
+          ]
+        },
+        {
+          "sense": "n. 凡人、普通人（常幽默）",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/mortal_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/mortal_2"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "mortar",
+      "uk": "ˈmɔːtə(r)",
+      "us": "ˈmɔːrtər",
+      "pos": "n./v.",
+      "semanticNote": "n. 灰浆、砂浆；n. 迫击炮（弹）；n. 研钵；v. 用迫击炮攻击",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/mortar",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/mortar",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/mortar_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/mortar_2"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "n./v.",
+          "uk": "ˈmɔːtə(r)",
+          "us": "ˈmɔːrtər",
+          "rawUk": "/ˈmɔːtə(r)/",
+          "rawUs": "/ˈmɔːrtər/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/mortar_1",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/mortar_1"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/mortar",
+          "access": "canonical-entry-link",
+          "checkedOn": "2026-11-25"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/mortar_1",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/mortar_2",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "n. 灰浆、砂浆",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/mortar_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/mortar_2"
+          ]
+        },
+        {
+          "sense": "n. 迫击炮（弹）",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/mortar_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/mortar_2"
+          ]
+        },
+        {
+          "sense": "n. 研钵",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/mortar_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/mortar_2"
+          ]
+        },
+        {
+          "sense": "v. 用迫击炮攻击",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/mortar_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/mortar_2"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "moss",
+      "uk": "mɒs",
+      "us": "mɔːs",
+      "pos": "n.",
+      "semanticNote": "n. 苔藓",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/moss",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/moss"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "n.",
+          "uk": "mɒs",
+          "us": "mɔːs",
+          "rawUk": "/mɒs/",
+          "rawUs": "/mɔːs/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/moss",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/moss"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/moss",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "n. 苔藓",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/moss"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "moth",
+      "uk": "mɒθ",
+      "us": "mɔːθ",
+      "pos": "n.",
+      "semanticNote": "n. 蛾",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/moth",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/moth"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "n.",
+          "uk": "mɒθ",
+          "us": "mɔːθ",
+          "rawUk": "/mɒθ/",
+          "rawUs": "/mɔːθ/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/moth",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/moth"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/moth",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "n. 蛾",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/moth"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "motionless",
+      "uk": "ˈməʊʃnləs",
+      "us": "ˈməʊʃnləs",
+      "pos": "adj.",
+      "semanticNote": "adj. 静止的、一动不动的",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/motionless",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/motionless"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "adj.",
+          "uk": "ˈməʊʃnləs",
+          "us": "ˈməʊʃnləs",
+          "rawUk": "/ˈməʊʃnləs/",
+          "rawUs": "/ˈməʊʃnləs/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/motionless",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/motionless"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/motionless",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "adj. 静止的、一动不动的",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/motionless"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "mourning",
+      "uk": "ˈmɔːnɪŋ",
+      "us": "ˈmɔːrnɪŋ",
+      "pos": "n.",
+      "semanticNote": "n. 哀悼、服丧；n. 丧服",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/mourning",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/mourning"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "n.",
+          "uk": "ˈmɔːnɪŋ",
+          "us": "ˈmɔːrnɪŋ",
+          "rawUk": "/ˈmɔːnɪŋ/",
+          "rawUs": "/ˈmɔːrnɪŋ/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/mourning",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/mourning"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/mourning",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "n. 哀悼、服丧",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/mourning"
+          ]
+        },
+        {
+          "sense": "n. 丧服",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/mourning"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "multiply",
+      "uk": "ˈmʌltɪplaɪ",
+      "us": "ˈmʌltɪplaɪ",
+      "pos": "v.",
+      "semanticNote": "v. 乘、相乘；v. （使）大量增加；v. （生物）繁殖",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/multiply",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/multiply"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "v.",
+          "uk": "ˈmʌltɪplaɪ",
+          "us": "ˈmʌltɪplaɪ",
+          "rawUk": "/ˈmʌltɪplaɪ/",
+          "rawUs": "/ˈmʌltɪplaɪ/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/multiply",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/multiply"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/multiply",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "v. 乘、相乘",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/multiply"
+          ]
+        },
+        {
+          "sense": "v. （使）大量增加",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/multiply"
+          ]
+        },
+        {
+          "sense": "v. （生物）繁殖",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/multiply"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "multitude",
+      "uk": "ˈmʌltɪtjuːd",
+      "us": "ˈmʌltɪtuːd",
+      "pos": "n.",
+      "semanticNote": "n. 众多、大量（正式）；n. 民众、大众（the multitude，有时贬义）；n. 人群（文学）",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/multitude",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/multitude"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "n.",
+          "uk": "ˈmʌltɪtjuːd",
+          "us": "ˈmʌltɪtuːd",
+          "rawUk": "/ˈmʌltɪtjuːd/",
+          "rawUs": "/ˈmʌltɪtuːd/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/multitude",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/multitude"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/multitude",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "n. 众多、大量（正式）",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/multitude"
+          ]
+        },
+        {
+          "sense": "n. 民众、大众（the multitude，有时贬义）",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/multitude"
+          ]
+        },
+        {
+          "sense": "n. 人群（文学）",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/multitude"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "mundane",
+      "uk": "mʌnˈdeɪn",
+      "us": "mʌnˈdeɪn",
+      "pos": "adj.",
+      "semanticNote": "adj. 平凡的、单调乏味的（常贬义）",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/mundane",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/mundane"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "adj.",
+          "uk": "mʌnˈdeɪn",
+          "us": "mʌnˈdeɪn",
+          "rawUk": "/mʌnˈdeɪn/",
+          "rawUs": "/mʌnˈdeɪn/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/mundane",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/mundane"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/mundane",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "adj. 平凡的、单调乏味的（常贬义）",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/mundane"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "muscular",
+      "uk": "ˈmʌskjələ(r)",
+      "us": "ˈmʌskjələr",
+      "pos": "adj.",
+      "semanticNote": "adj. 肌肉的；adj. 肌肉发达的",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/muscular",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/muscular"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "adj.",
+          "uk": "ˈmʌskjələ(r)",
+          "us": "ˈmʌskjələr",
+          "rawUk": "/ˈmʌskjələ(r)/",
+          "rawUs": "/ˈmʌskjələr/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/muscular",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/muscular"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/muscular",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "adj. 肌肉的",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/muscular"
+          ]
+        },
+        {
+          "sense": "adj. 肌肉发达的",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/muscular"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "myriad",
+      "uk": "ˈmɪriəd",
+      "us": "ˈmɪriəd",
+      "pos": "adj./n.",
+      "semanticNote": "adj. 无数的、大量的（文学）；n. 无数、极大数量（文学）",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/myriad",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/myriad",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/myriad_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/myriad_2"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "adj./n.",
+          "uk": "ˈmɪriəd",
+          "us": "ˈmɪriəd",
+          "rawUk": "/ˈmɪriəd/",
+          "rawUs": "/ˈmɪriəd/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/myriad_1",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/myriad_1"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/myriad",
+          "access": "canonical-entry-link",
+          "checkedOn": "2026-11-25"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/myriad_1",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/myriad_2",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "adj. 无数的、大量的（文学）",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/myriad_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/myriad_2"
+          ]
+        },
+        {
+          "sense": "n. 无数、极大数量（文学）",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/myriad_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/myriad_2"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "mythology",
+      "uk": "mɪˈθɒlədʒi",
+      "us": "mɪˈθɑːlədʒi",
+      "pos": "n.",
+      "semanticNote": "n. 神话（总称）；n. 错误的信念、虚构的说法",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/mythology",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/mythology"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "n.",
+          "uk": "mɪˈθɒlədʒi",
+          "us": "mɪˈθɑːlədʒi",
+          "rawUk": "/mɪˈθɒlədʒi/",
+          "rawUs": "/mɪˈθɑːlədʒi/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/mythology",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/mythology"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/mythology",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "n. 神话（总称）",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/mythology"
+          ]
+        },
+        {
+          "sense": "n. 错误的信念、虚构的说法",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/mythology"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "narcotic",
+      "uk": "nɑːˈkɒtɪk",
+      "us": "nɑːrˈkɑːtɪk",
+      "pos": "n./adj.",
+      "semanticNote": "n. 毒品（正式）；n. （医学）麻醉剂、镇静剂；adj. 致幻的、成瘾的；adj. 催眠的",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/narcotic",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/narcotic",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/narcotic_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/narcotic_2"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "n./adj.",
+          "uk": "nɑːˈkɒtɪk",
+          "us": "nɑːrˈkɑːtɪk",
+          "rawUk": "/nɑːˈkɒtɪk/",
+          "rawUs": "/nɑːrˈkɑːtɪk/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/narcotic_1",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/narcotic_1"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/narcotic",
+          "access": "canonical-entry-link",
+          "checkedOn": "2026-11-25"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/narcotic_1",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/narcotic_2",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "n. 毒品（正式）",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/narcotic_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/narcotic_2"
+          ]
+        },
+        {
+          "sense": "n. （医学）麻醉剂、镇静剂",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/narcotic_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/narcotic_2"
+          ]
+        },
+        {
+          "sense": "adj. 致幻的、成瘾的",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/narcotic_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/narcotic_2"
+          ]
+        },
+        {
+          "sense": "adj. 催眠的",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/narcotic_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/narcotic_2"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "nationality",
+      "uk": "ˌnæʃəˈnæləti",
+      "us": "ˌnæʃəˈnæləti",
+      "pos": "n.",
+      "semanticNote": "n. 国籍；n. 民族",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/nationality",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/nationality"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "n.",
+          "uk": "ˌnæʃəˈnæləti",
+          "us": "ˌnæʃəˈnæləti",
+          "rawUk": "/ˌnæʃəˈnæləti/",
+          "rawUs": "/ˌnæʃəˈnæləti/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/nationality",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/nationality"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/nationality",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "n. 国籍",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/nationality"
+          ]
+        },
+        {
+          "sense": "n. 民族",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/nationality"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "navigate",
+      "uk": "ˈnævɪɡeɪt",
+      "us": "ˈnævɪɡeɪt",
+      "pos": "v.",
+      "semanticNote": "v. 导航、确定航线；v. （在网上）浏览、导航；v. 航行、通过；v. 处理、应对（复杂局面）",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/navigate",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/navigate"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "v.",
+          "uk": "ˈnævɪɡeɪt",
+          "us": "ˈnævɪɡeɪt",
+          "rawUk": "/ˈnævɪɡeɪt/",
+          "rawUs": "/ˈnævɪɡeɪt/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/navigate",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/navigate"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/navigate",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "v. 导航、确定航线",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/navigate"
+          ]
+        },
+        {
+          "sense": "v. （在网上）浏览、导航",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/navigate"
+          ]
+        },
+        {
+          "sense": "v. 航行、通过",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/navigate"
+          ]
+        },
+        {
+          "sense": "v. 处理、应对（复杂局面）",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/navigate"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "navigation",
+      "uk": "ˌnævɪˈɡeɪʃn",
+      "us": "ˌnævɪˈɡeɪʃn",
+      "pos": "n.",
+      "semanticNote": "n. 导航、航行技术；n. （船只、飞机的）航行；n. （网站的）导航",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/navigation",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/navigation"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "n.",
+          "uk": "ˌnævɪˈɡeɪʃn",
+          "us": "ˌnævɪˈɡeɪʃn",
+          "rawUk": "/ˌnævɪˈɡeɪʃn/",
+          "rawUs": "/ˌnævɪˈɡeɪʃn/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/navigation",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/navigation"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/navigation",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "n. 导航、航行技术",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/navigation"
+          ]
+        },
+        {
+          "sense": "n. （船只、飞机的）航行",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/navigation"
+          ]
+        },
+        {
+          "sense": "n. （网站的）导航",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/navigation"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "needy",
+      "uk": "ˈniːdi",
+      "us": "ˈniːdi",
+      "pos": "adj.",
+      "semanticNote": "adj. 贫困的、贫穷的；adj. 需要大量关爱的、缺乏安全感的",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/needy",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/needy"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "adj.",
+          "uk": "ˈniːdi",
+          "us": "ˈniːdi",
+          "rawUk": "/ˈniːdi/",
+          "rawUs": "/ˈniːdi/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/needy",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/needy"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/needy",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "adj. 贫困的、贫穷的",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/needy"
+          ]
+        },
+        {
+          "sense": "adj. 需要大量关爱的、缺乏安全感的",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/needy"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "neglect",
+      "uk": "nɪˈɡlekt",
+      "us": "nɪˈɡlekt",
+      "pos": "v./n.",
+      "semanticNote": "v. 疏于照顾；v. 忽视、不重视；v. 忘记做、疏忽（正式）；n. 忽视、疏于照管",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/neglect",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/neglect",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/neglect_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/neglect_2"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "v./n.",
+          "uk": "nɪˈɡlekt",
+          "us": "nɪˈɡlekt",
+          "rawUk": "/nɪˈɡlekt/",
+          "rawUs": "/nɪˈɡlekt/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/neglect_1",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/neglect_1"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/neglect",
+          "access": "canonical-entry-link",
+          "checkedOn": "2026-11-25"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/neglect_1",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/neglect_2",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "v. 疏于照顾",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/neglect_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/neglect_2"
+          ]
+        },
+        {
+          "sense": "v. 忽视、不重视",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/neglect_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/neglect_2"
+          ]
+        },
+        {
+          "sense": "v. 忘记做、疏忽（正式）",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/neglect_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/neglect_2"
+          ]
+        },
+        {
+          "sense": "n. 忽视、疏于照管",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/neglect_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/neglect_2"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "neon",
+      "uk": "ˈniːɒn",
+      "us": "ˈniːɑːn",
+      "pos": "n.",
+      "semanticNote": "n. 氖、氖气",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/neon",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/neon"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "n.",
+          "uk": "ˈniːɒn",
+          "us": "ˈniːɑːn",
+          "rawUk": "/ˈniːɒn/",
+          "rawUs": "/ˈniːɑːn/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/neon",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/neon"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/neon",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "n. 氖、氖气",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/neon"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "niche",
+      "uk": "niːʃ",
+      "us": "niːʃ",
+      "pos": "n./adj.",
+      "semanticNote": "n. 合适的位置、适合的职业；n. （商业）市场空白、细分市场；n. 壁龛；n. （生物）生态位；adj. （商业）面向小众的",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/niche",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/niche",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/niche_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/niche_2"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "n./adj.",
+          "uk": "niːʃ",
+          "us": "niːʃ",
+          "rawUk": "/niːʃ/",
+          "rawUs": "/niːʃ/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/niche_1",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/niche_1"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/niche",
+          "access": "canonical-entry-link",
+          "checkedOn": "2026-11-25"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/niche_1",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/niche_2",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "n. 合适的位置、适合的职业",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/niche_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/niche_2"
+          ]
+        },
+        {
+          "sense": "n. （商业）市场空白、细分市场",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/niche_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/niche_2"
+          ]
+        },
+        {
+          "sense": "n. 壁龛",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/niche_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/niche_2"
+          ]
+        },
+        {
+          "sense": "n. （生物）生态位",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/niche_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/niche_2"
+          ]
+        },
+        {
+          "sense": "adj. （商业）面向小众的",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/niche_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/niche_2"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "nickel",
+      "uk": "ˈnɪkl",
+      "us": "ˈnɪkl",
+      "pos": "n.",
+      "semanticNote": "n. 镍；n. （美国、加拿大的）五分硬币",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/nickel",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/nickel"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "n.",
+          "uk": "ˈnɪkl",
+          "us": "ˈnɪkl",
+          "rawUk": "/ˈnɪkl/",
+          "rawUs": "/ˈnɪkl/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/nickel",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/nickel"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/nickel",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "n. 镍",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/nickel"
+          ]
+        },
+        {
+          "sense": "n. （美国、加拿大的）五分硬币",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/nickel"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "nickname",
+      "uk": "ˈnɪkneɪm",
+      "us": "ˈnɪkneɪm",
+      "pos": "n./v.",
+      "semanticNote": "n. 绰号、昵称；v. 给……起绰号",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/nickname",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/nickname",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/nickname_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/nickname_2"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "n./v.",
+          "uk": "ˈnɪkneɪm",
+          "us": "ˈnɪkneɪm",
+          "rawUk": "/ˈnɪkneɪm/",
+          "rawUs": "/ˈnɪkneɪm/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/nickname_1",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/nickname_1"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/nickname",
+          "access": "canonical-entry-link",
+          "checkedOn": "2026-11-25"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/nickname_1",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/nickname_2",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "n. 绰号、昵称",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/nickname_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/nickname_2"
+          ]
+        },
+        {
+          "sense": "v. 给……起绰号",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/nickname_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/nickname_2"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "nitrogen",
+      "uk": "ˈnaɪtrədʒən",
+      "us": "ˈnaɪtrədʒən",
+      "pos": "n.",
+      "semanticNote": "n. 氮、氮气",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/nitrogen",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/nitrogen"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "n.",
+          "uk": "ˈnaɪtrədʒən",
+          "us": "ˈnaɪtrədʒən",
+          "rawUk": "/ˈnaɪtrədʒən/",
+          "rawUs": "/ˈnaɪtrədʒən/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/nitrogen",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/nitrogen"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/nitrogen",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "n. 氮、氮气",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/nitrogen"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "noisy",
+      "uk": "ˈnɔɪzi",
+      "us": "ˈnɔɪzi",
+      "pos": "adj.",
+      "semanticNote": "adj. 吵闹的；adj. 嘈杂的、充满噪音的",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/noisy",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/noisy"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "adj.",
+          "uk": "ˈnɔɪzi",
+          "us": "ˈnɔɪzi",
+          "rawUk": "/ˈnɔɪzi/",
+          "rawUs": "/ˈnɔɪzi/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/noisy",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/noisy"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/noisy",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "adj. 吵闹的",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/noisy"
+          ]
+        },
+        {
+          "sense": "adj. 嘈杂的、充满噪音的",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/noisy"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "nonsense",
+      "uk": "ˈnɒnsns",
+      "us": "ˈnɑːnsens",
+      "pos": "n.",
+      "semanticNote": "n. 胡说、谬论；n. 无意义的话；n. 愚蠢的行为",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/nonsense",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/nonsense"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "n.",
+          "uk": "ˈnɒnsns",
+          "us": "ˈnɑːnsens",
+          "rawUk": "/ˈnɒnsns/",
+          "rawUs": "/ˈnɑːnsens/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/nonsense",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/nonsense"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/nonsense",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "n. 胡说、谬论",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/nonsense"
+          ]
+        },
+        {
+          "sense": "n. 无意义的话",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/nonsense"
+          ]
+        },
+        {
+          "sense": "n. 愚蠢的行为",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/nonsense"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "nostalgia",
+      "uk": "nɒˈstældʒə",
+      "us": "nəˈstældʒə",
+      "pos": "n.",
+      "semanticNote": "n. 怀旧、念旧",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/nostalgia",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/nostalgia"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "n.",
+          "uk": "nɒˈstældʒə",
+          "us": "nəˈstældʒə",
+          "rawUk": "/nɒˈstældʒə/",
+          "rawUs": "/nəˈstældʒə/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/nostalgia",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/nostalgia"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/nostalgia",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "n. 怀旧、念旧",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/nostalgia"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "notable",
+      "uk": "ˈnəʊtəbl",
+      "us": "ˈnəʊtəbl",
+      "pos": "adj./n.",
+      "semanticNote": "adj. 值得注意的、显著的（较正式）；n. 名人、要人（正式，常用复数）",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/notable",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/notable",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/notable_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/notable_2"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "adj./n.",
+          "uk": "ˈnəʊtəbl",
+          "us": "ˈnəʊtəbl",
+          "rawUk": "/ˈnəʊtəbl/",
+          "rawUs": "/ˈnəʊtəbl/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/notable_1",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/notable_1"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/notable",
+          "access": "canonical-entry-link",
+          "checkedOn": "2026-11-25"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/notable_1",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/notable_2",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "adj. 值得注意的、显著的（较正式）",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/notable_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/notable_2"
+          ]
+        },
+        {
+          "sense": "n. 名人、要人（正式，常用复数）",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/notable_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/notable_2"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "notch",
+      "uk": "nɒtʃ",
+      "us": "nɑːtʃ",
+      "pos": "n./v.",
+      "semanticNote": "n. 等级、档次；n. V 形刻痕、凹口；n. （皮带等的）扣眼；v. 获得、赢得（非正式）；v. 在……上刻 V 形痕",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/notch",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/notch",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/notch_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/notch_2"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "n./v.",
+          "uk": "nɒtʃ",
+          "us": "nɑːtʃ",
+          "rawUk": "/nɒtʃ/",
+          "rawUs": "/nɑːtʃ/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/notch_1",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/notch_1"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/notch",
+          "access": "canonical-entry-link",
+          "checkedOn": "2026-11-25"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/notch_1",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/notch_2",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "n. 等级、档次",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/notch_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/notch_2"
+          ]
+        },
+        {
+          "sense": "n. V 形刻痕、凹口",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/notch_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/notch_2"
+          ]
+        },
+        {
+          "sense": "n. （皮带等的）扣眼",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/notch_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/notch_2"
+          ]
+        },
+        {
+          "sense": "v. 获得、赢得（非正式）",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/notch_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/notch_2"
+          ]
+        },
+        {
+          "sense": "v. 在……上刻 V 形痕",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/notch_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/notch_2"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "notorious",
+      "uk": "nəʊˈtɔːriəs",
+      "us": "nəʊˈtɔːriəs",
+      "pos": "adj.",
+      "semanticNote": "adj. 臭名昭著的",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/notorious",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/notorious"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "adj.",
+          "uk": "nəʊˈtɔːriəs",
+          "us": "nəʊˈtɔːriəs",
+          "rawUk": "/nəʊˈtɔːriəs/",
+          "rawUs": "/nəʊˈtɔːriəs/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/notorious",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/notorious"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/notorious",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "adj. 臭名昭著的",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/notorious"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "novelty",
+      "uk": "ˈnɒvlti",
+      "us": "ˈnɑːvlti",
+      "pos": "n./adj.",
+      "semanticNote": "n. 新颖、新奇；n. 新奇的事物；n. 小装饰品、小玩意；adj. 新奇有趣的（仅用于名词前）",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/novelty",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/novelty",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/novelty_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/novelty_2"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "n./adj.",
+          "uk": "ˈnɒvlti",
+          "us": "ˈnɑːvlti",
+          "rawUk": "/ˈnɒvlti/",
+          "rawUs": "/ˈnɑːvlti/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/novelty_1",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/novelty_1"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/novelty",
+          "access": "canonical-entry-link",
+          "checkedOn": "2026-11-25"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/novelty_1",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/novelty_2",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "n. 新颖、新奇",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/novelty_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/novelty_2"
+          ]
+        },
+        {
+          "sense": "n. 新奇的事物",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/novelty_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/novelty_2"
+          ]
+        },
+        {
+          "sense": "n. 小装饰品、小玩意",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/novelty_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/novelty_2"
+          ]
+        },
+        {
+          "sense": "adj. 新奇有趣的（仅用于名词前）",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/novelty_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/novelty_2"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "novice",
+      "uk": "ˈnɒvɪs",
+      "us": "ˈnɑːvɪs",
+      "pos": "n.",
+      "semanticNote": "n. 新手、初学者；n. 见习修士、见习修女；n. 未赢过重要比赛的赛马",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/novice",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/novice"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "n.",
+          "uk": "ˈnɒvɪs",
+          "us": "ˈnɑːvɪs",
+          "rawUk": "/ˈnɒvɪs/",
+          "rawUs": "/ˈnɑːvɪs/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/novice",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/novice"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/novice",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "n. 新手、初学者",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/novice"
+          ]
+        },
+        {
+          "sense": "n. 见习修士、见习修女",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/novice"
+          ]
+        },
+        {
+          "sense": "n. 未赢过重要比赛的赛马",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/novice"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "nowadays",
+      "uk": "ˈnaʊədeɪz",
+      "us": "ˈnaʊədeɪz",
+      "pos": "adv.",
+      "semanticNote": "adv. 如今、现在",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/nowadays",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/nowadays"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "adv.",
+          "uk": "ˈnaʊədeɪz",
+          "us": "ˈnaʊədeɪz",
+          "rawUk": "/ˈnaʊədeɪz/",
+          "rawUs": "/ˈnaʊədeɪz/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/nowadays",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/nowadays"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/nowadays",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "adv. 如今、现在",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/nowadays"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "nucleus",
+      "uk": "ˈnjuːkliəs",
+      "us": "ˈnuːkliəs",
+      "pos": "n.",
+      "semanticNote": "n. （物理）原子核；n. （生物）细胞核；n. 核心、中心",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/nucleus",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/nucleus"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "n.",
+          "uk": "ˈnjuːkliəs",
+          "us": "ˈnuːkliəs",
+          "rawUk": "/ˈnjuːkliəs/",
+          "rawUs": "/ˈnuːkliəs/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/nucleus",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/nucleus"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/nucleus",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "n. （物理）原子核",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/nucleus"
+          ]
+        },
+        {
+          "sense": "n. （生物）细胞核",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/nucleus"
+          ]
+        },
+        {
+          "sense": "n. 核心、中心",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/nucleus"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "numb",
+      "uk": "nʌm",
+      "us": "nʌm",
+      "pos": "adj./v.",
+      "semanticNote": "adj. 麻木的、失去知觉的；adj. （情感上）麻木的、发呆的；v. 使麻木、使失去知觉；v. 使（情感）麻木",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/numb",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/numb",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/numb_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/numb_2"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "adj./v.",
+          "uk": "nʌm",
+          "us": "nʌm",
+          "rawUk": "/nʌm/",
+          "rawUs": "/nʌm/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/numb_1",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/numb_1"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/numb",
+          "access": "canonical-entry-link",
+          "checkedOn": "2026-11-25"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/numb_1",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/numb_2",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "adj. 麻木的、失去知觉的",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/numb_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/numb_2"
+          ]
+        },
+        {
+          "sense": "adj. （情感上）麻木的、发呆的",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/numb_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/numb_2"
+          ]
+        },
+        {
+          "sense": "v. 使麻木、使失去知觉",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/numb_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/numb_2"
+          ]
+        },
+        {
+          "sense": "v. 使（情感）麻木",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/numb_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/numb_2"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "nutrition",
+      "uk": "njuˈtrɪʃn",
+      "us": "nuˈtrɪʃn",
+      "pos": "n.",
+      "semanticNote": "n. 营养（过程）；n. 营养物、养分",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/nutrition",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/nutrition"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "n.",
+          "uk": "njuˈtrɪʃn",
+          "us": "nuˈtrɪʃn",
+          "rawUk": "/njuˈtrɪʃn/",
+          "rawUs": "/nuˈtrɪʃn/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/nutrition",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/nutrition"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/nutrition",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "n. 营养（过程）",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/nutrition"
+          ]
+        },
+        {
+          "sense": "n. 营养物、养分",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/nutrition"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "nutritional",
+      "uk": "njuˈtrɪʃənl",
+      "us": "nuˈtrɪʃənl",
+      "pos": "adj.",
+      "semanticNote": "adj. 营养的",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/nutritional",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/nutritional"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "adj.",
+          "uk": "njuˈtrɪʃənl",
+          "us": "nuˈtrɪʃənl",
+          "rawUk": "/njuˈtrɪʃənl/",
+          "rawUs": "/nuˈtrɪʃənl/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/nutritional",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/nutritional"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/nutritional",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "adj. 营养的",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/nutritional"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "oath",
+      "uk": "əʊθ",
+      "us": "əʊθ",
+      "pos": "n.",
+      "semanticNote": "n. 誓言、宣誓；n. 咒骂语（旧式）",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/oath",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/oath"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "n.",
+          "uk": "əʊθ",
+          "us": "əʊθ",
+          "rawUk": "/əʊθ/",
+          "rawUs": "/əʊθ/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/oath",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/oath"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/oath",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "n. 誓言、宣誓",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/oath"
+          ]
+        },
+        {
+          "sense": "n. 咒骂语（旧式）",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/oath"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "obedience",
+      "uk": "əˈbiːdiəns",
+      "us": "əˈbiːdiəns",
+      "pos": "n.",
+      "semanticNote": "n. 服从、顺从",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/obedience",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/obedience"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "n.",
+          "uk": "əˈbiːdiəns",
+          "us": "əˈbiːdiəns",
+          "rawUk": "/əˈbiːdiəns/",
+          "rawUs": "/əˈbiːdiəns/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/obedience",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/obedience"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/obedience",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "n. 服从、顺从",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/obedience"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "oblige",
+      "uk": "əˈblaɪdʒ",
+      "us": "əˈblaɪdʒ",
+      "pos": "v.",
+      "semanticNote": "v. 迫使、使有义务（正式，常用被动）；v. 帮忙、施惠（正式）",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/oblige",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/oblige"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "v.",
+          "uk": "əˈblaɪdʒ",
+          "us": "əˈblaɪdʒ",
+          "rawUk": "/əˈblaɪdʒ/",
+          "rawUs": "/əˈblaɪdʒ/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/oblige",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/oblige"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/oblige",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "v. 迫使、使有义务（正式，常用被动）",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/oblige"
+          ]
+        },
+        {
+          "sense": "v. 帮忙、施惠（正式）",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/oblige"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "obscene",
+      "uk": "əbˈsiːn",
+      "us": "əbˈsiːn",
+      "pos": "adj.",
+      "semanticNote": "adj. 淫秽的、下流的；adj. （数量）大得令人难以接受的",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/obscene",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/obscene"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "adj.",
+          "uk": "əbˈsiːn",
+          "us": "əbˈsiːn",
+          "rawUk": "/əbˈsiːn/",
+          "rawUs": "/əbˈsiːn/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/obscene",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/obscene"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/obscene",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "adj. 淫秽的、下流的",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/obscene"
+          ]
+        },
+        {
+          "sense": "adj. （数量）大得令人难以接受的",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/obscene"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "obscure",
+      "uk": "əbˈskjʊə(r)",
+      "us": "əbˈskjʊr",
+      "pos": "adj./v.",
+      "semanticNote": "adj. 鲜为人知的；adj. 难以理解的、晦涩的；v. 遮掩、使模糊",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/obscure",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/obscure",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/obscure_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/obscure_2"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "adj./v.",
+          "uk": "əbˈskjʊə(r)",
+          "us": "əbˈskjʊr",
+          "rawUk": "/əbˈskjʊə(r)/",
+          "rawUs": "/əbˈskjʊr/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/obscure_1",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/obscure_1"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/obscure",
+          "access": "canonical-entry-link",
+          "checkedOn": "2026-11-25"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/obscure_1",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/obscure_2",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "adj. 鲜为人知的",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/obscure_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/obscure_2"
+          ]
+        },
+        {
+          "sense": "adj. 难以理解的、晦涩的",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/obscure_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/obscure_2"
+          ]
+        },
+        {
+          "sense": "v. 遮掩、使模糊",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/obscure_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/obscure_2"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "observatory",
+      "uk": "əbˈzɜːvətri",
+      "us": "əbˈzɜːrvətɔːri",
+      "pos": "n.",
+      "semanticNote": "n. 天文台、观测站",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/observatory",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/observatory"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "n.",
+          "uk": "əbˈzɜːvətri",
+          "us": "əbˈzɜːrvətɔːri",
+          "rawUk": "/əbˈzɜːvətri/",
+          "rawUs": "/əbˈzɜːrvətɔːri/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/observatory",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/observatory"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/observatory",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "n. 天文台、观测站",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/observatory"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "obsession",
+      "uk": "əbˈseʃn",
+      "us": "əbˈseʃn",
+      "pos": "n.",
+      "semanticNote": "n. 痴迷、着魔；n. 令人着迷的人或物",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/obsession",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/obsession"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "n.",
+          "uk": "əbˈseʃn",
+          "us": "əbˈseʃn",
+          "rawUk": "/əbˈseʃn/",
+          "rawUs": "/əbˈseʃn/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/obsession",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/obsession"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/obsession",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "n. 痴迷、着魔",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/obsession"
+          ]
+        },
+        {
+          "sense": "n. 令人着迷的人或物",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/obsession"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "obsolete",
+      "uk": "ˈɒbsəliːt",
+      "us": "ˌɑːbsəˈliːt",
+      "pos": "adj.",
+      "semanticNote": "adj. 过时的、淘汰的",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/obsolete",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/obsolete"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "adj.",
+          "uk": "ˈɒbsəliːt",
+          "us": "ˌɑːbsəˈliːt",
+          "rawUk": "/ˈɒbsəliːt/",
+          "rawUs": "/ˌɑːbsəˈliːt/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/obsolete",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/obsolete"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/obsolete",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "adj. 过时的、淘汰的",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/obsolete"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "obstruction",
+      "uk": "əbˈstrʌkʃn",
+      "us": "əbˈstrʌkʃn",
+      "pos": "n.",
+      "semanticNote": "n. 阻挠、妨碍；n. 堵塞（道路、入口等）；n. 障碍物；n. （医学）梗阻；n. （体育）阻挡犯规",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/obstruction",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/obstruction"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "n.",
+          "uk": "əbˈstrʌkʃn",
+          "us": "əbˈstrʌkʃn",
+          "rawUk": "/əbˈstrʌkʃn/",
+          "rawUs": "/əbˈstrʌkʃn/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/obstruction",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/obstruction"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/obstruction",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "n. 阻挠、妨碍",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/obstruction"
+          ]
+        },
+        {
+          "sense": "n. 堵塞（道路、入口等）",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/obstruction"
+          ]
+        },
+        {
+          "sense": "n. 障碍物",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/obstruction"
+          ]
+        },
+        {
+          "sense": "n. （医学）梗阻",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/obstruction"
+          ]
+        },
+        {
+          "sense": "n. （体育）阻挡犯规",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/obstruction"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "occupant",
+      "uk": "ˈɒkjəpənt",
+      "us": "ˈɑːkjəpənt",
+      "pos": "n.",
+      "semanticNote": "n. 居住者、使用者；n. （车辆、座位等的）乘坐者",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/occupant",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/occupant"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "n.",
+          "uk": "ˈɒkjəpənt",
+          "us": "ˈɑːkjəpənt",
+          "rawUk": "/ˈɒkjəpənt/",
+          "rawUs": "/ˈɑːkjəpənt/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/occupant",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/occupant"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/occupant",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "n. 居住者、使用者",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/occupant"
+          ]
+        },
+        {
+          "sense": "n. （车辆、座位等的）乘坐者",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/occupant"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "occurrence",
+      "uk": "əˈkʌrəns",
+      "us": "əˈkɜːrəns",
+      "pos": "n.",
+      "semanticNote": "n. 发生的事、事件（正式）；n. 发生、出现（正式）",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/occurrence",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/occurrence"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "n.",
+          "uk": "əˈkʌrəns",
+          "us": "əˈkɜːrəns",
+          "rawUk": "/əˈkʌrəns/",
+          "rawUs": "/əˈkɜːrəns/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/occurrence",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/occurrence"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/occurrence",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "n. 发生的事、事件（正式）",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/occurrence"
+          ]
+        },
+        {
+          "sense": "n. 发生、出现（正式）",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/occurrence"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "oddly",
+      "uk": "ˈɒdli",
+      "us": "ˈɑːdli",
+      "pos": "adv.",
+      "semanticNote": "adv. 奇怪地、古怪地；adv. 出人意料地",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/oddly",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/oddly"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "adv.",
+          "uk": "ˈɒdli",
+          "us": "ˈɑːdli",
+          "rawUk": "/ˈɒdli/",
+          "rawUs": "/ˈɑːdli/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/oddly",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/oddly"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/oddly",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "adv. 奇怪地、古怪地",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/oddly"
+          ]
+        },
+        {
+          "sense": "adv. 出人意料地",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/oddly"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "offshore",
+      "uk": "ˌɒfˈʃɔː(r)",
+      "us": "ˌɔːfˈʃɔːr",
+      "pos": "adj./v./adv.",
+      "semanticNote": "adj. 近海的、海上的；adj. （风）向海吹的；adj. （商业）离岸的、境外的；v. 把（工作）外包到国外；adv. 在近海；adv. （风）从陆地吹向海；adv. （商业）在境外",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/offshore",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/offshore",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/offshore_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/offshore_2",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/offshore_3"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "adj./v./adv.",
+          "uk": "ˌɒfˈʃɔː(r)",
+          "us": "ˌɔːfˈʃɔːr",
+          "rawUk": "/ˌɒfˈʃɔː(r)/",
+          "rawUs": "/ˌɔːfˈʃɔːr/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/offshore_1",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/offshore_1"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/offshore",
+          "access": "canonical-entry-link",
+          "checkedOn": "2026-11-25"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/offshore_1",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/offshore_2",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/offshore_3",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "adj. 近海的、海上的",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/offshore_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/offshore_2",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/offshore_3"
+          ]
+        },
+        {
+          "sense": "adj. （风）向海吹的",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/offshore_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/offshore_2",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/offshore_3"
+          ]
+        },
+        {
+          "sense": "adj. （商业）离岸的、境外的",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/offshore_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/offshore_2",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/offshore_3"
+          ]
+        },
+        {
+          "sense": "v. 把（工作）外包到国外",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/offshore_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/offshore_2",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/offshore_3"
+          ]
+        },
+        {
+          "sense": "adv. 在近海",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/offshore_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/offshore_2",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/offshore_3"
+          ]
+        },
+        {
+          "sense": "adv. （风）从陆地吹向海",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/offshore_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/offshore_2",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/offshore_3"
+          ]
+        },
+        {
+          "sense": "adv. （商业）在境外",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/offshore_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/offshore_2",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/offshore_3"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "omit",
+      "uk": "əˈmɪt",
+      "us": "əˈmɪt",
+      "pos": "v.",
+      "semanticNote": "v. 省略、遗漏（正式）；v. 未做、忘记做（正式）",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/omit",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/omit"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "v.",
+          "uk": "əˈmɪt",
+          "us": "əˈmɪt",
+          "rawUk": "/əˈmɪt/",
+          "rawUs": "/əˈmɪt/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/omit",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/omit"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/omit",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "v. 省略、遗漏（正式）",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/omit"
+          ]
+        },
+        {
+          "sense": "v. 未做、忘记做（正式）",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/omit"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "onset",
+      "uk": "ˈɒnset",
+      "us": "ˈɑːnset",
+      "pos": "n.",
+      "semanticNote": "n. （尤指坏事的）开始、发作",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/onset",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/onset"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "n.",
+          "uk": "ˈɒnset",
+          "us": "ˈɑːnset",
+          "rawUk": "/ˈɒnset/",
+          "rawUs": "/ˈɑːnset/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/onset",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/onset"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/onset",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "n. （尤指坏事的）开始、发作",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/onset"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "opaque",
+      "uk": "əʊˈpeɪk",
+      "us": "əʊˈpeɪk",
+      "pos": "adj.",
+      "semanticNote": "adj. 不透明的；adj. 难懂的、晦涩的",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/opaque",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/opaque"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "adj.",
+          "uk": "əʊˈpeɪk",
+          "us": "əʊˈpeɪk",
+          "rawUk": "/əʊˈpeɪk/",
+          "rawUs": "/əʊˈpeɪk/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/opaque",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/opaque"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/opaque",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "adj. 不透明的",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/opaque"
+          ]
+        },
+        {
+          "sense": "adj. 难懂的、晦涩的",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/opaque"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "opposing",
+      "uk": "əˈpəʊzɪŋ",
+      "us": "əˈpəʊzɪŋ",
+      "pos": "adj.",
+      "semanticNote": "adj. 对立的、敌对的（仅用于名词前）；adj. 截然不同的",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/opposing",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/opposing"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "adj.",
+          "uk": "əˈpəʊzɪŋ",
+          "us": "əˈpəʊzɪŋ",
+          "rawUk": "/əˈpəʊzɪŋ/",
+          "rawUs": "/əˈpəʊzɪŋ/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/opposing",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/opposing"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/opposing",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "adj. 对立的、敌对的（仅用于名词前）",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/opposing"
+          ]
+        },
+        {
+          "sense": "adj. 截然不同的",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/opposing"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "optical",
+      "uk": "ˈɒptɪkl",
+      "us": "ˈɑːptɪkl",
+      "pos": "adj.",
+      "semanticNote": "adj. 视觉的、光学的；adj. 助视力的；adj. （计算机）光学存储的",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/optical",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/optical"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "adj.",
+          "uk": "ˈɒptɪkl",
+          "us": "ˈɑːptɪkl",
+          "rawUk": "/ˈɒptɪkl/",
+          "rawUs": "/ˈɑːptɪkl/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/optical",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/optical"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/optical",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "adj. 视觉的、光学的",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/optical"
+          ]
+        },
+        {
+          "sense": "adj. 助视力的",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/optical"
+          ]
+        },
+        {
+          "sense": "adj. （计算机）光学存储的",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/optical"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "optimal",
+      "uk": "ˈɒptɪməl",
+      "us": "ˈɑːptɪməl",
+      "pos": "adj.",
+      "semanticNote": "adj. 最佳的、最优的",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/optimal",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/optimal"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "adj.",
+          "uk": "ˈɒptɪməl",
+          "us": "ˈɑːptɪməl",
+          "rawUk": "/ˈɒptɪməl/",
+          "rawUs": "/ˈɑːptɪməl/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/optimal",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/optimal"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/optimal",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "adj. 最佳的、最优的",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/optimal"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "optional",
+      "uk": "ˈɒpʃənl",
+      "us": "ˈɑːpʃənl",
+      "pos": "adj.",
+      "semanticNote": "adj. 可选择的、非强制的",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/optional",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/optional"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "adj.",
+          "uk": "ˈɒpʃənl",
+          "us": "ˈɑːpʃənl",
+          "rawUk": "/ˈɒpʃənl/",
+          "rawUs": "/ˈɑːpʃənl/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/optional",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/optional"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/optional",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "adj. 可选择的、非强制的",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/optional"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "orbital",
+      "uk": "ˈɔːbɪtl",
+      "us": "ˈɔːrbɪtl",
+      "pos": "adj./n.",
+      "semanticNote": "adj. 轨道的（仅用于名词前）；adj. （英式）环城的；n. （英式）环城公路",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/orbital",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/orbital",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/orbital_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/orbital_2"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "adj./n.",
+          "uk": "ˈɔːbɪtl",
+          "us": "ˈɔːrbɪtl",
+          "rawUk": "/ˈɔːbɪtl/",
+          "rawUs": "/ˈɔːrbɪtl/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/orbital_1",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/orbital_1"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/orbital",
+          "access": "canonical-entry-link",
+          "checkedOn": "2026-11-25"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/orbital_1",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/orbital_2",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "adj. 轨道的（仅用于名词前）",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/orbital_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/orbital_2"
+          ]
+        },
+        {
+          "sense": "adj. （英式）环城的",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/orbital_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/orbital_2"
+          ]
+        },
+        {
+          "sense": "n. （英式）环城公路",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/orbital_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/orbital_2"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "orchard",
+      "uk": "ˈɔːtʃəd",
+      "us": "ˈɔːrtʃərd",
+      "pos": "n.",
+      "semanticNote": "n. 果园",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/orchard",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/orchard"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "n.",
+          "uk": "ˈɔːtʃəd",
+          "us": "ˈɔːrtʃərd",
+          "rawUk": "/ˈɔːtʃəd/",
+          "rawUs": "/ˈɔːrtʃərd/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/orchard",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/orchard"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/orchard",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "n. 果园",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/orchard"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "orchestra",
+      "uk": "ˈɔːkɪstrə",
+      "us": "ˈɔːrkɪstrə",
+      "pos": "n.",
+      "semanticNote": "n. 管弦乐队；n. （北美）剧院正厅前排座位",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/orchestra",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/orchestra"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "n.",
+          "uk": "ˈɔːkɪstrə",
+          "us": "ˈɔːrkɪstrə",
+          "rawUk": "/ˈɔːkɪstrə/",
+          "rawUs": "/ˈɔːrkɪstrə/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/orchestra",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/orchestra"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/orchestra",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "n. 管弦乐队",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/orchestra"
+          ]
+        },
+        {
+          "sense": "n. （北美）剧院正厅前排座位",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/orchestra"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "orchid",
+      "uk": "ˈɔːkɪd",
+      "us": "ˈɔːrkɪd",
+      "pos": "n.",
+      "semanticNote": "n. 兰花",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/orchid",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/orchid"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "n.",
+          "uk": "ˈɔːkɪd",
+          "us": "ˈɔːrkɪd",
+          "rawUk": "/ˈɔːkɪd/",
+          "rawUs": "/ˈɔːrkɪd/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/orchid",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/orchid"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/orchid",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "n. 兰花",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/orchid"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "ordeal",
+      "uk": "ɔːˈdiːl",
+      "us": "ɔːrˈdiːl",
+      "pos": "n.",
+      "semanticNote": "n. 痛苦的经历、磨难",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/ordeal",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/ordeal"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "n.",
+          "uk": "ɔːˈdiːl",
+          "us": "ɔːrˈdiːl",
+          "rawUk": "/ɔːˈdiːl/",
+          "rawUs": "/ɔːrˈdiːl/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/ordeal",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/ordeal"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/ordeal",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "n. 痛苦的经历、磨难",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/ordeal"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "orderly",
+      "uk": "ˈɔːdəli",
+      "us": "ˈɔːrdərli",
+      "pos": "adj./n.",
+      "semanticNote": "adj. 整齐的、有条理的；adj. 守秩序的、平静的；n. （医院）护工；n. 勤务兵",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/orderly",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/orderly",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/orderly_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/orderly_2"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "adj./n.",
+          "uk": "ˈɔːdəli",
+          "us": "ˈɔːrdərli",
+          "rawUk": "/ˈɔːdəli/",
+          "rawUs": "/ˈɔːrdərli/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/orderly_1",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/orderly_1"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/orderly",
+          "access": "canonical-entry-link",
+          "checkedOn": "2026-11-25"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/orderly_1",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/orderly_2",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "adj. 整齐的、有条理的",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/orderly_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/orderly_2"
+          ]
+        },
+        {
+          "sense": "adj. 守秩序的、平静的",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/orderly_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/orderly_2"
+          ]
+        },
+        {
+          "sense": "n. （医院）护工",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/orderly_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/orderly_2"
+          ]
+        },
+        {
+          "sense": "n. 勤务兵",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/orderly_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/orderly_2"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "ordinance",
+      "uk": "ˈɔːdɪnəns",
+      "us": "ˈɔːrdɪnəns",
+      "pos": "n.",
+      "semanticNote": "n. 法令、条例（正式）",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/ordinance",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/ordinance"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "n.",
+          "uk": "ˈɔːdɪnəns",
+          "us": "ˈɔːrdɪnəns",
+          "rawUk": "/ˈɔːdɪnəns/",
+          "rawUs": "/ˈɔːrdɪnəns/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/ordinance",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/ordinance"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/ordinance",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "n. 法令、条例（正式）",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/ordinance"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "orient",
+      "uk": "ˈɔːrient",
+      "us": "ˈɔːrient",
+      "pos": "v./n.",
+      "semanticNote": "v. 使适应、使面向（常用被动）；v. 确定方位；v. 熟悉（新环境）；n. 东方（the Orient，旧式或文学）",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/orient",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/orient",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/orient_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/orient_2"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "v.",
+          "uk": "ˈɔːrient",
+          "us": "ˈɔːrient",
+          "rawUk": "/ˈɔːrient/",
+          "rawUs": "/ˈɔːrient/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/orient_1",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/orient_1"
+          }
+        },
+        {
+          "label": "n.",
+          "uk": "ˈɔːriənt",
+          "us": "ˈɔːriənt",
+          "rawUk": "/ˈɔːriənt/",
+          "rawUs": "/ˈɔːriənt/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/orient_1",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/orient_1"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/orient",
+          "access": "canonical-entry-link",
+          "checkedOn": "2026-11-25"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/orient_1",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/orient_2",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "v. 使适应、使面向（常用被动）",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/orient_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/orient_2"
+          ]
+        },
+        {
+          "sense": "v. 确定方位",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/orient_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/orient_2"
+          ]
+        },
+        {
+          "sense": "v. 熟悉（新环境）",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/orient_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/orient_2"
+          ]
+        },
+        {
+          "sense": "n. 东方（the Orient，旧式或文学）",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/orient_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/orient_2"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "oriental",
+      "uk": "ˌɔːriˈentl",
+      "us": "ˌɔːriˈentl",
+      "pos": "adj.",
+      "semanticNote": "adj. 东方的（旧式，有时含冒犯）",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/oriental",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/oriental"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "adj.",
+          "uk": "ˌɔːriˈentl",
+          "us": "ˌɔːriˈentl",
+          "rawUk": "/ˌɔːriˈentl/",
+          "rawUs": "/ˌɔːriˈentl/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/oriental",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/oriental"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/oriental",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "adj. 东方的（旧式，有时含冒犯）",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/oriental"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "originate",
+      "uk": "əˈrɪdʒɪneɪt",
+      "us": "əˈrɪdʒɪneɪt",
+      "pos": "v.",
+      "semanticNote": "v. 起源、发端（正式）；v. 创造、发明；v. （旅程、交通等）始发",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/originate",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/originate"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "v.",
+          "uk": "əˈrɪdʒɪneɪt",
+          "us": "əˈrɪdʒɪneɪt",
+          "rawUk": "/əˈrɪdʒɪneɪt/",
+          "rawUs": "/əˈrɪdʒɪneɪt/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/originate",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/originate"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/originate",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "v. 起源、发端（正式）",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/originate"
+          ]
+        },
+        {
+          "sense": "v. 创造、发明",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/originate"
+          ]
+        },
+        {
+          "sense": "v. （旅程、交通等）始发",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/originate"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "ounce",
+      "uk": "aʊns",
+      "us": "aʊns",
+      "pos": "n.",
+      "semanticNote": "n. 盎司（重量单位）；n. 一点点（非正式）",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/ounce",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/ounce"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "n.",
+          "uk": "aʊns",
+          "us": "aʊns",
+          "rawUk": "/aʊns/",
+          "rawUs": "/aʊns/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/ounce",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/ounce"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/ounce",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "n. 盎司（重量单位）",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/ounce"
+          ]
+        },
+        {
+          "sense": "n. 一点点（非正式）",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/ounce"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "oust",
+      "uk": "aʊst",
+      "us": "aʊst",
+      "pos": "v.",
+      "semanticNote": "v. 罢免、驱逐",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/oust",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/oust"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "v.",
+          "uk": "aʊst",
+          "us": "aʊst",
+          "rawUk": "/aʊst/",
+          "rawUs": "/aʊst/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/oust",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/oust"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/oust",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "v. 罢免、驱逐",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/oust"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "outbreak",
+      "uk": "ˈaʊtbreɪk",
+      "us": "ˈaʊtbreɪk",
+      "pos": "n.",
+      "semanticNote": "n. （战争、疾病等的）爆发",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/outbreak",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/outbreak"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "n.",
+          "uk": "ˈaʊtbreɪk",
+          "us": "ˈaʊtbreɪk",
+          "rawUk": "/ˈaʊtbreɪk/",
+          "rawUs": "/ˈaʊtbreɪk/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/outbreak",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/outbreak"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/outbreak",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "n. （战争、疾病等的）爆发",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/outbreak"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "outdoors",
+      "uk": "ˌaʊtˈdɔːz",
+      "us": "ˌaʊtˈdɔːrz",
+      "pos": "adv./n.",
+      "semanticNote": "adv. 在户外、在野外；n. 野外、乡间（the outdoors）；n. 室外",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/outdoors",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/outdoors",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/outdoors_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/outdoors_2"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "adv./n.",
+          "uk": "ˌaʊtˈdɔːz",
+          "us": "ˌaʊtˈdɔːrz",
+          "rawUk": "/ˌaʊtˈdɔːz/",
+          "rawUs": "/ˌaʊtˈdɔːrz/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/outdoors_1",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/outdoors_1"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/outdoors",
+          "access": "canonical-entry-link",
+          "checkedOn": "2026-11-25"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/outdoors_1",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/outdoors_2",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "adv. 在户外、在野外",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/outdoors_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/outdoors_2"
+          ]
+        },
+        {
+          "sense": "n. 野外、乡间（the outdoors）",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/outdoors_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/outdoors_2"
+          ]
+        },
+        {
+          "sense": "n. 室外",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/outdoors_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/outdoors_2"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "outgoing",
+      "uk": "ˌaʊtˈɡəʊɪŋ",
+      "us": "ˌaʊtˈɡəʊɪŋ",
+      "pos": "adj.",
+      "semanticNote": "adj. 外向的、友好的；adj. 即将离任的（仅用于名词前）；adj. 外发的、离开的（仅用于名词前）",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/outgoing",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/outgoing"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "adj. 外向的",
+          "uk": "ˌaʊtˈɡəʊɪŋ",
+          "us": "ˌaʊtˈɡəʊɪŋ",
+          "rawUk": "/ˌaʊtˈɡəʊɪŋ/",
+          "rawUs": "/ˌaʊtˈɡəʊɪŋ/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/outgoing",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/outgoing"
+          }
+        },
+        {
+          "label": "adj.（离任、外发义）",
+          "uk": "ˈaʊtɡəʊɪŋ",
+          "us": "ˈaʊtɡəʊɪŋ",
+          "rawUk": "/ˈaʊtɡəʊɪŋ/",
+          "rawUs": "/ˈaʊtɡəʊɪŋ/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/outgoing",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/outgoing"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/outgoing",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "adj. 外向的、友好的",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/outgoing"
+          ]
+        },
+        {
+          "sense": "adj. 即将离任的（仅用于名词前）",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/outgoing"
+          ]
+        },
+        {
+          "sense": "adj. 外发的、离开的（仅用于名词前）",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/outgoing"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "outing",
+      "uk": "ˈaʊtɪŋ",
+      "us": "ˈaʊtɪŋ",
+      "pos": "n.",
+      "semanticNote": "n. 出游、远足；n. （体育，非正式）参赛；n. （公开他人的）性取向曝光",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/outing",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/outing"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "n.",
+          "uk": "ˈaʊtɪŋ",
+          "us": "ˈaʊtɪŋ",
+          "rawUk": "/ˈaʊtɪŋ/",
+          "rawUs": "/ˈaʊtɪŋ/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/outing",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/outing"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/outing",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "n. 出游、远足",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/outing"
+          ]
+        },
+        {
+          "sense": "n. （体育，非正式）参赛",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/outing"
+          ]
+        },
+        {
+          "sense": "n. （公开他人的）性取向曝光",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/outing"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "outlook",
+      "uk": "ˈaʊtlʊk",
+      "us": "ˈaʊtlʊk",
+      "pos": "n.",
+      "semanticNote": "n. 观点、世界观；n. 前景、展望；n. 景色、视野（正式）",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/outlook",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/outlook"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "n.",
+          "uk": "ˈaʊtlʊk",
+          "us": "ˈaʊtlʊk",
+          "rawUk": "/ˈaʊtlʊk/",
+          "rawUs": "/ˈaʊtlʊk/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/outlook",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/outlook"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/outlook",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "n. 观点、世界观",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/outlook"
+          ]
+        },
+        {
+          "sense": "n. 前景、展望",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/outlook"
+          ]
+        },
+        {
+          "sense": "n. 景色、视野（正式）",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/outlook"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "outrage",
+      "uk": "ˈaʊtreɪdʒ",
+      "us": "ˈaʊtreɪdʒ",
+      "pos": "n./v.",
+      "semanticNote": "n. 愤慨、义愤；n. 暴行、骇人听闻的事；v. 使愤慨、激怒（常用被动）",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/outrage",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/outrage",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/outrage_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/outrage_2"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "n./v.",
+          "uk": "ˈaʊtreɪdʒ",
+          "us": "ˈaʊtreɪdʒ",
+          "rawUk": "/ˈaʊtreɪdʒ/",
+          "rawUs": "/ˈaʊtreɪdʒ/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/outrage_1",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/outrage_1"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/outrage",
+          "access": "canonical-entry-link",
+          "checkedOn": "2026-11-25"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/outrage_1",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/outrage_2",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "n. 愤慨、义愤",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/outrage_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/outrage_2"
+          ]
+        },
+        {
+          "sense": "n. 暴行、骇人听闻的事",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/outrage_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/outrage_2"
+          ]
+        },
+        {
+          "sense": "v. 使愤慨、激怒（常用被动）",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/outrage_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/outrage_2"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "outrageous",
+      "uk": "aʊtˈreɪdʒəs",
+      "us": "aʊtˈreɪdʒəs",
+      "pos": "adj.",
+      "semanticNote": "adj. 令人愤慨的、无法接受的；adj. 出格的、惊世骇俗的",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/outrageous",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/outrageous"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "adj.",
+          "uk": "aʊtˈreɪdʒəs",
+          "us": "aʊtˈreɪdʒəs",
+          "rawUk": "/aʊtˈreɪdʒəs/",
+          "rawUs": "/aʊtˈreɪdʒəs/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/outrageous",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/outrageous"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/outrageous",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "adj. 令人愤慨的、无法接受的",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/outrageous"
+          ]
+        },
+        {
+          "sense": "adj. 出格的、惊世骇俗的",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/outrageous"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "outright",
+      "uk": "ˈaʊtraɪt",
+      "us": "ˈaʊtraɪt",
+      "pos": "adj./adv.",
+      "semanticNote": "adj. 彻底的、完全的（仅用于名词前）；adj. 直率的、公开的（仅用于名词前）；adv. 直截了当地；adv. 彻底地、完全地；adv. 立即地",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/outright",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/outright",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/outright_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/outright_2"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "adj./adv.",
+          "uk": "ˈaʊtraɪt",
+          "us": "ˈaʊtraɪt",
+          "rawUk": "/ˈaʊtraɪt/",
+          "rawUs": "/ˈaʊtraɪt/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/outright_1",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/outright_1"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/outright",
+          "access": "canonical-entry-link",
+          "checkedOn": "2026-11-25"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/outright_1",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/outright_2",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "adj. 彻底的、完全的（仅用于名词前）",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/outright_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/outright_2"
+          ]
+        },
+        {
+          "sense": "adj. 直率的、公开的（仅用于名词前）",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/outright_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/outright_2"
+          ]
+        },
+        {
+          "sense": "adv. 直截了当地",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/outright_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/outright_2"
+          ]
+        },
+        {
+          "sense": "adv. 彻底地、完全地",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/outright_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/outright_2"
+          ]
+        },
+        {
+          "sense": "adv. 立即地",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/outright_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/outright_2"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "outset",
+      "uk": "ˈaʊtset",
+      "us": "ˈaʊtset",
+      "pos": "n.",
+      "semanticNote": "n. 开端、开始（常用 at/from the outset）",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/outset",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/outset"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "n.",
+          "uk": "ˈaʊtset",
+          "us": "ˈaʊtset",
+          "rawUk": "/ˈaʊtset/",
+          "rawUs": "/ˈaʊtset/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/outset",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/outset"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/outset",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "n. 开端、开始（常用 at/from the outset）",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/outset"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "outspoken",
+      "uk": "aʊtˈspəʊkən",
+      "us": "aʊtˈspəʊkən",
+      "pos": "adj.",
+      "semanticNote": "adj. 直言不讳的",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/outspoken",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/outspoken"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "adj.",
+          "uk": "aʊtˈspəʊkən",
+          "us": "aʊtˈspəʊkən",
+          "rawUk": "/aʊtˈspəʊkən/",
+          "rawUs": "/aʊtˈspəʊkən/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/outspoken",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/outspoken"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/outspoken",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "adj. 直言不讳的",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/outspoken"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "outward",
+      "uk": "ˈaʊtwəd",
+      "us": "ˈaʊtwərd",
+      "pos": "adj./adv.",
+      "semanticNote": "adj. 表面的、外表的（仅用于名词前）；adj. 出发的、外出的（仅用于名词前）；adj. 向外的（仅用于名词前）；adv. 向外",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/outward",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/outward",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/outward_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/outward_2"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "adj./adv.",
+          "uk": "ˈaʊtwəd",
+          "us": "ˈaʊtwərd",
+          "rawUk": "/ˈaʊtwəd/",
+          "rawUs": "/ˈaʊtwərd/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/outward_1",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/outward_1"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/outward",
+          "access": "canonical-entry-link",
+          "checkedOn": "2026-11-25"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/outward_1",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/outward_2",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "adj. 表面的、外表的（仅用于名词前）",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/outward_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/outward_2"
+          ]
+        },
+        {
+          "sense": "adj. 出发的、外出的（仅用于名词前）",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/outward_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/outward_2"
+          ]
+        },
+        {
+          "sense": "adj. 向外的（仅用于名词前）",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/outward_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/outward_2"
+          ]
+        },
+        {
+          "sense": "adv. 向外",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/outward_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/outward_2"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "outweigh",
+      "uk": "ˌaʊtˈweɪ",
+      "us": "ˌaʊtˈweɪ",
+      "pos": "v.",
+      "semanticNote": "v. 比……重要、超过",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/outweigh",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/outweigh"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "v.",
+          "uk": "ˌaʊtˈweɪ",
+          "us": "ˌaʊtˈweɪ",
+          "rawUk": "/ˌaʊtˈweɪ/",
+          "rawUs": "/ˌaʊtˈweɪ/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/outweigh",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/outweigh"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/outweigh",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "v. 比……重要、超过",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/outweigh"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "oval",
+      "uk": "ˈəʊvl",
+      "us": "ˈəʊvl",
+      "pos": "adj./n.",
+      "semanticNote": "adj. 椭圆形的；n. 椭圆形；n. （澳式）澳式橄榄球场",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/oval",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/oval",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/oval_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/oval_2"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "adj./n.",
+          "uk": "ˈəʊvl",
+          "us": "ˈəʊvl",
+          "rawUk": "/ˈəʊvl/",
+          "rawUs": "/ˈəʊvl/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/oval_1",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/oval_1"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/oval",
+          "access": "canonical-entry-link",
+          "checkedOn": "2026-11-25"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/oval_1",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/oval_2",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "adj. 椭圆形的",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/oval_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/oval_2"
+          ]
+        },
+        {
+          "sense": "n. 椭圆形",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/oval_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/oval_2"
+          ]
+        },
+        {
+          "sense": "n. （澳式）澳式橄榄球场",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/oval_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/oval_2"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "overflow",
+      "uk": "ˌəʊvəˈfləʊ",
+      "us": "ˌəʊvərˈfləʊ",
+      "pos": "v./n.",
+      "semanticNote": "v. 溢出、漫出；v. 挤满、容纳不下；v. 扩散到（范围之外）；n. 容纳不下的人或物；n. 溢出、溢流；n. 溢流管；n. （计算机）溢出",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/overflow",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/overflow",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/overflow_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/overflow_2"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "v.",
+          "uk": "ˌəʊvəˈfləʊ",
+          "us": "ˌəʊvərˈfləʊ",
+          "rawUk": "/ˌəʊvəˈfləʊ/",
+          "rawUs": "/ˌəʊvərˈfləʊ/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/overflow_1",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/overflow_1"
+          }
+        },
+        {
+          "label": "n.",
+          "uk": "ˈəʊvəfləʊ",
+          "us": "ˈəʊvərfləʊ",
+          "rawUk": "/ˈəʊvəfləʊ/",
+          "rawUs": "/ˈəʊvərfləʊ/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/overflow_1",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/overflow_1"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/overflow",
+          "access": "canonical-entry-link",
+          "checkedOn": "2026-11-25"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/overflow_1",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/overflow_2",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "v. 溢出、漫出",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/overflow_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/overflow_2"
+          ]
+        },
+        {
+          "sense": "v. 挤满、容纳不下",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/overflow_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/overflow_2"
+          ]
+        },
+        {
+          "sense": "v. 扩散到（范围之外）",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/overflow_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/overflow_2"
+          ]
+        },
+        {
+          "sense": "n. 容纳不下的人或物",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/overflow_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/overflow_2"
+          ]
+        },
+        {
+          "sense": "n. 溢出、溢流",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/overflow_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/overflow_2"
+          ]
+        },
+        {
+          "sense": "n. 溢流管",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/overflow_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/overflow_2"
+          ]
+        },
+        {
+          "sense": "n. （计算机）溢出",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/overflow_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/overflow_2"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "overlap",
+      "uk": "ˌəʊvəˈlæp",
+      "us": "ˌəʊvərˈlæp",
+      "pos": "v./n.",
+      "semanticNote": "v. 部分重叠；v. 使重叠；v. （时间上）部分重合；v. （范围、职责等）交叉；n. （领域、职责等的）重叠部分；n. 重叠量；n. （时间上的）重合",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/overlap",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/overlap",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/overlap_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/overlap_2"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "v.",
+          "uk": "ˌəʊvəˈlæp",
+          "us": "ˌəʊvərˈlæp",
+          "rawUk": "/ˌəʊvəˈlæp/",
+          "rawUs": "/ˌəʊvərˈlæp/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/overlap_1",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/overlap_1"
+          }
+        },
+        {
+          "label": "n.",
+          "uk": "ˈəʊvəlæp",
+          "us": "ˈəʊvərlæp",
+          "rawUk": "/ˈəʊvəlæp/",
+          "rawUs": "/ˈəʊvərlæp/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/overlap_1",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/overlap_1"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/overlap",
+          "access": "canonical-entry-link",
+          "checkedOn": "2026-11-25"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/overlap_1",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/overlap_2",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "v. 部分重叠",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/overlap_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/overlap_2"
+          ]
+        },
+        {
+          "sense": "v. 使重叠",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/overlap_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/overlap_2"
+          ]
+        },
+        {
+          "sense": "v. （时间上）部分重合",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/overlap_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/overlap_2"
+          ]
+        },
+        {
+          "sense": "v. （范围、职责等）交叉",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/overlap_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/overlap_2"
+          ]
+        },
+        {
+          "sense": "n. （领域、职责等的）重叠部分",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/overlap_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/overlap_2"
+          ]
+        },
+        {
+          "sense": "n. 重叠量",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/overlap_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/overlap_2"
+          ]
+        },
+        {
+          "sense": "n. （时间上的）重合",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/overlap_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/overlap_2"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "oversight",
+      "uk": "ˈəʊvəsaɪt",
+      "us": "ˈəʊvərsaɪt",
+      "pos": "n.",
+      "semanticNote": "n. 疏忽、失察；n. 监管、负责（正式）",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/oversight",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/oversight"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "n.",
+          "uk": "ˈəʊvəsaɪt",
+          "us": "ˈəʊvərsaɪt",
+          "rawUk": "/ˈəʊvəsaɪt/",
+          "rawUs": "/ˈəʊvərsaɪt/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/oversight",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/oversight"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/oversight",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "n. 疏忽、失察",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/oversight"
+          ]
+        },
+        {
+          "sense": "n. 监管、负责（正式）",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/oversight"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "overt",
+      "uk": "əʊˈvɜːt",
+      "us": "əʊˈvɜːrt",
+      "pos": "adj.",
+      "semanticNote": "adj. 公开的、明显的（正式）",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/overt",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/overt"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "adj.",
+          "uk": "əʊˈvɜːt",
+          "us": "əʊˈvɜːrt",
+          "rawUk": "/əʊˈvɜːt/",
+          "rawUs": "/əʊˈvɜːrt/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/overt",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/overt"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/overt",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "adj. 公开的、明显的（正式）",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/overt"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "overtime",
+      "uk": "ˈəʊvətaɪm",
+      "us": "ˈəʊvərtaɪm",
+      "pos": "n.",
+      "semanticNote": "n. 加班、加班时间；n. 加班费；n. （北美）（比赛）加时",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/overtime",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/overtime"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "n.",
+          "uk": "ˈəʊvətaɪm",
+          "us": "ˈəʊvərtaɪm",
+          "rawUk": "/ˈəʊvətaɪm/",
+          "rawUs": "/ˈəʊvərtaɪm/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/overtime",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/overtime"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/overtime",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "n. 加班、加班时间",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/overtime"
+          ]
+        },
+        {
+          "sense": "n. 加班费",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/overtime"
+          ]
+        },
+        {
+          "sense": "n. （北美）（比赛）加时",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/overtime"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "overturn",
+      "uk": "ˌəʊvəˈtɜːn",
+      "us": "ˌəʊvərˈtɜːrn",
+      "pos": "v.",
+      "semanticNote": "v. （使）翻倒、倾覆；v. 推翻（判决等）；v. 推翻（观点或信念）",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/overturn",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/overturn"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "v.",
+          "uk": "ˌəʊvəˈtɜːn",
+          "us": "ˌəʊvərˈtɜːrn",
+          "rawUk": "/ˌəʊvəˈtɜːn/",
+          "rawUs": "/ˌəʊvərˈtɜːrn/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/overturn",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/overturn"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/overturn",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "v. （使）翻倒、倾覆",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/overturn"
+          ]
+        },
+        {
+          "sense": "v. 推翻（判决等）",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/overturn"
+          ]
+        },
+        {
+          "sense": "v. 推翻（观点或信念）",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/overturn"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "overwhelmingly",
+      "uk": "ˌəʊvəˈwelmɪŋli",
+      "us": "ˌəʊvərˈwelmɪŋli",
+      "pos": "adv.",
+      "semanticNote": "adv. 压倒性地、极大地",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/overwhelmingly",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/overwhelmingly"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "adv.",
+          "uk": "ˌəʊvəˈwelmɪŋli",
+          "us": "ˌəʊvərˈwelmɪŋli",
+          "rawUk": "/ˌəʊvəˈwelmɪŋli/",
+          "rawUs": "/ˌəʊvərˈwelmɪŋli/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/overwhelmingly",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/overwhelmingly"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/overwhelmingly",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "adv. 压倒性地、极大地",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/overwhelmingly"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "oyster",
+      "uk": "ˈɔɪstə(r)",
+      "us": "ˈɔɪstər",
+      "pos": "n.",
+      "semanticNote": "n. 牡蛎、蚝",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/oyster",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/oyster"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "n.",
+          "uk": "ˈɔɪstə(r)",
+          "us": "ˈɔɪstər",
+          "rawUk": "/ˈɔɪstə(r)/",
+          "rawUs": "/ˈɔɪstər/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/oyster",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/oyster"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/oyster",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "n. 牡蛎、蚝",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/oyster"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "ozone",
+      "uk": "ˈəʊzəʊn",
+      "us": "ˈəʊzəʊn",
+      "pos": "n.",
+      "semanticNote": "n. （化学）臭氧；n. （英式，非正式）海边的清新空气",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/ozone",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/ozone"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "n.",
+          "uk": "ˈəʊzəʊn",
+          "us": "ˈəʊzəʊn",
+          "rawUk": "/ˈəʊzəʊn/",
+          "rawUs": "/ˈəʊzəʊn/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/ozone",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/ozone"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/ozone",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "n. （化学）臭氧",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/ozone"
+          ]
+        },
+        {
+          "sense": "n. （英式，非正式）海边的清新空气",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/ozone"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "packaging",
+      "uk": "ˈpækɪdʒɪŋ",
+      "us": "ˈpækɪdʒɪŋ",
+      "pos": "n.",
+      "semanticNote": "n. 包装材料；n. 包装（过程）",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/packaging",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/packaging"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "n.",
+          "uk": "ˈpækɪdʒɪŋ",
+          "us": "ˈpækɪdʒɪŋ",
+          "rawUk": "/ˈpækɪdʒɪŋ/",
+          "rawUs": "/ˈpækɪdʒɪŋ/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/packaging",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/packaging"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/packaging",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "n. 包装材料",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/packaging"
+          ]
+        },
+        {
+          "sense": "n. 包装（过程）",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/packaging"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "pact",
+      "uk": "pækt",
+      "us": "pækt",
+      "pos": "n.",
+      "semanticNote": "n. 协定、条约",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/pact",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/pact"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "n.",
+          "uk": "pækt",
+          "us": "pækt",
+          "rawUk": "/pækt/",
+          "rawUs": "/pækt/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/pact",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/pact"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/pact",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "n. 协定、条约",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/pact"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "paddle",
+      "uk": "ˈpædl",
+      "us": "ˈpædl",
+      "pos": "n./v.",
+      "semanticNote": "n. 短桨；n. 桨状物；n. （英式）蹚水；n. （尤北美）乒乓球拍；v. 用桨划（船）；v. （英式）蹚水；v. 划水",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/paddle",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/paddle",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/paddle_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/paddle_2"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "n./v.",
+          "uk": "ˈpædl",
+          "us": "ˈpædl",
+          "rawUk": "/ˈpædl/",
+          "rawUs": "/ˈpædl/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/paddle_1",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/paddle_1"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/paddle",
+          "access": "canonical-entry-link",
+          "checkedOn": "2026-11-25"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/paddle_1",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        },
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/paddle_2",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "n. 短桨",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/paddle_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/paddle_2"
+          ]
+        },
+        {
+          "sense": "n. 桨状物",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/paddle_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/paddle_2"
+          ]
+        },
+        {
+          "sense": "n. （英式）蹚水",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/paddle_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/paddle_2"
+          ]
+        },
+        {
+          "sense": "n. （尤北美）乒乓球拍",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/paddle_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/paddle_2"
+          ]
+        },
+        {
+          "sense": "v. 用桨划（船）",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/paddle_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/paddle_2"
+          ]
+        },
+        {
+          "sense": "v. （英式）蹚水",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/paddle_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/paddle_2"
+          ]
+        },
+        {
+          "sense": "v. 划水",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/paddle_1",
+            "https://www.oxfordlearnersdictionaries.com/definition/english/paddle_2"
+          ]
+        }
+      ]
+    },
+    {
+      "w": "palette",
+      "uk": "ˈpælət",
+      "us": "ˈpælət",
+      "pos": "n.",
+      "semanticNote": "n. 调色板；n. （专业）（画家使用的）色彩",
+      "source": "https://www.oxfordlearnersdictionaries.com/definition/english/palette",
+      "sources": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/palette"
+      ],
+      "checkedOn": "2026-11-25",
+      "readingEvidence": [
+        {
+          "label": "n.",
+          "uk": "ˈpælət",
+          "us": "ˈpælət",
+          "rawUk": "/ˈpælət/",
+          "rawUs": "/ˈpælət/",
+          "sources": {
+            "uk": "https://www.oxfordlearnersdictionaries.com/definition/english/palette",
+            "us": "https://www.oxfordlearnersdictionaries.com/definition/english/palette"
+          }
+        }
+      ],
+      "sourceRecords": [
+        {
+          "url": "https://www.oxfordlearnersdictionaries.com/definition/english/palette",
+          "access": "browser-dom-fetch",
+          "checkedOn": "2026-11-25"
+        }
+      ],
+      "senseEvidence": [
+        {
+          "sense": "n. 调色板",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/palette"
+          ]
+        },
+        {
+          "sense": "n. （专业）（画家使用的）色彩",
+          "sources": [
+            "https://www.oxfordlearnersdictionaries.com/definition/english/palette"
+          ]
+        }
+      ]
+    }
+  ]
+}

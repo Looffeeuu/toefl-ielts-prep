@@ -3,9 +3,9 @@
   "scope": "全部内置词条的来源和结构一致性；仅 dictionary-reviewed 条目经过本轮外部词典核对。其他候选不能据此判定为虚假或正确。",
   "total": 9075,
   "sources": {
-    "dictionary-reviewed": 3484,
-    "editorial-unverified": 2432,
-    "ecdict-derived": 3159
+    "dictionary-reviewed": 3584,
+    "editorial-unverified": 2339,
+    "ecdict-derived": 3152
   },
   "flagCounts": {
     "missing-pos": 27,
@@ -33320,13 +33320,16 @@
     {
       "word": "dubious",
       "pos": "adj.",
-      "definition": "可疑的；不确定的",
-      "origin": "editorial-unverified",
+      "definition": "adj. 怀疑的、拿不准的（通常不用于名词前）；adj. 可疑的、不诚实的（贬义）；adj. 靠不住的、不太可能好的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-4.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/dubious",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/dubious"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -33367,15 +33370,19 @@
     },
     {
       "word": "dull",
-      "pos": "adj./vt.",
-      "definition": "adj. 钝的，无趣的，呆滞的，阴暗的　vt. 使迟钝，使阴暗，缓和",
-      "origin": "ecdict-derived",
+      "pos": "adj./v.",
+      "definition": "adj. 乏味的、无聊的；adj. （颜色）暗淡的、无光泽的；adj. （天气）阴沉的；adj. （声音）沉闷的、不响亮的；adj. （疼痛）隐隐的；adj. 迟钝的、反应慢的；v. 减轻（疼痛或情感）；v. 使迟钝、使无精打采；v. （使）变暗、（使）变钝",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/dull",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/dull",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/dull_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/dull_2"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -33440,38 +33447,50 @@
     },
     {
       "word": "duplicate",
-      "pos": "vt./n./adj.",
-      "definition": "vt. 复制；重复　n. 副本　adj. 完全相同的",
-      "origin": "editorial-unverified",
+      "pos": "v./adj./n.",
+      "definition": "v. 复制、复印（常用被动）；v. （不必要地）重复做；adj. 完全一样的、复制的（仅用于名词前）；n. 副本、复制品",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-2.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/duplicate",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/duplicate",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/duplicate_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/duplicate_2",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/duplicate_3"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
       "word": "durable",
       "pos": "adj.",
-      "definition": "耐用的；持久的",
-      "origin": "editorial-unverified",
+      "definition": "adj. 耐用的、持久的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-3.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/durable",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/durable"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
       "word": "duration",
       "pos": "n.",
-      "definition": "持续时间",
-      "origin": "editorial-unverified",
+      "definition": "n. 持续时间、期间（正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-3.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/duration",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/duration"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -33524,26 +33543,35 @@
     },
     {
       "word": "dwarf",
-      "pos": "vt./n.",
-      "definition": "vt. 使显得矮小　n. 矮小的东西",
-      "origin": "editorial-unverified",
+      "pos": "n./adj./v.",
+      "definition": "n. （故事中的）小矮人；n. 侏儒（冒犯语）；adj. 矮小的、矮种的（仅用于名词前）；v. 使显得矮小、使相形见绌",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-2.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/dwarf",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/dwarf",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/dwarf_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/dwarf_2",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/dwarf_3"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
       "word": "dwell",
       "pos": "v.",
-      "definition": "居住；细想",
-      "origin": "editorial-unverified",
+      "definition": "v. 居住（正式或文学）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-3.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/dwell",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/dwell"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -33561,13 +33589,16 @@
     {
       "word": "dwelling",
       "pos": "n.",
-      "definition": "住所",
-      "origin": "editorial-unverified",
+      "definition": "n. 住所、寓所（正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-3.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/dwelling",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/dwelling"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -33584,14 +33615,19 @@
     },
     {
       "word": "dye",
-      "pos": "n./vt.",
-      "definition": "n. 染料　vt. 染色",
-      "origin": "editorial-unverified",
+      "pos": "v./n.",
+      "definition": "v. 给……染色；n. 染料",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-1.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/dye",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/dye",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/dye_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/dye_2"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -33661,13 +33697,16 @@
     {
       "word": "earnest",
       "pos": "adj.",
-      "definition": "认真的；诚挚的",
-      "origin": "editorial-unverified",
+      "definition": "adj. 认真的、诚挚的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-4.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/earnest",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/earnest"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -33746,13 +33785,18 @@
     {
       "word": "eccentric",
       "pos": "adj./n.",
-      "definition": "adj. 古怪的　n. 怪人",
-      "origin": "editorial-unverified",
+      "definition": "adj. 古怪的、反常的；n. 古怪的人",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-2.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/eccentric",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/eccentric",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/eccentric_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/eccentric_2"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -33842,14 +33886,16 @@
     {
       "word": "ecology",
       "pos": "n.",
-      "definition": "生态学，社会生态学",
-      "origin": "ecdict-derived",
+      "definition": "n. 生态；生态学",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/ecology",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/ecology"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -33927,13 +33973,16 @@
     {
       "word": "ecstasy",
       "pos": "n.",
-      "definition": "狂喜",
-      "origin": "editorial-unverified",
+      "definition": "n. 狂喜、极度喜悦；n. （宗教的）入迷、出神；n. 摇头丸（亦作 Ecstasy）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-5.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/ecstasy",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/ecstasy"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -34071,13 +34120,16 @@
     {
       "word": "educated",
       "pos": "adj.",
-      "definition": "受过教育的",
-      "origin": "editorial-unverified",
+      "definition": "adj. 受过（某种）教育的（亦作 -educated）；adj. 有教养的、受过良好教育的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-4.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/educated",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/educated"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -34203,13 +34255,16 @@
     {
       "word": "efficacy",
       "pos": "n.",
-      "definition": "功效；效力",
-      "origin": "editorial-unverified",
+      "definition": "n. 功效、效力（正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-3.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/efficacy",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/efficacy"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -34539,14 +34594,16 @@
     {
       "word": "electron",
       "pos": "n.",
-      "definition": "电子",
-      "origin": "editorial-unverified",
+      "definition": "n. 电子（物理）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-4.js",
-        "js/words-ext.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/electron",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/electron"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -34576,13 +34633,16 @@
     {
       "word": "elegance",
       "pos": "n.",
-      "definition": "优雅；简洁",
-      "origin": "editorial-unverified",
+      "definition": "n. 优雅、雅致；n. （方案、思路的）简洁巧妙",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-5.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/elegance",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/elegance"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -34640,25 +34700,31 @@
     {
       "word": "elevate",
       "pos": "v.",
-      "definition": "提高；抬高",
-      "origin": "editorial-unverified",
+      "definition": "v. 提升（职位或地位）（正式）；v. 举起、抬高（专业或正式）；v. 使（水平）升高（专业）；v. 振奋（情绪）（正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-3.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/elevate",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/elevate"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
       "word": "elevation",
       "pos": "n.",
-      "definition": "海拔；提高",
-      "origin": "editorial-unverified",
+      "definition": "n. 提升、晋升（正式）；n. 海拔、高度（专业）；n. 高地（正式）；n. （建筑的）立面图（建筑）；n. （水平、数量的）升高（专业）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-3.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/elevation",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/elevation"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -34676,13 +34742,16 @@
     {
       "word": "elicit",
       "pos": "v.",
-      "definition": "引出；引起",
-      "origin": "editorial-unverified",
+      "definition": "v. 引出、套出（信息或反应）（正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-3.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/elicit",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/elicit"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -34712,13 +34781,16 @@
     {
       "word": "elimination",
       "pos": "n.",
-      "definition": "消除；淘汰",
-      "origin": "editorial-unverified",
+      "definition": "n. 消除、排除；n. （比赛中的）淘汰；n. 杀死（尤指敌人）（正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-3.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/elimination",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/elimination"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -34820,25 +34892,31 @@
     {
       "word": "elude",
       "pos": "v.",
-      "definition": "逃避；使困惑",
-      "origin": "editorial-unverified",
+      "definition": "v. 躲避、逃避（尤指巧妙地）；v. 使达不到；使想不起、使不理解",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-5.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/elude",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/elude"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
       "word": "elusive",
       "pos": "adj.",
-      "definition": "难以捉摸的；难找到的",
-      "origin": "editorial-unverified",
+      "definition": "adj. 难以找到的、难以定义或实现的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-3.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/elusive",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/elusive"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -34880,13 +34958,16 @@
     {
       "word": "emanate",
       "pos": "v.",
-      "definition": "散发；发源",
-      "origin": "editorial-unverified",
+      "definition": "v. 散发、表现出（正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-5.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/emanate",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/emanate"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -34951,15 +35032,17 @@
     },
     {
       "word": "embarrass",
-      "pos": "vt.",
-      "definition": "使困窘，使局促不安，阻碍",
-      "origin": "ecdict-derived",
+      "pos": "v.",
+      "definition": "v. 使尴尬、使难堪；v. 使陷入困境、给……造成麻烦",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/embarrass",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/embarrass"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -34977,13 +35060,16 @@
     {
       "word": "embed",
       "pos": "v.",
-      "definition": "嵌入",
-      "origin": "editorial-unverified",
+      "definition": "v. 把……嵌入、埋入（通常用被动；亦作 imbed）；v. 派（记者等）随军采访；v. 把（从句）嵌入句中（语言学）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-3.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/embed",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/embed"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -35049,13 +35135,16 @@
     {
       "word": "embody",
       "pos": "v.",
-      "definition": "体现；包含",
-      "origin": "editorial-unverified",
+      "definition": "v. 体现、代表（思想或品质）；v. 包含（正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/embody",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/embody"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -35121,13 +35210,16 @@
     {
       "word": "embryo",
       "pos": "n.",
-      "definition": "胚胎",
-      "origin": "editorial-unverified",
+      "definition": "n. 胚胎、胚；n. 萌芽阶段的事物",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-3.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/embryo",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/embryo"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -35457,13 +35549,16 @@
     {
       "word": "empower",
       "pos": "v.",
-      "definition": "授权；使能够",
-      "origin": "editorial-unverified",
+      "definition": "v. 授权（正式，常用被动）；v. 增强（某人的）自主能力",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-4.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/empower",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/empower"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -35481,13 +35576,16 @@
     {
       "word": "emulate",
       "pos": "v.",
-      "definition": "仿效",
-      "origin": "editorial-unverified",
+      "definition": "v. 效仿、努力赶上（正式）；v. 仿真、模拟（另一计算机的运行）（计算机）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-5.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/emulate",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/emulate"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -35557,37 +35655,46 @@
     {
       "word": "enclose",
       "pos": "v.",
-      "definition": "围住；附上",
-      "origin": "editorial-unverified",
+      "definition": "v. （用墙、篱笆）围住（通常用被动）；v. 包围、围绕；v. 圈占（公地）（通常用被动）；v. 随信附上",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-3.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/enclose",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/enclose"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
       "word": "enclosure",
       "pos": "n.",
-      "definition": "围场；围栏",
-      "origin": "editorial-unverified",
+      "definition": "n. 围场、圈占地；n. 圈地、围上；n. （随信的）附件",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-5.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/enclosure",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/enclosure"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
       "word": "encompass",
       "pos": "v.",
-      "definition": "包含；包围",
-      "origin": "editorial-unverified",
+      "definition": "v. 包含、包括（正式）；v. 包围、笼罩（正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-3.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/encompass",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/encompass"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -35667,25 +35774,31 @@
     {
       "word": "endanger",
       "pos": "v.",
-      "definition": "危及",
-      "origin": "editorial-unverified",
+      "definition": "v. 危及、使遭危险",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-3.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/endanger",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/endanger"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
       "word": "endangered",
       "pos": "adj.",
-      "definition": "濒危的",
-      "origin": "editorial-unverified",
+      "definition": "adj. （动植物）濒危的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-3.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/endangered",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/endangered"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -35740,13 +35853,16 @@
     {
       "word": "endlessly",
       "pos": "adv.",
-      "definition": "无休止地",
-      "origin": "editorial-unverified",
+      "definition": "adv. 无休止地、没完没了地",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-5.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/endlessly",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/endlessly"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -35788,13 +35904,16 @@
     {
       "word": "endow",
       "pos": "v.",
-      "definition": "赋予；捐赠",
-      "origin": "editorial-unverified",
+      "definition": "v. 向（学校等）捐赠资金",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-5.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/endow",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/endow"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -35824,13 +35943,16 @@
     {
       "word": "endurance",
       "pos": "n.",
-      "definition": "耐力；忍耐",
-      "origin": "editorial-unverified",
+      "definition": "n. 忍耐力、耐力",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-3.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/endurance",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/endurance"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -35852,26 +35974,31 @@
     {
       "word": "enduring",
       "pos": "adj.",
-      "definition": "持久的",
-      "origin": "editorial-unverified",
+      "definition": "adj. 持久的、长期的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-3.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/enduring",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/enduring"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
       "word": "energetic",
       "pos": "adj.",
-      "definition": "精力充沛的，积极的",
-      "origin": "ecdict-derived",
+      "definition": "adj. 精力充沛的、需要大量精力的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/energetic",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/energetic"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -35889,13 +36016,16 @@
     {
       "word": "energize",
       "pos": "v.",
-      "definition": "使充满活力；给…通电",
-      "origin": "editorial-unverified",
+      "definition": "v. 使充满热情（英式亦作 energise）；v. 给予活力、使精力充沛；v. 给（机器等）供能、通电（专业）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-5.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/energize",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/energize"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -35973,13 +36103,16 @@
     {
       "word": "engender",
       "pos": "v.",
-      "definition": "产生；引起",
-      "origin": "editorial-unverified",
+      "definition": "v. 引起、产生（感情或局面）（正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-5.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/engender",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/engender"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -36081,13 +36214,16 @@
     {
       "word": "engulf",
       "pos": "v.",
-      "definition": "吞没",
-      "origin": "editorial-unverified",
+      "definition": "v. 吞没、完全覆盖（正式）；v. 深深影响、使陷入（正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-5.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/engulf",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/engulf"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -36152,14 +36288,17 @@
     },
     {
       "word": "enlist",
-      "pos": "vt./vi.",
-      "definition": "vt. 谋取（帮助）；招募　vi. 应征入伍",
-      "origin": "editorial-unverified",
+      "pos": "v.",
+      "definition": "v. 争取（帮助或支持）；v. （使）入伍、应征",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-1.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/enlist",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/enlist"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -36261,13 +36400,16 @@
     {
       "word": "enrich",
       "pos": "v.",
-      "definition": "使丰富；使富裕",
-      "origin": "editorial-unverified",
+      "definition": "v. 使丰富、改善；v. （添加维生素等）强化（食物）；v. 使富裕",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-3.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/enrich",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/enrich"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -36309,13 +36451,16 @@
     {
       "word": "ensemble",
       "pos": "n.",
-      "definition": "整体；合奏团",
-      "origin": "editorial-unverified",
+      "definition": "n. 乐团、剧团、合奏组；n. 全体、整体（正式）；n. 全套服装",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-4.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/ensemble",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/ensemble"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -36345,13 +36490,16 @@
     {
       "word": "entail",
       "pos": "v.",
-      "definition": "需要；牵涉",
-      "origin": "editorial-unverified",
+      "definition": "v. 必然包含、牵涉",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-3.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/entail",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/entail"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -36417,13 +36565,16 @@
     {
       "word": "entertainer",
       "pos": "n.",
-      "definition": "艺人；表演者",
-      "origin": "editorial-unverified",
+      "definition": "n. 演艺人员、表演者",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-5.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/entertainer",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/entertainer"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -36501,13 +36652,16 @@
     {
       "word": "entice",
       "pos": "v.",
-      "definition": "诱使",
-      "origin": "editorial-unverified",
+      "definition": "v. 诱惑、引诱",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-5.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/entice",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/entice"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -36709,13 +36863,16 @@
     {
       "word": "envoy",
       "pos": "n.",
-      "definition": "使者；特使",
-      "origin": "editorial-unverified",
+      "definition": "n. 使者、特使",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-5.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/envoy",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/envoy"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -36733,15 +36890,16 @@
     {
       "word": "enzyme",
       "pos": "n.",
-      "definition": "酶",
-      "origin": "editorial-unverified",
+      "definition": "n. 酶（生物）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-3.js",
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/enzyme",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/enzyme"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -36759,13 +36917,18 @@
     {
       "word": "epic",
       "pos": "n./adj.",
-      "definition": "n. 史诗　adj. 宏大的；史诗般的",
-      "origin": "editorial-unverified",
+      "definition": "n. 史诗；n. （长篇）史诗般的电影或书；n. 壮举、艰巨的任务（有时幽默）；adj. 史诗般的；adj. 漫长而艰难的；adj. 宏大的、令人惊叹的；adj. 极棒的、超好玩的（非正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-1.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/epic",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/epic",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/epic_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/epic_2"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -36847,13 +37010,16 @@
     {
       "word": "equate",
       "pos": "v.",
-      "definition": "等同；使相等",
-      "origin": "editorial-unverified",
+      "definition": "v. 把……等同起来、视为同等",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-5.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/equate",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/equate"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -36895,13 +37061,16 @@
     {
       "word": "equilibrium",
       "pos": "n.",
-      "definition": "平衡",
-      "origin": "editorial-unverified",
+      "definition": "n. 平衡、均衡；n. （心情的）平静",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-3.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/equilibrium",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/equilibrium"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -36931,13 +37100,16 @@
     {
       "word": "equitable",
       "pos": "adj.",
-      "definition": "公平的",
-      "origin": "editorial-unverified",
+      "definition": "adj. 公平的、公正的（正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-5.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/equitable",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/equitable"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -37003,49 +37175,63 @@
     {
       "word": "eradicate",
       "pos": "v.",
-      "definition": "根除；消灭",
-      "origin": "editorial-unverified",
+      "definition": "v. 根除、消灭",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-3.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/eradicate",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/eradicate"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
       "word": "erase",
       "pos": "v.",
-      "definition": "抹去；消除",
-      "origin": "editorial-unverified",
+      "definition": "v. 抹去、消除；v. 擦掉（字迹等）；v. 删除（录音或计算机数据）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-4.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/erase",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/erase"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
       "word": "erect",
-      "pos": "vt./adj.",
-      "definition": "vt. 建立；竖立　adj. 直立的",
-      "origin": "editorial-unverified",
+      "pos": "v./adj.",
+      "definition": "v. 建造（正式）；v. 竖起、架设（正式）；v. 建立、创立（正式）；adj. 直立的、竖直的（正式）；adj. （因性兴奋而）勃起的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-1.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/erect",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/erect",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/erect_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/erect_2"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
       "word": "erode",
-      "pos": "vt./vi.",
-      "definition": "vt. 侵蚀；削弱　vi. 受侵蚀",
-      "origin": "editorial-unverified",
+      "pos": "v.",
+      "definition": "v. 侵蚀、腐蚀（常用被动）；v. 削弱、逐渐毁坏",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-1.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/erode",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/erode"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -37146,15 +37332,17 @@
     },
     {
       "word": "erupt",
-      "pos": "vi./vt.",
-      "definition": "vi. 爆发　vt. 喷出",
-      "origin": "ecdict-derived",
+      "pos": "v.",
+      "definition": "v. （火山）爆发、喷出；v. （暴力等）突然发生；v. （情绪）突然爆发；v. （皮疹等）突然出现",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/erupt",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/erupt"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -37171,14 +37359,17 @@
     },
     {
       "word": "escalate",
-      "pos": "vi./vt.",
-      "definition": "vi. 逐步升级　vt. 使升级",
-      "origin": "editorial-unverified",
+      "pos": "v.",
+      "definition": "v. （使）升级、（使）加剧；v. 将（问题或投诉）上报给上级处理",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-1.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/escalate",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/escalate"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -37236,14 +37427,19 @@
     },
     {
       "word": "escort",
-      "pos": "vt./n.",
-      "definition": "vt. 护送；护卫　n. 护卫队；陪同者",
-      "origin": "editorial-unverified",
+      "pos": "n./v.",
+      "definition": "n. 护送者、护卫队；n. （社交活动的）男伴（旧式或正式）；n. （受雇的）社交陪伴；v. 护送、陪同",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-2.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/escort",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/escort",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/escort_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/escort_2"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -37345,37 +37541,46 @@
     {
       "word": "etch",
       "pos": "v.",
-      "definition": "蚀刻；铭刻",
-      "origin": "editorial-unverified",
+      "definition": "v. 蚀刻、雕刻（通常用被动）；v. （情感）显露在（脸上）（文学）；v. 留下鲜明的痕迹",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-5.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/etch",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/etch"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
       "word": "eternal",
       "pos": "adj.",
-      "definition": "永恒的",
-      "origin": "editorial-unverified",
+      "definition": "adj. 永恒的、永久的；adj. 没完没了的（贬义，仅用于名词前）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-3.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/eternal",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/eternal"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
       "word": "ethic",
       "pos": "n.",
-      "definition": "伦理；道德规范",
-      "origin": "editorial-unverified",
+      "definition": "n. 道德准则（ethics，复数）；n. 伦理体系、行为准则；n. 伦理学（ethics）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-4.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/ethic",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/ethic"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -37493,25 +37698,31 @@
     {
       "word": "evacuate",
       "pos": "v.",
-      "definition": "疏散；撤离",
-      "origin": "editorial-unverified",
+      "definition": "v. 疏散（人员）；v. 撤离（危险地方）；v. 排泄（正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-3.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/evacuate",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/evacuate"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
       "word": "evade",
       "pos": "v.",
-      "definition": "逃避；避开",
-      "origin": "editorial-unverified",
+      "definition": "v. 逃脱、躲避；v. 逃避（责任、义务）；v. 回避（问题等）；v. 不能得到、未能实现（正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-5.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/evade",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/evade"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -37528,14 +37739,17 @@
     },
     {
       "word": "evaporate",
-      "pos": "vi./vt.",
-      "definition": "vi. 蒸发；消失　vt. 使蒸发",
-      "origin": "editorial-unverified",
+      "pos": "v.",
+      "definition": "v. （使）蒸发；v. 逐渐消失",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-1.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/evaporate",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/evaporate"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -37601,13 +37815,16 @@
     {
       "word": "evenly",
       "pos": "adv.",
-      "definition": "均匀地；平均地",
-      "origin": "editorial-unverified",
+      "definition": "adv. 平稳地、均匀地；adv. 均等地、平分地；adv. 平静地、不动声色地",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-4.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/evenly",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/evenly"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -37637,13 +37854,16 @@
     {
       "word": "eventual",
       "pos": "adj.",
-      "definition": "最终的",
-      "origin": "editorial-unverified",
+      "definition": "adj. 最终的、结果的（仅用于名词前）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-3.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/eventual",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/eventual"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -37770,13 +37990,16 @@
     {
       "word": "evolutionary",
       "pos": "adj.",
-      "definition": "进化的",
-      "origin": "editorial-unverified",
+      "definition": "adj. 进化的、渐进发展的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-3.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/evolutionary",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/evolutionary"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -37830,13 +38053,16 @@
     {
       "word": "exaggerate",
       "pos": "v.",
-      "definition": "夸大",
-      "origin": "editorial-unverified",
+      "definition": "v. 夸大、夸张",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-3.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/exaggerate",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/exaggerate"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -37963,13 +38189,16 @@
     {
       "word": "excavation",
       "pos": "n.",
-      "definition": "发掘；挖掘",
-      "origin": "editorial-unverified",
+      "definition": "n. 发掘（古迹）；n. 发掘现场（常用复数）；n. 挖掘、开凿",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-5.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/excavation",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/excavation"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -38003,13 +38232,16 @@
     {
       "word": "excel",
       "pos": "v.",
-      "definition": "擅长；胜过",
-      "origin": "editorial-unverified",
+      "definition": "v. 擅长、出众；v. 超常发挥（英式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-4.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/excel",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/excel"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -38039,13 +38271,16 @@
     {
       "word": "exceptional",
       "pos": "adj.",
-      "definition": "特别的；杰出的",
-      "origin": "editorial-unverified",
+      "definition": "adj. 卓越的、杰出的；adj. 罕见的、特殊的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-3.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/exceptional",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/exceptional"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -38065,26 +38300,36 @@
     },
     {
       "word": "excerpt",
-      "pos": "n.",
-      "definition": "摘录",
-      "origin": "editorial-unverified",
+      "pos": "n./v.",
+      "definition": "n. 摘录、节选；v. 摘录、节选",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-4.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/excerpt",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/excerpt",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/excerpt_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/excerpt_2"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
       "word": "excess",
       "pos": "n./adj.",
-      "definition": "n. 过量；过度　adj. 过量的",
-      "origin": "editorial-unverified",
+      "definition": "n. 过量、过度；n. 超出量、超额；n. （保险的）免赔额（英式；北美作 deductible）；n. 无节制（尤指吃喝）（贬义）；n. 暴行、过分的行为（excesses，贬义）；adj. 过量的、额外的（仅用于名词前）；adj. 需额外支付的（英式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-1.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/excess",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/excess",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/excess_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/excess_2"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -38125,14 +38370,17 @@
     },
     {
       "word": "excite",
-      "pos": "vt.",
-      "definition": "刺激，使兴奋，激励",
-      "origin": "ecdict-derived",
+      "pos": "v.",
+      "definition": "v. 使兴奋、使激动；v. 使紧张不安；v. 激起、引起（某种情感或反应）；v. 引起性欲；v. 刺激（身体部位或物理系统）使活跃（专业）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/excite",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/excite"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -38162,13 +38410,16 @@
     {
       "word": "exclaim",
       "pos": "v.",
-      "definition": "惊叫；呼喊",
-      "origin": "editorial-unverified",
+      "definition": "v. 惊叫、呼喊",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-4.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/exclaim",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/exclaim"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -38186,13 +38437,16 @@
     {
       "word": "exclusion",
       "pos": "n.",
-      "definition": "排除；排斥",
-      "origin": "editorial-unverified",
+      "definition": "n. 排斥、拒绝进入；n. 被排除在外的人或事物；n. （可能性的）排除；n. 开除（学生）（英式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-4.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/exclusion",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/exclusion"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -38246,13 +38500,16 @@
     {
       "word": "excursion",
       "pos": "n.",
-      "definition": "短途旅行",
-      "origin": "editorial-unverified",
+      "definition": "n. 短途旅行、远足；n. （对新活动的）短暂尝试（正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-5.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/excursion",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/excursion"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -38322,37 +38579,48 @@
     {
       "word": "exemplify",
       "pos": "v.",
-      "definition": "是…的典型；举例说明",
-      "origin": "editorial-unverified",
+      "definition": "v. 是……的典型（正式，常用被动）；v. 举例说明（正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-3.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/exemplify",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/exemplify"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
       "word": "exempt",
-      "pos": "adj./vt.",
-      "definition": "adj. 免除的　vt. 豁免",
-      "origin": "editorial-unverified",
+      "pos": "adj./v.",
+      "definition": "adj. 被免除的、豁免的（不用于名词前）；v. 免除、豁免（正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-2.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/exempt",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/exempt",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/exempt_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/exempt_3"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
       "word": "exemption",
       "pos": "n.",
-      "definition": "豁免；免除",
-      "origin": "editorial-unverified",
+      "definition": "n. 免除、豁免；n. 免税额",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-4.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/exemption",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/exemption"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -38370,13 +38638,16 @@
     {
       "word": "exert",
       "pos": "v.",
-      "definition": "施加；运用",
-      "origin": "editorial-unverified",
+      "definition": "v. 施加（影响、权力）；v. 努力、尽力（exert oneself）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-3.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/exert",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/exert"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -38418,13 +38689,16 @@
     {
       "word": "exhausted",
       "pos": "adj.",
-      "definition": "筋疲力尽的；用完的",
-      "origin": "editorial-unverified",
+      "definition": "adj. 筋疲力尽的；adj. 用完的、耗尽的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-5.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/exhausted",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/exhausted"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -38442,13 +38716,16 @@
     {
       "word": "exhaustion",
       "pos": "n.",
-      "definition": "筋疲力尽；耗尽",
-      "origin": "editorial-unverified",
+      "definition": "n. 精疲力竭；n. 耗尽、用光（正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-5.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/exhaustion",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/exhaustion"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -38538,14 +38815,19 @@
     },
     {
       "word": "exile",
-      "pos": "n./vt.",
-      "definition": "n. 流放；流亡者　vt. 流放",
-      "origin": "editorial-unverified",
+      "pos": "n./v.",
+      "definition": "n. 流放、流亡；n. 流亡者、被流放者；v. 流放、放逐（通常用被动）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-1.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/exile",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/exile",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/exile_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/exile_2"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -38672,13 +38954,16 @@
     {
       "word": "expanse",
       "pos": "n.",
-      "definition": "广阔区域",
-      "origin": "editorial-unverified",
+      "definition": "n. 广阔的区域、浩瀚",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-3.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/expanse",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/expanse"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -38696,13 +38981,16 @@
     {
       "word": "expansive",
       "pos": "adj.",
-      "definition": "广阔的；扩张的",
-      "origin": "editorial-unverified",
+      "definition": "adj. 广阔的；adj. 内容广泛的、概括性的；adj. 健谈的、开朗的；adj. 促进经济扩张的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-5.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/expansive",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/expansive"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -38768,13 +39056,16 @@
     {
       "word": "expel",
       "pos": "v.",
-      "definition": "驱逐；排出",
-      "origin": "editorial-unverified",
+      "definition": "v. 开除（学生、成员）；v. 驱逐出境；v. 排出（空气或水）（专业）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-3.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/expel",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/expel"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -38792,13 +39083,16 @@
     {
       "word": "expenditure",
       "pos": "n.",
-      "definition": "支出；花费",
-      "origin": "editorial-unverified",
+      "definition": "n. 开支、支出；n. （精力、时间、材料的）消耗",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-3.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/expenditure",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/expenditure"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -38912,13 +39206,16 @@
     {
       "word": "expire",
       "pos": "v.",
-      "definition": "到期；失效",
-      "origin": "editorial-unverified",
+      "definition": "v. （证件、合同等）到期、失效；v. 结束、届满；v. 死亡（文学）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-4.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/expire",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/expire"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -38960,13 +39257,16 @@
     {
       "word": "exploitation",
       "pos": "n.",
-      "definition": "开发；剥削",
-      "origin": "editorial-unverified",
+      "definition": "n. 剥削、压榨（贬义）；n. （资源的）开发、开采；n. （对局势的）利用（贬义）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-3.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/exploitation",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/exploitation"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -38996,13 +39296,16 @@
     {
       "word": "explorer",
       "pos": "n.",
-      "definition": "探险家，探测者，勘探器",
-      "origin": "ecdict-derived",
+      "definition": "n. 探险家、勘探者",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/explorer",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/explorer"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -39020,13 +39323,18 @@
     {
       "word": "explosive",
       "pos": "adj./n.",
-      "definition": "adj. 爆炸性的；急剧增长的　n. 炸药",
-      "origin": "editorial-unverified",
+      "definition": "adj. 易爆炸的；adj. 易引起冲突的、敏感的；adj. 易发脾气的；adj. 激增的、迅猛的；adj. 突然而响亮的；n. 炸药、爆炸物",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-1.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/explosive",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/explosive",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/explosive_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/explosive_2"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -39116,13 +39424,16 @@
     {
       "word": "expressive",
       "pos": "adj.",
-      "definition": "富有表现力的",
-      "origin": "editorial-unverified",
+      "definition": "adj. 富有表现力的、表达感情的；adj. 表达……的（正式，不用于名词前）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-5.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/expressive",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/expressive"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -39152,13 +39463,16 @@
     {
       "word": "exquisite",
       "pos": "adj.",
-      "definition": "精美的；精致的",
-      "origin": "editorial-unverified",
+      "definition": "adj. 精美的、精致的；adj. （感受）强烈的（正式）；adj. 敏锐的、细腻的（正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-5.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/exquisite",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/exquisite"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -39260,13 +39574,18 @@
     {
       "word": "exterior",
       "pos": "n./adj.",
-      "definition": "n. 外部　adj. 外部的",
-      "origin": "editorial-unverified",
+      "definition": "n. 外部、外表（尤指建筑）；n. （人的）外表、外在表现；adj. 外部的、户外的（通常用于名词前）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-pos-1.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/exterior",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/exterior",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/exterior_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/exterior_2"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -39308,13 +39627,16 @@
     {
       "word": "extinction",
       "pos": "n.",
-      "definition": "灭绝",
-      "origin": "editorial-unverified",
+      "definition": "n. 灭绝、消亡",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-3.js"
+        "js/lexicon-review-037.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/extinction",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/extinction"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {

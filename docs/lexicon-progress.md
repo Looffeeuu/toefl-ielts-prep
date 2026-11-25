@@ -4,9 +4,9 @@
 
 | 项目 | 已核对 | 尚待核对 |
 | --- | ---: | ---: |
-| 释义与词性 | 3484 | 5591 |
-| 英美音与主要分读 | 3482 | 5593 |
-| 两项均完成 | 3476 | 5599 |
+| 释义与词性 | 3584 | 5491 |
+| 英美音与主要分读 | 3582 | 5493 |
+| 两项均完成 | 3576 | 5499 |
 
 每词分别保存来源和日期，不能用核对音标代替核对释义。完整状态和接续队列见 [lexicon-progress.json](lexicon-progress.json)。优先处理缺失、截断、词性矛盾和用法标记，再按字母顺序推进。未找到可靠来源的条目保持待核对，不推测填充。
 
@@ -239,6 +239,12 @@ node tools/lexicon_progress.js
 
 待复核：destine。OALD /definition/english/destine 及 destine_1 均无独立词条（仅有形容词 destined）。保留待复核。 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/destined)。不计入完成数。
 
+## 批次 037
+
+完成 100 词：dubious、dull、duplicate、durable、duration、dwarf、dwell、dwelling、dye、earnest、eccentric、ecology、ecstasy、educated、efficacy、electron、elegance、elevate、elevation、elicit、elimination、elude、elusive、emanate、embarrass、embed、embody、embryo、empower、emulate、enclose、enclosure、encompass、endanger、endangered、endlessly、endow、endurance、enduring、energetic、energize、engender、engulf、enlist、enrich、ensemble、entail、entertainer、entice、envoy、enzyme、epic、equate、equilibrium、equitable、eradicate、erase、erect、erode、erupt、escalate、escort、etch、eternal、ethic、evacuate、evade、evaporate、evenly、eventual、evolutionary、exaggerate、excavation、excel、exceptional、excerpt、excess、excite、exclaim、exclusion、excursion、exemplify、exempt、exemption、exert、exhausted、exhaustion、exile、expanse、expansive、expel、expenditure、expire、exploitation、explorer、explosive、expressive、exquisite、exterior、extinction。托福次高频（f2）队列 100 词，来源改用 OALD（剑桥网站对自动访问启用安全验证）。英音取 OALD 英式、美音取同页北美 IPA，逐字照录。
+
+待复核：endeavor。OALD 以英式拼写 endeavour 立目（标注 also endeavor），/definition/english/endeavor 返回 404；现有检查要求来源路径与词形一致，暂列待复核，需增加拼写别名支持后处理。 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/endeavour_1)。不计入完成数。
+
 ## 发布节奏
 
-每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 1441 词，距下次发布还差 0 词。发布基线为 fc694f71b9d99bf227f0f0001b6b199e5de0bf50，当时两项均核对 2035 词；当前页面显示本地核对进度，不表示已上线。
+每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 1541 词，距下次发布还差 0 词。发布基线为 fc694f71b9d99bf227f0f0001b6b199e5de0bf50，当时两项均核对 2035 词；当前页面显示本地核对进度，不表示已上线。

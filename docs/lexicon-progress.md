@@ -4,9 +4,9 @@
 
 | 项目 | 已核对 | 尚待核对 |
 | --- | ---: | ---: |
-| 释义与词性 | 4584 | 4491 |
-| 英美音与主要分读 | 4582 | 4493 |
-| 两项均完成 | 4576 | 4499 |
+| 释义与词性 | 4684 | 4391 |
+| 英美音与主要分读 | 4682 | 4393 |
+| 两项均完成 | 4676 | 4399 |
 
 每词分别保存来源和日期，不能用核对音标代替核对释义。完整状态和接续队列见 [lexicon-progress.json](lexicon-progress.json)。优先处理缺失、截断、词性矛盾和用法标记，再按字母顺序推进。未找到可靠来源的条目保持待核对，不推测填充。
 
@@ -318,6 +318,12 @@ node tools/lexicon_progress.js
 
 待复核：standardized。OALD /definition/english/standardized 无独立词条（作 standardize 的派生形式）。保留待复核。 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/standardized)。不计入完成数。
 
+## 批次 048
+
+完成 100 词：tentative、terminal、terminate、terminology、terrace、terrestrial、terrify、terrifying、theft、therapeutic、thereafter、thermal、thermometer、thesis、thickness、thorough、thoughtful、thrust、thump、thunder、thwart、tilt、tin、tolerant、tornado、touching、tow、towering、tract、traction、tractor、traitor、transcend、transcript、transparent、transplant、traverse、tread、treadmill、tremble、trench、triangle、trickle、trillion、trivial、trot、troublesome、trumpet、tub、tug、tuition、tumble、turbulent、turmoil、turtle、tutor、twig、ultraviolet、unanimous、unconscious、unconventional、underestimate、underground、underlie、underneath、underscore、undertaking、underwater、undo、undoubtedly、unemployed、unify、unload、unpredictable、unravel、unstable、untouched、unveil、upgrade、upheaval、uphold、upright、uprising、upscale、urgency、urgent、useless、usher、utilization、utter、utterly、vacant、validate、valve、vanity、variability、variance、variant、varied、vault。托福次高频（f2）队列 100 词，来源改用 OALD（剑桥网站对自动访问启用安全验证）。英音取 OALD 英式、美音取同页北美 IPA，逐字照录。
+
+待复核：vantage。OALD /definition/english/vantage 无独立词条（以 vantage point 立目）。保留待复核。 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/vantage)。不计入完成数。
+
 ## 发布节奏
 
-每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 400 词，距下次发布还差 600 词。发布基线为 237be0a9f85fc0b493092ad90e069a03e94a2898，当时两项均核对 4176 词；当前页面显示本地核对进度，不表示已上线。
+每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 500 词，距下次发布还差 500 词。发布基线为 237be0a9f85fc0b493092ad90e069a03e94a2898，当时两项均核对 4176 词；当前页面显示本地核对进度，不表示已上线。

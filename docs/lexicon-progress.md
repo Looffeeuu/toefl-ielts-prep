@@ -4,9 +4,9 @@
 
 | 项目 | 已核对 | 尚待核对 |
 | --- | ---: | ---: |
-| 释义与词性 | 5184 | 3891 |
-| 英美音与主要分读 | 5182 | 3893 |
-| 两项均完成 | 5176 | 3899 |
+| 释义与词性 | 5284 | 3791 |
+| 英美音与主要分读 | 5282 | 3793 |
+| 两项均完成 | 5276 | 3799 |
 
 每词分别保存来源和日期，不能用核对音标代替核对释义。完整状态和接续队列见 [lexicon-progress.json](lexicon-progress.json)。优先处理缺失、截断、词性矛盾和用法标记，再按字母顺序推进。未找到可靠来源的条目保持待核对，不推测填充。
 
@@ -369,6 +369,14 @@ node tools/lexicon_progress.js
 
 待复核：enthrall。OALD /definition/english/enthrall 无独立词条（以英式拼写 enthral 立目，enthral 已在本批收录），待别名支持后复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/enthrall)。不计入完成数。
 
+## 批次 054
+
+完成 100 词：fender、ferment、fermentation、ferocious、fertilize、fervent、festive、fetish、feud、feudal、feverish、fickle、fictitious、fidelity、finch、finesse、fir、fishy、fitting、flair、flamboyant、flashy、flattering、flaunt、fleck、flimsy、flint、floodplain、flora、flounder、flout、fluent、fluffy、foggy、folding、folklore、footnote、foray、forbidding、forebear、forefather、forerunner、foreshadow、foresight、forestall、foretell、forlorn、formative、forsake、forthright、fortify、fortitude、fortuitous、fowl、fractious、fragility、fragmentary、fraternal、fraudulent、fraught、fray、freighter、frenetic、freshness、fright、frigid、frugal、fruitful、fruition、fruitless、funnel、furry、further、fuse、fussy、fuzz、gag、gait、gale、gallant、galvanize、gamma、gape、garb、garner、gaseous、gash、generalize、genesis、genial、genteel、gentry、genus、germinate、gist、glacial、glaring、glassware、glassy、glazed。托福中频（f3）队列 100 词，来源改用 OALD（剑桥网站对自动访问启用安全验证）。英音取 OALD 英式、美音取同页北美 IPA，逐字照录。
+
+待复核：fervor。OALD /definition/english/fervor 无词条（以英式拼写 fervour 立目），待别名支持后复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/fervor)。不计入完成数。
+待复核：flickering。OALD 无独立词条（仅作 flicker 的屈折形式），待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/flickering)。不计入完成数。
+待复核：geologic。OALD 无独立词条（收 geological，geologic 为美式变体），待别名支持后复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/geologic)。不计入完成数。
+
 ## 发布节奏
 
-每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 0 词，距下次发布还差 1000 词。发布基线为 eddc23c56240e203acb9126866be802a05108087，当时两项均核对 5176 词；当前页面显示本地核对进度，不表示已上线。
+每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 100 词，距下次发布还差 900 词。发布基线为 eddc23c56240e203acb9126866be802a05108087，当时两项均核对 5176 词；当前页面显示本地核对进度，不表示已上线。

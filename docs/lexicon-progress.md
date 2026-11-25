@@ -4,9 +4,9 @@
 
 | 项目 | 已核对 | 尚待核对 |
 | --- | ---: | ---: |
-| 释义与词性 | 3284 | 5791 |
-| 英美音与主要分读 | 3282 | 5793 |
-| 两项均完成 | 3276 | 5799 |
+| 释义与词性 | 3384 | 5691 |
+| 英美音与主要分读 | 3382 | 5693 |
+| 两项均完成 | 3376 | 5699 |
 
 每词分别保存来源和日期，不能用核对音标代替核对释义。完整状态和接续队列见 [lexicon-progress.json](lexicon-progress.json)。优先处理缺失、截断、词性矛盾和用法标记，再按字母顺序推进。未找到可靠来源的条目保持待核对，不推测填充。
 
@@ -227,6 +227,12 @@ node tools/lexicon_progress.js
 待复核：prescribed。OALD /definition/english/prescribed 返回 404。保留待复核。 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/prescription)。不计入完成数。
 待复核：troubling。OALD /definition/english/troubling 返回 404。现有 ECDICT 释义“浊度，浑浊度”与常用义“令人不安的”不符，需优先复核。 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/trouble_2)。不计入完成数。
 
+## 批次 035
+
+完成 100 词：conjure、conquer、conservatism、conserve、console、consolidate、consortium、conspicuous、conspire、constellation、constituent、constrain、contaminate、contamination、contempt、contender、contention、continental、contingent、continually、continuation、continuity、continuum、contraction、contradict、contradictory、contrary、convene、convenient、converge、convincing、convoy、coordination、copper、coral、corps、corpse、correlate、correspond、correspondence、corresponding、countless、courthouse、cowboy、cozy、crab、cram、cramped、crater、crave、credential、creditor、creep、cripple、crisp、crooked、crossing、crouch、crow、crumble、cube、cubic、cucumber、cuisine、culinary、culminate、cult、cultivate、cultivation、cupboard、curator、curb、curtail、cushion、cylinder、cynical、dairy、damp、dangle、daring、dart、daunting、dazzling、decay、deceive、deception、declaration、decoration、decorative、decree、default、defect、defer、defiant、deficiency、definite、definitive、deflect、defy、degradation。托福次高频（f2）队列 100 词，来源改用 OALD（剑桥网站对自动访问启用安全验证）。英音取 OALD 英式、美音取同页北美 IPA，逐字照录。
+
+
+
 ## 发布节奏
 
-每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 1241 词，距下次发布还差 0 词。发布基线为 fc694f71b9d99bf227f0f0001b6b199e5de0bf50，当时两项均核对 2035 词；当前页面显示本地核对进度，不表示已上线。
+每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 1341 词，距下次发布还差 0 词。发布基线为 fc694f71b9d99bf227f0f0001b6b199e5de0bf50，当时两项均核对 2035 词；当前页面显示本地核对进度，不表示已上线。

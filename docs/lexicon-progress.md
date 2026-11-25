@@ -4,9 +4,9 @@
 
 | 项目 | 已核对 | 尚待核对 |
 | --- | ---: | ---: |
-| 释义与词性 | 5384 | 3691 |
-| 英美音与主要分读 | 5382 | 3693 |
-| 两项均完成 | 5376 | 3699 |
+| 释义与词性 | 5484 | 3591 |
+| 英美音与主要分读 | 5482 | 3593 |
+| 两项均完成 | 5476 | 3599 |
 
 每词分别保存来源和日期，不能用核对音标代替核对释义。完整状态和接续队列见 [lexicon-progress.json](lexicon-progress.json)。优先处理缺失、截断、词性矛盾和用法标记，再按字母顺序推进。未找到可靠来源的条目保持待核对，不推测填充。
 
@@ -383,6 +383,15 @@ node tools/lexicon_progress.js
 
 
 
+## 批次 056
+
+完成 100 词：impassive、impeach、impeccable、impediment、impel、impersonal、impersonate、impervious、impotence、imprint、improbable、impromptu、impropriety、impulsive、impunity、impurity、inaccessible、inanimate、inaugurate、incandescent、incapacitate、incarcerate、incense、incessant、incipient、incite、incoherent、incompatible、incomprehensible、inconceivable、inconclusive、incongruity、incongruous、inconvenient、incorporation、incubate、inculcate、indecent、indefinite、indigent、indignant、indignity、indiscriminately、individualism、industrious、inept、inert、infallible、infancy、inferiority、infertile、infest、infiltrate、inflexible、influenza、informative、infringe、infusion、ingenious、inkling、inland、innermost、innuendo、innumerable、inordinate、inquisitive、insidious、insinuate、insomnia、inspiring、instantaneous、instigate、instinctive、institutionalize、instructive、insular、insulate、insulting、insurmountable、intelligible、intercede、interdependence、interdependent、interlude、intermediary、intermittent、interrogate、intersect、interstellar、intestine、intoxicate、intoxication、intrepid、intricately、introspective、intrude、inundate、invalid、invalidate、invaluable。托福中频（f3）队列 100 词，来源改用 OALD（剑桥网站对自动访问启用安全验证）。英音取 OALD 英式、美音取同页北美 IPA，逐字照录。
+
+待复核：installment。OALD /definition/english/installment 无词条（以英式拼写 instalment 立目），待别名支持后复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/installment)。不计入完成数。
+待复核：instill。OALD /definition/english/instill 无词条（以英式拼写 instil 立目），待别名支持后复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/instill)。不计入完成数。
+待复核：interconnected。OALD 无独立词条（仅作 interconnect 的屈折形式），待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/interconnected)。不计入完成数。
+待复核：interlocking。OALD 无独立词条（仅作 interlock 的屈折形式），待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/interlocking)。不计入完成数。
+
 ## 发布节奏
 
-每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 200 词，距下次发布还差 800 词。发布基线为 eddc23c56240e203acb9126866be802a05108087，当时两项均核对 5176 词；当前页面显示本地核对进度，不表示已上线。
+每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 300 词，距下次发布还差 700 词。发布基线为 eddc23c56240e203acb9126866be802a05108087，当时两项均核对 5176 词；当前页面显示本地核对进度，不表示已上线。

@@ -4,9 +4,9 @@
 
 | 项目 | 已核对 | 尚待核对 |
 | --- | ---: | ---: |
-| 释义与词性 | 6484 | 2591 |
-| 英美音与主要分读 | 6482 | 2593 |
-| 两项均完成 | 6476 | 2599 |
+| 释义与词性 | 6583 | 2492 |
+| 英美音与主要分读 | 6582 | 2493 |
+| 两项均完成 | 6576 | 2499 |
 
 每词分别保存来源和日期，不能用核对音标代替核对释义。完整状态和接续队列见 [lexicon-progress.json](lexicon-progress.json)。优先处理缺失、截断、词性矛盾和用法标记，再按字母顺序推进。未找到可靠来源的条目保持待核对，不推测填充。
 
@@ -503,6 +503,29 @@ node tools/lexicon_progress.js
 待复核：endue。OALD /definition/english/endue 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/endue)。不计入完成数。
 待复核：extenuate。OALD /definition/english/extenuate 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/extenuate)。不计入完成数。
 
+## 批次 067
+
+完成 100 词：factitious、fahrenheit、faithfulness、falconer、fallacious、fallible、fatalism、fatuous、fealty、fecundity、feint、ferret、ferromagnetic、fervid、fester、fete、fetter、figment、figurehead、filch、fireproof、fitful、flabby、flaccid、flax、flay、flighty、florid、fluster、foghorn、foment、footpath、forcible、ford、forte、fossilize、fossilized、frisky、fritter、frivolity、frost、frugality、fulminate、fulsome、fumigate、funereal、gabble、gage、gainful、gainsay、gallantry、gambol、garrulous、gauche、gazette、gentility、geomagnetic、germane、gibbon、gibe、gild、gilding、girder、girdle、glandular、gourmand、graph、gravitation、grouchy、guile、guileless、gusty、gymnastic、gyration、hackneyed、handcrafted、handicraft、harrow、harshness、hatchling、headstrong、heedless、herculean、heredity、hexagon、hilarity、hillbilly、hirsute、homespun、hominid、hornbill、hornet、horticulture、hovercraft、hubbub、husbandry、hydrosphere、hypersensitive、icicle、idiomatic。托福低频（f4）队列 100 词，来源改用 OALD（剑桥网站对自动访问启用安全验证）。英音取 OALD 英式、美音取同页北美 IPA，逐字照录。
+
+待复核：factious。OALD /definition/english/factious 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/factious)。不计入完成数。
+待复核：fagot。OALD /definition/english/fagot 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/fagot)。不计入完成数。
+待复核：famish。OALD /definition/english/famish 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/famish)。不计入完成数。
+待复核：fittingly。OALD /definition/english/fittingly 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/fittingly)。不计入完成数。
+待复核：flavoring。OALD /definition/english/flavoring 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/flavoring)。不计入完成数。
+待复核：flyspeck。OALD /definition/english/flyspeck 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/flyspeck)。不计入完成数。
+待复核：fogged。OALD /definition/english/fogged 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/fogged)。不计入完成数。
+待复核：foist。OALD /definition/english/foist 页面无独立义项（义项在短语动词下），待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/foist)。不计入完成数。
+待复核：formalized。OALD /definition/english/formalized 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/formalized)。不计入完成数。
+待复核：frowzy。OALD /definition/english/frowzy 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/frowzy)。不计入完成数。
+待复核：fungi。OALD /definition/english/fungi 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/fungi)。不计入完成数。
+待复核：fused。OALD /definition/english/fused 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/fused)。不计入完成数。
+待复核：galvanization。OALD /definition/english/galvanization 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/galvanization)。不计入完成数。
+待复核：garrulity。OALD /definition/english/garrulity 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/garrulity)。不计入完成数。
+待复核：gemstone。OALD /definition/english/gemstone 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/gemstone)。不计入完成数。
+待复核：hardheaded。OALD /definition/english/hardheaded 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/hardheaded)。不计入完成数。
+待复核：homogenize。OALD /definition/english/homogenize 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/homogenize)。不计入完成数。
+待复核：ichthyosaur。OALD /definition/english/ichthyosaur 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/ichthyosaur)。不计入完成数。
+
 ## 发布节奏
 
-每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 300 词，距下次发布还差 700 词。发布基线为 fd10786f774b81443625b14d168f8dd4fb51b80c，当时两项均核对 6176 词；当前页面显示本地核对进度，不表示已上线。
+每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 400 词，距下次发布还差 600 词。发布基线为 fd10786f774b81443625b14d168f8dd4fb51b80c，当时两项均核对 6176 词；当前页面显示本地核对进度，不表示已上线。

@@ -4,9 +4,9 @@
 
 | 项目 | 已核对 | 尚待核对 |
 | --- | ---: | ---: |
-| 释义与词性 | 4684 | 4391 |
-| 英美音与主要分读 | 4682 | 4393 |
-| 两项均完成 | 4676 | 4399 |
+| 释义与词性 | 4784 | 4291 |
+| 英美音与主要分读 | 4782 | 4293 |
+| 两项均完成 | 4776 | 4299 |
 
 每词分别保存来源和日期，不能用核对音标代替核对释义。完整状态和接续队列见 [lexicon-progress.json](lexicon-progress.json)。优先处理缺失、截断、词性矛盾和用法标记，再按字母顺序推进。未找到可靠来源的条目保持待核对，不推测填充。
 
@@ -24,7 +24,7 @@ node tools/check_pronunciations.js --write
 node tools/lexicon_progress.js
 ```
 
-下一批队列前 30 词：accidents、accommodations、account for、accountants、actions、activities、adults、advantages、advertisements、affairs、agencies、aggressiveness、animals、antibiotics、approaches、approaching、areas、articles、assignments、attacks、attempts、automated、beds、beginners、belts、benefits、bicycles、birds、booklist、books。
+下一批队列前 30 词：accidents、accommodations、account for、accountants、actions、activities、adults、advantages、advertisements、affairs、agencies、animals、antibiotics、approaches、approaching、areas、articles、assignments、attacks、attempts、automated、beds、beginners、belts、benefits、bicycles、birds、booklist、books、bring about。
 
 ## 批次 002
 
@@ -324,6 +324,23 @@ node tools/lexicon_progress.js
 
 待复核：vantage。OALD /definition/english/vantage 无独立词条（以 vantage point 立目）。保留待复核。 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/vantage)。不计入完成数。
 
+## 批次 049
+
+完成 100 词：veer、vegetarian、veil、vein、vent、ventilation、venue、versatile、verse、veto、vibrant、vibrate、vibration、vicinity、vie、vigorous、vine、vinegar、visibility、vista、vitality、vocation、vocational、void、volatile、volcano、voltage、voyage、wade、wail、walnut、wan、ward、ware、warfare、warrant、warranty、wary、waver、wax、weary、wed、weep、wholesale、wield、wit、withstand、witty、wool、worthy、wrath、wreck、wrestling、wrinkle、yearn、aggressiveness、diligently、domesticated、ethically、fleeting、idiotic、ineligible、inextricably、maverick、meticulously、notoriously、pervert、philharmonic、pique、scrupulously、sheltered、snarl、sow、sparingly、spectacularly、spontaneously、sporadically、spout、strenuously、strikingly、stubbornness、stylized、sunburn、superficially、supremely、textured、turnpike、tutorial、unevenly、unquestionably、abiding、absorbing、abyss、adjoining、adventurous、analogous、aspiring、chasm、chaste、chateau。托福次高频（f2）收尾与中频（f3）队列 100 词，来源改用 OALD（剑桥网站对自动访问启用安全验证）。英音取 OALD 英式、美音取同页北美 IPA，逐字照录。
+
+待复核：vigor。OALD /definition/english/vigor 无词条（以英式拼写 vigour 立目）；暂列待复核，需增加拼写别名支持后处理。 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/vigour)。不计入完成数。
+待复核：woods。OALD /definition/english/woods 无独立词条（作 wood 的复数义项）。保留待复核。 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/woods)。不计入完成数。
+待复核：approaching。OALD 无 approaching 独立词条。保留待复核。 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/approaching)。不计入完成数。
+待复核：coordinated。OALD 无 coordinated 独立词条。保留待复核。 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/coordinated)。不计入完成数。
+待复核：dues。OALD 无 dues 独立词条（作 due 的名词复数义项）。保留待复核。 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/dues)。不计入完成数。
+待复核：entrenched。OALD 无 entrenched 独立词条（作 entrench 的派生形式）。保留待复核。 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/entrenched)。不计入完成数。
+待复核：specified。OALD 无 specified 独立词条。保留待复核。 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/specified)。不计入完成数。
+待复核：tropics。OALD 无 tropics 独立词条（以 tropic 立目）。保留待复核。 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/tropics)。不计入完成数。
+待复核：accelerated。OALD 无 accelerated 独立词条。保留待复核。 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/accelerated)。不计入完成数。
+待复核：acclaimed。OALD 无 acclaimed 独立词条。保留待复核。 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/acclaimed)。不计入完成数。
+待复核：ascending。OALD 无 ascending 独立词条。保留待复核。 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/ascending)。不计入完成数。
+待复核：auspice。OALD 无 auspice 独立词条（以 auspices 立目）。保留待复核。 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/auspice)。不计入完成数。
+
 ## 发布节奏
 
-每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 500 词，距下次发布还差 500 词。发布基线为 237be0a9f85fc0b493092ad90e069a03e94a2898，当时两项均核对 4176 词；当前页面显示本地核对进度，不表示已上线。
+每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 600 词，距下次发布还差 400 词。发布基线为 237be0a9f85fc0b493092ad90e069a03e94a2898，当时两项均核对 4176 词；当前页面显示本地核对进度，不表示已上线。

@@ -289,5 +289,142 @@ Lecturer: Restoration efforts have had mixed results. In the past, many projects
       { q:"large areas were cleared to create ponds for ___ farming", a:["shrimp","shrimps"], why:"especially to create ponds for shrimp farming。" }
     ]}
   ]}
+]},
+{ id:"l-t3", name:"练习三", parts:[
+
+{ part:1, title:"预订社区厅", intro:"You will hear a telephone conversation between a man who wants to hire a community hall and the hall's booking officer.",
+  speakers:{ Helen:"W", Tom:"M" },
+  script:`Helen: Good morning, Millbrook Community Hall, Helen speaking.
+Tom: Hello. I'd like to ask about hiring the hall for a party next month.
+Helen: Certainly. What kind of party is it?
+Tom: It's my parents' fortieth wedding anniversary. We're expecting about sixty guests.
+Helen: Lovely. Then the main hall would be best. The small room only holds thirty people.
+Tom: Right. The date we'd like is Saturday the fourteenth of June.
+Helen: Let me check. Yes, the main hall is free on the fourteenth. What time would you need it?
+Tom: From six until about eleven in the evening.
+Helen: That's fine, but please note that all music has to stop at half past ten, because of our neighbours.
+Tom: OK, I'll tell the band.
+Helen: The charge for the main hall on a Saturday evening is twenty-five pounds an hour, so for five hours that's a hundred and twenty-five pounds.
+Tom: That's reasonable. Is there a kitchen we can use?
+Helen: Yes, and it's included in the price. There's a large fridge and an oven, but you'll need to bring your own plates. We don't provide those any more.
+Tom: No problem. What about parking?
+Helen: There's a car park behind the hall with space for twenty cars. If that's full, guests can use the supermarket car park across the road, which is free after six.
+Tom: Great. Can I book it now?
+Helen: Yes. Can I take your name?
+Tom: It's Tom Gilchrist. That's G, I, L, C, H, R, I, S, T.
+Helen: Thank you. And a contact number?
+Tom: My mobile is 07946 381 225.
+Helen: Thank you. We'll need a deposit of fifty pounds to confirm the booking, which you'll get back after the event as long as the hall is left clean.
+Tom: Of course. Should I pay that now?
+Helen: You can pay by card over the phone, or come into the office. One more thing: we ask everyone hiring the hall to read our safety rules. I'll send them by email. What's your email address?
+Tom: It's tomg at fastmail dot com.
+Helen: Lovely. You'll also need to collect the key from the office on the Friday before your event. We're open until four.
+Tom: That's fine. Thanks very much for your help.`,
+  groups:[
+    { type:"gap", instr:"Complete the form below.", limit:"Write ONE WORD AND/OR A NUMBER for each answer.", maxWords:1, heading:"Millbrook Community Hall: booking form", items:[
+      { q:"Type of event: wedding ___ party", a:["anniversary"], why:"It's my parents' fortieth wedding anniversary。" },
+      { q:"Number of guests: about ___", a:["60","sixty"], why:"We're expecting about sixty guests。小厅只能容纳三十人。" },
+      { q:"Date: Saturday ___ June", a:["14","14th","fourteenth"], why:"Saturday the fourteenth of June。" },
+      { q:"Music must finish by ___ pm", a:["10.30","10:30","1030"], why:"all music has to stop at half past ten。晚会结束是 eleven，注意区分。" },
+      { q:"Total charge: £___", a:["125"], why:"twenty-five pounds an hour，五小时 a hundred and twenty-five pounds。" },
+      { q:"Kitchen: included, but customer must bring ___", a:["plates"], why:"you'll need to bring your own plates。" },
+      { q:"Extra parking: ___ car park opposite the hall", a:["supermarket"], why:"guests can use the supermarket car park across the road。" },
+      { q:"Name: Tom ___", a:["Gilchrist"], why:"拼写 G-I-L-C-H-R-I-S-T。" },
+      { q:"Deposit: £___ (returned if the hall is left clean)", a:["50","fifty"], why:"a deposit of fifty pounds。" },
+      { q:"Collect the key on ___ before the event", a:["Friday"], why:"collect the key from the office on the Friday before your event。" }
+    ]}
+  ]},
+
+{ part:2, title:"自然保护区志愿者介绍", intro:"You will hear the volunteer coordinator at a nature reserve talking to a group of new volunteers.",
+  speakers:{ Mark:"M" },
+  script:`Mark: Good morning, everyone, and welcome to Ashdown Wetlands. My name's Mark Fenwick, and I coordinate the volunteer programme here. Thank you all for giving up your time.
+Mark: Let me start with a little background. The reserve was created twenty-five years ago on land that used to be a gravel quarry. When the quarry closed, the pits filled with water, and birds began arriving almost immediately. Today we record more than two hundred species a year, and we're best known for the large flocks of geese that spend the winter here.
+Mark: Now, some practical points. Most of our volunteers come once a week, but we only ask for a minimum of one day a month. If you can't come on your usual day, please send a text message to the office rather than an email, because we often don't check emails until the evening.
+Mark: Everyone will receive a free volunteer T-shirt and a pair of gloves. You'll need to bring your own waterproof boots, though, because many of the paths flood after rain. Hot drinks are provided in the volunteers' room, but please bring your own lunch.
+Mark: Before you start any outdoor work, you must complete a short safety session. That's this afternoon at two o'clock, and it takes about an hour.
+Mark: Let me tell you about the different jobs. Most new volunteers begin with path maintenance, which means cutting back plants and repairing the wooden boardwalks. If you enjoy talking to people, you might like to help at the visitor centre, where you'll answer questions and sell guidebooks. Several of you said you're interested in birds, and our bird survey team would welcome you, but you'll need to complete a six-week identification course first. That starts in March. We also need people to help with school groups. Teachers bring classes here almost every week in spring, and you'd help the children with pond-dipping, which means catching and identifying small water creatures. For this role, you'll need a background check, which we'll arrange.
+Mark: Finally, our annual volunteer celebration is in December. It's a chance to meet everyone and hear what's been achieved over the year.`,
+  groups:[
+    { type:"mcq", instr:"Choose the correct letter, A, B or C.", items:[
+      { q:"What was the site used for before it became a nature reserve?", opts:["farming","a gravel quarry","a military base"], a:1, why:"on land that used to be a gravel quarry。" },
+      { q:"The reserve is best known for", opts:["its rare plants.","the geese that visit in winter.","the number of species recorded."], a:1, why:"we're best known for the large flocks of geese that spend the winter here。两百种是记录数量，但不是最出名的。" },
+      { q:"What is the minimum time volunteers are asked to give?", opts:["one day a week","one day a month","two days a month"], a:1, why:"we only ask for a minimum of one day a month。大多数人每周来一次，但不是最低要求。" },
+      { q:"If volunteers cannot come on their usual day, they should", opts:["send an email.","phone the office.","send a text message."], a:2, why:"please send a text message to the office rather than an email。" },
+      { q:"What must volunteers bring with them?", opts:["waterproof boots","gloves","hot drinks"], a:0, why:"You'll need to bring your own waterproof boots。手套免费发放，热饮由保护区提供。" },
+      { q:"When is the safety session?", opts:["this morning","this afternoon","next week"], a:1, why:"That's this afternoon at two o'clock。" }
+    ]},
+    { type:"match", instr:"What does Mark say about each volunteer job? Choose FOUR answers from the box and write the correct letter, A–F.",
+      options:[["A","requires a course"],["B","requires a background check"],["C","involves selling items"],["D","is only available in summer"],["E","is where most new volunteers start"],["F","involves driving"]], items:[
+      { q:"path maintenance", a:"E", why:"Most new volunteers begin with path maintenance。" },
+      { q:"visitor centre", a:"C", why:"answer questions and sell guidebooks。" },
+      { q:"bird survey", a:"A", why:"you'll need to complete a six-week identification course first。" },
+      { q:"school groups", a:"B", why:"For this role, you'll need a background check。" }
+    ]}
+  ]},
+
+{ part:3, title:"城市交通研究项目", intro:"You will hear two geography students, Rachel and Ben, discussing a research project about cycling in their city.",
+  speakers:{ Rachel:"W", Ben:"M" },
+  script:`Rachel: So, Ben, we need to decide on the focus of our transport project. I was thinking we could look at why more people don't cycle to the university.
+Ben: Good idea. Although our tutor said the topic should be narrow enough to collect real data in four weeks.
+Rachel: True. What if we focus on students who live between two and five kilometres from campus? That's an easy distance to cycle, but most of them still take the bus.
+Ben: That works. How should we collect the data? An online questionnaire would reach the most people.
+Rachel: It would, but response rates for online surveys here have been really low. Last year's group only got about forty replies.
+Ben: Then maybe we should stand at the main bus stops and ask people in person. It'd take longer, but we'd get a better sample.
+Rachel: Agreed. And we could add a few longer interviews with students who do cycle, to find out what made them start.
+Ben: Nice. Now, what do you expect people to say is the main reason they don't cycle?
+Rachel: My guess is safety. The roads near the station are really busy.
+Ben: I'd have said the weather, honestly. But I suppose that's something the city can't change, so it's less useful for recommendations.
+Rachel: Right. And there's also the issue of where to leave the bike. The racks outside the library are always full.
+Ben: Should we look at bike theft too? A friend of mine had two bikes stolen last year.
+Rachel: I think that's a bit outside our topic. Let's mention it, but not ask questions about it.
+Ben: OK. What about the presentation? I think we should start with a map showing where students live.
+Rachel: Yes, and the survey results could go in a bar chart. Should we include photos of the busy junctions?
+Ben: Maybe one or two, but not too many. Our tutor said last year's presentations had far too many pictures.
+Rachel: Fair enough. And the recommendations should come at the end, of course. I'd like to suggest a new cycle lane on Station Road.
+Ben: We'd need evidence for that. Let's see what the interviews say first.`,
+  groups:[
+    { type:"mcq", instr:"Choose the correct letter, A, B or C.", items:[
+      { q:"Which students will the project focus on?", opts:["students who live within two kilometres of campus","students who live between two and five kilometres away","students who already cycle to campus"], a:1, why:"focus on students who live between two and five kilometres from campus。" },
+      { q:"Why do the students decide not to use an online questionnaire?", opts:["It would take too long to design.","Their tutor does not allow them.","Few people are likely to reply."], a:2, why:"response rates for online surveys here have been really low，去年只有四十份回复。" },
+      { q:"What will the longer interviews investigate?", opts:["why some students started cycling","how far students travel each day","what students think of the buses"], a:0, why:"with students who do cycle, to find out what made them start。" },
+      { q:"Why does Ben think the weather is less useful as a topic?", opts:["Most students do not mention it.","The city cannot do anything about it.","It is already covered by other research."], a:1, why:"that's something the city can't change, so it's less useful for recommendations。" },
+      { q:"What do they decide about bike theft?", opts:["to ask several questions about it","to mention it without researching it","to leave it out completely"], a:1, why:"Let's mention it, but not ask questions about it。" }
+    ]},
+    { type:"match", instr:"What do the students decide to do with each item in their presentation? Choose FIVE answers from the box and write the correct letter, A–G.",
+      options:[["A","put it at the beginning"],["B","show it as a bar chart"],["C","use only a small number"],["D","put it at the end"],["E","wait for more evidence"],["F","ask the tutor first"],["G","leave it out"]], items:[
+      { q:"map of where students live", a:"A", why:"we should start with a map showing where students live。" },
+      { q:"survey results", a:"B", why:"the survey results could go in a bar chart。" },
+      { q:"photos of junctions", a:"C", why:"Maybe one or two, but not too many。" },
+      { q:"recommendations", a:"D", why:"the recommendations should come at the end。" },
+      { q:"proposal for a cycle lane on Station Road", a:"E", why:"We'd need evidence for that. Let's see what the interviews say first。" }
+    ]}
+  ]},
+
+{ part:4, title:"蜘蛛丝", intro:"You will hear part of a lecture about spider silk.",
+  speakers:{ Lecturer:"W" },
+  script:`Lecturer: Today I'm going to talk about one of the most remarkable materials in nature: spider silk. Engineers have been interested in it for decades, and I'll explain why, and then look at the difficulties of producing it.
+Lecturer: Let's start with its properties. Weight for weight, some types of spider silk are stronger than steel. But what makes silk really special is that it combines strength with elasticity. It can stretch to around one and a half times its original length without breaking. This combination means it can absorb the energy of a flying insect without snapping, and it's why engineers often describe it as tough rather than simply strong.
+Lecturer: Silk is made of proteins, produced in glands in the spider's abdomen. It starts as a liquid, and it becomes a solid fibre as the spider pulls it out through small openings called spinnerets. A single spider can make up to seven different types of silk, each with its own purpose. For example, the silk used for the frame of a web is very strong, while the spiral that catches insects is stretchy and covered in tiny drops of glue.
+Lecturer: So why don't we simply farm spiders, the way we farm silkworms? The main problem is behaviour. Spiders are solitary and territorial, and when they are kept together in large numbers, they tend to eat each other. In the early eighteenth century, a French scientist did manage to make a pair of gloves from spider silk, but the process was far too slow to be practical.
+Lecturer: Instead, researchers have tried to get other organisms to produce silk proteins. The genes responsible have been inserted into bacteria, yeast, and even goats, which produced the proteins in their milk. The hardest part, however, has not been making the proteins but spinning them into fibres that match the quality of natural silk. Spiders control the acidity and the flow of the liquid very precisely, and copying this has proved difficult.
+Lecturer: Even so, there has been progress. Artificial silk fibres are already used in some sports clothing, and medical researchers are testing silk for repairing damaged nerves, because the body does not reject it. Another possible use is in surgery, for very fine threads. In the future, we might see silk replacing some plastics, since it is biodegradable.`,
+  groups:[
+    { type:"gap", instr:"Complete the notes below.", limit:"Write ONE WORD ONLY for each answer.", maxWords:1, heading:"Spider silk", items:[
+      { label:"Properties" },
+      { q:"Combines strength with ___", a:["elasticity"], why:"it combines strength with elasticity。" },
+      { q:"Can absorb the ___ of a flying insect", a:["energy"], why:"it can absorb the energy of a flying insect without snapping。" },
+      { label:"Production by spiders" },
+      { q:"Made of ___ produced in glands", a:["proteins"], why:"Silk is made of proteins, produced in glands。" },
+      { q:"Becomes solid when pulled through ___", a:["spinnerets"], why:"as the spider pulls it out through small openings called spinnerets。" },
+      { q:"Spiral silk is stretchy and covered in drops of ___", a:["glue"], why:"covered in tiny drops of glue。" },
+      { label:"Problems with farming spiders" },
+      { q:"Spiders kept together tend to ___ each other", a:["eat"], why:"they tend to eat each other。" },
+      { q:"In the eighteenth century, a pair of ___ was made from silk", a:["gloves"], why:"a French scientist did manage to make a pair of gloves。" },
+      { label:"Other methods and uses" },
+      { q:"Silk proteins have been produced in the ___ of goats", a:["milk"], why:"goats, which produced the proteins in their milk。" },
+      { q:"Hardest stage: ___ the proteins into fibres", a:["spinning"], why:"The hardest part ... spinning them into fibres。" },
+      { q:"Medical use: repairing damaged ___", a:["nerves"], why:"testing silk for repairing damaged nerves。" }
+    ]}
+  ]}
 ]}
 ];

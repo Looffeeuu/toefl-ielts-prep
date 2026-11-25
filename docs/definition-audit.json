@@ -3,13 +3,13 @@
   "scope": "全部内置词条的来源和结构一致性；仅 dictionary-reviewed 条目经过本轮外部词典核对。其他候选不能据此判定为虚假或正确。",
   "total": 9075,
   "sources": {
-    "dictionary-reviewed": 5584,
-    "editorial-unverified": 838,
-    "ecdict-derived": 2653
+    "dictionary-reviewed": 5684,
+    "editorial-unverified": 773,
+    "ecdict-derived": 2618
   },
   "flagCounts": {
     "missing-pos": 27,
-    "usage-label-review": 5,
+    "usage-label-review": 6,
     "sense-pos-mismatch": 14,
     "possible-truncation": 12
   },
@@ -66089,13 +66089,18 @@
     {
       "word": "mammoth",
       "pos": "n./adj.",
-      "definition": "n. 猛犸象　adj. 巨大的",
-      "origin": "editorial-unverified",
+      "definition": "n. 猛犸（已灭绝的长毛象）；adj. 巨大的、庞大的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-7.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/mammoth",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/mammoth",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/mammoth_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/mammoth_2"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -66192,26 +66197,35 @@
     },
     {
       "word": "mangle",
-      "pos": "vt./n.",
-      "definition": "vt. 乱砍，损坏，轧布　n. 轧布机",
-      "origin": "ecdict-derived",
+      "pos": "v./n.",
+      "definition": "v. 严重损坏、压烂；v. 糟蹋、弄糟（语言、作品等）；n. （旧时的）轧布机、绞拧机",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/mangle",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/mangle",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/mangle_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/mangle_2"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
       "word": "mania",
       "pos": "n.",
-      "definition": "狂热；躁狂症",
-      "origin": "editorial-unverified",
+      "definition": "n. 狂热、热衷；n. 躁狂症（心理）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-8.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/mania",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/mania",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/mania_1"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -66282,14 +66296,16 @@
     {
       "word": "mannerism",
       "pos": "n.",
-      "definition": "矫揉造作，习性",
-      "origin": "ecdict-derived",
+      "definition": "n. （言谈举止的）习惯、怪癖；n. （绘画或写作中）过分的风格主义；n. 风格主义（16 世纪意大利艺术风格，Mannerism）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/mannerism",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/mannerism"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -66348,13 +66364,16 @@
     {
       "word": "manually",
       "pos": "adv.",
-      "definition": "用手",
-      "origin": "ecdict-derived",
+      "definition": "adv. 用手、手工地；adv. 由人工直接地；adv. 不借助计算机程序地",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/manually",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/manually"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -66713,26 +66732,33 @@
     },
     {
       "word": "mason",
-      "pos": "n./vt.",
-      "definition": "n. 泥瓦匠，共济会会员　vt. 用砖瓦砌成",
-      "origin": "ecdict-derived",
+      "pos": "n.",
+      "definition": "n. 石匠、砖石工；n. 共济会会员（Mason）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/mason",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/mason",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/mason_1"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
       "word": "masonry",
       "pos": "n.",
-      "definition": "砖石建筑；石工",
-      "origin": "editorial-unverified",
+      "definition": "n. 砖石结构、砖石建筑；n. 砖石工艺",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-9.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/masonry",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/masonry"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -66972,13 +66998,16 @@
     {
       "word": "Maxim",
       "pos": "n.",
-      "definition": "格言，座右铭",
-      "origin": "ecdict-derived",
+      "definition": "n. 格言、箴言",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/maxim",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/maxim"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -67270,15 +67299,17 @@
     },
     {
       "word": "meddle",
-      "pos": "vi.",
-      "definition": "干涉，干预，擅自摸弄",
-      "origin": "ecdict-derived",
+      "pos": "v.",
+      "definition": "v. 干涉、干预（贬义）；v. 乱动、摆弄（贬义）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/meddle",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/meddle"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -67365,25 +67396,31 @@
     {
       "word": "mediocre",
       "pos": "adj.",
-      "definition": "平庸的",
-      "origin": "editorial-unverified",
+      "definition": "adj. 平庸的、普通的（贬义）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-7.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/mediocre",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/mediocre"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
       "word": "meditate",
-      "pos": "vi.",
-      "definition": "沉思；冥想",
-      "origin": "editorial-unverified",
+      "pos": "v.",
+      "definition": "v. 冥想、打坐；v. 沉思、深思（正式）；v. 谋划、考虑（正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-7.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/meditate",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/meditate"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -67401,14 +67438,16 @@
     {
       "word": "meek",
       "pos": "adj.",
-      "definition": "温顺的，逆来顺受的",
-      "origin": "ecdict-derived",
+      "definition": "adj. 温顺的、顺从的；adj. 温顺的人（the meek）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/meek",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/meek"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -67426,13 +67465,18 @@
     {
       "word": "melancholy",
       "pos": "n./adj.",
-      "definition": "n. 忧郁　adj. 忧郁的",
-      "origin": "editorial-unverified",
+      "definition": "n. 忧郁、悲哀（文学）；adj. 忧郁的、令人伤感的（文学）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-9.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/melancholy",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/melancholy",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/melancholy_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/melancholy_2"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -67450,13 +67494,16 @@
     {
       "word": "melodic",
       "pos": "adj.",
-      "definition": "有旋律的，旋律美妙的",
-      "origin": "ecdict-derived",
+      "definition": "adj. 旋律的；adj. 悦耳的、音调优美的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/melodic",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/melodic"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -67474,13 +67521,16 @@
     {
       "word": "melodrama",
       "pos": "n.",
-      "definition": "音乐剧，传奇剧，戏剧似的事件",
-      "origin": "ecdict-derived",
+      "definition": "n. 情节剧、闹剧；n. 夸张的言行",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/melodrama",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/melodrama"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -67570,13 +67620,16 @@
     {
       "word": "memorandum",
       "pos": "n.",
-      "definition": "备忘录；协议书",
-      "origin": "editorial-unverified",
+      "definition": "n. 备忘录（正式）；n. 协议备忘录（法律）；n. （提交给机构的）建议书、报告",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-8.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/memorandum",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/memorandum"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -67649,26 +67702,35 @@
     },
     {
       "word": "mend",
-      "pos": "n./vt.",
-      "definition": "n. 改进，修补，好转　vt. 修改，改进，加快，修理",
-      "origin": "ecdict-derived",
+      "pos": "v.",
+      "definition": "v. 修理、修补（英）；v. 缝补；v. 解决（问题、分歧）；v. 痊愈、康复（旧式）；v. （骨头等）愈合",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/mend",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/mend",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/mend_1"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
       "word": "menial",
-      "pos": "adj.",
-      "definition": "卑微的；繁重乏味的",
-      "origin": "editorial-unverified",
+      "pos": "adj./n.",
+      "definition": "adj. （工作）卑微的、低下的（常贬义）；n. 仆人、做粗活的人（旧式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-9.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/menial",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/menial",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/menial_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/menial_2"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -67748,13 +67810,16 @@
     {
       "word": "mercantile",
       "pos": "adj.",
-      "definition": "商业的；商人的",
-      "origin": "editorial-unverified",
+      "definition": "adj. 商业的、贸易的（正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-9.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/mercantile",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/mercantile"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -67801,25 +67866,31 @@
     {
       "word": "merciful",
       "pos": "adj.",
-      "definition": "仁慈的，慈悲的",
-      "origin": "ecdict-derived",
+      "definition": "adj. 仁慈的、宽大的；adj. 幸运的、解脱的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/merciful",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/merciful"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
       "word": "merciless",
       "pos": "adj.",
-      "definition": "无慈悲心的，残忍的",
-      "origin": "ecdict-derived",
+      "definition": "adj. 毫无同情心的、残忍的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/merciless",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/merciless"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -67952,14 +68023,17 @@
     },
     {
       "word": "mesmerize",
-      "pos": "vt.",
-      "definition": "迷住；吸引",
-      "origin": "editorial-unverified",
+      "pos": "v.",
+      "definition": "v. 迷住、使着迷",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-8.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/mesmerize",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/mesmerize"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -68004,13 +68078,16 @@
     {
       "word": "metabolic",
       "pos": "adj.",
-      "definition": "新陈代谢的",
-      "origin": "editorial-unverified",
+      "definition": "adj. 新陈代谢的（生物）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-7.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/metabolic",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/metabolic"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -68071,14 +68148,17 @@
     },
     {
       "word": "mete",
-      "pos": "vt./n.",
-      "definition": "vt. 量，测量，分配　n. 边界，界石",
-      "origin": "ecdict-derived",
+      "pos": "v.",
+      "definition": "v. 给予（惩罚等）（常用 mete out）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/mete",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/mete"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -68123,13 +68203,16 @@
     {
       "word": "meteorologist",
       "pos": "n.",
-      "definition": "气象学家",
-      "origin": "editorial-unverified",
+      "definition": "n. 气象学家",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-9.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/meteorologist",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/meteorologist"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -68147,13 +68230,16 @@
     {
       "word": "methane",
       "pos": "n.",
-      "definition": "甲烷",
-      "origin": "editorial-unverified",
+      "definition": "n. 甲烷、沼气",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-7.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/methane",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/methane"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -68171,25 +68257,31 @@
     {
       "word": "methodical",
       "pos": "adj.",
-      "definition": "有条理的",
-      "origin": "editorial-unverified",
+      "definition": "adj. 有条理的、有方法的；adj. （人）做事有条不紊的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-9.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/methodical",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/methodical"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
       "word": "methodically",
       "pos": "adv.",
-      "definition": "有条理地",
-      "origin": "editorial-unverified",
+      "definition": "adv. 有条不紊地",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-9.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/methodically",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/methodically"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -68222,13 +68314,16 @@
     {
       "word": "meticulous",
       "pos": "adj.",
-      "definition": "一丝不苟的",
-      "origin": "editorial-unverified",
+      "definition": "adj. 一丝不苟的、极其仔细的（褒义）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-7.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/meticulous",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/meticulous"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -68261,13 +68356,16 @@
     {
       "word": "metropolis",
       "pos": "n.",
-      "definition": "大都市",
-      "origin": "editorial-unverified",
+      "definition": "n. 大都市、首府",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-7.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/metropolis",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/metropolis"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -68289,13 +68387,16 @@
     {
       "word": "microbe",
       "pos": "n.",
-      "definition": "微生物",
-      "origin": "editorial-unverified",
+      "definition": "n. 微生物",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-7.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/microbe",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/microbe"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -68313,13 +68414,16 @@
     {
       "word": "microcosm",
       "pos": "n.",
-      "definition": "缩影；微观世界",
-      "origin": "editorial-unverified",
+      "definition": "n. 缩影、微观世界",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-9.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/microcosm",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/microcosm"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -68337,13 +68441,16 @@
     {
       "word": "microorganism",
       "pos": "n.",
-      "definition": "微生物",
-      "origin": "editorial-unverified",
+      "definition": "n. 微生物（专业）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-7.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/microorganism",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/microorganism"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -68530,13 +68637,16 @@
     {
       "word": "migratory",
       "pos": "adj.",
-      "definition": "迁徙的",
-      "origin": "editorial-unverified",
+      "definition": "adj. 迁徙的、移栖的（专业）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-7.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/migratory",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/migratory"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -68610,13 +68720,16 @@
     {
       "word": "milieu",
       "pos": "n.",
-      "definition": "环境；氛围",
-      "origin": "editorial-unverified",
+      "definition": "n. 社会环境、背景（正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-8.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/milieu",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/milieu"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -68775,13 +68888,16 @@
     {
       "word": "mimetic",
       "pos": "adj.",
-      "definition": "模仿的，摹拟的，好模仿的，类似的",
-      "origin": "ecdict-derived",
+      "definition": "adj. 模仿的、拟态的（专业或正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/mimetic",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/mimetic"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -68940,14 +69056,19 @@
     },
     {
       "word": "minimalist",
-      "pos": "n.",
-      "definition": "极简抽象派艺术家",
-      "origin": "ecdict-derived",
+      "pos": "adj./n.",
+      "definition": "adj. 极简主义的、简约的；n. 极简主义艺术家（或音乐家、设计师）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/minimalist",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/minimalist",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/minimalist_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/minimalist_2"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -69073,13 +69194,16 @@
     {
       "word": "minuscule",
       "pos": "adj.",
-      "definition": "极小的",
-      "origin": "editorial-unverified",
+      "definition": "adj. 极小的、微小的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-9.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/minuscule",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/minuscule"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -69156,13 +69280,16 @@
     {
       "word": "mirage",
       "pos": "n.",
-      "definition": "海市蜃楼；幻想",
-      "origin": "editorial-unverified",
+      "definition": "n. 海市蜃楼；n. 幻想、妄想",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-9.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/mirage",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/mirage"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -69309,37 +69436,46 @@
     {
       "word": "misfortune",
       "pos": "n.",
-      "definition": "不幸；灾祸",
-      "origin": "editorial-unverified",
+      "definition": "n. 不幸、厄运；n. 不幸的事、灾祸",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-7.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/misfortune",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/misfortune"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
       "word": "misgiving",
       "pos": "n.",
-      "definition": "疑虑；担忧",
-      "origin": "editorial-unverified",
+      "definition": "n. 疑虑、担忧",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-9.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/misgiving",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/misgiving"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
       "word": "mishap",
       "pos": "n.",
-      "definition": "小事故；不幸",
-      "origin": "editorial-unverified",
+      "definition": "n. 小事故、不幸之事",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-9.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/mishap",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/mishap"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -69426,14 +69562,19 @@
     },
     {
       "word": "mistrust",
-      "pos": "n./vt.",
-      "definition": "n. 不信任　vt. 不信任",
-      "origin": "editorial-unverified",
+      "pos": "v./n.",
+      "definition": "v. 不信任、怀疑；n. 不信任、猜疑",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-9.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/mistrust",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/mistrust",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/mistrust_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/mistrust_2"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -69477,14 +69618,17 @@
     },
     {
       "word": "moat",
-      "pos": "n./vt.",
-      "definition": "n. 壕沟，护城河　vt. 将...围以壕沟",
-      "origin": "ecdict-derived",
+      "pos": "n.",
+      "definition": "n. 护城河",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/moat",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/moat"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -69668,14 +69812,17 @@
     },
     {
       "word": "modulate",
-      "pos": "vt.",
-      "definition": "调节；调整",
-      "origin": "editorial-unverified",
+      "pos": "v.",
+      "definition": "v. 调节（声音）（正式）；v. 转调（音乐）；v. 调整、调控（专业）；v. 调制（声波、无线电信号）（专业）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-9.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/modulate",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/modulate"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -69719,14 +69866,17 @@
     },
     {
       "word": "moisten",
-      "pos": "vt./vi.",
-      "definition": "vt. 弄湿　vi. 变潮湿",
-      "origin": "ecdict-derived",
+      "pos": "v.",
+      "definition": "v. （使）变湿润",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/moisten",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/moisten"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -69848,13 +69998,16 @@
     {
       "word": "momentous",
       "pos": "adj.",
-      "definition": "重大的",
-      "origin": "editorial-unverified",
+      "definition": "adj. 重大的、重要的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-7.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/momentous",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/momentous"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -69967,14 +70120,19 @@
     },
     {
       "word": "monochrome",
-      "pos": "n./adj.",
-      "definition": "n. 单色画，单色，黑白　adj. 单色的，黑白的",
-      "origin": "ecdict-derived",
+      "pos": "adj./n.",
+      "definition": "adj. 黑白的；adj. 单色的；n. 黑白（色调）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/monochrome",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/monochrome",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/monochrome_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/monochrome_2"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -69991,14 +70149,17 @@
     },
     {
       "word": "monopolize",
-      "pos": "vt.",
-      "definition": "独占，垄断",
-      "origin": "ecdict-derived",
+      "pos": "v.",
+      "definition": "v. 垄断、独占；v. 独占（某人的注意力或时间）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/monopolize",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/monopolize"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -70016,13 +70177,16 @@
     {
       "word": "monotonous",
       "pos": "adj.",
-      "definition": "单调的",
-      "origin": "editorial-unverified",
+      "definition": "adj. 单调的、乏味的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-9.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/monotonous",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/monotonous"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -70152,14 +70316,16 @@
     {
       "word": "morbid",
       "pos": "adj.",
-      "definition": "致病的，病态的，疾病的，可怕的",
-      "origin": "ecdict-derived",
+      "definition": "adj. （对死亡等）病态的、阴郁的；adj. 疾病的（医学）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/morbid",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/morbid"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -70176,38 +70342,49 @@
     },
     {
       "word": "moribund",
-      "pos": "adj./n.",
-      "definition": "adj. 垂死的　n. 垂死的人",
-      "origin": "ecdict-derived",
+      "pos": "adj.",
+      "definition": "adj. 濒临灭亡的、停滞不前的（正式）；adj. 垂死的（正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/moribund",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/moribund"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
       "word": "moron",
       "pos": "n.",
-      "definition": "低能者，笨人",
-      "origin": "ecdict-derived",
+      "definition": "n. 蠢货、白痴（非正式，贬义）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
-      "flags": []
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/moron",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/moron"
+      ],
+      "checkedOn": "2026-11-25",
+      "flags": [
+        "usage-label-review"
+      ]
     },
     {
       "word": "morphology",
       "pos": "n.",
-      "definition": "形态学",
-      "origin": "editorial-unverified",
+      "definition": "n. 形态学（生物）；n. 词法、形态学（语言学）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-9.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/morphology",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/morphology"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -70259,13 +70436,16 @@
     {
       "word": "mosaic",
       "pos": "n.",
-      "definition": "马赛克；镶嵌画",
-      "origin": "editorial-unverified",
+      "definition": "n. 马赛克、镶嵌画",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-7.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/mosaic",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/mosaic"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -70544,13 +70724,16 @@
     {
       "word": "mournful",
       "pos": "adj.",
-      "definition": "悲恸的，悲哀的，令人惋惜的",
-      "origin": "ecdict-derived",
+      "definition": "adj. 悲伤的、忧伤的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/mournful",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/mournful"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -70651,15 +70834,19 @@
     },
     {
       "word": "muddle",
-      "pos": "vt./vi.",
-      "definition": "vt. 混合，使微醉，使咬字不清晰　vi. 胡乱对付",
-      "origin": "ecdict-derived",
+      "pos": "v./n.",
+      "definition": "v. 弄乱、混淆（尤英）；v. 使糊涂（尤英）；v. 把……混淆（尤英）；n. 糊涂、困惑（尤英）；n. 混乱、误会（尤英）；n. 杂乱（尤英）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/muddle",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/muddle",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/muddle_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/muddle_2"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -70690,13 +70877,16 @@
     {
       "word": "multifaceted",
       "pos": "adj.",
-      "definition": "多方面的",
-      "origin": "editorial-unverified",
+      "definition": "adj. 多方面的（正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-9.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/multifaceted",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/multifaceted"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -71039,13 +71229,16 @@
     {
       "word": "mythical",
       "pos": "adj.",
-      "definition": "神话的；虚构的",
-      "origin": "editorial-unverified",
+      "definition": "adj. 神话中的；adj. 虚构的、不存在的；adj. 传奇般的、极有名的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-7.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/mythical",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/mythical"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -71141,13 +71334,16 @@
     {
       "word": "narration",
       "pos": "n.",
-      "definition": "叙述；旁白",
-      "origin": "editorial-unverified",
+      "definition": "n. 叙述、讲述（正式）；n. 解说词、旁白",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-7.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/narration",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/narration"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -71310,25 +71506,31 @@
     {
       "word": "naturalist",
       "pos": "n.",
-      "definition": "博物学家",
-      "origin": "editorial-unverified",
+      "definition": "n. 博物学家",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-7.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/naturalist",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/naturalist"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
       "word": "naturalistic",
       "pos": "adj.",
-      "definition": "自然主义的；逼真的",
-      "origin": "editorial-unverified",
+      "definition": "adj. 自然主义的、写实的；adj. 模仿自然的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-9.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/naturalistic",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/naturalistic"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -71358,13 +71560,16 @@
     {
       "word": "naughty",
       "pos": "adj.",
-      "definition": "顽皮的，没规矩的，不适当的，下流的",
-      "origin": "ecdict-derived",
+      "definition": "adj. 顽皮的、淘气的；adj. 下流的、粗俗的（非正式，常幽默）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/naughty",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/naughty"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -71546,13 +71751,16 @@
     {
       "word": "nectar",
       "pos": "n.",
-      "definition": "花蜜",
-      "origin": "editorial-unverified",
+      "definition": "n. 花蜜；n. 美味的饮料；n. 浓果汁",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-9.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/nectar",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/nectar"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -71584,14 +71792,17 @@
     },
     {
       "word": "negate",
-      "pos": "vt.",
-      "definition": "否定；使无效",
-      "origin": "editorial-unverified",
+      "pos": "v.",
+      "definition": "v. 使无效、抵消（正式）；v. 否认、否定……的存在（正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-7.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/negate",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/negate"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -71643,37 +71854,46 @@
     {
       "word": "negligence",
       "pos": "n.",
-      "definition": "疏忽；过失",
-      "origin": "editorial-unverified",
+      "definition": "n. 疏忽、过失（法律或正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-8.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/negligence",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/negligence"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
       "word": "negligent",
       "pos": "adj.",
-      "definition": "疏忽的",
-      "origin": "editorial-unverified",
+      "definition": "adj. 疏忽的、失职的（法律或正式）；adj. 随意的、漫不经心的（文学）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-9.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/negligent",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/negligent"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
       "word": "negligible",
       "pos": "adj.",
-      "definition": "微不足道的",
-      "origin": "editorial-unverified",
+      "definition": "adj. 微不足道的、可忽略的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-7.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/negligible",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/negligible"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -71752,13 +71972,16 @@
     {
       "word": "neoclassical",
       "pos": "adj.",
-      "definition": "新古典主义的",
-      "origin": "ecdict-derived",
+      "definition": "adj. 新古典主义的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/neoclassical",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/neoclassical"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -71828,14 +72051,19 @@
     },
     {
       "word": "nettle",
-      "pos": "n./vt.",
-      "definition": "n. 荨麻　vt. 以荨麻刺，激怒",
-      "origin": "ecdict-derived",
+      "pos": "n./v.",
+      "definition": "n. 荨麻；v. 惹恼、激怒（尤英，非正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/nettle",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/nettle",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/nettle_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/nettle_2"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -71853,13 +72081,16 @@
     {
       "word": "neuron",
       "pos": "n.",
-      "definition": "神经元",
-      "origin": "editorial-unverified",
+      "definition": "n. 神经元",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-8.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/neuron",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/neuron"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -71889,13 +72120,16 @@
     {
       "word": "neurotransmitter",
       "pos": "n.",
-      "definition": "神经递质",
-      "origin": "ecdict-derived",
+      "definition": "n. 神经递质（生物）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/neurotransmitter",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/neurotransmitter"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -71917,27 +72151,32 @@
     },
     {
       "word": "neutralize",
-      "pos": "vt.",
-      "definition": "中和；使无效",
-      "origin": "editorial-unverified",
+      "pos": "v.",
+      "definition": "v. 使无效、抵消；v. 中和（化学）；v. 使（国家、地区）中立化；v. 使（炸弹等）失效；v. 消灭、杀死（委婉）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-7.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/neutralize",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/neutralize"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
       "word": "neutron",
       "pos": "n.",
-      "definition": "中子",
-      "origin": "editorial-unverified",
+      "definition": "n. 中子（物理）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-7.js",
-        "js/words-ext.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/neutron",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/neutron"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -71955,13 +72194,16 @@
     {
       "word": "newscast",
       "pos": "n.",
-      "definition": "新闻广播",
-      "origin": "ecdict-derived",
+      "definition": "n. 新闻广播（尤北美）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/newscast",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/newscast"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -72002,14 +72244,19 @@
     },
     {
       "word": "nibble",
-      "pos": "vi./n.",
-      "definition": "vi. 一点点地咬（at）　n. 一小口",
-      "origin": "editorial-unverified",
+      "pos": "v./n.",
+      "definition": "v. 一点点地咬、啃；v. 对（提议等）略表兴趣；n. 一小口；n. 小点心（nibbles）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-8.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/nibble",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/nibble",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/nibble_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/nibble_2"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -72076,13 +72323,16 @@
     {
       "word": "nicotine",
       "pos": "n.",
-      "definition": "烟碱，尼古丁",
-      "origin": "ecdict-derived",
+      "definition": "n. 尼古丁",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/nicotine",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/nicotine"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -72124,13 +72374,16 @@
     {
       "word": "nimble",
       "pos": "adj.",
-      "definition": "敏捷的；灵活的",
-      "origin": "editorial-unverified",
+      "definition": "adj. 灵活的、敏捷的；adj. （头脑）敏锐的、机灵的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-9.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/nimble",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/nimble"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -72429,13 +72682,16 @@
     {
       "word": "nook",
       "pos": "n.",
-      "definition": "角落，躲蔽处，隐匿处，凹处",
-      "origin": "ecdict-derived",
+      "definition": "n. 隐蔽的角落、僻静处",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/nook",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/nook"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -72558,13 +72814,16 @@
     {
       "word": "notation",
       "pos": "n.",
-      "definition": "符号；记号法",
-      "origin": "editorial-unverified",
+      "definition": "n. （数学、音乐等的）符号、记号",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-7.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/notation",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/notation"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -72616,13 +72875,16 @@
     {
       "word": "noted",
       "pos": "adj.",
-      "definition": "著名的",
-      "origin": "editorial-unverified",
+      "definition": "adj. 著名的、知名的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-7.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/noted",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/noted"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -72726,14 +72988,20 @@
     },
     {
       "word": "notwithstanding",
-      "pos": "prep./adv.",
-      "definition": "prep. 尽管　adv. 尽管如此",
-      "origin": "editorial-unverified",
+      "pos": "prep./adv./conj.",
+      "definition": "prep. 尽管、虽然（正式）；adv. 尽管如此（正式）；conj. 虽然、尽管（正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-7.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/notwithstanding",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/notwithstanding",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/notwithstanding_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/notwithstanding_2",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/notwithstanding_3"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -72750,14 +73018,17 @@
     },
     {
       "word": "nourish",
-      "pos": "vt.",
-      "definition": "滋养；养育",
-      "origin": "editorial-unverified",
+      "pos": "v.",
+      "definition": "v. 滋养、养育；v. 培养、怀有（感情、想法）（正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-7.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/nourish",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/nourish"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -72775,13 +73046,16 @@
     {
       "word": "nourishment",
       "pos": "n.",
-      "definition": "营养；滋养",
-      "origin": "editorial-unverified",
+      "definition": "n. 营养、食物（正式或专业）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-9.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/nourishment",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/nourishment"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -72875,13 +73149,16 @@
     {
       "word": "noxious",
       "pos": "adj.",
-      "definition": "有毒的；有害的",
-      "origin": "editorial-unverified",
+      "definition": "adj. 有毒的、有害的（正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-9.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/noxious",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/noxious"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -72953,15 +73230,17 @@
     },
     {
       "word": "null",
-      "pos": "adj./n.",
-      "definition": "adj. 无效力的，无效的，无价值的　n. 零，空，零位",
-      "origin": "ecdict-derived",
+      "pos": "adj.",
+      "definition": "adj. 零值的、空的（专业）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/null",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/null"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -72996,13 +73275,16 @@
     {
       "word": "numerical",
       "pos": "adj.",
-      "definition": "数字的；数值的",
-      "origin": "editorial-unverified",
+      "definition": "adj. 数字的、用数字表示的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-7.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/numerical",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/numerical"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -73134,13 +73416,16 @@
     {
       "word": "nutritious",
       "pos": "adj.",
-      "definition": "有营养的",
-      "origin": "editorial-unverified",
+      "definition": "adj. 有营养的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-9.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/nutritious",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/nutritious"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -73328,13 +73613,16 @@
     {
       "word": "obligatory",
       "pos": "adj.",
-      "definition": "义务的；必须的",
-      "origin": "editorial-unverified",
+      "definition": "adj. 强制性的、必须的（正式）；adj. 照例的、惯常的（常幽默）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-9.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/obligatory",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/obligatory"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -73379,26 +73667,32 @@
     },
     {
       "word": "obliterate",
-      "pos": "vt.",
-      "definition": "消灭；彻底毁掉",
-      "origin": "editorial-unverified",
+      "pos": "v.",
+      "definition": "v. 抹去、彻底毁掉",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-7.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/obliterate",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/obliterate"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
       "word": "oblivion",
       "pos": "n.",
-      "definition": "遗忘；湮没",
-      "origin": "editorial-unverified",
+      "definition": "n. 无知觉、昏迷；n. 被遗忘、湮没；n. 毁灭",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-8.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/oblivion",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/oblivion"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -73484,13 +73778,16 @@
     {
       "word": "observance",
       "pos": "n.",
-      "definition": "遵守；（宗教）仪式",
-      "origin": "editorial-unverified",
+      "definition": "n. 遵守、奉行；n. 宗教仪式、习俗",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-9.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/observance",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/observance"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -73544,15 +73841,17 @@
     },
     {
       "word": "obsess",
-      "pos": "vt.",
-      "definition": "迷住，使困扰",
-      "origin": "ecdict-derived",
+      "pos": "v.",
+      "definition": "v. 使着迷、使心神不宁；v. 念念不忘、过分担心",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js",
-        "js/words-ielts.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/obsess",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/obsess"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -73623,14 +73922,17 @@
     },
     {
       "word": "obstruct",
-      "pos": "vt.",
-      "definition": "阻塞；妨碍",
-      "origin": "editorial-unverified",
+      "pos": "v.",
+      "definition": "v. 阻塞、堵塞（正式）；v. 妨碍、阻挠（正式）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-7.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/obstruct",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/obstruct"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -73900,13 +74202,16 @@
     {
       "word": "octopus",
       "pos": "n.",
-      "definition": "章鱼",
-      "origin": "ecdict-derived",
+      "definition": "n. 章鱼",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/octopus",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/octopus"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -74336,25 +74641,33 @@
     {
       "word": "onslaught",
       "pos": "n.",
-      "definition": "猛攻；冲击",
-      "origin": "editorial-unverified",
+      "definition": "n. 猛攻、猛烈抨击",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-8.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/onslaught",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/onslaught"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
       "word": "ooze",
-      "pos": "vi./n.",
-      "definition": "vi. 渗出　n. 软泥",
-      "origin": "editorial-unverified",
+      "pos": "v./n.",
+      "definition": "v. （浓液）渗出、慢慢流出；v. 充分流露（某种特质或情感）；n. 软泥、淤泥；n. 慢慢流出",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-7.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/ooze",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/ooze",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/ooze_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/ooze_2"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -74679,13 +74992,16 @@
     {
       "word": "optimist",
       "pos": "n.",
-      "definition": "乐观主义者",
-      "origin": "editorial-unverified",
+      "definition": "n. 乐观主义者",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-8.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/optimist",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/optimist"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -74708,13 +75024,16 @@
     {
       "word": "optimum",
       "pos": "adj./n.",
-      "definition": "adj. 最佳的　n. 最佳条件",
-      "origin": "editorial-unverified",
+      "definition": "adj. 最佳的、最适宜的；n. 最佳结果、最适宜条件",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-rich-7.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/optimum",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/optimum"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {
@@ -74790,13 +75109,16 @@
     {
       "word": "oracle",
       "pos": "n.",
-      "definition": "神谕，神谕处，预言",
-      "origin": "ecdict-derived",
+      "definition": "n. （古希腊）神谕所；n. 神谕；n. 权威人士、提供宝贵建议的人或书（常幽默）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ext.js"
+        "js/lexicon-review-058.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/oracle",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/oracle"
+      ],
+      "checkedOn": "2026-11-25",
       "flags": []
     },
     {

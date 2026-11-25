@@ -4,9 +4,9 @@
 
 | 项目 | 已核对 | 尚待核对 |
 | --- | ---: | ---: |
-| 释义与词性 | 4784 | 4291 |
-| 英美音与主要分读 | 4782 | 4293 |
-| 两项均完成 | 4776 | 4299 |
+| 释义与词性 | 4884 | 4191 |
+| 英美音与主要分读 | 4882 | 4193 |
+| 两项均完成 | 4876 | 4199 |
 
 每词分别保存来源和日期，不能用核对音标代替核对释义。完整状态和接续队列见 [lexicon-progress.json](lexicon-progress.json)。优先处理缺失、截断、词性矛盾和用法标记，再按字母顺序推进。未找到可靠来源的条目保持待核对，不推测填充。
 
@@ -341,6 +341,14 @@ node tools/lexicon_progress.js
 待复核：ascending。OALD 无 ascending 独立词条。保留待复核。 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/ascending)。不计入完成数。
 待复核：auspice。OALD 无 auspice 独立词条（以 auspices 立目）。保留待复核。 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/auspice)。不计入完成数。
 
+## 批次 050
+
+完成 100 词：checkout、chide、chiefly、chimpanzee、chirp、chisel、choppy、choreograph、choreographer、choreography、chronology、chubby、chum、cider、circumference、circumscribe、circumvent、civility、clam、clamour、clandestine、clarification、cleanse、clergyman、climatic、climax、clinch、clockwise、clot、clutter、coalesce、coddle、codify、cog、coherence、cohesion、cohesive、collateral、collusion、colonize、colossal、colt、comical、commend、commercialize、comparatively、compensatory、complicity、complimentary、composure、comprehensible、compulsive、compulsory、computation、conceit、concentric、concerted、concerto、conciliatory、concise、conclusive、concoct、concomitant、concurrent、condensation、condiment、condone、condor、confederate、confinement、confiscate、confluence、confound、congenial、congenital、congested、conglomerate、congregate、conifer、conjecture、connoisseur、conscientious、consequent、conservationist、conservatory、considerate、consign、consonant、consort、consternation、constrict、construe、contagious、contemptuous、contented、contiguous、continual、contrive、convection、conventionally。托福中频（f3）队列 100 词，来源改用 OALD（剑桥网站对自动访问启用安全验证）。英音取 OALD 英式、美音取同页北美 IPA，逐字照录。
+
+待复核：checkup。OALD 仅收 check-up（带连字符），拼写不同，待别名支持后复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/checkup)。不计入完成数。
+待复核：clamor。OALD 仅收英式拼写 clamour，待别名支持后复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/clamor)。不计入完成数。
+待复核：compressed。OALD 无独立词条（仅作 compress 的屈折形式），待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/compressed)。不计入完成数。
+
 ## 发布节奏
 
-每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 600 词，距下次发布还差 400 词。发布基线为 237be0a9f85fc0b493092ad90e069a03e94a2898，当时两项均核对 4176 词；当前页面显示本地核对进度，不表示已上线。
+每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 700 词，距下次发布还差 300 词。发布基线为 237be0a9f85fc0b493092ad90e069a03e94a2898，当时两项均核对 4176 词；当前页面显示本地核对进度，不表示已上线。

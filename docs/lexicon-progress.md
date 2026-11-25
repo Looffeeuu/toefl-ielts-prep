@@ -4,9 +4,9 @@
 
 | 项目 | 已核对 | 尚待核对 |
 | --- | ---: | ---: |
-| 释义与词性 | 4484 | 4591 |
-| 英美音与主要分读 | 4482 | 4593 |
-| 两项均完成 | 4476 | 4599 |
+| 释义与词性 | 4584 | 4491 |
+| 英美音与主要分读 | 4582 | 4493 |
+| 两项均完成 | 4576 | 4499 |
 
 每词分别保存来源和日期，不能用核对音标代替核对释义。完整状态和接续队列见 [lexicon-progress.json](lexicon-progress.json)。优先处理缺失、截断、词性矛盾和用法标记，再按字母顺序推进。未找到可靠来源的条目保持待核对，不推测填充。
 
@@ -312,6 +312,12 @@ node tools/lexicon_progress.js
 待复核：soy。OALD /definition/english/soy 本次未取到独立词条（OALD 以 soya 等立目）。保留待复核。 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/soy)。不计入完成数。
 待复核：soybean。OALD /definition/english/soybean 本次未取到独立词条（OALD 以 soya bean 等立目）。保留待复核。 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/soybean)。不计入完成数。
 
+## 批次 047
+
+完成 100 词：stabilize、stagger、staggering、stain、stained、staircase、stale、stalk、stall、stamp、standpoint、staple、stark、startle、startling、starvation、starve、static、stature、stellar、sterile、stew、sticky、stiffen、stifle、stimulation、sting、stitch、strand、strap、stray、stride、stringent、stripe、strive、stroll、stubborn、stun、stunning、stunt、sturdy、subdivision、submarine、submission、subordinate、subsequently、subside、subsidiary、subsidize、substantive、substitute、subway、successive、succumb、suitcase、sulfur、summon、sunrise、sunset、sunshine、superb、superficial、superintendent、supernatural、supervise、supervision、supplement、surge、surpass、surrender、susceptible、sustained、swamp、swarm、sway、sweeping、swelling、syllable、symbolism、symbolize、sympathetic、symphony、synthesis、synthetic、syrup、systematic、tailor、tangible、tangle、tasty、tavern、tease、temper、temperament、temporal、temporarily、tempt、tempting、tenant、tense。托福次高频（f2）队列 100 词，来源改用 OALD（剑桥网站对自动访问启用安全验证）。英音取 OALD 英式、美音取同页北美 IPA，逐字照录。
+
+待复核：standardized。OALD /definition/english/standardized 无独立词条（作 standardize 的派生形式）。保留待复核。 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/standardized)。不计入完成数。
+
 ## 发布节奏
 
-每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 300 词，距下次发布还差 700 词。发布基线为 237be0a9f85fc0b493092ad90e069a03e94a2898，当时两项均核对 4176 词；当前页面显示本地核对进度，不表示已上线。
+每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 400 词，距下次发布还差 600 词。发布基线为 237be0a9f85fc0b493092ad90e069a03e94a2898，当时两项均核对 4176 词；当前页面显示本地核对进度，不表示已上线。

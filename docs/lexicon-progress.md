@@ -4,9 +4,9 @@
 
 | 项目 | 已核对 | 尚待核对 |
 | --- | ---: | ---: |
-| 释义与词性 | 6583 | 2492 |
-| 英美音与主要分读 | 6582 | 2493 |
-| 两项均完成 | 6576 | 2499 |
+| 释义与词性 | 6682 | 2393 |
+| 英美音与主要分读 | 6682 | 2393 |
+| 两项均完成 | 6676 | 2399 |
 
 每词分别保存来源和日期，不能用核对音标代替核对释义。完整状态和接续队列见 [lexicon-progress.json](lexicon-progress.json)。优先处理缺失、截断、词性矛盾和用法标记，再按字母顺序推进。未找到可靠来源的条目保持待核对，不推测填充。
 
@@ -526,6 +526,37 @@ node tools/lexicon_progress.js
 待复核：homogenize。OALD /definition/english/homogenize 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/homogenize)。不计入完成数。
 待复核：ichthyosaur。OALD /definition/english/ichthyosaur 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/ichthyosaur)。不计入完成数。
 
+## 批次 068
+
+完成 100 词：igneous、ignoble、ignominious、illegible、illusive、imbibe、immobility、immolate、impartially、impermeable、impersonation、impertinent、impetuous、impious、importune、impracticality、improvident、imprudent、impudent、impure、inactivate、inborn、incise、incisive、incorruptible、incredulity、incriminate、indefatigable、indemnify、indemnity、indent、indented、indenture、indigestion、indolent、indomitable、infirmary、infirmity、ingeniously、injurious、inoffensive、insolent、instrumentalist、insubordinate、insufferable、invariable、irradiate、irreparable、irrepressible、irreproachable、irresolute、irreverence、iterate、jocose、knell、lackey、lampshade、lank、larynx、lathe、lethargic、lethargy、levity、lifesaver、limpid、lipid、listless、lithograph、lithosphere、loathsome、locomotion、lode、long-lasting、long-standing、lubrication、luxuriant、lyricist、magnetize、magnificence、mainspring、malcontent、malleability、manful、manifold、manoeuvre、marshy、martinet、masticate、matchless、matchstick、melodious、meridian、meteorology、mime、mimicry、mincing、minutely、miser、miserly、mockingbird。托福低频（f4）队列 100 词，来源改用 OALD（剑桥网站对自动访问启用安全验证）。英音取 OALD 英式、美音取同页北美 IPA，逐字照录。
+
+待复核：impassible。OALD /definition/english/impassible 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/impassible)。不计入完成数。
+待复核：imprecate。OALD /definition/english/imprecate 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/imprecate)。不计入完成数。
+待复核：improviser。OALD /definition/english/improviser 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/improviser)。不计入完成数。
+待复核：impute。OALD /definition/english/impute 页面无独立义项（义项在短语动词下），待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/impute)。不计入完成数。
+待复核：indiscrimination。OALD /definition/english/indiscrimination 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/indiscrimination)。不计入完成数。
+待复核：indite。OALD /definition/english/indite 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/indite)。不计入完成数。
+待复核：inducible。OALD /definition/english/inducible 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/inducible)。不计入完成数。
+待复核：inelastic。OALD /definition/english/inelastic 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/inelastic)。不计入完成数。
+待复核：intersected。OALD /definition/english/intersected 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/intersected)。不计入完成数。
+待复核：intruding。OALD /definition/english/intruding 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/intruding)。不计入完成数。
+待复核：inure。OALD /definition/english/inure 页面无独立义项（义项在短语动词下），待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/inure)。不计入完成数。
+待复核：ionosphere。OALD /definition/english/ionosphere 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/ionosphere)。不计入完成数。
+待复核：jolting。OALD /definition/english/jolting 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/jolting)。不计入完成数。
+待复核：kymograph。OALD /definition/english/kymograph 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/kymograph)。不计入完成数。
+待复核：landmass。OALD /definition/english/landmass 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/landmass)。不计入完成数。
+待复核：lave。OALD /definition/english/lave 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/lave)。不计入完成数。
+待复核：limner。OALD /definition/english/limner 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/limner)。不计入完成数。
+待复核：locomote。OALD /definition/english/locomote 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/locomote)。不计入完成数。
+待复核：locoweed。OALD /definition/english/locoweed 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/locoweed)。不计入完成数。
+待复核：magnetosphere。OALD /definition/english/magnetosphere 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/magnetosphere)。不计入完成数。
+待复核：malediction。OALD /definition/english/malediction 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/malediction)。不计入完成数。
+待复核：mechanics。OALD /definition/english/mechanics 未取得独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/mechanics)。不计入完成数。
+待复核：Mesozoic。OALD /definition/english/mesozoic 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/mesozoic)。不计入完成数。
+待复核：midair。OALD /definition/english/midair 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/midair)。不计入完成数。
+待复核：millennia。OALD /definition/english/millennia 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/millennia)。不计入完成数。
+待复核：mingling。OALD /definition/english/mingling 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/mingling)。不计入完成数。
+
 ## 发布节奏
 
-每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 400 词，距下次发布还差 600 词。发布基线为 fd10786f774b81443625b14d168f8dd4fb51b80c，当时两项均核对 6176 词；当前页面显示本地核对进度，不表示已上线。
+每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 500 词，距下次发布还差 500 词。发布基线为 fd10786f774b81443625b14d168f8dd4fb51b80c，当时两项均核对 6176 词；当前页面显示本地核对进度，不表示已上线。

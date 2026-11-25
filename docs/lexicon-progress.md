@@ -4,9 +4,9 @@
 
 | 项目 | 已核对 | 尚待核对 |
 | --- | ---: | ---: |
-| 释义与词性 | 6682 | 2393 |
-| 英美音与主要分读 | 6682 | 2393 |
-| 两项均完成 | 6676 | 2399 |
+| 释义与词性 | 6781 | 2294 |
+| 英美音与主要分读 | 6782 | 2293 |
+| 两项均完成 | 6776 | 2299 |
 
 每词分别保存来源和日期，不能用核对音标代替核对释义。完整状态和接续队列见 [lexicon-progress.json](lexicon-progress.json)。优先处理缺失、截断、词性矛盾和用法标记，再按字母顺序推进。未找到可靠来源的条目保持待核对，不推测填充。
 
@@ -557,6 +557,32 @@ node tools/lexicon_progress.js
 待复核：millennia。OALD /definition/english/millennia 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/millennia)。不计入完成数。
 待复核：mingling。OALD /definition/english/mingling 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/mingling)。不计入完成数。
 
+## 批次 069
+
+完成 100 词：moiety、mollify、monochromatic、mote、mulberry、multicellular、munificent、needlework、nonconformity、nourishing、obliging、obloquy、obstinate、obtainable、obtrude、obviate、offhand、olfactory、optometrist、opulence、oration、oratorio、ornamentation、osprey、outermost、outwit、overbalance、overburden、overcharge、overconfident、overtax、packer、palpitate、parapsychology、parch、parry、patricide、pauper、pearl、pedagogic、peerless、penury、perishable、permeable、perspire、perturb、pestilence、pestilential、petrify、phenomenally、philology、phlegmatic、phonetics、photosensitive、pilferage、pinhead、pinion、platitude、platitudinous、pliable、pliant、plumage、pollination、pollinator、polygon、polygonal、porpoise、portraitist、postmaster、potentiality、potter、practicable、prate、prefabricated、presage、prevaricate、probity、profitless、profuse、prognostic、projectionist、proofread、propellant、propitiate、propound、proprietorship、prorogue、proscribe、provident、provincialism、punctual、quadrilateral、quiescent、ragtime、rapacious、rascal、rashly、ravish、rawhide、rayon。托福低频（f4）队列 100 词，来源改用 OALD（剑桥网站对自动访问启用安全验证）。英音取 OALD 英式、美音取同页北美 IPA，逐字照录。
+
+待复核：nonhuman。OALD /definition/english/nonhuman 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/nonhuman)。不计入完成数。
+待复核：nonprofessional。OALD /definition/english/nonprofessional 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/nonprofessional)。不计入完成数。
+待复核：notate。OALD /definition/english/notate 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/notate)。不计入完成数。
+待复核：nuclei。OALD /definition/english/nuclei 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/nuclei)。不计入完成数。
+待复核：nutriment。OALD /definition/english/nutriment 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/nutriment)。不计入完成数。
+待复核：odorless。OALD /definition/english/odorless 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/odorless)。不计入完成数。
+待复核：overtaxed。OALD /definition/english/overtaxed 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/overtaxed)。不计入完成数。
+待复核：overtire。OALD /definition/english/overtire 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/overtire)。不计入完成数。
+待复核：peculate。OALD /definition/english/peculate 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/peculate)。不计入完成数。
+待复核：petrifaction。OALD /definition/english/petrifaction 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/petrifaction)。不计入完成数。
+待复核：phenomena。OALD /definition/english/phenomena 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/phenomena)。不计入完成数。
+待复核：photosphere。OALD /definition/english/photosphere 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/photosphere)。不计入完成数。
+待复核：plainspoken。OALD /definition/english/plainspoken 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/plainspoken)。不计入完成数。
+待复核：plash。OALD /definition/english/plash 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/plash)。不计入完成数。
+待复核：postdate。OALD /definition/english/postdate 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/postdate)。不计入完成数。
+待复核：preeminent。OALD /definition/english/preeminent 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/preeminent)。不计入完成数。
+待复核：pronghorn。OALD /definition/english/pronghorn 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/pronghorn)。不计入完成数。
+待复核：prospecting。OALD /definition/english/prospecting 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/prospecting)。不计入完成数。
+待复核：protract。OALD /definition/english/protract 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/protract)。不计入完成数。
+待复核：quilter。OALD /definition/english/quilter 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/quilter)。不计入完成数。
+待复核：rarefy。OALD /definition/english/rarefy 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/rarefy)。不计入完成数。
+
 ## 发布节奏
 
-每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 500 词，距下次发布还差 500 词。发布基线为 fd10786f774b81443625b14d168f8dd4fb51b80c，当时两项均核对 6176 词；当前页面显示本地核对进度，不表示已上线。
+每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 600 词，距下次发布还差 400 词。发布基线为 fd10786f774b81443625b14d168f8dd4fb51b80c，当时两项均核对 6176 词；当前页面显示本地核对进度，不表示已上线。

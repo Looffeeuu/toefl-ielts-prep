@@ -4,9 +4,9 @@
 
 | 项目 | 已核对 | 尚待核对 |
 | --- | ---: | ---: |
-| 释义与词性 | 4284 | 4791 |
-| 英美音与主要分读 | 4282 | 4793 |
-| 两项均完成 | 4276 | 4799 |
+| 释义与词性 | 4384 | 4691 |
+| 英美音与主要分读 | 4382 | 4693 |
+| 两项均完成 | 4376 | 4699 |
 
 每词分别保存来源和日期，不能用核对音标代替核对释义。完整状态和接续队列见 [lexicon-progress.json](lexicon-progress.json)。优先处理缺失、截断、词性矛盾和用法标记，再按字母顺序推进。未找到可靠来源的条目保持待核对，不推测填充。
 
@@ -295,6 +295,14 @@ node tools/lexicon_progress.js
 
 待复核：recount。OALD /definition/english/recount 及 recount_1 本次未取到词条页（该词有动词 /rɪˈkaʊnt/ 与重新计票 /ˌriːˈkaʊnt/ 等多个同形词条）；保留待复核。 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/recount)。不计入完成数。
 
+## 批次 045
+
+完成 100 词：rehearse、reign、reiterate、rejection、relaxation、relaxed、relay、relentless、relevance、reliance、relinquish、remainder、remarkably、remedy、remnant、renew、renewable、renewal、renovate、renovation、repertoire、repetition、replica、reproduction、reproductive、resemblance、resent、reshape、reside、residual、residue、resistant、resonance、respective、respiratory、responsive、restoration、restrain、restraint、restrictive、retrospect、retrospective、revise、revision、revival、revive、revolt、rhythmic、rigorous、rinse、ripe、rite、rivalry、roam、roar、roast、robust、rocky、rodent、rot、rotation、rotten、rounded、rubble、rugged、rumble、rustic、rusty、ruthless、saddle、saga、salient、salvage、sanctuary、sandy、sane、satisfactory、saturated、scar、scarcely、scenery、scenic、scholarly、scissors、scoop、scour、scout、scrap、scrape、scribble、scripture、scrub、scrutinize、sculptor、scurry、seam、seasonal、seasoning、seduce、seep。托福次高频（f2）队列 100 词，来源改用 OALD（剑桥网站对自动访问启用安全验证）。英音取 OALD 英式、美音取同页北美 IPA，逐字照录。
+
+待复核：rigor。OALD /definition/english/rigor 无词条（以英式拼写 rigour 立目）；暂列待复核，需增加拼写别名支持后处理。 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/rigour)。不计入完成数。
+待复核：runoff。OALD /definition/english/runoff 无词条（以 run-off 立目）。保留待复核。 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/run-off)。不计入完成数。
+待复核：savor。OALD /definition/english/savor 无词条（以英式拼写 savour 立目）；暂列待复核，需增加拼写别名支持后处理。 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/savour_1)。不计入完成数。
+
 ## 发布节奏
 
-每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 100 词，距下次发布还差 900 词。发布基线为 237be0a9f85fc0b493092ad90e069a03e94a2898，当时两项均核对 4176 词；当前页面显示本地核对进度，不表示已上线。
+每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 200 词，距下次发布还差 800 词。发布基线为 237be0a9f85fc0b493092ad90e069a03e94a2898，当时两项均核对 4176 词；当前页面显示本地核对进度，不表示已上线。

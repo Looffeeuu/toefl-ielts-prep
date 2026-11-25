@@ -4,9 +4,9 @@
 
 | 项目 | 已核对 | 尚待核对 |
 | --- | ---: | ---: |
-| 释义与词性 | 6781 | 2294 |
-| 英美音与主要分读 | 6782 | 2293 |
-| 两项均完成 | 6776 | 2299 |
+| 释义与词性 | 6881 | 2194 |
+| 英美音与主要分读 | 6882 | 2193 |
+| 两项均完成 | 6876 | 2199 |
 
 每词分别保存来源和日期，不能用核对音标代替核对释义。完整状态和接续队列见 [lexicon-progress.json](lexicon-progress.json)。优先处理缺失、截断、词性矛盾和用法标记，再按字母顺序推进。未找到可靠来源的条目保持待核对，不推测填充。
 
@@ -583,6 +583,39 @@ node tools/lexicon_progress.js
 待复核：quilter。OALD /definition/english/quilter 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/quilter)。不计入完成数。
 待复核：rarefy。OALD /definition/english/rarefy 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/rarefy)。不计入完成数。
 
+## 批次 070
+
+完成 100 词：recapitulate、recluse、refraction、refrigerant、regimentation、reinterpretation、remit、rend、renunciation、reorient、reputed、retentive、retrograde、rhinoceros、roe、ruffian、ruinous、ruminate、rustproof、sagacious、sallow、sanctimonious、sapience、satiate、satirist、scanty、scornful、screed、scruple、scud、seaport、seashore、seclude、sedimentary、seismograph、seismology、self-sufficient、sentimentalize、serrated、sewerage、shipload、short-range、shrinkage、silicate、silversmith、singe、skimp、skulk、slacken、slag、slake、slander、slavish、sloop、slothful、snobbish、snowdrift、sociable、softwood、solder、solicitous、soundproof、spangle、spanking、spineless、spinet、spiny、spoilage、stagecoach、starfish、stickpin、stodgy、stonemason、subjection、subjugation、sublimate、subsection、subtraction、suburbanite、suited、sulky、sundial、supercontinent、suspender、swampy、swelter、swiftness、synchronous、systematize、tableland、tableware、tadpole、tapeworm、tardiness、tardy、tedium、teem、teens、telegraph、temperance。托福低频（f4）队列 100 词，来源改用 OALD（剑桥网站对自动访问启用安全验证）。英音取 OALD 英式、美音取同页北美 IPA，逐字照录。
+
+待复核：rebroadcast。OALD /definition/english/rebroadcast 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/rebroadcast)。不计入完成数。
+待复核：recompose。OALD /definition/english/recompose 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/recompose)。不计入完成数。
+待复核：reformism。OALD /definition/english/reformism 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/reformism)。不计入完成数。
+待复核：requital。OALD /definition/english/requital 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/requital)。不计入完成数。
+待复核：rhythmical。OALD /definition/english/rhythmical 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/rhythmical)。不计入完成数。
+待复核：satiric。OALD /definition/english/satiric 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/satiric)。不计入完成数。
+待复核：savings。OALD /definition/english/savings 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/savings)。不计入完成数。
+待复核：scaled。OALD /definition/english/scaled 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/scaled)。不计入完成数。
+待复核：scathe。OALD /definition/english/scathe 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/scathe)。不计入完成数。
+待复核：seabed。OALD /definition/english/seabed 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/seabed)。不计入完成数。
+待复核：seamount。OALD /definition/english/seamount 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/seamount)。不计入完成数。
+待复核：secretin。OALD /definition/english/secretin 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/secretin)。不计入完成数。
+待复核：semiarid。OALD /definition/english/semiarid 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/semiarid)。不计入完成数。
+待复核：semiliterate。OALD /definition/english/semiliterate 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/semiliterate)。不计入完成数。
+待复核：sentimentalism。OALD /definition/english/sentimentalism 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/sentimentalism)。不计入完成数。
+待复核：shipwright。OALD /definition/english/shipwright 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/shipwright)。不计入完成数。
+待复核：spined。OALD /definition/english/spined 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/spined)。不计入完成数。
+待复核：springwater。OALD /definition/english/springwater 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/springwater)。不计入完成数。
+待复核：subdiscipline。OALD /definition/english/subdiscipline 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/subdiscipline)。不计入完成数。
+待复核：subtractive。OALD /definition/english/subtractive 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/subtractive)。不计入完成数。
+待复核：suburbanization。OALD /definition/english/suburbanization 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/suburbanization)。不计入完成数。
+待复核：superheat。OALD /definition/english/superheat 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/superheat)。不计入完成数。
+待复核：surpassingly。OALD /definition/english/surpassingly 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/surpassingly)。不计入完成数。
+待复核：symbology。OALD /definition/english/symbology 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/symbology)。不计入完成数。
+待复核：tactics。OALD /definition/english/tactics 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/tactics)。不计入完成数。
+待复核：tapering。OALD /definition/english/tapering 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/tapering)。不计入完成数。
+待复核：taxicab。OALD /definition/english/taxicab 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/taxicab)。不计入完成数。
+待复核：tectonics。OALD /definition/english/tectonics 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/tectonics)。不计入完成数。
+
 ## 发布节奏
 
-每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 600 词，距下次发布还差 400 词。发布基线为 fd10786f774b81443625b14d168f8dd4fb51b80c，当时两项均核对 6176 词；当前页面显示本地核对进度，不表示已上线。
+每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 700 词，距下次发布还差 300 词。发布基线为 fd10786f774b81443625b14d168f8dd4fb51b80c，当时两项均核对 6176 词；当前页面显示本地核对进度，不表示已上线。

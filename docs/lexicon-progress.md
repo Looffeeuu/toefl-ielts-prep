@@ -4,9 +4,9 @@
 
 | 项目 | 已核对 | 尚待核对 |
 | --- | ---: | ---: |
-| 释义与词性 | 3584 | 5491 |
-| 英美音与主要分读 | 3582 | 5493 |
-| 两项均完成 | 3576 | 5499 |
+| 释义与词性 | 3684 | 5391 |
+| 英美音与主要分读 | 3682 | 5393 |
+| 两项均完成 | 3676 | 5399 |
 
 每词分别保存来源和日期，不能用核对音标代替核对释义。完整状态和接续队列见 [lexicon-progress.json](lexicon-progress.json)。优先处理缺失、截断、词性矛盾和用法标记，再按字母顺序推进。未找到可靠来源的条目保持待核对，不推测填充。
 
@@ -245,6 +245,15 @@ node tools/lexicon_progress.js
 
 待复核：endeavor。OALD 以英式拼写 endeavour 立目（标注 also endeavor），/definition/english/endeavor 返回 404；现有检查要求来源路径与词形一致，暂列待复核，需增加拼写别名支持后处理。 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/endeavour_1)。不计入完成数。
 
+## 批次 038
+
+完成 100 词：eyewitness、facet、faction、factual、faithful、fake、falter、famine、fascinate、fascination、fashionable、fasten、feat、feminism、ferry、fertilizer、fictional、filthy、financing、fingertip、fixture、flake、flap、flare、flashlight、flatter、flaw、flea、flicker、flock、floral、fluctuation、fluorescent、flush、flux、foam、foe、foil、foliage、folly、foolish、forecast、forefront、foremost、foresee、forge、formidable、formulate、fort、fortress、fortunate、foul、fountain、fragrance、fragrant、frail、frank、frantic、freight、frenzy、freshly、fret、frightening、fringe、frustrating、fume、fungus、furious、furnace、furnish、fury、futile、gallon、gangster、garment、garnish、gasp、gauge、gem、generalization、genetics、geometric、geometry、germ、gigantic、glamorous、glamour、gland、glare、glaze、glide、gloom、gloomy、glorious、glossy、glowing、glue、gorgeous、gorilla、gospel。托福次高频（f2）队列 100 词，来源改用 OALD（剑桥网站对自动访问启用安全验证）。英音取 OALD 英式、美音取同页北美 IPA，逐字照录。
+
+待复核：favored。OALD /definition/english/favored 无独立词条（英式拼写 favoured 立目）。保留待复核。 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/favoured)。不计入完成数。
+待复核：functioning。OALD 无 functioning 独立词条，仅见动词 function。保留待复核。 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/function_2)。不计入完成数。
+待复核：furnishing。OALD /definition/english/furnishing 无独立词条（复数 furnishings 立目）。保留待复核。 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/furnishings)。不计入完成数。
+待复核：geographic。OALD /definition/english/geographic 无独立词条（以 geographical 立目）。保留待复核。 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/geographical)。不计入完成数。
+
 ## 发布节奏
 
-每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 1541 词，距下次发布还差 0 词。发布基线为 fc694f71b9d99bf227f0f0001b6b199e5de0bf50，当时两项均核对 2035 词；当前页面显示本地核对进度，不表示已上线。
+每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 1641 词，距下次发布还差 0 词。发布基线为 fc694f71b9d99bf227f0f0001b6b199e5de0bf50，当时两项均核对 2035 词；当前页面显示本地核对进度，不表示已上线。

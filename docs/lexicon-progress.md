@@ -4,9 +4,9 @@
 
 | 项目 | 已核对 | 尚待核对 |
 | --- | ---: | ---: |
-| 释义与词性 | 5284 | 3791 |
-| 英美音与主要分读 | 5282 | 3793 |
-| 两项均完成 | 5276 | 3799 |
+| 释义与词性 | 5384 | 3691 |
+| 英美音与主要分读 | 5382 | 3693 |
+| 两项均完成 | 5376 | 3699 |
 
 每词分别保存来源和日期，不能用核对音标代替核对释义。完整状态和接续队列见 [lexicon-progress.json](lexicon-progress.json)。优先处理缺失、截断、词性矛盾和用法标记，再按字母顺序推进。未找到可靠来源的条目保持待核对，不推测填充。
 
@@ -377,6 +377,12 @@ node tools/lexicon_progress.js
 待复核：flickering。OALD 无独立词条（仅作 flicker 的屈折形式），待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/flickering)。不计入完成数。
 待复核：geologic。OALD 无独立词条（收 geological，geologic 为美式变体），待别名支持后复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/geologic)。不计入完成数。
 
+## 批次 055
+
+完成 100 词：gleam、glean、glib、glider、gloat、glorify、glossary、glut、gnaw、goad、gorge、grace、gradient、graft、grandeur、graphite、grasshopper、gratify、gratuitous、gregarious、grope、grudge、gruff、grumpy、guise、gull、gulp、gush、gust、gymnastics、haggle、haphazard、hardness、hardy、harmonic、harmonica、harmonious、harmonize、harry、haste、hasty、hatchery、hatchet、haughty、haunted、hazel、hazy、healthful、hearsay、hectic、helium、hem、herald、herder、heresy、hermit、heroism、heterogeneous、hew、heyday、hibernation、hideous、hilarious、hilly、hinterland、hive、hoarse、hoax、hoe、holocaust、homage、homesick、homily、homogeneous、horde、horned、horsepower、hospitable、humanist、humanistic、hummingbird、hump、husk、hygiene、identifiable、idiom、idiosyncrasy、idyllic、illegitimate、illiterate、illumination、illustrious、imbue、immigrate、immobile、immobilize、immortal、impale、impartial、impassioned。托福中频（f3）队列 100 词，来源改用 OALD（剑桥网站对自动访问启用安全验证）。英音取 OALD 英式、美音取同页北美 IPA，逐字照录。
+
+
+
 ## 发布节奏
 
-每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 100 词，距下次发布还差 900 词。发布基线为 eddc23c56240e203acb9126866be802a05108087，当时两项均核对 5176 词；当前页面显示本地核对进度，不表示已上线。
+每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 200 词，距下次发布还差 800 词。发布基线为 eddc23c56240e203acb9126866be802a05108087，当时两项均核对 5176 词；当前页面显示本地核对进度，不表示已上线。

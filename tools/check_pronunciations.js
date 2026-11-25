@@ -331,6 +331,6 @@ const entries = Object.values(ctx.words).map(o => ({
 const reviewed = entries.filter(e=>e.status==='dictionary-reviewed').length;
 const summary = {total:entries.length, reviewed, unverified:entries.length-reviewed, referenceWords:seen.size, flags:{}};
 for(const e of entries) for(const f of e.flags) summary.flags[f] = (summary.flags[f]||0)+1;
-if(process.argv.includes('--write')) fs.writeFileSync(path.join(root,'docs/pronunciation-audit.json'),JSON.stringify({checkedOn:'2026-11-22',summary,entries},null,2)+'\n');
+if(process.argv.includes('--write')) fs.writeFileSync(path.join(root,'docs/pronunciation-audit.json'),JSON.stringify({checkedOn:'2026-11-25',summary,entries},null,2)+'\n');
 console.log(JSON.stringify(summary));
 console.log('Pronunciation source, merge, heteronym and renderer checks passed.');

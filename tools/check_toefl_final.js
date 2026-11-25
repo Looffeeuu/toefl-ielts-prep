@@ -17,6 +17,8 @@ for(const w of words){
 const scopes=JSON.parse(read('docs/review-priority.json')).scopes;
 assert.equal(scopes[0].completed,350);assert.equal(scopes[1].completed,1946);assert.equal(scopes[1].remaining,0);
 const progress=JSON.parse(read('docs/lexicon-progress.json'));
-assert.equal(progress.summary.bothChecked,baseline.summary.bothChecked+341);
+// Later batches (034+) keep adding reviewed words beyond this 341-word milestone.
+if(progress.batches.at(-1).id==='033')assert.equal(progress.summary.bothChecked,baseline.summary.bothChecked+341);
+else assert(progress.summary.bothChecked>baseline.summary.bothChecked+341);
 for(const w of words)assert(!progress.queue.includes(w));
 console.log('All remaining 341 TOEFL words integrated exactly once; core350 and TOEFL1946 complete.');

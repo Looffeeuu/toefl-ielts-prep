@@ -1,12 +1,12 @@
 # 全库音标与释义核对进度
 
-更新：2026-11-22。总计 9075 词。
+更新：2026-11-25。总计 9075 词。
 
 | 项目 | 已核对 | 尚待核对 |
 | --- | ---: | ---: |
-| 释义与词性 | 3184 | 5891 |
-| 英美音与主要分读 | 3182 | 5893 |
-| 两项均完成 | 3176 | 5899 |
+| 释义与词性 | 3284 | 5791 |
+| 英美音与主要分读 | 3282 | 5793 |
+| 两项均完成 | 3276 | 5799 |
 
 每词分别保存来源和日期，不能用核对音标代替核对释义。完整状态和接续队列见 [lexicon-progress.json](lexicon-progress.json)。优先处理缺失、截断、词性矛盾和用法标记，再按字母顺序推进。未找到可靠来源的条目保持待核对，不推测填充。
 
@@ -24,7 +24,7 @@ node tools/check_pronunciations.js --write
 node tools/lexicon_progress.js
 ```
 
-下一批队列前 30 词：accidents、accommodations、accompanying、account for、accountants、actions、activities、adults、advantages、advertisements、affairs、agencies、aggressiveness、animals、antibiotics、approaches、approaching、areas、articles、assignments、attacks、attempts、automated、beds、beginners、belts、benefits、bicycles、birds、booklist。
+下一批队列前 30 词：accidents、accommodations、account for、accountants、actions、activities、adults、advantages、advertisements、affairs、agencies、aggressiveness、animals、antibiotics、approaches、approaching、areas、articles、assignments、attacks、attempts、automated、beds、beginners、belts、benefits、bicycles、birds、booklist、books。
 
 ## 批次 002
 
@@ -218,6 +218,15 @@ node tools/lexicon_progress.js
 
 
 
+## 批次 034
+
+完成 100 词：accompanying、committed、competing、consciously、credentials、exceptionally、genetically、idiot、indefinitely、instinctively、intentionally、packed、pioneering、specialized、sunglasses、swift、tan、abandoned、accomplished、accustomed、acting、affected、aged、alumnus、amass、chat、cherish、chilly、choke、chord、chore、chorus、chuckle、circular、circulate、circulation、clamp、clan、clap、clarify、classification、clause、claw、clergy、clog、clumsy、clutch、coarse、coax、coexist、coherent、coil、coincidence、collaborate、collision、colonel、combustion、comic、commemorate、commence、commentary、commentator、commonplace、communal、commute、commuter、compact、comparative、compass、compatible、competence、competent、compile、complement、complementary、complicate、compliment、comprehend、comprehension、compression、compute、conceal、conceptual、concession、concur、condemnation、conditioning、conductor、cone、confer、confide、confidential、configuration、confine、confirmation、conflicting、conform、congestion、congressman、conjunction。托福次高频（f2）队列 100 词，来源改用 OALD（剑桥网站对自动访问启用安全验证）。英音取 OALD 英式、美音取同页北美 IPA，逐字照录。
+
+待复核：automated。OALD 无 automated 独立词条（仅作 automate 的过去分词 /ˈɔːtəmeɪtɪd/）；剑桥与柯林斯本次无法访问。保留待复核。 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/automate)。不计入完成数。
+待复核：obsessed。OALD /definition/english/obsessed 返回 404，仅见 obsess、obsession、obsessive。保留待复核。 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/obsession)。不计入完成数。
+待复核：prescribed。OALD /definition/english/prescribed 返回 404。保留待复核。 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/prescription)。不计入完成数。
+待复核：troubling。OALD /definition/english/troubling 返回 404。现有 ECDICT 释义“浊度，浑浊度”与常用义“令人不安的”不符，需优先复核。 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/trouble_2)。不计入完成数。
+
 ## 发布节奏
 
-每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 1141 词，距下次发布还差 0 词。发布基线为 fc694f71b9d99bf227f0f0001b6b199e5de0bf50，当时两项均核对 2035 词；当前页面显示本地核对进度，不表示已上线。
+每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 1241 词，距下次发布还差 0 词。发布基线为 fc694f71b9d99bf227f0f0001b6b199e5de0bf50，当时两项均核对 2035 词；当前页面显示本地核对进度，不表示已上线。

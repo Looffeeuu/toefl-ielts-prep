@@ -4,9 +4,9 @@
 
 | 项目 | 已核对 | 尚待核对 |
 | --- | ---: | ---: |
-| 释义与词性 | 7076 | 1999 |
-| 英美音与主要分读 | 7077 | 1998 |
-| 两项均完成 | 7071 | 2004 |
+| 释义与词性 | 7176 | 1899 |
+| 英美音与主要分读 | 7177 | 1898 |
+| 两项均完成 | 7171 | 1904 |
 
 每词分别保存来源和日期，不能用核对音标代替核对释义。完整状态和接续队列见 [lexicon-progress.json](lexicon-progress.json)。优先处理缺失、截断、词性矛盾和用法标记，再按字母顺序推进。未找到可靠来源的条目保持待核对，不推测填充。
 
@@ -669,6 +669,13 @@ node tools/lexicon_progress.js
 
 
 
+## 批次 073
+
+完成 100 词：diary、differ、difference、different、difficult、difficulty、digital、dining、dinner、dip、diplomat、director、disabled、disc、disclose、discovery、discussion、disease、disorder、divine、dock、doctor、dose、dress、drinking、driver、driving、drop、drown、dust、duty、ease、eastern、economy、edit、edition、editor、educational、effectively、ego、elder、elderly、electrical、electricity、electronic、electronics、elsewhere、emergency、employment、end、energy、enforce、engagement、engine、engineer、engineering、England、environment、environmental、equity、essay、establish、Europe、European、evening、event、exam、examination、example、exercise、existence、existing、expensive、experience、experiment、experimental、expert、explosion、export、extra、extreme、eye、factory、failure、fall、familiar、family、famous、fare、farm、feature、fee、feel、female、fever、field、fifth、film、finding、fire。雅思（i1）队列 100 词，来源改用 OALD（剑桥网站对自动访问启用安全验证）。英音取 OALD 英式、美音取同页北美 IPA，逐字照录。
+
+待复核：favor。OALD 以 favour 立目，美式拼写待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/favor)。不计入完成数。
+待复核：favorite。OALD 以 favourite 立目，美式拼写待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/favorite)。不计入完成数。
+
 ## 发布节奏
 
-每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 100 词，距下次发布还差 900 词。发布基线为 3abf5e5f873868ad549418738053e29033007111，当时两项均核对 6971 词；当前页面显示本地核对进度，不表示已上线。
+每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 200 词，距下次发布还差 800 词。发布基线为 3abf5e5f873868ad549418738053e29033007111，当时两项均核对 6971 词；当前页面显示本地核对进度，不表示已上线。

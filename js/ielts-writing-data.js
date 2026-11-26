@@ -116,7 +116,32 @@ Overall, 16- to 24-year-olds were the most frequent cinema-goers throughout the 
 
 In 2005, people aged 16 to 24 visited the cinema 9.5 times a year on average, nearly twice as often as those aged 25 to 44, who went 5.0 times. Over the next twenty years, the figure for the youngest group dropped to 7.0 in 2015 and then to only 4.5 in 2025. Attendance among 25- to 44-year-olds also declined, but only slightly, reaching 4.0 visits by the end of the period.
 
-Meanwhile, the oldest group made just 2.0 visits annually in 2005. However, this figure rose steadily to 3.0 in 2015 and 3.5 in 2025. As a result, by 2025 the gap between the most and least frequent cinema-goers had narrowed to just one visit per year.` }
+Meanwhile, the oldest group made just 2.0 visits annually in 2005. However, this figure rose steadily to 3.0 in 2015 and 3.5 in 2025. As a result, by 2025 the gap between the most and least frequent cinema-goers had narrowed to just one visit per year.` },
+  { id:"w1-rainwater", name:"家庭雨水收集系统", kind:"process",
+    prompt:"The diagram below shows how a rainwater collection system provides water for a house.",
+    chart:{ steps:["Rain falls on the roof of the house","Water flows into gutters along the edge of the roof","It passes down a pipe through a filter that removes leaves and dirt","The filtered water is stored in an underground tank","A pump moves the water from the tank to the house when needed","The water is used for toilets, washing machines and the garden","Extra water from a full tank overflows into a drain"] },
+    hint:"流程图没有数字，概述段说清楚有几个主要阶段、从哪里开始到哪里结束。主体段用被动语态和顺序词，把「收集和过滤」和「储存和使用」分成两段，最后提一下水箱满了时的溢流。",
+    phrases:["The diagram illustrates how ... is collected and used ...","Overall, the system involves ... stages, from ... to ...","To begin with, ...","Before it is stored, the water passes through ...","Whenever water is needed, ...","If the tank becomes full, ..."],
+    model:`The diagram illustrates how rain is collected from the roof of a house, cleaned, stored and then supplied for household use.
+
+Overall, the system involves seven stages, from the moment rain lands on the roof to its use inside the home, with an additional route for any excess water. It relies mainly on gravity, although a pump is required at a later stage.
+
+To begin with, rain falls on the sloping roof and runs into gutters fitted along its edges. From there, it travels down a vertical pipe. Before it is stored, the water passes through a filter, where leaves, dirt and other debris are removed. The clean water then flows into a large tank buried underground.
+
+Whenever water is needed, an electric pump lifts it from the tank and sends it into the house. This supply is used for purposes that do not require drinking water, such as flushing toilets, running the washing machine and watering the garden. Finally, if the tank becomes full during heavy rain, the extra water overflows into a drain, preventing flooding.` },
+
+  { id:"w1-spending", name:"家庭开支构成", kind:"pie",
+    prompt:"The pie charts below show how an average household in one country spent its income in 1990 and 2020.",
+    chart:{ labels:["Housing","Food","Transport","Leisure","Other"], pies:[{ title:"1990", values:[22,30,15,13,20] },{ title:"2020", values:[35,17,16,18,14] }] },
+    hint:"概述：住房成为最大的开支，食品的比例大幅下降。交通几乎不变，娱乐上升，其他类别下降。按「变化最大的两项」和「变化较小的几项」分两段写，用 nearly a third、just over a third 等分数表达。",
+    phrases:["The two pie charts compare how ... spent ... in 1990 and 2020.","Overall, housing replaced food as ...","the proportion spent on ... rose from ... to ...","fell by almost half","remained almost unchanged","accounted for just over a third of ..."],
+    model:`The two pie charts compare how an average household in one country divided its spending between five categories in 1990 and 2020.
+
+Overall, housing replaced food as the largest area of spending over the thirty-year period. The share spent on leisure also grew, whereas food and other expenses took up a smaller proportion of household budgets.
+
+In 1990, food was the biggest expense, accounting for 30% of spending, while housing made up 22%. By 2020, however, the situation had reversed. The proportion spent on housing rose sharply to 35%, just over a third of the total, while spending on food fell by almost half to 17%.
+
+The remaining categories changed less dramatically. Leisure increased from 13% to 18%, and transport remained almost unchanged, rising by only one percentage point to 16%. In contrast, the share of income spent on other items, such as clothing and household goods, decreased from 20% to 14%.` }
 ],
 
 task2: [
@@ -267,6 +292,41 @@ However, mass tourism can cause damage. Aircraft produce large amounts of carbon
 
 These drawbacks are real, but they can be managed through sensible policies. Cities can limit short-term rentals, introduce tourist taxes and encourage visitors to travel outside the busiest seasons, while airlines continue to develop cleaner fuels and more efficient aircraft. Responsible tourists can also play a part by choosing local businesses and respecting the customs of the places they visit.
 
-In conclusion, while international tourism brings environmental and social challenges, I believe its economic and cultural advantages outweigh these disadvantages, provided that governments manage it carefully.` }
+In conclusion, while international tourism brings environmental and social challenges, I believe its economic and cultural advantages outweigh these disadvantages, provided that governments manage it carefully.` },
+  { id:"w2-housing", name:"城市房价过高的原因与对策", type:"problem",
+    prompt:"In many large cities, housing has become too expensive for ordinary people. What are the causes of this problem, and what measures could be taken to solve it?",
+    hint:"原因与对策题不需要表达个人立场，但要把原因和对策对应起来。范文写两个原因（人口集中、供给不足和投资炒房）和两类对策（增加供给、限制投机和提供公共住房），结论段总结。",
+    phrases:["In recent decades, ... has risen far faster than ...","There are several reasons for this situation.","The most important cause is ...","Another factor is ...","Governments can take several steps to address this issue.","In conclusion, ..."],
+    model:`In recent decades, the cost of renting or buying a home in many major cities has risen far faster than wages, and many young workers and families can no longer afford to live near their jobs. This essay will examine the main causes of this situation and suggest some possible solutions.
+
+The most important cause is the gap between demand and supply. Large cities attract people because they offer more jobs and better services, so the population keeps growing. However, the construction of new homes has often failed to keep pace, partly because planning rules limit how many buildings can be constructed and how tall they can be. Another factor is investment. In some cities, wealthy individuals and companies buy apartments as investments rather than as places to live, and some of these properties are left empty, which pushes prices even higher.
+
+Governments can take several steps to address this issue. First, they could make it easier to build new housing, for example by allowing taller buildings near public transport and by turning unused offices into flats. Second, they could discourage speculation by taxing homes that remain empty for long periods. In addition, cities such as Vienna show that large-scale public housing, rented at reasonable prices, can keep a city affordable for people on average incomes.
+
+In conclusion, high housing costs in cities are mainly caused by rapid population growth, a shortage of new homes and investment buying. These problems can be reduced if governments increase supply, limit speculation and invest in affordable public housing.` },
+  { id:"w2-reading", name:"人们读书变少：原因与是否值得担忧", type:"twopart",
+    prompt:"In many countries, people are reading fewer books than they did in the past. Why is this happening? Is this a positive or negative development?",
+    hint:"双问题题两个问题都要回答，而且分量差不多。范文先写原因（数字娱乐、时间碎片化），再给出判断（总体是负面的，但阅读形式在变化），注意第二问要给出明确态度。",
+    phrases:["It is often reported that ...","There are two main reasons for this trend.","Firstly, ...","Secondly, ...","In my view, this is largely a negative development, although ...","In conclusion, ..."],
+    model:`It is often reported that people today, especially young adults, read far fewer books than previous generations. This essay will explain why this change is taking place and argue that, although reading habits are changing rather than disappearing, the trend is largely negative.
+
+There are two main reasons for this trend. Firstly, books now compete with a huge range of digital entertainment. Streaming services, video platforms and mobile games offer instant enjoyment that requires little effort, so many people choose them in their free time instead of a novel. Secondly, modern lifestyles leave fewer long periods of quiet time. People check their phones dozens of times a day, and as a result they become used to short pieces of information and may find it harder to concentrate on a long text.
+
+In my view, this is largely a negative development, although it is not entirely so. On the positive side, many people still read a great deal online, including news articles and blogs, and audiobooks have introduced literature to people who rarely open a printed book. However, reading complete books develops skills that short texts cannot. For example, following a complex argument or a long story strengthens concentration and vocabulary, and novels encourage readers to understand the feelings of people different from themselves. If fewer people read books, these abilities may gradually weaken across society.
+
+In conclusion, people are reading fewer books mainly because of digital entertainment and shorter attention spans. While new forms of reading have some value, I believe the decline of book reading is a loss that schools and families should try to reverse.` },
+  { id:"w2-tech", name:"科技是否让人更孤独", type:"opinion",
+    prompt:"Some people say that modern technology, such as smartphones and social media, is making people more isolated from one another. To what extent do you agree or disagree?",
+    hint:"同意与否题要立场一致。范文部分同意：科技让很多人减少了面对面交流，但对于远方亲友和少数群体，它也减少了孤独。关键是使用方式。",
+    phrases:["It is widely claimed that ...","I partly agree with this view, but I believe ...","There is some evidence that ...","On the other hand, technology has also ...","The key factor, in my opinion, is how ...","In conclusion, ..."],
+    model:`It is widely claimed that smartphones and social media are causing people to become more isolated, even though they appear to connect us more than ever before. I partly agree with this view, but I believe the effect of technology depends mainly on how it is used.
+
+There is some evidence that technology can reduce real human contact. It is now common to see friends or family members sitting together while each of them looks at a screen. In addition, some people spend hours scrolling through social media, comparing their lives with the carefully selected images of others, which can leave them feeling lonely and dissatisfied. When online communication replaces meeting in person, relationships may become more numerous but also more shallow.
+
+On the other hand, technology has also reduced isolation for many groups. For example, video calls allow grandparents to see their grandchildren in other countries, and students studying abroad can talk to their families every day at almost no cost. Furthermore, people with rare illnesses or unusual interests can find online communities of others who share their experiences, something that would have been almost impossible in the past.
+
+The key factor, in my opinion, is how people use these tools. Technology that helps people arrange meetings or maintain distant relationships brings them closer together, whereas technology that replaces real conversation tends to drive them apart.
+
+In conclusion, although modern technology can contribute to isolation, it can equally reduce loneliness. Rather than blaming smartphones themselves, people should learn to use them in ways that strengthen their relationships.` }
 ]
 };

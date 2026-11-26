@@ -52,25 +52,25 @@ const SECTIONS = [
     { name:"组句 Build a Sentence", tests:"用打乱的词块拼出对话中 B 的回答，考句子结构和语法，每题全对才得分。",
       points:["间接疑问句用陈述语序（Do you know where it is?）","助动词、情态动词后接动词原形","时态、被动语态、比较结构","不定式与动名词（would like to do / mind doing）","句末是问号还是句号，决定整句的结构"],
       traps:["干扰词块：多一个 does、is 或错误的词形","把疑问句的倒装带进从句里","固定词块的位置限制了其他词块的顺序，要先看它们"],
-      practice:"写作 → 组句（8 套 80 题）", statKey:"write:tags" },
+      practice:"写作 → 组句（10 套 100 题）", statKey:"write:tags" },
     { name:"写邮件 Write an Email", tests:"按情境给指定对象写邮件，考任务完成度、语气是否得体、组织和语言准确性。",
       points:["三个要点逐一写到","称呼、开头说明目的、结尾礼貌用语、署名","语气匹配对象：教授、职员、朋友各不相同"],
       traps:["只写了两个要点","对教授或机构用太随便的语气","写太长导致时间不够、来不及检查"],
-      practice:"写作 → 写邮件（11 题）", statKey:"write:email" },
+      practice:"写作 → 写邮件（14 题）", statKey:"write:email" },
     { name:"学术讨论 Write for an Academic Discussion", tests:"回应教授的问题和两位同学的帖子，考观点表达、论证、与他人观点的互动和语言。",
       points:["开头就亮出立场","点名回应同学的观点（同意或反驳）","理由加具体例子，提出同学没说过的新角度"],
       traps:["只复述同学的观点，没有新内容","通篇只有观点、没有例子","少于 100 词"],
-      practice:"写作 → 学术讨论（11 题）", statKey:"write:disc" }
+      practice:"写作 → 学术讨论（14 题）", statKey:"write:disc" }
   ]},
   { id:"speaking", name:"口语", route:"speaking", tasks:[
     { name:"听后复述 Listen and Repeat", tests:"听一句话后原样复述，句子由短到长，考听辨、短时记忆、发音和语法结构。",
       points:["完整保留冠词、介词和词尾（-s、-ed）","长句先抓意群：主语 + 动词 + 宾语，再补修饰成分","语调和停顿尽量贴近原句"],
       traps:["只记住了意思，换成自己的说法","漏掉 the、a、of、to 等小词","长句后半部分记不住就放弃，能说多少说多少更好"],
-      practice:"口语 → 听后复述（9 套 63 句）", statKey:"speak:repeat" },
+      practice:"口语 → 听后复述（12 套 84 句）", statKey:"speak:repeat" },
     { name:"模拟面试 Take an Interview", tests:"回答研究者的 4 个问题，没有准备时间，考流利度、语言使用和内容展开。",
       points:["问题通常由浅入深：个人经历 → 偏好 → 观点 → 社会或未来","45 秒结构：直接回答 → 理由 → 例子 → 收尾","保持连贯，适当使用连接词"],
       traps:["开头停顿太久","只说观点、没有例子，时间没用完","背模板却答非所问"],
-      practice:"口语 → 模拟面试（11 套 44 题）", statKey:"speak:interview" }
+      practice:"口语 → 模拟面试（14 套 56 题）", statKey:"speak:interview" }
   ]}
 ];
 
@@ -112,17 +112,17 @@ const IELTS_SECTIONS = [
     { name:"Task 1 图表描述", tests:"描述图表、表格、流程图或地图中的信息，至少 150 词，建议用 20 分钟。评分看任务完成度、连贯与衔接、词汇、语法四项。",
       points:["写一段概述（overview），点出最主要的趋势或特征","挑选关键数据进行比较，不用罗列每个数字","准确表达变化和比较：rise sharply、remain stable、twice as high as"],
       traps:["没有概述段","加入个人观点或猜测原因","数据写错，或时态和图表时间不一致"],
-      practice:"写作 → Task 1（8 道：折线、柱状、饼图、表格、流程图）", statKey:"iwrite:1" },
+      practice:"写作 → Task 1（10 道：折线、柱状、饼图、表格、流程图）", statKey:"iwrite:1" },
     { name:"Task 2 议论文", tests:"就一个观点或问题写议论文，至少 250 词，建议用 40 分钟。分值是 Task 1 的两倍。",
       points:["先判断题目类型：是否同意、讨论双方观点、问题与解决、利弊分析","立场明确并贯穿全文","每个主体段一个中心论点，配解释和例子"],
       traps:["只回答了题目的一部分","堆砌背好的模板句，和题目关系不大","少于 250 词"],
-      practice:"写作 → Task 2（11 道，五种题型）· 60 分钟完整模拟", statKey:"iwrite:2" }
+      practice:"写作 → Task 2（14 道，五种题型）· 60 分钟完整模拟", statKey:"iwrite:2" }
   ]},
   { id:"speaking", name:"口语", route:"ispeaking", tasks:[
     { name:"口语 Speaking", tests:"与考官面对面交流，全程录音。Part 1 约 4–5 分钟，回答家乡、学习、爱好等日常问题；Part 2 拿到话题卡，准备 1 分钟后讲 1–2 分钟；Part 3 约 4–5 分钟，围绕 Part 2 的话题深入讨论。评分看流利与连贯、词汇、语法、发音四项。",
       points:["Part 1 每题展开两三句，不只回答 yes / no","Part 2 用准备时间记关键词，按卡片上的提示讲满两分钟","Part 3 给出观点、理由和例子，可以比较过去和现在、推测未来"],
       traps:["Part 2 讲一分钟就没话了","明显背诵的答案，考官会换问题","为了用难词而影响流利度"],
-      practice:"口语 → Part 1（16 个话题）· Part 2 话题卡（13 张）· Part 3 讨论（13 组）· 完整模拟", statKey:"ispeak" }
+      practice:"口语 → Part 1（20 个话题）· Part 2 话题卡（16 张）· Part 3 讨论（16 组）· 完整模拟", statKey:"ispeak" }
   ]}
 ];
 const EXAM_GUIDE = {

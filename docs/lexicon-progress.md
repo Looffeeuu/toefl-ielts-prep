@@ -4,9 +4,9 @@
 
 | 项目 | 已核对 | 尚待核对 |
 | --- | ---: | ---: |
-| 释义与词性 | 6976 | 2099 |
-| 英美音与主要分读 | 6977 | 2098 |
-| 两项均完成 | 6971 | 2104 |
+| 释义与词性 | 7076 | 1999 |
+| 英美音与主要分读 | 7077 | 1998 |
+| 两项均完成 | 7071 | 2004 |
 
 每词分别保存来源和日期，不能用核对音标代替核对释义。完整状态和接续队列见 [lexicon-progress.json](lexicon-progress.json)。优先处理缺失、截断、词性矛盾和用法标记，再按字母顺序推进。未找到可靠来源的条目保持待核对，不推测填充。
 
@@ -663,6 +663,12 @@ node tools/lexicon_progress.js
 待复核：ultrasonics。OALD /definition/english/ultrasonics 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/ultrasonics)。不计入完成数。
 待复核：spectra。OALD /definition/english/spectra 页面无可用义项（复数形式），待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/spectra)。不计入完成数。
 
+## 批次 072
+
+完成 100 词：advertising、Africa、African、America、American、charm、chase、cheer、cheese、chemistry、chew、child、chin、Chinese、chocolate、church、city、class、classic、classical、classroom、clever、click、client、clock、closet、cloth、clothes、club、coastal、cocaine、code、coffee、collection、college、color、column、combat、come、comfortable、common、competitive、compliance、computer、concentrate、concern、conclusion、consent、contest、contribution、control、cooking、cop、corporate、corporation、correspondent、cost、costly、cottage、couch、council、country、course、cream、create、creation、crime、criminal、crisis、cruise、cultural、cup、cute、cycle、daily、damage、dancer、danger、dark、data、database、day、deadline、dean、decade、December、decision、defendant、degree、deliver、delivery、denial、department、depth、description、designer、desk、detail、detailed、development。雅思（i1）队列 100 词，来源改用 OALD（剑桥网站对自动访问启用安全验证）。英音取 OALD 英式、美音取同页北美 IPA，逐字照录。
+
+
+
 ## 发布节奏
 
-每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 0 词，距下次发布还差 1000 词。发布基线为 3abf5e5f873868ad549418738053e29033007111，当时两项均核对 6971 词；当前页面显示本地核对进度，不表示已上线。
+每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 100 词，距下次发布还差 900 词。发布基线为 3abf5e5f873868ad549418738053e29033007111，当时两项均核对 6971 词；当前页面显示本地核对进度，不表示已上线。

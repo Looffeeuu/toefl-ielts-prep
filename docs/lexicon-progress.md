@@ -4,9 +4,9 @@
 
 | 项目 | 已核对 | 尚待核对 |
 | --- | ---: | ---: |
-| 释义与词性 | 7376 | 1699 |
-| 英美音与主要分读 | 7376 | 1699 |
-| 两项均完成 | 7371 | 1704 |
+| 释义与词性 | 7476 | 1599 |
+| 英美音与主要分读 | 7475 | 1600 |
+| 两项均完成 | 7471 | 1604 |
 
 每词分别保存来源和日期，不能用核对音标代替核对释义。完整状态和接续队列见 [lexicon-progress.json](lexicon-progress.json)。优先处理缺失、截断、词性矛盾和用法标记，再按字母顺序推进。未找到可靠来源的条目保持待核对，不推测填充。
 
@@ -688,6 +688,14 @@ node tools/lexicon_progress.js
 
 
 
+## 批次 076
+
+完成 100 词：mind、minister、missile、mixture、model、modern、Monday、money、month、mortgage、most、mother、mount、mountain、movie、museum、music、musical、mutter、nasty、national、native、nature、network、newspaper、night、nightmare、noise、notebook、nothing、November、nowhere、object、ocean、October、office、officer、oil、on、once、one、opening、opt、order、ordinary、organ、organization、otherwise、overseas、owe、ownership、pad、pair、palace、palm、pant、paper、parent、parental、park、parking、part、pass、pattern、pay、peel、pence、penny、pension、per、person、personal、phone、physical、physically、piano、pick、picture、pie、pin、pink、place、placement、plan、planner、planning、plant、player、pleasant、plus、pocket、point、poke、police、policy、political、pop、population、porch、port。雅思（i1）队列 100 词，来源改用 OALD（剑桥网站对自动访问启用安全验证）。英音取 OALD 英式、美音取同页北美 IPA，逐字照录。
+
+待复核：neighboring。OALD 以 neighbouring 立目，美式拼写待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/neighboring)。不计入完成数。
+待复核：Olympic。OALD 无 Olympic 独立词条（仅 the Olympic Games），待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/olympic)。不计入完成数。
+待复核：percent。OALD 以 per cent 立目，美式拼写待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/percent)。不计入完成数。
+
 ## 发布节奏
 
-每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 400 词，距下次发布还差 600 词。发布基线为 3abf5e5f873868ad549418738053e29033007111，当时两项均核对 6971 词；当前页面显示本地核对进度，不表示已上线。
+每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 500 词，距下次发布还差 500 词。发布基线为 3abf5e5f873868ad549418738053e29033007111，当时两项均核对 6971 词；当前页面显示本地核对进度，不表示已上线。

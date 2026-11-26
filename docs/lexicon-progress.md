@@ -4,9 +4,9 @@
 
 | 项目 | 已核对 | 尚待核对 |
 | --- | ---: | ---: |
-| 释义与词性 | 8075 | 1000 |
-| 英美音与主要分读 | 8071 | 1004 |
-| 两项均完成 | 8071 | 1004 |
+| 释义与词性 | 8174 | 901 |
+| 英美音与主要分读 | 8171 | 904 |
+| 两项均完成 | 8171 | 904 |
 
 每词分别保存来源和日期，不能用核对音标代替核对释义。完整状态和接续队列见 [lexicon-progress.json](lexicon-progress.json)。优先处理缺失、截断、词性矛盾和用法标记，再按字母顺序推进。未找到可靠来源的条目保持待核对，不推测填充。
 
@@ -739,6 +739,13 @@ node tools/lexicon_progress.js
 待复核：sleeping。OALD 无 sleeping 独立词条（为 sleep 的变化形式），待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/sleeping)。不计入完成数。
 待复核：traveling。OALD 以英式拼写 travelling 立目，美式拼写待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/traveling)。不计入完成数。
 
+## 批次 083
+
+完成 100 词：unhealthy、unilateral、unrest、usage、velvet、vengeance、verge、vice、vicious、videotape、visa、visualize、vocabulary、vomit、voucher、vow、waiter、waitress、warden、wardrobe、warming、washing、waterfall、wedge、wetland、whereby、whirl、whistle、wicked、width、withhold、worship、worthwhile、wrestle、yoga、zoo、Alaska、amends、childcare、coerce、cola、commonwealth、commotion、complexion、condolence、conducive、congruent、conqueror、cork、cot、coupon、coward、crease、crocodile、deadlock、dearth、decipher、deduce、deduct、deflate、delinquency、deluge、departmental、depletion、derelict、dilapidated、din、disable、disco、dispel、distil、dole、doubtless、downpour、drench、duly、elastic、elated、electrician、enrolment、envisage、evict、exceedingly、exhort、expend、expulsion、eyesight、fallacy、filth、flask、fluff、forestry、forfeit、gaudy、gaunt、geology、ghastly、glimmer、glitter、gloss。雅思（i2）队列 100 词，来源改用 OALD（剑桥网站对自动访问启用安全验证）。英音取 OALD 英式、美音取同页北美 IPA，逐字照录。
+
+待复核：birds。OALD 无 birds 独立词条（为 bird 的复数形式），待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/birds)。不计入完成数。
+待复核：forbes。OALD 无 forbes 词条（专有名词），待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/forbes)。不计入完成数。
+
 ## 发布节奏
 
-每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 100 词，距下次发布还差 900 词。发布基线为 9b6992bc91b23ec22ca1b43a94aaf02b42b5040c，当时两项均核对 7971 词；当前页面显示本地核对进度，不表示已上线。
+每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 200 词，距下次发布还差 800 词。发布基线为 9b6992bc91b23ec22ca1b43a94aaf02b42b5040c，当时两项均核对 7971 词；当前页面显示本地核对进度，不表示已上线。

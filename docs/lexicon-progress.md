@@ -4,9 +4,9 @@
 
 | 项目 | 已核对 | 尚待核对 |
 | --- | ---: | ---: |
-| 释义与词性 | 7776 | 1299 |
-| 英美音与主要分读 | 7771 | 1304 |
-| 两项均完成 | 7771 | 1304 |
+| 释义与词性 | 7876 | 1199 |
+| 英美音与主要分读 | 7871 | 1204 |
+| 两项均完成 | 7871 | 1204 |
 
 每词分别保存来源和日期，不能用核对音标代替核对释义。完整状态和接续队列见 [lexicon-progress.json](lexicon-progress.json)。优先处理缺失、截断、词性矛盾和用法标记，再按字母顺序推进。未找到可靠来源的条目保持待核对，不推测填充。
 
@@ -715,6 +715,12 @@ node tools/lexicon_progress.js
 
 待复核：boots。OALD 无 boots 独立词条（为 boot 的复数），待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/boots)。不计入完成数。
 
+## 批次 080
+
+完成 100 词：despair、dial、dine、diploma、directory、disagreement、discrepancy、disguise、distraction、dividend、dome、dressing、dropout、dub、Easter、editorial、Egyptian、embargo、embark、embassy、emperor、empirical、ending、ensue、enthusiastic、envy、errand、exacerbate、expectancy、fabulous、farewell、farming、feast、federation、fellowship、fend、fetch、finite、flank、fling、flirt、flu、flutter、folder、forthcoming、foyer、freak、fridge、fry、fulfil、fuss、gamble、generic、geography、giggle、glow、gown、grammar、grate、gravel、grid、grill、grit、groan、growl、guardian、handling、havoc、hawk、heading、heap、heartbeat、heater、hedge、heroine、hobby、hop、hose、hospitality、hound、hum、hysterical、idle、imperial、inaccurate、incoming、indulge、inference、infinite、injection、inquire、instalment、insure、interim、interviewer、ivory、jagged、jam、junk、justification。雅思（i2）队列 100 词，来源改用 OALD（剑桥网站对自动访问启用安全验证）。英音取 OALD 英式、美音取同页北美 IPA，逐字照录。
+
+待复核：enrollment。OALD 以 enrolment 立目，美式拼写待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/enrollment)。不计入完成数。
+
 ## 发布节奏
 
-每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 800 词，距下次发布还差 200 词。发布基线为 3abf5e5f873868ad549418738053e29033007111，当时两项均核对 6971 词；当前页面显示本地核对进度，不表示已上线。
+每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 900 词，距下次发布还差 100 词。发布基线为 3abf5e5f873868ad549418738053e29033007111，当时两项均核对 6971 词；当前页面显示本地核对进度，不表示已上线。

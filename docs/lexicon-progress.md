@@ -4,9 +4,9 @@
 
 | 项目 | 已核对 | 尚待核对 |
 | --- | ---: | ---: |
-| 释义与词性 | 8473 | 602 |
-| 英美音与主要分读 | 8471 | 604 |
-| 两项均完成 | 8471 | 604 |
+| 释义与词性 | 8572 | 503 |
+| 英美音与主要分读 | 8571 | 504 |
+| 两项均完成 | 8571 | 504 |
 
 每词分别保存来源和日期，不能用核对音标代替核对释义。完整状态和接续队列见 [lexicon-progress.json](lexicon-progress.json)。优先处理缺失、截断、词性矛盾和用法标记，再按字母顺序推进。未找到可靠来源的条目保持待核对，不推测填充。
 
@@ -769,6 +769,12 @@ node tools/lexicon_progress.js
 
 
 
+## 批次 087
+
+完成 100 词：superintend、superstructure、teeth、telex、tenable、tenancy、thesaurus、toddle、transfuse、transgress、treble、trinity、tropic、truant、tweezers、typhoon、ungainly、unsocial、up-to-date、versed、water-clock、weekdays、westerner、wreathe、x-ray、zoology、cities、clients、clubs、colleges、computers、concessions、costs、countries、cramming、cups、damages、decorations、details、difficulties、diplomas、diseases、doctors、duties、emergencies、energies、engineers、examples、exams、experiments、factories、falcons、families、farms、features、fees、ferries、filmed、forms、governments、groups、guests、habits、hats、hits、hobbies、horses、ideas、insects、institutes、interviews、items、jobs、keys、kits、lakes、levels、libraries、lights、machines、mails、materials、meals、measurements、methods、movies、nationalities、newspapers、occupants、papers、parents、patterns、pennies、photocopies、pictures、places、planners、plants、positions、precautions。雅思（i3/i4）队列（含变形词：来源指向 OALD 原形词条，读音由原形音标加规则词尾推导） 100 词，来源改用 OALD（剑桥网站对自动访问启用安全验证）。英音取 OALD 英式、美音取同页北美 IPA，逐字照录。
+
+
+
 ## 发布节奏
 
-每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 500 词，距下次发布还差 500 词。发布基线为 9b6992bc91b23ec22ca1b43a94aaf02b42b5040c，当时两项均核对 7971 词；当前页面显示本地核对进度，不表示已上线。
+每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 600 词，距下次发布还差 400 词。发布基线为 9b6992bc91b23ec22ca1b43a94aaf02b42b5040c，当时两项均核对 7971 词；当前页面显示本地核对进度，不表示已上线。

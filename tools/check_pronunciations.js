@@ -19,7 +19,17 @@ for(const r of reviews){
   // A spelling variant may cite a dictionary's explicitly documented headword.
   if(r.sourceHeadword) assert.equal({'baby-sitter':'babysitter','bowlegged':'bow-legged'}[r.w],r.sourceHeadword,`undocumented spelling alias: ${r.w}`);
   if(r.source.startsWith('https://www.collinsdictionary.com/')) assert.equal(r.source,'https://www.collinsdictionary.com/dictionary/english/'+(r.sourceHeadword||r.w));
-  else if(r.source.startsWith('https://www.oxfordlearnersdictionaries.com/')) assert.equal(r.source,'https://www.oxfordlearnersdictionaries.com/definition/english/'+r.w.toLowerCase());
+  else if(r.source.startsWith('https://www.oxfordlearnersdictionaries.com/')){
+    // An inflected form with no OALD page of its own (user decision 2026-11-26) cites its base headword;
+    // its IPA is the base's verbatim OALD IPA plus a regular ending, and every reading label says so.
+    if(r.baseHeadword){
+      assert.match(r.baseHeadword,/^[a-z][a-z' -]*$/,`bad base headword: ${r.w}`);
+      assert.notEqual(r.baseHeadword,r.w.toLowerCase());
+      assert.equal(r.source,'https://www.oxfordlearnersdictionaries.com/definition/english/'+r.baseHeadword.replace(/ /g,'-'));
+      assert(r.baseReadings&&r.baseReadings.length,`missing base readings: ${r.w}`);
+      for(const p of r.readings) assert(p.label.includes('原形 '+r.baseHeadword)&&p.label.includes('推导'),`undisclosed derivation: ${r.w}`);
+    } else assert.equal(r.source,'https://www.oxfordlearnersdictionaries.com/definition/english/'+r.w.toLowerCase());
+  }
   else assert.match(r.source, new RegExp('^https://dictionary\\.cambridge\\.org/(us/)?(?:pronunciation|dictionary)/english/'+(r.sourceHeadword||r.w.toLowerCase())+'$'));
   assert.match(r.checkedOn, /^\d{4}-\d{2}-\d{2}$/);
   for(const p of r.readings){

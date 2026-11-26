@@ -67,7 +67,23 @@ part1: [
   { id:"p1-holidays", name:"假期", en:"Holidays",
     intro:"Let's talk about holidays.",
     qs:["What did you do during your last holiday?","Do you prefer relaxing holidays or busy ones?","Who do you usually spend your holidays with?","Is there a place you would like to visit on a future holiday?"],
-    hint:"第一题用过去时讲具体的事，不要只说 I stayed at home。最后一题用 I'd love to … because …，给一个具体理由。" }
+    hint:"第一题用过去时讲具体的事，不要只说 I stayed at home。最后一题用 I'd love to … because …，给一个具体理由。" },
+  { id:"p1-films", name:"电影与电视", en:"Films and TV",
+    intro:"Let's talk about films and television.",
+    qs:["How often do you watch films?","Do you prefer watching films at home or at the cinema?","What kind of TV programmes did you watch as a child?","Do you think people watch too much TV nowadays?"],
+    hint:"说一部具体的电影或节目比泛泛地说类型更好。二选一题给出选择和一两个理由。小时候的问题用过去时或 used to。" },
+  { id:"p1-festivals", name:"节日", en:"Festivals",
+    intro:"I'd like to ask you about festivals.",
+    qs:["What is the most important festival in your country?","What do people usually do during this festival?","Has the way people celebrate it changed?","Do you prefer celebrating festivals with family or friends?"],
+    hint:"介绍节日时说一两个具体习俗（吃什么、做什么），不要只说名字。变化题可以对比过去和现在：Nowadays, more people… whereas in the past…。" },
+  { id:"p1-parks", name:"公园", en:"Parks",
+    intro:"Let's talk about parks.",
+    qs:["Is there a park near where you live?","How often do you go to parks?","What do people usually do in parks in your city?","Do you think cities need more parks?"],
+    hint:"描述公园时给一两个细节（湖、跑道、老人下棋）。最后一题给观点并说理由，比如健康、空气、孩子玩耍的地方。" },
+  { id:"p1-handwriting", name:"手写", en:"Handwriting",
+    intro:"Now I'd like to talk about handwriting.",
+    qs:["Do you often write by hand?","Is your handwriting easy to read?","Did you learn to write neatly at school?","Do you think handwriting will become less important in the future?"],
+    hint:"可以诚实地说现在大多用电脑或手机打字，再补充什么时候还手写（笔记、贺卡）。预测题用 I suppose / It's likely that…。" }
 ],
 
 part2: [
@@ -161,6 +177,27 @@ part2: [
     hint:"用过去时讲一个完整的故事：时间地点 → 噪音来源 → 当时的感受（烦躁、睡不着、无法集中）→ 你怎么处理、结果如何。可以加一句现在回想起来的看法。",
     part3:{ theme:"noise and city life",
       qs:["What are the main sources of noise in cities?","Should there be laws to control noise?","Why do some people like noisy places, such as busy restaurants?","How can buildings be designed to reduce noise?"],
-      hint:"列举来源时分类：交通、施工、娱乐场所。法律类问题可以平衡个人自由和公共利益。设计类问题说一两个具体办法，比如双层玻璃、绿化带。" } }
+      hint:"列举来源时分类：交通、施工、娱乐场所。法律类问题可以平衡个人自由和公共利益。设计类问题说一两个具体办法，比如双层玻璃、绿化带。" } },
+  { id:"p2-city", name:"想去的城市", title:"Describe a city you would like to visit in the future.",
+    points:["which city it is","how you learned about it","what you would like to do there","and explain why you want to visit this city"],
+    follow:"Would you like to live in this city?",
+    hint:"用 I'd like to / I'm hoping to 讲计划，说两三件具体想做的事（看哪座建筑、吃什么、参加什么活动）。理由可以联系你的兴趣或专业。",
+    part3:{ theme:"tourism and cities",
+      qs:["Why do some cities attract more tourists than others?","What problems can tourism cause for local residents?","Is it better to travel independently or with a tour group?","How might tourism change in the future?"],
+      hint:"Part 3 讨论社会层面。问题类题目可以说两三个具体问题（房租上涨、拥挤、环境），再提一个解决办法。预测类题目用 will probably、is likely to。" } },
+  { id:"p2-waiting", name:"一次漫长的等待", title:"Describe a time when you had to wait a long time for something.",
+    points:["what you were waiting for","where you were","how long you waited","and explain how you felt while you were waiting"],
+    follow:"Are you usually a patient person?",
+    hint:"用过去时讲一个完整的故事：在等什么 → 为什么要等这么久 → 等的时候做了什么 → 心情变化 → 最后结果。可以加一句「现在回想起来」的感受。",
+    part3:{ theme:"patience and modern life",
+      qs:["Why are people less patient nowadays?","In what situations is it important to be patient?","Do you think children should be taught to be patient? How?","Has technology reduced the time people spend waiting?"],
+      hint:"原因类问题可以联系即时消息、网购当天送达等例子。观点类问题给出判断后说明原因，可以比较过去和现在。" } },
+  { id:"p2-older", name:"一位让你钦佩的长者", title:"Describe an older person you admire.",
+    points:["who this person is","how you know him or her","what this person does or has done","and explain why you admire this person"],
+    follow:"Do you spend much time with older people?",
+    hint:"选一位真实的人（祖父母、邻居、老师），讲一两件具体的事说明他身上的品质。不要只列形容词，用例子证明。",
+    part3:{ theme:"older people in society",
+      qs:["What can young people learn from older people?","How are older people treated in your country?","Should older people continue working after retirement age?","What are the advantages of living with grandparents?"],
+      hint:"可以从经验、价值观、生活技能等方面回答。比较不同国家或过去现在的做法，给出平衡的观点。" } }
 ]
 };

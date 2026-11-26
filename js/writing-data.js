@@ -17,7 +17,9 @@ sentenceTags: {
   "s-travel":"indirect,indirect,agreement,tense,nonfinite,modal,tense,modal,agreement,tense",
   "s-science":"relative,indirect,modal,collocation,passive,tense,indirect,nonfinite,agreement,modal",
   "s-housing":"nonfinite,indirect,modal,compare,relative,passive,agreement,tense,collocation,modal",
-  "s-research":"modal,indirect,tense,nonfinite,passive,compare,relative,tense,modal,agreement"
+  "s-research":"modal,indirect,tense,nonfinite,passive,compare,relative,tense,modal,agreement",
+  "s-exams":"tense,indirect,modal,compare,relative,passive,agreement,tense,nonfinite,tense",
+  "s-shopping":"modal,indirect,modal,compare,relative,passive,agreement,tense,collocation,agreement"
 },
 
 sentenceSets: [
@@ -116,6 +118,30 @@ Should we include all the charts in our report?|[I think] / we / should / only i
 Did you hear back from the journal?|[They] / said / they / would / make / [a decision next month].|will|主句是过去时 said，从句中 will 变成 would。
 I'm worried we won't get enough participants.|[We could] / offer / a small payment / to / [anyone who joins].|offering|could 后接动词原形 offer；offer sth. to sb.。
 Where are the safety goggles kept?|[They are] / kept / in / the cabinet / [next to the sink].|keep|goggles 是复数，be 动词用 are；被动语态 are kept。
+`},
+  { id:"s-exams", name:"考试与成绩", items:`
+I'm so nervous about tomorrow's exam.|[Have you] / reviewed / the practice questions / [the professor posted]?|review|现在完成时疑问句 Have you + 过去分词 reviewed。
+When will the grades be posted?|[I'm not sure] / when / they / will / [be available].|will they|间接疑问句用陈述语序 when they will be available；will they 是疑问语序。
+I failed the first quiz.|[You can] / still / pass / the course / [if you do well on the final].|passing|情态动词 can 后接动词原形 pass。
+Was the midterm harder than the quiz?|[It was] / much / more difficult / than / [I expected].|most|与 than 搭配用比较级 more difficult。
+Who got the highest score in the class?|[The student] / who / sits / next to / [the window].|which|先行词 the student 指人，关系代词用 who。
+Are the exam papers ready?|[They] / are being / printed / [right now].|printing|试卷是被印的，用现在进行时的被动语态 are being printed。
+Is everyone allowed to use a calculator?|[Every student] / is / allowed / to bring / [one calculator].|are|every student 作主语，谓语用单数 is。
+How long have you been studying for the test?|[I have been] / studying / since / [eight o'clock this morning].|for|since 接时间点；for 接一段时间。
+Should I take notes during the review session?|[It would] / be / a good idea / to write / [down the key points].|writing|it would be a good idea to do，to write 作真正的主语。
+Did the professor say anything about the final?|[She said] / it / would / cover / [all the chapters].|will|主句是过去时 said，从句里 will 变成 would。
+`},
+  { id:"s-shopping", name:"购物与生活服务", items:`
+These headphones stopped working after a week.|[Do you] / still / have / the receipt / [from the store]?|has|助动词 do 后接动词原形 have。
+I can't find the price on this jacket.|[Could you] / tell me / how much / it / [costs]?|does it cost|间接疑问句用陈述语序 how much it costs。
+The grocery store is out of milk again.|[You should] / try / the one / [on Main Street].|trying|情态动词 should 后接动词原形 try。
+Which phone plan is better?|[The second one] / is / cheaper / than / [the first].|cheapest|与 than 搭配用比较级 cheaper。
+I need a new laptop for school.|[The store] / that / I / told you about / [has a student discount].|who|先行词 the store 指物，关系代词用 that 或 which。
+Did you pick up your package?|[It] / was / delivered / to / [the wrong building].|delivering|包裹是被送的，用被动语态 was delivered。
+Everyone in my family loves this café.|[Neither of] / my roommates / has / tried / [it yet].|have|neither of 作主语时谓语通常用单数 has。
+How long have you had that bike?|[I] / bought / it / two years / [ago].|have bought|ago 表示过去的时间点，用一般过去时 bought。
+I keep forgetting to buy groceries.|[You could] / make / a list / on / [your phone].|making|could 后接动词原形 make；make a list 是固定搭配。
+Can you recommend a good place to get a haircut?|[I] / always / go / to the salon / [near the bank].|goes|主语是 I，一般现在时动词用原形 go。
 `}
 ],
 
@@ -295,7 +321,55 @@ Thank you for considering our invitation.
 
 Best regards,
 Sara Kim`,
-    phrases:["My name is ..., and I am ...","Our club has about ... members, and we ...","We would be honored if you could ...","A topic that many members are interested in is ...","Our meetings are held on ...","Would any ... be convenient for you?"] }
+    phrases:["My name is ..., and I am ...","Our club has about ... members, and we ...","We would be honored if you could ...","A topic that many members are interested in is ...","Our meetings are held on ...","Would any ... be convenient for you?"] },
+  { id:"e-reference", title:"请教授写推荐信", to:"Professor Lin, Department of Psychology",
+    scenario:"You are applying for a summer research program at another university. You took a course with Professor Lin last year and did well. Write an email to Professor Lin asking for a letter of recommendation.",
+    bullets:["Remind the professor who you are and which course you took.","Explain what the program is and why you are applying.","Give details about the deadline and what the professor would need to do."],
+    model:`Dear Professor Lin,
+
+I hope you are doing well. I am writing to ask whether you would be willing to write a letter of recommendation for me. I was a student in your Research Methods course last spring, and my final project on sleep and memory received an A.
+
+I am applying for a summer research program in cognitive science at Westfield University because I hope to study memory further. Moreover, the program would allow me to work in a laboratory for ten weeks, which I believe would help me prepare for graduate school.
+
+The deadline for letters is March 15. If you agree, the program will send you a link to upload the letter online. In addition, I would be happy to send you my résumé and a copy of my project to remind you of my work.
+
+Thank you very much for considering my request.
+
+Best regards,
+Hana Sato`,
+    phrases:["I am writing to ask whether you would be willing to ...","I was a student in your ... course last ...","I am applying for ...","The program would allow me to ...","The deadline for ... is ...","I would be happy to send you ..."] },
+  { id:"e-order", title:"投诉网购商品损坏", to:"Customer Service, BrightHome Online Store",
+    scenario:"You recently ordered a desk lamp from an online store. When it arrived, it was damaged. Write an email to the store's customer service department.",
+    bullets:["Describe what you ordered and what was wrong with it.","Explain how this has affected you.","Say what you would like the store to do."],
+    model:`Dear Customer Service Team,
+
+I am writing about order number 48213, a white desk lamp that I bought from your website on October 3. Unfortunately, when the package arrived yesterday, the glass shade was cracked, and the lamp did not turn on when I plugged it in.
+
+I bought this item because my room is quite dark and I need good light for studying in the evening. As a result, I have had to work at the kitchen table, which is noisy and uncomfortable.
+
+Therefore, I would like to ask for a replacement to be sent as soon as possible. However, if the same model is no longer available, I would prefer a full refund. I have attached two photos of the damage.
+
+Thank you for your help. I look forward to your reply.
+
+Sincerely,
+Carlos Mendes`,
+    phrases:["I am writing about order number ...","Unfortunately, when the package arrived, ...","As a result, I have had to ...","I would like to ask for a replacement ...","If ... is no longer available, I would prefer ...","I have attached ..."] },
+  { id:"e-summer", title:"向朋友推荐暑期课程", to:"Jordan (a friend)",
+    scenario:"Your friend Jordan wants to improve their English speaking skills this summer. You took a summer conversation course last year and enjoyed it. Write an email to Jordan.",
+    bullets:["Describe the course you took.","Explain why you think it would be useful for Jordan.","Give Jordan advice about signing up."],
+    model:`Hi Jordan,
+
+Thanks for your message! I am writing because you said you want to practice speaking English this summer, and I know a course that would be perfect for you.
+
+Last July, I took the Summer Conversation Club at the city language center. It meets three evenings a week, and each class has only eight students, so everyone gets plenty of time to talk. In addition, the teachers organize trips to museums and markets where you practice with real people.
+
+I think it would really help you because you already know a lot of grammar, but you said you feel shy when speaking. The small groups made me much more confident.
+
+However, the classes fill up quickly, so I suggest you register online before the end of April. Let me know if you want to go together!
+
+Take care,
+Mina`,
+    phrases:["Thanks for your message!","I know a course that would be perfect for you.","It meets ... a week, and ...","I think it would really help you because ...","The classes fill up quickly, so I suggest you ...","Let me know if ..."] }
 ],
 
 discussions: [
@@ -386,6 +460,30 @@ discussions: [
       { name:"Tyler", post:"Without grades, I think a lot of students would just do the minimum. Grades show who worked hard. Also, graduate schools and employers need a way to tell students apart." }
     ],
     model:`Although Tyler makes a fair point about motivation, I believe Elena's idea is better, at least for the first year of university. Students arrive from very different high schools, and their first semester is often more about adjusting than about showing their true ability. A pass or fail system would let them focus on learning study skills instead of worrying about every point. For example, my cousin's university uses this system for first-year courses, and she told me it encouraged her to try a computer science class, which later became her major. To address Tyler's concern, universities could return to letter grades from the second year, so graduate schools and employers would still have plenty of information to compare applicants.`,
-    phrases:["Although ... makes a fair point about ..., I believe ...'s idea is better","at least for ...","A pass or fail system would let them ...","For example, my cousin's university ...","To address ...'s concern, universities could ..."] }
+    phrases:["Although ... makes a fair point about ..., I believe ...'s idea is better","at least for ...","A pass or fail system would let them ...","For example, my cousin's university ...","To address ...'s concern, universities could ..."] },
+  { id:"d-fourday", title:"公司是否应实行四天工作制", topic:"Business and Society",
+    professor:{ name:"Dr. Patel", post:"Several companies around the world have tested a four-day work week, in which employees work four days instead of five but receive the same pay. Supporters say workers become happier and more productive. Critics worry that customers will be served less well and that some jobs cannot be done in fewer days. Should more companies adopt a four-day work week? Why or why not?" },
+    students:[
+      { name:"Sophie", post:"I think it's a great idea. When people have an extra day to rest, they come back to work with more energy. Some trials have shown that companies produced just as much in four days as they did in five." },
+      { name:"Daniel", post:"It might work in offices, but what about hospitals, schools, or restaurants? Those places need people every day. A four-day week could make it harder to get services when we need them." }
+    ],
+    model:`I agree with Sophie that a four-day week can benefit many companies, although Daniel is right that it will not suit every workplace. In my opinion, the main advantage is that rested employees make fewer mistakes and are less likely to quit. For example, my uncle's software company switched to a four-day schedule last year, and he told me that productivity stayed the same while far fewer staff left. However, to address Daniel's concern, businesses that must operate every day could use a rotating schedule, so that different employees take different days off. In this way, customers would still be served, and workers would still enjoy a shorter week. Therefore, I believe companies should at least try it.`,
+    phrases:["I agree with ... that ..., although ... is right that ...","In my opinion, the main advantage is that ...","For example, my uncle's company ...","However, to address ...'s concern, ...","In this way, ..."] },
+  { id:"d-online", title:"大学应否扩大在线学位课程", topic:"Higher Education",
+    professor:{ name:"Dr. Lee", post:"Many universities now offer complete degree programs online. Supporters say online degrees make higher education available to people who cannot move or stop working. Others believe that an online degree cannot provide the same quality of education as studying on campus. Should universities expand their online degree programs? Explain your position." },
+    students:[
+      { name:"Aisha", post:"Online degrees are a huge opportunity. My mother is finishing her nursing degree online while working full time. She could never have quit her job to study on campus." },
+      { name:"Ben", post:"I'm not convinced. So much of university happens outside class, like talking to professors, joining clubs, and working in labs. It's hard to get those experiences through a screen." }
+    ],
+    model:`Although Ben raises a valid point about campus life, I side with Aisha that universities should expand online degree programs. The biggest benefit is access. Many adults have jobs, children, or live far from a university, and an online degree may be their only realistic option, as Aisha's mother shows. In addition, technology has improved a lot. For instance, some distance programs now include live video discussions and virtual office hours, so students can still interact with professors. However, I agree that subjects requiring hands-on work, such as chemistry, are harder to teach remotely. Therefore, universities could combine internet-based courses with short periods of in-person lab work. That way, they could reach more students without lowering the quality of education.`,
+    phrases:["Although ... raises a valid point about ..., I side with ... that ...","The biggest benefit is ...","In addition, ...","For instance, ...","However, I agree that ...","That way, ..."] },
+  { id:"d-pe", title:"高中是否应要求每年上体育课", topic:"Education and Health",
+    professor:{ name:"Dr. Brooks", post:"In some countries, high school students must take physical education classes every year. In others, PE is optional after the first year so that students have more time for academic subjects. Should high schools require physical education every year? Why or why not?" },
+    students:[
+      { name:"Leo", post:"Yes, definitely. Many teenagers spend most of the day sitting at a desk or looking at a phone. PE might be the only exercise some of them get. Being healthy also helps you focus in other classes." },
+      { name:"Nora", post:"I think it should be optional for older students. They have a lot of academic pressure, and some already play sports outside school. Forcing everyone into the same PE class doesn't make sense." }
+    ],
+    model:`I agree with Leo that physical education should be required every year, even though Nora makes a good point about academic pressure. In my view, regular exercise is not a distraction from learning but a support for it. For example, when my high school added a daily twenty-minute activity period, many students said they found it easier to concentrate in the afternoon. Moreover, teenagers who do not play sports outside school are exactly the ones who need PE the most. However, to address Nora's concern, schools could offer more choices for older students, such as yoga, dance, or hiking, instead of the same team sports for everyone. As a result, students would stay active while still having some control over their schedules.`,
+    phrases:["I agree with ... that ..., even though ... makes a good point about ...","In my view, ... is not ... but ...","For example, when my high school ...","Moreover, ...","However, to address ...'s concern, schools could ...","As a result, ..."] }
 ]
 };

@@ -100,6 +100,39 @@ window.REPEAT_SETS = [
       "Some of the trees in this area are more than two hundred years old.",
       "We collect rainwater from the roofs and use it to water the plants in summer.",
       "Visitors who want to learn more about growing vegetables at home can join the free workshop that we hold on the first Saturday of every month."
+    ]},
+  { id:"airport", name:"机场新生接待", en:"Airport Welcome Desk",
+    intro:"You are helping at the university's welcome desk at the airport. Listen to the coordinator and repeat what he says.",
+    items:[
+      "Welcome to the city.",
+      "The university bus leaves every hour.",
+      "Please keep your passport with you.",
+      "Your luggage will go in the back of the bus.",
+      "If you are hungry, there is a café just past the information desk.",
+      "Students arriving after ten at night should call the security office for a ride.",
+      "When you reach campus, go straight to the international student center, where staff will give you your room key and a welcome pack."
+    ]},
+  { id:"planetarium", name:"天文馆导览", en:"Planetarium Show",
+    intro:"You are training to work at a science museum's planetarium. Listen to the show director and repeat what she says.",
+    items:[
+      "The next show starts at noon.",
+      "Please turn off your phone before entering.",
+      "The seats lean back so you can see the dome.",
+      "Tonight's program is about the planets in our solar system.",
+      "Children under five may find the dark room a little frightening.",
+      "Latecomers will not be allowed inside once the lights have gone down.",
+      "After the show, visitors can look through the large telescope on the roof if the sky is clear and the weather is calm enough."
+    ]},
+  { id:"gym", name:"校园健身中心", en:"Campus Fitness Center",
+    intro:"You have a new job at the front desk of the campus fitness center. Listen to the manager and repeat what he says.",
+    items:[
+      "Show your card at the desk.",
+      "Towels are available near the lockers.",
+      "Please wipe the machines after you use them.",
+      "The swimming pool is closed for cleaning on Monday mornings.",
+      "Beginners can book a free session with one of our personal trainers.",
+      "Group fitness classes are popular, so students should sign up a day in advance.",
+      "If anyone feels unwell during exercise, call the first aid number on the wall and ask the person to sit down until help arrives."
     ]}
 ];
 
@@ -235,5 +268,41 @@ window.INTERVIEW_SETS = [
         hint:"从健康、花费、社交三个方面选两个展开，最后可以说「看情况」，但要给出你更偏向哪一边。" },
       { q:"Should governments put taxes on unhealthy foods like sugary drinks? Why or why not?",
         hint:"表明立场，讨论税收能否改变行为，以及对低收入家庭是否公平，举一个现实中的例子或可能的结果。" }
+    ]},
+  { id:"reading", name:"阅读与书籍", en:"Reading Habits",
+    intro:"Thank you for taking part in our survey about reading habits. I'd like to ask you a few questions.",
+    items:[
+      { q:"What kinds of things do you usually read in your free time?",
+        hint:"说出一两类具体内容（小说、新闻、漫画、专业文章），各配一个例子，再说一句你一般在什么时候读。" },
+      { q:"Tell me about a book or article that changed the way you think about something.",
+        hint:"简单说内容 → 读之前你怎么想 → 读完后有什么改变 → 现在的影响，用过去时讲清楚前后对比。" },
+      { q:"Some people think reading on screens is just as good as reading printed books. What do you think?",
+        hint:"选一边。可以从专注度、方便程度、眼睛疲劳等角度展开，承认另一边的一个优点再回到自己的立场。" },
+      { q:"Do you think young people today read less than in the past? Why?",
+        hint:"给出判断后说明原因（短视频、游戏、学业压力），也可以指出「读得少」和「读的形式变了」的区别。" }
+    ]},
+  { id:"stress", name:"压力与休息", en:"Stress and Rest",
+    intro:"We're interviewing students about stress and how they relax. I have a few questions for you.",
+    items:[
+      { q:"What usually makes you feel stressed?",
+        hint:"说一两个具体来源（考试、截止日期、人际关系），配一个最近的例子。" },
+      { q:"Describe something you do that helps you relax.",
+        hint:"说具体活动、做多久、为什么有效，最好加一次真实的经历。" },
+      { q:"Some people believe a little stress is good because it pushes people to work harder. Do you agree?",
+        hint:"可以有条件地同意：适度压力提高效率，过度压力影响健康。给出你自己的界限和例子。" },
+      { q:"What could universities do to help students manage stress?",
+        hint:"提出一两个具体措施（免费心理咨询、考试周安静空间、合理安排作业），说明各自的好处。" }
+    ]},
+  { id:"arts", name:"艺术与音乐", en:"Arts and Music",
+    intro:"Thank you for joining our study on the arts in everyday life. I'd like to hear your experiences and opinions.",
+    items:[
+      { q:"Do you have any artistic or musical hobbies?",
+        hint:"有就说清楚做什么、做了多久、为什么喜欢；没有就说你喜欢欣赏的艺术形式。" },
+      { q:"Tell me about a concert, exhibition, or performance you remember well.",
+        hint:"时间地点 → 看了什么 → 印象最深的细节 → 为什么难忘，多用描述感受的形容词。" },
+      { q:"Some people think art and music classes are less important than math and science. What is your view?",
+        hint:"表明立场，可以从创造力、情绪表达、就业需求等方面论证，举一个具体例子。" },
+      { q:"Should governments spend public money to support artists? Why or why not?",
+        hint:"给出观点后讨论好处（文化传承、旅游）和担忧（钱应该先用在医疗教育），最后提出一个折中方案。" }
     ]}
 ];

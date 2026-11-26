@@ -1,4 +1,4 @@
-// Batch071: 100 TOEFL f2/f4 words, OALD evidence and real card merges.
+// Batch071: 95 TOEFL f2/f4 words, OALD evidence and real card merges.
 const fs=require('fs'),path=require('path'),vm=require('vm'),assert=require('assert/strict');
 const root=path.join(__dirname,'..'),read=f=>fs.readFileSync(path.join(root,f),'utf8');
 const ctx={window:{},App:{}};vm.createContext(ctx);
@@ -11,7 +11,7 @@ const vocab=read('js/vocab.js');
 vm.runInContext(vocab.slice(0,vocab.indexOf('const BASE_N = WORDS.length;'))+'globalThis.words=BY;})();',ctx);
 const research=JSON.parse(read('docs/batch071-research.json'));
 const batch=ctx.window.LEXICON_REVIEW_BATCHES.find(b=>b.id==='071');
-assert.equal(batch.words.length,100);assert.equal(new Set(batch.words).size,100);
+assert.equal(batch.words.length,95);assert.equal(new Set(batch.words).size,95);
 assert.deepEqual(Array.from(batch.words),research.entries.map(e=>e.w));
 const f2=new Set(ctx.window.EXT_WORDS.split('\n').filter(l=>['f2','f4'].includes(l.split('\t')[4])).map(l=>l.split('\t')[0]));
 const OALD='https://www.oxfordlearnersdictionaries.com/definition/english/';
@@ -33,7 +33,7 @@ for(const e of research.entries){
   assert(!examples.has(example),'duplicate example: '+example);examples.add(example);senses++;
  }
 }
-assert.equal(senses,research.counts.senses);assert.equal(research.counts.completed,100);
+assert.equal(senses,research.counts.senses);assert.equal(research.counts.completed,95);
 const readings=w=>ctx.words[w].pronunciationReview.readings;
 for(const [w,uk,us] of [["tensile", "ˈtensaɪl", "ˈtensl"], ["time-consuming", "ˈtaɪm kənsjuːmɪŋ", "ˈtaɪm kənsuːmɪŋ"], ["prohibitively", "prəˈhɪbətɪvli", "prəʊˈhɪbətɪvli"], ["per capita", "pə ˈkæpɪtə", "pər ˈkæpɪtə"]])
  assert(readings(w).some(r=>r.uk===uk&&r.us===us),w);
@@ -46,4 +46,4 @@ for(const d of batch.deferred){assert(progress.queue.includes(d.w));assert(!ctx.
 assert.equal((html.match(/src="js\/lexicon-review-071\.js/g)||[]).length,1);
 assert(html.indexOf('js/lexicon-review-033.js')<html.indexOf('js/lexicon-review-071.js'));
 assert(html.indexOf('js/lexicon-review-071.js')<html.indexOf('js/pronunciation.js'));
-console.log(`Batch071: 100 TOEFL f2/f4 words, ${senses} original sense examples, OALD DOM evidence, card merges, heteronym readings and 42 deferred words passed.`);
+console.log(`Batch071: 95 TOEFL f2/f4 words, ${senses} original sense examples, OALD DOM evidence, card merges, heteronym readings and 42 deferred words passed.`);

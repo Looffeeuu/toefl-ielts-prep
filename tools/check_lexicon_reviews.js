@@ -13,7 +13,8 @@ const irregular=new Map(ctx.window.IRREGULAR_VERBS.trim().split(/\r?\n/).map(l=>
 for(const batch of ctx.window.LEXICON_REVIEW_BATCHES){
   // User explicitly requested the final 109 core words together in batch 016.
   // Batch033 completes the final 41 TOEFL high-frequency words.
-  if(batch.id!=='001') assert.equal(batch.words.length,batch.id==='016'?109:batch.id==='033'?41:100,`unexpected batch size: ${batch.id}`);
+  // User approved batch071 as the final 95 reviewable TOEFL f4 words; the rest are deferred.
+  if(batch.id!=='001') assert.equal(batch.words.length,batch.id==='016'?109:batch.id==='033'?41:batch.id==='071'?95:100,`unexpected batch size: ${batch.id}`);
   for(const w of batch.words){
     assert(!checked.has(w),`duplicate batch word: ${w}`);checked.add(w);
     const d=ctx.window.DEFINITION_REVIEWS.find(r=>r.w===w);

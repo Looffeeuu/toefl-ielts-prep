@@ -3,15 +3,15 @@
   "scope": "全部内置词条的来源和结构一致性；仅 dictionary-reviewed 条目经过本轮外部词典核对。其他候选不能据此判定为虚假或正确。",
   "total": 9075,
   "sources": {
-    "dictionary-reviewed": 7176,
+    "dictionary-reviewed": 7276,
     "editorial-unverified": 85,
-    "ecdict-derived": 1814
+    "ecdict-derived": 1714
   },
   "flagCounts": {
     "missing-pos": 23,
     "usage-label-review": 5,
     "sense-pos-mismatch": 13,
-    "possible-truncation": 9
+    "possible-truncation": 8
   },
   "entries": [
     {
@@ -44813,26 +44813,34 @@
     },
     {
       "word": "fish",
-      "pos": "n./vt.",
-      "definition": "n. 鱼，鱼肉，鱼类，接合板　vt. 钓，钓鱼，查出，用接合板连接",
-      "origin": "ecdict-derived",
+      "pos": "n./v.",
+      "definition": "n. 鱼；鱼肉；v. 捕鱼、钓鱼；（在某水域）捕鱼；摸索、搜寻",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/fish",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/fish",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/fish_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/fish_2"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
       "word": "fishing",
-      "pos": "n./adj.",
-      "definition": "n. 钓鱼，鱼业　adj. 钓鱼的",
-      "origin": "ecdict-derived",
+      "pos": "n.",
+      "definition": "n. 钓鱼、捕鱼；渔业",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/fishing",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/fishing"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -45355,13 +45363,18 @@
     {
       "word": "fleet",
       "pos": "n./adj.",
-      "definition": "n. 舰队，港湾，小河　adj. 快速的，敏捷的，浅的，短暂的",
-      "origin": "ecdict-derived",
+      "definition": "n. 舰队；船队；（同属一家公司的）车队、机群；adj. （文学）快速的、敏捷的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/fleet",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/fleet",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/fleet_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/fleet_2"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -45381,17 +45394,19 @@
     },
     {
       "word": "flesh",
-      "pos": "n./vt.",
-      "definition": "n. 肉，肉体，肉欲，人性　vt. 以肉喂，激起...的杀戳情绪，使肥，赋以血肉",
-      "origin": "ecdict-derived",
+      "pos": "n.",
+      "definition": "n. （人、动物的）肉；肌肤、皮肉；果肉；（与精神相对的）肉体",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
-      "flags": [
-        "possible-truncation"
-      ]
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/flesh",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/flesh",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/flesh_1"
+      ],
+      "checkedOn": "2026-11-26",
+      "flags": []
     },
     {
       "word": "flexibility",
@@ -45448,14 +45463,19 @@
     },
     {
       "word": "flight",
-      "pos": "n./vi.",
-      "definition": "n. 飞行，射程，逃走，飞跃　vi. 迁徙",
-      "origin": "ecdict-derived",
+      "pos": "n./v.",
+      "definition": "n. 航班、班机；空中旅行；飞行；（一段）楼梯；逃跑；v. （体育）使（球）飞越、高抛",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/flight",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/flight",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/flight_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/flight_2"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -45726,14 +45746,19 @@
     },
     {
       "word": "flower",
-      "pos": "n./vi.",
-      "definition": "n. 花，开花植物，精华，盛时　vi. 开花，发育，旺盛，成熟",
-      "origin": "ecdict-derived",
+      "pos": "n./v.",
+      "definition": "n. 花、花朵；花卉；（文学）精华；v. 开花；发展、繁荣",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/flower",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/flower",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/flower_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/flower_2"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -45908,14 +45933,20 @@
     },
     {
       "word": "fly",
-      "pos": "n./vi.",
-      "definition": "n. 苍蝇，两翼昆虫，飞行　vi. 飞，飞翔，飘扬，逃走",
-      "origin": "ecdict-derived",
+      "pos": "v./n./adj.",
+      "definition": "v. 飞、飞行；乘飞机旅行；驾驶（飞机）；（旗）飘扬；飞跑、疾驰；n. 苍蝇；（钓鱼用的）假蝇；（英，也作复数）裤子前开口；adj. （非正式）机灵的；时髦的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/fly",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/fly",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/fly_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/fly_2",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/fly_3"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -46183,13 +46214,16 @@
     {
       "word": "food",
       "pos": "n.",
-      "definition": "食物，养料",
-      "origin": "ecdict-derived",
+      "definition": "n. 食物、食品；（引人思考的）材料",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/food",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/food"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -46209,14 +46243,19 @@
     },
     {
       "word": "foot",
-      "pos": "n./vt.",
-      "definition": "n. 脚，步调，英尺，底部　vt. 走在...上，给...换底，支付",
-      "origin": "ecdict-derived",
+      "pos": "n./v.",
+      "definition": "n. 脚、足；底部、末端；英尺；v. （非正式）支付（账单）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/foot",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/foot",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/foot_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/foot_2"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -46412,13 +46451,16 @@
     {
       "word": "foreign",
       "pos": "adj.",
-      "definition": "外国的，外交的，外省的，外来的",
-      "origin": "ecdict-derived",
+      "definition": "adj. 外国的；对外的、外交的；（正式）陌生的、不熟悉的；外来的、异物的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/foreign",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/foreign"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -46500,14 +46542,17 @@
     },
     {
       "word": "forest",
-      "pos": "n./vt.",
-      "definition": "n. 森林，林区　vt. 植树于",
-      "origin": "ecdict-derived",
+      "pos": "n.",
+      "definition": "n. 森林、林区；（林立的）一大片",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/forest",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/forest"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -46583,14 +46628,17 @@
     },
     {
       "word": "forgive",
-      "pos": "vt.",
-      "definition": "原谅，宽恕，免除",
-      "origin": "ecdict-derived",
+      "pos": "v.",
+      "definition": "v. 原谅、宽恕；（客气用语）请原谅；免除（债务）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/forgive",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/forgive"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -46611,13 +46659,18 @@
     {
       "word": "form",
       "pos": "n./v.",
-      "definition": "n. 形状，形体，类型，方式　v. 形成，排列，(使)组成",
-      "origin": "ecdict-derived",
+      "definition": "n. 类型、种类；形式；表格；外形、形状；（英）年级；状态；v. 形成、产生；组成、构成；建立（关系、组织等）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/form",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/form",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/form_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/form_2"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -46965,13 +47018,16 @@
     {
       "word": "forum",
       "pos": "n.",
-      "definition": "论坛，公开讨论的广场，法庭，讨论会",
-      "origin": "ecdict-derived",
+      "definition": "n. 论坛、讨论会；网络论坛；（古罗马的）公共集会场所",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/forum",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/forum"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -47277,13 +47333,16 @@
     {
       "word": "France",
       "pos": "n.",
-      "definition": "法国",
-      "origin": "ecdict-derived",
+      "definition": "n. 法国",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/france",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/france"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -47407,13 +47466,16 @@
     {
       "word": "freedom",
       "pos": "n.",
-      "definition": "自由，坦率，特权",
-      "origin": "ecdict-derived",
+      "definition": "n. 自由；自由权；独立；免于（某种负担）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/freedom",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/freedom"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -47450,14 +47512,19 @@
     },
     {
       "word": "French",
-      "pos": "n./adj.",
-      "definition": "n. 法国人，法文，法式　adj. 法国的，法国人的，法语的",
-      "origin": "ecdict-derived",
+      "pos": "adj./n.",
+      "definition": "adj. 法国的；法国人的；法语的；n. 法语；（the French）法国人",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/french",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/french",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/french_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/french_2"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -47493,13 +47560,16 @@
     {
       "word": "frequency",
       "pos": "n.",
-      "definition": "频率，频数",
-      "origin": "ecdict-derived",
+      "definition": "n. 频率、发生率；频繁；（声波等的）频率",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/frequency",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/frequency"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -47588,13 +47658,16 @@
     {
       "word": "Friday",
       "pos": "n.",
-      "definition": "星期五",
-      "origin": "ecdict-derived",
+      "definition": "n. 星期五",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/friday",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/friday"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -47802,14 +47875,19 @@
     },
     {
       "word": "fruit",
-      "pos": "n.",
-      "definition": "水果，果类，结果",
-      "origin": "ecdict-derived",
+      "pos": "n./v.",
+      "definition": "n. 水果、果实；成果、结果；v. （植物）结果实",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/fruit",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/fruit",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/fruit_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/fruit_2"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -48036,14 +48114,19 @@
     },
     {
       "word": "function",
-      "pos": "n./vi.",
-      "definition": "n. 官能，职务，功能，函数　vi. 活动，运行，行使职责",
-      "origin": "ecdict-derived",
+      "pos": "n./v.",
+      "definition": "n. 功能、作用；职责；（正式）宴会、典礼；（数学）函数；v. 运转、起作用",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/function",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/function",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/function_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/function_2"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -48115,13 +48198,16 @@
     {
       "word": "funeral",
       "pos": "n.",
-      "definition": "葬礼，出殡",
-      "origin": "ecdict-derived",
+      "definition": "n. 葬礼、丧礼",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/funeral",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/funeral"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -48398,13 +48484,18 @@
     {
       "word": "future",
       "pos": "n./adj.",
-      "definition": "n. 未来，将来　adj. 将来的，未来的",
-      "origin": "ecdict-derived",
+      "definition": "n. 将来、未来；前途、前景；成功的可能；adj. 将来的、未来的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/future",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/future",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/future_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/future_2"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -48688,14 +48779,19 @@
     },
     {
       "word": "gang",
-      "pos": "n./vi.",
-      "definition": "n. 队，群，帮　vi. 成群结队，结成一伙",
-      "origin": "ecdict-derived",
+      "pos": "n./v.",
+      "definition": "n. 犯罪团伙；（年轻人的）一帮；（非正式）一伙朋友；一群工人；v. 结伙（用于 gang up on 联合起来对付）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/gang",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/gang",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/gang_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/gang_2"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -48756,14 +48852,19 @@
     },
     {
       "word": "garage",
-      "pos": "n./vt.",
-      "definition": "n. 车库，汽车修理厂，机库　vt. 把车送入修车场",
-      "origin": "ecdict-derived",
+      "pos": "n./v.",
+      "definition": "n. 车库；汽车修理厂（或加油站）；车库摇滚乐；v. 把（车）停放在车库里",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/garage",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/garage",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/garage_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/garage_2"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -48795,14 +48896,19 @@
     },
     {
       "word": "garden",
-      "pos": "n./vi.",
-      "definition": "n. 花园，果园，菜园　vi. 栽培花木",
-      "origin": "ecdict-derived",
+      "pos": "n./v.",
+      "definition": "n. （英）花园、园子；（北美）花圃、菜园；（复数）公园；v. 从事园艺",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/garden",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/garden",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/garden_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/garden_2"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -49064,26 +49170,35 @@
     },
     {
       "word": "gender",
-      "pos": "n./vt.",
-      "definition": "n. 性　vt. 产生",
-      "origin": "ecdict-derived",
+      "pos": "n./v.",
+      "definition": "n. 性别；（语法）性；v. 使具有性别特征（常用被动）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/gender",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/gender",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/gender_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/gender_2"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
       "word": "gene",
       "pos": "n.",
-      "definition": "基因",
-      "origin": "ecdict-derived",
+      "definition": "n. 基因",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/gene",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/gene",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/gene_1"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -49466,14 +49581,19 @@
     },
     {
       "word": "German",
-      "pos": "n./adj.",
-      "definition": "n. 德国人，德语　adj. 德国的，德国人的，德国语的，同父母的",
-      "origin": "ecdict-derived",
+      "pos": "adj./n.",
+      "definition": "adj. 德国的；德国人的；德语的；n. 德国人；德语",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/german",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/german",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/german_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/german_2"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -49494,13 +49614,16 @@
     {
       "word": "Germany",
       "pos": "n.",
-      "definition": "德国",
-      "origin": "ecdict-derived",
+      "definition": "n. 德国",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/germany",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/germany"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -49520,26 +49643,34 @@
     },
     {
       "word": "gesture",
-      "pos": "n./vi.",
-      "definition": "n. 手势，姿态　vi. 作手势，作姿态",
-      "origin": "ecdict-derived",
+      "pos": "n./v.",
+      "definition": "n. 手势、姿势；（表示态度的）姿态、表示；v. 做手势、示意",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/gesture",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/gesture",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/gesture_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/gesture_2"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
       "word": "get",
-      "pos": "vt./vi.",
-      "definition": "vt. 得到，获得，变成，使得　vi. 到达，成为，变得",
-      "origin": "ecdict-derived",
+      "pos": "v.",
+      "definition": "v. 得到、收到；获得；买；去取；变得；到达；使、让；理解",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/get",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/get"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -49702,13 +49833,16 @@
     {
       "word": "girlfriend",
       "pos": "n.",
-      "definition": "女朋友",
-      "origin": "ecdict-derived",
+      "definition": "n. 女朋友；（女子的）女性朋友",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/girlfriend",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/girlfriend"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -49729,14 +49863,19 @@
     },
     {
       "word": "give",
-      "pos": "n./vt.",
-      "definition": "n. 弹性，适应性　vt. 给，授予，供给，产生",
-      "origin": "ecdict-derived",
+      "pos": "v./n.",
+      "definition": "v. 给、交给；赠送；提供；举行（聚会等）；发出（声音、动作）；n. 弹性、伸缩性；（人的）灵活变通",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/give",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/give",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/give_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/give_2"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -49860,14 +49999,19 @@
     },
     {
       "word": "glass",
-      "pos": "n./vt.",
-      "definition": "n. 玻璃，玻璃杯，透镜　vt. 装玻璃于，反射，反映",
-      "origin": "ecdict-derived",
+      "pos": "n./v.",
+      "definition": "n. 玻璃；玻璃杯；一杯（的量）；（复数）眼镜；v. （英，非正式）用玻璃杯（或瓶）打（某人的脸）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/glass",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/glass",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/glass_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/glass_2"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -50256,14 +50400,19 @@
     },
     {
       "word": "go",
-      "pos": "vi./vt.",
-      "definition": "vi. 去，走，达到，运转　vt. 以...打赌，对付，忍受，出产",
-      "origin": "ecdict-derived",
+      "pos": "v./n.",
+      "definition": "v. 去、走；离开；（以某种方式）进行；变得；运转；通向；n. （游戏中）轮到的机会；尝试；精力、干劲",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/go",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/go",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/go_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/go_2"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -50310,49 +50459,66 @@
     {
       "word": "gold",
       "pos": "n./adj.",
-      "definition": "n. 黄金，钱财，金块，金色　adj. 金的，似金的，金色的，金制的",
-      "origin": "ecdict-derived",
+      "definition": "n. 金、黄金；金饰、金币；金牌；金色；adj. 金色的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/gold",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/gold",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/gold_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/gold_2"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
       "word": "golf",
-      "pos": "n./vi.",
-      "definition": "n. 高尔夫球　vi. 打高尔夫球",
-      "origin": "ecdict-derived",
+      "pos": "n.",
+      "definition": "n. 高尔夫球运动",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/golf",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/golf"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
       "word": "good",
-      "pos": "n./adj.",
-      "definition": "n. 善行，好处，利益　adj. 好的，优良的，上等的，愉快的",
-      "origin": "ecdict-derived",
+      "pos": "adj./n./adv.",
+      "definition": "adj. 好的、优质的；令人愉快的；合理的；擅长的；善良的；有益的；n. 善、美德；好处、利益；adv. （北美，非正式）好",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/good",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/good",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/good_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/good_2",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/good_3"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
       "word": "goods",
       "pos": "n.",
-      "definition": "货物",
-      "origin": "ecdict-derived",
+      "definition": "n. 商品、货物；（可移动的）财产；（英）（火车运送的）货物",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/goods",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/goods"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -50481,13 +50647,16 @@
     {
       "word": "government",
       "pos": "n.",
-      "definition": "政府，内阁",
-      "origin": "ecdict-derived",
+      "definition": "n. 政府、内阁；政体；统治、管理",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/government",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/government"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -50587,14 +50756,19 @@
     },
     {
       "word": "grade",
-      "pos": "n./vt.",
-      "definition": "n. 等级，年级，阶段，成绩　vt. 分等，分级，评分",
-      "origin": "ecdict-derived",
+      "pos": "n./v.",
+      "definition": "n. 成绩、分数；（北美）年级；等级、级别；v. 给…评分；将…分级",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/grade",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/grade",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/grade_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/grade_2"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -50745,14 +50919,19 @@
     },
     {
       "word": "grant",
-      "pos": "n./vt.",
-      "definition": "n. 授予，授予物，允许　vt. 允许，承认，授与",
-      "origin": "ecdict-derived",
+      "pos": "v./n.",
+      "definition": "v. 准予、允许；授予；承认；n. （政府、机构的）拨款、补助金",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/grant",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/grant",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/grant_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/grant_2"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -50844,14 +51023,19 @@
     },
     {
       "word": "grass",
-      "pos": "n.",
-      "definition": "草，草原，牧场",
-      "origin": "ecdict-derived",
+      "pos": "n./v.",
+      "definition": "n. 草；草地、草坪；（俚语）大麻；v. （英，非正式）向警方告发",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/grass",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/grass",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/grass_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/grass_2"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -50953,13 +51137,18 @@
     {
       "word": "grave",
       "pos": "n./adj.",
-      "definition": "n. 墓穴，坟墓，终结，死亡　adj. 庄重的，严肃的，重大的，低沉的",
-      "origin": "ecdict-derived",
+      "definition": "n. 坟墓、墓穴；（文学）死亡；adj. 严重的、重大的；严肃的、庄重的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/grave",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/grave",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/grave1_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/grave1_2"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -51068,13 +51257,16 @@
     {
       "word": "Greece",
       "pos": "n.",
-      "definition": "希腊",
-      "origin": "ecdict-derived",
+      "definition": "n. 希腊",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/greece",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/greece"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -51094,14 +51286,20 @@
     },
     {
       "word": "green",
-      "pos": "n./adj.",
-      "definition": "n. 绿色，绿色颜料　adj. 绿色的，未成熟的，新鲜的，青春的",
-      "origin": "ecdict-derived",
+      "pos": "adj./n./v.",
+      "definition": "adj. 绿色的；长满草木的；（果实）未成熟的；环保的；（人）缺乏经验的；n. 绿色；（复数）绿叶蔬菜；草地、公共绿地；（高尔夫）果岭；v. 绿化；使具有环保意识",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/green",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/green",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/green_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/green_2",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/green_3"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -51134,13 +51332,16 @@
     {
       "word": "grief",
       "pos": "n.",
-      "definition": "伤心，忧愁，悲痛，不幸",
-      "origin": "ecdict-derived",
+      "definition": "n. 悲伤、悲痛；伤心事；（非正式）麻烦、烦恼",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/grief",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/grief"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -51202,14 +51403,19 @@
     },
     {
       "word": "grin",
-      "pos": "n./v.",
-      "definition": "n. 露齿笑　v. 露齿而笑",
-      "origin": "ecdict-derived",
+      "pos": "v./n.",
+      "definition": "v. 露齿而笑、咧着嘴笑；n. 露齿的笑、咧嘴笑",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/grin",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/grin",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/grin_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/grin_2"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -51283,14 +51489,21 @@
     },
     {
       "word": "gross",
-      "pos": "n./adj.",
-      "definition": "n. 总数，总量　adj. 总共的，未打折扣的，恶劣的，粗野的",
-      "origin": "ecdict-derived",
+      "pos": "adj./adv./v./n.",
+      "definition": "adj. 总的、毛的；严重的、恶劣的；（非正式）令人恶心的；adv. 总共、税前地；v. 获得…总收入；n. 罗（144 个）；总收入",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/gross",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/gross",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/gross_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/gross_2",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/gross_3",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/gross_4"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -51310,26 +51523,37 @@
     },
     {
       "word": "ground",
-      "pos": "n./adj.",
-      "definition": "n. 土地，战场，场地，地面　adj. 土地的，地面上的",
-      "origin": "ecdict-derived",
+      "pos": "n./v./adj.",
+      "definition": "n. 地面；土地、土壤；场地；（知识、兴趣等的）领域；理由、根据；v. （船）搁浅；使（飞机）停飞；禁止（孩子）外出；以…为基础；adj. 磨碎的、碾碎的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/ground",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/ground",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/ground_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/ground_2",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/ground_3"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
       "word": "group",
       "pos": "n./v.",
-      "definition": "n. 团体，组，团，群　v. 聚合，成群",
-      "origin": "ecdict-derived",
+      "definition": "n. 组、群；团体、集团；（流行音乐）乐队、组合；v. （使）聚集；把…分组",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/group",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/group",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/group_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/group_2"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -51359,13 +51583,16 @@
     {
       "word": "growth",
       "pos": "n.",
-      "definition": "生长，栽培，增长",
-      "origin": "ecdict-derived",
+      "definition": "n. 生长、发育；增长、增加；经济发展；肿瘤",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/growth",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/growth"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -51458,14 +51685,19 @@
     },
     {
       "word": "guest",
-      "pos": "n.",
-      "definition": "客人，来宾，旅客",
-      "origin": "ecdict-derived",
+      "pos": "n./v.",
+      "definition": "n. 客人、宾客；（旅馆的）旅客；（节目的）特邀嘉宾；v. 作为嘉宾参加（节目）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/guest",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/guest",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/guest_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/guest_2"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -51483,37 +51715,48 @@
     {
       "word": "guidance",
       "pos": "n.",
-      "definition": "指导，领导",
-      "origin": "ecdict-derived",
+      "definition": "n. 指导、指引；（导弹等的）制导",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/guidance",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/guidance"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
       "word": "guide",
-      "pos": "n./vt.",
-      "definition": "n. 引导者，导游，指南，路标　vt. 指导，支配，管理，带领",
-      "origin": "ecdict-derived",
+      "pos": "n./v.",
+      "definition": "n. 导游、向导；指导者；指南、手册；指导、准则；v. 带领、引导；指导、影响；讲解、指引",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/guide",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/guide",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/guide_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/guide_2"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
       "word": "guideline",
       "pos": "n.",
-      "definition": "指导路线，方针，指标",
-      "origin": "ecdict-derived",
+      "definition": "n. 指导方针、准则；参考、指南",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/guideline",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/guideline"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -51576,13 +51819,16 @@
     {
       "word": "guitar",
       "pos": "n.",
-      "definition": "吉他",
-      "origin": "ecdict-derived",
+      "definition": "n. 吉他",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/guitar",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/guitar"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -51683,26 +51929,33 @@
     },
     {
       "word": "guy",
-      "pos": "n./vt.",
-      "definition": "n. 家伙，支索　vt. 用支索撑住，取笑，嘲弄",
-      "origin": "ecdict-derived",
+      "pos": "n.",
+      "definition": "n. （非正式）男人、家伙；（复数）伙计们（可指男女）；（英）盖伊模拟像",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/guy",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/guy",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/guy_1"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
       "word": "gym",
       "pos": "n.",
-      "definition": "+体育馆，体育训练，体育课，体操",
-      "origin": "ecdict-derived",
+      "definition": "n. 健身房、体育馆；（学校的）体育课",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/gym",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/gym"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -51764,14 +52017,17 @@
     },
     {
       "word": "habit",
-      "pos": "n./vt.",
-      "definition": "n. 习惯，嗜好，习性　vt. 使穿衣",
-      "origin": "ecdict-derived",
+      "pos": "n.",
+      "definition": "n. 习惯；习性；（毒）瘾；（修士、修女穿的）长袍",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/habit",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/habit"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -51997,14 +52253,19 @@
     },
     {
       "word": "hand",
-      "pos": "n./vt.",
-      "definition": "n. 手，爪，指针，掌握　vt. 交给，支持，搀扶",
-      "origin": "ecdict-derived",
+      "pos": "n./v.",
+      "definition": "n. 手；帮助、援手；（钟表的）指针；人手、工人；v. 交给、递",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/hand",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/hand",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/hand_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/hand_2"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -52129,13 +52390,16 @@
     {
       "word": "handsome",
       "pos": "adj.",
-      "definition": "英俊的，大方的，慷慨的，相当可观的",
-      "origin": "ecdict-derived",
+      "definition": "adj. （男子）英俊的；（女子）端庄健美的；（物）美观的；（数量）可观的、慷慨的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/handsome",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/handsome"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -52198,13 +52462,16 @@
     {
       "word": "harassment",
       "pos": "n.",
-      "definition": "困扰，烦扰，烦恼",
-      "origin": "ecdict-derived",
+      "definition": "n. 骚扰、侵扰",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/harassment",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/harassment"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -52234,13 +52501,18 @@
     {
       "word": "hard",
       "pos": "adj./adv.",
-      "definition": "adj. 坚硬的，硬的，难的，艰苦的　adv. 坚硬地，努力地，辛苦地，接近地",
-      "origin": "ecdict-derived",
+      "definition": "adj. 困难的；艰难的；费力的；坚硬的；严厉的；adv. 努力地；猛烈地；仔细地",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/hard",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/hard",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/hard_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/hard_2"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -52603,14 +52875,17 @@
     },
     {
       "word": "hat",
-      "pos": "n./vt.",
-      "definition": "n. 帽子　vt. 给...戴帽子",
-      "origin": "ecdict-derived",
+      "pos": "n.",
+      "definition": "n. 帽子；（担任的）职务、角色",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/hat",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/hat"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -52906,13 +53181,16 @@
     {
       "word": "headache",
       "pos": "n.",
-      "definition": "头痛，令人头痛之事",
-      "origin": "ecdict-derived",
+      "definition": "n. 头痛；令人头痛的事",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/headache",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/headache"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -52996,13 +53274,16 @@
     {
       "word": "health",
       "pos": "n.",
-      "definition": "健康，卫生，蓬勃，健康状态",
-      "origin": "ecdict-derived",
+      "definition": "n. 健康状况；健康；卫生保健；（经济等的）兴旺",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/health",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/health"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -53047,13 +53328,16 @@
     {
       "word": "hearing",
       "pos": "n.",
-      "definition": "听，听觉，听讯",
-      "origin": "ecdict-derived",
+      "definition": "n. 听力、听觉；听证会、审讯；发言的机会",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/hearing",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/hearing"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -53073,14 +53357,19 @@
     },
     {
       "word": "heart",
-      "pos": "n./vt.",
-      "definition": "n. 心，心脏，中心，内心　vt. 鼓励",
-      "origin": "ecdict-derived",
+      "pos": "n./v.",
+      "definition": "n. 心脏；胸口；心形物；内心、感情；中心、核心；勇气；v. （非正式）非常喜欢",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/heart",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/heart",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/heart_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/heart_2"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -53153,14 +53442,20 @@
     },
     {
       "word": "heavy",
-      "pos": "adj./adv.",
-      "definition": "adj. 重的，巨大的，沉重的，笨重的　adv. 沉重地",
-      "origin": "ecdict-derived",
+      "pos": "adj./n./adv.",
+      "definition": "adj. 重的、沉的；大量的、严重的；繁重的；沉重的；n. （非正式）保镖、打手；要人；adv. 沉重地（用于固定短语）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/heavy",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/heavy",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/heavy_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/heavy_2",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/heavy_3"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -53280,14 +53575,17 @@
     },
     {
       "word": "helicopter",
-      "pos": "n./vt.",
-      "definition": "n. 直升机　vt. 由直升机运送",
-      "origin": "ecdict-derived",
+      "pos": "n.",
+      "definition": "n. 直升机",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/helicopter",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/helicopter"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -53307,26 +53605,32 @@
     },
     {
       "word": "hell",
-      "pos": "n./vi.",
-      "definition": "n. 地狱，邪恶势力，苦境，阴间　vi. 狂饮，飞驰",
-      "origin": "ecdict-derived",
+      "pos": "n.",
+      "definition": "n. 地狱；极其痛苦的经历、苦境；（粗话）该死",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/hell",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/hell"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
       "word": "helmet",
-      "pos": "n./vt.",
-      "definition": "n. 钢盔，盔，防护帽　vt. 给...戴头盔",
-      "origin": "ecdict-derived",
+      "pos": "n.",
+      "definition": "n. 头盔、安全帽",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/helmet",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/helmet"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -53599,13 +53903,16 @@
     {
       "word": "hero",
       "pos": "n.",
-      "definition": "英雄，超越常人者，男主角",
-      "origin": "ecdict-derived",
+      "definition": "n. 英雄；（小说、电影等的）男主角；崇拜的人、偶像",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/hero",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/hero"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -53983,61 +54290,78 @@
     {
       "word": "historian",
       "pos": "n.",
-      "definition": "历史学家，记事者",
-      "origin": "ecdict-derived",
+      "definition": "n. 历史学家",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/historian",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/historian"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
       "word": "historic",
       "pos": "adj.",
-      "definition": "历史上著名的，有历史性的",
-      "origin": "ecdict-derived",
+      "definition": "adj. 有历史意义的、历史性的；历史上的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/historic",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/historic"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
       "word": "historical",
       "pos": "adj.",
-      "definition": "历史的，史实的，历史上的",
-      "origin": "ecdict-derived",
+      "definition": "adj. 历史的、与历史有关的；历史学的；（小说等）以历史为题材的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/historical",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/historical"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
       "word": "history",
       "pos": "n.",
-      "definition": "历史，过去，经历，发展过程",
-      "origin": "ecdict-derived",
+      "definition": "n. 历史；历史学；（某事物的）发展史；（个人的）经历、病史",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/history",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/history"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
       "word": "hit",
-      "pos": "n./vt.",
-      "definition": "n. 打击，打，冲撞，讽刺　vt. 打，打击，碰撞，打中",
-      "origin": "ecdict-derived",
+      "pos": "v./n.",
+      "definition": "v. 打、击；撞击；（灾难等）袭击；达到；n. 打、击；击中；成功而风行的事物",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/hit",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/hit",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/hit_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/hit_2"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -54184,26 +54508,36 @@
     },
     {
       "word": "hold",
-      "pos": "n./vt.",
-      "definition": "n. 把握，把持力，柄，控制　vt. 保存，握住，拿住，占据",
-      "origin": "ecdict-derived",
+      "pos": "v./n.",
+      "definition": "v. 拿着、握住；抱住；保持；容纳；举行；拥有；认为；n. 握、抓；控制、影响；（船、飞机的）货舱",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/hold",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/hold",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/hold_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/hold_2"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
       "word": "holiday",
-      "pos": "n./vi.",
-      "definition": "n. 假日，假期，节日　vi. 度假",
-      "origin": "ecdict-derived",
+      "pos": "n./v.",
+      "definition": "n. （英）假期、休假；（英）度假；节日、假日；v. （英）度假",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/holiday",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/holiday",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/holiday_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/holiday_2"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -54299,13 +54633,16 @@
     {
       "word": "homework",
       "pos": "n.",
-      "definition": "家庭作业，家里做的工作",
-      "origin": "ecdict-derived",
+      "definition": "n. 家庭作业；（事前的）准备工作",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/homework",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/homework"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -54532,13 +54869,16 @@
     {
       "word": "horrible",
       "pos": "adj.",
-      "definition": "可怕的，遭透的，极讨厌的",
-      "origin": "ecdict-derived",
+      "definition": "adj. 极坏的、讨厌的；可怕的、恐怖的；不友好的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/horrible",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/horrible"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -54555,14 +54895,18 @@
     },
     {
       "word": "horse",
-      "pos": "n./vi.",
-      "definition": "n. 马，骑兵，脚架　vi. 骑马，取笑",
-      "origin": "ecdict-derived",
+      "pos": "n.",
+      "definition": "n. 马；赛马；（体操）鞍马",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/horse",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/horse",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/horse_1"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -54637,13 +54981,16 @@
     {
       "word": "hospital",
       "pos": "n.",
-      "definition": "医院",
-      "origin": "ecdict-derived",
+      "definition": "n. 医院",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/hospital",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/hospital"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -54660,26 +55007,34 @@
     },
     {
       "word": "host",
-      "pos": "n./vt.",
-      "definition": "n. 主人，旅馆老板，节目主持人　vt. 当主人招待，作...节目主持人",
-      "origin": "ecdict-derived",
+      "pos": "n./v.",
+      "definition": "n. 主人；东道主；（节目）主持人；（生物）宿主；许多、大量；v. 主办、主持（活动或节目）；当东道主",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/host",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/host",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/host_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/host_2"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
       "word": "hostage",
       "pos": "n.",
-      "definition": "人质，抵押品",
-      "origin": "ecdict-derived",
+      "definition": "n. 人质；受制于人的人（或物）",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/hostage",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/hostage"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -54712,13 +55067,16 @@
     {
       "word": "hotel",
       "pos": "n.",
-      "definition": "旅馆，客栈",
-      "origin": "ecdict-derived",
+      "definition": "n. 旅馆、酒店；（澳新）酒吧",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/hotel",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/hotel"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -54784,13 +55142,16 @@
     {
       "word": "housing",
       "pos": "n.",
-      "definition": "遮盖，住房供给，居留(处)，房屋",
-      "origin": "ecdict-derived",
+      "definition": "n. 住房、住宅；住房供给；（机器的）外壳、防护罩",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/housing",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/housing"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -54904,14 +55265,19 @@
     },
     {
       "word": "hug",
-      "pos": "n./vt.",
-      "definition": "n. 紧抱，拥抱　vt. 紧抱，坚持，使沾沾自喜",
-      "origin": "ecdict-derived",
+      "pos": "v./n.",
+      "definition": "v. 拥抱、搂抱；紧贴、紧挨；n. 拥抱",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/hug",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/hug",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/hug_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/hug_2"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -55173,26 +55539,34 @@
     },
     {
       "word": "hunt",
-      "pos": "n./vt.",
-      "definition": "n. 狩猎，追捕，搜寻，猎区　vt. 狩猎，打猎，搜索",
-      "origin": "ecdict-derived",
+      "pos": "v./n.",
+      "definition": "v. 打猎、猎取；搜寻、寻找；追捕；n. 搜寻、寻找；打猎；（英）猎狐队",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/hunt",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/hunt",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/hunt_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/hunt_2"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
       "word": "hunting",
       "pos": "n.",
-      "definition": "狩猎，猎狐，探求",
-      "origin": "ecdict-derived",
+      "definition": "n. 打猎、狩猎；（英）猎狐；寻找、搜寻",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/hunting",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/hunting"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -55406,14 +55780,19 @@
     },
     {
       "word": "ice",
-      "pos": "n./vt.",
-      "definition": "n. 冰，冰淇淋，糖衣，冷若冰霜　vt. 使结冰，冰镇，覆以糖衣",
-      "origin": "ecdict-derived",
+      "pos": "n./v.",
+      "definition": "n. 冰；冰面；冰块；v. （尤英）给（蛋糕）加糖霜",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/ice",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/ice",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/ice_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/ice_2"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -55486,13 +55865,16 @@
     {
       "word": "idea",
       "pos": "n.",
-      "definition": "主意，办法，理想，思想",
-      "origin": "ecdict-derived",
+      "definition": "n. 主意、想法；了解、概念；看法、信念；意图、目的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/idea",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/idea"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -55856,14 +56238,19 @@
     },
     {
       "word": "illegal",
-      "pos": "adj.",
-      "definition": "违法的，不合规定的",
-      "origin": "ecdict-derived",
+      "pos": "adj./n.",
+      "definition": "adj. 违法的、非法的；n. （尤北美）非法移民",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/illegal",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/illegal",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/illegal_1",
+        "https://www.oxfordlearnersdictionaries.com/definition/english/illegal_2"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -55931,13 +56318,16 @@
     {
       "word": "illness",
       "pos": "n.",
-      "definition": "疾病，恶意",
-      "origin": "ecdict-derived",
+      "definition": "n. 疾病；患病",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/illness",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/illness"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -56879,13 +57269,16 @@
     {
       "word": "important",
       "pos": "adj.",
-      "definition": "重要的，有地位的，大量的，显要的",
-      "origin": "ecdict-derived",
+      "definition": "adj. 重要的、重大的；有地位的、有权力的",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/important",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/important"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -56945,13 +57338,16 @@
     {
       "word": "impossible",
       "pos": "adj.",
-      "definition": "不可能的，难以置信的，令人无法忍受的",
-      "origin": "ecdict-derived",
+      "definition": "adj. 不可能的、做不到的；极难对付的；（the impossible）不可能的事",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/impossible",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/impossible"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {
@@ -57090,13 +57486,16 @@
     {
       "word": "improvement",
       "pos": "n.",
-      "definition": "进步，改善，利用",
-      "origin": "ecdict-derived",
+      "definition": "n. 改善、改进；改进之处、改善的事物",
+      "origin": "dictionary-reviewed",
       "sourceFiles": [
-        "js/words-ielts.js"
+        "js/lexicon-review-074.js"
       ],
-      "dictionary": null,
-      "checkedOn": null,
+      "dictionary": "https://www.oxfordlearnersdictionaries.com/definition/english/improvement",
+      "dictionaries": [
+        "https://www.oxfordlearnersdictionaries.com/definition/english/improvement"
+      ],
+      "checkedOn": "2026-11-26",
       "flags": []
     },
     {

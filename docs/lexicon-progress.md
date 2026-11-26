@@ -4,9 +4,9 @@
 
 | 项目 | 已核对 | 尚待核对 |
 | --- | ---: | ---: |
-| 释义与词性 | 7576 | 1499 |
-| 英美音与主要分读 | 7573 | 1502 |
-| 两项均完成 | 7571 | 1504 |
+| 释义与词性 | 7676 | 1399 |
+| 英美音与主要分读 | 7672 | 1403 |
+| 两项均完成 | 7671 | 1404 |
 
 每词分别保存来源和日期，不能用核对音标代替核对释义。完整状态和接续队列见 [lexicon-progress.json](lexicon-progress.json)。优先处理缺失、截断、词性矛盾和用法标记，再按字母顺序推进。未找到可靠来源的条目保持待核对，不推测填充。
 
@@ -702,6 +702,13 @@ node tools/lexicon_progress.js
 
 待复核：sales。OALD 无 sales 独立词条（为 sale 的复数及复合词），待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/sales)。不计入完成数。
 
+## 批次 078
+
+完成 100 词：skiing、skill、skin、skirt、slam、sleep、slot、smoking、soak、soar、social、soil、somehow、sound、source、space、Spain、Spanish、speaker、special、speech、speed、spending、spit、spokesman、sport、stadium、stage、star、starter、statement、station、statute、steel、stone、store、story、strategic、street、student、study、stuff、style、subject、suck、suggestion、suicide、summary、summer、Sunday、supermarket、supply、support、surprise、swear、sweater、swimming、table、tactic、take、tea、teacher、teaching、technician、technique、technology、telephone、television、tennis、terms、test、text、textbook、theatre、theory、therapist、thinking、third、thousand、throat、throughout、Thursday、tighten、time、top、toss、total、tour、tourism、tourist、town、trade、traditional、train、training、transport、transportation、trauma、travel、treaty。雅思（i1）队列 100 词，来源改用 OALD（剑桥网站对自动访问启用安全验证）。英音取 OALD 英式、美音取同页北美 IPA，逐字照录。
+
+待复核：starting。OALD 无 starting 独立词条（为 start 的变化形式），待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/starting)。不计入完成数。
+待复核：States。OALD 无 States 独立词条（the States 见 state），待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/states)。不计入完成数。
+
 ## 发布节奏
 
-每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 600 词，距下次发布还差 400 词。发布基线为 3abf5e5f873868ad549418738053e29033007111，当时两项均核对 6971 词；当前页面显示本地核对进度，不表示已上线。
+每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 700 词，距下次发布还差 300 词。发布基线为 3abf5e5f873868ad549418738053e29033007111，当时两项均核对 6971 词；当前页面显示本地核对进度，不表示已上线。

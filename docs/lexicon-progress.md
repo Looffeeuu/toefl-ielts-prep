@@ -4,9 +4,9 @@
 
 | 项目 | 已核对 | 尚待核对 |
 | --- | ---: | ---: |
-| 释义与词性 | 8374 | 701 |
-| 英美音与主要分读 | 8371 | 704 |
-| 两项均完成 | 8371 | 704 |
+| 释义与词性 | 8473 | 602 |
+| 英美音与主要分读 | 8471 | 604 |
+| 两项均完成 | 8471 | 604 |
 
 每词分别保存来源和日期，不能用核对音标代替核对释义。完整状态和接续队列见 [lexicon-progress.json](lexicon-progress.json)。优先处理缺失、截断、词性矛盾和用法标记，再按字母顺序推进。未找到可靠来源的条目保持待核对，不推测填充。
 
@@ -763,6 +763,12 @@ node tools/lexicon_progress.js
 待复核：touring。OALD 无 touring 独立词条页（为 tour 的变化形式），待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/touring)。不计入完成数。
 待复核：walls。OALD 无 walls 独立词条（为 wall 的复数形式），待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/walls)。不计入完成数。
 
+## 批次 086
+
+完成 100 词：wording、wrench、wretched、yoke、close-up、cosy、defence、dictation、drop-off、drowse、drowsiness、eagle、eddy、eke、email、enquire、enquiry、entreat、excrement、existent、fastidious、favour、feet、fibre、first-aid、flyover、fortnight、full-time、gaily、gaol、granary、granular、gratuity、handball、harbour、hard-working、helpline、high-rise、humdrum、insipid、insolvent、invigilate、kelp、latest、leprosy、licence、loth、mackintosh、magnanimous、maltreat、manacle、matrimony、meagre、meteoric、microbiology、microfilm、mischance、misconceive、mould、mucous、natal、navigable、neurosis、notary、nought、oblong、offence、ohp、ostensible、ostentation、overwrought、Oxford、pacific、part-time、periscope、perplexity、petrol、phone-in、phonetic、photojournalism、plagiarize、plough、politic、postcode、postscript、preposition、psycholinguistics、reflectance、repatriate、reverent、sceptical、second-hand、self-discipline、shamble、situated、speciality、sportswear、sterling、storey、sulphur。雅思（i3/i4）队列 100 词，来源改用 OALD（剑桥网站对自动访问启用安全验证）。英音取 OALD 英式、美音取同页北美 IPA，逐字照录。
+
+
+
 ## 发布节奏
 
-每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 400 词，距下次发布还差 600 词。发布基线为 9b6992bc91b23ec22ca1b43a94aaf02b42b5040c，当时两项均核对 7971 词；当前页面显示本地核对进度，不表示已上线。
+每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 500 词，距下次发布还差 500 词。发布基线为 9b6992bc91b23ec22ca1b43a94aaf02b42b5040c，当时两项均核对 7971 词；当前页面显示本地核对进度，不表示已上线。

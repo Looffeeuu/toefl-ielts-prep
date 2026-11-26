@@ -89,7 +89,59 @@ Overall, electricity from wind and solar power grew rapidly over the period, whe
 
 In 2014, hydropower was the leading source, producing 20 TWh, compared with 12 TWh from wind and just 2 TWh from solar. Over the following eight years, hydroelectric generation fluctuated only slightly, between 18 and 21 TWh, and ended the period at 18 TWh.
 
-Wind power, by contrast, rose steadily throughout the period. It passed hydropower between 2016 and 2018 and reached 44 TWh in 2022, more than three and a half times its 2014 level. Solar power started from a very low base but increased at an even faster rate, multiplying fifteen times to 30 TWh by 2022. In that year, solar also generated considerably more electricity than hydropower for the first time.` }
+Wind power, by contrast, rose steadily throughout the period. It passed hydropower between 2016 and 2018 and reached 44 TWh in 2022, more than three and a half times its 2014 level. Solar power started from a very low base but increased at an even faster rate, multiplying fifteen times to 30 TWh by 2022. In that year, solar also generated considerably more electricity than hydropower for the first time.` },
+  { id:"w1-water", name:"四个国家的用水结构", kind:"bar",
+    prompt:"The chart below shows how water was used in four countries in 2020, divided into agriculture, industry and households.",
+    chart:{ x:["Country A","Country B","Country C","Country D"], unit:"% of total water use", yMax:80,
+      series:[{ name:"Agriculture", values:[72,40,15,55] },{ name:"Industry", values:[10,45,60,20] },{ name:"Households", values:[18,15,25,25] }] },
+    hint:"概述：农业在 A、D 两国占主导，工业在 B、C 两国占比最高，家庭用水在四国都是比例最小或接近最小的部分。按「农业为主的国家」和「工业为主的国家」分两段写，比逐个国家复述更清楚。",
+    phrases:["The bar chart compares the proportion of water used for ... in four countries in 2020.","Overall, ... accounted for the largest share in ..., whereas ...","by far the highest figure","a much smaller proportion","the figures for ... were identical, at ..."],
+    model:`The bar chart compares how water was divided between agriculture, industry and households in four countries in 2020.
+
+Overall, agriculture was the main user of water in Country A and Country D, whereas industry consumed the largest share in Country B and Country C. Household use was relatively small in all four countries.
+
+In Country A, almost three quarters of all water (72%) went to farming, by far the highest figure in the chart. Households used 18%, while industry accounted for only 10%. Country D showed a similar pattern, although agriculture's share was lower, at 55%, and households and industry used 25% and 20% respectively.
+
+By contrast, industry dominated water use in Country C, where it consumed 60% of the total. Only 15% was used for farming, the lowest agricultural figure of the four countries, and households took the remaining quarter. In Country B, water use was more balanced: industry used 45% and agriculture 40%, while households accounted for just 15%, the same proportion as farming in Country C.` },
+
+  { id:"w1-cinema", name:"三个年龄组的观影次数", kind:"table",
+    prompt:"The table below shows the average number of times per year that people in three age groups went to the cinema in one country in 2005, 2015 and 2025.",
+    chart:{ cols:["Age group","2005","2015","2025"],
+      rows:[["16–24",9.5,7.0,4.5],["25–44",5.0,4.5,4.0],["45 and over",2.0,3.0,3.5]] },
+    hint:"概述：年轻人去影院最频繁，但下降幅度最大；45 岁以上人群是唯一上升的组。到 2025 年三组的差距明显缩小。先写下降的两组，再写上升的一组，最后指出差距变小。",
+    phrases:["The table shows how often people in three age groups went to the cinema in ...","Overall, ..., although ...","fell sharply from ... to ...","the only group to show an increase","By 2025, the gap between ... had narrowed considerably."],
+    model:`The table gives figures for how frequently members of three age groups in a single nation attended films at the cinema, on average, in 2005, 2015 and 2025.
+
+Overall, 16- to 24-year-olds were the most frequent cinema-goers throughout the period, although their attendance fell sharply. In contrast, people aged 45 and over were the only group to show an increase, and the differences between the groups became much smaller over time.
+
+In 2005, people aged 16 to 24 visited the cinema 9.5 times a year on average, nearly twice as often as those aged 25 to 44, who went 5.0 times. Over the next twenty years, the figure for the youngest group dropped to 7.0 in 2015 and then to only 4.5 in 2025. Attendance among 25- to 44-year-olds also declined, but only slightly, reaching 4.0 visits by the end of the period.
+
+Meanwhile, the oldest group made just 2.0 visits annually in 2005. However, this figure rose steadily to 3.0 in 2015 and 3.5 in 2025. As a result, by 2025 the gap between the most and least frequent cinema-goers had narrowed to just one visit per year.` },
+  { id:"w1-rainwater", name:"家庭雨水收集系统", kind:"process",
+    prompt:"The diagram below shows how a rainwater collection system provides water for a house.",
+    chart:{ steps:["Rain falls on the roof of the house","Water flows into gutters along the edge of the roof","It passes down a pipe through a filter that removes leaves and dirt","The filtered water is stored in an underground tank","A pump moves the water from the tank to the house when needed","The water is used for toilets, washing machines and the garden","Extra water from a full tank overflows into a drain"] },
+    hint:"流程图没有数字，概述段说清楚有几个主要阶段、从哪里开始到哪里结束。主体段用被动语态和顺序词，把「收集和过滤」和「储存和使用」分成两段，最后提一下水箱满了时的溢流。",
+    phrases:["The diagram illustrates how ... is collected and used ...","Overall, the system involves ... stages, from ... to ...","To begin with, ...","Before it is stored, the water passes through ...","Whenever water is needed, ...","If the tank becomes full, ..."],
+    model:`The diagram illustrates how rain is collected from the roof of a house, cleaned, stored and then supplied for household use.
+
+Overall, the system involves seven stages, from the moment rain lands on the roof to its use inside the home, with an additional route for any excess water. It relies mainly on gravity, although a pump is required at a later stage.
+
+To begin with, rain falls on the sloping roof and runs into gutters fitted along its edges. From there, it travels down a vertical pipe. Before it is stored, the water passes through a filter, where leaves, dirt and other debris are removed. The clean water then flows into a large tank buried underground.
+
+Whenever water is needed, an electric pump lifts it from the tank and sends it into the house. This supply is used for purposes that do not require drinking water, such as flushing toilets, running the washing machine and watering the garden. Finally, if the tank becomes full during heavy rain, the extra water overflows into a drain, preventing flooding.` },
+
+  { id:"w1-spending", name:"家庭开支构成", kind:"pie",
+    prompt:"The pie charts below show how an average household in one country spent its income in 1990 and 2020.",
+    chart:{ labels:["Housing","Food","Transport","Leisure","Other"], pies:[{ title:"1990", values:[22,30,15,13,20] },{ title:"2020", values:[35,17,16,18,14] }] },
+    hint:"概述：住房成为最大的开支，食品的比例大幅下降。交通几乎不变，娱乐上升，其他类别下降。按「变化最大的两项」和「变化较小的几项」分两段写，用 nearly a third、just over a third 等分数表达。",
+    phrases:["The two pie charts compare how ... spent ... in 1990 and 2020.","Overall, housing replaced food as ...","the proportion spent on ... rose from ... to ...","fell by almost half","remained almost unchanged","accounted for just over a third of ..."],
+    model:`The two pie charts compare how an average household in one country divided its spending between five categories in 1990 and 2020.
+
+Overall, housing replaced food as the largest area of spending over the thirty-year period. The share spent on leisure also grew, whereas food and other expenses took up a smaller proportion of household budgets.
+
+In 1990, food was the biggest expense, accounting for 30% of spending, while housing made up 22%. By 2020, however, the situation had reversed. The proportion spent on housing rose sharply to 35%, just over a third of the total, while spending on food fell by almost half to 17%.
+
+The remaining categories changed less dramatically. Leisure increased from 13% to 18%, and transport remained almost unchanged, rising by only one percentage point to 16%. In contrast, the share of income spent on other items, such as clothing and household goods, decreased from 20% to 14%.` }
 ],
 
 task2: [
@@ -197,6 +249,84 @@ One important cause is the growing role of screens in young people's lives. Smar
 
 There are several ways to tackle this problem. Schools could make physical activity a regular part of every day, not only in physical education lessons but also through active breaks and after-school clubs that are free to join. Local governments could invest in parks, sports fields and safe cycle routes, making it easier and more attractive for young people to be active. Parents also have an important role to play: they can set limits on screen time and take part in physical activities with their children, for example by walking or cycling together at weekends.
 
-In conclusion, a lack of exercise among young people is mainly the result of screen-based entertainment, academic pressure and unsuitable environments. If schools, local authorities and families work together, it should be possible to encourage young people to lead more active lives.` }
+In conclusion, a lack of exercise among young people is mainly the result of screen-based entertainment, academic pressure and unsuitable environments. If schools, local authorities and families work together, it should be possible to encourage young people to lead more active lives.` },
+  { id:"w2-elderly", name:"老人应由家庭还是政府照顾", type:"discuss",
+    prompt:"Some people think that families should be responsible for looking after elderly relatives. Others believe this is mainly the responsibility of the government. Discuss both views and give your own opinion.",
+    hint:"讨论双方观点题要各用一段公平地写两边，再明确自己的立场。范文立场：家庭提供情感支持，政府负责专业护理和资金，两者分工合作。注意不要只写一边。",
+    phrases:["People have different views about who should ...","Those who believe ... argue that ...","On the other hand, many people feel that ...","In my opinion, the best approach is a partnership between ...","In conclusion, ..."],
+    model:`As people live longer, the question of who should care for elderly people has become increasingly important. Some argue that this is a family duty, while others believe the state should take the main role. In my opinion, both have essential but different responsibilities.
+
+Those who believe families should look after older relatives argue that children owe a debt to the parents who raised them. They also point out that elderly people usually feel happier and less lonely when they are cared for by people who love them. For example, in many Asian countries it is still common for three generations to live in the same home, and grandparents often help to raise grandchildren in return.
+
+On the other hand, many people feel that caring for the elderly should be the responsibility of the government. Modern families are often small, and adult children may live far away or work long hours. Moreover, some older people suffer from serious illnesses, such as dementia, which require professional care that relatives cannot provide. Without public support, carers may be forced to give up their jobs, which can lead to financial hardship.
+
+In my opinion, the best approach is a partnership between families and the state. Relatives are best placed to offer company and emotional support, whereas the government should fund care homes, home nursing services and financial help for family carers.
+
+In conclusion, although families have an important role to play, the growing needs of an ageing population mean that governments must also accept a large share of the responsibility.` },
+  { id:"w2-ads", name:"禁止面向儿童的广告", type:"opinion",
+    prompt:"Advertising aimed at children should be banned. To what extent do you agree or disagree?",
+    hint:"同意与否题全文立场要一致。范文立场：大部分同意，但不主张全面禁止，而是严格限制不健康食品等广告。主体段先写支持限制的两个理由，再写为什么全面禁止不现实。",
+    phrases:["I largely agree that ..., although I do not think a complete ban is necessary.","The main reason for ... is that ...","A second concern is ...","Nevertheless, a total ban would be ...","A more effective solution would be to ..."],
+    model:`Children today are exposed to a huge number of advertisements on television, online videos and mobile games. Some people believe that all advertising directed at children should be prohibited. I largely agree that it should be strictly controlled, although I do not think a complete ban is necessary.
+
+The main reason for restricting such advertising is that young children cannot easily recognise when they are being persuaded. Research suggests that children under the age of about eight often believe what advertisements say and do not understand that their purpose is to sell products. As a result, they may pressure their parents to buy toys or snacks that the family does not need or cannot afford.
+
+A second concern is health. Many of the products marketed to children, such as sugary drinks, sweets and fast food, contribute to obesity and tooth decay. Several countries have already banned junk food adverts during children's television programmes, and some studies have linked these rules to lower sugar consumption.
+
+Nevertheless, a total ban would be difficult to enforce, especially on the internet, where content is produced all over the world. Furthermore, not all advertising is harmful. Adverts can inform families about educational books, sports clubs or road safety campaigns.
+
+A more effective solution would be to ban advertisements for unhealthy food and to set clear rules for other products, such as limits on the use of cartoon characters and online influencers.
+
+In conclusion, I believe children need strong protection from advertising, but targeted restrictions are more practical and beneficial than a complete ban.` },
+  { id:"w2-tourism", name:"国际旅游的利与弊", type:"advantage",
+    prompt:"International tourism has grown rapidly in recent decades. Do the advantages of this trend outweigh the disadvantages?",
+    hint:"利弊比较题要给出明确判断。范文认为利大于弊：好处是收入就业和文化交流，坏处是环境压力和过度拥挤，但坏处可以通过管理减轻。注意结论要回应「outweigh」。",
+    phrases:["Although this growth has created some serious problems, I believe the benefits are greater.","The most obvious advantage is ...","International travel also ...","However, mass tourism can ...","These drawbacks are real, but they can be managed through ..."],
+    model:`Over the past few decades, cheaper flights and the internet have made it far easier for people to travel abroad, and the number of international tourists has risen dramatically. Although this growth has created some serious problems, I believe the benefits are greater.
+
+The most obvious advantage is economic. Tourism brings money into local economies and creates jobs in hotels, restaurants, transport and handicrafts. For many developing countries, such as Thailand or Kenya, it is one of the most important sources of foreign income, and it can provide work for people in rural areas where other employment is scarce.
+
+International travel also encourages understanding between cultures. When visitors experience daily life in another country, they often become more tolerant and curious, and local people gain contact with the wider world. In addition, the income from tourism can help to preserve historic buildings and traditional crafts that might otherwise disappear.
+
+However, mass tourism can cause damage. Aircraft produce large amounts of carbon dioxide, and popular destinations may suffer from overcrowding, pollution and rising house prices, which force residents to leave their neighbourhoods.
+
+These drawbacks are real, but they can be managed through sensible policies. Cities can limit short-term rentals, introduce tourist taxes and encourage visitors to travel outside the busiest seasons, while airlines continue to develop cleaner fuels and more efficient aircraft. Responsible tourists can also play a part by choosing local businesses and respecting the customs of the places they visit.
+
+In conclusion, while international tourism brings environmental and social challenges, I believe its economic and cultural advantages outweigh these disadvantages, provided that governments manage it carefully.` },
+  { id:"w2-housing", name:"城市房价过高的原因与对策", type:"problem",
+    prompt:"In many large cities, housing has become too expensive for ordinary people. What are the causes of this problem, and what measures could be taken to solve it?",
+    hint:"原因与对策题不需要表达个人立场，但要把原因和对策对应起来。范文写两个原因（人口集中、供给不足和投资炒房）和两类对策（增加供给、限制投机和提供公共住房），结论段总结。",
+    phrases:["In recent decades, ... has risen far faster than ...","There are several reasons for this situation.","The most important cause is ...","Another factor is ...","Governments can take several steps to address this issue.","In conclusion, ..."],
+    model:`In recent decades, the cost of renting or buying a home in many major cities has risen far faster than wages, and many young workers and families can no longer afford to live near their jobs. This essay will examine the main causes of this situation and suggest some possible solutions.
+
+The most important cause is the gap between demand and supply. Large cities attract people because they offer more jobs and better services, so the population keeps growing. However, the construction of new homes has often failed to keep pace, partly because planning rules limit how many buildings can be constructed and how tall they can be. Another factor is investment. In some cities, wealthy individuals and companies buy apartments as investments rather than as places to live, and some of these properties are left empty, which pushes prices even higher.
+
+Governments can take several steps to address this issue. First, they could make it easier to build new housing, for example by allowing taller buildings near public transport and by turning unused offices into flats. Second, they could discourage speculation by taxing homes that remain empty for long periods. In addition, cities such as Vienna show that large-scale public housing, rented at reasonable prices, can keep a city affordable for people on average incomes.
+
+In conclusion, high housing costs in cities are mainly caused by rapid population growth, a shortage of new homes and investment buying. These problems can be reduced if governments increase supply, limit speculation and invest in affordable public housing.` },
+  { id:"w2-reading", name:"人们读书变少：原因与是否值得担忧", type:"twopart",
+    prompt:"In many countries, people are reading fewer books than they did in the past. Why is this happening? Is this a positive or negative development?",
+    hint:"双问题题两个问题都要回答，而且分量差不多。范文先写原因（数字娱乐、时间碎片化），再给出判断（总体是负面的，但阅读形式在变化），注意第二问要给出明确态度。",
+    phrases:["It is often reported that ...","There are two main reasons for this trend.","Firstly, ...","Secondly, ...","In my view, this is largely a negative development, although ...","In conclusion, ..."],
+    model:`It is often reported that people today, especially young adults, read far fewer books than previous generations. This essay will explain why this change is taking place and argue that, although reading habits are changing rather than disappearing, the trend is largely negative.
+
+There are two main reasons for this trend. Firstly, books now compete with a huge range of digital entertainment. Streaming services, video platforms and mobile games offer instant enjoyment that requires little effort, so many people choose them in their free time instead of a novel. Secondly, modern lifestyles leave fewer long periods of quiet time. People check their phones dozens of times a day, and as a result they become used to short pieces of information and may find it harder to concentrate on a long text.
+
+In my view, this is largely a negative development, although it is not entirely so. On the positive side, many people still read a great deal online, including news articles and blogs, and audiobooks have introduced literature to people who rarely open a printed book. However, reading complete books develops skills that short texts cannot. For example, following a complex argument or a long story strengthens concentration and vocabulary, and novels encourage readers to understand the feelings of people different from themselves. If fewer people read books, these abilities may gradually weaken across society.
+
+In conclusion, people are reading fewer books mainly because of digital entertainment and shorter attention spans. While new forms of reading have some value, I believe the decline of book reading is a loss that schools and families should try to reverse.` },
+  { id:"w2-tech", name:"科技是否让人更孤独", type:"opinion",
+    prompt:"Some people say that modern technology, such as smartphones and social media, is making people more isolated from one another. To what extent do you agree or disagree?",
+    hint:"同意与否题要立场一致。范文部分同意：科技让很多人减少了面对面交流，但对于远方亲友和少数群体，它也减少了孤独。关键是使用方式。",
+    phrases:["It is widely claimed that ...","I partly agree with this view, but I believe ...","There is some evidence that ...","On the other hand, technology has also ...","The key factor, in my opinion, is how ...","In conclusion, ..."],
+    model:`It is widely claimed that smartphones and social media are causing people to become more isolated, even though they appear to connect us more than ever before. I partly agree with this view, but I believe the effect of technology depends mainly on how it is used.
+
+There is some evidence that technology can reduce real human contact. It is now common to see friends or family members sitting together while each of them looks at a screen. In addition, some people spend hours scrolling through social media, comparing their lives with the carefully selected images of others, which can leave them feeling lonely and dissatisfied. When online communication replaces meeting in person, relationships may become more numerous but also more shallow.
+
+On the other hand, technology has also reduced isolation for many groups. For example, video calls allow grandparents to see their grandchildren in other countries, and students studying abroad can talk to their families every day at almost no cost. Furthermore, people with rare illnesses or unusual interests can find online communities of others who share their experiences, something that would have been almost impossible in the past.
+
+The key factor, in my opinion, is how people use these tools. Technology that helps people arrange meetings or maintain distant relationships brings them closer together, whereas technology that replaces real conversation tends to drive them apart.
+
+In conclusion, although modern technology can contribute to isolation, it can equally reduce loneliness. Rather than blaming smartphones themselves, people should learn to use them in ways that strengthen their relationships.` }
 ]
 };

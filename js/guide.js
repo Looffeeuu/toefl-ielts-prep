@@ -24,53 +24,53 @@ const SECTIONS = [
     { name:"补全单词 Complete the Words", tests:"在一段学术短文里补全单词的后半部分，考拼写、词形变化和对上下文的理解。",
       points:["词形：名词单复数、动词时态和第三人称 -s、形容词与副词","高频功能词：介词、连词、冠词、代词","根据前后句判断词义和词性"],
       traps:["只看前几个字母猜词，忽略句子需要的词性","拼对了词但漏了 -s、-ed、-ly 等词尾","大小写和双写辅音（occurred、beginning）"],
-      practice:"阅读 → 补全单词（13 篇）", statKey:"read:word" },
+      practice:"阅读 → 补全单词（16 篇）", statKey:"read:word" },
     { name:"日常阅读 Read in Daily Life", tests:"读邮件、通知、告示等校园生活文字，考写作目的、具体细节、语气和言外之意。",
       points:["目的题：这篇文字主要想做什么","细节题：时间、地点、费用、条件","推断题：根据规定推出某种情况会怎样","语气题：正式 / 友好 / 紧急"],
       traps:["选项照抄原文的词，但意思被改了","推断过度：原文没有依据的结论","忽略 only、must、unless、except 等限定词"],
-      practice:"阅读 → 日常阅读（16 篇）", statKey:"read:daily" },
+      practice:"阅读 → 日常阅读（19 篇）", statKey:"read:daily" },
     { name:"学术文章 Read an Academic Passage", tests:"读大学课程风格的短文，考主旨、细节、词汇、推断、作者意图和文章结构。",
       points:["主旨题：概括全文，而不是某一段的细节","词汇题：把选项代回原句，看意思是否通顺","否定事实题（NOT）：逐项在原文中排除","目的与修辞题：作者为什么提到某个例子","结构题：提出—反驳—证实、问题—解决等"],
       traps:["只在某一段成立的选项冒充主旨","词汇题选了单词的常见意思而不是文中的意思","all、never、only 等绝对化表述"],
-      practice:"阅读 → 学术文章（9 篇）· 完整模拟", statKey:"read:academic" }
+      practice:"阅读 → 学术文章（12 篇）· 完整模拟", statKey:"read:academic" }
   ]},
   { id:"listening", name:"听力", route:"listening", tasks:[
     { name:"听后选回应 Listen and Choose a Response", tests:"只听一句话（不显示文字），从四个文字选项中选出最自然的回应，考对日常口语意图的理解。",
       points:["特殊疑问词决定答案类型：Where 答地点、When 答时间、Why 答原因","间接回答：不说 Yes / No，而是给出相关信息","Why don't we…、Would you mind…、Shouldn't we… 等句型的真实意图","选择疑问句（A or B）不能用 Yes / No 回答"],
       traps:["选项重复问句里的词或发音相近的词（rain / train）","时态和问句不一致","用 Because 回答其实是建议的 Why don't we…"],
-      practice:"听力 → 听后选回应（6 套 60 句）", statKey:"listen:response" },
+      practice:"听力 → 听后选回应（7 套 70 句）", statKey:"listen:response" },
     { name:"对话与通知 Conversation · Announcement", tests:"听校园生活中的两人对话或广播通知，考谈话目的、细节、说话人接下来会做什么，以及通知里的变化和要求。",
       points:["目的题：开头一两句通常说明来意","细节题：时间、地点、数字、条件","推断题：根据建议和结尾判断下一步","通知里的变化（改期、改地点、新规定）和原因"],
       traps:["听到的第一个时间或数字不一定是答案（6:15 和 6:30）","对话中途被否定或修改的信息","把例子当成主旨"],
-      practice:"听力 → 对话（15 段）· 通知（13 则）", statKey:"listen:short" },
+      practice:"听力 → 对话（18 段）· 通知（16 则）", statKey:"listen:short" },
     { name:"学术讲座 Academic Talk", tests:"听一段 175–250 词的课堂讲解，考主旨、细节、例子的作用、推断、组织结构和讲者态度。",
       points:["开头的主题句和 Today let's talk about…","结构词：first / second / another、however、so","说话意图题：讲者为什么提到某个例子或常见误解","态度题：承认优点再指出问题（it can…, but…）"],
       traps:["只在讲座某一部分成立的选项冒充主旨","讲者先说常见误解再纠正，误解出现在选项里","记了细节却没记住它支持的观点"],
-      practice:"听力 → 学术讲座（11 段）· 完整模拟", statKey:"listen:talk" }
+      practice:"听力 → 学术讲座（14 段）· 完整模拟", statKey:"listen:talk" }
   ]},
   { id:"writing", name:"写作", route:"writing", tasks:[
     { name:"组句 Build a Sentence", tests:"用打乱的词块拼出对话中 B 的回答，考句子结构和语法，每题全对才得分。",
       points:["间接疑问句用陈述语序（Do you know where it is?）","助动词、情态动词后接动词原形","时态、被动语态、比较结构","不定式与动名词（would like to do / mind doing）","句末是问号还是句号，决定整句的结构"],
       traps:["干扰词块：多一个 does、is 或错误的词形","把疑问句的倒装带进从句里","固定词块的位置限制了其他词块的顺序，要先看它们"],
-      practice:"写作 → 组句（6 套 60 题）", statKey:"write:tags" },
+      practice:"写作 → 组句（10 套 100 题）", statKey:"write:tags" },
     { name:"写邮件 Write an Email", tests:"按情境给指定对象写邮件，考任务完成度、语气是否得体、组织和语言准确性。",
       points:["三个要点逐一写到","称呼、开头说明目的、结尾礼貌用语、署名","语气匹配对象：教授、职员、朋友各不相同"],
       traps:["只写了两个要点","对教授或机构用太随便的语气","写太长导致时间不够、来不及检查"],
-      practice:"写作 → 写邮件（8 题）", statKey:"write:email" },
+      practice:"写作 → 写邮件（14 题）", statKey:"write:email" },
     { name:"学术讨论 Write for an Academic Discussion", tests:"回应教授的问题和两位同学的帖子，考观点表达、论证、与他人观点的互动和语言。",
       points:["开头就亮出立场","点名回应同学的观点（同意或反驳）","理由加具体例子，提出同学没说过的新角度"],
       traps:["只复述同学的观点，没有新内容","通篇只有观点、没有例子","少于 100 词"],
-      practice:"写作 → 学术讨论（8 题）", statKey:"write:disc" }
+      practice:"写作 → 学术讨论（14 题）", statKey:"write:disc" }
   ]},
   { id:"speaking", name:"口语", route:"speaking", tasks:[
     { name:"听后复述 Listen and Repeat", tests:"听一句话后原样复述，句子由短到长，考听辨、短时记忆、发音和语法结构。",
       points:["完整保留冠词、介词和词尾（-s、-ed）","长句先抓意群：主语 + 动词 + 宾语，再补修饰成分","语调和停顿尽量贴近原句"],
       traps:["只记住了意思，换成自己的说法","漏掉 the、a、of、to 等小词","长句后半部分记不住就放弃，能说多少说多少更好"],
-      practice:"口语 → 听后复述（6 套 42 句）", statKey:"speak:repeat" },
+      practice:"口语 → 听后复述（12 套 84 句）", statKey:"speak:repeat" },
     { name:"模拟面试 Take an Interview", tests:"回答研究者的 4 个问题，没有准备时间，考流利度、语言使用和内容展开。",
       points:["问题通常由浅入深：个人经历 → 偏好 → 观点 → 社会或未来","45 秒结构：直接回答 → 理由 → 例子 → 收尾","保持连贯，适当使用连接词"],
       traps:["开头停顿太久","只说观点、没有例子，时间没用完","背模板却答非所问"],
-      practice:"口语 → 模拟面试（8 套 32 题）", statKey:"speak:interview" }
+      practice:"口语 → 模拟面试（14 套 56 题）", statKey:"speak:interview" }
   ]}
 ];
 
@@ -100,29 +100,29 @@ const IELTS_SECTIONS = [
     { name:"听力 Listening", tests:"四个部分由易到难：日常对话（如预订、咨询）、日常独白（如场所介绍）、学术场景的多人讨论、学术讲座。题型有填空（表格、笔记、流程图、句子）、选择、配对、地图或平面图标注、简答。",
       points:["每部分开始前先读题，预测答案是数字、日期、人名还是名词","注意字数要求，例如 NO MORE THAN TWO WORDS AND/OR A NUMBER","题目顺序一般和录音顺序一致","抓住 but、actually、in fact 后面的修正信息"],
       traps:["说话人先说一个答案又改口","拼写或单复数错误直接不得分","超出字数限制","题目和录音用词不同（同义替换），等原词出现时答案已经过去了"],
-      practice:"听力 → 三套练习（12 个部分，120 题）· 整套模拟", statKey:"ilisten" }
+      practice:"听力 → 四套练习（16 个部分，160 题）· 整套模拟", statKey:"ilisten" }
   ]},
   { id:"reading", name:"阅读", route:"ireading", tasks:[
     { name:"阅读 Reading（学术类）", tests:"3 篇来自书籍、期刊、报纸的长文，60 分钟 40 题。题型包括判断题（True / False / Not Given，Yes / No / Not Given）、段落标题配对、信息配对、特征配对、句子结尾配对、各类填空、选择和简答。",
       points:["判断题：False 是与原文相反，Not Given 是原文没有提到","标题配对看段落主旨，不被段落中的细节词吸引","多数题型按原文顺序出题，配对题通常不按顺序","每篇大约 20 分钟，答案要在 60 分钟内写完，没有额外的誊写时间"],
       traps:["用常识而不是原文判断 True / False","被和原文相同的词吸引，忽略了意思变化","填空超出字数或改动了原文词形","在一道难题上花太多时间"],
-      practice:"阅读 → 9 篇文章（120 题）· 三篇 60 分钟完整模拟", statKey:"iread" }
+      practice:"阅读 → 12 篇文章（160 题）· 三篇 60 分钟完整模拟", statKey:"iread" }
   ]},
   { id:"writing", name:"写作", route:"iwriting", tasks:[
     { name:"Task 1 图表描述", tests:"描述图表、表格、流程图或地图中的信息，至少 150 词，建议用 20 分钟。评分看任务完成度、连贯与衔接、词汇、语法四项。",
       points:["写一段概述（overview），点出最主要的趋势或特征","挑选关键数据进行比较，不用罗列每个数字","准确表达变化和比较：rise sharply、remain stable、twice as high as"],
       traps:["没有概述段","加入个人观点或猜测原因","数据写错，或时态和图表时间不一致"],
-      practice:"写作 → Task 1（6 道：折线、柱状、饼图、表格、流程图）", statKey:"iwrite:1" },
+      practice:"写作 → Task 1（10 道：折线、柱状、饼图、表格、流程图）", statKey:"iwrite:1" },
     { name:"Task 2 议论文", tests:"就一个观点或问题写议论文，至少 250 词，建议用 40 分钟。分值是 Task 1 的两倍。",
       points:["先判断题目类型：是否同意、讨论双方观点、问题与解决、利弊分析","立场明确并贯穿全文","每个主体段一个中心论点，配解释和例子"],
       traps:["只回答了题目的一部分","堆砌背好的模板句，和题目关系不大","少于 250 词"],
-      practice:"写作 → Task 2（8 道，五种题型）· 60 分钟完整模拟", statKey:"iwrite:2" }
+      practice:"写作 → Task 2（14 道，五种题型）· 60 分钟完整模拟", statKey:"iwrite:2" }
   ]},
   { id:"speaking", name:"口语", route:"ispeaking", tasks:[
     { name:"口语 Speaking", tests:"与考官面对面交流，全程录音。Part 1 约 4–5 分钟，回答家乡、学习、爱好等日常问题；Part 2 拿到话题卡，准备 1 分钟后讲 1–2 分钟；Part 3 约 4–5 分钟，围绕 Part 2 的话题深入讨论。评分看流利与连贯、词汇、语法、发音四项。",
       points:["Part 1 每题展开两三句，不只回答 yes / no","Part 2 用准备时间记关键词，按卡片上的提示讲满两分钟","Part 3 给出观点、理由和例子，可以比较过去和现在、推测未来"],
       traps:["Part 2 讲一分钟就没话了","明显背诵的答案，考官会换问题","为了用难词而影响流利度"],
-      practice:"口语 → Part 1（12 个话题）· Part 2 话题卡（10 张）· Part 3 讨论（10 组）· 完整模拟", statKey:"ispeak" }
+      practice:"口语 → Part 1（20 个话题）· Part 2 话题卡（16 张）· Part 3 讨论（16 组）· 完整模拟", statKey:"ispeak" }
   ]}
 ];
 const EXAM_GUIDE = {

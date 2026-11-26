@@ -426,5 +426,145 @@ Lecturer: Even so, there has been progress. Artificial silk fibres are already u
       { q:"Medical use: repairing damaged ___", a:["nerves"], why:"testing silk for repairing damaged nerves。" }
     ]}
   ]}
+]},
+{ id:"l-t4", name:"练习四", parts:[
+
+{ part:1, title:"报名摄影课程", intro:"You will hear a woman phoning an adult education centre to enrol on a photography course.",
+  speakers:{ Paul:"M", Nina:"W" },
+  script:`Paul: Good afternoon, Hillside Adult Education Centre. Paul speaking.
+Nina: Hello. I'm interested in one of your photography courses. I saw it in your autumn brochure.
+Paul: Of course. We have two at the moment. There's Digital Photography for Beginners, and there's Portrait Photography, which is for people with some experience.
+Nina: I've never done a course before, so the beginners' one, please.
+Paul: Fine. That course runs for eight weeks, on Wednesday evenings from seven to nine.
+Nina: Oh, I thought it was on Tuesdays.
+Paul: It was last year, but we moved it because the room wasn't available. Wednesdays now.
+Nina: That's fine. Where is it held?
+Paul: In the Garden Room, which is on the first floor of our main building, next to the library.
+Nina: And how much does it cost?
+Paul: The full fee is a hundred and forty pounds, but if you're over sixty or a student, there's a reduced fee of ninety-five.
+Nina: I'm neither, so the full fee, then.
+Paul: Do you have your own camera?
+Nina: I've got a phone with quite a good camera. Is that enough?
+Paul: For the first few weeks, yes, but from week four you'll need a digital camera with manual settings. We can lend you one if you don't have one, but you'd need to pay a deposit of thirty pounds.
+Nina: I'll probably borrow my brother's.
+Paul: OK. Can I take some details? Your full name?
+Nina: Nina Okonkwo. That's O-K-O-N-K-W-O.
+Paul: Thank you. And your address?
+Nina: 22 Fenwick Road, Hillside.
+Paul: And a postcode?
+Nina: HS4 7DL.
+Paul: Thanks. Is there anything else we should know, any access needs, for example?
+Nina: No, nothing like that.
+Paul: Lovely. The course includes a trip to the botanical gardens in week six, so you might want to bring a packed lunch that day. And one last thing: we ask everyone to bring a USB stick to the first class so they can save their photos.
+Nina: Great. Thank you very much.`,
+  groups:[
+    { type:"gap", instr:"Complete the form below.", limit:"Write ONE WORD AND/OR A NUMBER for each answer.", maxWords:1, heading:"Hillside Adult Education Centre: enrolment", items:[
+      { q:"Course: Digital Photography for ___", a:["Beginners"], why:"Digital Photography for Beginners，她从没上过课，所以选初级。" },
+      { q:"Day: ___ evenings, 7–9 pm", a:["Wednesday","Wednesdays"], why:"去年在周二，今年改到 Wednesdays now。" },
+      { q:"Room: the ___ Room, first floor", a:["Garden"], why:"In the Garden Room, which is on the first floor。" },
+      { q:"Fee: £___", a:["140"], why:"她既不是六十岁以上也不是学生，所以付全价 a hundred and forty pounds。" },
+      { q:"From week 4: needs a camera with ___ settings", a:["manual"], why:"a digital camera with manual settings。" },
+      { q:"Camera deposit (if borrowed): £___", a:["30","thirty"], why:"a deposit of thirty pounds。" },
+      { q:"Name: Nina ___", a:["Okonkwo"], why:"拼写 O-K-O-N-K-W-O。" },
+      { q:"Address: 22 ___ Road, Hillside", a:["Fenwick"], why:"22 Fenwick Road, Hillside。" },
+      { q:"Week 6: trip to the botanical ___", a:["gardens"], why:"a trip to the botanical gardens in week six。" },
+      { q:"Bring to first class: a USB ___", a:["stick"], why:"bring a USB stick to the first class。" }
+    ]}
+  ]},
+
+{ part:2, title:"城市自行车共享计划", intro:"You will hear a council officer talking on local radio about a new bike-sharing scheme.",
+  speakers:{ Officer:"W" },
+  script:`Officer: Thanks for having me. I'm here to tell listeners about CityCycle, our new bike-sharing scheme, which launches on the first of May.
+Officer: The idea came from a survey we did last year. We asked residents why they didn't cycle more, and the most common answer wasn't safety or the weather. It was simply that people didn't have anywhere to keep a bike at home, especially those living in flats.
+Officer: So, how does it work? There will be forty docking stations across the city to begin with, and three hundred bikes. A third of those will be electric bikes, which we think will be popular on the hills in the north of the city.
+Officer: To use the scheme, you'll need to download the CityCycle app and register a payment card. You then scan the code on the bike to unlock it. You can return it to any docking station, not just the one you started from.
+Officer: As for prices, the first thirty minutes of every ride are free for members. Membership costs eight pounds a month, or sixty pounds for a whole year. People who don't want to join can pay as they go, at one pound per fifteen minutes. Electric bikes cost an extra fifty pence per ride.
+Officer: Let me mention where some of the stations will be. There's one outside the central railway station, obviously, and one at the hospital, which will be useful for staff working night shifts. The university will have two, one at the main campus and one at the sports centre, for students travelling to training sessions and matches. We're also putting one by the river, at the start of the riverside path, because we hope people will use the bikes for leisure as well as commuting. And finally, there'll be a station at the shopping centre, in the car park, so people can leave their cars there and cycle into the old town, which is closed to traffic.
+Officer: We'll be reviewing the scheme after six months, and we're hoping to double the number of stations next year if it's successful.`,
+  groups:[
+    { type:"mcq", instr:"Choose the correct letter, A, B or C.", items:[
+      { q:"According to the survey, why did most residents not cycle more?", opts:["They thought the roads were dangerous.","They had nowhere to store a bike.","The weather was often bad."], a:1, why:"the most common answer ... was simply that people didn't have anywhere to keep a bike at home。" },
+      { q:"How many electric bikes will there be at the start?", opts:["forty","one hundred","three hundred"], a:1, why:"three hundred bikes. A third of those will be electric，三百的三分之一是一百。" },
+      { q:"What must users do before they can unlock a bike?", opts:["visit a docking station to register","buy a membership card","download an app and register a payment card"], a:2, why:"you'll need to download the CityCycle app and register a payment card。" },
+      { q:"How much does annual membership cost?", opts:["£8","£60","£96"], a:1, why:"sixty pounds for a whole year。每月八镑是月费。" },
+      { q:"What will happen after six months?", opts:["The prices will increase.","The scheme will be reviewed.","The number of bikes will double."], a:1, why:"We'll be reviewing the scheme after six months。车站数量翻倍是明年的计划，而且要看效果。" }
+    ]},
+    { type:"match", instr:"What reason does the speaker give for placing a station at each location? Choose FIVE answers from the box and write the correct letter, A–G.",
+      options:[["A","for people who work at night"],["B","for travelling to an area without cars"],["C","for people using a path for leisure"],["D","for visitors from other countries"],["E","for people arriving by train"],["F","for students who play sport"],["G","because it is on a hill"]], items:[
+      { q:"central railway station", a:"E", why:"outside the central railway station, obviously，方便坐火车来的人。" },
+      { q:"hospital", a:"A", why:"useful for staff working night shifts。" },
+      { q:"university sports centre", a:"F", why:"one at the sports centre, for students travelling to training sessions and matches。" },
+      { q:"riverside", a:"C", why:"we hope people will use the bikes for leisure as well as commuting。" },
+      { q:"shopping centre", a:"B", why:"cycle into the old town, which is closed to traffic。" }
+    ]}
+  ]},
+
+{ part:3, title:"关于本地方言的研究报告", intro:"You will hear two linguistics students, Grace and Tom, discussing a research project with their tutor, Dr Harris.",
+  speakers:{ "Dr Harris":"M", Grace:"W", Tom:"M2" },
+  script:`Dr Harris: So, Grace, Tom, how's the project on local dialects going?
+Grace: Quite well, I think. We've recorded twenty speakers so far, all from the town where we're based.
+Tom: We were aiming for thirty, but it's been harder to find older speakers than we expected.
+Dr Harris: That's common. Have you tried the community centre? They run a lunch club for retired people.
+Grace: No, that's a good idea. We'll contact them this week.
+Dr Harris: And how are you collecting the data?
+Tom: We ask each speaker to read a short passage aloud and then to have a free conversation with one of us for about ten minutes.
+Dr Harris: Good. In my experience the conversations are usually more useful than the reading. People sound unnatural when they read.
+Grace: We noticed that. Several speakers used local words in conversation that they didn't use in the reading at all.
+Dr Harris: What's been the most surprising finding so far?
+Tom: For me, it's that younger speakers still use some of the traditional vowel sounds. We'd assumed they'd disappeared.
+Grace: Though they use far fewer local words. Most young people we spoke to had never heard of words their grandparents use every day.
+Dr Harris: Interesting. Now, for your final report, I'd suggest you organise it by age group rather than by individual speaker. It'll make the patterns clearer.
+Tom: Should we include the recordings themselves?
+Dr Harris: Short extracts would be good, but you'll need written consent from each speaker before you share any audio.
+Grace: We got consent for the research, but not for sharing recordings. We'll have to go back and ask.
+Dr Harris: Yes, do that. And for the background section, keep it short. Two pages at most. The examiners are more interested in your own data.
+Tom: What about a map showing where speakers grew up?
+Dr Harris: That would be helpful, as long as you don't include their exact addresses.
+Grace: Of course. And should we compare our results with the 1970s survey of the region?
+Dr Harris: Definitely. That comparison could be the strongest part of the report.`,
+  groups:[
+    { type:"mcq", instr:"Choose the correct letter, A, B or C.", items:[
+      { q:"What problem have the students had so far?", opts:["finding older speakers","getting good quality recordings","choosing a town to study"], a:0, why:"it's been harder to find older speakers than we expected。" },
+      { q:"What does Dr Harris suggest they do?", opts:["contact a community centre","reduce the number of speakers","use older recordings"], a:0, why:"Have you tried the community centre? They run a lunch club for retired people。" },
+      { q:"Why does Dr Harris prefer the conversations to the reading task?", opts:["They are quicker to record.","Speakers sound more natural.","They are easier to analyse."], a:1, why:"People sound unnatural when they read。" },
+      { q:"What surprised Tom about younger speakers?", opts:["They use many local words.","They still use some traditional vowel sounds.","They did not want to take part."], a:1, why:"younger speakers still use some of the traditional vowel sounds. We'd assumed they'd disappeared。" },
+      { q:"What does Grace say about younger speakers' vocabulary?", opts:["They know very few local words.","They use the same words as their grandparents.","They have created new local words."], a:0, why:"they use far fewer local words ... had never heard of words their grandparents use every day。" }
+    ]},
+    { type:"match", instr:"What does Dr Harris advise about each part of the report? Choose FIVE answers from the box and write the correct letter, A–G.",
+      options:[["A","organise it by age"],["B","get written permission first"],["C","limit its length"],["D","leave out personal details"],["E","make it the main focus"],["F","put it in an appendix"],["G","ask another tutor"]], items:[
+      { q:"presentation of results", a:"A", why:"organise it by age group rather than by individual speaker。" },
+      { q:"audio extracts", a:"B", why:"you'll need written consent from each speaker before you share any audio。" },
+      { q:"background section", a:"C", why:"keep it short. Two pages at most。" },
+      { q:"map", a:"D", why:"as long as you don't include their exact addresses。" },
+      { q:"comparison with the 1970s survey", a:"E", why:"That comparison could be the strongest part of the report。" }
+    ]}
+  ]},
+
+{ part:4, title:"冰川的退缩与测量", intro:"You will hear part of a lecture about how scientists study retreating glaciers.",
+  speakers:{ Lecturer:"M" },
+  script:`Lecturer: In today's lecture, I want to look at glaciers, and particularly at the methods scientists use to measure how they are changing.
+Lecturer: First, a reminder of what a glacier is. It's a large mass of ice that forms over many years as snow builds up and is compressed. Glaciers move slowly downhill under their own weight. Whether a glacier grows or shrinks depends on its balance: how much snow it gains in winter compared with how much ice it loses through melting in summer.
+Lecturer: Since the mid-nineteenth century, the great majority of the world's mountain glaciers have been retreating. We know this partly from historical sources. In the Alps, for example, paintings and early photographs show glaciers reaching much further down valleys than they do today.
+Lecturer: Modern measurement uses several methods. The simplest is to place markers, usually long poles called stakes, into the ice. Researchers return each year to record how much of each stake has been exposed by melting. This method is cheap and accurate, but it's limited to glaciers that people can reach safely.
+Lecturer: For larger areas, scientists rely on satellites. Some satellites measure the height of the ice surface using lasers, which allows researchers to calculate changes in the volume of ice. Others measure tiny changes in the Earth's gravity, which reveal how much mass has been lost from very large ice sheets, such as those in Greenland.
+Lecturer: Why does this matter? Mountain glaciers act as natural water stores. In many regions, they release meltwater during the dry summer months, when rivers would otherwise be low. Communities in parts of the Andes and the Himalayas depend on this water for drinking and for agriculture. In the short term, faster melting may actually increase river flow, but as glaciers shrink, that supply will eventually decline.
+Lecturer: Melting glaciers also contribute to rising sea levels. Mountain glaciers are small compared with the ice sheets, but because they respond quickly to warming, they have so far made a significant contribution. Finally, retreating ice can create new hazards. Lakes can form behind loose piles of rock left by the glacier, and if these natural dams fail, the resulting floods can be extremely destructive.`,
+  groups:[
+    { type:"gap", instr:"Complete the notes below.", limit:"Write ONE WORD ONLY for each answer.", maxWords:1, heading:"Measuring glaciers", items:[
+      { label:"Background" },
+      { q:"A glacier forms when snow builds up and is ___", a:["compressed"], why:"forms over many years as snow builds up and is compressed。" },
+      { q:"Growth or shrinking depends on the glacier's ___", a:["balance"], why:"Whether a glacier grows or shrinks depends on its balance。" },
+      { q:"Evidence of past size in the Alps: paintings and early ___", a:["photographs"], why:"paintings and early photographs show glaciers reaching much further down valleys。" },
+      { label:"Methods" },
+      { q:"Stakes: cheap and ___, but only used where glaciers can be reached safely", a:["accurate"], why:"This method is cheap and accurate。" },
+      { q:"Satellites use ___ to measure the height of the ice surface", a:["lasers"], why:"measure the height of the ice surface using lasers。" },
+      { q:"Changes in the Earth's ___ show mass lost from large ice sheets", a:["gravity"], why:"measure tiny changes in the Earth's gravity。" },
+      { label:"Importance" },
+      { q:"Glaciers act as natural water ___", a:["stores"], why:"Mountain glaciers act as natural water stores。" },
+      { q:"Meltwater is used for drinking and ___", a:["agriculture"], why:"depend on this water for drinking and for agriculture。" },
+      { q:"Glaciers have made a significant contribution to rising ___ levels", a:["sea"], why:"Melting glaciers also contribute to rising sea levels。" },
+      { q:"New lakes may cause ___ if their natural dams fail", a:["floods"], why:"the resulting floods can be extremely destructive。" }
+    ]}
+  ]}
 ]}
 ];

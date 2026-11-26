@@ -32,7 +32,13 @@ ctw: [
   { id:"c-coffee", level:2, topic:"历史", title:"The Spread of Coffee",
     text:"Coffee was first grown in East Africa and southern Arabia. By the fifteenth century, people in Yemen were drinking it to stay awake during long nights of prayer. Traders soon carried the beans to Egypt, Persia, and Turkey, where public coffee houses became popular places for conversation, music, and the exchange of news." },
   { id:"c-placebo", level:3, topic:"医学", title:"The Placebo Effect",
-    text:"In medical research, a placebo is a treatment that contains no active ingredient. Surprisingly, patients who receive placebos often report genuine improvements in their symptoms, particularly pain. Researchers believe that expectation plays a central role, since patients who anticipate relief may release natural chemicals that reduce discomfort. For this reason, new drugs are usually compared against placebos rather than against no treatment at all." }
+    text:"In medical research, a placebo is a treatment that contains no active ingredient. Surprisingly, patients who receive placebos often report genuine improvements in their symptoms, particularly pain. Researchers believe that expectation plays a central role, since patients who anticipate relief may release natural chemicals that reduce discomfort. For this reason, new drugs are usually compared against placebos rather than against no treatment at all." },
+  { id:"c-rainbow", level:1, topic:"物理", title:"Rainbows",
+    text:"A rainbow appears when sunlight passes through drops of rain. Each drop works like a tiny prism and bends the light. White light is made of many colors, and each color bends by a slightly different amount. This separates the light into a band of red, orange, yellow, green, blue, and violet that we can see in the sky." },
+  { id:"c-silk", level:2, topic:"历史", title:"The Silk Road",
+    text:"The Silk Road was not a single road but a network of trade routes. For more than a thousand years, merchants carried silk, spices, paper, and metals between China and the Mediterranean world. Few traders traveled the entire distance; instead, goods passed from one merchant to another at busy market towns. Along with these goods, the routes also spread religions, languages, and technologies." },
+  { id:"c-microbiome", level:3, topic:"生物", title:"The Gut Microbiome",
+    text:"The human digestive system contains trillions of microorganisms, collectively known as the gut microbiome. These bacteria help break down fibers that human enzymes cannot digest, producing compounds that nourish the cells lining the intestine. Researchers have also found associations between the composition of the microbiome and conditions ranging from allergies to obesity, although establishing whether these relationships are causal remains a considerable challenge." }
 ],
 
 /* ---------- 日常阅读 Read in Daily Life ---------- */
@@ -244,6 +250,45 @@ daily: [
       { type:"detail", q:"How will proposals be evaluated?",
         opts:["By how original and practical they are","By how much money they request in their budget","By which field they belong to","By the student's year of study"],
         why:"judged on originality and feasibility, not on the size of the budget，feasibility 即可行性。" }
+    ]},
+  { id:"d-printer", level:1, doc:"告示牌", title:"Library printers",
+    head:[["Notice","Main Library"]],
+    text:"Printing Update\n\nThe black-and-white printers on the first floor now cost 5 cents per page instead of 10 cents. Color printing is still available only at the help desk and costs 25 cents per page.\n\nTo print, send your file from any library computer and swipe your student card at the printer. Unused print jobs are deleted after two hours.",
+    qs:[
+      { type:"detail", q:"What has changed about printing in the library?",
+        opts:["Black-and-white printing has become cheaper","Color printers have been added to the first floor","Students no longer need their cards to print","Print jobs are now kept for a full day before they are deleted"],
+        why:"now cost 5 cents per page instead of 10 cents，黑白打印降价了。" },
+      { type:"infer", q:"What will happen if a student sends a file but does not go to the printer that day?",
+        opts:["The print job will be removed","The file will print automatically at the help desk","The student will be charged double","The library will email the file back to the student so it can be sent again"],
+        why:"Unused print jobs are deleted after two hours，两小时后自动删除。" }
+    ]},
+  { id:"d-orientation", level:2, doc:"邮件", title:"Orientation leaders needed",
+    head:[["From","Office of Student Life"],["To","All undergraduate students"],["Subject","Become an orientation leader"]],
+    text:"Dear students,\n\nEach August, orientation leaders help new students settle into campus life. Leaders guide campus tours, answer questions, and run small group discussions during the first week.\n\nThis year, leaders will move into campus housing one week early, on August 18, and will receive free housing for that week as well as a $400 stipend. A two-day training session is required.\n\nTo apply, complete the online form by March 30. Students who will be on academic probation in the fall are not eligible.\n\nBest wishes,\nOffice of Student Life",
+    qs:[
+      { type:"purpose", q:"What is the main purpose of the email?",
+        opts:["To invite students to apply for a position","To explain the schedule for new students' first week on campus","To announce changes to campus housing","To remind leaders to attend training"],
+        why:"邮件介绍迎新志愿者的工作、待遇和申请方法，目的是招人。" },
+      { type:"negative", q:"Which of the following is NOT mentioned as a benefit for orientation leaders?",
+        opts:["Free meals","Free housing for one week","A payment of $400","Moving into campus housing early"],
+        why:"提到了提前入住、一周免费住宿和 400 美元补贴，没有提到免费餐食。" },
+      { type:"infer", q:"What can be inferred about a student whose grades are very low?",
+        opts:["The student may not be able to become a leader","The student must attend a longer training session than other applicants","The student should apply before March 30","The student will receive a smaller stipend"],
+        why:"Students who will be on academic probation in the fall are not eligible，成绩太差会被留校察看，不能申请。" }
+    ]},
+  { id:"d-parking", level:3, doc:"通知", title:"Parking permit changes",
+    head:[["Notice","Campus Transportation Services"]],
+    text:"Changes to Student Parking\n\nBeginning in the fall semester, parking permits for Lot C will be sold through a lottery rather than on a first-come, first-served basis. Demand for Lot C, the only lot within walking distance of the main academic buildings, has exceeded supply by more than 300 permits each year.\n\nStudents may enter the lottery between July 1 and July 15. Those not selected will automatically be offered a permit for Lot F, which is served by a free shuttle every ten minutes. Students with documented disabilities are guaranteed a space in Lot C and should not enter the lottery.\n\nPermit prices are unchanged.",
+    qs:[
+      { type:"purpose", q:"Why is the parking system being changed?",
+        opts:["Too many students want permits for Lot C","Lot C is being closed for construction","Permit prices have become too high","The shuttle to Lot F has stopped running"],
+        why:"Demand for Lot C ... has exceeded supply by more than 300 permits each year，需求远超供给，所以改成抽签。" },
+      { type:"infer", q:"What can be inferred about Lot F?",
+        opts:["It is farther from the main academic buildings than Lot C","It is more expensive than Lot C","It is reserved for students with disabilities","It will be closed during the fall semester while the new lottery is carried out"],
+        why:"Lot C 是唯一步行可达主教学楼的停车场，Lot F 要坐班车，说明更远。" },
+      { type:"detail", q:"What should a student with a documented disability do?",
+        opts:["Not enter the lottery, since a space is guaranteed","Enter the lottery before July 1","Apply for a permit in Lot F","Ask the shuttle service for a special pass"],
+        why:"Students with documented disabilities are guaranteed a space in Lot C and should not enter the lottery。" }
     ]}
 ],
 
@@ -419,6 +464,63 @@ academic: [
       { type:"tone", q:"Which best describes the author's view of the errors in memory?",
         opts:["They are an acceptable cost of a system that is useful in other ways","They show that human memory cannot be trusted in any situation, including in courts of law","They are rare and not worth studying","They are caused mainly by poor eyesight"],
         why:"作者提醒不要得出记忆普遍不可靠的结论，最后说 Errors ... are the price of flexibility，态度是辩证地接受。B 正是作者反对的结论。" }
+    ]},
+  { id:"a-ants", level:1, topic:"生物学", title:"Farming Ants",
+    text:"Humans are not the only species that farms. Leafcutter ants, found in Central and South America, grow their own food. Worker ants cut pieces of leaves and carry them back to their underground nests. However, the ants do not eat the leaves. Instead, they chew them into a paste and use it to grow a special fungus, which is the colony's only food.\n\nThe ants take careful care of their gardens. They remove pieces of fungus that are diseased, and some ants carry bacteria on their bodies that produce chemicals to kill harmful molds. A large colony can contain millions of ants, each with a specific job.\n\nScientists believe that ants began farming fungus about 50 million years ago, long before humans started agriculture around 10,000 years ago.",
+    qs:[
+      { type:"main", q:"What is the passage mainly about?",
+        opts:["How leafcutter ants grow their own food","Why leaves are an important food for insects","How humans learned to farm from watching insects","The different kinds of fungus in South American forests"],
+        why:"全文讲切叶蚁如何用叶子种真菌、照料真菌，以及它们「务农」的历史。" },
+      { type:"detail", q:"What do leafcutter ants eat?",
+        opts:["A fungus","Leaves","Bacteria","Other insects"],
+        why:"they chew them into a paste and use it to grow a special fungus, which is the colony's only food。" },
+      { type:"vocab", hl:"harmful", q:"The word \"harmful\" in the passage is closest in meaning to",
+        opts:["damaging","common","unusual","small enough that it cannot be seen without a microscope"],
+        why:"harmful molds 是有害的霉菌，细菌产生的化学物质要杀死它们。" },
+      { type:"purpose", q:"Why does the author mention that humans began farming around 10,000 years ago?",
+        opts:["To show how much earlier ants started farming","To explain how humans learned about fungus","To argue that ants are more intelligent than humans","To give the date when leafcutter ants were first studied by scientists"],
+        why:"把蚂蚁五千万年前开始种植和人类一万年前对比，说明蚂蚁早得多。" },
+      { type:"infer", q:"What can be inferred about the bacteria that some ants carry?",
+        opts:["They help protect the fungus gardens","They are the ants' main source of food","They make the leaves easier to cut","They are harmful to the ants and must be removed regularly"],
+        why:"这些细菌产生的化学物质能杀死有害霉菌，可以推出它们保护真菌园。" }
+    ]},
+  { id:"a-maps", level:2, topic:"地理", title:"The Problem with Flat Maps",
+    text:"Every flat map of the world is, in some way, inaccurate. The Earth is roughly a sphere, and it is impossible to flatten a curved surface without stretching or tearing it. Mapmakers therefore use mathematical methods called projections, and each projection must sacrifice something: the shape of land areas, their relative size, or the distances between them.\n\nThe best-known example is the Mercator projection, created in 1569 for sailors. Its great advantage is that a straight line on the map represents a constant compass direction, which made it extremely useful for navigation. However, the Mercator map greatly enlarges regions far from the equator. Greenland appears roughly the same size as Africa, although Africa is in fact about fourteen times larger.\n\nBecause the Mercator map became so common in schools and atlases, some critics argue that it has shaped how people think about the world, making Europe and North America appear more important. Many organizations now prefer projections that show areas more accurately, even though these distort shapes instead.",
+    qs:[
+      { type:"detail", q:"According to the passage, why is every flat map inaccurate?",
+        opts:["A curved surface cannot be flattened without distortion","Mapmakers do not have accurate measurements of the Earth","Maps are usually too small to show the details of every country","Old maps were designed only for sailors"],
+        why:"it is impossible to flatten a curved surface without stretching or tearing it。" },
+      { type:"vocab", hl:"sacrifice", q:"The word \"sacrifice\" in the passage is closest in meaning to",
+        opts:["give up","measure","improve","repeat many times in order to check that it is correct"],
+        why:"每种投影都必须 sacrifice 形状、面积或距离中的某一项，也就是放弃其中一项的准确性。" },
+      { type:"purpose", q:"Why does the author mention Greenland and Africa?",
+        opts:["To illustrate how the Mercator projection distorts size","To compare the climates of two regions","To show which areas sailors visited most often","To explain why Africa is difficult to map"],
+        why:"格陵兰在地图上和非洲差不多大，实际非洲大十四倍，用来说明墨卡托投影放大高纬度地区。" },
+      { type:"infer", q:"What can be inferred about the Mercator projection's popularity with sailors?",
+        opts:["It made it easier to plan a route in a fixed direction","It showed the true size of every ocean","It was the first map to include Greenland","It was cheaper to print than other maps used at the time"],
+        why:"a straight line on the map represents a constant compass direction，所以按固定方向航行时很方便。" },
+      { type:"tone", q:"How does the author present the critics' view of the Mercator map?",
+        opts:["As one opinion about its possible influence","As a proven scientific fact","As a mistaken belief that has been rejected by geographers and historians","As the reason the map was invented"],
+        why:"some critics argue 只是转述一种观点，作者没有表示同意或反对。" }
+    ]},
+  { id:"a-bilingual", level:3, topic:"语言学", title:"The Bilingual Advantage Debate",
+    text:"For much of the twentieth century, many educators believed that raising children with two languages would confuse them and slow their development. By the early 2000s, this view had been largely reversed. A series of studies reported that bilingual children performed better than monolingual children on tasks requiring them to ignore distracting information or switch between rules, abilities known as executive functions. Researchers proposed that constantly managing two languages served as a kind of mental exercise.\n\nThe idea attracted enormous public interest, but subsequent research has complicated the picture. Several large studies, some involving thousands of children, have found little or no difference between bilingual and monolingual participants once factors such as family income and education were taken into account. Critics have also suggested that early positive results were more likely to be published than negative ones, which may have exaggerated the apparent effect.\n\nNone of this suggests that bilingualism is harmful; the earlier fears of confusion have not been supported. Rather, the current consensus appears to be that the main benefit of speaking two languages is the most obvious one: the ability to communicate with more people and participate in more than one culture. Any cognitive advantage, if it exists, is likely to be small and to depend heavily on circumstances.",
+    qs:[
+      { type:"main", q:"What is the passage mainly about?",
+        opts:["How views about the mental effects of bilingualism have changed","Why children should learn a second language as early as possible","How executive functions develop in young children","The reasons some families raise children with two languages"],
+        why:"文章依次讲早期担忧、2000 年代的「双语优势」研究，以及后来研究对这一结论的质疑。" },
+      { type:"detail", q:"According to the passage, what did researchers in the early 2000s propose?",
+        opts:["Managing two languages acts as a form of mental exercise","Bilingual children are confused by two languages","Family income has no effect on executive functions","Monolingual children are better at switching between rules than bilingual children"],
+        why:"constantly managing two languages served as a kind of mental exercise。" },
+      { type:"infer", q:"Why does the author mention family income and education?",
+        opts:["They may explain differences that were earlier attributed to bilingualism","They are the main reasons families choose to be bilingual","They were measured only in the earliest studies","They show that bilingual children usually come from wealthy families"],
+        why:"考虑收入和教育因素后差异消失，说明早期发现的差异可能来自这些因素而不是双语本身。" },
+      { type:"vocab", hl:"exaggerated", q:"The word \"exaggerated\" in the passage is closest in meaning to",
+        opts:["made seem larger","hidden","tested","explained in a way that is easy for ordinary readers to understand"],
+        why:"只发表正面结果会让效果「显得比实际更大」。" },
+      { type:"tone", q:"Which best describes the author's conclusion about bilingualism?",
+        opts:["Its clearest benefit is social and practical rather than cognitive","It is likely to harm children's development","It has been proven to improve intelligence","It should not be studied further because the results are always unclear"],
+        why:"最后一段：the main benefit ... is the ability to communicate with more people，认知优势即使存在也很小。" }
     ]}
 ]
 };

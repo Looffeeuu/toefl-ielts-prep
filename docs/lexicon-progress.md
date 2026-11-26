@@ -4,9 +4,9 @@
 
 | 项目 | 已核对 | 尚待核对 |
 | --- | ---: | ---: |
-| 释义与词性 | 8174 | 901 |
-| 英美音与主要分读 | 8171 | 904 |
-| 两项均完成 | 8171 | 904 |
+| 释义与词性 | 8274 | 801 |
+| 英美音与主要分读 | 8271 | 804 |
+| 两项均完成 | 8271 | 804 |
 
 每词分别保存来源和日期，不能用核对音标代替核对释义。完整状态和接续队列见 [lexicon-progress.json](lexicon-progress.json)。优先处理缺失、截断、词性矛盾和用法标记，再按字母顺序推进。未找到可靠来源的条目保持待核对，不推测填充。
 
@@ -746,6 +746,13 @@ node tools/lexicon_progress.js
 待复核：birds。OALD 无 birds 独立词条（为 bird 的复数形式），待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/birds)。不计入完成数。
 待复核：forbes。OALD 无 forbes 词条（专有名词），待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/forbes)。不计入完成数。
 
+## 批次 084
+
+完成 100 词：guild、gymnasium、handbook、handout、headmaster、healthcare、henceforth、hereditary、hijack、hitchhike、hitherto、housekeeping、incline、increment、indelible、inertia、interviewee、invincible、invoice、isle、janitor、kangaroo、laden、landlady、lax、leaflet、lenient、loll、lubricate、lucid、ludicrous、madden、magistrate、magnate、maiden、maniac、Melbourne、memento、mercenary、metric、mildew、mire、miscarriage、mischief、misdeed、misrepresent、misuse、monologue、monsoon、monstrous、moustache、naught、nautical、necessitate、negation、negotiable、neurotic、nicety、nobility、nominal、nullify、nuts、oar、oasis、obedient、oblique、obnoxious、Odyssey、omen、onlooker、oppress、optic、oscillate、outcast、outdo、outstrip、ovation、overrule、overrun、overture、pacify、pamper、panorama、paranoia、paraphernalia、parody、pastime、paternity、pathos、payable、perceptible、persecute、pertain、perverse、pessimism、phobia、photocopy、physique、piecemeal、piety。雅思（i3）队列 100 词，来源改用 OALD（剑桥网站对自动访问启用安全验证）。英音取 OALD 英式、美音取同页北美 IPA，逐字照录。
+
+待复核：irrespective。OALD 无 irrespective 独立词条（仅收短语 irrespective of），待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/irrespective)。不计入完成数。
+待复核：memorise。OALD 无 memorise 独立词条页（英式拼写，主词条为 memorize），待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/memorise)。不计入完成数。
+
 ## 发布节奏
 
-每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 200 词，距下次发布还差 800 词。发布基线为 9b6992bc91b23ec22ca1b43a94aaf02b42b5040c，当时两项均核对 7971 词；当前页面显示本地核对进度，不表示已上线。
+每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 300 词，距下次发布还差 700 词。发布基线为 9b6992bc91b23ec22ca1b43a94aaf02b42b5040c，当时两项均核对 7971 词；当前页面显示本地核对进度，不表示已上线。

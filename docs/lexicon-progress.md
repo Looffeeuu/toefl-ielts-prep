@@ -4,9 +4,9 @@
 
 | 项目 | 已核对 | 尚待核对 |
 | --- | ---: | ---: |
-| 释义与词性 | 8672 | 403 |
-| 英美音与主要分读 | 8671 | 404 |
-| 两项均完成 | 8671 | 404 |
+| 释义与词性 | 8772 | 303 |
+| 英美音与主要分读 | 8771 | 304 |
+| 两项均完成 | 8771 | 304 |
 
 每词分别保存来源和日期，不能用核对音标代替核对释义。完整状态和接续队列见 [lexicon-progress.json](lexicon-progress.json)。优先处理缺失、截断、词性矛盾和用法标记，再按字母顺序推进。未找到可靠来源的条目保持待核对，不推测填充。
 
@@ -24,7 +24,7 @@ node tools/check_pronunciations.js --write
 node tools/lexicon_progress.js
 ```
 
-下一批队列前 30 词：account for、approaching、automated、birds、booklist、books、bring about、brothers、buildings、candles、cards、causes、charges、cheaper、checks、choices、co-operation、colleagues、cometary、companies、conditions、contacts、coordinated、customers、despoiler、dishes、documents、donations、doors、draws。
+下一批队列前 30 词：account for、approaching、automated、birds、booklist、bring about、co-operation、cometary、coordinated、despoiler、dues、eclat、entrenched、fund-raising、immodesty、in spite of、jewels、larvae、marks、mechanized、mills、minutes、multistory、open-book、oxen、paddler、patroller、platelike、resources、retails。
 
 ## 批次 002
 
@@ -781,6 +781,12 @@ node tools/lexicon_progress.js
 
 
 
+## 批次 089
+
+完成 100 词：bones、books、brochures、brothers、buildings、cages、candles、cards、causes、caves、certificates、charges、cheaper、checks、chicks、choices、classmates、colleagues、commercials、companies、conditions、contacts、contaminants、contracts、curtains、customers、dishes、disputes、documents、donations、doors、draws、drinks、drugs、effects、elements、employees、expenses、facilities、factors、farmers、figures、fingers、firms、flats、floors、fossils、goals、graduates、hens、hints、households、humans、identities、imports、inquiries、institutions、instructors、instruments、investigators、issues、keywords、kids、kilograms、lessons、lions、loans、locations、majors、muscles、nets、notes、objectives、opportunities、options、pages、participants、parties、passengers、patients、peasants、Perks、PETS、photographs、photos、pills、pounds、priorities、prizes、problems、professions、profits、purest、questions、readers、reasons、regulations、reinforced、relations、residents。雅思/托福变形词（来源指向 OALD 原形词条，读音由原形音标加规则词尾推导） 100 词，来源改用 OALD（剑桥网站对自动访问启用安全验证）。英音取 OALD 英式、美音取同页北美 IPA，逐字照录。
+
+
+
 ## 发布节奏
 
-每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 700 词，距下次发布还差 300 词。发布基线为 9b6992bc91b23ec22ca1b43a94aaf02b42b5040c，当时两项均核对 7971 词；当前页面显示本地核对进度，不表示已上线。
+每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 800 词，距下次发布还差 200 词。发布基线为 9b6992bc91b23ec22ca1b43a94aaf02b42b5040c，当时两项均核对 7971 词；当前页面显示本地核对进度，不表示已上线。

@@ -42,7 +42,7 @@ for(const [w,uks] of [["recount", ["rɪˈkaʊnt", "ˌriːˈkaʊnt", "ˈriːkaʊn
 const progress=JSON.parse(read('docs/lexicon-progress.json'));
 for(const w of batch.words)assert(!progress.queue.includes(w));
 assert.deepEqual(Array.from(batch.deferred,d=>d.w),["theist", "thousandfold", "threadlike", "toed", "trainload", "tumid", "undistorted", "unfertilized", "unobstructed", "urbanize", "videocassette", "vitalism", "vitalist", "warrantable", "weaverbird", "wedge-shaped", "cometary", "despoiler", "eclat", "immodesty", "jewels", "larvae", "laurels", "measures", "mechanized", "multistory", "oxen", "paddler", "patroller", "platelike", "purified", "seamen", "semimolten", "stereophotograph", "stimuli", "strings", "subduct", "subjected", "survivability", "thousand-fold", "ultrasonics", "spectra"]);
-for(const d of batch.deferred){assert(progress.queue.includes(d.w));assert(!ctx.words[d.w].definitionReview);}
+for(const d of batch.deferred){const later=ctx.window.LEXICON_REVIEW_BATCHES.find(b=>b.id>batch.id&&b.words.includes(d.w));if(later)continue;assert(progress.queue.includes(d.w));assert(!ctx.words[d.w].definitionReview);}
 assert.equal((html.match(/src="js\/lexicon-review-071\.js/g)||[]).length,1);
 assert(html.indexOf('js/lexicon-review-033.js')<html.indexOf('js/lexicon-review-071.js'));
 assert(html.indexOf('js/lexicon-review-071.js')<html.indexOf('js/pronunciation.js'));

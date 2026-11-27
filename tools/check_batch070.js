@@ -42,7 +42,7 @@ for(const [w,uks] of [["remit", ["ˈriːmɪt", "rɪˈmɪt"]]])
 const progress=JSON.parse(read('docs/lexicon-progress.json'));
 for(const w of batch.words)assert(!progress.queue.includes(w));
 assert.deepEqual(Array.from(batch.deferred,d=>d.w),["rebroadcast", "recompose", "reformism", "requital", "rhythmical", "satiric", "savings", "scaled", "scathe", "seabed", "seamount", "secretin", "semiarid", "semiliterate", "sentimentalism", "shipwright", "spined", "springwater", "subdiscipline", "subtractive", "suburbanization", "superheat", "surpassingly", "symbology", "tactics", "tapering", "taxicab", "tectonics"]);
-for(const d of batch.deferred){assert(progress.queue.includes(d.w));assert(!ctx.words[d.w].definitionReview);}
+for(const d of batch.deferred){const later=ctx.window.LEXICON_REVIEW_BATCHES.find(b=>b.id>batch.id&&b.words.includes(d.w));if(later)continue;assert(progress.queue.includes(d.w));assert(!ctx.words[d.w].definitionReview);}
 assert.equal((html.match(/src="js\/lexicon-review-070\.js/g)||[]).length,1);
 assert(html.indexOf('js/lexicon-review-033.js')<html.indexOf('js/lexicon-review-070.js'));
 assert(html.indexOf('js/lexicon-review-070.js')<html.indexOf('js/pronunciation.js'));

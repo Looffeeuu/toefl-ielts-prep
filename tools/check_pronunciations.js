@@ -31,8 +31,10 @@ for(const r of reviews){
       assert(r.baseReadings&&r.baseReadings.length,`missing base readings: ${r.w}`);
       for(const p of r.readings){
         const derived=p.label.includes('原形 '+r.baseHeadword)&&p.label.includes('推导');
-        const spelling=p.label.includes('美式拼写：OALD 以 '+r.baseHeadword+' 立目，音标照录');
-        assert(derived||spelling,`undisclosed derivation: ${r.w}`);
+        const spelling=['美式拼写','拼写变体'].some(k=>p.label.includes(k+'：OALD 以 '+r.baseHeadword+' 立目，音标照录'));
+        // An irregular form or variant whose own IPA the OALD entry lists (user decision 2026-11-28).
+        const listed=p.label.includes('OALD '+r.baseHeadword+' 词条所列 '+r.w+' 读音，照录');
+        assert(derived||spelling||listed,`undisclosed derivation: ${r.w}`);
         if(spelling) assert(r.baseReadings.some(b=>b.uk===p.uk&&b.us===p.us),`spelling variant IPA must match headword: ${r.w}`);
       }
     } else assert.equal(r.source,'https://www.oxfordlearnersdictionaries.com/definition/english/'+r.w.toLowerCase());

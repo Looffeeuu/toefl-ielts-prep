@@ -4,9 +4,9 @@
 
 | 项目 | 已核对 | 尚待核对 |
 | --- | ---: | ---: |
-| 释义与词性 | 8871 | 204 |
-| 英美音与主要分读 | 8871 | 204 |
-| 两项均完成 | 8871 | 204 |
+| 释义与词性 | 8924 | 151 |
+| 英美音与主要分读 | 8924 | 151 |
+| 两项均完成 | 8924 | 151 |
 
 每词分别保存来源和日期，不能用核对音标代替核对释义。完整状态和接续队列见 [lexicon-progress.json](lexicon-progress.json)。优先处理缺失、截断、词性矛盾和用法标记，再按字母顺序推进。未找到可靠来源的条目保持待核对，不推测填充。
 
@@ -24,13 +24,13 @@ node tools/check_pronunciations.js --write
 node tools/lexicon_progress.js
 ```
 
-下一批队列前 30 词：account for、booklist、bring about、co-operation、cometary、despoiler、eclat、fund-raising、immodesty、in spite of、larvae、multistory、open-book、oxen、paddler、patroller、platelike、retails、roommate、seamen、semimolten、spectra、stereophotograph、stimuli、subduct、survivability、thousand-fold、ultrasonics、waggon、water-skiing。
+下一批队列前 30 词：account for、booklist、bring about、cometary、despoiler、eclat、immodesty、in spite of、multistory、open-book、paddler、patroller、platelike、retails、roommate、semimolten、stereophotograph、subduct、survivability、thousand-fold、ultrasonics、waggon、water-skiing、wollongong、auspice、chromosphere、coffeepot、commonsense、complacence、congruity。
 
 ## 批次 002
 
 完成 100 词：abandon、abandonment、abate、abbreviate、abbreviation、abdicate、abduct、abhor、abhorrent、abide、ability、abject、ablaze、ablution、aboard、abolish、abolition、abolitionist、aboriginal、abort、abortion、abortive、abound、abrasion、abrasive、abridge、abroad、abrupt、absence、absent、absentee、absenteeism、absolute、absolutely、absolve、absorb、absorption、abstain、abstinence、abstract、abstraction、abstruse、absurd、abundance、abundant、abundantly、abuse、abut、academic、academician、academy、accelerate、acceleration、accentuate、accessibility、accessible、accessory、accident、accidental、accidentally、acclaim、accommodate、accommodation、accompaniment、accompany、accomplice、accomplish、accomplishment、accord、accordion、accost、account、accountant、accredit、accumulate、accumulation、accuracy、accurate、accusation、accuse、accuser、accustom、achieve、achievement、acid、acidic、acidity、acknowledge、acme、acquaint、acquaintance、acquire、acquisition、acquisitive、acquit、acre、acrid、acrimony、acronym、action。
 
-待复核：acoustical。查到 Collins 释义与美音，但未找到可同时照录的英美 IPA；保留待复核。 [已查资料](https://www.collinsdictionary.com/dictionary/english/acoustical)。不计入完成数。
+历史待复核：acoustical，已在批次 091 完成核对。原记录：查到 Collins 释义与美音，但未找到可同时照录的英美 IPA；保留待复核。 [此前资料](https://www.collinsdictionary.com/dictionary/english/acoustical)。
 
 ## 批次 003
 
@@ -243,7 +243,7 @@ node tools/lexicon_progress.js
 
 完成 100 词：dubious、dull、duplicate、durable、duration、dwarf、dwell、dwelling、dye、earnest、eccentric、ecology、ecstasy、educated、efficacy、electron、elegance、elevate、elevation、elicit、elimination、elude、elusive、emanate、embarrass、embed、embody、embryo、empower、emulate、enclose、enclosure、encompass、endanger、endangered、endlessly、endow、endurance、enduring、energetic、energize、engender、engulf、enlist、enrich、ensemble、entail、entertainer、entice、envoy、enzyme、epic、equate、equilibrium、equitable、eradicate、erase、erect、erode、erupt、escalate、escort、etch、eternal、ethic、evacuate、evade、evaporate、evenly、eventual、evolutionary、exaggerate、excavation、excel、exceptional、excerpt、excess、excite、exclaim、exclusion、excursion、exemplify、exempt、exemption、exert、exhausted、exhaustion、exile、expanse、expansive、expel、expenditure、expire、exploitation、explorer、explosive、expressive、exquisite、exterior、extinction。托福次高频（f2）队列 100 词，来源改用 OALD（剑桥网站对自动访问启用安全验证）。英音取 OALD 英式、美音取同页北美 IPA，逐字照录。
 
-待复核：endeavor。OALD 以英式拼写 endeavour 立目（标注 also endeavor），/definition/english/endeavor 返回 404；现有检查要求来源路径与词形一致，暂列待复核，需增加拼写别名支持后处理。 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/endeavour_1)。不计入完成数。
+历史待复核：endeavor，已在批次 091 完成核对。原记录：OALD 以英式拼写 endeavour 立目（标注 also endeavor），/definition/english/endeavor 返回 404；现有检查要求来源路径与词形一致，暂列待复核，需增加拼写别名支持后处理。 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/endeavour_1)。
 
 ## 批次 038
 
@@ -252,14 +252,14 @@ node tools/lexicon_progress.js
 历史待复核：favored，已在批次 090 完成核对。原记录：OALD /definition/english/favored 无独立词条（英式拼写 favoured 立目）。保留待复核。 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/favoured)。
 历史待复核：functioning，已在批次 088 完成核对。原记录：OALD 无 functioning 独立词条，仅见动词 function。保留待复核。 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/function_2)。
 历史待复核：furnishing，已在批次 088 完成核对。原记录：OALD /definition/english/furnishing 无独立词条（复数 furnishings 立目）。保留待复核。 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/furnishings)。
-待复核：geographic。OALD /definition/english/geographic 无独立词条（以 geographical 立目）。保留待复核。 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/geographical)。不计入完成数。
+历史待复核：geographic，已在批次 091 完成核对。原记录：OALD /definition/english/geographic 无独立词条（以 geographical 立目）。保留待复核。 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/geographical)。
 
 ## 批次 039
 
 完成 100 词：gossip、gourmet、graceful、gracious、granite、graphic、gratitude、gravitational、graze、grease、greasy、greedy、grievance、grieve、grim、grind、grumble、gulf、hail、hallmark、halt、ham、hamburger、hamlet、hammer、hamper、handicap、handy、harass、harden、hardship、harmful、harmless、harness、hasten、hatch、hatred、haunt、haven、hay、hazardous、haze、healing、heave、heavenly、heed、heighten、heir、helper、helpless、hemisphere、herd、hinge、hoist、hollow、homicide、horizontal、hostility、hover、howl、hub、huddle、hue、humane、humanitarian、humble、humidity、humiliate、humility、humorous、hurdle、hurl、hustle、hybrid、hydrogen、hypothesize、iceberg、idol、ignite、ignorance、ignorant、illicit、illuminate、imagery、imaginary、imaginative、imbalance、imitate、imitation、immense、immerse、imminent、immunity、impair、impart、impatient、impending、imperative、impetus、implicate。托福次高频（f2）队列 100 词，来源改用 OALD（剑桥网站对自动访问启用安全验证）。英音取 OALD 英式、美音取同页北美 IPA，逐字照录。
 
 历史待复核：harbor，已在批次 090 完成核对。原记录：OALD 以英式拼写 harbour 立目，/definition/english/harbor 无词条；暂列待复核，需增加拼写别名支持后处理。 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/harbour_1)。
-待复核：homemade。OALD /definition/english/homemade 无词条（以 home-made 立目）。保留待复核。 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/home-made)。不计入完成数。
+历史待复核：homemade，已在批次 091 完成核对。原记录：OALD /definition/english/homemade 无词条（以 home-made 立目）。保留待复核。 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/home-made)。
 
 ## 批次 040
 
@@ -278,7 +278,7 @@ node tools/lexicon_progress.js
 
 完成 100 词：moisture、mold、molecular、monarch、monetary、morale、mortal、mortar、moss、moth、motionless、mourning、multiply、multitude、mundane、muscular、myriad、mythology、narcotic、nationality、navigate、navigation、needy、neglect、neon、niche、nickel、nickname、nitrogen、noisy、nonsense、nostalgia、notable、notch、notorious、novelty、novice、nowadays、nucleus、numb、nutrition、nutritional、oath、obedience、oblige、obscene、obscure、observatory、obsession、obsolete、obstruction、occupant、occurrence、oddly、offshore、omit、onset、opaque、opposing、optical、optimal、optional、orbital、orchard、orchestra、orchid、ordeal、orderly、ordinance、orient、oriental、originate、ounce、oust、outbreak、outdoors、outgoing、outing、outlook、outrage、outrageous、outright、outset、outspoken、outward、outweigh、oval、overflow、overlap、oversight、overt、overtime、overturn、overwhelmingly、oyster、ozone、packaging、pact、paddle、palette。托福次高频（f2）队列 100 词，来源改用 OALD（剑桥网站对自动访问启用安全验证）。英音取 OALD 英式、美音取同页北美 IPA，逐字照录。
 
-待复核：nontraditional。OALD /definition/english/nontraditional 无独立词条。保留待复核。 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/nontraditional)。不计入完成数。
+历史待复核：nontraditional，已在批次 091 完成核对。原记录：OALD /definition/english/nontraditional 无独立词条。保留待复核。 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/nontraditional)。
 历史待复核：odor，已在批次 090 完成核对。原记录：OALD /definition/english/odor 无词条（以英式拼写 odour 立目）；暂列待复核，需增加拼写别名支持后处理。 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/odour)。
 
 ## 批次 043
@@ -286,8 +286,8 @@ node tools/lexicon_progress.js
 完成 100 词：pamphlet、pants、parachute、parallel、paralysis、parameter、paramount、parliamentary、parrot、partisan、passionate、passive、pastel、pasture、pathogen、pathway、patriotic、pave、peculiar、pending、penetrate、peninsula、perch、perennial、perfection、perfume、peril、perimeter、periodic、peripheral、permeate、perpetuate、persistence、persistent、persuasive、pertinent、pervasive、pest、pesticide、petal、petition、petroleum、philosopher、physicist、physiological、pianist、pierce、pigeon、pillar、pinch、pineapple、pinpoint、pivotal、plague、plainly、planetary、plank、plantation、plasma、plaster、playwright、plaza、pleasing、pledge、plentiful、plight、plow、pluck、plumbing、plummet、plump、poise、poison、polar、Polish、polished、pollen、pollutant、pollute、ponder、popcorn、porcelain、portable、portrayal、postal、postcard、postpone、posture、potent、poultry、prairie、precaution、precedent、preceding、precision、preclude、precursor、predecessor、predictable、prejudice。托福次高频（f2）队列 100 词，来源改用 OALD（剑桥网站对自动访问启用安全验证）。英音取 OALD 英式、美音取同页北美 IPA，逐字照录。
 
 历史待复核：paralyze，已在批次 090 完成核对。原记录：OALD /definition/english/paralyze 无词条（以英式拼写 paralyse 立目）；暂列待复核，需增加拼写别名支持后处理。 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/paralyse)。
-待复核：paycheck。OALD /definition/english/paycheck 无词条（以 paycheque 立目）；暂列待复核，需增加拼写别名支持后处理。 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/paycheque)。不计入完成数。
-待复核：postwar。OALD /definition/english/postwar 无词条（以 post-war 立目）。保留待复核。 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/post-war)。不计入完成数。
+历史待复核：paycheck，已在批次 091 完成核对。原记录：OALD /definition/english/paycheck 无词条（以 paycheque 立目）；暂列待复核，需增加拼写别名支持后处理。 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/paycheque)。
+历史待复核：postwar，已在批次 091 完成核对。原记录：OALD /definition/english/postwar 无词条（以 post-war 立目）。保留待复核。 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/post-war)。
 
 ## 批次 044
 
@@ -300,8 +300,8 @@ node tools/lexicon_progress.js
 完成 100 词：rehearse、reign、reiterate、rejection、relaxation、relaxed、relay、relentless、relevance、reliance、relinquish、remainder、remarkably、remedy、remnant、renew、renewable、renewal、renovate、renovation、repertoire、repetition、replica、reproduction、reproductive、resemblance、resent、reshape、reside、residual、residue、resistant、resonance、respective、respiratory、responsive、restoration、restrain、restraint、restrictive、retrospect、retrospective、revise、revision、revival、revive、revolt、rhythmic、rigorous、rinse、ripe、rite、rivalry、roam、roar、roast、robust、rocky、rodent、rot、rotation、rotten、rounded、rubble、rugged、rumble、rustic、rusty、ruthless、saddle、saga、salient、salvage、sanctuary、sandy、sane、satisfactory、saturated、scar、scarcely、scenery、scenic、scholarly、scissors、scoop、scour、scout、scrap、scrape、scribble、scripture、scrub、scrutinize、sculptor、scurry、seam、seasonal、seasoning、seduce、seep。托福次高频（f2）队列 100 词，来源改用 OALD（剑桥网站对自动访问启用安全验证）。英音取 OALD 英式、美音取同页北美 IPA，逐字照录。
 
 历史待复核：rigor，已在批次 090 完成核对。原记录：OALD /definition/english/rigor 无词条（以英式拼写 rigour 立目）；暂列待复核，需增加拼写别名支持后处理。 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/rigour)。
-待复核：runoff。OALD /definition/english/runoff 无词条（以 run-off 立目）。保留待复核。 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/run-off)。不计入完成数。
-待复核：savor。OALD /definition/english/savor 无词条（以英式拼写 savour 立目）；暂列待复核，需增加拼写别名支持后处理。 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/savour_1)。不计入完成数。
+历史待复核：runoff，已在批次 091 完成核对。原记录：OALD /definition/english/runoff 无词条（以 run-off 立目）。保留待复核。 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/run-off)。
+历史待复核：savor，已在批次 091 完成核对。原记录：OALD /definition/english/savor 无词条（以英式拼写 savour 立目）；暂列待复核，需增加拼写别名支持后处理。 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/savour_1)。
 
 ## 批次 046
 
@@ -309,8 +309,8 @@ node tools/lexicon_progress.js
 
 历史待复核：shining，已在批次 090 完成核对。原记录：OALD /definition/english/shining 无独立词条（作 shine 的形容词用法）。保留待复核。 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/shining)。
 历史待复核：soaring，已在批次 088 完成核对。原记录：OALD /definition/english/soaring 无独立词条（作 soar 的派生形式）。保留待复核。 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/soaring)。
-待复核：soy。OALD /definition/english/soy 本次未取到独立词条（OALD 以 soya 等立目）。保留待复核。 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/soy)。不计入完成数。
-待复核：soybean。OALD /definition/english/soybean 本次未取到独立词条（OALD 以 soya bean 等立目）。保留待复核。 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/soybean)。不计入完成数。
+历史待复核：soy，已在批次 091 完成核对。原记录：OALD /definition/english/soy 本次未取到独立词条（OALD 以 soya 等立目）。保留待复核。 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/soy)。
+历史待复核：soybean，已在批次 091 完成核对。原记录：OALD /definition/english/soybean 本次未取到独立词条（OALD 以 soya bean 等立目）。保留待复核。 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/soybean)。
 
 ## 批次 047
 
@@ -345,21 +345,21 @@ node tools/lexicon_progress.js
 
 完成 100 词：checkout、chide、chiefly、chimpanzee、chirp、chisel、choppy、choreograph、choreographer、choreography、chronology、chubby、chum、cider、circumference、circumscribe、circumvent、civility、clam、clamour、clandestine、clarification、cleanse、clergyman、climatic、climax、clinch、clockwise、clot、clutter、coalesce、coddle、codify、cog、coherence、cohesion、cohesive、collateral、collusion、colonize、colossal、colt、comical、commend、commercialize、comparatively、compensatory、complicity、complimentary、composure、comprehensible、compulsive、compulsory、computation、conceit、concentric、concerted、concerto、conciliatory、concise、conclusive、concoct、concomitant、concurrent、condensation、condiment、condone、condor、confederate、confinement、confiscate、confluence、confound、congenial、congenital、congested、conglomerate、congregate、conifer、conjecture、connoisseur、conscientious、consequent、conservationist、conservatory、considerate、consign、consonant、consort、consternation、constrict、construe、contagious、contemptuous、contented、contiguous、continual、contrive、convection、conventionally。托福中频（f3）队列 100 词，来源改用 OALD（剑桥网站对自动访问启用安全验证）。英音取 OALD 英式、美音取同页北美 IPA，逐字照录。
 
-待复核：checkup。OALD 仅收 check-up（带连字符），拼写不同，待别名支持后复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/checkup)。不计入完成数。
-待复核：clamor。OALD 仅收英式拼写 clamour，待别名支持后复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/clamor)。不计入完成数。
+历史待复核：checkup，已在批次 091 完成核对。原记录：OALD 仅收 check-up（带连字符），拼写不同，待别名支持后复核 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/checkup)。
+历史待复核：clamor，已在批次 091 完成核对。原记录：OALD 仅收英式拼写 clamour，待别名支持后复核 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/clamor)。
 历史待复核：compressed，已在批次 090 完成核对。原记录：OALD 无独立词条（仅作 compress 的屈折形式），待复核 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/compressed)。
 
 ## 批次 051
 
 完成 100 词：conversational、converse、converter、cordial、corroborate、corrode、corrosion、corrosive、cosmopolitan、cottonwood、counteract、counterbalance、counterfeit、courier、courteous、courtly、courtship、cove、cower、crafty、crass、crayon、craze、credence、creed、crevice、crimson、crippling、crumple、cryptic、crystalline、crystallize、culmination、cumbersome、cunning、cursory、curt、custodian、customarily、cuticle、cyclone、dagger、daisy、dampen、dank、dated、daze、dazzle、debatable、debtor、decadence、decadent、deceit、deceptive、deciduous、decomposition、decorum、decrepit、decry、defection、defective、deference、deficient、deformation、defraud、deft、defunct、degenerate、dehydrate、dehydration、delectable、deleterious、delineate、delirium、delta、delude、demolition、dentistry、dependable、deplete、deplore、deport、depose、depositor、depot、depreciation、depress、deride、derivative、desolate、despicable、detach、detached、detectable、detergent、determinant、detest、detract、detriment、detrimental。托福中频（f3）队列 100 词，来源改用 OALD（剑桥网站对自动访问启用安全验证）。英音取 OALD 英式、美音取同页北美 IPA，逐字照录。
 
-待复核：crisscross。OALD 仅收 criss-cross（带连字符），拼写不同，待别名支持后复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/crisscross)。不计入完成数。
+历史待复核：crisscross，已在批次 091 完成核对。原记录：OALD 仅收 criss-cross（带连字符），拼写不同，待别名支持后复核 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/crisscross)。
 
 ## 批次 052
 
 完成 100 词：deviate、devious、devout、diagonal、diagonally、dialect、diction、dictum、diffuse、diffusion、digestion、digestive、dignified、dilate、diligent、dilution、dimensional、diminutive、dimly、dingy、disagreeable、disapproval、disarray、disband、discernible、discerning、disciplined、discord、discouraging、discreet、disfigure、disgrace、disgusted、disillusion、disintegrate、disinterested、disparage、dispersal、disproportionate、disprove、disrespect、disrespectful、dissect、dissension、dissenter、dissimilar、dissonance、distasteful、distinctively、diverge、divergence、divergent、diversification、divulge、dizziness、dizzying、docile、dogged、dogma、dogmatic、dominion、dormitory、dorsal、doze、dragonfly、dramatize、dreary、driftwood、droplet、drowsy、dungeon、dusky、dweller、dwindle、earthenware、ebb、eccentricity、ecologist、economical、edible、edifice、effigy、effluent、eject、elaborately、elapse、elasticity、elation、electromagnetic、elixir、elliptical、eloquence、eloquent、elucidate、emancipation、embellish、embellishment、emblem、embroider、embroidery。托福中频（f3）队列 100 词，来源改用 OALD（剑桥网站对自动访问启用安全验证）。英音取 OALD 英式、美音取同页北美 IPA，逐字照录。
 
-待复核：dietitian。OALD /definition/english/dietitian 无独立词条（以 dietician 立目），拼写不同，待别名支持后复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/dietitian)。不计入完成数。
+历史待复核：dietitian，已在批次 091 完成核对。原记录：OALD /definition/english/dietitian 无独立词条（以 dietician 立目），拼写不同，待别名支持后复核 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/dietitian)。
 待复核：disorganize。OALD 无 disorganize 词条（仅收形容词 disorganized），待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/disorganize)。不计入完成数。
 历史待复核：diversified，已在批次 088 完成核对。原记录：OALD 无独立词条（仅作 diversify 的屈折形式），待复核 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/diversified)。
 
@@ -367,7 +367,7 @@ node tools/lexicon_progress.js
 
 完成 100 词：embryonic、emigrant、emigrate、eminent、emphatic、enactment、encase、enchant、encroach、encyclopedia、endowment、engaging、engrave、engraving、engross、enigma、enigmatic、enlighten、enlightenment、enmity、enormity、enrage、enslave、entangle、entanglement、enterprising、enthral、enthusiastically、enumerate、enunciate、envelop、ephemeral、epoch、equestrian、err、erratic、erroneous、escalator、eschew、esteem、etiquette、eulogy、evaporation、evasion、evasive、evergreen、everlasting、evince、exacting、exaggeration、exalt、exalted、exasperate、exemplary、exertion、exhale、exhausting、exhaustive、exhilarating、exodus、exorbitant、expedient、expedite、exponent、exponential、exposition、expound、expressly、extant、exterminate、extinguish、extol、extort、extraneous、extravagant、extremity、extricate、exuberant、exude、fable、fabricate、facile、facsimile、falcon、fallow、familiarize、fanatic、fanatical、fanaticism、fanciful、farce、fateful、faucet、fauna、feeble、feeder、feign、fell、felt、fencing。托福中频（f3）队列 100 词，来源改用 OALD（剑桥网站对自动访问启用安全验证）。英音取 OALD 英式、美音取同页北美 IPA，逐字照录。
 
-待复核：enthrall。OALD /definition/english/enthrall 无独立词条（以英式拼写 enthral 立目，enthral 已在本批收录），待别名支持后复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/enthrall)。不计入完成数。
+历史待复核：enthrall，已在批次 091 完成核对。原记录：OALD /definition/english/enthrall 无独立词条（以英式拼写 enthral 立目，enthral 已在本批收录），待别名支持后复核 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/enthrall)。
 
 ## 批次 054
 
@@ -375,7 +375,7 @@ node tools/lexicon_progress.js
 
 历史待复核：fervor，已在批次 090 完成核对。原记录：OALD /definition/english/fervor 无词条（以英式拼写 fervour 立目），待别名支持后复核 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/fervor)。
 历史待复核：flickering，已在批次 088 完成核对。原记录：OALD 无独立词条（仅作 flicker 的屈折形式），待复核 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/flickering)。
-待复核：geologic。OALD 无独立词条（收 geological，geologic 为美式变体），待别名支持后复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/geologic)。不计入完成数。
+历史待复核：geologic，已在批次 091 完成核对。原记录：OALD 无独立词条（收 geological，geologic 为美式变体），待别名支持后复核 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/geologic)。
 
 ## 批次 055
 
@@ -387,8 +387,8 @@ node tools/lexicon_progress.js
 
 完成 100 词：impassive、impeach、impeccable、impediment、impel、impersonal、impersonate、impervious、impotence、imprint、improbable、impromptu、impropriety、impulsive、impunity、impurity、inaccessible、inanimate、inaugurate、incandescent、incapacitate、incarcerate、incense、incessant、incipient、incite、incoherent、incompatible、incomprehensible、inconceivable、inconclusive、incongruity、incongruous、inconvenient、incorporation、incubate、inculcate、indecent、indefinite、indigent、indignant、indignity、indiscriminately、individualism、industrious、inept、inert、infallible、infancy、inferiority、infertile、infest、infiltrate、inflexible、influenza、informative、infringe、infusion、ingenious、inkling、inland、innermost、innuendo、innumerable、inordinate、inquisitive、insidious、insinuate、insomnia、inspiring、instantaneous、instigate、instinctive、institutionalize、instructive、insular、insulate、insulting、insurmountable、intelligible、intercede、interdependence、interdependent、interlude、intermediary、intermittent、interrogate、intersect、interstellar、intestine、intoxicate、intoxication、intrepid、intricately、introspective、intrude、inundate、invalid、invalidate、invaluable。托福中频（f3）队列 100 词，来源改用 OALD（剑桥网站对自动访问启用安全验证）。英音取 OALD 英式、美音取同页北美 IPA，逐字照录。
 
-待复核：installment。OALD /definition/english/installment 无词条（以英式拼写 instalment 立目），待别名支持后复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/installment)。不计入完成数。
-待复核：instill。OALD /definition/english/instill 无词条（以英式拼写 instil 立目），待别名支持后复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/instill)。不计入完成数。
+历史待复核：installment，已在批次 091 完成核对。原记录：OALD /definition/english/installment 无词条（以英式拼写 instalment 立目），待别名支持后复核 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/installment)。
+历史待复核：instill，已在批次 091 完成核对。原记录：OALD /definition/english/instill 无词条（以英式拼写 instil 立目），待别名支持后复核 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/instill)。
 历史待复核：interconnected，已在批次 090 完成核对。原记录：OALD 无独立词条（仅作 interconnect 的屈折形式），待复核 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/interconnected)。
 历史待复核：interlocking，已在批次 090 完成核对。原记录：OALD 无独立词条（仅作 interlock 的屈折形式），待复核 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/interlocking)。
 
@@ -404,10 +404,10 @@ node tools/lexicon_progress.js
 完成 100 词：mammoth、mangle、mania、mannerism、manually、mason、masonry、Maxim、meddle、mediocre、meditate、meek、melancholy、melodic、melodrama、memorandum、mend、menial、mercantile、merciful、merciless、mesmerize、metabolic、mete、meteorologist、methane、methodical、methodically、meticulous、metropolis、microbe、microcosm、microorganism、migratory、milieu、mimetic、minimalist、minuscule、mirage、misfortune、misgiving、mishap、mistrust、moat、modulate、moisten、momentous、monochrome、monopolize、monotonous、morbid、moribund、moron、morphology、mosaic、mournful、muddle、multifaceted、mythical、narration、naturalist、naturalistic、naughty、nectar、negate、negligence、negligent、negligible、neoclassical、nettle、neuron、neurotransmitter、neutralize、neutron、newscast、nibble、nicotine、nimble、nook、notation、noted、notwithstanding、nourish、nourishment、noxious、null、numerical、nutritious、obligatory、obliterate、oblivion、observance、obsess、obstruct、octopus、onslaught、ooze、optimist、optimum、oracle。托福中频（f3）队列 100 词，来源改用 OALD（剑桥网站对自动访问启用安全验证）。英音取 OALD 英式、美音取同页北美 IPA，逐字照录。
 
 历史待复核：millimeter，已在批次 090 完成核对。原记录：OALD /definition/english/millimeter 无词条（以英式拼写 millimetre 立目），待别名支持后复核 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/millimeter)。
-待复核：newsstand。OALD /definition/english/newsstand 无词条（可能以带连字符的 news-stand 立目），待别名支持后复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/newsstand)。不计入完成数。
-待复核：nonfiction。OALD /definition/english/nonfiction 无词条（可能以带连字符的 non-fiction 立目），待别名支持后复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/nonfiction)。不计入完成数。
-待复核：nonverbal。OALD /definition/english/nonverbal 无词条（可能以带连字符的 non-verbal 立目），待别名支持后复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/nonverbal)。不计入完成数。
-待复核：nonviolence。OALD /definition/english/nonviolence 无词条（可能以带连字符的 non-violence 立目），待别名支持后复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/nonviolence)。不计入完成数。
+历史待复核：newsstand，已在批次 091 完成核对。原记录：OALD /definition/english/newsstand 无词条（可能以带连字符的 news-stand 立目），待别名支持后复核 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/newsstand)。
+历史待复核：nonfiction，已在批次 091 完成核对。原记录：OALD /definition/english/nonfiction 无词条（可能以带连字符的 non-fiction 立目），待别名支持后复核 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/nonfiction)。
+历史待复核：nonverbal，已在批次 091 完成核对。原记录：OALD /definition/english/nonverbal 无词条（可能以带连字符的 non-verbal 立目），待别名支持后复核 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/nonverbal)。
+历史待复核：nonviolence，已在批次 091 完成核对。原记录：OALD /definition/english/nonviolence 无词条（可能以带连字符的 non-violence 立目），待别名支持后复核 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/nonviolence)。
 
 ## 批次 059
 
@@ -451,7 +451,7 @@ node tools/lexicon_progress.js
 完成 100 词：trolley、trough、troupe、trudge、trumpeter、trustworthy、trying、tumult、tundra、turbulence、turquoise、twine、tycoon、typify、tyrannical、ultimatum、unadorned、unanimity、unbearable、unbiased、unbridled、unbroken、uncanny、uncharted、undaunted、underdeveloped、undifferentiated、undisturbed、unearth、unexplored、uniformity、unimaginable、uninhabited、unmatched、unpack、unparalleled、unrestrained、unrestricted、unruly、unsatisfactory、unscrupulous、unspoiled、untapped、unwieldy、upland、uproar、uproot、urbanization、utensil、utilitarian、Utopian、utterance、vacancy、vacate、vaccinate、valiant、vaporize、varnish、vastness、vaulted、venerable、venom、venomous、veracity、vertebrate、vertigo、vestige、vex、viability、victor、victorious、vigilance、vigilant、vindicate、viral、virtuous、viscous、vogue、volt、voracious、vowel、vulgar、vulgarity、wag、waive、wand、wane、warp、waterproof、wavy、waxy、weariness、weaver、weld、whim、whir、whit、whittle、wholesaler、wholesome。托福中频（f3）队列 100 词，来源改用 OALD（剑桥网站对自动访问启用安全验证）。英音取 OALD 英式、美音取同页北美 IPA，逐字照录。
 
 待复核：trove。OALD /definition/english/trove 无可用义项（仅见于习语），待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/trove)。不计入完成数。
-待复核：unfavorable。OALD /definition/english/unfavorable 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/unfavorable)。不计入完成数。
+历史待复核：unfavorable，已在批次 091 完成核对。原记录：OALD /definition/english/unfavorable 无独立词条，待复核 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/unfavorable)。
 历史待复核：valor，已在批次 090 完成核对。原记录：OALD /definition/english/valor 无独立词条，待复核 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/valor)。
 
 ## 批次 065
@@ -459,8 +459,8 @@ node tools/lexicon_progress.js
 完成 100 词：willow、windswept、wispy、wistful、wither、woolly、workload、worldly、wring、wristwatch、wrought、wry、yardstick、yarn、yawn、yelp、yen、yolk、zeal、zealot、zealous、zenith、zest、zigzag、zinc、abashed、accommodating、acquainted、acrimonious、addicted、adventitious、aerodynamics、aggravating、airsickness、careerism、chary、chilli、chivalry、chlorophyll、choreographic、cipher、circuitous、circumspect、citadel、clamorous、cleave、cleft、coalescence、cogent、cognizance、cohere、coinage、coincident、collate、colloquial、colloquialism、combustible、comity、commingle、commiserate、commodious、comport、composed、concave、concurrence、condenser、conductivity、confederacy、congratulation、conjectural、connivance、connive、consecrate、constricted、contemptible、continence、contravene、contrite、controvert、conversant、convex、conveyance、convivial、convoke、coop、cornet、corpulent、counterclockwise、covetous、cowhand、cranial、credulous、crevasse、crustacean、crystallization、crystallized、cubism、culpable、dauntless、dawdle。托福中频（f3）收尾及低频（f4）队列 100 词，来源改用 OALD（剑桥网站对自动访问启用安全验证）。英音取 OALD 英式、美音取同页北美 IPA，逐字照录。
 
 历史待复核：woolen，已在批次 090 完成核对。原记录：OALD /definition/english/woolen 无独立词条，待复核 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/woolen)。
-待复核：acoustical。OALD /definition/english/acoustical 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/acoustical)。不计入完成数。
-待复核：cacti。OALD /definition/english/cacti 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/cacti)。不计入完成数。
+历史待复核：acoustical，已在批次 091 完成核对。原记录：OALD /definition/english/acoustical 无独立词条，待复核 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/acoustical)。
+历史待复核：cacti，已在批次 091 完成核对。原记录：OALD /definition/english/cacti 无独立词条，待复核 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/cacti)。
 待复核：chromosphere。OALD /definition/english/chromosphere 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/chromosphere)。不计入完成数。
 待复核：coffeepot。OALD /definition/english/coffeepot 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/coffeepot)。不计入完成数。
 待复核：commonsense。OALD /definition/english/commonsense 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/commonsense)。不计入完成数。
@@ -469,7 +469,7 @@ node tools/lexicon_progress.js
 待复核：congruity。OALD /definition/english/congruity 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/congruity)。不计入完成数。
 待复核：contemn。OALD /definition/english/contemn 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/contemn)。不计入完成数。
 历史待复核：correlated，已在批次 088 完成核对。原记录：OALD /definition/english/correlated 无独立词条，待复核 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/correlated)。
-待复核：craftspeople。OALD /definition/english/craftspeople 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/craftspeople)。不计入完成数。
+历史待复核：craftspeople，已在批次 091 完成核对。原记录：OALD /definition/english/craftspeople 无独立词条，待复核 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/craftspeople)。
 待复核：crossbones。OALD /definition/english/crossbones 无可用义项（仅见于短语 skull and crossbones），待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/crossbones)。不计入完成数。
 待复核：crossbreeding。OALD /definition/english/crossbreeding 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/crossbreeding)。不计入完成数。
 待复核：crosscut。OALD /definition/english/crosscut 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/crosscut)。不计入完成数。
@@ -488,7 +488,7 @@ node tools/lexicon_progress.js
 待复核：detraction。OALD /definition/english/detraction 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/detraction)。不计入完成数。
 历史待复核：dismembered，已在批次 088 完成核对。原记录：OALD /definition/english/dismembered 无独立词条，待复核 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/dismembered)。
 待复核：distent。OALD /definition/english/distent 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/distent)。不计入完成数。
-待复核：distill。OALD /definition/english/distill 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/distill)。不计入完成数。
+历史待复核：distill，已在批次 091 完成核对。原记录：OALD /definition/english/distill 无独立词条，待复核 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/distill)。
 待复核：dripstone。OALD /definition/english/dripstone 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/dripstone)。不计入完成数。
 待复核：drub。OALD /definition/english/drub 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/drub)。不计入完成数。
 待复核：edentate。OALD /definition/english/edentate 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/edentate)。不计入完成数。
@@ -517,7 +517,7 @@ node tools/lexicon_progress.js
 待复核：foist。OALD /definition/english/foist 页面无独立义项（义项在短语动词下），待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/foist)。不计入完成数。
 历史待复核：formalized，已在批次 090 完成核对。原记录：OALD /definition/english/formalized 无独立词条，待复核 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/formalized)。
 待复核：frowzy。OALD /definition/english/frowzy 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/frowzy)。不计入完成数。
-待复核：fungi。OALD /definition/english/fungi 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/fungi)。不计入完成数。
+历史待复核：fungi，已在批次 091 完成核对。原记录：OALD /definition/english/fungi 无独立词条，待复核 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/fungi)。
 历史待复核：fused，已在批次 088 完成核对。原记录：OALD /definition/english/fused 无独立词条，待复核 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/fused)。
 待复核：galvanization。OALD /definition/english/galvanization 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/galvanization)。不计入完成数。
 待复核：garrulity。OALD /definition/english/garrulity 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/garrulity)。不计入完成数。
@@ -544,7 +544,7 @@ node tools/lexicon_progress.js
 待复核：ionosphere。OALD /definition/english/ionosphere 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/ionosphere)。不计入完成数。
 历史待复核：jolting，已在批次 088 完成核对。原记录：OALD /definition/english/jolting 无独立词条，待复核 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/jolting)。
 待复核：kymograph。OALD /definition/english/kymograph 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/kymograph)。不计入完成数。
-待复核：landmass。OALD /definition/english/landmass 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/landmass)。不计入完成数。
+历史待复核：landmass，已在批次 091 完成核对。原记录：OALD /definition/english/landmass 无独立词条，待复核 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/landmass)。
 待复核：lave。OALD /definition/english/lave 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/lave)。不计入完成数。
 待复核：limner。OALD /definition/english/limner 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/limner)。不计入完成数。
 待复核：locomote。OALD /definition/english/locomote 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/locomote)。不计入完成数。
@@ -553,30 +553,30 @@ node tools/lexicon_progress.js
 待复核：malediction。OALD /definition/english/malediction 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/malediction)。不计入完成数。
 历史待复核：mechanics，已在批次 090 完成核对。原记录：OALD /definition/english/mechanics 未取得独立词条，待复核 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/mechanics)。
 待复核：Mesozoic。OALD /definition/english/mesozoic 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/mesozoic)。不计入完成数。
-待复核：midair。OALD /definition/english/midair 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/midair)。不计入完成数。
-待复核：millennia。OALD /definition/english/millennia 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/millennia)。不计入完成数。
+历史待复核：midair，已在批次 091 完成核对。原记录：OALD /definition/english/midair 无独立词条，待复核 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/midair)。
+历史待复核：millennia，已在批次 091 完成核对。原记录：OALD /definition/english/millennia 无独立词条，待复核 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/millennia)。
 历史待复核：mingling，已在批次 088 完成核对。原记录：OALD /definition/english/mingling 无独立词条，待复核 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/mingling)。
 
 ## 批次 069
 
 完成 100 词：moiety、mollify、monochromatic、mote、mulberry、multicellular、munificent、needlework、nonconformity、nourishing、obliging、obloquy、obstinate、obtainable、obtrude、obviate、offhand、olfactory、optometrist、opulence、oration、oratorio、ornamentation、osprey、outermost、outwit、overbalance、overburden、overcharge、overconfident、overtax、packer、palpitate、parapsychology、parch、parry、patricide、pauper、pearl、pedagogic、peerless、penury、perishable、permeable、perspire、perturb、pestilence、pestilential、petrify、phenomenally、philology、phlegmatic、phonetics、photosensitive、pilferage、pinhead、pinion、platitude、platitudinous、pliable、pliant、plumage、pollination、pollinator、polygon、polygonal、porpoise、portraitist、postmaster、potentiality、potter、practicable、prate、prefabricated、presage、prevaricate、probity、profitless、profuse、prognostic、projectionist、proofread、propellant、propitiate、propound、proprietorship、prorogue、proscribe、provident、provincialism、punctual、quadrilateral、quiescent、ragtime、rapacious、rascal、rashly、ravish、rawhide、rayon。托福低频（f4）队列 100 词，来源改用 OALD（剑桥网站对自动访问启用安全验证）。英音取 OALD 英式、美音取同页北美 IPA，逐字照录。
 
-待复核：nonhuman。OALD /definition/english/nonhuman 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/nonhuman)。不计入完成数。
-待复核：nonprofessional。OALD /definition/english/nonprofessional 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/nonprofessional)。不计入完成数。
+历史待复核：nonhuman，已在批次 091 完成核对。原记录：OALD /definition/english/nonhuman 无独立词条，待复核 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/nonhuman)。
+历史待复核：nonprofessional，已在批次 091 完成核对。原记录：OALD /definition/english/nonprofessional 无独立词条，待复核 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/nonprofessional)。
 待复核：notate。OALD /definition/english/notate 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/notate)。不计入完成数。
-待复核：nuclei。OALD /definition/english/nuclei 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/nuclei)。不计入完成数。
+历史待复核：nuclei，已在批次 091 完成核对。原记录：OALD /definition/english/nuclei 无独立词条，待复核 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/nuclei)。
 待复核：nutriment。OALD /definition/english/nutriment 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/nutriment)。不计入完成数。
-待复核：odorless。OALD /definition/english/odorless 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/odorless)。不计入完成数。
+历史待复核：odorless，已在批次 091 完成核对。原记录：OALD /definition/english/odorless 无独立词条，待复核 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/odorless)。
 历史待复核：overtaxed，已在批次 088 完成核对。原记录：OALD /definition/english/overtaxed 无独立词条，待复核 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/overtaxed)。
 待复核：overtire。OALD /definition/english/overtire 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/overtire)。不计入完成数。
 待复核：peculate。OALD /definition/english/peculate 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/peculate)。不计入完成数。
 待复核：petrifaction。OALD /definition/english/petrifaction 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/petrifaction)。不计入完成数。
-待复核：phenomena。OALD /definition/english/phenomena 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/phenomena)。不计入完成数。
+历史待复核：phenomena，已在批次 091 完成核对。原记录：OALD /definition/english/phenomena 无独立词条，待复核 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/phenomena)。
 待复核：photosphere。OALD /definition/english/photosphere 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/photosphere)。不计入完成数。
 待复核：plainspoken。OALD /definition/english/plainspoken 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/plainspoken)。不计入完成数。
 待复核：plash。OALD /definition/english/plash 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/plash)。不计入完成数。
 待复核：postdate。OALD /definition/english/postdate 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/postdate)。不计入完成数。
-待复核：preeminent。OALD /definition/english/preeminent 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/preeminent)。不计入完成数。
+历史待复核：preeminent，已在批次 091 完成核对。原记录：OALD /definition/english/preeminent 无独立词条，待复核 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/preeminent)。
 待复核：pronghorn。OALD /definition/english/pronghorn 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/pronghorn)。不计入完成数。
 历史待复核：prospecting，已在批次 090 完成核对。原记录：OALD /definition/english/prospecting 无独立词条，待复核 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/prospecting)。
 待复核：protract。OALD /definition/english/protract 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/protract)。不计入完成数。
@@ -591,7 +591,7 @@ node tools/lexicon_progress.js
 待复核：recompose。OALD /definition/english/recompose 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/recompose)。不计入完成数。
 待复核：reformism。OALD /definition/english/reformism 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/reformism)。不计入完成数。
 待复核：requital。OALD /definition/english/requital 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/requital)。不计入完成数。
-待复核：rhythmical。OALD /definition/english/rhythmical 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/rhythmical)。不计入完成数。
+历史待复核：rhythmical，已在批次 091 完成核对。原记录：OALD /definition/english/rhythmical 无独立词条，待复核 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/rhythmical)。
 待复核：satiric。OALD /definition/english/satiric 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/satiric)。不计入完成数。
 历史待复核：savings，已在批次 088 完成核对。原记录：OALD /definition/english/savings 无独立词条，待复核 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/savings)。
 历史待复核：scaled，已在批次 090 完成核对。原记录：OALD /definition/english/scaled 无独立词条，待复核 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/scaled)。
@@ -599,7 +599,7 @@ node tools/lexicon_progress.js
 待复核：seabed。OALD /definition/english/seabed 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/seabed)。不计入完成数。
 待复核：seamount。OALD /definition/english/seamount 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/seamount)。不计入完成数。
 待复核：secretin。OALD /definition/english/secretin 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/secretin)。不计入完成数。
-待复核：semiarid。OALD /definition/english/semiarid 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/semiarid)。不计入完成数。
+历史待复核：semiarid，已在批次 091 完成核对。原记录：OALD /definition/english/semiarid 无独立词条，待复核 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/semiarid)。
 待复核：semiliterate。OALD /definition/english/semiliterate 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/semiliterate)。不计入完成数。
 待复核：sentimentalism。OALD /definition/english/sentimentalism 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/sentimentalism)。不计入完成数。
 待复核：shipwright。OALD /definition/english/shipwright 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/shipwright)。不计入完成数。
@@ -641,27 +641,27 @@ node tools/lexicon_progress.js
 待复核：eclat。OALD /definition/english/eclat 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/eclat)。不计入完成数。
 待复核：immodesty。OALD /definition/english/immodesty 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/immodesty)。不计入完成数。
 历史待复核：jewels，已在批次 090 完成核对。原记录：OALD /definition/english/jewels 无独立词条，待复核 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/jewels)。
-待复核：larvae。OALD /definition/english/larvae 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/larvae)。不计入完成数。
+历史待复核：larvae，已在批次 091 完成核对。原记录：OALD /definition/english/larvae 无独立词条，待复核 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/larvae)。
 历史待复核：laurels，已在批次 088 完成核对。原记录：OALD /definition/english/laurels 无独立词条，待复核 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/laurels)。
 历史待复核：measures，已在批次 088 完成核对。原记录：OALD /definition/english/measures 无独立词条，待复核 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/measures)。
 历史待复核：mechanized，已在批次 090 完成核对。原记录：OALD /definition/english/mechanized 无独立词条，待复核 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/mechanized)。
 待复核：multistory。OALD /definition/english/multistory 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/multistory)。不计入完成数。
-待复核：oxen。OALD /definition/english/oxen 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/oxen)。不计入完成数。
+历史待复核：oxen，已在批次 091 完成核对。原记录：OALD /definition/english/oxen 无独立词条，待复核 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/oxen)。
 待复核：paddler。OALD /definition/english/paddler 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/paddler)。不计入完成数。
 待复核：patroller。OALD /definition/english/patroller 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/patroller)。不计入完成数。
 待复核：platelike。OALD /definition/english/platelike 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/platelike)。不计入完成数。
 历史待复核：purified，已在批次 088 完成核对。原记录：OALD /definition/english/purified 无独立词条，待复核 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/purified)。
-待复核：seamen。OALD /definition/english/seamen 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/seamen)。不计入完成数。
+历史待复核：seamen，已在批次 091 完成核对。原记录：OALD /definition/english/seamen 无独立词条，待复核 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/seamen)。
 待复核：semimolten。OALD /definition/english/semimolten 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/semimolten)。不计入完成数。
 待复核：stereophotograph。OALD /definition/english/stereophotograph 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/stereophotograph)。不计入完成数。
-待复核：stimuli。OALD /definition/english/stimuli 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/stimuli)。不计入完成数。
+历史待复核：stimuli，已在批次 091 完成核对。原记录：OALD /definition/english/stimuli 无独立词条，待复核 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/stimuli)。
 历史待复核：strings，已在批次 090 完成核对。原记录：OALD /definition/english/strings 无独立词条，待复核 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/strings)。
 待复核：subduct。OALD /definition/english/subduct 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/subduct)。不计入完成数。
 历史待复核：subjected，已在批次 088 完成核对。原记录：OALD /definition/english/subjected 无独立词条，待复核 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/subjected)。
 待复核：survivability。OALD /definition/english/survivability 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/survivability)。不计入完成数。
 待复核：thousand-fold。OALD /definition/english/thousand-fold 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/thousand-fold)。不计入完成数。
 待复核：ultrasonics。OALD /definition/english/ultrasonics 无独立词条，待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/ultrasonics)。不计入完成数。
-待复核：spectra。OALD /definition/english/spectra 页面无可用义项（复数形式），待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/spectra)。不计入完成数。
+历史待复核：spectra，已在批次 091 完成核对。原记录：OALD /definition/english/spectra 页面无可用义项（复数形式），待复核 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/spectra)。
 
 ## 批次 072
 
@@ -694,7 +694,7 @@ node tools/lexicon_progress.js
 
 历史待复核：neighboring，已在批次 090 完成核对。原记录：OALD 以 neighbouring 立目，美式拼写待复核 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/neighboring)。
 待复核：Olympic。OALD 无 Olympic 独立词条（仅 the Olympic Games），待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/olympic)。不计入完成数。
-待复核：percent。OALD 以 per cent 立目，美式拼写待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/percent)。不计入完成数。
+历史待复核：percent，已在批次 091 完成核对。原记录：OALD 以 per cent 立目，美式拼写待复核 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/percent)。
 
 ## 批次 077
 
@@ -725,7 +725,7 @@ node tools/lexicon_progress.js
 
 完成 100 词：kidney、kin、kindergarten、knit、knob、knot、lamb、lame、lapse、lender、lever、liable、lick、liner、liquor、loaf、locker、lounge、maid、making、malaria、Malaysia、manifest、mar、marginal、martial、martyr、masculine、massacre、meadow、mentality、mercy、mesh、metallic、microphone、mid、mileage、miles、mining、minus、mist、mobilize、module、molest、monarchy、morality、mosquito、motel、motorcycle、motto、mourn、multilateral、murmur、muster、namely、nap、nausea、nil、noble、notify、nuance、nuisance、nursery、nursing、nylon、oblivious、occupational、odour、offend、offset、ominous、optimism、organizer、orthodox、outlaw、outskirts、overhead、overhear、override、overtake、overthrow、oxide、pageant、pal、paradise、paralyse、parcel、parliament、partition、passport、pathetic、patriotism、pavement、pedal、pedestrian、periodically、perish、perpetual、petty、pharmaceutical。雅思（i2）队列 100 词，来源改用 OALD（剑桥网站对自动访问启用安全验证）。英音取 OALD 英式、美音取同页北美 IPA，逐字照录。
 
-待复核：layoff。OALD 以 lay-off 立目，拼写变体待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/layoff)。不计入完成数。
+历史待复核：layoff，已在批次 091 完成核对。原记录：OALD 以 lay-off 立目，拼写变体待复核 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/layoff)。
 历史待复核：marks，已在批次 090 完成核对。原记录：OALD 无 marks 独立词条（为 mark 的复数），待复核 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/marks)。
 历史待复核：mills，已在批次 090 完成核对。原记录：OALD 无 mills 独立词条（为 mill 的复数），待复核 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/mills)。
 
@@ -751,7 +751,7 @@ node tools/lexicon_progress.js
 完成 100 词：guild、gymnasium、handbook、handout、headmaster、healthcare、henceforth、hereditary、hijack、hitchhike、hitherto、housekeeping、incline、increment、indelible、inertia、interviewee、invincible、invoice、isle、janitor、kangaroo、laden、landlady、lax、leaflet、lenient、loll、lubricate、lucid、ludicrous、madden、magistrate、magnate、maiden、maniac、Melbourne、memento、mercenary、metric、mildew、mire、miscarriage、mischief、misdeed、misrepresent、misuse、monologue、monsoon、monstrous、moustache、naught、nautical、necessitate、negation、negotiable、neurotic、nicety、nobility、nominal、nullify、nuts、oar、oasis、obedient、oblique、obnoxious、Odyssey、omen、onlooker、oppress、optic、oscillate、outcast、outdo、outstrip、ovation、overrule、overrun、overture、pacify、pamper、panorama、paranoia、paraphernalia、parody、pastime、paternity、pathos、payable、perceptible、persecute、pertain、perverse、pessimism、phobia、photocopy、physique、piecemeal、piety。雅思（i3）队列 100 词，来源改用 OALD（剑桥网站对自动访问启用安全验证）。英音取 OALD 英式、美音取同页北美 IPA，逐字照录。
 
 待复核：irrespective。OALD 无 irrespective 独立词条（仅收短语 irrespective of），待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/irrespective)。不计入完成数。
-待复核：memorise。OALD 无 memorise 独立词条页（英式拼写，主词条为 memorize），待复核 [已查资料](https://www.oxfordlearnersdictionaries.com/definition/english/memorise)。不计入完成数。
+历史待复核：memorise，已在批次 091 完成核对。原记录：OALD 无 memorise 独立词条页（英式拼写，主词条为 memorize），待复核 [此前资料](https://www.oxfordlearnersdictionaries.com/definition/english/memorise)。
 
 ## 批次 085
 
@@ -793,6 +793,12 @@ node tools/lexicon_progress.js
 
 
 
+## 批次 091
+
+完成 53 词：children、oxen、seamen、larvae、stimuli、spectra、cacti、fungi、nuclei、millennia、phenomena、craftspeople、geographic、geologic、acoustical、rhythmical、soy、clamor、endeavor、enthrall、installment、instill、savor、odorless、unfavorable、distill、percent、self-defense、newsstand、soybean、paycheck、dietitian、homemade、postwar、layoff、runoff、co-operation、co-operative、coeducation、checkup、fund-raising、memorise、crisscross、nonfiction、nonverbal、nonviolence、nonhuman、nontraditional、nonprofessional、midair、preeminent、semiarid、landmass。雅思/托福收尾：美式拼写、拼写变体及 OALD 词条所列不规则形式 53 词，来源改用 OALD（剑桥网站对自动访问启用安全验证）。英音取 OALD 英式、美音取同页北美 IPA，逐字照录。
+
+
+
 ## 发布节奏
 
-每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 0 词，距下次发布还差 1000 词。发布基线为 f7cee5bbe22207ffe7c7ea2efc01ef4fb5b07d9b，当时两项均核对 8871 词；当前页面显示本地核对进度，不表示已上线。
+每批 100 词，累计 1000 词后统一推送 GitHub 和网站。本轮已在本地完成 53 词，距下次发布还差 947 词。发布基线为 f7cee5bbe22207ffe7c7ea2efc01ef4fb5b07d9b，当时两项均核对 8871 词；当前页面显示本地核对进度，不表示已上线。
